@@ -1,0 +1,16 @@
+#trigger {there is a sharp crack as several heavy duty probes launch.} {playsound {cosmic rage/activities/star study/StarProbeLaunch.wav} @vol; #gagline all} {} AnyCase
+#trigger {On screen, you see your probes do battle with the gravitational pull of the star.} {playsound {Cosmic Rage/activities/star study/GravBattle.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline all}
+#TRIGGER {The ship rocks heavily as a laser is fired.} {playsound {Cosmic Rage\activities\star study\lasers.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline all} 
+#TRIGGER {*"Transferring data..."} {playsound {Cosmic rage/activities/star study/TransferStarData.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline all}
+#TRIGGER {The windows are filled with a bright light from *} {playsound {Cosmic Rage/ships/misc/SolarFlare.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {*"Probe lost."} {playsound {Cosmic rage/activities/star study/ProbeLost.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline all} 
+#TRIGGER {*"Transfer complete."} {playsound {Cosmic Rage/activities/star study/TransferComplete.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline all}
+#TRIGGER {You hear a strange banging and scraping noise as the star studies equipment locks onto a star.} {playsound {Cosmic Rage/activities/star study/LockingOn.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline all} 
+#trigger {On screen, you see your probe managing to store some liquified solar energy!} {playsound {Cosmic Rage/activities/star study/SolarEnergy.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline voice}
+#trigger {On screen, you see a probe shoot what looks like liquid fire at a beam of energy.} {#gagline voice}
+#Trigger {On screen, you see the beam enter the core of *} {#gagline voice}
+#trigger {You move over and begin tapping at a very complicated looking console.} {#gagline voice} 
+#trigger {On screen, you see a probe get sucked into the star!} {playsound {Cosmic Rage/activities/star study/ProbeLost.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000); #gagline voice}
+#trigger {You feel the ship shudder as some probes return.} {playsound {Cosmic Rage/activities/star study/ProbeReturn.wav} @vol; #gagline voice}
+#trigger {On screen, you see your probes begin to return to the ship.} {#gagline voice}
+#trigger {You tap a few keys and hit fire.} {#gagline all}

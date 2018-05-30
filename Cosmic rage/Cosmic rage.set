@@ -1,0 +1,158 @@
+#var speech 1
+#var soundson 1
+;These are the Needed set files for the pack to function.
+
+#load misc/keys.set
+#load misc/ConfigurationManager.set
+#load misc/Soundpack.set
+
+; activities set files
+#load Activities/asteroidHarvesting.set
+#load Activities/BioHarvesting.set
+#load Activities/comets.set
+#load Activities/DarkMatterMining.set
+#load Activities/handmining.set
+#load Activities/hunting.set
+#load Activities/mechanicalMining.set
+#load Activities/moon.set
+#load Activities/PlanetChunks.set
+#load Activities/planetoid.set
+#load Activities/salvaging.set
+#load Activities/StarCoring.set
+#load Activities/StarStudies.set
+#load Activities/trash.set
+#load Activities/volcanoHarvesting.set
+#load Activities/VolcanoMining.set
+
+;Ambience set files
+#load misc/mainAmbience.set
+#load misc/music.set
+#load ships/shipAmbience.set
+#load ships/ShipPower.set
+#load vehicle/vehicleAmbience.set
+
+;Combat set files
+#load combat/battlesuits.set
+#load combat/combat.set
+
+;misc set files
+#load misc/Babies.set
+#load misc/Buffers.set
+#load misc/cars.set
+#load misc/comms.set
+#load misc/clocks.set
+#load misc/factory.set
+#load misc/Farming.set
+#load misc/horses.set
+#load misc/hosts.set
+#load misc/Jets.set
+#load misc/misc.set
+#load misc/socials.set
+#load misc/trains.set
+#load misc/trolley.set
+#load misc/weather.set
+
+;Ship set files.
+#load ships/DeepSpaceRepair.set
+#load ships/FlightControl.set
+#load ships/jump.set
+#load ships/Rats.set
+#load ships/shipCombat.set
+#load ships/ships.set
+#load ships/Waypoints.set
+
+;Vehicle set files.
+#load vehicle/vehicle.set
+;Classes.
+
+#class ambon enable;
+#class music enable;
+#class shipamb enable;
+#class vehicleamb enable;
+;Triggers for connecting to the moo.
+#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
+#trigger {Welcome to: Cosmic Rage!} {#say {Please type LoadBuffers to load your currently saved buffers list. If this is your first time running the soundpack, Please type SaveBuffers now.}; #if {@SilentIntro = 0} {loopsound {cosmic rage/music/Intro.wav} @vol; #var IntroMusic %playhandle}};
+#TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
+#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
+
+;Settings.
+
+#File 6 {cosmic rage/misc/settings.set} 1;
+#Read 6 vol 1;
+#read 6 shipVol 2;
+#read 6 vehicleVol 3;
+#read 6 roomVol 4;
+#read 6 DroneSounds 5;
+#read 6 MusicSounds 6;
+#read 6 musicvol 7;
+#read 6 combatmusicplaying 8;
+#read 6 mVol 9;
+#read 6 CMusic 10;
+#read 6 altVehicleEngines 11;
+#read 6 altShipengines 12;
+#read 6 gagShipCombat 13;
+#read 6 gagHarvest 14;
+#read 6 panShipCombat 15;
+#read 6 CVol 16;
+#read 6 socials 17;
+#read 6 ambon 18;
+#read 6 redalert 19;
+#read 6 Evol 20;
+#read 6 veVol 21;
+#read 6 gagSal 22;
+#read 6 weather 23;
+#read 6 gagweather 24;
+#read 6 LogOn 25;
+#read 6 ShortMapText 26;
+#Read 6 SilentSaving 27;
+#Read 6 SilentIntro 28;
+#read 6 SilentClock 29;
+#read 6 ConnectionCheck 30;
+#close 6
+;misc.
+#if {NOT %Defined(Vol)} {#Var Vol 70}
+#If {NOT %Defined(ambon)} {#Var ambon 1}
+#If {NOT %Defined(roomsoundplaying)} {#Var RoomSoundPlaying 0}
+#If {NOT %Defined(MusicSounds)} {#Var MusicSounds 1}
+#If {NOT %Defined(DroneSounds)} {#Var DroneSounds 1}
+#if {NOT %Defined(musicVol)} {#Var musicVol 60}
+#if {NOT %Defined(ShipVol)} {#Var ShipVol 60}
+#If {NOT %Defined(soundson)} {#Var soundson 1}
+#if {NOT %Defined(VehicleVol)} {#Var VehicleVol 60}
+#if {NOT %Defined(SilentSaving)} {#Var SilentSaving 0}
+#if {NOT %Defined(RoomVol)} {#Var RoomVol 60}
+#if {NOT %Defined(CVol)} {#Var CVol 60}
+#If {NOT %Defined(RedAlert)} {#Var RedAlert 0}
+#If {NOT %Defined(combatmusicPlaying)} {#Var combatmusicPlaying 0}
+#If {NOT %Defined(cMusic)} {#Var cMusic 1}
+#if {not %defined(MVol)} {#var MVol 60}
+#if {not %defined(altVehicleEngines)} {#var altVehicleEngines 0}
+#if {not %defined(altshipEngines)} {#var altshipEngines 0}
+#if {not %defined(ShortMapText)} {#var ShortMapText 1}
+#if {not %defined(gagShipCombat)} {#var gagShipCombat 1}
+#if {not %defined(PanShipCombat)} {#var PanShipCombat 0}
+#if {not %defined(gagHarvest)} {#var gagHarvest 1}
+#If {NOT %Defined(socials)} {#Var socials 1}
+#If {NOT %Defined(speech)} {#Var speech 1}
+#if {not %defined(evol)} {#var evol 60}
+#if {not %defined(veVol)} {#var veVol 60}
+#if {not %defined(gagSal)} {#var gagSal 0};
+#if {not %defined(weather)} {#var weather 1}
+#if {not %defined(gagweather)} {#var gagweather 1}
+#if {NOT %Defined(LogOn)} {#Var LogOn 0}
+#if {NOT %Defined(SilentIntro)} {#Var SilentIntro 1}
+#if {NOT %Defined(Speech)} {#Var Speech 0}
+#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
+#TRIGGER {lag.test} {#unalarm LagTest;
+#sub {You have %eval(@LagAmount * 100) Milliseconds lag.}} {} AnyCase
+#alias {onDisconnect} {
+#play {cosmic rage/general/misc/quit.wav} @vol;
+#if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0};
+#if {@musicplaying = 1} {#pc @musichandle stop; #var musicplaying 0; #var planet ""}; savepack; #if {@vehiclesoundplaying = 1} {#pc @vehiclehandle stop; #var @vehiclesoundplaying 0};
+#if {@shipsoundplaying = 1} {#pc @shiphandle stop; #var shipsoundplaying 0}};
+#alarm SpSave -1800 {savepack}
+#Alias {logon} {options;4;log;y} {}
+#Alias {logoff} {options;4;log;n} {}
+#Alias {afkon} {options;4;afk;y} {}
+#Alias {afkoff} {options;4;afk;n} {}
+#trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} 80; #sub {The connection to Cosmic Rage has been Re-established!}}

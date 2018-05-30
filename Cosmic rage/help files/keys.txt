@@ -1,0 +1,101 @@
+Keys for Snapp's Cosmic Rage sounddpack.
+
+		Keys for adjusting sound volume.
+
+shift-f3 shift-f4. adjust roomAmbienceVolume.
+ f5 f6. Adjust ship ambience volume.
+f7 f8. Adjust vehicleVolume. Note. you will need to type look in order for this volume setting to take effect.
+Alt-F2 Alt-F3. Adjust ship combat music volume.
+f9 f10. Adjust main volume.
+alt-f7 alt-f8. Adjust music volume
+control-f2 control-f3. Adjust ship combat volume.
+control-f9 control-f10 Adjust Ship engine volume.
+alt-f9 alt-f10 Adjust Vehicle engine volume.
+
+Directional keys.
+	 Numpad1. 1.
+ Control-Numpad1. Southwest.
+Numpad2. 2.
+Control-Numpad2. South.
+Numpad3. 3.
+Control-Numpad3. Southeast.
+Numpad4. 4.
+Control-Numpad4. West.
+Numpad5. 5.
+Control-Numpad5. Look.
+Numpad6. 6.
+Control-Numpad6. East.
+ Numpad7. 7.
+Control-Numpad7. Northwest.
+Numpad8. 8.
+Control-Numpad8. North.
+Numpad9. 9.
+Control-Numpad9. Northeast.
+Control-numpad dash. Down.
+ control-numpad plus. Up.
+Numpad-0. Coords.
+Control-Numpad-0. Exits.
+Numpad-slash. AutoPilot.
+ Control-Numpad-Slash. In.
+Numpad-star. ManualPilot.
+Control-Numpad-star. Out.
+Alt-O. North.
+Alt-M. South.
+Alt-J. West.
+Alt-L. East.
+Alt-P. Northeast.
+Alt-I. Northwest.
+Alt-N. Southwest.
+Alt-,. Southeast.
+Alt-U. Up.
+Alt-d. Down.
+Alt-Z. In.
+Alt-X. Out.
+
+	Miscellaneous Keys
+
+f11. Toggle room Ambience.
+alt-shift-m. Toggle planetary music.
+Control-S. Save your current soundpack settings.
+control-l. Find out how many milliseconds of lag you are experiencing.
+alt-shift-c. Pull up the changelog.
+Alt-shift-A. Load the list of alias's.
+alt-shift-k. Pull up the text file containing all available keys you can use in the pack.
+alt-shift-r. Pull up the readme.
+alt shift d. Toggle drone sounds.
+control-shift-c. Toggle ship combat music.
+control-f8. Toggle alternate vehicle engine sounds.
+control-shift-f8. Toggle alternate ship engine sounds.
+control-g. Toggle the gagging of enemy locking while in ship combat.
+control-p. Toggle ship combat panning.
+control-h. Toggle the gagging of Harvesting announcements.
+control-f12. Toggle social sounds.
+alt-f12. Toggle the gagging of red alert.
+control-alt-s. Toggle salvage text.
+control-w. Toggle weather sounds.
+control-shift-w. Toggle the gagging of weather text.
+alt-shift-v. Check what each of your volumes are at.
+control-F5. Toggle between the new and old logon sounds.
+Shift-F2. Bring up a menu where you can open log files for the currently logged channels. Do note, if a channel log hasn't been created, you will get an error telling you the path could not be found. Once the channel has a message come across it, that error will go away.
+Alt-s. Toggle short mapper mode.
+Control-shift-N. Cycle through the different ship combat music themes. You will need to have Ship combat music enabled for this to work correctly.
+Control-F1. Toggle your speech.
+Control-shift-R. Reload the soundpack.
+alt-Shift-S. Toggle hearing of the automatic soundpack settings saving each hour.
+Shift-F1. Mute the intire soundpack excluding speech.
+Alt-V. Check the last logged change the moo has stored for the pack.
+Control-alt-M. Toggle the hearing of the soundpacks intro music.
+Control-alt-T. Toggle clock sounds.
+Control-alt-C. Toggle the sounds that let you know you are still connected to the mud.
+F2. Pull up the configuration manager.
+Shift-F2. Pull up the list of all channels that are being logged.
+Alt-shift-Right. Add a buffer to the list.
+Alt-shift-Left. Remove a buffer from the list.
+Alt-up. Read the previous item in the selected buffer.
+Alt-down. Read the next item in the selected buffer.
+Alt-right arrow. Move to the next buffer.
+Alt-left errow. Move to the previous buffer.
+Alt 1 through alt-0. Read the last 10 items in the selected buffer.
+Alt-home. Go to the first item in the selected buffer.
+Alt-end. Go to the last item of the selected buffer.
+Alt-enter. Toggle the entering of numbers using the numpad.

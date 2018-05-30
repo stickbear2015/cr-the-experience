@@ -1,0 +1,7 @@
+#TRIGGER {[[]administrators]: *just opened a service request with the subject of*} {playsound {Cosmic Rage\hosts\Assist.wav} @vol} {} AnyCase
+#TRIGGER {[[]Report!], *} {playsound {Cosmic Rage\hosts\Report.wav} @vol}
+#TRIGGER {[[]Suggestion!], *} {playsound {Cosmic Rage\hosts\Suggest.wav} @vol}
+#trigger {[[]Administrators]: Report, * has been resolved by *} {playsound {cosmic rage/hosts/dasar.wav} @vol}
+#trigger {SDL Star Admiral Brandon Red designation makes a four four motion in the air as he moves into the next measure he leaps threw the center of the cross never to be seen again.} {playsound {Cosmic Rage/hosts/brandon.wav} @vol}
+#trigger {you see a clawed hand move threw the air in a four four motion as it enters the next measure SDL Star Admiral Brandon Red designation appears.} {playsound {Cosmic Rage/hosts/brandon.wav} @vol}
+#trigger {* starting checkpoint. Database last checkpointed *} {playsound {Cosmic Rage/hosts/Checkpoint.wav} @vol} {} AnyCase

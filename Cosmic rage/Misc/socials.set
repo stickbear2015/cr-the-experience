@@ -1,0 +1,266 @@
+#TRIGGER {You belch.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/belch.wav} @vol}}
+#TRIGGER {* belches.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/belch.wav} @vol}}
+#TRIGGER {You burp.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/burp.wav} @vol}}
+#TRIGGER {* burps.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/burp.wav} @vol}}
+#TRIGGER {You cackle.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/cackle.wav} @vol}}
+#TRIGGER {* cackles.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/cackle.wav} @vol}}
+#TRIGGER {You cheer.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/cheer*3.wav} @vol}}
+#TRIGGER {* cheers.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/cheer*3.wav} @vol}}
+#TRIGGER {You fart.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/fart.wav} @vol}}
+#TRIGGER {* farts.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/fart.wav} @vol}}
+#TRIGGER {You giggle.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/giggle.wav} @vol}}
+#TRIGGER {* giggles.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/giggle.wav} @vol}}
+#TRIGGER {You laugh.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
+#TRIGGER {* laughs.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
+#TRIGGER {You scream.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/scream*6.wav} @vol}}
+#TRIGGER {* screams.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/scream*6.wav} @vol}}
+#TRIGGER {You yawn.} {#gagline all; #if {@socials = 1} {playsound {cosmic rage/general/socials/yawn*2.wav} @vol}}
+#TRIGGER {* yawns.} {#if {@socials = 1} {playsound {cosmic rage/general/socials/yawn*2.wav} @vol}}
+#trigger {You poke *} {
+#if {@socials =1} {
+playsound {cosmic rage/general/socials/poke.wav} @vol}}
+#trigger {* pokes you.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/poke.wav} @vol}}
+#trigger {You sit on the cool leather driver's seat.} {
+#gagline all;
+playsound {cosmic rage/general/misc/sit.wav} @vol}
+#trigger {You lie down on *} {
+playsound {cosmic rage/general/socials/lie.wav} @vol}
+#trigger {* lies down on *} {
+playsound {cosmic rage/general/socials/lie.wav} @vol}
+#trigger {You sneeze.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
+#trigger {You sneeze at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
+#trigger {*sneezes*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
+#trigger {You sigh.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
+#trigger {You sigh at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
+#trigger {*sighs*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
+#trigger {You whistle along your way.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
+#trigger {You whistle apreciatively at*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
+#trigger {*whistles*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
+#trigger {You chortle.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/chortle.wav} @vol}}
+#trigger {You chortle at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/chortle.wav} @vol}}
+#trigger {*chortles*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/chortle.wav} @vol}}
+#trigger {You chuckle.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/chuckle.wav} @vol}}
+#trigger {You chuckle at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/chuckle.wav} @vol}}
+#trigger {*chuckle*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/chortle.wav} @vol}}
+#trigger {you bounce up and down.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/bounce*2.wav} @vol}}
+#trigger {* bounces up and down.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/bounce*2.wav} @vol}}
+#trigger {You burst into tears.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/cry*4.wav} @vol}}
+#trigger {You burst into tears because of *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/cry*4.wav} @vol}}
+#trigger {* bursts into tears.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/cry*4.wav} @vol}}
+#trigger {* bursts into tears because of *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/cry*4.wav} @vol}}
+#trigger {You cough.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/cough*5.wav} @vol}}
+#trigger {You cough at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/cough*5.wav} @vol}}
+#trigger {*coughs*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/cough*5.wav} @vol}}
+#trigger {You gag.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/gag*2.wav} @vol}}
+#trigger {You gag at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/gag*2.wav} @vol}}
+#trigger {*gags*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/gag*2.wav} @vol}}
+#trigger {You snore.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snore.wav} @vol}}
+#trigger {You snore at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snore.wav} @vol}}
+#trigger {*snores*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snore.wav} @vol}}
+#trigger {You snort.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snort.wav} @vol}}
+#trigger {You snort at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snort.wav} @vol}}
+#trigger {*snorts*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snort.wav} @vol}}
+#trigger {You snap your fingers.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snap*3.wav} @vol}}
+#trigger {You snap your fingers at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snap*3.wav} @vol}}
+#trigger {*snaps*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/snap*3.wav} @vol}}
+#trigger {You spank *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/spank.wav} @vol}}
+#trigger {*spanks*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/spank.wav} @vol}}
+#trigger {You kiss * tenderly on the lips.} {
+#if {@socials =1} {
+playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
+#trigger {* kisses * tenderly on the lips.} {
+#if {@socials =1} {
+playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
+#trigger {You moan loudly.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/moan*2.wav} @vol}}
+#trigger {You moan loudly at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/moan*2.wav} @vol}}
+#trigger {*moans loudly*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/moan*2.wav} @vol}}
+#trigger {You growl.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/growl.wav} @vol}}
+#trigger {You growl at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/growl.wav} @vol}}
+#trigger {*growls*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/growl.wav} @vol}}
+#trigger {You collapse.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/collapse*3.wav} @vol}}
+#trigger {You collapse into * arms.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/collapse*3.wav} @vol}}
+#trigger {*collapses*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/collapse*3.wav} @vol}}
+#TRIGGER {You punch *} {playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.05 {playsound {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {You swing back your arm, and plant your fist firmly in * face.} {playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.05 {playsound {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#trigger {* swings back * arm, and plants * fist firmly in * face.} {
+playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.05 {playsound {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {*punches*} {playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.05 {playsound {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {You kick *} {playsound {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.05 {playsound {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {* kicks *} {playsound {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.05 {playsound {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#trigger {You practice your rugby tackles.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/tackle*5.wav} @vol}}
+#trigger {You tackle *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/tackle*5.wav} @vol}}
+#trigger {*tackles*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/tackle*5.wav} @vol}}
+#trigger {You purr.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/purr.wav} @vol}}
+#trigger {You purr at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/purr.wav} @vol}}
+#trigger {*purrs*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/purr.wav} @vol}}
+#trigger {You slap yourself full in the face.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/slap*5.wav} @vol}}
+#trigger {You pull back your arm and slap *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/slap*5.wav} @vol}}
+#trigger {*slaps*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/slap*5.wav} @vol}}
+#trigger {You meow.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/meow.wav} @vol}}
+#trigger {You meow at *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/meow.wav} @vol}}
+#trigger {*meows*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/meow.wav} @vol}}
+#trigger {you roll on the floor laughing as you do.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
+#trigger {you roll on the floor laughing at*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
+#trigger {* rolls on the floor laughing*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
+#trigger {You kiss * on both cheaks.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
+#trigger {* kisses * on both cheaks.} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
+#trigger {You puke up your guts.} {
+#gagline all;
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/vomit.wav} @vol}}
+#trigger {You puke all over *} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/vomit.wav} @vol}}
+#trigger {*pukes*} {
+#if {@socials = 1} {
+playsound {cosmic rage/general/socials/vomit.wav} @vol}}
+#trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @vol; #additem OOCPrivate %0} {} AnyCase
+#trigger {*shouts*} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol} {} AnyCase
+#trigger {*suddenly yells, "I'm a dog and I like socks!"} {playsound {Cosmic Rage/general/socials/Socks.wav} @vol}

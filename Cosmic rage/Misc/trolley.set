@@ -1,0 +1,32 @@
+#trigger {You tap a button on * trolley.} {#gagline all;playsound {cosmic rage\ships\computer\Announce*4.wav} @vol}
+#trigger {You type in your security code into * trolley} {#gagline all;playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
+#trigger {You tap dump on * trolley's screen.} {#gagline all; playsound {cosmic rage\ships\computer\keyboard*7.wav} @vol}
+#trigger {* trolley dumps * onto the ground.} {
+#gagline voice;
+#if {%ifword(wood,%2," ")} {
+playsound {cosmic rage\general\trolley\wood.wav} @vol};
+#if {%ifword(liquid,%2," ")} {
+playsound {cosmic rage\general\trolley\water.wav} @vol};
+#if {%ifword(bricks,%2," ")} {
+playsound {cosmic rage\general\trolley\brick.wav} @vol};
+#if {%ifword(brick,%2," ")} {
+playsound {cosmic rage\general\trolley\brick.wav} @vol};
+#if {%ifword(plastic,%2," ")} {
+playsound {cosmic rage\general\trolley\plastic.wav} @vol}}
+#trigger {The racket that is given off by * trolley cuts out as it finishes fusing.} {#gagline all; playsound {cosmic rage\activities\mechanicalmining\slam.wav} @vol}
+#TRIGGER {*scoops up some metal scraps and stores them away.} {#gagline all; playsound {cosmic rage/general/trolley/metal.wav} @vol}
+#trigger {You * trolley, starting up a * process.} {#gagline all;playsound {cosmic rage\ships\computer\Announce*4.wav} @vol}
+#TRIGGER {* spits out a dozen drones, which promptly shovel * into it, before returning to the trolley with an almighty crash.} {#gagline all;
+#if {%ifword(wood,%2," ")} {
+playsound {cosmic rage/general/trolley/wood.wav} @vol};
+#if {%ifword(bricking,%2," ")} {
+playsound {cosmic rage/general/trolley/brick.wav} @vol}}
+#TRIGGER {Several small drones scoop up * barrels of liquid and store them away.} {#gagline all; playsound {cosmic rage/general/trolley/water.wav} @vol}
+#TRIGGER {* scoops up * pieces of plastic.} {#gagline all; playsound {cosmic rage/general/trolley/plastic.wav} @vol}
+#TRIGGER {* spits * onto the *} {#gagline all; playsound {cosmic rage/general/trolley/done.wav} @vol}
+#trigger {* scoop* up * metal panel*} {#gagline all;playsound {cosmic rage/general/trolley/metal.wav} @vol}
+#trigger {You hear what sounds like fusing from * trolley} {#gagline all;playsound {cosmic rage/general/trolley/fuse.wav} @vol}
+#trigger {Some kind of equipment extends from the bottom of * trolley and it begins to suck up metal scraps.} {#gagline all;playsound {cosmic rage/general/trolley/trolleyEquipment.wav} @vol}
+#trigger {You tap a button on * trolley} {#gagline all;playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
+#trigger {The cleaning equipment withdraws back into * trolley with a clang.} {#gagline all;playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
+#trigger {* uses a sucker device to pick up some plastic.} {playsound {Cosmic Rage/general/trolley/plastic.wav} @vol; #gagline all}

@@ -1,0 +1,12 @@
+#trigger {You lift your arm, and fire * laser at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/Shoot*16.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {You lift your arm, and fire * grenade launcher at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/Grenade.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {You lift your arm, and fire * rocket launcher at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/rocket.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {You lift your arm, and fire * pulse gun at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/PulseGun*3.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {You slip into * battlesuit * letting it surround your body completely.} {playsound {Cosmic Rage/general/battlesuit/EnterBattleSuit.wav} @vol}
+#trigger {You slip into * combat suit * letting it surround your body completely.} {playsound {Cosmic Rage/general/battlesuit/EnterBattleSuit.wav} @vol}
+#trigger {You give * battlesuit * a tug and pull it off.} {playsound {Cosmic Rage/general/battlesuit/ExitBattleSuit.wav} @vol}
+#trigger {You give * combat suit * a tug and pull it off.} {playsound {Cosmic Rage/general/battlesuit/ExitBattleSuit.wav} @vol}
+#trigger {* lifts * arm and fires * laser at *.} {#gagline voice; playsound {Cosmic Rage/general/battlesuit/Shoot*16.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {* lifts * arm and fires * grenade launcher at *.} {#gagline voice; playsound {Cosmic Rage/general/battlesuit/Grenade.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {* lifts * arm and fires a small rocket launcher at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/rocket.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {* lifts * arm and fires * pulse gun at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/PulseGun*3.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}

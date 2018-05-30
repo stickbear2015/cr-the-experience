@@ -1,0 +1,130 @@
+#class Numpad Enable
+#var NumpadOn
+#var defroom 0
+#key {f9} {genvoldown}
+#key {f10} {genvolup}
+#key {alt-f7} {musicvoldown}
+#key {alt-f8} {musicvolup}
+#key {alt-f2} {combatdown}
+#key {alt-f3} {combatup}
+#key {control-f2} {combatvolumedown}
+#key {control-f3} {combatvolumeup}
+#key {f7} {vehiclEvoldown}
+#key {f8} {vehiclEvolup}
+#key {f5} {shipvoldown}
+#key {f6} {shipvolup}
+#key {shift-f3} {roomvoldown}
+#key {shift-f4} {roomvolup}
+#key {control-f9} {shipEvoldown}
+#key {control-f10} {shipEvolup}
+#key {alt-f9} {vehicleengvoldown}
+#key {alt-f10} {vehicleengvolup}
+
+#key f11 {ambtoggle}
+#Key {control-l} {#var LagAmount 0;
+#alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
+echo Lag.test} {}
+#key alt-shift-c {Changelog}
+#key alt-shift-R {Readme}
+#key alt-shift-A {Aliases}
+#key alt-shift-K {Keys}
+
+#key alt-shift-d {DroneToggle}
+#key alt-shift-m {togglemusic}
+#key control-shift-c {togglecombat}
+#key control-f8 {togglevehicle}
+#key control-shift-f8 {toggleship}
+#key control-g {gagscombat}
+#key control-h {gagharvest}
+#key alt-Shift-S {SilentSaving}
+#key control-f12 {togglesocials}
+#key alt-f12 {toggleRedAlert}
+#key control-p {pancombat}
+#key control-f5 {toggleLogOn}
+#key control-alt-s {salvageTextToggle}
+#key control-w {weatherToggle}
+#key control-shift-w {gagweather}
+#key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} system}
+#key alt-s {ShortMapText}
+#key Control-Alt-C {ToggleConnectionCheck}
+#key control-alt-M {SilentSPIntro}
+#key control-alt-T {ToggleClocks}
+#key control-shift-n {#if {@cMusic = 1} {#var combatmusicPlaying 1; #pc 0 stop; #playloop {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatMusicHandle %playHandle; #var combatmusicPlaying 1; #say {I must Stop all sounds in order to change the currently playing track.}; #alarm 2 {#say {music loaded!}}} {#if {@CombatmusicPlaying = 0} {#var combatMusicPlaying 0; #say {You'll need to enable combat music first. To do this, use the keystroke control-shift-C}}}}
+#key {alt-Enter} {togglenumpad}
+#Key {Numpad1} {1} {Numpad}
+#Key {Control-Numpad1} {sw}
+#Key {Numpad2} {2} {Numpad}
+#Key {Control-Numpad2} {s}
+#Key {Numpad3} {3} {Numpad}
+#Key {Control-Numpad3} {se}
+#Key {Numpad4} {4} {Numpad}
+#Key {Control-Numpad4} {w}
+#Key {Numpad5} {5} {Numpad}
+#Key {Control-Numpad5} {look}
+#Key {Numpad6} {6} {Numpad}
+#Key {Control-Numpad6} {e}
+#Key {Numpad7} {7} {Numpad}
+#Key {Control-Numpad7} {nw}
+#Key {Numpad8} {8} {Numpad}
+#Key {Control-Numpad8} {n}
+#Key {Numpad9} {9} {Numpad}
+#Key {Control-Numpad9} {ne}
+#key {control-numpaddash} {down}
+#key {control-numpadplus} {up}
+#Key {Numpad0} {coords}
+#Key {Numpad0} {0} {Numpad}
+#Key {Control-Numpad0} {exits}
+#Key {Numpad/} {auto}
+#key {Control-Numpad/} {in}
+#Key {Numpad*} {man}
+#Key {Control-Numpad*} {out}
+#Key {Numpadplus} {+}
+#Key {Alt-O} {north} {}
+#Key {Alt-M} {south} {}
+#Key {Alt-J} {west} {}
+#Key {Alt-L} {east} {}
+#Key {Alt-P} {northeast} {}
+#Key {Alt-I} {northwest} {}
+#Key {Alt-N} {southwest} {}
+#Key {Alt-,} {southeast} {}
+#Key {Alt-U} {up} {}
+#Key {Alt-d} {down} {}
+#Key {Alt-Z} {in} {}
+#Key {Alt-X} {out} {}
+#key {Shift-F1} {MuteSound}
+#key F2 {config}
+#key {Control-F1} {TTS}
+#key {Shift-F2} {LogFile}
+#key {control-/} {#ungagon; #say {Speech is no longer being gagged.}}
+#key {control-s} {#play {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Settings saved} system; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
+#Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @roomvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @DroneSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @MusicSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @MusicVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @combatMusicplaying @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @MVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @CMusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @altVehicleEngines @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @altshipEngines @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @gagShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @gagHarvest @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @panShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @CVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @socials @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @ambon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @redalert @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @Evol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @veVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @gagSal @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @weather @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @gagweather @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @LogOn @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @ShortMapText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SilentSaving @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SilentIntro @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SilentClock @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @ConnectionCheck @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#close 6}

@@ -1,0 +1,103 @@
+#TRIGGER {You holster a * into * holster} {playsound {cosmic rage/general/combat/holster.wav} @vol};
+#TRIGGER {You draw a * from *} {
+#if {%ifWord(standard laser pistol,%1," ")} {
+playsound {cosmic rage/general/combat/drawPistol.wav} @vol};
+#if {%ifWord(shotgun,%1," ")} {
+playsound {cosmic rage/general/combat/DrawShotgun.wav} @vol};
+#if {%ifWord(rifle,%1," ")} {
+playsound {cosmic rage/general/combat/DrawRifle.wav} @vol};
+#if {%ifWord(sniper,%1," ")} {
+playsound {cosmic rage/general/combat/DrawSniper.wav} @vol}}
+#TRIGGER {* falls to the ground, dead.} {
+#if {%ifWord(monster,%1," ")} {
+playsound {cosmic rage/general/combat/monster.wav} @vol; #abort 1};
+playsound {cosmic rage/general/combat/enemydead.wav} @vol};
+#TRIGGER {You lift your arms, and fire a * at *} {
+#gagline all;
+#if {%ifWord(rocket,%1," ")} {
+playsound {cosmic rage/general/combat/rocketlauncher*2.wav} @vol; #abort 1};
+#if {%ifWord(hand cannon,%1," ")} {
+playsound {cosmic rage/general/combat/handCannon*2.wav} @vol; #abort 1};
+#if {%ifWord(stungun,%1," ")} {
+playsound {cosmic rage/general/combat/stungun.wav} @vol; #abort 1};
+playsound {cosmic rage/general/combat/shoot.wav} @vol}
+#TRIGGER {* shoots a sniper at you!} {#gagline voice; playsound {cosmic rage/general/combat/shoot.wav} @vol};
+#trigger {You breathe a colum of brilliantly bright looking fire at *} {
+#gagline all;
+playsound {cosmic rage/general/combat/firebreath.wav} @vol}
+#trigger {You let out a bellowing roar!} {
+#gagline all;
+playsound {cosmic rage/general/combat/dragonRoar.wav} @vol}
+#trigger {* lets out a bellowing roar!} {
+#gagline voice;
+playsound {cosmic rage/general/combat/dragonRoar.wav} @vol}
+#trigger {You lunge at * brandishing your wickedly sharp * claws!} {
+#gagline all;
+playsound {cosmic rage/general/combat/dragonClaw.wav} @vol}
+#trigger {You let out a ferocious snarl and sink your teeth into *} {
+#gagline all;
+playsound {cosmic rage/general/combat/dragonBite.wav} @vol}
+#trigger {You viciously whip out your tail.} {
+#gagline all;
+playsound {cosmic rage/general/combat/tailwhip.wav} @vol}
+#trigger {You belch up a fireball.} {
+#gagline all;
+playsound {cosmic rage/general/socials/burp.wav} @vol}
+#trigger {You swallow the fireball down and blow out clouds of choaking smoke!} {
+#gagline all;
+playsound {cosmic rage/general/combat/firebreath.wav} @vol}
+#trigger {You throw back your head and let out a pearcing scream at *} {
+#gagline all;
+playsound {cosmic rage/general/combat/sonic scream.wav} @vol}
+#trigger {You give * a huge robot punch!} {
+#gagline all;
+playsound {cosmic rage/general/combat/robot punch.wav} @vol}
+#trigger {You bash into * knocking * to the ground.} {
+#gagline all;
+playsound {cosmic rage/general/combat/bash*2.wav} @vol}
+#trigger {a wasteland monster claws at you!} {
+#gagline voice;
+playsound {cosmic rage/general/combat/monsterClaw.wav} @vol}
+#trigger {You pull the pin on * grenade} {
+#gagline all;
+playsound {cosmic rage/general/combat/grenadePull.wav} @vol}
+#trigger {You hurl * grenade *} {
+#gagline all;
+playsound {cosmic rage/general/combat/grenade throw.wav} @vol}
+#trigger {You raise the stun gun attached to your head and shoot a white ray at *} {
+#gagline all;
+playsound {cosmic rage/general/combat/laarkanstungun.wav} @vol}
+#trigger {* raises * head and shoots a white ray of energy at you.} {
+#gagline voice;
+playsound {cosmic rage/general/combat/ray.wav} @vol}
+#trigger {You sheathe * into *} {playsound {Cosmic Rage/general/combat/SheatheSword.wav} @vol; #gagline all}
+#trigger {You draw *} {playsound {Cosmic Rage/general/combat/DrawSword.wav} @vol; #gagline all}
+#trigger {You run * through the heart with *} {playsound {Cosmic Rage/general/combat/RunThrough*2.wav} @vol}
+#trigger {* runs you through with *} {playsound {Cosmic Rage/general/combat/RunThrough*2.wav} @vol}
+#trigger {Shalka brute steps out of the shadows.} {playsound {Cosmic Rage/general/combat/Shalka.wav} @vol}
+#trigger {You pull back a small lever on * and hear a satisfying click as a new round slides into place.} {playsound {Cosmic Rage/general/combat/Reload.wav} @vol; #gagline all}
+#trigger {* pivots and then fires a shell *.} {playsound {Cosmic Rage/general/combat/Fire.wav} @vol; #gagline voice}
+#trigger {A shrill whistle echoes through the air.} {playsound {Cosmic Rage/general/combat/whistle.wav} @vol; #gagline voice}
+#trigger {A shell streams into the room, hitting dead center and bursting into a column of fire.} {playsound {Cosmic Rage/general/combat/ShellExplode.wav} @vol; #gagline voice}
+#trigger {A huge column of flame erupts in the sky to the *} {playsound {Cosmic Rage/general/combat/Fire2.wav} @vol; #gagline voice}
+#trigger {Destruction timer activated.} {playsound {Cosmic Rage/general/combat/Timer.wav} @vol; #gagline voice}
+#trigger {* bursts into flames and explodes!} {playsound {Cosmic Rage/general/combat/Explosion.wav} @vol; #gagline voice}
+#trigger {Level * online.} {playsound {Cosmic Rage/general/combat/alarm.wav} @vol}
+#trigger {* erupts in a huge column of flame.} {playsound {Cosmic Rage/general/combat/Fire2.wav} @vol; #gagline voice}
+#trigger {* lets out a small beep, informing you it just managed to charge another round of ammunition using the ambient light as an energy source.} {playsound {Cosmic Rage/general/combat/Beep.wav} @vol; #sub {Ammo charged!}} {} AnyCase
+#trigger {* swings a tentakle at *} {#gagline voice; playsound {Cosmic Rage/general/combat/tentakle.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* shoots a tiny stun weapon at *} {#gagline voice; playsound {Cosmic Rage/general/combat/stungun.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* spits something at *} {#gagline voice; playsound {Cosmic Rage/general/combat/Spit.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* opens fire on * with a compact rifle.} {#gagline voice; playsound {Cosmic Rage/general/combat/CompactRifle.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* shoots a nasty looking gun at *} {#gagline voice; playsound {Cosmic Rage/general/combat/Gun.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* slimes *} {#gagline voice; playsound {Cosmic Rage/general/combat/Slime.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* swings a deadly blade *} {#gagline voice; playsound {Cosmic Rage/general/combat/Blade.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {You hear an explosion from the *} {playsound {Cosmic Rage/general/combat/GrenadeExplodeNextRoom.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {You connect up the wires and the generator stabalises.} {playsound {Cosmic Rage/general/combat/AtmosphericGenerator.wav} @vol}
+
+#trigger {*grenade explodes!} {playsound {Cosmic Rage/general/combat/GrenadeExplode.wav} @vol}
+
+#trigger {*mapper lets out an urgent trill, informing you to the * it detects *} {playsound {Cosmic Rage/general/combat/enemy detected.wav} @vol}
+#trigger {You throw off the stun!} {playsound {Cosmic Rage/general/combat/ThrowOffStun.wav} @vol}
+#trigger {A shimmering forcefield intersepts all of the force behind the hit*} {playsound {Cosmic Rage/general/combat/stun crystal.wav} @vol}
+#trigger {You aren't stunned. Whew!} {playsound {Cosmic Rage/general/combat/ThrowOffStun.wav} @vol}

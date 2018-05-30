@@ -1,0 +1,56 @@
+Alias's for the soundpack are as follows.
+
+	general volume down:genvoldown|
+general volume up:genvolup|
+planetary music volume down:musicvoldown|
+planetary music volume up:musicvolup|
+Ship combat music volume down:combatdown|
+Ship combat music volume up:combatup|
+Ship combat volume down:combatvolumedown|
+Ship combat volume up:combatvolumeup|
+vehicle volume down:vehiclEvoldown|
+vehicle volume up:vehiclEvolup|
+ship ambience volume down:shipvoldown|
+ship ambience volume up:shipvolup|
+room ambience volume down:roomvoldown|
+room ambience volume up:roomvolup|
+ship engine volume down:shipEvoldown|
+ship engine volume up:shipEvolup|
+vehicle engine volume down:vehicleengvoldown|
+vehicle engine volume up:vehicleengvolup|
+ambience toggle:ambtoggle|
+drone sounds toggle:dronetoggle|
+planetary music toggle:togglemusic|
+ship combat music toggle:togglecombat|
+alternate vehicle engines:togglevehicle|
+alternate ship engines:toggleship|
+Short map text toggle:ShortMapText|
+gag ship combat toggle:gagscombat|
+pan ship combat toggle:pancombat|
+gag harvesting toggle:gagharvest|
+Socials toggle:togglesocials|
+red alert toggle:toggleRedAlert|
+salvage text toggle:salvageTextToggle|
+weather sounds toggle:weatherToggle|
+gag weather toggle:gagweather|
+Old logon/logoff sounds toggle:toggleLogOn|
+Silent saving toggle:SilentSaving|
+Soundpack intro music toggle:SilentSPIntro|
+Clock sounds toggle:ToggleClocks|
+Mute sounds toggle:playsound|
+save your pack:savepack|
+List of Alias's:Alias's|
+keystrokes:keys|
+readme:readme|
+changelog:changelog}}}
+Report a bug:SpBug|
+Suggest something you'd like added to the soundpack:SpSuggest.
+Check the last logged change:SpVersion.
+View the info for the soundpack:SpInfo
+Toggle the connection sounds that let you know you are still connected to the mud:ToggleConnectionCheck
+config:Load the configuration manager|
+TTS:Toggle your speech.
+Pull up the list of all channels that are being logged:LogFile
+DelBuffer:Removes a buffer from the list.
+AddBuffer:Adds a buffer to the list.
+ToggleNumpad:Toggles the entering of numbers using the numpad.

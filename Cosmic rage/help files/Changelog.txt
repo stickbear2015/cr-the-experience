@@ -1,0 +1,1014 @@
+503. Credits, Philip Williamson: Powering down your ship will never ever throw an error again.
+Copy ships/shipPower.set.
+502. Do to a very strange issue, the socials buffer has been removed.
+Copy Cosmic Rage/misc/buffers.set and Cosmic Rage/misc/Comms.set.
+501. Fixed a huge bug with the way the pack saves.
+Copy Cosmic Rage.set and Cosmic Rage/misc.
+500. Credits, Gladr: You will now no longer see buffer names in your output window when using alt-left and alt-right.
+Copy Cosmic Rage/misc/buffers.set.
+499. In order to get rid of the parsing errors some people were getting, we've modified how saving and loading the list of active buffers works. Now, once you remove and add buffers to your liking, type savebuffers. When you reload vipmud or the soundpack, simply type loadbuffers to get your preferences back! Remember, messages will save in buffers whether you have them active or not. Do note, If you try to load buffers before you've saved your list of buffers, it might throw an error at you. Also, if you get rid of all the buffers in your list and try using alt-left and alt-right to move to another buffer, that also throws an error.
+Copy Cosmic Rage.set and Cosmic Rage/misc.
+498. Credits, Austin Blake: You can now toggle the entering of numbers using the numpad.
+Copy Cosmic Rage/Help Files, Cosmic Rage/misc/ConfigurationManager.set and Cosmic Rage/misc/keys.set.
+497. When moving between buffers, if you use alt-Right, you will hear a sound in your right speaker/headphone. When using alt-left, you will hear the same sound in your left speaker/headphone.
+Copy Cosmic Rage/misc/Buffers.set and Sounds/general/misc/BufferSwitch.wav.
+496. when adding  or deleteing buffers, A small sound will play. A sound will also play when you reach the top or bottom of a buffer using alt-up and alt-down.
+Copy Cosmic Rage/misc/Buffers.set, sounds/general/misc/BufferAction.wav and BufferBoundary.wav.
+495. When changing options in the configuration manager, or by using the alias or key that option is tied to, You will now see a dialog letting you know what you have changed. 
+Copy Cosmic Rage/misc/ConfigurationManager.set, Cosmic Rage/misc/key.set and Cosmic Rage/misc/Soundpack.set.
+494. When adding or deleting a buffer, After you've done what you wanted to do, A dialog will now pop up letting you know what happened.
+Copy Cosmic Rage/misc/buffers.set.
+493. Default buffers should no longer reappear when you remove them. Also, you should no longer end up with duplicate buffers, especially for defaults.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set and misc/Soundpack.set.
+492. Fixed a huge huge error with the way the pack was saving using the control-S keystroke.
+Copy Cosmic Rage/misc/keys.set and Cosmic Rage/misc/Soundpack.set.
+491. Added the flight control buffer.
+Copy Cosmic Rage/misc/Buffers.set and Cosmic Rage/ships/FlightControl.set.
+490. Good news! We have completely recoded how buffers work, from scratch. Alt plus left or right arrows will still switch between added buffers. Alt 1 through alt 0 also still work as expected, but you will be told no item if the selected buffer doesn't have enough items for the key you press. Alt home moves you to the earliest item in the selected buffer, while alt end moves you to the most recent. Alt up and down arrows move to the previous and next buffer item, respectively. Don't want all those buffers? Use alt shift left arrow to choose one to remove, and alt shift right arrow to choose from a quite large master list to add into your buffers. More buffers coming soon! Note that when changing from one buffer to another, you will always be put at the earliest message. Your choice of active buffers will save when the soundpack settings save. If you add a buffer, even prievious text will show up in it right away! Buffers do reset their contents when you reload the pack. This was coded by Faylen and tested and modified by Snapp. Other developers, while you are welcome to borrow ideas, please do not copy code directly. Thank you and enjoy!
+Copy Cosmic Rage.set, Cosmic Rage/help files, Cosmic Rage/misc/Buffers.set, misc/comms.set, misc/keys.set, misc/ConfigurationManager.set, and misc/Soundpack.set.
+489. Added the control-slash key. Just in case you find yourself with an issue where the pack tells you gagging is in effect, This key will force VIP to stop gagging speech output.
+Copy Cosmic Rage/misc/keys.set.
+488. If you have Gag Ship Combat enabled, you will no longer see messages about ships exploding.
+Copy Cosmic Rage/ships/shipCombat.set.
+487. If you're like me, and your net happens to die for a few seconds, but you don't get disconnected from the moo, You will now see a message and hear a sound when the connection has been Re-established.
+Copy Cosmic Rage.set and sounds/general/misc/synapticReturn.wav.
+486. I've added the feature back into the pack that lets you select a channels log file from a list and read it. If you didn't see the change from a few weeks ago, channels are now being logged based upon your characters name. Please see the help files for the correct key and alias.
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/Buffers.set, Cosmic Rage/misc/Keys.set and Cosmic Rage/misc/Soundpack.set.
+485. A sound will now play when you open one of the help files.
+Copy Cosmic Rage/Help Files, Cosmic Rage/misc/ConfigurationManager.set, Cosmic Rage/misc/keys.set, and Sounds/general/misc/LoadingFile.wav.
+484. When you have clock sounds toggled off, the clocks messages will not be seen. I've also put clock stuff into it's own file as I plan to expand upon the code at a later date.
+Copy Cosmic Rage.set, Cosmic Rage/misc/Clocks.set and Cosmic Rage/misc/ConfigurationManager.set.
+483. Do to issues, SpVersion is now showing you the packs description when the alias or key is used. Sorry, this is the only way things would work correctly.
+Copy Cosmic Rage/misc/Soundpack.set.
+482. Worked with the code for the configuration manager and the keys to control everything from within the manager some more. Things are much better than before, and you will now get small sounds letting you know something has happened. Like things being toggled and volume changes. Note. When you change the volume of something, There is a sound that will play to let you know how loud or quiet that volumes setting has become. When you toggle something on or off, again, a sound will play letting you know something has happened. I hope you enjoy, and if you find any bugs with this, let me know.
+Copy Cosmic Rage/misc and  sounds/general/misc.
+481. Added the TTS alias to toggle your speech. Control-F1 may also be used.
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/keys.set and Cosmic Rage/misc/Soundpack.set.
+480. Added about 50 more weather messages! You can gag these using the key Control-shift-w, or the alias GagWeather.
+Copy Cosmic Rage/misc/Weather.set.
+479. Updated the message you see when you load the pack to let you know to never use alt-V or SpVersion on the login screen.
+Copy Cosmic Rage.set.
+478. Just letting you all know, please. Never use the key Alt-V or the alias SpVersion on the logon screen. it breaks things badly. You may type version while on the logon screen, and once you get logged in, then you can use alt-V and SpVersion.
+477. Credits, Dealan: Offices will now play the correct ambience. Thanks for reporting this.
+Copy Cosmic Rage/misc/mainAmbience.set.
+476. Added the configuration manager. This is like the old options menu system, except the code is 100 percent better, and bug free. The F2 key will still access the configuration manager, but you can now also just type config.
+Copy Cosmic Rage.set, Cosmic Rage/Help Files, Cosmic Rage/misc/ConfigurationManager.set, Cosmic Rage/misc/keys.set, get rid of optionsmenu.set and copy Sounds/general/misc/ConfMan.wav.
+
+475. Fixed an error with reloading the pack.
+Copy Cosmic Rage/misc.
+474. Made a change to the way that VIP is letting you know you are still connected to the moo. Now the sound will only play if you have it enabled and you're idle for over 5 minutes.
+Copy Cosmic Rage.set, Cosmic Rage/misc/misc.set and soundpacks.set.
+473. Changed a few things. First is the sound and message when you send a command that won't work. I've gotten rid of all of those sounds, just made it one sound, ungagged the message and added a new one. Second, I changed the Private OOCComms sound. The other one just seemed a bit loud.
+Copy Cosmic Rage/misc/Comms.set, Cosmic Rage/misc/misc.set, From within Sounds/general/misc, Get rid of all files called command with number, and copy sounds/general/comms/PrivOOCCom.wav and sounds/general/misc/CommandWrong.wav
+472. If you so wish, you can now have the pack play a small sound every 45 seconds to let you know you are still in fact connected to the mud. This is useful for snapps like me who are having internet issues until Amazon gets off it's fat, stupid... Oh sorry. Is this thing on? Anyway, I hope you like this, and it can be toggled. Please see the appropriate help files to learn what the alias and key are.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set, optionsmenu.set, soundpack.set, sounds/general/misc/Connection1 and Connection2.wav.
+471. The pack is now auto-saving every 10 minutes instead of every hour. Do remember, you can toggle the saving announcements with the alias SilentSaving, and Control-Alt-S key.
+Copy Cosmic Rage/misc/Soundpack.set and Cosmic Rage.set
+470. Changed the name of the set file that contains most of the alias's for dealing with  the soundpack. You'll see why in the next few changes.
+Copy Cosmic Rage/misc/Soundpack.set and Cosmic Rage.set
+469. Made ship cameras less spammy.
+Copy Cosmic Rage/misc/misc.set.
+468. Did some work with weather. More stuff will be added soon.
+Copy Cosmic rage/misc/Weather.set
+467. Fixd a few channels that were not being logged correctly. Thanks to my cat for reporting this.
+Copy Cosmic Rage/misc/Comms.set.
+466. Fixed a few alias's that were broken. Most noteably, the The alias for toggling clock sounds has been changed to ToggleClocks, and the alias to toggle the playing of the soundpacks intro has been changed. It is now "SilentSPIntro."
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/keys.set and Cosmic Rage/misc/Optionsmenu.set.
+465. Fixed the SpVersion command, SPInfo command, and alt-V. SpVersion should only show the last change to the pack, same goes for Alt-V. SpInfo will show you the information about the pack.
+Copy Cosmic Rage/misc/SoundpackInfo.set.
+464. Totally reworked buffers this morning. The buffer count has went from 45 down to 18. If you think a buffer should be included that is not, please let me know.
+Copy Cosmic Rage/misc/Buffers.set and Cosmic Rage/misc/Comms.set.
+
+463. The key alt-V will now tell you what the last change to the pack has been.
+Copy Cosmic Rage/misc/keys.set.
+462. Reworked the new alias's to make the pack run smoother.
+Copy Cosmic Rage/misc/SoundpackInfo.set.
+461. Changed the messages you see when you load the soundpack to let you know about the SpVersion alias.
+Copy Cosmic Rage.set.
+460. Did some work with the SpVersion alias. Because of how I coded things, you will have to use the alias SpInfo to view things like the download links, ETC.
+Copy Cosmic Rage/help files and Cosmic Rage/misc/SoundpackInfo.set.
+459. Anywhere in the game, You can now type SpVersion to see the last logged change to the soundpack. Also, seeing as the soundpack has many alias's to do different things like reporting bugs, ETC, they have all been moved to a place they can call home.
+Copy Cosmic Rage/help files, Cosmic Rage.set and Cosmic Rage/misc/SoundpackInfo.set.
+458. With channel logging, the channels are logged based upon your charname. So for example, Snapp Soundpacks.log.
+Copy Cosmic Rage/misc/Comms.set
+457. Added a new command chamber sound for ships.
+Coppy Cosmic Rage/ships/rooms/CommandChamber.wav
+456. Added the alias's help file. It is accessible from within the options menu, as well as using the key alt-shift-A.
+Copy Cosmic Rage/help files/alias's.txt, Cosmic Rage/misc/keys.set and optionsmenu.set.
+455. Credits, Gorngon Orange designation: Added a sound for when you are not clear to launch or land do to weather.
+Copy Cosmic Rage/misc/comms.set and sounds/ships/misc/BadWeather.wav.
+454. Fixed OBF to work with the new messages.
+Copy Cosmic Rage/ships/shipCombat.set and sounds/ships/combat/ObfFade.wav and ObfStart.wav.
+453. You can now type spbug to submit a bug to the soundpack, and spsuggest to submit a suggestion. Please take note of the messages that are displayed when using these commands. Thank you.
+Copy Cosmic Rage.set, sounds/general/misc/SpBug.wav and SpSuggest.wav.
+452. Changed the triggers for reloading so that they work with the new messages.
+Copy Cosmic Rage/ships/shipCombat.set
+451. Changed the text you see when something is posted on the message boards.
+Copy Cosmic Rage/misc/misc.set
+450. Changed the music for Aeloriana and Danimara.  Thanks jitel for the music.
+Copy Sounds/music/planets/Aeloriana.wav and Danimara.wav.
+449. Using the key control-alt-T, you can now toggle the chiming of clocks. When clock chimes are disabled, you will also see the messages from the clocks.  The setting is also saved.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set, misc.set and optionsmenu.set.
+448. If you hook up the Atmospheric Generator wrong, the electrical sound will stop playing, the generator will explode, and you'll see an interesting message. Thanks frederick for letting me know this wasn't working.
+Copy Cosmic Rage/activities/PlanetChunks.set and sounds/activities/PlanetChunks/explode.wav
+447. Credits, Michael Lawson: Grandfather clocks now have sounds.
+Copy Cosmic Rage/misc/misc.set and sounds/general/misc/Clock ding.wav, Clock Half Hour Chime.wav, Clock Hour Chime.wav, Clock Quarter-Hour Chime.wav and Clock Three-Quarter Hour Chime.wav.
+446. A sound will now play when an OLink is auto-accepted. I've also changed the sounds for links accepted and OLinks requested.
+Copy Cosmic Rage/misc/Comms.set and Sounds/general/comms/linkConfirmed.wav and OOCRequest.wav.
+445. Ship volume will now save correctly.
+Copy Cosmic Rage/misc/keys.set and optionsmenu.set.
+444. Added a helpful message letting you know you must type look in order for vehicle ambiance volume changes to take effect.
+Copy Cosmic Rage/misc/key.set and Cosmic Rage/misc/optionsmenu.set
+443. Fixed every single bug you guys have reported with vehicles and vehicle ambiance. As far as I was able to test, everything is functioning correctly. If this is not the case, let me know.
+Copy Cosmic Rage/vehicle/Vehicle.set and Cosmic Rage/vehicle/vehicleAmbiance.set
+442. Credits, Lara: Cult and poker now have sounds.
+Copy Cosmic Rage/misc/misc.set and sounds/General/misc/Cult.wav and Poker.wav.
+441. Credits, many of you: You can now toggle the hearing of the soundpacks intro music with the key Control-alt-M.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set and Cosmic Rage/misc/Optionsmenu.set.
+440. Credits, vina: On factories, you now hear a sound for the factory announceing that someone has teleported.
+Copy Cosmic Rage/misc/Factory.set.
+439. Added the SpCredits alias.
+Copy Cosmic Rage.set.
+438. Factory PA and Tannoy's now have sounds.  Thanks to Gladr for making this possible.
+Copy Cosmic Rage/misc/Factory.set, and sounds/general/Factory/PA.wav and Tannoy.wav
+437. While the log in screen is displayed, you may type version to see the last soundpack change the moo has stored.
+Copy Cosmic Rage.set
+436. Added a new corridor sound, also added a few other interesting ambiences for holographic sceens on board a ship should you ship builders wish to be creative.
+Coppy ships/shipAmbience.set, cosmic rage/ships/rooms/corridor.wav, cosmic rage/ships/rooms/forest.wav, cosmic rage/ships/rooms/jungle.wav, and cosmic rage/ships/rooms/lake.wav.
+435. Credits, vina: Added a sound for when something gets stuck in your planetoid gear.
+Copy Cosmic Rage/activities/Planetoid.set and sounds/activities/Planetoid/Crack.wav
+434. Credits, Groolyx Blood red designation: Added sounds for bio plasma harvesting.
+Copy Cosmic Rage.set, Cosmic Rage/activities/BioHarvesting.set, and sounds/Activities/BioHarvesting.
+433. Credits, Frederick Barnes131439: Added sounds for PlanetChunks and outposts.
+Copy Cosmic Rage.set, Cosmic Rage/activities/PlanetChunks.set, and sounds/activities/PlanetChunks.
+432. Added planetary music for the following. Aeloriana, Battle Stations, beacon stations, Danimara, GMC, Oriali, Partaculous Spectaculous, Pilot Training Core Facility Alpha 1, Sahariana and Ship Building Facility Omega 8.
+Copy Cosmic Rage/misc/Music.set and sounds/music/planets.
+431. Credits, Lara: News now has a new sound.
+Copy Cosmic Rage/misc/Comms.set and sounds/general/comms/News.wav
+430. Fixed the bug that would make the recharging sound get stuck if you disembarked from your ship before the recharging sequence was finished.
+Copy ships/ships.set.
+429. Actually added the code for the business central music. I thought I'd done that weeks ago. Sorry.
+Copy Cosmic Rage/misc/music.set.
+428. Fixed errors with plasma cannons and the death ambiance.
+Copy Cosmic Rage/misc/mainAmbiance.set and ships/shipCombat.set.
+427. Credits Vina and Frederick: Added a sound when you throw off a stun, Also added a sound for stun crystals.
+Copy Cosmic Rage/Combat/combat.set and sounds/general/combat/ThrowOffStun.wav and stun crystal.wav.
+426. Added ambiance for farms. DO note, your farm will need to contain the word farm in the room name for this to work correctly.
+Copy Cosmic Rage/misc/mainAmbience.set and sounds/ambiences/farm.wav
+425. Fixed a long standing bug that wouldn't stop the recharging sound when you left your ship and the sequence hadn't ended.
+Copy Cosmic Rage/ships/ships.set
+424. Corrected all errors with planetary music. Really. I mean that this time.
+Copy Cosmic Rage/misc/Music.set.
+423. Added sounds for entering and exiting gravity wells, and for when if by chance you run out of charge or power off the ship while in the gravity of the planet.
+Copy Cosmic Rage/ships/ships.set, Sounds/ships/misc/Grav1.wav, Grav2.wav, Clock.wav and Crash.wav.
+422. Credits, Olivia Bronze scale: It's the rising of the dead! No. Just joking. Death now has an ambiance of sorts.
+Copy Cosmic Rage/misc/mainAmbiance.set and sounds/ambiences/death.wav.
+421. I'm done messing with ambiance code unless I need to add more ambiance sounds. It's working as perfect as I can hope.  You will now hear the boarding and disembarking sounds for ships even with ambiance disabled. When you connect to the moo, all Ambiences are enabled ready to play unless you've toggled them off and either saved the settings manually, or let the auto-save feature do it for you. If you use either the #pc 0 stop command, or if you use the control-F11 key to stop all playing sounds, you will need to reenable planetary ambiance and music. This is an issue with VIPMud and can not be fixed by me. As far as I have been able to test, all Ambiences are working as they should and no longer giving errors.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set, misc/mainAmbiance.set, misc/music.set, misc/optionsmenu.set, ships/shipAmbiance.set, ships/ships.set and Cosmic Rage/vehicles/vehicleAmbiance.set.
+420. Time to get stoned. On music! Now when you toggle your ambiance settings, music is not effected. You will need to toggle planet music using the alt-shift-M keystroke. When you toggle planet music on, you will see the room just as you do with ambiance.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set, mainAmbiance.set, music.set, optionsmenu.set, Cosmic Rage/ships/shipAmbiance.set and Cosmic Rage/vehicles/vehicleAmbiance.set.
+419. Your soundpack will now unmute upon reloading the pack, and upon connecting to the moo.
+Copy Cosmic Rage.set and Cosmic Rage/misc/keys.set.
+418. Using the key Shift-F1, you can now, mute the intire soundpack excluding speech. Thanks Faylen for your help.
+Copy the intire Cosmic Rage directory
+417. Fixed an issue with ship ambiance and powering on or off your ship.
+Copy Cosmic Rage/ships
+416. Made changes to planet ambiance, ship ambiance, and vehicle ambiance. The odds of any of it throwing an error now are unlikely.
+Copy misc/keys.set, misc/MainAmbiance.set, ships/shipAmbiance.set and vehicle/VehicleAmbiance.set.
+415. Made the activate and deactivate sounds play when enabling or disabling newbie.
+Copy Comms.set
+414. gagged all text with you firing from battlesuits and gagged only voice from other firing from battlesuits, Added sounds for pulse guns on battlesuits, also gagged a lot of combat messages but allowed it to be view in the output, so it helps with fighting on the ground, plus fixed spelling mistakes with plasma cannons for the word cannon was spelld canon, and also gagged some sounds with ship combat plus added new sounds for your defensive armour being hit, and changed enemy locking sounds.
+Coppy combat/battlesuits.set, combat/combat.set, ships/shipCombat.set, sounds/cosmic rage/ships/combat/yourDefs1 through 3, sounds/cosmic rage/ships/combat/haslock1 through 4, and sounds/cosmic rage/general/battlesuits/pulseGun1 pulseGun2 and pulseGun3.
+413. Totally changed the way the folder containing the set files looks. It's easier to work this way.
+Totally get rid of the Cosmic Rage folder containing set files, be sure to backup your char set file, then copy over the new folder.
+412. Updated the Readme. Please read.
+Copy helpfiles/Readme.txt.
+411. Added ambiance for builders trucks.
+Copy vehicleAmbiance.set and sounds/Ambiences/build.wav.
+410. Fixed the sound for other people leaving and joining channels.
+Copy comms.set.
+409. Added alias's for turning on and off logon messages and AFK messages. The alias's are as follows. afkon, afkoff, logon, logoff.
+copy Cosmic rage.set 
+408. Added music for the following planets. Diana, Estrana, Mars, Mercury, Saturn, Jupiter, Uranus, Neptune, SDF Mining Station Eexei Othairus, Temrith and Valissianna.
+Copy mainAmbiance.set and sounds/music/planets.
+407. Thanks Max. Fixed an issue with enabling and disabling Soundpack Silent mode.
+Copy Cosmic Rage.set.
+406. Added ambiance for the following rooms on ships. Briefing rooms, capsules, cockpits, Command chambers, decks, Galley's, Holodecks, Living quarters, Observation rooms and spheres. Thank you Max for the sounds.
+Copy shipAmbiance.set and sounds/ships/rooms.
+405. Fixed a small bug with the automatic saving of settings.
+Copy optionsmenu.set.
+404. Change not found. Please press okay to continue to change 405.
+Copy the intire soundpack.
+403. Access to this change is forbidden. Please try again later. No but in all seriousness. Thanks to help from Max Wilson, Each type of ambiance now has it's own file to read from.
+Get rid of amb.set, copy Cosmic Rage.set, mainAmbience.set, shipAmbience.set, and VehicleAmbiance.set.
+402. Went in and fixed a bunch of errors in the options menu. Things should work as expected from now on. Also fixed a few errors with loading logged channels.
+Copy optionsmenu.set and buffers.set.
+401. Cleaned up ambiance code a bit, and fixed an issue with both Navu and Research Complex having the same planetary music track.
+Copy amb.set and sounds/music/planets/Research.wav.
+400. Did some work with the pulling up of the helpfiles. Also went and rewrote the entire keys file.
+Copy helpfiles, keys.set and optionsmenu.set.
+399. Added ambiance for the following rooms on factories. Access tubes, hangars, Crusharies, drone operations, control rooms, lounges, hangars and storage.
+Copy amb.set and sounds/Ambiences.
+398. You can now decide if you wish to hear the hourly announcement of the soundpack saving settings. To toggle this setting, use the key alt-Shift-S.
+Copy Cosmic Rage.set, keys.set, optionsmenu.set, and settings.set.
+397. Credits, Gorngon Orange designation: Your mapper will now alert you if it detects enemies.
+Copy combat.set and sounds/general/combat/enemy detected.wav.
+396. Fixed a major issue with the pack saving settings.
+Copy Cosmic Rage.set, keys.set and optionsmenu.set.
+395. Credits, Erik White scale:  cameras should be far less spammy now. This goes for any camera on the mud. Ship cameras, helper drones, security droids and security cameras.
+Copy misc.set, ships.set, and sounds/general/misc/Camera.wav
+394. In order to keep the pack at a reasonable size, I've taken out 30 of the 40 combat music tracks. On that same note, the message you get when changing combat tracks is now a bit more helpful.
+Copy keys.set, shipCombat.set, and sounds/music/combat.
+393. Credits, Jitel Gold scale: Reworked planet music from the ground up, and made big changes to combat music as well.
+Copy amb.set, Cosmic Rage.set, keys.set, shipCombat.set, delete and replace the intire music folder within the sounds directory, and go into ships/combat and get rid of the themes folder.
+392. Credits, Frederick Barnes131439: Added sounds for planetoid drones.
+Copy planetoid.set and sounds/activities/planetoid.
+391. Credits, gladr: Fixed star cores. Again.
+Copy StarCoring.set.
+390. Fixed a few things with washers and dryers.
+Copy misc.set and sounds/general/washing.
+389. Credits, Roxi Blue designation: Washers and Dryers have sounds now.
+Copy misc.set and sounds/Cosmic Rage/general/washing
+388. Using the key Control-Shift-R will reload your soundpack, and give you messages on the reloading progress.
+Copy keys.set and sounds/general/misc/reload.wav.
+387. Changed the sounds for leveling.
+Copy misc.set and sounds/general/level.
+386. The pack will now no longer play the intro music upon reloading.
+Copy Cosmic Rage.set.
+385. You can now toggle your speech in the soundpack itself. To do this, use the key Control-F1.
+Copy helpfiles/keys.txt, Cosmic Rage.set and keys.set.
+384. Changed sounds for translators of the ryuchi and dragons.
+Copy comms.set and sounds/general/comms.
+383. Hopefully fixed an ambiance issue with vehicles.
+Copy amb.set and vehicle.set
+382. Both new ship alarms have sounds.
+Copy ships.set, sounds/ships/misc/RatikaDetected.wav and intruder.wav
+381. Credits, ictheon: Aircraft now have sounds.
+Copy vehicle.set, and sounds/vehicle.
+380. Credits, geoffrey: Fixed errors when exiting your ships. Sorry this took so long to track down.
+Copy ships.set.
+379. Credits, Faylen. Added sounds for moon bases.
+Copy Moon.set and sounds/activities/moon.
+378. Credits, Frederick Barnes131439: Added sounds for battlesuits.
+Copy battlesuits.set, Combat.set, Cosmic Rage.set, sounds/general/battlesuit and sounds/general/combat.
+377. Made tons of changes to ship combat. Lets see if I remember them all. Added sounds for the solar canons, added more torp sounds, added more laser sounds, fixed a few errors I found, Added a sound when your ship hits another ship, Fixed errors with combat music, and more changes I don't remember.
+Copy shipCombat.set and sounds/ships/combat.
+376. Credits, Mora Blue scale: Changed the repair sounds for vehicles. You now have seven possible repair sounds when repairing.
+Copy vehicle.set.
+375. Made some needed changes to star coring. It should be far less spammy now, and you'll notice a few other new hidden things.
+Copy StarCoring.set.
+374. The hourly saving of the soundpack message has been shortened, and a sound has been added as well.
+Copy optionsmenu.set and sounds/general/misc/SpSave.wav.
+373. Credits, my cat. We now have new launching and landing sounds for beacon stations.
+Copy ships.set.
+372. Credits, Vina:  Hopefully fixed messages about repairing things on your ships.
+Copy shipCombat.set.
+371. Fixed ratika.
+Copy rats.set
+370. Credits, Ictheon Gray scale: A sound has been added when the shields are taken offline.
+Copy shipCombat.set and sounds/ships/combat/shieldsoff2.wav
+369. Fixed Red alert messages.
+Copy shipCombat.set.
+368. The sound for "Enemies retreating will now play again.
+Copy FC.set and sounds/general/comms/Cheer.wav.
+367. Fixed warp.
+Copy ships.set
+366. I've totally went and recoded flight control. Thank you Faylen for helping me test things.
+Copy Cosmic Rage.set, comms.set, FC.set, sounds/general/comms/FCGreen and FCRed.
+365. Fixed an issue with the pack loading, also turned down the intro music a ton. Sorry for those of you who reported it was to loud.
+Copy Cosmic Rage.set.
+364. Credits, Gladr: Changed the trigger for the debris drones returning to your ship. As Gladr put it, it would suck if you were chilling as a passenger, and you didn't know anyone was salvaging. then, wham!!!! Ratika are all up in your grill!
+Copy Salvaging.set.
+363. Totally recoded socials. Now, they should work over OOC channels, and they will respect if you have them turned off.
+Copy socials.set.
+362. Added a buffer for notices.
+Copy Buffers.set and misc.set.
+361. Credits. A sphere of light: When hosts shout things, you will now know about it in a much... Well, louder way.
+Copy socials.set.
+360. Fixed a bunch of host stuff.
+Copy hosts.set and sounds/hosts
+359. Credits. All those who want to slap me for breaking ambiance: Well, ambiance is fixed for moving around in ships and on planets. Sorry this took so long to track down.
+Copy amb.set.
+358. Credits. ictheon: Changed the key for short map text. It is now alt-S.
+Copy keys.set.
+357. Credits. Alex and ictheon: Fixed two issues with ship combat. First off, torps are now working as they should. Second, combat music will now stop when the ship is set to yellow alert.
+Copy shipCombat.set.
+356. Credits, ictheon:  Fixed drones docking to factories.
+Copy Factory.set.
+355. Credits, Mora Blue scale: You will now know once you have reached your destination if you have the GPS patch for mappers.
+Copy misc.set and sounds/general/misc/ArrivedDestination.wav
+354. Fixed more sound issues.
+Copy Sounds.
+353. Credits, Lara: Instead of viewing the Soundpack credits upon loading of the pack, you may now type SpCredits to view them.
+Copy Cosmic Rage.set.
+352. Auction buffers and sounds are fixed. How did they work in the first place, I'll never know.
+Copy Comms.set
+351. Changed the key for saving your soundpack settings. The key is now control-S
+Copy keys.set
+350. Credits, [Ictheon Gray scale:  Fixed Railguns.
+Copy shipCombat.set
+349. Fixed some sounds that the compression broke.
+Copy the intire sounds directory.
+348. Credits, Faylen: Added a sound and buffer for the distress channel.
+Copy Buffers.set, comms.set, and sounds/general/comms/distress.wav
+347. Combat music will now, you know, respect Combat Music volume. Also if you try to pick a random song, it will no longer throw errors at you. It will just give you a nice helpful message instead.
+Copy Keys.set and shipCombat.set, 
+346. Added tons and tons more combat music. This gives you 40 tracks you can play while in combat, switching between them whenever you'd like.
+Copy Keys.set, shipCombat.set, keys.set and sounds/ships/Combat/Themes
+345. Combat music will now die upon setting the ship to green.
+Copy shipCombat.set.
+344. You can now change combat music while in combat. Do note, this will stop all sound for a few moments while the music is being changed.
+Copy Keys.set and helpfiles/keys.txt.
+343. The size of the pack has been significantly reduced!
+Obviously copy the whole sounds directory.
+342. Changed the intro music. Hope you like it.
+Copy Cosmic Rage.set and sounds/music/intro.wav.
+341. I know you all wanted new ship Combat music, so you got it!
+Copy shipCombat.set and sounds/ships/combat/Themes
+340. Fixed torps and missiles.
+Copy shipCombat.set, sounds/ships/combat/missile1.wav, missile2.wav and yourTorps.wav.
+339. Credits, I forget: Teleporting is fixed. If it breaks after today, let me know.
+Copy misc.set.
+338. Added in buffers for announcements and changes.
+Copy buffers.set and Comms.set
+337. Seems I don't know how to do math. Anyway, the buffers list is fixed.
+Copy Buffers.set
+336. Credits, Gladr: Fixed an issue with destroying, I mean getting chunks from stars.
+Copy StarCoring.set.
+335. Credits, [Olivia: Planet music will now stop when you teleport to another place.
+Copy misc.set
+334. Fixed buffers.
+Copy Buffers.set
+333. Credits, quentin: An auction buffer has been created.
+Copy Buffers.set, comms.set and misc.set
+332. Credits, Vina: Added yet more Ratika stuff!
+Copy rats.set and sounds/ships/Ratika.
+331. Credits, vina: I've started working on Ratika. I will finish once I feel better. Let me know what you all think so far.
+Copy rats.set and sounds/ships/Ratika
+330. Added the rewards buffer.
+Copy buffers.set and Comms.set
+329. Credits, John Smith: Fixed star probes launching.
+Copy StarStudies.set.
+328. Credits, Erik White scale: Added a missions buffer. If I've left out any buffers, please let me know.
+Copy buffers.set and comms.set
+327. Fixed errors with movement keys, and fixed an issue with the auto-saving of the pack.
+Copy Keys.set, optionsMenu.set and Cosmic Rage.set
+326. The pack will now auto-save your soundpack settings upon disconnecting from the moo.
+Copy Cosmic Rage.set and optionsmenu.set.
+325. Changed the time period for the automatic saving of the soundpack. The pack will now auto-save once an hour.
+Copy Cosmic Rage.set and optionsmenu.set
+324. Made the pack load much faster.
+Copy Cosmic Rage.set
+323. Credits, [Max Willson: Added more normal room ambiance as well as ship ambiance. Also fixed the ship powering up bug.
+Copy amb.set, Cosmic Rage.set, ShipPower.set, Ships.set, sounds/ambiences/ and sounds/ships/rooms.
+322. The  heat shields dropping will now play a sound.
+Copy shipCombat.set and sounds/ships/misc/HeatShieldsAlarm.wav
+321. Changed the missile sounds.
+Copy sounds/ships/combat/missile1.wav and missile2.wav
+320. Updated the login and logout messages.
+Copy misc.set
+319. Fixed a huge error with buffer code.
+Copy comms.set
+318. Updated the Clanchat trigger.
+Copy comms.set
+317. Fixed an issue when pets would get hungry.
+Copy misc.set
+316. Changed the text for tracebacks. Now the message isn't as long, and it's a bit, well... Humorous.
+Copy comms.set.
+315. Added sounds for cargo nets.
+Copy ships.set, sounds/ships/misc/CargoNetLower.wav, NetSlam.wav, and Unwind.wav
+314. Fixed another ship ambiance issue.
+Copy amb.set and ships.set
+313. Added a sound when blueprint software is updated.
+Copy comms.set and sounds/general/comms/Blueprint.wav
+312. The state of Short map text was not saving. This has been fixed.
+Copy cosmic Rage.set, keys.set, and optionsmenu.set.
+311. I was getting annoyed at the way speech was saying clantalk. So, I did something about it.
+Copy comms.set
+310. Credits, Vina:  Made flight control messages look even more beautiful when Short map text is enabled.
+Copy comms.set
+309. Credits, Lara: Added another sound when you turn off your "Defensive systems
+Copy shipCombat.set and sounds/ships/combat/defoff3.wav.
+308. Credits, Vina: Added a sound to let you know repairs on a ship have been completed. Also fixed the ship repairing sounds.
+Copy shipCombat.set, ships.set and sounds/ships/misc/RepairComplete.wav
+307. Credits, Frederick Barnes131439: Added a sound for when the Atmospheric Generator stabalises.
+Copy Combat.set and sounds/general/combat/AtmosphericGenerator.wav
+306. Credits, Frederick Barnes131439: Added in a sound for when a grenade explodes in a room near you.
+Copy combat.set and sounds/general/combat/GrenadeExplodeNextRoom.wav
+305. Credits, Faylen: If you have short map text enabled, flight control messages will be shortened as well. If short map text is disabled, flight control messages will appear longer.
+Copy Comms.set.
+304. Made some changes to flight control. The message you see has been shortened, but the buffer for FC will still contain the full FC message. Please please let me know what you think, and if it's not liked, I'm more than happy to go back to the way it was before.
+Copy Comms.set.
+303. Credits, Arglarg: Added in a toggle to shorten your mappers output.
+Copy Cosmic Rage.set, keys.set, misc.set, optionsmenu.set, and helpfiles/keys.txt.
+302. Fixed a few more bugs with ambiance. A bug is still hanging around that if you're in certain rooms of a ship, ambiance won't switch upon powering on of the ship. If this happens to you, just move to another room and go back. That'll fix it. I'm doing all I can to fix these ambiance bugs, but you all must understand ambiance can't ever be 100 percent perfect. I don't care if it takes a week or a year. I promise, I will fix all the ambiance bugs.  Love you all.
+Copy optionsmenu.set and ships.set
+301. Credits, Erik White scale and Ilsa Schellenberg:  Fixed subatomic.
+Copy ships.set
+300. Updated the VIP1 version of the pack.
+Please see the soundpack info for the link.
+299. Because I finally got a good recording of my cat purring, You all have a new purr sound.
+Copy sounds/general/socials/purr.wav
+298. Ungagged the line about heat shields being reduced.  Sorry about that.
+Copy ships.set
+297. Fixed an error with transporting ships.
+Copy ships.set.
+296. The pack will now automatically save your soundpack settings every half hour as well as upon use of the sleep/quit commands. Please note, this sends nothing what so ever to the moo.
+Copy Cosmic Rage.set and optionsmenu.set
+
+295. Credits, Ulysses: Added a sound for firing the machine gun and rockets from within military vehicles.
+Copy vehicle.set and sounds/general/combat/MachineGun.wav
+294. Credits, Frederick Barnes131439: Added sounds for ground combat.
+Copy combat.set and sounds/general/combat.
+293. Fixed auction.
+Copy misc.set
+292. Fixed a few more errors with ship ambiance, also made powering on and off less spammy.
+Copy ships.set
+291. Added a sound for when someone requests you to follow them.
+copy misc.set and sounds/general/misc/LeadRequest.wav
+290. Did more work with babies. Hopefully you won't have any issues with them again.
+Copy Babies.set.
+289. Fixed errors with ship combat.
+Copy shipCombat.set
+288. Changed the keys for activating and deactivating soundpack silent mode. The new keys are control-alt-shift-RightBracket  to enable, and control-alt-shift-LeftBracket to disable.
+Copy helpfiles/keys.txt and keys.set
+287. The sound will now again play if you are hauled into an escape pod.
+Copy shipCombat.set
+286. Fixed another ambiance issue.
+Copy ships.set
+285. Fixed a major bug with the say buffer and translators.
+Copy comms.set.
+284. Added a menu where you can go and open up log files for all the channels on the game if you so wish. Do note however, that if a log file has not been created, you will get an error. To fix this, just use the channel you are trying to pull up the log for! The key to bring up the menu is shift-F2.
+Copy helpfiles/keys.txt, buffers.set and comms.set.
+283. Fixed a few issues with the new say buffer. Muse and ponder are now working correctly, and I've added yell in as well.
+Copy misc.set and socials.set.
+282. fixed baby eating and drinking looping issues.
+Copy sounds/general/baby.
+281. Added a say buffer. This buffer will capture the following things. Say, ask, muse, exclaim, ponder, chitter, growl, drone, space suit intercom, and it will also work with the mutariansi translators. All translator voice types will also work with this buffer. Enjoy!
+Copy buffers.set, comms.set and misc.set
+280. Added social from afar into the Private out of character Communication buffer.
+Copy Socials.set.
+279. Made the sound for babies eating and drinking loopable now. It makes more sense this way.
+Copy Babies.set.
+278. I have been hard at work with this all night. I now give you, a brand new looking buffers system!
+Copy Cosmic Rage.set, Buffers.set, and keys.set.
+277. Added a sound and buffer for the org channel.
+Copy Comms.set, keys.set and sounds/general/comms/org.wav
+276. Fixed a huge bug with Ambiences! Now they will start automaticly upon loading of the pack!
+Copy amb.set.
+275. You need no longer look when turning on ambiance. The pack will now do that for you.
+Copy keys.set and optionsmenu.set.
+274. Credets, [Marshall Ritchhart: Added back in the sound for G2A and added the G2A buffer!
+Copy comms.set, keys.set, misc.set and sounds/general/comms/G2A.wav.
+273. Fixed the news trigger. It will also play a sound when you land on a planet or dock to a factory or space station.
+Copy comms.set, misc.set and sounds/general/comms/News.wav. Answer yes to the replace files prompt.
+272. Fixed sounds when jumping, and updated the message you see when loading the pack.
+Copy Cosmic rage.set, jump.set, and sounds/ships/jump.
+271. Fixed a few ship ambiance issues.
+Copy ships.set
+270. Seeing as Christmas is now sadly over, I've changed the intro music.
+Copy Cosmic Rage.set and sounds/music/intro.wav.
+269. Fixed an error when your star gear gets ripped away from your ship in the star coring activity.
+Copy StarCoring.set and sounds/activities/Star Cores/explode.wav
+268. Added a sound for info computer notifications.
+Copy comms.set and sounds/general/comms/InfoComputerNotification.wav
+267. Got rid of a few unneeded triggers.
+Copy misc.set
+266. Fixed the error in combat.set, and added yet more ship sounds for transporting onto and from access tubes, also fixed the scooper sound, and changed the sound for exeting your ship.
+Copy combat.set, ships.set and sounds/ships/misc
+265. I've made a ton of changes today. Lets see if I can remember them all.  Fixed a trigger with combat, fixed a broken trigger with ships, fixed the sound for when you don't accept a drone, and I've gone through and weeded out several unneeded sounds. Thank you frederick barnes131439. More changes were made, but I don't remember them. I've been a fog thanks to sickness.
+If you can, I'd say just recopy the intire pack.  Thank you all for being amazing people!
+264. Credits, Jake:  Sector communication is now logged in the ship to ship comms buffer.
+Copy comms.set and ships.set
+263. Fixed Phasing.
+Copy Comms.set
+262. Navidad now has planet music!
+Copy amb.set and sounds/music/Navidad.wav
+261. Fixed airlocks I hope.
+Copy ships.set and sounds/ships/misc
+260. I am working on changing some major ship sounds for both general ship activity as well as ship combat. For now, let me know what you think of the new sounds that I have added to replace some of the old sounds. Some of the new sounds include defensive armour, obfuscation fields, shields, boarding the ship,  power on and off, docking and undocking, and I think I've forgot a few, but I'm tired.
+Copy ships.set and sounds/ship.
+259. Changed the music that plays in santa's slay.
+Copy misc.set and souns/general/misc/Christmas.wav
+258. Fixed a broken soundpacks channnel buffer.
+Copy Comms.set
+257. Change the soundpack to work with the mud's new soundpack system.
+Copy Cosmic Rage.set.
+256. Changed the structuring of the help files a bit.
+Copy helpfiles, keys.set and optionsmenu.set
+255. Added new sounds for the debris lasers, and fixed the toggle for old logon sounds.
+Copy Cosmic Rage.set, keys.set, optionsmenu.set, misc.set, salvaging.set, ships.set, and sounds/ships.
+254. Updated Cosmic Rage.set and misc.set to fix duplicate triggers and variables.
+Copy Cosmic Rage.set and misc.set
+253. Fixed airlocks.
+Copy ships.set
+252. We now have new combat sounds. But I'm leaving it up to you to find them.
+Copy sounds/ships/combat.
+251. Fixed ship issues when moving in manual mode.
+Copy Cosmic Rage.set, keys.set, optionsmenu.set, and ships.set
+250. Took out, um, a very crudely named variable that wasn't really breaking things, but it should have never ended up in the public code. Oops.
+Copy Comms.set.
+249. Stop slamming into walls. It hurts.
+Copy Misc.set and sounds/general/misc/Wall.wav
+248. Added sounds for the bombing mission.
+Copy ShipCombat.set and sounds/ships/combat
+247. Most of, if not all errors with ship combat should hopefully be fixed. If you notice any errors, please report them.
+Copy shipCombat.set.
+246. Fixed yet more ambiance issues.
+Copy Amb.set, keys.set, and vehicle.set.
+245. Guys, next time you see Faylen, give her a hug! She has helped to fix ship ambiance!
+Copy Amb.set!
+244. Ever get annoyed with the message, "Debris  salvaged by drone?" Well fear no more! I now give you, Silent salvaging mode! With the press of a keystroke, you will no longer hear the message, or the salvaging sound!
+The keystroke is control-alt-S.
+Copy Keys.set and salvaging.set.
+243. Made some major changes to the way old Earth cars work. Added in more sounds, and You should no longer have an issue with the ambiance either not starting at all, or getting stuck.  Let me know if you find any bugs please.
+Copy Amb.set, cars.set, Cosmic Rage.set, vehicle.set and sounds/general/cars
+242. Added more weather messages, also you can now gag weather messages, or toggle them off all together.
+Copy Weather.set and sounds/general/weather.
+241. I've hidden a secret in the pack.  Just send someone something in a drone.
+Copy misc.set and DroneBuzz.wav.
+240. Added sounds for old earth cars!
+Copy Amb.set, cars.set, Cosmic Rage.set, vehicle.set, and sounds/ambiences/OldCar.wav, and sounds/general/Cars.
+239. This isn't a change to the soundpack necessarily, but it is a change to how the soundpack reacts with VIPMud2.0.  Included in the root of the soundpack folder, you will see a file called Sounds.ini.  This file tells VIP how to handle the playing of audio files. For example. Ever been on a mission and had error after error thrown at you because you were blowing up tons of ships? This is do to the fact that by default, VIP2.0 can only play 35 sounds at a time before it gives up.  I have changed it so now VIP can play up to 100 sounds at a time.
+Do note however, if you have limited RAM, I'm not sure how this will effect your machine. If you have say under 2gb of memory, I don't advise copying sounds.ini.  If however you do wish to copy the file it goes in your documents/vip Mud directory.  So for example, C:\Users\Snapp\Documents\VIP Mud/sounds.ini, and answer yes to the rplace file prompt.
+
+238. Added in a sound for the change regarding entering a sector or field with enemies in it.
+Copy ShipCombat.set and sounds/ships/misc/buzzer.wav
+237. Added a sound for when someone places an order for something.
+Copy misc.set and sounds/general/misc/Order.wav
+236. Credits, Jake:  Fixed an error with trolley things, and addded in a sound for when the shields fail in ship combat.
+Copy shipCombat.set, trolley.set, and sounds/ships/combat/ShieldsFail.wav
+235. Seeing as the Christmas holiday has now arrived, I thought it rather fitting to change the intro music. The intro music will now stop upon your logging in of the moo as well.
+Copy Cosmic Rage.set and sounds/music, and answer Yes to the replace files prompt.
+234. Ha. 234 They are right next to... Oh wait the change.  Worked with in/ship comms slightly, so now everything is logged in the PA buffer if /ship roomname is used. I even logged /ship outside messages.
+Copy Comms.set, ships.set, and sounds/ships/Com/PA3.wav
+
+233. Added numbers to the buffer system, also changed the names of a few buffers.
+Copy Keys.set
+232. Fixed all the spam issues with trolleys, also fixed the issue with it playing the "I don't understand that" Sounds when you typed dump
+Copy trolley.set.
+231. Credits, A ball of slime named Jace: Added sounds for the waypoint mission!
+Copy Cosmic Rage.set, Waypoints.set, and sounds/ships/Waypoints
+230. Fixed the trigger when the wind hits you in the face before a ship lands.
+Copy ships.set and sounds/ships/misc/Wind.wav
+229. Credits, John Smith: You've asked for it, and I now give you... Sounds for launching and landing on Asteroids!
+Copy Ships.set, sounds/ships/misc/AsteroidLand.wav and AsteroidLaunch.wav.
+228. Added a sound for when doors on merchant ships decide you can board or disembark.
+Copy ships.set, and sounds/ships/misc/Doors.wav
+227. Credits, Jake barnsworth: Fixed a few broken triggers with ships. Now you can get annoyed each time a ship lands.
+Copy ships.set
+226. Credits, Rheeni Purple scale: Fixed an issue where people were having variable errors thrown at them.
+Copy Settings.set
+225. Credits, Mora Blue scale: Fixed a few errors with vehicles not behaving.
+Copy vehicle.set.
+224. Credits, Faylen: Fixed both broken buffers for private comms.
+Copy Comms.set and Keys.set
+223. Added a new landing sound for ships.
+Copy sounds/ships/misc/Landing.wav
+222. Fixed yet more ship ambiance issues.  Now ship ambiance will stop playing once the ship has been powered down, and will start once the ship has been powered up.  Also, fixed an issue with the sound not playing when you installed something into a powered up ship.
+Copy ships.set.
+221. Fixed a few errors with ship ambiance that was broken.  This is a work in progress, so please don't expect everything to be fixed in one day.  If you run into bugs, or have found bugs, please please report them.  
+Copy amb.set, Cosmic rage.set and ships.set.
+220. Private OOC and IC Comms now have separate buffers!
+Copy Comms.set
+219. Fixed train Ambiences.
+Copy Trains.set and sounds/general/trains.
+218. Added sounds for the volcano mining activity.
+Copy Cosmic Rage.set, VolcanoMining.set and sounds/activities/VolcanoMining.
+217. I've fixed all the things to do with jets, put jets in a little set file all of it's own, and put all the jet sounds in a single folder.
+Copy Cosmic Rage.set, Jets.set, misc.set, sounds/general/jets, and recopy sounds/general/misc.
+
+216. Finally fixed that annoying firework bug! Now go blow stuff up!
+Copy misc.set, get rid of firework1/8, and copy firework 1/8.
+215. To the lovers of the old logon/logoff sounds, rejoice! You now have an option in the options menu to enable the old logon sounds! Enjoy!
+Copy Cosmic Rage.set, misc.set, optionsmenu.set, and sounds/general/misc/LoginNew.wav, loginOld.wav, LogoutNew.wav and  LogoutOld.wav.
+214. Added a sound for when something gets listed on the market!
+Copy Misc.set and sounds/general/misc/Market.wav
+213. Credits, Jake: When a weapon uses light to recharge itself, the pack now cuts that message in hhalf, and plays a sound.
+Copy combat.set and sounds/general/combat/Beep.wav
+212. Credits, Jake: Added a sound for when the game saves.
+Copy Misc.set and sounds/general/misc/GameSave.wav
+211. Oh. seems I can't spell chirp. It's spelled with an I, not a U.
+Copy vehicle.set
+210. Credits, Tora: Added a sound for the skill timer!
+Copy Comms.set and sounds/general/comms/SkillTimer.wav
+209. Fixed all the broken things with refuelling  your subatomic drive.
+Copy ships.set and sounds/ships/misc/SubAtomicFuelPump.wav
+208. Gagged helper drone messages a significant amount!  I hope you all like it!
+Copy misc.set
+207. Added factory announcements to the PA buffer, also changed the name of the PA buffer from "In Ship Pa," To just PA.
+Copy Factory.set and keys.set.
+206. Fixed an issue with factory PA.
+Copy Factory.set
+
+205. Trains now have an ambiance, added more star coreing sounds, fixed a few broken buffers, and fixed a few issues with volumes not saving.
+Copy Amb.set, Comms.set, Cosmic Rage.set, keys.set, optionsmenu.set, misc.set, StarCoring.set, trains.set, and sounds/activities/star cores.
+204. Credits, Lara: the bugs with socials, combat volume, and ship volume have been found and fixed. Who knew one simple plus sign was to blame.
+Credits, Tora: added in a sound for raising levels.
+Credits, Frederick Barnes131439: added a sound for when a config drone takes something into a hatch.
+Copy Cosmic Rage.set, keys.set, misc.set, ships.set, and sounds/general/Level/Raise.wav, and sounds/ships/misc/Installing.wav.
+
+203. Added buffers for the following channels. Squadren, Clanchat, and the RP channel.  I know I've left out a few channels such as rewards channel, the chargen channel and the lib channel, but seeing as they are used so little, I don't see the point. If you think otherwise do let me know.
+Copy Cosmic Rage.set, comms.set, keys.set, and sounds/general/comms/SQD.wav
+
+
+202. Found, and squished an annoying socials bug.
+Copy Cosmic Rage.set and optionsmenu.set.
+201. Added in a buffer and a sound for the new ship to ship comms.
+Copy Cosmic Rage.set, comms.set, keys.set, and general/comms/ship2ship.wav
+200. I think this change is worthy of being change number 200. At long long last, I give you, Buffers! Using right and left arro to cycle through the available buffer choices, you can use alt 1 through alt 0 to read the last 10 items in that buffer. This is handy if your output window is being spammed or if you missed something.  I plan to add more buffers soon, but this is what I was able to do in a few hours. I hope you all enjoy, and if you run into any issues or have questions, let me know.
+Copy Cosmic Rage.set, Comms.set, Misc.set, and Ships.set.
+199. Added more sounds for star coring.
+Copy Cosmic Rage.set, StarCoring.set and activities/star cores.
+198. Fixed a few triggers for ships, also finally, the docking sound will only play once when docking a ship to an object.
+Copy Cosmic Rage.set and ships.set
+197. Added in sounds for in-ship comms.
+Copy Cosmic Rage.set and Ships.set
+196. Added sounds for the following channels. Drone, SDL, JAG and MI.
+Copy Cosmic Rage.set, Comms.set, and sounds/general/comms/Drone.wav, MI.wav, Jag.wav, and SDL.wav
+195. Added a sound for SubAnnouncements.
+Copy Cosmic Rage.set, Comms.set and sounds/general/comms/SubAnnouncement.wav
+194. I've added a feature that will silence your soundpack. Please note that all sounds will stop playing, and all text will be spoken, not gagged until you disable the silent feature.
+Copy helpfiles, Cosmic Rage.set, and keys.set.
+193. I think I'm finally done working with star studies.
+Copy Cosmic Rage.set, StarStudies.set, and sounds/activities/star study/ProbeReturn.wav
+192. Fixed the broken things with the trolleys.
+Copy Cosmic Rage.set and trolley.set.
+191. Added a sound for the SDL channel.
+Copy Comms.set, Cosmic Rage.set, and general/comms/SDL.wav
+190. Added six more firework sounds.
+Copy Cosmic Rage.set, misc.set and general/misc/firework*7.wav
+189. This change is a rather big one, and VIP1 users will be happy!  Changed and fixed the following issues.  Thank you nate for all your help.  took out the trigger about the overhead lights shining a * color, removed the merchants trigger, because its not a channel  any longer, fixed a few triggers where I had specified a color or something, added the variable vipversion, which by default is 1. set it to 2 for vip 2. in vip 1, it does not load babies.set, or horses.set, also, the star core triggers that are just gagline all are not gagged in vip 1,  fixed the assist trigger, taken out a few old triggers, and combined two triggers.
+Copy amb.set, comms.set, Cosmic Rage.set, hosts.set, misc.set and StarCoring.set
+188. Made it so that when you type sp version, the soundpacks channel sound plays once again, also when a pack is updated, the soundpack sound shall play.
+Copy Comms.set and Cosmic Rage.set
+187. Fixed the recharging sound, and added new sounds for obfuscation fields.
+Copy Cosmic Rage.set, ships.set, shipCombat.set, sounds/ships/combat/ObfOn.wav and ObfOff.wav
+186. I'm not telling you what this change is, just go take a ride on santa's slay!
+Copy Cosmic Rage.set, misc.set, and sounds/general/misc/WeWishYou.wav
+185. Couldn't sleep, so I've done some  major work in the general sounds folder. Also changed the traceback trigger slightly.
+Copy Cosmic Rage.set, misc.set, and sounds/general.
+184. Changed the Change sound.
+Copy Cosmic Rage.set and general/comms/Change.wav.
+183. Added and fixed a sound for when news is posted.
+Copy Comms.set, Cosmic Rage.set and general/comms/NewsPosted.wav
+182. Added sounds for stargates.
+Copy Cosmic Rage.set, shipCombat.set, ships/misc/stargate.wav, StargateFlash.wav, and stargateNotification.wav.
+181. The pack will automaticly save upon toggling of options such as salvage text, socials, drone sounds, ETC when the associated keystroke is used.  Please type keys for information on available keystrokes. Also, tracebacks are now logged for those of you who often forget the ID of a traceback.
+Copy Cosmic Rage.set, Misc.set,  and Keys.set.  The tracebacks log will show up in the logs folder.
+180.  Fixed the soundpacks trigger and changed the way that channel is logged.
+Copy Cosmic Rage.set and Comms.set. Also go into the logs folder inside of the cosmic rage folder containing the set files, and get rid of SP.log.  The new soundpacks log file will be created upon use of that channel.
+179. Added a sound for the Unsec channel, and fixed a few channels that were not being logged.
+Copy Cosmic Rage.set, general/comms/Unsec.wav, and Comms.set.
+178.  Seeing as the power on/off sequence has been changed, I've made changes to the pack as well.
+Copy Cosmic Rage.set, ships.set, ships/misc/lights.wav and garage.wav
+
+177. Thanks frederick for the help with this one.  Updated trolleys so that they do what I want!  You are no match for me, well, not me but... Anyway.
+Copy trolley.set and Cosmic Rage.set
+176. Fixed a few errors with star studies.
+Copy StarStudies.set and Cosmic Rage.set
+175. It would seem I broke ships at some point yesterday.  That has now been fixed.
+Copy Ships.set and Cosmic rage.set.
+174. Made a few small changes to salvaging.  Thanks to [Frederick Barnes131439 for his help.
+Copy Salvaging.set and Cosmic Rage.set
+173. Added a few small messages for when you turn on/off socials.
+Copy Keys.set, socials.set, and Cosmic Rage.set
+172. Added keyboard sounds when you turn on/off the "Obfuscation field
+Copy shipCombat.set and Cosmic Rage.set.
+171. Gagged hharvesting. Again.
+Copy CosmicRage.set and planetoid.set.
+170. Added sounds for the new "Obfuscation fields.
+Copy shipCombat.set and Cosmic Rage.set
+169. Fixed star studies for the last time I hope.
+Copy StarStudies.set and Cosmic Rage.set
+168.  Fixed the rooc trigger.
+Copy Comms.set and Cosmic Rage.set
+167.  Took out classes for now as they were having issues.  Sorry.
+Copy Cosmic Rage.set, volcanoHarvesting.set, trash.set, StarStudies.set, StarCoring.set, salvaging.set, rats.set, planetoid.set, moon.set and mechanicalMining.set.
+166.  Fixed all of the issues with star studies and it's class, and also added some new sounds.
+Copy Cosmic Rage.set, StarStudies.set, activities/star study/GravBattle.wav and SolarEnergy.wav
+165. Fixed some errors with ship combat. Thanks again to Frederick Barnes139439 for bringing this to my brain.
+Copy Cosmic Rage.set and Ships.set.
+164.  For ease of use, I've put things in classes for harvesting and all of the major activities.  I have more to do with that tomorrow.
+Copy Cosmic Rage.set, volcanoHarvesting.set, trash.set, StarStudies.set, StarCoring.set, salvaging.set, rats.set, planetoid.set, moon.set and mechanicalMining.set.
+163. Added sounds for the star coring activity.  Thanks goes out to Frederick Barnes139439 for his help with this.
+Copy Cosmic Rage.set, StarCoring.set, and activities/star cores.
+162.  Fixed all the things with drinkings.
+Copy Cosmic Rage.set and misc.set
+161. Added sounds for an event that is taking place.
+Copy Cosmic Rage.set, Combat.set, and general/combat
+160. Took out all instances of alt computer announcements. They never worked in the first place, and I have not fixed them yet.
+Copy Cosmic Rage.set, Factory.set, ships.set and optionsmenu.set.
+159.  Added a sound for when a sector is about to get bombed.
+Copy Cosmic Rage.set, Comms.set and general/comms/bomb.wav
+158. Fixed another issue for the hosts.
+Copy Cosmic Rage.set and Hosts.set.
+157. Fixed an issue when you hit another ships defensive systems.
+Copy Cosmic Rage.set and shipCombat.set.
+156. Fixed a small issue for the hosting team.  Sorry, don't boot me from the moo!
+Copy Cosmic Rage.set and hosts.set
+155. Added sounds for transporting a ship to and from a hangar.
+Copy Cosmic Rage.set, ships.set, ships/misc/hangar.wav, and hangar2.wav.
+
+154. Fixed some things for the hosts of the game. If you run into any issues, please let me know.
+Copy Cosmic Rage.set and hosts.set.
+153. Hopefully fixed an odd issue when you were to install a module on a ship.
+Copy Ships.set and Cosmic Rage.set
+152. Fixed an issue when a ship was set on yellow alert.
+Copy Cosmic Rage.set and shipCombat.set.
+151. Fixed all of the drinking bugs hopefully. So you may all now drink your beautiful selvs to sleep.
+Copy Cosmic Rage.set and misc.set
+150. Did some major work with communications, and the way they are logged.  Thanks goes out to the all powerful n8 for his help!
+Get rid of Logging.set, copy Comms.set and Cosmic Rage.set
+149. Spam! Spam! Spam! Gagged some stuff in debris refineries.
+Copy factory.set and Cosmic Rage.set
+147. Added sounds for quantum Drives!
+Copy ships.set, cosmic rage.set, Ships/misc/Lever1.wav, ships/misc/WarpCoreOpen.wav and ships/misc/QuantumDrive.wav
+146. Fixed the Music FM trigger.
+Copy comms.set and Cosmic Rage.set
+145. Added the sound for when roundtime is up.
+Copy misc.set, cosmic rage.set, and general/misc/roundtime.wav
+144. Added a sound when you need to read both changes and announcements!
+Copy Cosmic Rage.set and misc.set
+143. Added a few more sounds for combat.
+Copy Combat.set , Cosmic Rage.set, and general/combat/reload.wav and OutOfAmmo.wav
+142. Added sounds for eating and drinking.
+Copy Misc.set, Cosmic Rage.set and general/Food and drink.
+141. Fixed an error with room volume.
+Copy Keys.set and Cosmic Rage.set
+140. Fixed the trigger with mappers.
+Copy Cosmic Rage.set, and Comms.set
+139. Fixed the groundtroops invading trigger, and added a sound for when groundtroops retreat.
+Copy Comms.set, cosmic rage.set and General/misc/cheer.wav.
+138. Because I was about to throw VIP out of the nearest window because I couldn't search backwards, I have now fixed that little issue.  The new keys for adjusting room volume are Shift-f3 and Shift-f4 respectively.
+Copy Cosmic rage.set, and keys.set
+137. Fixed the gagging of some messages with star studies. The messages will still show up in your output window, but will not be spoken.
+Copy Cosmic Rage.set and StarStudies.set.
+136. Fixed the vehicle movement bug where overall pack volume wasn't controling movement volume.  Sorry about that.
+Copy Cosmic Rage.set and vehicle.set
+135. Added a sound for when you exit the rift.
+Copy Cosmic Rage.set, ships.set, and ships/misc/ExitRift.wav.  Replace the file that is already there.
+134. Added a sound for invading ground troops.
+Copy Comms.set and Cosmic Rage.set
+133. Fixed a bug with Clantalk that would show up for some players.
+Copy Comms.set and Cosmic Rage.set
+132. Added the control-f11 keystroke to stop all playing sounds should you ever need to do so.
+Copy Keys.set and Cosmic Rage.set
+131. Added a few sounds for farming, and I plan to add more soon.
+Copy Farming.set, Cosmic Rage.set and activities/Farming.
+130. Fixed brroken ambient stuff for ships.
+Copy Cosmic Rage.set, amb.set and Ships.set
+129. Added sounds for turning on/off Ooc Communications.
+Copy Cosmic Rage.set and comms.sedt
+128. Added a sound for when a sector is being invaded.
+Copy Comms.set and Cosmic Rage.set
+
+127.  Fixed an error that would occur when moving between rooms in a powered down starship.
+Copy Cosmic Rage.set and amb.set
+126. Fixed the landingPad Looping issue.
+Copy Cosmic Rage.set and ambiences/LandingPad.wav
+125. Reverted some sounds back to the way they were yesterday morning.  If not liked, please let me know, and feel free to replace them with sounds of your liking.  For convenience, just go ahead and copy the whole cosmic rage/general folder again.
+Copy Cosmic Rage.set and the cosmic rage/general folder.
+124. Fixed something that was broken in the logs.set file.  Clantalk will now log the way it was meant to.
+Copy Logging.set and Cosmic Rage.set
+123.  Changed the launching and landing sound for ships.
+Copy ships/landing.wav and launch.wav
+122. Added sounds for horses.
+Copy Cosmic Rage.set, Horses.set and general/horses
+121. Changed the private IC Comm sound, the newbie sound, and the general sound.
+Copy general/privcom.wav, newbie.wav, and general.wav.
+120. Added a sound for Intercoms in dwellings.
+Copy general/comms/Intercom.wav
+119. Made a new landingPad sound.
+Copy ambiences/LandingPad.wav
+118. Added a sound for when someone socials at you from afar.
+Copy Socials.set , Cosmic Rage.set and general/socials/SocialFromAfar.wav
+117. Fixed a typo in one of the Comms triggers.
+Copy Comms.set and Cosmic Rage.set
+116. Fixed the Say sound.
+Copy general/misc/say.wav
+115. Changed the login/logout sounds.
+Copy general/misc/Login.wav and Logout.wav
+	114.  Fixed the news trigger.
+Copy Misc.set and Cosmic Rage.set
+113. Added a sound for the sport channel.
+Copy Comms.set, Cosmic Rage.set and general/comms/Sport.wav
+112. Added a sound for the Tactical channel.
+Copy Comms.set and Cosmic Rage.set
+111. Removed the sound for when you check your inventory because someone had an issue with it.
+Copy Misc.set
+110. I was bored, so you now have a sound when typing credits.
+Copy Cosmic Rage.set and misc.set
+109.  I think, perhaps I have all IC and OOC channels being loged now.
+Copy Logging.set and Cosmic Rage.set.
+Also copy the logging folder into your cosmic rage folder that contains all of the set files. Not doing so will throw errors at you.
+108. Made the logging system put things in a separate folder. After all, I do like to be organised.
+Copy logging.set and Cosmic Rage.set
+107. Added a sound for when your mail gets sent.
+Copy comms.set, cosmic rage.set and general/comms/MailSent.wav.
+106. Because Snapp doesn't always make your normal fireworks, I've made it so no matter what the object, it will always have a sound.
+Copy Misc.set and Cosmic Rage.set
+105. Added sounds for when you have been sent an OOCLink request, Also added a sound for if a request you have sent has been denied.
+Copy Cosmic Rage.set, general/comms/OOCDenied.wav and OOCRequest.wav.
+104. Added a few more channels to be logged.
+Copy logging.set and Cosmic Rage.set
+103. Took out all triggers for flight control scanners as they are no longer being used.
+Copy comms.set and Cosmic Rage.set
+102. Added a feature to log the most widely used channels into their own separate log files. The logs are located in your cosmic rage folder, and the triggers are located in logging.set.
+Copy Cosmic Rage.set and logging.set.
+101. Added a sound when you manually stop your ship.  A note of interest, please use Control+Shift+F8 to enable alt shipengine.  If this isn't done, there is a chance it won't work.
+Copy Cosmic Rage.set and ships.set.
+100. Added sounds for launching and docking into ships docking bays.
+Copy Cosmic Rage.set, ships.set ships/misc/LaunchFromDockingBay.wav, Lever1.wav, and DockingBayDock.wav.
+99. Updated the mail trigger to work with the new mail system.
+Copy Cosmic Rage.set and comms.set
+98. Added many sounds for trains!
+Copy Cosmic Rage.set, Trains.set, and general/trains.
+97.  Added a small something to have the pack tell you the last change it sees in the changelog upon loading of the pack.
+Copy Cosmic rage.set.
+96. Fixed a broken trigger in the trash.set file, and changed the name of the file that is played.
+Copy Trash.set and ships/misc/whine.wav
+95. Lowered the Enemies inbound sound by half.  Sorry Rani.
+Copy ships/combat/Enemiesinbound.wav
+94.  Added a sound for when Mutariansi say, think something.
+Copy comms.set and general/comms/Mutariansi.wav
+93. Fixed the sound for when a volcano is about to erupt. Before it was based off of flight control, but with the mappers, that has all changed.  Thank you Faylen for the idea.
+Copy comms.set
+92. Added a sound for when those evil Shalka step from the shadows.
+Copy combat.set and general/combat/Shalka.wav
+91. Seeing as I stupidly got rid of about half of the comunication set file, I've replaced it with a backup for now until I can fix what's broken.  I'm so sorry.
+Copy Comms.set
+90. Made the report sound for dark matter mining louder.
+89. Fixed a broken trigger with factories.
+Copy Factory.set
+88. Oops.  There was a file missing for babies.  That's been fixed now.
+Copy general/baby/babyhappy.wav
+87. Fixed a trigger for subatomic refuel.
+Copy ships.set
+  86. Fixed a broken trigger for when you land on a factory.
+Copy ships.set
+85. Added sounds for when you have been sent text and picture messages.
+Copy comms.set, general/comms/PictureMessage.wav and TextMessage.wav
+84. Deep space repairing have sounds now. Wasn't that rather fast of me to get that done?  If you run into any issues, use the @spbug command to file them.
+Copy Cosmic rage.set, DeepSpaceRepair.set, ships/DeepSpaceRepair/BatteryDrain.wav, Crash1.wav, Crash2.wav, PowerOff.wav, PowerOn.wav, Repair1.wav, repair2.wav and Repair3.wav
+83. Fixed a broken trigger with jets.
+Copy misc.set
+82. Added sounds for enabling and disabling holovids.
+Copy shipCombat.set, ships/combat/HolovidOn.wav, HolovidOff.wav and Lever.wav
+81. Added new sounds for jets.
+Copy misc.set, doorsclosed.wav, doorsopen.wav, and  jetFlight.wav.
+80. Added a few more sounds for babies.
+Copy Baby.set and general/Baby/babyhappy.wav and babydrink.wav
+79. Rewrote the star studies triggers so that they only gag speech. The messages still appear in the output window.
+Copy StarStudies.set
+78. Fixed a broken trigger with babies.
+Copy babies.set
+77. Gagged out some lines in star studies.
+Copy StarStudies.set
+76. Added a sound for when you adjust the settings on an Earpiece or radio.
+Copy comms.set and general/comms/Tune.wav
+ 75. Added a sound for when a news artical is posted.
+Copy misc.set and general/comms/news.wav
+74. Added a sound for when an advertisement gets put up.
+Copy misc.set and general/misc/advertisement.wav
+73. Changed the ooc private comunication sound to something a bit more interesting.
+Copy general/comms/PrivOOCCom.wav
+72. Added sounds for windchimes.
+copy general/misc/chimes.wav
+71. Added a sound for setting your ship to yellow alert.
+Copy ships.set and ships/combat/yellowAlert.wav
+70. Changed the key for toggling combat music back to control-shift-C
+Copy keys.set
+69. . Took out the alternate ship computer sounds as people had reported buggs with them, and I couldn't figure out what was broken.  Sorry to those of you who liked the idea, perhaps I'll fix it again someday.
+Copy keys.set and ships.set.
+68. Fixed a broken trigger for ship combat.
+Copy shipCombat.set
+67. Added a sound for the debris laser.
+Copy ships.set and ships/misc/DebrisLaser.wav
+66. Added activate and deactivate sounds for all of the OOC channels I think.  If I've missed any, please let me know.
+Copy comms.set
+65. Moved a few things around for internal ship combat.
+Copy InternalShipCombat.set and ships.set.
+64. Moved the star studies stuff into it's own set file.
+Copy Cosmic rage.set, ships.set and StarStudies.set.
+63. Added sounds for turning off Earpeaces, moon scanners, star scanners, meteor scanners, radios and mappers.
+Copy Comms.set
+62. Changed the sounds for when you board or exit a ship.
+Copy ships/misc/BoardShip.wav and ExitShip.wav
+61. Changed the sound for when the moo sends you a notice.
+Copy General/misc/ding.wav
+60. Evacuate! Evacuate!  Added a sound for those times military officers are asked to head to boarding points.  I'm not sure if it works however, so if not, let me know.
+Copy misc.set
+59. Added sounds for blades and swords.
+Copy combat.set and general/combat
+58. fixed an odd bug where the intro music wasn't playing for some people.
+Copy Cosmic rage.set
+57. Changed the Soundpack channel sound.
+Copy general/comms/sp.wav
+56. Added a sound for the trade channel.
+Copy comms.set and general/comms/trade.wav
+55. Changed the way room OOC is reported.
+Copy Cosmic rage.set
+54. Added a sound for when your ships computer prompts you for a passcode if you have one set.
+Copy ships.set and ships/computer/PasscodeRequired.wav
+53. Added a sound for when you type save.
+Copy Misc.set and general/Misc/SaveData.wav
+52. Added sounds for when you are moved, and returned from an assist.
+Copy Misc.set and general/Misc/HostIn1.wav and HostOut3.wav
+51. Added sounds for dark matter mining.
+Copy Cosmic rage.set, DarkMatterMining.set, activities/Dark matter mining/Attack.wav, cheer.wav, DroneReturn.wav, DroneScuff.wav, Keyboard1.wav, MiningDronesReturn.wav, Report.wav, and Trumpet.wav,
+50. Added another sound for babies!
+Copy babies.set and babylaugh.wav
+49. Added sounds for sub-atomic fuel pumps.
+Copy ships.set, ships/misc/AttachPump.wav,, Lever1.wav, Lever4.wav, FuelLineReplace.wav and SubAtomicFuelPump.wav
+48. At long last, There are now sounds when babies eat and drink and burp.  Note I plan to add much more, but this is all I could think of right now.  Any suggestions are welcome!
+Copy Cosmic Rage.set, babies.set, general/babies/babyburps.wav, babydrinks.wav, babyeat.wav, and babywhine.wav
+47. Added a sound for when you stupidly try to install a module in a powered up starship.
+Copy ships.set and ships/misc/electrocute.wav
+46. Changed the control room sound.  That other one really bugged me.  To many beepy things.
+Copy ships/rooms/ControlRoom.wav
+45. I was not going to log this because I feel stupid, but I fixed all of the triggers for star studying. Sorry about the brokenness.
+44. Seems I got rid of the heat shields trigger.  I've fixed that now.  Sorry about that.
+43. Gagged the line for transferring star data.
+Copy ships.set
+42. Added a sound for setting ones course.
+Copy ships.set and ships/misc/courseSet.wav
+41. Fixed the line for when a pet takes a drink from a bowl.  Stupid me forgot that not everyone likes the color blue.
+Copy misc.set
+40. Changed the sound when you use the sleep or @quit or ragequit commands.
+Copy general/misc/quit.wav
+39. Changed the flight control sound.
+Copy General/comms/FC.wav
+38. I can't remember how I forgot to log this! Changed the sounds for lifts.
+Copy general/misc/lift.wav and liftopen.wav
+37.  Changed the music for when you connect to the moo.
+Copy Cosmic rage.set and general/misc/logo.wav
+36. Changed the messageboard notification sound.
+Copy general/misc/mbn.wav
+35. Fixed the invasion sound for mappers.
+Copy comms.set.
+34. Added a sound for your fuel readout.
+Copy ships.set.
+33. Added sounds for when you tap a button on the airlock and warp fuel display readout.
+Copy keypress1-4.wav and ships.set.
+32. Added some more display sounds for the ship's computer.
+Copy ships/computer/display1-4.wav, ships.set and factory.set.
+31. Changed the keys for combat music.  The new key is Control+Alt+C.
+Copy keys.set.
+30. Added alternate computer announcement sounds.
+Copy ships/computer/altAnnounce1-4.wav, optionsmenu.set, ships.set, keys.set, cosmic rage.set and helpfiles/keys.txt.
+29. Updated optionsmenu.set to the latest version.  Thanks goes out to Paul for letting me know my version wasn't up to date.
+28. Added sounds for locking onto a star, and when the data transfer has been completed.
+Copy ships.set, {Cosmic Rage/activities/star study/LockingOn.wav, and {Cosmic Rage/activities/star study/TransferComplete.wav
+27. Raised the volume of the IC private comunication sound.
+Copy general/coms/privcom.wav
+26. Added a sound for when your star probes get sucked into a star.
+Copy ships.set and activities/star study/ProbeLost.wav.
+25. Lowered volume of a few sounds. We like our ears don't we?
+24. Added sounds for star studies. Note these aren't all the sounds I wish to add, but it's late and I'm tired.
+Copy ships.set, ships/misc/SolarFlare.wav, ships/misc/lasers.wav, ships/misc/TransferStarData.wav, and ships/misc/StarProbeLaunch.wav.
+23. Added a sound for when your heatshields get reduced.
+Copy ships.set and ships\misc\HeatshieldsReduced.wav.
+22. Added a sound for fountains.  Please note that this sound will only play if you have not used the setup command to change the gushing message of the fountain.
+Copy general\misc\fountain.wav and misc.set.
+21. Changed the sound that is genorated when you bad bad people genorate tracebacks and don't report them.
+Copy general\misc\traceback.wav, and misc.set.
+20. Changed the sounds for paying or receiving cash.
+Copy general\misc\ching1.wav and ching2.wav
+19. Added a new sound for fireworks because... well... Fireworks are life.
+Copy general\misc\firework.wav
+18. Changed the meow and purr social sounds because, well, I love cats!
+Copy general\socials\meow.wav and purr.wav
+17. Changed the speedwalk on, and speedwalk off sounds to something more, well not as annoying.
+Copy General\misc\speedwalkon.wav and speedwalkoff.wav.
+16. Changed the sounds for activating and deactivating devices and channels.
+Copy General\comms\Activate.wav and Deactivate.wav.
+15. Changed the OOC channel sound.
+Copy general\comms\OOC.wav
+14. Thanks to Faylens help, In and out of character sounds are separate now!
+Copy coms.set and general\coms\PrivOOCCom.wav.
+13. Added a sound for recharging weapons.
+Copy shipCombat.set and ships\Combat\WeaponsRecharge.wav
+12. Added a sound for when a particular gas type has reached it's max when gas harvesting.
+Copy salvaging.set and ships\salvaging\CargoBayFilled.wav
+11. added a sound for when Enemies are inbound.
+Copy shipCombat.set and ships\Combat\Enemiesinbound.wav
+10. added a sound for when you use the onews channel.
+Copy general\comms\onews.wav, and comms.set.
+9. Changed the private comunication sound to something I like much better.
+Copy general\coms\privcom.wav
+8. Changed the log in and logout  sounds.
+Copy General\misc\Login.wav and Logout.wav
+7. Added a small sound for checking your inventory.
+Copy misc.set and general\misc\carrying.wav
+6. Changed the sound for the mappers.
+Copy general\coms\FC.wav.
+5. changed a few sounds for jets landing.
+Copy general\misc\jetBeginLand.wav and jetLand.wav
+4. added sounds for pets eating as well as drinking.
+Copy general\misc\petburp.wav, petdrink.wav, and peteat.wav, as well as misc.set
+3. Added a sound for when you have been sent mail.
+Copy general\coms\mail.wav, and coms.set
+2. Changed most of the sounds in the coms folder to sounds I find more pleasant on the ears.
+Copy general\coms, or go through the folder and replace as you see fit.
+1. Changed a few little sounds here and there, but I'll leave it up to you to find them.

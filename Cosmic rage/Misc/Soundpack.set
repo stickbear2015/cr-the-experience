@@ -56,8 +56,14 @@
 #alias spversion {spp;#gagon;snapp;info}
 #trigger {Last change*} {#ungagon}
 #key alt-V {SpVersion}
-#key Control-shift-R {#unalarm SPSave; #say {Reloading the soundpack, please wait.}; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {#say {Reloading complete! Please type LoadBuffers to load your currently saved buffer list.} system}}
-;aliases for saving and reading preferred buffers
+#key Control-shift-R {#unalarm SPSave; #say {Reloading the soundpack, please wait.}; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {#say {Reloading complete! Please use Control-alt-shift-L, or type LoadBuffers to load your currently saved buffer list.} system}}
+
+;aliases for saving and reading preferred buffers.
 
 #alias savebuffers {#file 5 bufferlist.txt;#write 5 "saving...";#close 5;#delfile bufferlist.txt;#file 5 bufferlist.txt;#forall @CurrentBufferList {#write 5 %i};#close 5;#play {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {"Buffer preferences saved."} system}
 #alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt;#var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5;#play {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {"Buffer preferences loaded."} system}
+
+;Keys for loading and saving buffers
+
+#key {Control-alt-shift-S} {SaveBuffers}
+#key {Control-alt-shift-L} {LoadBuffers}

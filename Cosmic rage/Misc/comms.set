@@ -1,6 +1,5 @@
-#TRIGGER {[[]administrators]*} {playsound {Cosmic Rage\hosts\AdminTalk.wav} @vol; #additem Admin %0; #file 1 {cosmic rage/logs/%char admin.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]announcement]*} {playsound {Cosmic Rage\general\comms\Announcement.wav} @vol; #additem Announcements %0; #file 1 {cosmic rage/logs/%char Announcements.log};#write 1 %0;#close 1} {} AnyCase
-#trigger {[[]SubAnnouncement]*} {playsound {Cosmic Rage/general/comms/SubAnnouncement.wav} @vol;#additem Announcements %0; #file 1 {cosmic rage/logs/%char SubAnnouncements.log};#write 1 %0;#close 1} {} AnyCase
+#trigger {[[]SubAnnouncement]*} {playsound {Cosmic Rage/general/comms/SubAnnouncement.wav} @vol;#additem SubAnnouncements %0; #file 1 {cosmic rage/logs/%char SubAnnouncements.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Changes]:*} {playsound {Cosmic Rage\general\comms\change.wav} @vol; #additem Changes %0; #file 1 {cosmic rage/logs/%char Changes.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Ooc]*} {playsound {Cosmic Rage\general\comms\ooc.wav} @vol; #additem OOC %0; #file 1 {cosmic rage/logs/%char ooc.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Chat]*} {playsound {Cosmic Rage\general\comms\Chat.wav} @vol; #additem Chat %0; #file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1} {} AnyCase
@@ -88,7 +87,7 @@ playsound {cosmic rage/general/comms/Chargen.wav} @vol; #additem Chargen %0; #fi
 #trigger {[[]Mentor]*} {
 playsound {cosmic rage/general/comms/Mentor.wav} @vol; #additem Mentor %0; #file 1 {cosmic rage/logs/%char Mentor.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {* flashes * indicating you have a new mail titled *} {playsound {cosmic rage\general\comms\mail.wav} @vol}
-#trigger {[[]News]*:*} {playsound {cosmic rage\general\comms\onews.wav} @vol}
+#trigger {[[]News]*:*} {playsound {cosmic rage\general\comms\onews.wav} @vol; #additem ONews %0}
 #TRIGGER {[[]* to *], *} {#if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage\general\comms\PrivOOCCom.wav} @vol; #additem OOCPrivate %0; #file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1} {playsound {Cosmic Rage\general\comms\PrivCom.wav} @vol; #additem ICPrivate %0; #file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Trade]*} {playsound {cosmic rage/general/comms/trade.wav} @vol; #additem Trade %0; #file 1 {cosmic rage/logs/%char Trade.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {You tap a button on * and the screen displays: * enabled.} {playsound {Cosmic Rage/general/comms/Activate.wav} @vol}
@@ -106,14 +105,14 @@ playsound {cosmic rage/general/comms/Mentor.wav} @vol; #additem Mentor %0; #file
 #trigger {Message sent!} {playsound {Cosmic Rage/general/comms/MailSent.wav} @vol}
 #trigger {[[]Sport[]]*} {playsound {Cosmic Rage/general/comms/Sport.wav} @vol; #additem sport %0}
 #trigger {Mail sent.} {playsound {Cosmic Rage/general/comms/MailSent.wav} @vol}
-#trigger {A small light blinks on nex to the intercom and you hear the voice of *} {playsound {Cosmic Rage/general/comms/Intercom.wav} @vol}
+#trigger {A small light blinks on nex to the intercom and you hear the voice of *} {playsound {Cosmic Rage/general/comms/Intercom.wav} @vol; #additem PA %0}
 #trigger {OOC communications filtered.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @vol}
 #trigger {OOC communications unfiltered.} {playsound {Cosmic Rage/general/comms/Activate.wav} @vol}
 #trigger {You enable the * channel.} {playsound {Cosmic Rage/general/comms/Activate.wav} @vol}
 #trigger {You disable the * channel.} {playsound {Cosmic Rage/general/comms/Deactivate.wav} @vol}
-#trigger {The * ground control square turns red on * and * "Emergency! Emergency! We see an incoming bomb! Emergency! Emergency!"} {#if {@ShortMapText = 1} {#sub {%1 "turns" %2, %5}} {};playsound {Cosmic Rage/general/comms/bomb.wav} @vol}
+#trigger {The * ground control square turns red on * and * "Emergency! Emergency! We see an incoming bomb! Emergency! Emergency!"} {#if {@ShortMapText = 1} {#sub {%1 "turns" %2, %5}} {};playsound {Cosmic Rage/general/comms/bomb.wav} @vol; #additem FlightControl %0}
 #TRIGGER {[[]Unsec]*} {playsound {cosmic rage/general/comms/unsec.wav} @vol; #additem Unsec %0; #file 1 {cosmic rage/logs/%char Unsec.log};#write 1 %0;#close 1} {} AnyCase
-#trigger {A small newspaper icon blinks repeatedly on *} {playsound {Cosmic Rage/general/comms/News.wav} @vol}
+#trigger {A small newspaper icon blinks repeatedly on *} {playsound {Cosmic Rage/general/comms/News.wav} @vol; #additem News %0}
 #trigger {[[]SDL]*} {playsound {Cosmic Rage/general/comms/SDL.wav} @vol; #additem SDL %0; #file 1 {cosmic rage/logs/%char SDL.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]Drone] *} {playsound {Cosmic Rage/general/comms/Drone.wav} @vol;#additem drone %0; #file 1 {cosmic rage/logs/%char Drone.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]MI]*} {playsound {Cosmic Rage/general/comms/MI.wav} @vol; #additem MI %0; #file 1 {cosmic rage/logs/%char MI.log};#write 1 %0;#close 1} {} AnyCase
@@ -129,14 +128,14 @@ playsound {cosmic rage/general/comms/Mentor.wav} @vol; #additem Mentor %0; #file
 #TRIGGER {[[]Sector Communication] from *, *} {playsound {cosmic rage/ships/com/sector.wav} @vol; #additem ship %0} {} AnyCase
 #trigger {Sector communication from *} {playsound {cosmic rage/ships/com/sector.wav} @vol; #additem ship %0} {} AnyCase
 #trigger {Over the sector channel, you hear *} {playsound {cosmic rage/ships/com/sector.wav} @vol; #additem Ship %0} {} AnyCase
-#trigger {* flashes a notification*} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @vol}
-#trigger {*plays the short theme of the Galactic News, indicating new headlines.} {playsound {Cosmic Rage/general/comms/News.wav} @vol}
-#trigger {A small newspaper icon flashes up on * indicating a new article has just been posted in *} {playsound {Cosmic Rage/general/comms/News.wav} @vol}
+#trigger {* flashes a notification*} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @vol; #additem InfoComputerNotifications %0}
+#trigger {*plays the short theme of the Galactic News, indicating new headlines.} {playsound {Cosmic Rage/general/comms/News.wav} @vol; #additem News %0}
+#trigger {A small newspaper icon flashes up on * indicating a new article has just been posted in *} {playsound {Cosmic Rage/general/comms/News.wav} @vol; #additem News %0}
 #trigger {[[]Organisations]*} {playsound {Cosmic Rage/general/comms/org.wav} @vol; #additem Org %0; #file 1 {cosmic rage/logs/%char Org.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {*translator announces *} {#additem say %0}
 #trigger {* flashes, blueprint software patch *} {playsound {Cosmic Rage/general/comms/Blueprint.wav} @vol}
 #TRIGGER {[[]Auction]:*} {playsound {cosmic rage/general/auction/auction bell*3.wav} @vol} {} AnyCase
-#trigger {[[]Distress]:*} {playsound {Cosmic Rage/general/comms/distress.wav} @vol} {} AnyCase
+#trigger {[[]Distress]:*} {playsound {Cosmic Rage/general/comms/distress.wav} @vol; #additem Distress %0; #file 1 {cosmic rage/logs/%char Distress.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Auction]: Auction master careheart: * sold! Ending price * credits.*} {playsound {cosmic rage/general/auction/item sold.wav} @vol} {} AnyCase
 #TRIGGER {[[]Auction]: * just opened an auction for * The starting price is * credits.} {playsound {cosmic rage/general/auction/start auction.wav} @vol} {} AnyCase
 #TRIGGER {[[]Auction]: Auction master carehart announcing a bid: *} {playsound {cosmic rage/general/auction/bid.wav} @vol} {} AnyCase
@@ -150,3 +149,4 @@ playsound {cosmic rage/general/comms/lang.wav} @vol; #additem Languages %0; #fil
 playsound {cosmic rage/general/comms/lang.wav} @vol; #additem Languages %0; #file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]diller] *:*} {
 playsound {cosmic rage/general/comms/lang.wav} @vol; #additem Languages %0; #file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1} {} AnyCase
+#trigger {[[]OOC PA]*} {playsound {cosmic rage/ships/com/pa*2.wav} @vol; #additem PA %0} {} AnyCase

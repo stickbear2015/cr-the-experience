@@ -71,8 +71,7 @@ echo Lag.test} {}
 #Key {Control-Numpad9} {ne}
 #key {control-numpaddash} {down}
 #key {control-numpadplus} {up}
-#Key {Numpad0} {coords}
-#Key {Numpad0} {0} {Numpad}
+#Key {Numpad0} {coords} {Numpad}
 #Key {Control-Numpad0} {exits}
 #Key {Numpad/} {auto}
 #key {Control-Numpad/} {in}

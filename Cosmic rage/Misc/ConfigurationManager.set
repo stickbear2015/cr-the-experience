@@ -39,6 +39,8 @@ Silent soundpack intro music toggle:SilentSPIntro|
 Clock sounds toggle:ToggleClocks|
 Toggle the sounds letting you know that you are still connected to the moo:ToggleConnectionCheck|
 Toggle the Numpad entering numbers:ToggleNumpad|
+Save your list of buffers:SaveBuffers|
+Load your list of saved buffers:LoadBuffers|
 List of Alias's:Alias's|
 keystrokes:keys|
 readme:readme|

@@ -1,4 +1,4 @@
-#var MasterBufferList {chat|admin|general|ICPrivate|drone|intel|ship|trade|pa|Sport|clan|FlightControl|GroundToAir|HTPL|Movement|Chargen|Mentor|Rewards|Squad|say|Org|PrivateNetwork|newbie|Soundpacks|rooc|OOCPrivate|RP|announcements|Arena|MusicFM|Library|Languages|Brag|changes|notices|OOC|Missions|recruitments|Unsec|SDL|MI|Jag|Tracebacks|Military|SOS}
+#var MasterBufferList {chat|admin|AdminChat|general|ICPrivate|drone|intel|ship|trade|pa|Sport|clan|FlightControl|GroundToAir|HTPL|Distress|News|InfoComputerNotifications|Movement|ONews|Chargen|Mentor|Rewards|Squad|say|Org|Mapper|PrivateNetwork|Cult|Poker|newbie|Soundpacks|rooc|OOCPrivate|RP|changes|notices|announcements|SubAnnouncements|Arena|MusicFM|Library|Languages|Brag|OOC|Missions|recruitments|Unsec|SDL|MI|Jag|Tracebacks|Military|SOS}
 #var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1
@@ -13,26 +13,30 @@
 
 #Key {Alt-Left} {#math BufferPointer {@BufferPointer - 1};#if {@BufferPointer < 1} {#Var BufferPointer %NumWords(@CurrentBufferList,"|")} {};#var BufferName {%word(@currentBufferList,"|",@BufferPointer)};#play {Cosmic Rage/general/misc/BufferSwitch.wav} 80; #PC %PlayHandle Pan -1000; #say {@BufferName} Voiceonly;#var ItemPointer 1}
 
-#key {Alt-Up} {#if {@ItemPointer < 2} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of Buffer} voiceonly} {#math ItemPointer {@ItemPointer - 1};#say {%word(@{@BufferName},"|",@ItemPointer)}}}
+#key {Alt-Up} {#if {@{@Buffername} = ""} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer < 2} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of Buffer} voiceonly} {#math ItemPointer {@ItemPointer - 1}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 
-#key {Alt-Down} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1};#say {%word(@{@BufferName},"|",@ItemPointer)}}}
+#key {Alt-Down} {#if {@{@Buffername} = ""} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 
-#key {Alt-Home} {#say {Top of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer}} {#var ItemPointer 1; #say {%word(@{@BufferName},"|",@ItemPointer)}}}
-#key {Alt-END} {#say {End of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer}} {#var ItemPointer %NumWords(@{@BufferName},"|");#say {%word(@{@BufferName},"|",@ItemPointer)}}}
-#Key {Alt-1} {#if {@{@BufferName} = ""} {#say {No message.} Voiceonly} {#say %word(@{@BufferName},"|",%NumWords(@{@BufferName},"|"))}}
-#key {Alt-2} {#if {%NumWords(@{@BufferName},"|") < 2} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 1)})}}
-#key {Alt-3} {#if {%NumWords(@{@BufferName},"|") < 3} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 2)})}}
-#key {Alt-4} {#if {%NumWords(@{@BufferName},"|") < 4} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 3)})}}
-#key {Alt-5} {#if {%NumWords(@{@BufferName},"|") < 5} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 4)})}}
-#key {Alt-6} {#if {%NumWords(@{@BufferName},"|") < 6} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 5)})}}
-#key {Alt-7} {#if {%NumWords(@{@BufferName},"|") < 7} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 6)})}}
-#key {Alt-8} {#if {%NumWords(@{@BufferName},"|") < 8} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 7)})}}
-#key {Alt-9} {#if {%NumWords(@{@BufferName},"|") < 9} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 8)})}}
-#key {Alt-0} {#if {%NumWords(@{@BufferName},"|") < 10} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 9)})}}
+#key {Alt-Home} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer}} {#var ItemPointer 1; #say {%word(@{@BufferName},"|",@ItemPointer)}}}
+
+#key {Alt-END} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer}} {#var ItemPointer %NumWords(@{@BufferName},"|");#say {%word(@{@BufferName},"|",@ItemPointer)}}}
+
+#Key {Alt-1} {#if {@{@BufferName} = ""} {#say {No message.} Voiceonly} {#say %word(@{@BufferName},"|",%NumWords(@{@BufferName},"|")) Voiceonly}}
+#key {Alt-2} {#if {%NumWords(@{@BufferName},"|") < 2} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 1)}) Voiceonly}}
+#key {Alt-3} {#if {%NumWords(@{@BufferName},"|") < 3} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 2)}) Voiceonly}}
+#key {Alt-4} {#if {%NumWords(@{@BufferName},"|") < 4} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 3)}) Voiceonly}}
+#key {Alt-5} {#if {%NumWords(@{@BufferName},"|") < 5} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 4)}) Voiceonly}}
+#key {Alt-6} {#if {%NumWords(@{@BufferName},"|") < 6} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 5)}) Voiceonly}}
+#key {Alt-7} {#if {%NumWords(@{@BufferName},"|") < 7} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 6)}) Voiceonly}}
+#key {Alt-8} {#if {%NumWords(@{@BufferName},"|") < 8} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 7)}) Voiceonly}}
+#key {Alt-9} {#if {%NumWords(@{@BufferName},"|") < 9} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 8)}) Voiceonly}}
+#key {Alt-0} {#if {%NumWords(@{@BufferName},"|") < 10} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 9)}) Voiceonly}}
+
 ;Logging
 
 #alias {LogFile} {#say {Please pick a channel from the menu below to read it's log file.}; #alarm 1 {playsound {Cosmic Rage/general/misc/ConfMan.wav} @100; #pick {p:Please select an option from the menu below|
 Read the administrator channels  log file:#edit {Cosmic Rage/logs/%char admin.log}|
+Read the Administrators Chat log file:#edit {Cosmic Rage/logs/%char AdminChat.log}|
 Read the Brag channels log file:#edit {Cosmic Rage/logs/%char brag.log}|
 Read the chargen channels  log file:#edit {Cosmic Rage/logs/%char chargen.log}|
 Read the Chat channels log file:#edit {Cosmic Rage/logs/%char chat.log}|

@@ -1,3 +1,15 @@
+509. SubAnnouncements have been moved into their own buffer.
+Copy Cosmic Rage/misc/buffers.set and comms.set.
+508. The new Ooc PA has a sound and will log to the PA buffer if you have it enabled.
+Copy Cosmic Rage/misc/Comms.set.
+507. When using alt-up and alt-down to read buffers, when you reach the boundary, VIP will read the item that is at that boundary.
+Copy Cosmic Rage/misc/Buffers.set.
+506. When reviewing buffers, the text will no longer show up in your output window.
+Copy Cosmic Rage/misc/Buffers.set
+505. Added keys for loading and saving your buffer list.
+Copy Cosmic Rage/Help files, and Cosmic Rage/misc/Soundpack.set.
+504. Added the following buffers: Distress, News, Computer Notifications, ONews, Mapper, Will respect if you have Short map text enabled or disabled, Cult and Poker.
+Copy Cosmic Rage/misc/Buffers.set, Comms.set and misc.set.
 503. Credits, Philip Williamson: Powering down your ship will never ever throw an error again.
 Copy ships/shipPower.set.
 502. Do to a very strange issue, the socials buffer has been removed.

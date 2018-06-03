@@ -1,5 +1,7 @@
 Alias's for the soundpack are as follows.
 
+Aliases for changing volumes.
+
 	general volume down:genvoldown|
 general volume up:genvolup|
 planetary music volume down:musicvoldown|
@@ -18,6 +20,18 @@ ship engine volume down:shipEvoldown|
 ship engine volume up:shipEvolup|
 vehicle engine volume down:vehicleengvoldown|
 vehicle engine volume up:vehicleengvolup|
+
+Aliases for buffers.
+
+Pull up the list of all channels that are being logged:LogFile
+DelBuffer:Removes a buffer from the list.
+AddBuffer:Adds a buffer to the list.
+ToggleNumpad:Toggles the entering of numbers using the numpad.
+LoadBuffers:Loads your list of saved buffers.
+SaveBuffers:Saves your list of buffers.
+
+Aliases for toggling different options.
+
 ambience toggle:ambtoggle|
 drone sounds toggle:dronetoggle|
 planetary music toggle:togglemusic|
@@ -34,10 +48,15 @@ salvage text toggle:salvageTextToggle|
 weather sounds toggle:weatherToggle|
 gag weather toggle:gagweather|
 Old logon/logoff sounds toggle:toggleLogOn|
+TTS:Toggle your speech.
 Silent saving toggle:SilentSaving|
+Toggle the connection sounds that let you know you are still connected to the mud:ToggleConnectionCheck
 Soundpack intro music toggle:SilentSPIntro|
 Clock sounds toggle:ToggleClocks|
 Mute sounds toggle:playsound|
+
+Misc aliases.
+
 save your pack:savepack|
 List of Alias's:Alias's|
 keystrokes:keys|
@@ -47,10 +66,5 @@ Report a bug:SpBug|
 Suggest something you'd like added to the soundpack:SpSuggest.
 Check the last logged change:SpVersion.
 View the info for the soundpack:SpInfo
-Toggle the connection sounds that let you know you are still connected to the mud:ToggleConnectionCheck
 config:Load the configuration manager|
-TTS:Toggle your speech.
-Pull up the list of all channels that are being logged:LogFile
-DelBuffer:Removes a buffer from the list.
-AddBuffer:Adds a buffer to the list.
-ToggleNumpad:Toggles the entering of numbers using the numpad.
+

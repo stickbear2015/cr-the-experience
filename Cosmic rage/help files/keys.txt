@@ -56,12 +56,6 @@ Alt-X. Out.
 
 f11. Toggle room Ambience.
 alt-shift-m. Toggle planetary music.
-Control-S. Save your current soundpack settings.
-control-l. Find out how many milliseconds of lag you are experiencing.
-alt-shift-c. Pull up the changelog.
-Alt-shift-A. Load the list of alias's.
-alt-shift-k. Pull up the text file containing all available keys you can use in the pack.
-alt-shift-r. Pull up the readme.
 alt shift d. Toggle drone sounds.
 control-shift-c. Toggle ship combat music.
 control-f8. Toggle alternate vehicle engine sounds.
@@ -74,21 +68,18 @@ alt-f12. Toggle the gagging of red alert.
 control-alt-s. Toggle salvage text.
 control-w. Toggle weather sounds.
 control-shift-w. Toggle the gagging of weather text.
-alt-shift-v. Check what each of your volumes are at.
 control-F5. Toggle between the new and old logon sounds.
-Shift-F2. Bring up a menu where you can open log files for the currently logged channels. Do note, if a channel log hasn't been created, you will get an error telling you the path could not be found. Once the channel has a message come across it, that error will go away.
 Alt-s. Toggle short mapper mode.
-Control-shift-N. Cycle through the different ship combat music themes. You will need to have Ship combat music enabled for this to work correctly.
 Control-F1. Toggle your speech.
-Control-shift-R. Reload the soundpack.
 alt-Shift-S. Toggle hearing of the automatic soundpack settings saving each hour.
-Shift-F1. Mute the intire soundpack excluding speech.
-Alt-V. Check the last logged change the moo has stored for the pack.
+Shift-F1. Toggle the muting of the intire soundpack excluding speech.
 Control-alt-M. Toggle the hearing of the soundpacks intro music.
 Control-alt-T. Toggle clock sounds.
 Control-alt-C. Toggle the sounds that let you know you are still connected to the mud.
-F2. Pull up the configuration manager.
-Shift-F2. Pull up the list of all channels that are being logged.
+
+Keys for adjusting and reading buffers.
+
+	Shift-F2. Pull up the list of all channels that are being logged.
 Alt-shift-Right. Add a buffer to the list.
 Alt-shift-Left. Remove a buffer from the list.
 Alt-up. Read the previous item in the selected buffer.
@@ -99,3 +90,18 @@ Alt 1 through alt-0. Read the last 10 items in the selected buffer.
 Alt-home. Go to the first item in the selected buffer.
 Alt-end. Go to the last item of the selected buffer.
 Alt-enter. Toggle the entering of numbers using the numpad.
+Control-alt-shift-L. Load your list of saved buffers.
+Control-alt-shift-S. Saves your list of buffers.
+
+Misc keys.
+
+Control-Slash. Will force VIP to ungag your speech if something gets stuck and you hear that Gagging is in effect.
+Control-S. Save your current soundpack settings.
+alt-shift-c. Pull up the changelog.
+Alt-shift-A. Load the list of alias's.
+alt-shift-k. Pull up the text file containing all available keys you can use in the pack.
+alt-shift-r. Pull up the readme.
+Control-shift-R. Reload the soundpack.
+Control-shift-N. Cycle through the different ship combat music themes. You will need to have Ship combat music enabled for this to work correctly.
+Alt-V. Check the last logged change the moo has stored for the pack.
+F2. Pull up the configuration manager.

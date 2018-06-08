@@ -1,5 +1,5 @@
 ;aliases
-#alias config {#say {Loading the configuration manager. Please wait.}; #alarm 1 {playsound {Cosmic Rage/general/misc/ConfMan.wav} @100; #pick {p:Please select an option from the list below|
+#alias config {#say {Loading the configuration manager. Please wait.} Voiceonly; #alarm 1 {playsound {Cosmic Rage/general/misc/ConfMan.wav} @100; #pick {p:Please select an option from the list below|
 general volume down:genvoldown|
 general volume up:genvolup|
 planetary music volume down:musicvoldown|
@@ -49,7 +49,7 @@ changelog:changelog}}}
 #alias  genvoldown {
 #math Vol {@Vol - 5};
 #if {@Vol < 5} {@Vol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @vol; #say {General Volume is @Vol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @vol; #say {General Volume @Vol percent} Voiceonly;
 #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
@@ -57,17 +57,17 @@ changelog:changelog}}}
 #alias genvolup {
 #math Vol {@Vol + 5};
 #if {@Vol > 100} {@Vol = 100};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @vol; #say {General Volume is @Vol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @vol; #say {General Volume @Vol percent} Voiceonly;
 #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6;
 #if {@vol = 100} {
-#say {Volume maxed. Mind your ears!}}};
+#say {Volume maxed. Mind your ears!} Voiceonly}};
 
 #alias musicvoldown {
 #math musicVol {@musicVol - 5};
 #if {@musicVol < 5} {@musicVol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @musicVol; #say {Music Volume is @musicVol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @musicVol; #say {Music Volume @musicVol percent} Voiceonly;
 #if {@musicplaying = 1} {
 #pc @musicHandle volume @musicvol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -77,7 +77,7 @@ changelog:changelog}}}
 #alias musicvolup {
 #math musicVol {@musicVol + 5};
 #if {@musicVol > 95} {@MusicVol = 95};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @musicVol; #say {Music Volume is @musicVol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @musicVol; #say {Music Volume @musicVol percent} Voiceonly;
 #if {@musicplaying = 1} {
 #pc @musicHandle volume @musicvol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -87,7 +87,7 @@ changelog:changelog}}}
 #alias combatdown {
 #math MVol {@MVol - 5};
 #if {@MVol < 5} {@MVol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @MVol; #say {Combat music Volume is @MVol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @MVol; #say {Combat music Volume @MVol percent} Voiceonly;
 #if {@Combatmusicplaying = 1} {
 #pc @combatmusicHandle volume @MVol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -97,7 +97,7 @@ changelog:changelog}}}
 #alias combatup {
 #math MVol {@MVol + 5};
 #if {@MVol > 95} {@MVol = 95};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @MVol; #say {Combat music Volume is @MVol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @MVol; #say {Combat music Volume @MVol percent} Voiceonly;
 #if {@combatmusicplaying = 1} {
 #pc @combatmusicHandle volume @MVol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -107,7 +107,7 @@ changelog:changelog}}}
 #alias combatvolumedown {
 #math CVol {@CVol - 5};
 #if {@CVol < 5} {@CVol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @CVol; #say {Combat Volume is @CVol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @CVol; #say {Combat Volume @CVol percent} Voiceonly;
 #if {@CombatVolume = 1} {
 #pc @combatVolumeHandle volume @CVol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -117,7 +117,7 @@ changelog:changelog}}}
 #alias combatvolumeup {
 #math CVol {@CVol + 5};
 #if {@CVol > 95} {@CVol = 95};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @CVol; #say {Combat Volume is @CVol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @CVol; #say {Combat Volume @CVol percent} Voiceonly;
 #if {@combatVolume = 1} {
 #pc @combatVolumeHandle volume @CVol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -127,7 +127,7 @@ changelog:changelog}}}
 #alias vehiclEvoldown {
 #math VehiclEvol {@VehiclEvol - 5};
 #if {@VehiclEvol < 5} {@VehiclEvol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @VehiclEvol; #say {Vehicle Volume is @VehiclEvol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @VehiclEvol; #say {Vehicle Volume @VehiclEvol percent} Voiceonly;
 #if {@vehiclesoundplaying = 1} {
 #pc @VehicleHandle volume @vehiclEvol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -137,7 +137,7 @@ changelog:changelog}}}
 #alias  vehiclEvolup {
 #math VehiclEvol {@VehiclEvol + 5};
 #if {@VehiclEvol > 100} {@VehiclEvol = 100};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @VehiclEvol; #say {Vehicle Volume is @VehiclEvol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @VehiclEvol; #say {Vehicle Volume @VehiclEvol percent} Voiceonly;
 #if {@vehiclesoundplaying = 1} {
 #pc @VehicleHandle volume @vehiclEvol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -147,7 +147,7 @@ changelog:changelog}}}
 #alias shipvoldown {
 #math ShipVol {@ShipVol - 5};
 #if {@ShipVol < 5} {@ShipVol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @ShipVol; #say {Ship Volume is @ShipVol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @ShipVol; #say {Ship Volume @ShipVol percent} Voiceonly;
 #if {@shipsoundplaying = 1} {
 #pc @shipHandle volume @shipVol};
 #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
@@ -157,7 +157,7 @@ changelog:changelog}}}
 #alias shipvolup {
 #math ShipVol {@ShipVol + 5};
 #if {@ShipVol > 100} {@ShipVol = 100};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @ShipVol; #say {Ship Volume is @ShipVol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @ShipVol; #say {Ship Volume @ShipVol percent} Voiceonly;
 #if {@shipsoundplaying = 1} {
 #pc @shipHandle volume @shipVol};
 #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
@@ -167,7 +167,7 @@ changelog:changelog}}}
 #alias roomvoldown {
 #math RoomVol {@RoomVol - 5};
 #if {@RoomVol < 5} {@RoomVol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @RoomVol; #say {Room Volume is @RoomVol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @RoomVol; #say {Room Volume @RoomVol percent} Voiceonly;
 #if {@roomsoundplaying = 1} {
 #pc @RoomHandle volume @Roomvol};
 #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
@@ -177,7 +177,7 @@ changelog:changelog}}}
 #alias roomvolup {
 #math RoomVol {@RoomVol + 5};
 #if {@RoomVol > 100} {@RoomVol = 100};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @RoomVol; #say {Room Volume is @RoomVol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @RoomVol; #say {Room Volume @RoomVol percent} Voiceonly;
 #if {@roomsoundplaying = 1} {
 #pc @RoomHandle volume @Roomvol};
 #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
@@ -187,28 +187,28 @@ changelog:changelog}}}
 #alias shipEvoldown {
 #math Evol {@Evol - 5};
 #if {@Evol < 5} {@Evol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @Evol; #say {Ship engine  Volume is @Evol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @Evol; #say {Ship engine  Volume @Evol percent} Voiceonly;
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
 #Write 6 @Evol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #alias shipEvolup {
 #math Evol {@Evol + 5};
 #if {@Evol > 100} {@Evol = 100};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @Evol; #say {Ship engine Volume is @Evol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @Evol; #say {Ship engine Volume @Evol percent} Voiceonly;
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
 #Write 6 @Evol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #alias vehicleengvoldown {
 #math vEvol {@vEvol - 5};
 #if {@vEvol < 5} {@vEvol = 5};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @vEvol; #say {vehicle engine  Volume is @vEvol percent};
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @vEvol; #say {vehicle engine  Volume @vEvol percent} Voiceonly;
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
 #Write 6 @vEvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #alias vehicleengvolup {
 #math vEvol {@vEvol + 5};
 #if {@vEvol > 100} {@vEvol = 100};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @vEvol; #say {vehicle engine Volume is @vEvol percent};
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @vEvol; #say {vehicle engine Volume @vEvol percent} Voiceonly;
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
 #Write 6 @vEvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}

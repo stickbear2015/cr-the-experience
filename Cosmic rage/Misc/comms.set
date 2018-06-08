@@ -56,7 +56,7 @@ playsound {cosmic rage/general/comms/otherPhase.wav} @vol}
 playsound {cosmic rage/general/comms/faze.wav} @vol}
 #trigger {[[]Private network],*} {playsound {cosmic rage/general/comms/privnet.wav} @vol; #additem PN %0; #file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]RP]*} {playsound {cosmic rage/general/comms/rp.wav} @vol; #additem RP %0; #file 1 {cosmic rage/logs/%char RP.log};#write 1 %0;#close 1} {} AnyCase
-#TRIGGER {[[]Socials]*} {playsound {cosmic rage/general/comms/socials.wav} @vol; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
+#TRIGGER {[[]Socials]*} {playsound {cosmic rage/general/comms/socials.wav} @vol; #additem socials %0; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Arena]*} {playsound {cosmic rage/general/comms/arena.wav} @vol; #additem Arena %0; #file 1 {cosmic rage/logs/%char Arena.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]Music FM] *} {
 playsound {cosmic rage/general/comms/musicFm.wav} @vol; #additem MusicFM %0; #file 1 {cosmic rage/logs/%char MusicFm.log};#write 1 %0;#close 1} {} AnyCase

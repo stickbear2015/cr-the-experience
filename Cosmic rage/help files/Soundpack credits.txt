@@ -1,8 +1,8 @@
 Some credit needs to be given out because some amazing people deserve what I'm about to say and so much more. If you see them around, please please thank them for the help they have given me with the pack.
-This pack started out as a forked project of the pack that Erra and Nate worked on. But in the last year, it's came so far. Even still, this pack wouldn't have been possible without The pack that Nate and Erra started. Erra, Nate, thank you.
-This pack would not be possible without many helpful messages sent between myself, host Lara Stardust, and Host Faylen Claris. Many times I'm sure they wanted to rip my hair out because I just could not grasp the concept of some thing or another. But with the help and advice they have given me, look what things have become! Without you both, I'd never have gotten half of the things in this pack working the way they do now.
+This pack started out as a forked project of the pack that Erra and Nate worked on. Erra, Nate, thank you.
+This pack would not be possible without many helpful messages sent between myself, host Lara Stardust, and Host Faylen Claris. Many times I'm sure they wanted to rip my hair out because I just could not grasp the concept of one thing or another. But with the help and advice they have given me, look what things have become! Without you both, I'd never have gotten half of the things in this pack working the way they do now.
 Thanks goes out to max wilson for his help with ambience, ship, and what ever code he decides to work on.
 Thanks to Jitel Gold scale for the planetary music.
 Thanks to [Gladr Gold scale for his sound contributions.
-Thanks to Faylen for help with the new buffer code.
+Thanks to host Faylen Claris for all the help with the buffers system.
 Thanks goes out to you. The users of this pack. Without you all, I would have never uploaded this at all for people to take a look at. It's amazing how far this thing has come in the last few months. So again, I, Snapp Blue scale, Thank you all!

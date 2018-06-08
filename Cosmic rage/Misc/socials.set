@@ -262,5 +262,5 @@ playsound {cosmic rage/general/socials/vomit.wav} @vol}}
 #if {@socials = 1} {
 playsound {cosmic rage/general/socials/vomit.wav} @vol}}
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @vol; #additem OOCPrivate %0} {} AnyCase
-#trigger {*shouts*} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol} {} AnyCase
+#trigger {*shouts*} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0} {} AnyCase
 #trigger {*suddenly yells, "I'm a dog and I like socks!"} {playsound {Cosmic Rage/general/socials/Socks.wav} @vol}

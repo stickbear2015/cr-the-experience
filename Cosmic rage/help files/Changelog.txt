@@ -1,3 +1,11 @@
+513. As it was creating a few issues, the pack is no longer auto-saving your settings. Instead, the pack will save when you disconnect from the moo, or upon use of the control-S key.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set, Soundpack.set and sounds/general/misc/SpSave.wav.
+512. Squished the last remaining bugs with the buffers system. You will now no longer get an okay message when you save and load buffers. Instead, a message will play. Also,  a message will play when you go to add or delete a buffer.
+Copy Cosmic Rage/misc/Buffers.set, soundpack.set, and sounds/general/misc/BufferAdd.wav, BufferDelete.wav, BuffersLoaded.wav and BuffersSaved.wav.
+511. Changing things in the configuration manager or using keys will no longer show up in your output window.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
+510. Fixed the bug where if a buffer's text contained quotes. Many of the review commands would throw errors. Flight control is also fixed with buffers meaning, The buffer will respect if you have short flight control text enabled or disabled.. New sounds have also been created for adding, and deleting buffers, A new sound will also play if you already have a buffer active. With this change, we believe all errors with buffers are fixed. If you find more, please let Snapp or Kavi know and give them as much info as you can that would help them to test and recreate the error.
+Copy Cosmic Rage/misc/Buffers.set, Cosmic Rage/ships/FlightControl.set, Sounds/general/misc/BufferActive.wav, BufferAdded.wav and BufferRemoved.wav.
 509. SubAnnouncements have been moved into their own buffer.
 Copy Cosmic Rage/misc/buffers.set and comms.set.
 508. The new Ooc PA has a sound and will log to the PA buffer if you have it enabled.

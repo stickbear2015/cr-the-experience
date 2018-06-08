@@ -1,5 +1,5 @@
 #trigger {* turns * on * and you hear someone *, "*"} {#if {@ShortMapText = 1} {
-#sub {%1 turns %2, %5};#additem FlightControl {%1 turns %2, %5}} {#additem FlightControl %0}; #if {%ifWord(requiring urgent mobile infantry assistance!,%5," ")} {playsound {Cosmic Rage/general/comms/Emergency.wav} @vol} {};
+#sub {%1 turns %2, %5}; {#additem FlightControl %0; %1 turns %2, %5}} {#additem FlightControl %0}; #if {%ifWord(requiring urgent mobile infantry assistance!,%5," ")} {playsound {Cosmic Rage/general/comms/Emergency.wav} @vol} {};
 #if {%ifWord(preparing to invade.,%5," ")} {playsound {Cosmic Rage/general/comms/Invasion.wav} @vol} {};
 #if {%ifWord(just flew right into a star!,%5," ")} {playsound {Cosmic Rage/general/comms/FlyIntoStar.wav} @vol} {};
 #if {%ifWord(is about to erupt. Get out of there!,%5," ")} {playsound {Cosmic Rage/general/comms/volcanoAlarm.wav} @vol} {};

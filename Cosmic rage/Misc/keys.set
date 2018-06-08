@@ -95,35 +95,4 @@ echo Lag.test} {}
 #key {Control-F1} {TTS}
 #key {Shift-F2} {LogFile}
 #key {control-/} {#ungagon; #say {Speech is no longer being gagged.}}
-#key {control-s} {#play {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Settings saved} system; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
-#Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @roomvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @DroneSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @MusicSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @MusicVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @combatMusicplaying @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @MVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @CMusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @altVehicleEngines @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @altshipEngines @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagHarvest @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @panShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @CVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @socials @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @ambon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @redalert @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @Evol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @veVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagSal @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @weather @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagweather @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @LogOn @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @ShortMapText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SilentSaving @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SilentIntro @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SilentClock @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @ConnectionCheck @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#close 6}
+#key {control-s} {SaveSettings}

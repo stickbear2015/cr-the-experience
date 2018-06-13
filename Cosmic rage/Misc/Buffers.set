@@ -1,33 +1,36 @@
-#var MasterBufferList {chat|admin|AdminChat|general|ICPrivate|drone|intel|ship|trade|pa|Sport|clan|FlightControl|GroundToAir|HTPL|Distress|News|InfoComputerNotifications|Socials|Movement|ONews|Chargen|Mentor|Rewards|Squad|say|Org|Mapper|PrivateNetwork|Cult|Poker|newbie|Soundpacks|rooc|OOCPrivate|RP|changes|notices|announcements|SubAnnouncements|Arena|MusicFM|Library|Languages|Brag|OOC|Missions|recruitments|Unsec|SDL|MI|Jag|Tracebacks|Military|SOS}
+#var MasterBufferList {chat|admin|AdminChat|general|ICPrivate|drone|intel|ship|trade|pa|Sport|clan|FlightControl|GroundToAir|HTPL|Distress|News|InfoComputerNotifications|Movement|ONews|Chargen|Mentor|Rewards|Squad|say|Org|Mapper|PrivateNetwork|Cult|Poker|newbie|Soundpacks|rooc|OOCPrivate|RP|changes|notices|announcements|SubAnnouncements|Arena|MusicFM|Library|Languages|Brag|OOC|Missions|recruitments|Unsec|SDL|MI|Jag|Tracebacks|Military|SOS}
 #var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1
 #var BufferName {%word(@CurrentBufferList,"|",1)}
 #var ItemPointer 1
-#alias delbuffer  {#play {Cosmic Rage/general/misc/BufferDelete.wav} 100; #var item {%pick(p:Which buffer do you want to delete?|@CurrentBufferList)};#var CurrentBufferList {%delitem(@CurrentBufferList,@item)};#play {Cosmic Rage/general/misc/BufferRemoved.wav} 100; #var BufferPointer 1}
+#alias delbuffer  {#play {Cosmic Rage/general/misc/BufferDelete.wav} 90; #var item {%pick(p:Which buffer do you want to delete?|@CurrentBufferList)};#var CurrentBufferList {%delitem(@CurrentBufferList,@item)};#play {Cosmic Rage/general/misc/BufferRemoved.wav} 90; #var BufferPointer 1}
 #key {ALT-SHIFT-LEFT} {delbuffer}
-#alias addbuffer {#play {Cosmic Rage/general/misc/BufferAdd.wav} 100; #var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)};#if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {#play {Cosmic Rage/general/misc/BufferActive.wav} 100} {#additem CurrentBufferList @newitem;#play {Cosmic Rage/general/misc/BufferAdded.wav} 100} {#var BufferPointer 1}}
+#alias addbuffer {#play {Cosmic Rage/general/misc/BufferAdd.wav} 90; #var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)};#if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {#play {Cosmic Rage/general/misc/BufferActive.wav} 90} {#additem CurrentBufferList @newitem;#play {Cosmic Rage/general/misc/BufferAdded.wav} 90} {#var BufferPointer 1}}
 #key {ALT-SHIFT-RIGHT} {addbuffer}
 
 ;aliases for saving and reading preferred buffers.
 
-#alias savebuffers {#file 5 bufferlist.txt;#write 5 "saving...";#close 5;#delfile bufferlist.txt;#file 5 bufferlist.txt;#forall @CurrentBufferList {#write 5 %i};#close 5;#play {Cosmic Rage/general/misc/BuffersSaved.wav} 100}
-#alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt;#var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5;#play {Cosmic Rage/general/misc/BuffersLoaded.wav} 100}
+#alias savebuffers {#file 5 bufferlist.txt;#write 5 "saving...";#close 5;#delfile bufferlist.txt;#file 5 bufferlist.txt;#forall @CurrentBufferList {#write 5 %i};#close 5;#play {Cosmic Rage/general/misc/BuffersSaved.wav} 90}
+#alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt;#var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5;#play {Cosmic Rage/general/misc/BuffersLoaded.wav} 90}
 
 ;Keys for loading, reading  and saving buffers
 
 #key {Control-alt-shift-S} {SaveBuffers}
 #key {Control-alt-shift-L} {LoadBuffers}
 
-#Key {Alt-Right} {#math BufferPointer {@BufferPointer + 1};#if {@BufferPointer > %NumWords(@CurrentBufferList,"|")} {#Var BufferPointer 1} {};#var BufferName {%word(@currentBufferList,"|",@BufferPointer)};#play {Cosmic Rage/general/misc/BufferSwitch.wav} 80; #PC %PlayHandle Pan 1000; #say {@BufferName} voiceonly;#var ItemPointer 1}
+#Key {Alt-Right} {#math BufferPointer {@BufferPointer + 1};#if {@BufferPointer > %NumWords(@CurrentBufferList,"|")} {#Var BufferPointer 1} {};#var BufferName {%word(@currentBufferList,"|",@BufferPointer)};#play {Cosmic Rage/general/misc/BufferSwitch.wav} 80; #PC %PlayHandle Pan 1000; #say {@BufferName, %numwords(@{@BufferName},"|") items} voiceonly;#var ItemPointer 1}
 
-#Key {Alt-Left} {#math BufferPointer {@BufferPointer - 1};#if {@BufferPointer < 1} {#Var BufferPointer %NumWords(@CurrentBufferList,"|")} {};#var BufferName {%word(@currentBufferList,"|",@BufferPointer)};#play {Cosmic Rage/general/misc/BufferSwitch.wav} 80; #PC %PlayHandle Pan -1000; #say {@BufferName} Voiceonly;#var ItemPointer 1}
+#Key {Alt-Left} {#math BufferPointer {@BufferPointer - 1};#if {@BufferPointer < 1} {#Var BufferPointer %NumWords(@CurrentBufferList,"|")} {};#var BufferName {%word(@currentBufferList,"|",@BufferPointer)};#play {Cosmic Rage/general/misc/BufferSwitch.wav} 80; #PC %PlayHandle Pan -1000; #say {@BufferName, %numwords(@{@BufferName},"|") items} Voiceonly;#var ItemPointer 1}
 #alias CleanBuffer {#var @buffername {%replace(@{@BufferName},~", )}}
 #key {Alt-Up} {CleanBuffer;#if {@{@Buffername} = ""} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer < 2} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of Buffer} voiceonly} {#math ItemPointer {@ItemPointer - 1}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
+#key {Shift-Alt-PageUp} {CleanBuffer;#if {@{@Buffername} = ""} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer < 20} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Not enough items to move that far up} voiceonly} {#math ItemPointer {@ItemPointer - 20}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 
 #key {Alt-Down} {CleanBuffer;#if {@{@Buffername} = ""} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
+#key {Shift-Alt-PageDown} {CleanBuffer;#if {@{@Buffername} = ""} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|") - 20} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Not enough items in buffer to move that far down.} Voiceonly} {#math ItemPointer {@ItemPointer + 20}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 
 #key {Alt-Home} {CleanBuffer;#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer}} {#var ItemPointer 1; #say {%word(@{@BufferName},"|",@ItemPointer)} voiceonly}}
+#key {Alt-Down} {CleanBuffer;#if {@{@Buffername} = ""} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 
 #key {Alt-END} {CleanBuffer;#play {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer}} {#var ItemPointer %NumWords(@{@BufferName},"|");#say {%word(@{@BufferName},"|",@ItemPointer)} voiceonly}}
 
@@ -75,7 +78,6 @@ Read the Room out of Character channels log file:#edit {Cosmic Rage/logs/%char r
 Read the RP channels log file:#edit {Cosmic Rage/logs/%char RP.log}|
 Read the SDF channels log file:#edit {Cosmic Rage/logs/%char sdf.log}|
 Read the SDL channels log file:#edit {Cosmic Rage/logs/%char SDL.log}|
-Read the Social channels log file:#edit {Cosmic Rage/logs/%char Socials.log}|
 Read the Soundpack channels log file:#edit {Cosmic Rage/logs/%char Soundpacks.log}|
 Read the Squadren channels log file:#edit {Cosmic Rage/logs/%char Squadren.log}|
 Read the Traceback channels log file:#edit {Cosmic Rage/logs/%char Tracebacks.log}|

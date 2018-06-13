@@ -56,7 +56,7 @@ playsound {cosmic rage/general/comms/otherPhase.wav} @vol}
 playsound {cosmic rage/general/comms/faze.wav} @vol}
 #trigger {[[]Private network],*} {playsound {cosmic rage/general/comms/privnet.wav} @vol; #additem PN %0; #file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]RP]*} {playsound {cosmic rage/general/comms/rp.wav} @vol; #additem RP %0; #file 1 {cosmic rage/logs/%char RP.log};#write 1 %0;#close 1} {} AnyCase
-#TRIGGER {[[]Socials]*} {playsound {cosmic rage/general/comms/socials.wav} @vol; #additem socials %0; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
+#TRIGGER {[[]Socials] *} {playsound {cosmic rage/general/comms/socials.wav} @vol; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Arena]*} {playsound {cosmic rage/general/comms/arena.wav} @vol; #additem Arena %0; #file 1 {cosmic rage/logs/%char Arena.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]Music FM] *} {
 playsound {cosmic rage/general/comms/musicFm.wav} @vol; #additem MusicFM %0; #file 1 {cosmic rage/logs/%char MusicFm.log};#write 1 %0;#close 1} {} AnyCase
@@ -142,7 +142,7 @@ playsound {cosmic rage/general/comms/Mentor.wav} @vol; #additem Mentor %0; #file
 #trigger {Newbie is now on.} {playsound {Cosmic Rage/general/comms/activate.wav} @vol}
 #trigger {Newbie is now off.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @vol}
 #trigger {An ooc link from * has been automatically accepted.} {playsound {Cosmic Rage\general\comms\linkConfirmed.wav} 85} {} AnyCase
-#trigger {A very crackley voice can barely be heard over the main console saying "*calling requesting starship,  due to bad weather, you are unable to * at the current time*"} {playsound {Cosmic Rage/ships/misc/BadWeather.wav} @vol; #sub {Do to inclement weather, your request to launch or land can not be granted at the current time. Please, tune into flight control weather announcements, check your weather reports, and try again later.}}
+#trigger {A very crackley voice can barely be heard over the main console saying "*calling requesting starship,  due to bad weather, you are unable to * at the current time*"} {playsound {Cosmic Rage/ships/misc/BadWeather.wav} @vol; #additem FlightControl %0; #sub {Do to inclement weather, your request to launch or land can not be granted at the current time. Please, tune into flight control weather announcements, check your weather reports, and try again later.}}
 #trigger {[[]Yazyki] *:*} {
 playsound {cosmic rage/general/comms/lang.wav} @vol; #additem Languages %0; #file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]Idiomas] *:*} {
@@ -150,3 +150,4 @@ playsound {cosmic rage/general/comms/lang.wav} @vol; #additem Languages %0; #fil
 #trigger {[[]diller] *:*} {
 playsound {cosmic rage/general/comms/lang.wav} @vol; #additem Languages %0; #file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]OOC PA]*} {playsound {cosmic rage/ships/com/pa*2.wav} @vol; #additem PA %0} {} AnyCase
+#trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @vol; #additem OOCPrivate %0} {} AnyCase

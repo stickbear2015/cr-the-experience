@@ -1,3 +1,13 @@
+518. I've totally reworked a few things. First is the way VIP is changing and saving volumes. It's now much more reliable, and the volume will change by 10 percent each time. You can now go from 0 percent to 100 percent, rather than the 5 percent to 90 percent you could before.  The second change is, seeing as many people were complaining about it, I've gotten rid of all the okay dialogues that would pop up when you'd toggle something. The message will now only be spoken, and not stored in your output window.
+Copy Cosmic Rage/misc.
+517. I have removed the socials toggle as it was causing issues with a few things.
+Copy Cosmic Rage/Help files, Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set, keys.set, socials.set, and Soundpack.set.
+516. Fixed an annoying bug with socials. The socials buffer has been disabled for now. Be happy. You get to keep socials around for awhile longer.
+Copy Cosmic Rage.set, Cosmic Rage/misc/buffers.set, Comms.set and socials.set.
+515. Lowered the volume of all buffer sounds and prompts by 20 percent.
+Copy Cosmic Rage/misc/Buffers.set and Soundpack.set.
+514. You may now use alt-shift page up and alt-shift-page down to jump by twenty items in each buffer. In addition, alt left and right arrows will now tell you how many items are in the buffer you move to. There is a VIPMud bug that will say one item when there are actually none, but this will correct itself once at least one item comes into that buffer. Also, Flight control is now 100 percent fixed.
+Copy Cosmic Rage/misc/Buffers.set and Cosmic Rage/ships/FlightControl.set.
 513. As it was creating a few issues, the pack is no longer auto-saving your settings. Instead, the pack will save when you disconnect from the moo, or upon use of the control-S key.
 Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set, Soundpack.set and sounds/general/misc/SpSave.wav.
 512. Squished the last remaining bugs with the buffers system. You will now no longer get an okay message when you save and load buffers. Instead, a message will play. Also,  a message will play when you go to add or delete a buffer.

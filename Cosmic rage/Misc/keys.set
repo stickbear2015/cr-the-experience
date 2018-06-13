@@ -1,6 +1,7 @@
 #class Numpad Enable
 #var NumpadOn
 #var defroom 0
+;Keys for adjusting volumes.
 #key {f9} {genvoldown}
 #key {f10} {genvolup}
 #key {alt-f7} {musicvoldown}
@@ -20,6 +21,7 @@
 #key {alt-f9} {vehicleengvoldown}
 #key {alt-f10} {vehicleengvolup}
 
+;keys for toggles.
 #key f11 {ambtoggle}
 #Key {control-l} {#var LagAmount 0;
 #alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
@@ -37,14 +39,13 @@ echo Lag.test} {}
 #key control-g {gagscombat}
 #key control-h {gagharvest}
 #key alt-Shift-S {SilentSaving}
-#key control-f12 {togglesocials}
 #key alt-f12 {toggleRedAlert}
 #key control-p {pancombat}
 #key control-f5 {toggleLogOn}
 #key control-alt-s {salvageTextToggle}
 #key control-w {weatherToggle}
 #key control-shift-w {gagweather}
-#key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} system}
+#key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} voiceonly}
 #key alt-s {ShortMapText}
 #key Control-Alt-C {ToggleConnectionCheck}
 #key control-alt-M {SilentSPIntro}

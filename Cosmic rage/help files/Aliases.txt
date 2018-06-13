@@ -42,7 +42,6 @@ Short map text toggle:ShortMapText|
 gag ship combat toggle:gagscombat|
 pan ship combat toggle:pancombat|
 gag harvesting toggle:gagharvest|
-Socials toggle:togglesocials|
 red alert toggle:toggleRedAlert|
 salvage text toggle:salvageTextToggle|
 weather sounds toggle:weatherToggle|
@@ -53,7 +52,7 @@ Silent saving toggle:SilentSaving|
 Toggle the connection sounds that let you know you are still connected to the mud:ToggleConnectionCheck
 Soundpack intro music toggle:SilentSPIntro|
 Clock sounds toggle:ToggleClocks|
-Mute sounds toggle:playsound|
+Mute sounds toggle:MuteSound|
 
 Misc aliases.
 

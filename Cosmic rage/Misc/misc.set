@@ -45,7 +45,7 @@ playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}
 #TRIGGER {You hear a solid bong as the cleaning equipment returns with something.} {#gagline all; playsound {cosmic rage/general/misc/gottrash.wav} @vol};
 #TRIGGER {You ponder  *, "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
 #TRIGGER {* ponders*, "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
-#TRIGGER {* [[]Notice]: *} {playsound {cosmic rage/general/misc/ding.wav} @vol; #additem Notices %0;  #file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1} {} AnyCase 
+#TRIGGER {* [[]Notice]: * - * *} {#sub {Notice! %2. . This notice was sent at %3.}; playsound {cosmic rage/general/misc/ding.wav} @vol; #additem Notices %0;  #file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1} {} AnyCase 
 #TRIGGER {You hear a ring, ring from *} {#gagline all; playsound {cosmic rage/general/misc/ring.wav} @vol};
 #TRIGGER {* plays a * tune} {playsound {cosmic rage/general/comms/phoneRing.wav} @vol};
 #TRIGGER {You tap a few buttons on * accessing its menu.} {#gagline all; playsound {cosmic rage/general/misc/complogin.wav} @vol};
@@ -258,4 +258,3 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
 #trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol}
-#trigger {You are carrying *} {#sub {You are carrying the following items. %1}}

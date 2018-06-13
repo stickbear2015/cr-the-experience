@@ -63,7 +63,6 @@ control-shift-f8. Toggle alternate ship engine sounds.
 control-g. Toggle the gagging of enemy locking while in ship combat.
 control-p. Toggle ship combat panning.
 control-h. Toggle the gagging of Harvesting announcements.
-control-f12. Toggle social sounds.
 alt-f12. Toggle the gagging of red alert.
 control-alt-s. Toggle salvage text.
 control-w. Toggle weather sounds.
@@ -89,7 +88,8 @@ Alt-left errow. Move to the previous buffer.
 Alt 1 through alt-0. Read the last 10 items in the selected buffer.
 Alt-home. Go to the first item in the selected buffer.
 Alt-end. Go to the last item of the selected buffer.
-Alt-enter. Toggle the entering of numbers using the numpad.
+Alt-shift-PageUp. Move 20 items up in a buffer.
+Alt-shift-PageDown. Move 20 items down in a buffer.
 Control-alt-shift-L. Load your list of saved buffers.
 Control-alt-shift-S. Saves your list of buffers.
 

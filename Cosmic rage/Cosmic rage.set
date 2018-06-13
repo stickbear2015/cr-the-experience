@@ -1,4 +1,4 @@
-#var speech 1
+#var speech 0
 #var soundson 1
 ;These are the Needed set files for the pack to function.
 
@@ -94,19 +94,19 @@
 #read 6 gagHarvest 14;
 #read 6 panShipCombat 15;
 #read 6 CVol 16;
-#read 6 socials 17;
-#read 6 ambon 18;
-#read 6 redalert 19;
-#read 6 Evol 20;
-#read 6 veVol 21;
-#read 6 gagSal 22;
-#read 6 weather 23;
-#read 6 gagweather 24;
-#read 6 LogOn 25;
-#read 6 ShortMapText 26;
-#Read 6 SilentIntro 27;
-#read 6 SilentClock 28;
-#read 6 ConnectionCheck 29;
+#read 6 ambon 17;
+#read 6 redalert 18;
+#read 6 Evol 19;
+#read 6 veVol 20;
+#read 6 gagSal 21;
+#read 6 weather 22;
+#read 6 gagweather 23;
+#read 6 LogOn 24;
+#read 6 ShortMapText 25;
+#Read 6 SilentIntro 26;
+#read 6 SilentClock 27;
+#read 6 ConnectionCheck 28;
+#read 6 numpadon 29;
 #close 6
 ;misc.
 #if {NOT %Defined(Vol)} {#Var Vol 70}

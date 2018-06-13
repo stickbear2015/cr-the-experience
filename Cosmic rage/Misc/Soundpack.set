@@ -8,8 +8,8 @@
 #play {Cosmic Rage/general/misc/On.wav} 100; #say {speech on}}}
 #alias {playsound} {#if {@soundson = 1} {#play %1 %2}}
 #alias {loopsound} {#if {@soundson = 1} {#playloop %1 %2}}
-#alias ToggleConnectionCheck {#if {@ConnectionCheck  = 1} {#var ConnectionCheck 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no longer hear the sounds letting you know that you are still connected to the moo.} system} {#var ConnectionCheck  1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now hear the sounds letting you know that you are still connected to the moo.} system}}
-#alias {MuteSound} {#if {@soundson = 1} {#var soundson 0; #pc 0 stop; #play {Cosmic Rage/general/misc/off.wav} 100; #say {Sounds muted.} system} {#var soundson 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Sounds unmuted.} system}}
+#alias ToggleConnectionCheck {#if {@ConnectionCheck  = 1} {#var ConnectionCheck 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no longer hear the sounds letting you know that you are still connected to the moo.} voiceonly} {#var ConnectionCheck  1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now hear the sounds letting you know that you are still connected to the moo.} voiceonly}}
+#alias {MuteSound} {#if {@soundson = 1} {#var soundson 0; #pc 0 stop; #play {Cosmic Rage/general/misc/off.wav} 100; #say {Sounds muted.} voiceonly} {#var soundson 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Sounds unmuted.} voiceonly}}
 #alias Version {soundpack version Snapp Blue Scales Cosmic Rage Experience} {}
 #trigger {Soundpack last change *} {#sub {The last logged change to the soundpack according to the moo %1}}
 #alias spcredits {#say {Loading the Soundpack Credits. One moment.}; #alarm 1 {#edit {Cosmic Rage/Help files/Soundpack credits.txt}}}
@@ -24,12 +24,12 @@
 #alias spversion {spp;#gagon;snapp;info}
 #trigger {Last change*} {#ungagon}
 #key alt-V {SpVersion}
-#key Control-shift-R {#unalarm SPSave; #say {Reloading the soundpack, please wait.}; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {#say {Reloading complete! Please use Control-alt-shift-L, or type LoadBuffers to load your currently saved buffer list.} system}}
+#key Control-shift-R {#say {Reloading the soundpack, please wait...} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {#say {Reloading complete! Please use Control-alt-shift-L, or type LoadBuffers to load your currently saved buffer list.} voiceonly}}
 
 
 ;Saving settings.
 
-#alias {SaveSettings} {#play {Cosmic Rage/general/misc/SpSave.wav} 100; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
+#alias {SaveSettings} {#play {Cosmic Rage/general/misc/SpSave.wav} 90; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -46,7 +46,6 @@
 #Write 6 @gagHarvest @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @panShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @CVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @socials @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @ambon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @redalert @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Evol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -59,4 +58,5 @@
 #Write 6 @SilentIntro @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SilentClock @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @ConnectionCheck @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @numpadon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}

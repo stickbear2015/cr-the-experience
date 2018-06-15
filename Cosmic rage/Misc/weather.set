@@ -170,3 +170,57 @@ playsound {cosmic rage/general/weather/pouringRain.wav} @vol}}
 #gagline all}} {} AnyCase
 #trigger {You spot clouds drifting across the open sky from the window} {#if {@gagWeather = 1} {
 #gagline all}} {} AnyCase
+#trigger {The sun warms the cool air, as there is a breeze, it is quite nice out} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {The sky is cloudy.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {It feels cool in here.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {The sun tries to shine through the clouds obscuring it.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A cold wind is blowing.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {The wind can be heard blowing outside.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {The wind chills you slightly as it blows against you.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A gale-force wind is blowing!} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {You can almost see the walls vibrating as the gale blows loudly against them.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A small piece of debris narrowly misses your face as it's blown past by the force of the wind.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A heavy storm rages in the sky.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {Thunder booms and roles outside.} {
+#if {@gagWeather = 1} {
+#gagline all};
+#if {@weather = 1} {
+playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}} {} AnyCase
+#trigger {A crack of thunder booms around you, before a fork of lightning lances across the sky.} {
+#if {@gagWeather = 1} {
+#gagline all};
+#if {@weather = 1} {
+playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}} {} AnyCase
+#trigger {it's snowing} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {You see snow falling outside the window} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {snow is falling in large flakes} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {Heavy rainclouds allude to an oncoming storm.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A shadow darkens the room as rainclouds blot out light from outside.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A shadow sweeps over you as a raincloud blots out the light.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {It's hailing!} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A small hailstone narrowly misses your head.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {A freezing wind is blowing.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {The wind can be heard buffeting against the walls.} {#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase
+#trigger {The wind makes you shiver slightly as it blows its icy fingers against you.}{#if {@gagWeather = 1} {
+#gagline all}} {} AnyCase

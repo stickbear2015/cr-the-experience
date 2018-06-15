@@ -1,3 +1,10 @@
+522. Well this is a shitty change now isn't it? The poop social now has a sound.
+Copy Cosmic Rage/misc/socials.set and sounds/general/socials/poop.wav.
+521. Added the woof social because aren't puppies cute?
+Copy Cosmic Rage/misc/socials.set and sounds/general/socials/Puppy.wav 520. I've finally got around to fixing every single bug with trains. Everything train related in the game should work, even the ambiances.
+Copy Cosmic Rage/misc/trains.set.
+519. Notices from the moo now look tons better, and they have a new sound.
+Copy Cosmic Rage/misc/misc.set and sounds/general/misc/Notice.wav.
 518. I've totally reworked a few things. First is the way VIP is changing and saving volumes. It's now much more reliable, and the volume will change by 10 percent each time. You can now go from 0 percent to 100 percent, rather than the 5 percent to 90 percent you could before.  The second change is, seeing as many people were complaining about it, I've gotten rid of all the okay dialogues that would pop up when you'd toggle something. The message will now only be spoken, and not stored in your output window.
 Copy Cosmic Rage/misc.
 517. I have removed the socials toggle as it was causing issues with a few things.

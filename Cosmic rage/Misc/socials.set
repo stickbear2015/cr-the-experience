@@ -103,3 +103,6 @@ playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan
 #trigger {You yell: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}
 #trigger {* yells: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}
 #trigger {* suddenly yells, "I'm a dog and I like socks!"} {playsound {Cosmic Rage/general/socials/socks.wav} @vol}
+#trigger {*woof*} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}
+#trigger {*woofs*} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}
+#trigger {*poop*} {playsound {Cosmic Rage/general/socials/Poop.wav} @vol}

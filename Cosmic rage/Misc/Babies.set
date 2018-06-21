@@ -11,3 +11,6 @@
 #trigger {* really seems to be enjoying *} {playsound  {Cosmic Rage/general/Baby/babyhappy.wav} @vol; #gagline voice} {}
 #trigger {* gently opens * mouth and begins to gently feed * to *} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; #gagline all; #var BabyEathandle %playhandle; #var BabyEat 1} {}
 #trigger {*gently opens *mouth and begins to help *drink *} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; #gagline all; #var BabyDrinkhandle %playhandle; #var BabyDrink 1} {}
+#trigger {* pukes up all over *self!} {#if {@BabyEat = 1} {
+#pc @BabyEathandle stop;
+#var BabyEat 0}}

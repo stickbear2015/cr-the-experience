@@ -4,6 +4,8 @@
 ;Keys for adjusting volumes.
 #key {f9} {genvoldown}
 #key {f10} {genvolup}
+#key {Control-F12} {CommsVolUp}
+#key {Control-shift-F12} {CommsVolDown}
 #key {alt-f7} {musicvoldown}
 #key {alt-f8} {musicvolup}
 #key {alt-f2} {combatdown}

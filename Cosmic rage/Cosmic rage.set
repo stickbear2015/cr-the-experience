@@ -107,9 +107,11 @@
 #read 6 SilentClock 27;
 #read 6 ConnectionCheck 28;
 #read 6 numpadon 29;
+#read 6 CommsVol 30;
 #close 6
 ;misc.
 #if {NOT %Defined(Vol)} {#Var Vol 70}
+#if {NOT %Defined(CommsVol)} {#Var CommsVol 70}
 #If {NOT %Defined(ambon)} {#Var ambon 1}
 #If {NOT %Defined(roomsoundplaying)} {#Var RoomSoundPlaying 0}
 #If {NOT %Defined(MusicSounds)} {#Var MusicSounds 1}

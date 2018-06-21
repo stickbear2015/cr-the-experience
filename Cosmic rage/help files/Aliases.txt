@@ -4,6 +4,8 @@ Aliases for changing volumes.
 
 	general volume down:genvoldown|
 general volume up:genvolup|
+Communication volume up:CommsVolUp|
+Communication volume down:CommsVolDown|
 planetary music volume down:musicvoldown|
 planetary music volume up:musicvolup|
 Ship combat music volume down:combatdown|
@@ -67,3 +69,5 @@ Check the last logged change:SpVersion.
 View the info for the soundpack:SpInfo
 config:Load the configuration manager|
 
+SpReload:Reload the soundpack.
+HappyBirthday:It's a secret.

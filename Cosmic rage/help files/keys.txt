@@ -7,6 +7,7 @@ shift-f3 shift-f4. adjust roomAmbienceVolume.
 f7 f8. Adjust vehicleVolume. Note. you will need to type look in order for this volume setting to take effect.
 Alt-F2 Alt-F3. Adjust ship combat music volume.
 f9 f10. Adjust main volume.
+control-F12 control-shift-F12. Adjust Comms volume.
 alt-f7 alt-f8. Adjust music volume
 control-f2 control-f3. Adjust ship combat volume.
 control-f9 control-f10 Adjust Ship engine volume.

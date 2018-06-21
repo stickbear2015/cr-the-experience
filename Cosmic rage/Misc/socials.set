@@ -37,7 +37,6 @@ playsound {cosmic rage/general/socials/lie.wav} @vol}
 #trigger {*chortles*} {playsound {cosmic rage/general/socials/chortle.wav} @vol}
 #trigger {You chuckle.} {playsound {cosmic rage/general/socials/chuckle.wav} @vol}
 #trigger {You chuckle at *} {playsound {cosmic rage/general/socials/chuckle.wav} @vol}
-#trigger {*chuckle*} {playsound {cosmic rage/general/socials/chortle.wav} @vol}
 #trigger {you bounce up and down.} {playsound {cosmic rage/general/socials/bounce*2.wav} @vol}
 #trigger {* bounces up and down.} {playsound {cosmic rage/general/socials/bounce*2.wav} @vol}
 #trigger {You burst into tears.} {playsound {cosmic rage/general/socials/cry*4.wav} @vol}
@@ -72,13 +71,14 @@ playsound {cosmic rage/general/socials/lie.wav} @vol}
 #trigger {You collapse.} {playsound {cosmic rage/general/socials/collapse*3.wav} @vol}
 #trigger {You collapse into * arms.} {playsound {cosmic rage/general/socials/collapse*3.wav} @vol}
 #trigger {*collapses*} {playsound {cosmic rage/general/socials/collapse*3.wav} @vol}
-#TRIGGER {You punch *} {playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500)}
-#TRIGGER {You swing back your arm, and plant your fist firmly in * face.} {playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500)}
+
+#TRIGGER {You punch *} {#Play {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {#PLAY {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {You swing back your arm, and plant your fist firmly in * face.} {#Play {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {#PLAY {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {* swings back * arm, and plants * fist firmly in * face.} {
-playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500);}
-#TRIGGER {*punches*} {playsound {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500)}
-#TRIGGER {You kick *} {playsound {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500);}
-#TRIGGER {* kicks *} {playsound {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500)}
+#Play {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {#PLAY {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {*punches*} {#Play {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {#PLAY {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {You kick *} {#Play {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {#PLAY {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {* kicks *} {#Play {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {#PLAY {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {You practice your rugby tackles.} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}
 #trigger {You tackle *} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}
 #trigger {*tackles*} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}

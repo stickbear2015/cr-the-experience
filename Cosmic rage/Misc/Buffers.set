@@ -4,15 +4,15 @@
 #var BufferPointer 1
 #var BufferName {%word(@CurrentBufferList,"|",1)}
 #var ItemPointer 1
-#alias delbuffer  {#pc 0 stop; #play {Cosmic Rage/general/misc/BufferDelete.wav} 90; #var item {%pick(p:Which buffer do you want to delete?|@CurrentBufferList)};#var CurrentBufferList {%delitem(@CurrentBufferList,@item)};#pc 0 stop; #play {Cosmic Rage/general/misc/BufferRemoved.wav} 90; #var BufferPointer 1}
+#alias delbuffer  {#pc 0 stop; #play {Cosmic Rage/general/misc/BufferDelete.wav} @CommsVol; #var item {%pick(p:Which buffer do you want to delete?|@CurrentBufferList)};#var CurrentBufferList {%delitem(@CurrentBufferList,@item)};#pc 0 stop; #play {Cosmic Rage/general/misc/BufferRemoved.wav} @CommsVol; #var BufferPointer 1}
 #key {ALT-SHIFT-LEFT} {delbuffer}
-#alias addbuffer {#pc 0 stop; #play {Cosmic Rage/general/misc/BufferAdd.wav} 90; #var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)};#if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {#pc 0 stop; #play {Cosmic Rage/general/misc/BufferActive.wav} 90} {#additem CurrentBufferList @newitem; #pc 0 stop; #play {Cosmic Rage/general/misc/BufferAdded.wav} 90} {#var BufferPointer 1}}
+#alias addbuffer {#pc 0 stop; #play {Cosmic Rage/general/misc/BufferAdd.wav} @CommsVol; #var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)};#if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {#pc 0 stop; #play {Cosmic Rage/general/misc/BufferActive.wav} @CommsVol} {#additem CurrentBufferList @newitem; #pc 0 stop; #play {Cosmic Rage/general/misc/BufferAdded.wav} @CommsVol} {#var BufferPointer 1}}
 #key {ALT-SHIFT-RIGHT} {addbuffer}
 
 ;aliases for saving and reading preferred buffers.
 
-#alias savebuffers {#file 5 bufferlist.txt;#write 5 "saving...";#close 5;#delfile bufferlist.txt;#file 5 bufferlist.txt;#forall @CurrentBufferList {#write 5 %i};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersSaved.wav} 90}
-#alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt;#var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersLoaded.wav} 90}
+#alias savebuffers {#file 5 bufferlist.txt;#write 5 "saving...";#close 5;#delfile bufferlist.txt;#file 5 bufferlist.txt;#forall @CurrentBufferList {#write 5 %i};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersSaved.wav} @CommsVol}
+#alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt;#var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersLoaded.wav} @CommsVol}
 
 ;Keys for loading, reading  and saving buffers
 

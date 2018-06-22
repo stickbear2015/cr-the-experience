@@ -1,3 +1,7 @@
+531. When in an intraplanetary pod, messages saying where the pod is headed are now gagged. We're all about reducing spam.
+Copy Cosmic Rage/misc/misc.set.
+530. Fixed a bug that prevented the planetary music from playing on Goscro Krah.
+Copy Cosmic Rage/misc/Music.set.
 529. Seeing as the soundpack will turn one year old on June 23rd, I've made something special for all of you guys. If you type HappyBirthday, you'll get a gift. Thank you all for being the amazing users you are.
 Copy Cosmic Rage/misc/Soundpack.set and sounds/general/misc/HappyBirthday.wav.
 528. Added the SpReload alias to reload the soundpack.

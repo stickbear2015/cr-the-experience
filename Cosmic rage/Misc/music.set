@@ -231,7 +231,7 @@ loopsound {cosmic rage/music/planets/Science.wav} @musicvol;
 #pc @musichandle stop; #var MusicPlaying 0};
 loopsound {cosmic rage/music/planets/Cape Dread.wav} @musicvol;
 #var musicplaying 1; #var musichandle %playhandle; #var planet "dread"}};
-#If {%IfWord(Goscro Crah,@planetname," ")} {
+#If {%IfWord(Goscro krah,@planetname," ")} {
 #if {@planet <> "goscro"} {
 #if {@musicPlaying = 1} {
 #pc @musichandle stop; #var MusicPlaying 0};

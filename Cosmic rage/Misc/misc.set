@@ -258,3 +258,4 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
 #trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol}
+#trigger {The pod turns *} {#gagline all}

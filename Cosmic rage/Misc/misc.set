@@ -1,5 +1,9 @@
-#TRIGGER {* returns to reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}}
-#TRIGGER {* enters from reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}}
+#TRIGGER {* returns to reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}; #additem ConnectionMessages %0}
+#TRIGGER {* enters from reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; #additem ConnectionMessages %0}
+#TRIGGER {It's a new player! * enters from reality.} {playsound {Cosmic Rage/general/misc/Cheer.wav} @vol; #additem ConnectionMessages %0}
+#trigger {*is now AFK*} {#additem AFKMessages %0}
+#trigger {*will be right back*} {#additem AFKMessages %0}
+#trigger {* has returned*} {#additem AFKMessages %0}
 #TRIGGER {You can't go that way.} {#gagline all; playsound {cosmic rage/general/misc/CantGo.wav} @vol};
 #TRIGGER {[[]Type a line of input or * a to abort the command.]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
 #TRIGGER {[[]Enter * or *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
@@ -258,4 +262,4 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
 #trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol}
-#trigger {The pod turns *} {#gagline all}
+#trigger {The pod turns *} {#if {@SilentPod = 1} {#gagline all}}

@@ -93,6 +93,7 @@ Alt-shift-PageUp. Move 20 items up in a buffer.
 Alt-shift-PageDown. Move 20 items down in a buffer.
 Control-alt-shift-L. Load your list of saved buffers.
 Control-alt-shift-S. Saves your list of buffers.
+Control-alt-shift-Delete. Clear the contents of a buffer.
 
 Misc keys.
 

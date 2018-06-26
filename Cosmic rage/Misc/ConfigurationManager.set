@@ -28,6 +28,7 @@ alternate vehicle engines:togglevehicle|
 alternate ship engines:toggleship|
 Short map text toggle:ShortMapText|
 gag ship combat toggle:gagscombat|
+Toggle the announcement of pod movement:TogglePods|
 pan ship combat toggle:pancombat|
 gag harvesting toggle:gagharvest|
 red alert toggle:toggleRedAlert|
@@ -311,3 +312,4 @@ vehicle engine volume:vvol}}
 #if {@SilentIntro = 1} {#var SilentIntro 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Soundpack intro music will now play.} voiceonly} {#var SilentIntro 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Soundpack intro music will no longer play.} voiceonly}}
 #alias ToggleClocks {#if {@SilentClock = 1} {#var SilentClock 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Clocks will now chime.} voiceonly} {#var SilentClock 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Clocks will no longer chime, and clock messages will not be seen} voiceonly}}
 #alias ToggleNumpad {#if {@numpadon = 1} {#class Numpad disable; #var numpadon 0;#play {Cosmic Rage/general/misc/Off.wav} 100; #say {You may now use the numpad to enter numbers directly without them trying to move your character around or navigate your ship.} voiceonly} {#class Numpad enable;#var numpadon 1;#play {Cosmic Rage/general/misc/On.wav} 100; #say {You may now use the numpad to move your character  around or navigate your ship.} voiceonly}}
+#alias TogglePods {#if {@SilentPod = 1} {#var SilentPod 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Pod movement messages will now be spoken.} voiceonly} {#var SilentPod  1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Pod movement messages will no longer be spoken.} voiceonly}}

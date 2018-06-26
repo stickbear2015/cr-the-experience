@@ -327,3 +327,4 @@ loopsound {cosmic rage/Ambiences/space.wav} @roomvol;
 #pc @vehiclehandle stop; #var vehiclesoundplaying 0};
 loopsound {cosmic rage/Ambiences/Death.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Death"}}
+#trigger {You take a deep breath and...} {#pc 0 stop}

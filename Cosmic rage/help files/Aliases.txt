@@ -58,7 +58,7 @@ Mute sounds toggle:MuteSound|
 
 Misc aliases.
 
-save your pack:savepack|
+save your soundpack settings:SaveSettings|
 List of Alias's:Alias's|
 keystrokes:keys|
 readme:readme|
@@ -71,3 +71,5 @@ config:Load the configuration manager|
 
 SpReload:Reload the soundpack.
 HappyBirthday:It's a secret.
+TogglePods:Toggle voice output of pod movement.
+ClearBuffer:Clear the contents of a buffer.

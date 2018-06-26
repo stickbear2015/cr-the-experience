@@ -1,3 +1,11 @@
+535. The death music will now stop upon returning.
+Copy Cosmic Rage/misc/mainAmbience.set.
+534. Added the clearbuffer alias and control-alt-shift-delete key to clear all items from the currently focused buffer. This is especially useful if you start getting errors because the buffer has too many items for VIPMud to handle it.
+Copy Cosmic Rage/help files and Cosmic Rage/misc/Buffers.set.
+533. You can now toggle the announcement of pod movement with the TogglePods alias.
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/ConfigurationManager.set and misc.set.
+532. Why not? Added an AFK messages buffer and a connection messages buffer to the master buffer list.
+Copy Cosmic Rage/misc/Buffers.set and misc.set.
 531. When in an intraplanetary pod, messages saying where the pod is headed are now gagged. We're all about reducing spam.
 Copy Cosmic Rage/misc/misc.set.
 530. Fixed a bug that prevented the planetary music from playing on Goscro Krah.
@@ -5,7 +13,7 @@ Copy Cosmic Rage/misc/Music.set.
 529. Seeing as the soundpack will turn one year old on June 23rd, I've made something special for all of you guys. If you type HappyBirthday, you'll get a gift. Thank you all for being the amazing users you are.
 Copy Cosmic Rage/misc/Soundpack.set and sounds/general/misc/HappyBirthday.wav.
 528. Added the SpReload alias to reload the soundpack.
-Copy Soundpack.set.
+Copy Cosmic Rage/misc/Soundpack.set.
 527. Credits, Charley Dunkan: Communication volume is now controled independently of all other volumes. The state of this volume will also be saved upon using the quit command, or control-S. Please read the help files to learn what aliases and keys work with this new function.
 Copy Cosmic Rage.set, Cosmic Rage/Help Files, Cosmic Rage/misc/Comms.set, ConfigurationManager.set, keys.set and soundpack.set.
 526. Another one bites the dust... But what's biting the dust you may ask? Well it's a bird! It's a plane! It's... Oh. It's just a ship. When a ship flies into a star, it will now as I said, "Bite the dust."
@@ -19,7 +27,8 @@ Copy Cosmic Rage/misc/babies.set.
 522. Well this is a shitty change now isn't it? The poop social now has a sound.
 Copy Cosmic Rage/misc/socials.set and sounds/general/socials/poop.wav.
 521. Added the woof social because aren't puppies cute?
-Copy Cosmic Rage/misc/socials.set and sounds/general/socials/Puppy.wav 520. I've finally got around to fixing every single bug with trains. Everything train related in the game should work, even the ambiances.
+Copy Cosmic Rage/misc/socials.set and sounds/general/socials/Puppy.wav.
+520. I've finally got around to fixing every single bug with trains. Everything train related in the game should work, even the ambiances.
 Copy Cosmic Rage/misc/trains.set.
 519. Notices from the moo now look tons better, and they have a new sound.
 Copy Cosmic Rage/misc/misc.set and sounds/general/misc/Notice.wav.

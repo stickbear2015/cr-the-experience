@@ -141,7 +141,7 @@ playsound {cosmic rage/general/comms/Mentor.wav} @CommsVol; #additem Mentor %0; 
 #TRIGGER {[[]Auction]: Auction master carehart announcing a bid: *} {playsound {cosmic rage/general/auction/bid.wav} @CommsVol; #additem Auction %0} {} AnyCase
 #trigger {Newbie is now on.} {playsound {Cosmic Rage/general/comms/activate.wav} @CommsVol}
 #trigger {Newbie is now off.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @CommsVol}
-#trigger {An ooc link from * has been automatically accepted.} {playsound {Cosmic Rage\general\comms\linkConfirmed.wav} 85} {} AnyCase
+#trigger {An ooc link from * has been automatically accepted.} {playsound {Cosmic Rage\general\comms\linkConfirmed.wav} @CommsVol} {} AnyCase
 #trigger {A very crackley voice can barely be heard over the main console saying "*calling requesting starship,  due to bad weather, you are unable to * at the current time*"} {playsound {Cosmic Rage/ships/misc/BadWeather.wav} @CommsVol; #additem FlightControl %0; #sub {Do to inclement weather, your request to launch or land can not be granted at the current time. Please, tune into flight control weather announcements, check your weather reports, and try again later.}}
 #trigger {[[]Yazyki] *:*} {
 playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0; #file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1} {} AnyCase

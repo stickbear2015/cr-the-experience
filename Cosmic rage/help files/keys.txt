@@ -99,8 +99,9 @@ Misc keys.
 
 Control-Slash. Will force VIP to ungag your speech if something gets stuck and you hear that Gagging is in effect.
 Control-S. Save your current soundpack settings.
-alt-shift-c. Pull up the changelog.
 Alt-shift-A. Load the list of alias's.
+Alt-shift-B. Pull up the buffers help file.
+alt-shift-c. Pull up the changelog.
 alt-shift-k. Pull up the text file containing all available keys you can use in the pack.
 alt-shift-r. Pull up the readme.
 Control-shift-R. Reload the soundpack.

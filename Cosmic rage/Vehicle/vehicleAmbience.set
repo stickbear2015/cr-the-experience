@@ -1,4 +1,3 @@
-#class vehicleamb enable;
 #class ambon disable;
 #TRIGGER {The floor hums slightly with the vibration of the engines.} {
 #If {%IfWord(Trash,@PlanetName," ")} {

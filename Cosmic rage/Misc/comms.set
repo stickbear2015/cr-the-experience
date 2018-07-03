@@ -5,7 +5,7 @@
 #TRIGGER {[[]Chat]*} {playsound {Cosmic Rage\general\comms\Chat.wav} @CommsVol; #additem Chat %0; #file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]General]*} {playsound {Cosmic Rage\general\comms\General.wav} @CommsVol; #additem General %0; #file 1 {cosmic rage/logs/%char General.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Missions]*} {playsound {Cosmic Rage\general\comms\Missions.wav} @CommsVol; #additem missions %0; #file 1 {cosmic rage/logs/%char Missions.log};#write 1 %0;#close 1} {} AnyCase
-#TRIGGER {[[]Newbie]*} {playsound {Cosmic Rage\general\comms\Newbie.wav} @CommsVol; #additem Newbie %0; #file 1 {cosmic rage/logs/%char newbie.log};#write 1 %0;#close 1} {} AnyCase
+#TRIGGER {[[]Newbie]*:*} {playsound {Cosmic Rage\general\comms\Newbie.wav} @CommsVol; #additem Newbie %0; #file 1 {cosmic rage/logs/%char newbie.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {Link with * successful.} {playsound {Cosmic Rage\general\comms\linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {OOC link with * successful.} {playsound {Cosmic Rage\general\comms\linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {[[]Room OOC]*} {playsound {cosmic rage/general/comms/rooc.wav} @CommsVol; #additem rooc %0; #file 1 {cosmic rage/logs/%char rooc.log};#write 1 %0;#close 1} {} AnyCase
@@ -54,7 +54,7 @@ playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
 playsound {cosmic rage/general/comms/otherPhase.wav} @Vol}
 #trigger {A rip appears in the air and slowly grows until * is phased through in a beam of * light!} {
 playsound {cosmic rage/general/comms/faze.wav} @Vol}
-#trigger {[[]Private network],*} {playsound {cosmic rage/general/comms/privnet.wav} @CommsVol; #additem PN %0; #file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1} {} AnyCase
+#trigger {[[]Private network],*} {playsound {cosmic rage/general/comms/privnet.wav} @CommsVol; #additem PrivateNetwork %0; #file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]RP]*} {playsound {cosmic rage/general/comms/rp.wav} @CommsVol; #additem RP %0; #file 1 {cosmic rage/logs/%char RP.log};#write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Socials] *} {playsound {cosmic rage/general/comms/socials.wav} @CommsVol; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Arena]*} {playsound {cosmic rage/general/comms/arena.wav} @CommsVol; #additem Arena %0; #file 1 {cosmic rage/logs/%char Arena.log};#write 1 %0;#close 1} {} AnyCase
@@ -151,3 +151,5 @@ playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0;
 playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0; #file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]OOC PA]*} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @CommsVol; #additem OOCPrivate %0} {} AnyCase
+#trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
+#trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; #additem Game %0} {} AnyCase

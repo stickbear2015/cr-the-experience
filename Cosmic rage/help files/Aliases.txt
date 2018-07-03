@@ -60,9 +60,10 @@ Misc aliases.
 
 save your soundpack settings:SaveSettings|
 List of Alias's:Alias's|
+Buffer help:Buffers|
+changelog:changelog}}}
 keystrokes:keys|
 readme:readme|
-changelog:changelog}}}
 Report a bug:SpBug|
 Suggest something you'd like added to the soundpack:SpSuggest.
 Check the last logged change:SpVersion.
@@ -73,3 +74,4 @@ SpReload:Reload the soundpack.
 HappyBirthday:It's a secret.
 TogglePods:Toggle voice output of pod movement.
 ClearBuffer:Clear the contents of a buffer.
+GameGag:Gag or ungag certain Arcade messages.

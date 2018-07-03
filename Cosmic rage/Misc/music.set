@@ -261,6 +261,12 @@ loopsound {cosmic rage/music/planets/Danimara.wav} @musicvol;
 #pc @musichandle stop; #var MusicPlaying 0};
 loopsound {cosmic rage/music/planets/Oriali.wav} @musicvol;
 #var musicplaying 1; #var musichandle %playhandle; #var planet "oriali"}};
+#If {%IfWord(Parody,@planetname," ")} {
+#if {@planet <> "Parody"} {
+#if {@musicPlaying = 1} {
+#pc @musichandle stop; #var MusicPlaying 0};
+loopsound {cosmic rage/music/planets/Parody.wav} @musicvol;
+#var musicplaying 1; #var musichandle %playhandle; #var planet "Parody"}};
 #If {%IfWord(Vakari,@planetname," ")} {
 #if {@planet <> "Vakari"} {
 #if {@musicPlaying = 1} {

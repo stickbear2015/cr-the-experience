@@ -264,3 +264,4 @@ playsound {cosmic rage\activities\moon\PowerBuildUp.wav} @CVol}
 
 #TRIGGER {You dromatically slam down a lever, twiddle some dials, then smack a big red button} {#Gagline ALL; playsound {Cosmic Rage/ships/Combat/solar1.wav} @CVol; #var solarhandle %PlayHandle};
 #TRIGGER {all ship movement appears to completely stop for a moment as the ship's momentum is countered by a huge bludgening force.} {#Gagline all; #PC @solarhandle stop; playsound {Cosmic Rage/ships/Combat/solar2.wav} @CVol} {} AnyCase
+#trigger {*nester wheels in and settles in a charging station.} {playsound {Cosmic Rage/ships/Misc/ModuleMove*8.wav} @vol}

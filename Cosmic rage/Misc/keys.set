@@ -28,14 +28,15 @@
 #Key {control-l} {#var LagAmount 0;
 #alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
 echo Lag.test} {}
-#key alt-shift-c {Changelog}
-#key alt-shift-R {Readme}
 #key alt-shift-A {Aliases}
+#key Alt-shift-B {Buffers}
+#key alt-shift-c {Changelog}
 #key alt-shift-K {Keys}
+#key alt-shift-R {Readme}
 
 #key alt-shift-d {DroneToggle}
 #key alt-shift-m {togglemusic}
-#key control-shift-c {togglecombat}
+#key {control-shift-c} {togglecombat}
 #key control-f8 {togglevehicle}
 #key control-shift-f8 {toggleship}
 #key control-g {gagscombat}

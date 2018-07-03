@@ -1,3 +1,21 @@
+544. Using the alias GameGag, you can now gag certain messages in the Arcade.  This setting will not be saved upon reloading of the pack.
+Copy Cosmic Rage/help files, Cosmic Rage/misc/ConfigurationManager.set and misc.set.
+543. Happy birthday CR! I've added a sound and buffer for the game channel in the arcade, and while in the game, you will now get game music!
+Copy Cosmic Rage/misc/buffers.set, comms.set, music.set, sounds/general/comms/Game.wav and sounds/music/planets/Parody.wav.
+542. A sound has been added for the Soundpack announcements that are made for this pack.
+Copy Cosmic Rage/misc/Soundpack.set and sounds/general/comms/spAnnouncement.wav.
+541. Notices from the moo will now have the time added to the notice as well as the date.
+Copy Cosmic Rage/misc/misc.set.
+540. When sending the who command, the newbie sound will no longer play if Newbies are connected.
+Copy Cosmic Rage/misc/Comms.set.
+539. Added a sound for the Public announcement system. Stuff sent to this system will also be captured by the PA buffer.
+Copy Cosmic Rage/misc/Comms.set.
+538. When stocks refresh, the pack will let you know with a beautiful ding.
+Copy Cosmic Rage/misc/misc.set and sounds/general/misc/StocksRefreshed.wav.
+537. Made changes to how vehicle ambience volume was coded. Also, when setting all ambiance to off, it will now force ambience sounds to stop playing.
+Copy Cosmic Rage/misc/ConfigurationManager.set, keys.set, soundpack.set and Cosmic Rage/vehicle/VehicleAmbience.set.
+536. Added a help file to explain the buffers system.
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/ConfigurationManager.set and keys.set
 535. The death music will now stop upon returning.
 Copy Cosmic Rage/misc/mainAmbience.set.
 534. Added the clearbuffer alias and control-alt-shift-delete key to clear all items from the currently focused buffer. This is especially useful if you start getting errors because the buffer has too many items for VIPMud to handle it.

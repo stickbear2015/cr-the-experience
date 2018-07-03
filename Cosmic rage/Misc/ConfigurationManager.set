@@ -44,6 +44,7 @@ Toggle the Numpad entering numbers:ToggleNumpad|
 Save your list of buffers:SaveBuffers|
 Load your list of saved buffers:LoadBuffers|
 List of Alias's:Aliases|
+Buffers:Buffers|
 keystrokes:keys|
 readme:readme|
 changelog:changelog}}}
@@ -147,7 +148,7 @@ changelog:changelog}}}
 #alias vehiclEvoldown {
 #math VehiclEvol {@VehiclEvol - 10};
 #if {@VehiclEvol < 0} {@VehiclEvol = 0};
-#play {Cosmic Rage/general/misc/VolumeDown.wav} @VehiclEvol; #say {Vehicle ambience volume @VehiclEvol percent} Voiceonly;
+#play {Cosmic Rage/general/misc/VolumeDown.wav} @VehiclEvol; #say {Vehicle ambience volume @VehiclEvol percent. You will need to look for this change to take effect.} Voiceonly;
 #if {@vehiclesoundplaying = 1} {
 #pc @VehicleHandle volume @vehiclEvol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -157,7 +158,7 @@ changelog:changelog}}}
 #alias  vehiclEvolup {
 #math VehiclEvol {@VehiclEvol + 10};
 #if {@VehiclEvol > 100} {@VehiclEvol = 100};
-#play {Cosmic Rage/general/misc/VolumeUp.wav} @VehiclEvol; #say {Vehicle ambience volume @VehiclEvol percent} Voiceonly;
+#play {Cosmic Rage/general/misc/VolumeUp.wav} @VehiclEvol; #say {Vehicle ambience volume @VehiclEvol percent. You will need to look for this change to take effect.} Voiceonly;
 #if {@vehiclesoundplaying = 1} {
 #pc @VehicleHandle volume @vehiclEvol};
 #File 6 {cosmic rage/misc/settings.set} 2;#Var SettingsFileCounter 2;
@@ -235,7 +236,7 @@ changelog:changelog}}}
 
 ;Other toggles
 #Alias {ambtoggle} {
-#if {@ambon = 1} {
+#pc 0 stop; #if {@ambon = 1} {
 #class ambon disable; #class shipamb disable; #class vehicleamb disable; #play {Cosmic Rage/general/misc/Off.wav} 100; #Say {Ambience sounds disabled.} voiceonly;
 #If {@RoomSoundPlaying = 1} {
 #pc @RoomHandle stop;
@@ -252,9 +253,7 @@ changelog:changelog}}}
 
 #alias togglemusic {
 #if {@MusicSounds = 1} {#var MusicSounds 0; #var planet ""; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Planetary Music disabled.} voiceonly; #if {@MusicPlaying = 1} {#var MusicPlaying 0; #pc @musichandle stop}} {#var MusicSounds 1; look; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Planetary music enabled.} voiceonly}};
-
-#alias togglecombat {
-#if {@cMusic = 1} {#var cMusic 0;; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Ship combat music disabled.} voiceonly; #if {@combatMusicPlaying = 1} {#var combatMusicPlaying 0; #pc @combatmusichandle stop}} {#var cMusic 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Ship combat music enabled.} voiceonly}};
+#alias {togglecombat} {#if {@cMusic = 1} {#var cMusic 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Ship combat music disabled.} voiceonly; #if {@combatMusicPlaying = 1} {#var combatMusicPlaying 0; #pc @combatmusichandle stop}} {#var cMusic 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Ship combat music enabled.} voiceonly}}
 
 #alias togglevehicle {
 #if {@altVehicleEngines = 1} {#var altVehicleEngines 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {alternate vehicle engines disabled.} voiceonly} {#var altVehicleEngines 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Alternate vehicle engines enabled.} voiceonly}};
@@ -274,10 +273,11 @@ changelog:changelog}}}
 #if {@weather = 1} {#var weather 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Weather sounds disabled.} voiceonly} {#var weather 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Weather sounds enabled.} voiceonly}}
 #alias gagweather {
 #if {@gagweather = 1} {#var gagweather 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Gagging of weather text disabled.} voiceonly} {#var gagweather 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Gagging of weather text enabled.} voiceonly}}
-#alias keys {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the list of available keys. One moment.}; #alarm 1 {#edit {cosmic rage/help files/keys.txt}}}
-#alias Aliases {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the list of aliases. One moment.}; #alarm 1 {#edit {cosmic rage/help files/Aliases.txt}}}
-#alias readme {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the readme. One moment.}; #alarm 1 {#edit {cosmic rage/help files/readme.txt}}}
-#alias changelog {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the changelog. One moment.}; #alarm 1 {#edit {cosmic rage/help files/changelog.txt}}}
+#alias Aliases {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the aliases help file. One moment.} Voiceonly; #alarm 1 {#edit {cosmic rage/help files/Aliases.txt}}}
+#alias Buffers {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the buffers help file. One moment.} voiceonly; #alarm 1 {#edit {cosmic rage/help files/buffers.txt}}}
+#alias changelog {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the changelog. One moment.} Voiceonly; #alarm 1 {#edit {cosmic rage/help files/changelog.txt}}}
+#alias keys {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the keys help file. One moment.} voiceonly; #alarm 1 {#edit {cosmic rage/help files/keys.txt}}}
+#alias readme {#play {Cosmic Rage/general/misc/LoadingFile.wav} 70; #say {Loading the readme. One moment.} Voiceonly; #alarm 1 {#edit {cosmic rage/help files/readme.txt}}}
 #key alt-shift-v { #pick {P:Please pick from a list of volume to check it's current setting.|
 general volume:genvol|
 room volume:roomvol|
@@ -313,3 +313,4 @@ vehicle engine volume:vvol}}
 #alias ToggleClocks {#if {@SilentClock = 1} {#var SilentClock 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Clocks will now chime.} voiceonly} {#var SilentClock 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Clocks will no longer chime, and clock messages will not be seen} voiceonly}}
 #alias ToggleNumpad {#if {@numpadon = 1} {#class Numpad disable; #var numpadon 0;#play {Cosmic Rage/general/misc/Off.wav} 100; #say {You may now use the numpad to enter numbers directly without them trying to move your character around or navigate your ship.} voiceonly} {#class Numpad enable;#var numpadon 1;#play {Cosmic Rage/general/misc/On.wav} 100; #say {You may now use the numpad to move your character  around or navigate your ship.} voiceonly}}
 #alias TogglePods {#if {@SilentPod = 1} {#var SilentPod 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Pod movement messages will now be spoken.} voiceonly} {#var SilentPod  1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Pod movement messages will no longer be spoken.} voiceonly}}
+#alias GameGag {#if {@GagGame = 1} {#var GagGame 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Arcade messages will now be spoken.} voiceonly} {#var GagGame 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Arcade messages will no longer be spoken.} voiceonly}}

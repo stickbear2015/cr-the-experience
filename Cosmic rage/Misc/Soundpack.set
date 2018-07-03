@@ -29,7 +29,7 @@
 
 ;Saving settings.
 
-#alias {SaveSettings} {#pc 0 stop; #play {Cosmic Rage/general/misc/SpSave.wav} 90; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
+#alias {SaveSettings} {#play {Cosmic Rage/general/misc/SpSave.wav} 80; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};

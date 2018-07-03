@@ -1,4 +1,4 @@
-#var MasterBufferList {chat|admin|AdminChat|general|ICPrivate|drone|intel|ship|trade|pa|Auction|Sport|clan|FlightControl|GroundToAir|HTPL|Distress|News|InfoComputerNotifications|Movement|ONews|Chargen|ConnectionMessages|AFKMessages|Mentor|Rewards|Squad|say|Org|Mapper|PrivateNetwork|Cult|Poker|newbie|Soundpacks|rooc|OOCPrivate|RP|changes|notices|announcements|SubAnnouncements|Arena|MusicFM|Library|Languages|Brag|OOC|Missions|recruitments|Unsec|SDL|MI|Jag|Tracebacks|Military|SOS}
+#var MasterBufferList {chat|admin|AdminChat|general|ICPrivate|drone|intel|ship|trade|Game|pa|Auction|Sport|clan|FlightControl|GroundToAir|HTPL|Distress|News|InfoComputerNotifications|Movement|ONews|Chargen|ConnectionMessages|AFKMessages|Mentor|Rewards|Squad|say|Org|Mapper|PrivateNetwork|Cult|Poker|newbie|Soundpacks|rooc|OOCPrivate|RP|changes|notices|announcements|SubAnnouncements|Arena|MusicFM|Library|Languages|Brag|OOC|Missions|recruitments|Unsec|SDL|MI|Jag|Tracebacks|Military|SOS}
 #var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1

@@ -151,5 +151,5 @@ playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0;
 playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0; #file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1} {} AnyCase
 #trigger {[[]OOC PA]*} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @CommsVol; #additem OOCPrivate %0} {} AnyCase
-#trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
+#trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/OOCPa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; #additem Game %0} {} AnyCase

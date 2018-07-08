@@ -1,3 +1,5 @@
+549. Credits, Tora: Changed the OOCPa sounds.
+Copy Cosmic Rage/misc/comms.set and sounds/ships/com.
 548. Fixed an error with saving your soundpack settings.
 Get rid of Cosmic Rage/misc/settings.set and Copy Cosmic Rage/misc/soundpack.set.
 547. Added some sounds for A pilot's parody. Please remember, I  have not gotten to all tiles yet, so if you find tiles that you'd like a sound for, just let me know.

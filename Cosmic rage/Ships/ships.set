@@ -77,8 +77,7 @@ playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 #pc @combatMusicHandle stop;
 #var combatMusicPlaying 0}}}
 
-#TRIGGER {You board *} {#gagline all; playsound {cosmic rage/ships/misc/BoardShip.wav} @vol; #if {@roomsoundplaying = 1} {
-#pc @roomhandle stop; #var roomsoundplaying 0}; #if {@musicplaying = 1} {#pc @musichandle stop; #var musicplaying 0; #var planet ""}; #if {@shipsoundplaying = 1} {#pc @ShipHandle stop; #var shipsoundplaying 0}; #if {@vehiclesoundplaying = 1} {#pc @vehiclehandle stop; #var vehiclesoundplaying 0}}
+#TRIGGER {You board *} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/BoardShip.wav} @vol}
 #TRIGGER {You hear a dull hum that swiftly rises to a deafening roar as the subatomic drive activates.} {#gagline all; playsound {cosmic rage/ships/misc/subatomicdrive.wav} @vol};
 #TRIGGER {The airlock hatch opens with a soft woosh.} {#gagline all; playsound {cosmic rage/ships/misc/OpenAirlock.wav} @vol; #PC %PlayHandle Pan %Random(0,4000)} {}
 #TRIGGER {The airlock closes with a soft woosh.} {#gagline all; playsound {cosmic rage/ships/misc/CloseAirlock.wav} @vol; #PC %PlayHandle Pan %Random(-4000,0)} {}
@@ -391,3 +390,4 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #if {@rech = 1} {
 #pc @rechHandle stop; #var rech 0}}
 
+#trigger {On screen, you see the grabber of the ship snatch the pod up, and quickly yank it in.} {#gagline all; playsound {Cosmic Rage/ships/misc/Pressurize.wav} @vol}

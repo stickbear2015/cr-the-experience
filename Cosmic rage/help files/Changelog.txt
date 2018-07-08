@@ -1,3 +1,11 @@
+548. Fixed an error with saving your soundpack settings.
+Get rid of Cosmic Rage/misc/settings.set and Copy Cosmic Rage/misc/soundpack.set.
+547. Added some sounds for A pilot's parody. Please remember, I  have not gotten to all tiles yet, so if you find tiles that you'd like a sound for, just let me know.
+Copy Cosmic Rage.set, Cosmic Rage/misc/APilot'sParody.set, and sounds/general/A pilot's parody.
+546. You can now use the GameGag alias to gag the text that you see while others are playing the game while you stand in the arcade room.
+Copy Cosmic Rage/misc/misc.set.
+545. I don't know why I didn't think of this sooner. I was just sitting here and the idea came to mind last night. What if I could use different soundpack and buffer settings across different characters? Well friends. Now you can! If you actually make new character entries in VIP for each of your characters and don't just log in using 1 entry for all chars on the mud, then this will work for you! For example. I have two chars right now, and each one has a totally different buffer list, and different soundpack settings. I have for example, ambience enabled on one char, but not on the other. Do you see how this works? I am of course happy to help in any way possible.  ***Note. Upon first running of the pack for each of your char entries within VIP, you *Must* either type SaveBuffers or use the save buffers key. Failing to do this will throw a few huge errors at you. Upon saving the first time, then you can go and do what you will with your buffer list.
+Copy Cosmic Rage.set, Cosmic Rage/misc/Buffers.set, ConfigurationManager.set and Soundpack.set.
 544. Using the alias GameGag, you can now gag certain messages in the Arcade.  This setting will not be saved upon reloading of the pack.
 Copy Cosmic Rage/help files, Cosmic Rage/misc/ConfigurationManager.set and misc.set.
 543. Happy birthday CR! I've added a sound and buffer for the game channel in the arcade, and while in the game, you will now get game music!

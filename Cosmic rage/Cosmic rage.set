@@ -36,6 +36,7 @@
 #load combat/combat.set
 
 ;misc set files
+#load misc/APilot'sParody.set
 #load misc/Babies.set
 #load misc/Buffers.set
 #load misc/cars.set
@@ -77,7 +78,7 @@
 
 ;Settings.
 
-#File 6 {cosmic rage/misc/settings.set} 1;
+#File 6 {cosmic rage/misc/%char settings.set} 1;
 #Read 6 vol 1;
 #read 6 shipVol 2;
 #read 6 vehicleVol 3;

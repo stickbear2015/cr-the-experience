@@ -1,6 +1,6 @@
 #TRIGGER {You gently open *mouth and begin to help *eat *} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; #gagline all; #var BabyEathandle %playhandle; #var BabyEat 1} {}
 #TRIGGER {You gently open * mouth and begin to help *drink*} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; #gagline all; #var BabyDrinkhandle %playhandle; #var BabyDrink 1} {}
-#TRIGGER {* appears to have finished *drink.{playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyDrink = 1} {
+#TRIGGER {* appears to have finished *drink.} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyDrink = 1} {
 #pc @BabyDrinkhandle stop;
 #var BabyDrink 0}} {}
 #TRIGGER {*burps as *finishes *food.} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyEat = 1} {

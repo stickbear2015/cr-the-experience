@@ -11,5 +11,4 @@
 #trigger {You roll the die.} {#gagline all; playsound {Cosmic Rage/general/A Pilot's Parody/Roll.wav} @vol}
 #trigger {You grab some bait and cast your line!} {playsound {Cosmic Rage/General/A Pilot's Parody/CastLine.wav} @vol}
 #trigger {You grab some poles and enter a deep and dark cave.} {playsound {Cosmic Rage/General/A Pilot's Parody/Dig.wav} @vol}
-#trigger {Oops! The cave collapsed on you.} {playsound {Cosmic Rage/General/A Pilot's Parody/Cave.wav} @vol}
 #trigger {The screen on A pilot's parody flickers and plays a whomp whomp whomp tune at your loss.} {#gagline all; playsound {Cosmic Rage/General/A Pilot's Parody/Lose.wav} @vol}

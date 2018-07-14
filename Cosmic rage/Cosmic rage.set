@@ -109,6 +109,7 @@
 #read 6 ConnectionCheck 28;
 #read 6 numpadon 29;
 #read 6 CommsVol 30;
+#read 6 ChannelLogging 31;
 #close 6
 ;misc.
 #if {NOT %Defined(Vol)} {#Var Vol 70}

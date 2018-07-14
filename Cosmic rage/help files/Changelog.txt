@@ -1,3 +1,17 @@
+556. Lifts are now working as they should.
+Copy Cosmic Rage/misc/misc.set.
+555. Car ambiences should be fixed.
+Copy Cosmic Rage/misc/mainAmbience.set and Cosmic Rage/vehicle/vehicle.set
+554. Added a sound for when a player whispers something to you.
+Copy Cosmic Rage/misc/misc.set and sounds/general/misc/whisper.wav
+553. The soundpack announcement has been updated so as to not show any racism to blue buttons. Or blue anything. Is that some sort of self destruct button? Who knows.
+Copy Cosmic Rage/misc/soundpack.set.
+552. Fixed the sound. for the general channel. You don't even want to know how I broke it.
+Copy Cosmic Rage/misc/comms.set.
+551. You can now decide if channel messages are stored to files or not. The state of this setting is saved upon saving of the packs settings.
+Copy Cosmic Rage.set, Cosmic Rage/misc/comms.set, ConfigurationManager.set, hosts.set, keys.set, misc.set and Soundpack.set.
+550. Do to copyright issues I really don't want to deal with, the sounds for the soundpack announcements and saving the soundpack settings have been changed. Also. The soundpack announcements will now respect comms volume. How rude. Upon the pack being updated, the SpAnnouncement sound will now play as well as the Soundpacks channel sound.
+Copy Cosmic Rage/misc/soundpack.set and sounds/general/comms/SpAnnouncement.wav and sounds/general/misc/SpSave.wav
 549. Credits, Tora: Changed the OOCPa sounds.
 Copy Cosmic Rage/misc/comms.set and sounds/ships/com.
 548. Fixed an error with saving your soundpack settings.

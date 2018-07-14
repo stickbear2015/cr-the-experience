@@ -16,12 +16,13 @@ A shared dropbox folder has been created as well. If you'd like to be invited to
 
 2. You will need to go and make sure all the information is correct in the connection setup wizard within VIPMud. several questions have been asked about this, so answers will be provided.
 	Under the Connect menu from within VIPMuds menu structure, find the Character Setup/Connect option. Hit enter on that and you'll be dropped into the connection wizard. A few edit boxes and options will present themselves. At least with the NVDA screen reader, the titles of these edit boxes are not spoken. The window text has been captured, and will be shown below. The following controls are available in this dialogue:
-Character Name. Normally the name you give your character within the Mud.
-Character Reference. A unique name that VipMud uses to identify your character.  It is usually the same as your character name, or if you use this character in other Muds, a name closely related.
+Things that need information will be surrounded by stars.
+***Character Name***. Normally the name you give your character within the Mud. Not filling this out will cause the pack to throw errors. Note. This can not be "Unnamed"
+***Character Reference***. A unique name that VipMud uses to identify your character.  It is usually the same as your character name, or if you use this character in other Muds, a name closely related. Not filling this out will cause the pack to throw errors. Note. This can not be "Unnamed"
 Mud list. This list is compiled from other characters you have created.  If you have already entered a character for a Mud, the Mud name will appear here. Select the Mud and press Enter.  The Mud related information will automatically be filled in.  If there is no reference to the Mud, Tab past this list and enter the Mud information in the following three edit boxes.
-Mud Name. The name the Mud calls itself. For example, "Cosmic Rage."
-Host Name. The address to the mud. The available addresses to connect to Cosmic Rage are, "cosmicrage.earth," "cosmicrage.nathantech.net," or an IP address such as "87.106.252.196."
-Port number. The port number is usually in the form of two to four digits. The port number  is supplied normally with the host name. The port for Cosmic Rage is, "7777."
+***Mud Name***. The name the Mud calls itself. For example, "Cosmic Rage."
+***Host Name***. The address to the mud. The available addresses to connect to Cosmic Rage are, "cosmicrage.earth," "cosmicrage.nathantech.net," or an IP address such as "87.106.252.196."
+***Port number***. The port number is usually in the form of two to four digits. The port number  is supplied normally with the host name. The port for Cosmic Rage is, "7777."
 Notes and Descriptions. A text box that is used to enter any information you need to remember regarding your character.
 Password. The password of the character.  For security, this information is stored using encryption and can not be retrieved back from VipMud, and so you may want to keep another copy of your password elsewhere.  If enabled, this information is used to automatically log your character into the Mud.
 Auto Login checkbox. Check this if you would like your character logged in automatically. It uses the alias "login" from within start.set to perform this function.  If this alias doesn't work for a certain Mud, you can easily make the appropriate changes as required. 

@@ -75,3 +75,4 @@ HappyBirthday:It's a secret.
 TogglePods:Toggle voice output of pod movement.
 ClearBuffer:Clear the contents of a buffer.
 GameGag:Gag or ungag certain Arcade messages.
+Logging:Toggle channel messages being stored to files.

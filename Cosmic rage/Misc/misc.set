@@ -49,7 +49,7 @@ playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}
 #TRIGGER {You hear a solid bong as the cleaning equipment returns with something.} {#gagline all; playsound {cosmic rage/general/misc/gottrash.wav} @vol};
 #TRIGGER {You ponder  *, "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
 #TRIGGER {* ponders*, "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
-#TRIGGER {* [[]Notice]: * - * * ***} {#sub {Notice! %2. . This notice was sent on %3 at %4.}; playsound {cosmic rage/general/misc/Notice.wav} @vol; #additem Notices %0;  #file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1} {} AnyCase 
+#TRIGGER {* [[]Notice]: * - * * ***} {#sub {Notice! %2. . This notice was sent on %3 at %4.}; playsound {cosmic rage/general/misc/Notice.wav} @vol; #additem Notices %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1}} {} AnyCase 
 #TRIGGER {You hear a ring, ring from *} {#gagline all; playsound {cosmic rage/general/misc/ring.wav} @vol};
 #TRIGGER {* plays a * tune} {playsound {cosmic rage/general/comms/phoneRing.wav} @vol};
 #TRIGGER {You tap a few buttons on * accessing its menu.} {#gagline all; playsound {cosmic rage/general/misc/complogin.wav} @vol};
@@ -172,10 +172,11 @@ playsound {cosmic rage/general/misc/doorlock.wav} @vol}}
 #trigger {*One or more polls have been posted. Please type * to see what.} {playsound {cosmic rage/general/misc/vote.wav} @vol}
 #trigger {There have been the following message board posts that you are required to read: *} {
 playsound {cosmic rage/general/comms/messageBoardNotify.wav} @vol}
-
-#TRIGGER {The lift arrives and the doors open.} {playsound {cosmic rage/general/misc/liftopen.wav} @vol};
-#TRIGGEr {You tap the * and the lift begins to move.} {loopsound {cosmic rage/general/misc/lift.wav} @vol; #var lifthandle %playhandle};
-#TRIGGER {The lift comes to a stop and the doors hiss open.} {playsound {cosmic rage/general/misc/liftopen.wav} @vol; #pc @lifthandle stop};
+#trigger {the lift continues moving and hums slightly.} {#gagline all}
+#trigger {the lift begins to slow down.} {#gagline all}
+#TRIGGER {The lift arrives and the doors open.} {playsound {cosmic rage/general/misc/liftopen.wav} @vol} {} AnyCase
+#TRIGGEr {You tap * and the lift begins to move.} {loopsound {cosmic rage/general/misc/lift.wav} @vol; #var lifthandle %playhandle};
+#TRIGGER {The lift comes to a stop and the doors hiss open.} {playsound {cosmic rage/general/misc/liftopen.wav} @vol; #pc @lifthandle stop} {} AnyCase
 #trigger {You feel * units of plasma return to your form.} {
 #gagline all;
 playsound {cosmic rage/general/misc/plasmaRecover.wav} @vol}
@@ -264,8 +265,4 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol}
 #trigger {The pod turns *} {#if {@SilentPod = 1} {#gagline all}}
 #trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol}
-#trigger {*rolled a *.} {#if {@GagGame = 1} {#gagline all}}
-#trigger {* landed on*} {#if {@GagGame = 1} {#gagline all}}
-#trigger {A Pilot's Parody*} {#if {@GagGame = 1} {#gagline all}} {} AnyCase
-#trigger {*pixelated image*} {#if {@GagGame = 1} {#gagline all}} {} AnyCase
-#trigger {on the screen of A Pilot's Parody*} {#if {@GagGame = 1} {#gagline all}} {} AnyCase
+#trigger {*whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol}

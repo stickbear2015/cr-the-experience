@@ -99,4 +99,5 @@ echo Lag.test} {}
 #key {Control-F1} {TTS}
 #key {Shift-F2} {LogFile}
 #key {control-/} {#ungagon; #say {Speech is no longer being gagged.}}
+#key control-alt-L {Logging}
 #key {control-s} {SaveSettings}

@@ -31,6 +31,15 @@ loopsound {cosmic rage/ships/rooms/lounge.wav} @Shipvol;
 #pc @vehiclehandle stop; #var vehiclesoundplaying 0};
 loopsound {cosmic rage/Ambiences/Jet.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Jet"}};
+#If {%IfWord(Inside,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Inside"} {
+#If {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop};
+#if {@vehiclesoundplaying = 1} {
+#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Inside"}};
 #If {%IfWord(woods,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "woods"} {

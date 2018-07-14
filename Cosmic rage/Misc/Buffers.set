@@ -11,8 +11,8 @@
 
 ;aliases for saving and reading preferred buffers.
 
-#alias savebuffers {#file 5 bufferlist.txt;#write 5 "saving...";#close 5;#delfile bufferlist.txt;#file 5 bufferlist.txt;#forall @CurrentBufferList {#write 5 %i};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersSaved.wav} 90}
-#alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt;#var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersLoaded.wav} 90}
+#alias savebuffers {#file 5 {%char bufferlist.txt}; #write 5 "saving...";#close 5;#delfile {%char bufferlist.txt}; #file 5 {%char bufferlist.txt}; #forall @CurrentBufferList {#write 5 %i};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersSaved.wav} 90}
+#alias loadbuffers {#var CurrentBufferList {};#file 5 {%char bufferlist.txt}; #var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5; #pc 0 stop; #play {Cosmic Rage/general/misc/BuffersLoaded.wav} 90}
 
 ;Keys for loading, reading  and saving buffers
 

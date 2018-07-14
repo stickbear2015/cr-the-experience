@@ -1,4 +1,4 @@
-#TRIGGER {You holster a * into * holster} {playsound {cosmic rage/general/combat/holster.wav} @vol};
+
 #TRIGGER {You draw a * from *} {
 #if {%ifWord(standard laser pistol,%1," ")} {
 playsound {cosmic rage/general/combat/drawPistol.wav} @vol};
@@ -97,7 +97,7 @@ playsound {cosmic rage/general/combat/ray.wav} @vol}
 
 #trigger {*grenade explodes!} {playsound {Cosmic Rage/general/combat/GrenadeExplode.wav} @vol}
 
-#trigger {*mapper lets out an urgent trill, informing you to the * it detects *} {playsound {Cosmic Rage/general/combat/enemy detected.wav} @vol}
+#trigger {*mapper lets out an urgent trill, informing you to the * it detects *} {playsound {Cosmic Rage/general/combat/enemy detected.wav} @vol; #additem Mapper %0}
 #trigger {You throw off the stun!} {playsound {Cosmic Rage/general/combat/ThrowOffStun.wav} @vol}
 #trigger {A shimmering forcefield intersepts all of the force behind the hit*} {playsound {Cosmic Rage/general/combat/stun crystal.wav} @vol}
 #trigger {You aren't stunned. Whew!} {playsound {Cosmic Rage/general/combat/ThrowOffStun.wav} @vol}

@@ -165,15 +165,8 @@ playsound {cosmic rage/vehicle/vehicleLock.wav} @vol}
 #trigger {The vehicle shudders horribly as it is put through a teleport.} {
 #gagline all;
 playsound {cosmic rage/vehicle/vehicleRelocate.wav} @vol}
-#trigger {You put the key in the ignition and twist.} {playsound {Cosmic Rage/general/cars/Start.wav} @vol; #pc 0 stop; look; #If {%IfWord(Inside,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "Inside"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @Vehiclehandle stop};
-loopsound {cosmic rage/ambiences/OldCar.wav} @Vehiclevol;
-#Var VehicleHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Inside"}}} {ambon}
-#trigger {The engine of the car splutters to a stop.} {#gagline all; #if {@roomsoundplaying = 1} {
-#pc @vehiclehandle stop; #Var RoomSoundPlaying 0}; loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #Var VehicleHandle %Playhandle; #var RoomSoundPlaying 1; #var currentroom "off"} {ambon}
+#trigger {The engine of the car splutters to a stop.} {#gagline all; #alarm 3 {#pc 0 stop; loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol}}
+#trigger {You put the key in the ignition and twist.} {#pc 0 stop; loopsound {Cosmic Rage/ambiences/OldCar.wav} @roomvol; look}
 #trigger {A strange rattling echoes throughout the vehicle.} {playsound {Cosmic Rage/general/combat/MachineGun.wav} @vol} {} AnyCase
 #trigger {You hear a whoosh as a rocket fires.} {playsound {Cosmic Rage/general/combat/RocketFire.wav} @vol} {} AnyCase
 #trigger {A siren rings out. Incoming * from *} {playsound {Cosmic Rage/ships/combat/haslock.wav} @vol} {} AnyCase

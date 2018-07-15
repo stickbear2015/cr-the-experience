@@ -33,6 +33,7 @@ Simple Script Control checkbox. When checked, VipMud will use the simple scripti
 	Moving on to the next step.
 3. After you have obtained the soundpack and completed the necessary steps from within VIPMud, just select all from within the downloaded folder, then go and find your VIPMud directory. Assuming you haven't moved the directory, it will be in your documents directory. The directory name should look something like this. "C:\users\insertUsername\Documents\VIPMud." Paste the downloaded folders content, then either restart VIPMud, or use the #reload command.
 If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the instilation instructions outlined above  and apply any changes necessary before getting ahold of snapp.
+Upon first run of the pack, you will need to do the following three things. You will need to type SaveBuffers to create the file where your buffers are stored. You will then need to set up your settings like volumes, toggles, ETC Please see the help files for aliases and keys. You will then need to save your packs settings with control-s
 
 Updating your soundpack:
 

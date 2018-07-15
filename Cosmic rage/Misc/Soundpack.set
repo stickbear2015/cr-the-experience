@@ -29,7 +29,7 @@
 
 ;Saving settings.
 
-#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; #say {Your soundpack settings have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/%char settings.set} 1;#Var SettingsFileCounter 1;
+#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; #say {Your soundpack settings have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -61,8 +61,9 @@
 #Write 6 @numpadon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @CommsVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @ChannelLogging @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @GameError @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #key {Control-shift-R} {SpReload}
 #alias {HappyBirthday} {#play {Cosmic Rage/general/misc/Cheer.wav} @vol; #alarm .8 {#say {Wow! It's been a year since I was created. In that year I've become more than I think snapp or anyone ever thought I would become. Thanks to you, my users. You all make me a very happy soundpack. I am rather sorry I have bugs or errors sometimes, but thanks to Snapp, I always get fixed.  For being the fantastic users you are, you all get a gift on this. The day of my birthday. You all get 25 gold chocolate coins, and a huge slice of cake!} VoiceOnly; #alarm 7 {#play {Cosmic Rage/general/misc/ching2.wav} @vol; #Say {As the soundpack gives you a huge slice of cake, you cram it in your face.} VoiceOnly; #play {Cosmic Rage/general/Food and drink/EatFood.wav} @vol; #alarm 3 {#say {Again, thank you all so much! If you see Snapp, tell him thank you as well. Now, lets dance!} voiceonly; #play {Cosmic Rage/general/misc/HappyBirthday.wav} @vol}}}}
-#trigger {*This is a system announcement from Snapp Blue scales Cosmic Rage Experience. *} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol}
-#trigger {[[]Soundpacks], A change was just posted to Snapp Blue Scales Cosmic Rage Experience} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol}
+#trigger {*This is a system announcement from Snapp Blue scales Cosmic Rage Experience. *} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
+#trigger {[[]Soundpacks], A change was just posted to Snapp Blue Scales Cosmic Rage Experience} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}

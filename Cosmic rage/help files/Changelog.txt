@@ -1,3 +1,9 @@
+559. Reverted the message for when you enter an invalid command back to the default. Assuming you are using the standard message and not the more creative ones, you can choose to gag the message and simply play a sound by typing errortoggle.
+Copy Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set and soundpack.set.
+558. As several people were having issues getting this to work, I've taken out the feature that allowed you to have different buffers and settings for different chars. You will need to save your pack and buffer settings again.
+Copy Cosmic Rage.set, Cosmic Rage/misc/Buffers.set and soundpack.set.
+557. Buffer prompts will now respect if you have sounds muted or not. I've also gone in and turned down said prompts by 10 percent. When clearing a buffer, you will now no longer get  an okay prompt. And finally, A soundpack announcements buffer has also been added to the master buffer list.
+Copy Cosmic Rage/misc/buffers.set and soundpack.set.
 556. Lifts are now working as they should.
 Copy Cosmic Rage/misc/misc.set.
 555. Car ambiences should be fixed.

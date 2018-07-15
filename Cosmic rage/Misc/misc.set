@@ -78,7 +78,7 @@ playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1
 #TRIGGER {You put on *} {playsound {cosmic rage/wear/head.wav} @vol};
 #TRIGGER {You give * a tug and pull it off.} {playsound {cosmic rage/wear/hold.wav} @vol};
 #TRIGGER {You raise your level to *} {playsound {cosmic rage/general/Level/Level.wav} @vol}
-#TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #sub {That command was not recognised.}}
+#TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = 1} {#gagline all}}
 #trigger {Type a line of input.} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 

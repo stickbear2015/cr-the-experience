@@ -18,17 +18,16 @@
 #TRIGGER {* yawns.} {playsound {cosmic rage/general/socials/yawn*2.wav} @vol}
 #trigger {You poke *} {playsound {cosmic rage/general/socials/poke.wav} @vol}
 #trigger {* pokes you.} {playsound {cosmic rage/general/socials/poke.wav} @vol}
-#trigger {You sit on the cool leather driver's seat.} {playsound {cosmic rage/general/misc/sit.wav} @vol}
 #trigger {You lie down on *} {
 playsound {cosmic rage/general/socials/lie.wav} @vol}
 #trigger {* lies down on *} {
 playsound {cosmic rage/general/socials/lie.wav} @vol}
 #trigger {You sneeze.} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}
 #trigger {You sneeze at *} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}
-#trigger {*sneezes*} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}
+#trigger {* sneezes} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}
 #trigger {You sigh.} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}
 #trigger {You sigh at *} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}
-#trigger {*sighs*} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}
+#trigger {*sighs at *} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}
 #trigger {You whistle along your way.} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}
 #trigger {You whistle apreciatively at*} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}
 #trigger {*whistles*} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}
@@ -58,8 +57,6 @@ playsound {cosmic rage/general/socials/lie.wav} @vol}
 #trigger {You snap your fingers.} {playsound {cosmic rage/general/socials/snap*3.wav} @vol}
 #trigger {You snap your fingers at *} {playsound {cosmic rage/general/socials/snap*3.wav} @vol}
 #trigger {*snaps*} {playsound {cosmic rage/general/socials/snap*3.wav} @vol}
-#trigger {You spank *} {playsound {cosmic rage/general/socials/spank.wav} @vol}
-#trigger {*spanks*} {playsound {cosmic rage/general/socials/spank.wav} @vol}
 #trigger {You kiss * tenderly on the lips.} {playsound {cosmic rage/general/socials/kiss*2.wav} @vol}
 #trigger {* kisses * tenderly on the lips.} {playsound {cosmic rage/general/socials/kiss*2.wav} @vol}
 #trigger {You moan loudly.} {playsound {cosmic rage/general/socials/moan*2.wav} @vol}
@@ -74,9 +71,11 @@ playsound {cosmic rage/general/socials/lie.wav} @vol}
 #trigger {* swings back * arm, and plants * fist firmly in * face.} {
 playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
 #TRIGGER {*punches*} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
-#TRIGGER {You kick *} {Playsound {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
-#TRIGGER {* kicks *} {playsound  {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {You kick your foot through the air, acting like some kind of marshal arts master.} {Playsound {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#TRIGGER {* kicks * leg through the air, acting like some kind of marshal arts master.} {playsound  {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#trigger {* kick * smack bang in the stomach!} {playsound  {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {You practice your rugby tackles.} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}
+#trigger {* kicks * smack bang in the stomach!} {playsound  {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.10 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {You tackle *} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}
 #trigger {*tackles*} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}
 #trigger {You purr.} {playsound {cosmic rage/general/socials/purr.wav} @vol}
@@ -96,10 +95,8 @@ playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pa
 #trigger {You puke up your guts.} {playsound {cosmic rage/general/socials/vomit.wav} @vol}
 #trigger {You puke all over *} {playsound {cosmic rage/general/socials/vomit.wav} @vol}
 #trigger {*pukes*} {playsound {cosmic rage/general/socials/vomit.wav} @vol}
-#trigger {*shouts*} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0} {} AnyCase
+#trigger {[[]* shouts: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0} {} AnyCase
 #trigger {You yell: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}
 #trigger {* yells: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}
-#trigger {* suddenly yells, "I'm a dog and I like socks!"} {playsound {Cosmic Rage/general/socials/socks.wav} @vol}
-#trigger {*woof*} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}
-#trigger {*woofs*} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}
-#trigger {*poop*} {playsound {Cosmic Rage/general/socials/Poop.wav} @vol}
+#trigger {You let out a woof woof.} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}
+#trigger {You bend over, and unabashedly push out a giant poop.} {playsound {Cosmic Rage/general/socials/Poop.wav} @vol}

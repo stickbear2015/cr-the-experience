@@ -26,10 +26,6 @@ playsound {cosmic rage\activities\moon\HarvesterRetract.wav} @vol}
 #gagline all;
 playsound {cosmic rage\activities\planetoid\plunger.wav} @vol;
 #alarm 1 {playsound {cosmic rage\vehicle\lever.wav} @vol}} 
-
-#trigger {* low hum *.} {
-#gagline all;
-playsound {cosmic rage\activities\planetoid\Low Hum.wav} @vol} 
 #trigger {The computer whines and then gives several thunks before printing out Some star core data and giving it to *} {
 #gagline all;
 playsound {cosmic rage\activities/star cores/Print.wav} @vol} 

@@ -117,7 +117,7 @@
 #TRIGGER {lag.test} {#unalarm LagTest;
 #sub {You have %eval(@LagAmount * 100) Milliseconds lag.}} {} AnyCase
 #alias {onDisconnect} {
-SaveSettings; #play {cosmic rage/general/misc/quit.wav} @vol;
+SaveSettings; SaveBuffers; #play {cosmic rage/general/misc/quit.wav} @vol;
 #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0};
 #if {@musicplaying = 1} {#pc @musichandle stop; #var musicplaying 0; #var planet ""}; #if {@vehiclesoundplaying = 1} {#pc @vehiclehandle stop; #var @vehiclesoundplaying 0};
 #if {@shipsoundplaying = 1} {#pc @shiphandle stop; #var shipsoundplaying 0}};
@@ -126,3 +126,4 @@ SaveSettings; #play {cosmic rage/general/misc/quit.wav} @vol;
 #Alias {afkon} {options;4;afk;y} {}
 #Alias {afkoff} {options;4;afk;n} {}
 #trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} 80; #sub {The connection to Cosmic Rage has been Re-established!}}
+#alarm -1800 {AutoSaveSettings; AutoSaveBuffers}

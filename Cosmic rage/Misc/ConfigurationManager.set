@@ -36,7 +36,6 @@ salvage text toggle:salvageTextToggle|
 weather sounds toggle:weatherToggle|
 gag weather toggle:gagweather|
 Old logon/logoff sounds toggle:toggleLogOn|
-Silent saving toggle:SilentSaving|
 Silent soundpack intro music toggle:SilentSPIntro|
 Clock sounds toggle:ToggleClocks|
 Toggle the sounds letting you know that you are still connected to the moo:ToggleConnectionCheck|
@@ -307,12 +306,11 @@ vehicle engine volume:vvol}}
 #alias Evol {
 #say {ship engine volume is @Evol percent.}}
 #alias toggleLogOn {#if {@LogOn = 1} {#var LogOn 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Old Logon/logoff sounds disabled.} voiceonly} {#var LogOn 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Old Logon/logoff Sounds enabled.} voiceonly}}
-#alias SilentSaving {#if {@SilentSaving = 1} {#var SilentSaving 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Silent saving of Soundpack settings disabled.} voiceonly} {#var SilentSaving 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Silent saving of Soundpack settings enabled.} voiceonly}}
 #alias ShortMapText {
 #if {@ShortMapText = 1} {#var ShortMapText 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Shortened map and flight control announcements  disabled.} voiceonly} {#var ShortMapText 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Shortened map and flight control announcements enabled.} voiceonly}}
 #alias SilentSPIntro {
 #if {@SilentIntro = 1} {#var SilentIntro 0; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Soundpack intro music will now play.} voiceonly} {#var SilentIntro 1; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Soundpack intro music will no longer play.} voiceonly}}
-#alias ToggleClocks {#if {@SilentClock = 1} {#var SilentClock 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Clocks will now chime.} voiceonly} {#var SilentClock 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Clocks will no longer chime, and clock messages will not be seen} voiceonly}}
+#alias ToggleClocks {#if {@SilentClock = 1} {#var SilentClock 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Clocks will now chime, but the clocks messages will not be spoken. These messages will still appear in your output window.} voiceonly} {#var SilentClock 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Clocks will no longer chime, and the clocks messages will be spoken} voiceonly}}
 #alias ToggleNumpad {#if {@numpadon = 1} {#class Numpad disable; #var numpadon 0;#play {Cosmic Rage/general/misc/Off.wav} 100; #say {You may now use the numpad to enter numbers directly without them trying to move your character around or navigate your ship.} voiceonly} {#class Numpad enable;#var numpadon 1;#play {Cosmic Rage/general/misc/On.wav} 100; #say {You may now use the numpad to move your character  around or navigate your ship.} voiceonly}}
 #alias TogglePods {#if {@SilentPod = 1} {#var SilentPod 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Pod movement messages will now be spoken.} voiceonly} {#var SilentPod  1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Pod movement messages will no longer be spoken.} voiceonly}}
 #alias GameGag {#if {@GagGame = 1} {#var GagGame 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Arcade messages will now be spoken.} voiceonly} {#var GagGame 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Arcade messages will no longer be spoken.} voiceonly}}

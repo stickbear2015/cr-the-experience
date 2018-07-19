@@ -41,7 +41,6 @@ echo Lag.test} {}
 #key control-shift-f8 {toggleship}
 #key control-g {gagscombat}
 #key control-h {gagharvest}
-#key alt-Shift-S {SilentSaving}
 #key alt-f12 {toggleRedAlert}
 #key control-p {pancombat}
 #key control-f5 {toggleLogOn}

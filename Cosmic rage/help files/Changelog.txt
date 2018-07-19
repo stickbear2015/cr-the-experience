@@ -1,3 +1,13 @@
+566. All ambiences and music will now stop upon entering a dwelling.
+Copy Cosmic Rage/misc/misc.set.
+565. Added a sound and buffer for the Origins channel.
+Copy Cosmic Rage/misc/buffers.set, comms.set and sounds/general/comms/Origins.wav
+564. Back by popular demand, the soundpack will now auto-save your settings and buffers every half hour. The saving happens totally in the background, and other than reading this change, you'd never know it was doing it. The alias and key for toggling silent soundpack save messages have been removed as they are no longer needed. If you find any bugs, or see any errors, please report them.
+Copy Cosmic Rage.set, Cosmic Rage/Help files, Cosmic rage/misc/ConfigurationManager.set, keys.set and soundpack.set.
+563. Fixed message boards. Happy Amazon Prime Day.
+Copy Cosmic Rage/misc/misc.set.
+562. Made a few changes to clocks. First off, the messages from the clocks will still appear in your output window if you have clock chiming enabled. The messages will just not be spoken. Second, if you have clock chimes disabled, the messages will display as normal.
+Copy Cosmic Rage/misc/ConfigurationManager.set and clocks.set.
 561. Changing the currently playing combat track to something else using the key control-shift-N now works as it should have all along. If you don't have combat music enabled, the pack will let you know that you must enable it for this feature to work correctly.
 Copy Cosmic Rage/misc/keys.set.
 560. The spank and dogsocks social sounds have been removed do to people spamming them to death.

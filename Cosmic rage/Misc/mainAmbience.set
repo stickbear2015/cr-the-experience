@@ -284,6 +284,15 @@ loopsound {cosmic rage/Ambiences/LandingPad.wav} @roomvol;
 #pc @vehiclehandle stop; #var vehiclesoundplaying 0};
 loopsound {cosmic rage/Ambiences/cave.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "cave"}};
+#If {%IfWord(Cavern,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Cavern"} {
+#If {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop};
+#if {@vehiclesoundplaying = 1} {
+#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+loopsound {cosmic rage/Ambiences/cave.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Cavern"}};
 #If {%IfWord(path,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "path"} {

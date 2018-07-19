@@ -134,8 +134,7 @@ playsound {cosmic rage/general/misc/ShowerCurtainClose.wav} @vol}}
 #TRIGGER {*The game time is now*} {
 #sub {%2}; playsound {cosmic rage/general/misc/time.wav} @vol}
 #trigger {[[]Newbie tip!]*} {playsound {cosmic rage/general/misc/tip.wav} @vol};
-#TRIGGER {* flashes * indicating a new message was just received on */*/*} {playsound {cosmic rage/general/misc/mbn.wav} @vol; #sub {Your message board flashes letting you know something has been posted to the %4 category, subcategory %5.}}
-
+#TRIGGER {* flashes * indicating a new message was just received on */*/*} {playsound {cosmic rage/general/misc/mbn.wav} @vol}
 #trigger {*explodes in a brilliant *light!} {playsound {Cosmic Rage/general/misc/Firework *8.wav} @vol} {} AnyCase
 #trigger {* party horn *} {	
 playsound {cosmic rage/general/misc/partyHorn.wav} @vol}
@@ -266,3 +265,4 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {The pod turns *} {#if {@SilentPod = 1} {#gagline all}}
 #trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol}
 #trigger {*whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol}
+#trigger {You unlock the door to * and enter.} {#pc 0 stop}

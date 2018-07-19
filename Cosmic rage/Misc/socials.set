@@ -98,5 +98,5 @@ playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pa
 #trigger {[[]* shouts: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0} {} AnyCase
 #trigger {You yell: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}
 #trigger {* yells: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}
-#trigger {You let out a woof woof.} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}
+#trigger {*woof*} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}
 #trigger {You bend over, and unabashedly push out a giant poop.} {playsound {Cosmic Rage/general/socials/Poop.wav} @vol}

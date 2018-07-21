@@ -1,3 +1,4 @@
+#trigger {* is disconnecting: *} {#additem ConnectionMessages %0}
 #TRIGGER {* returns to reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}; #additem ConnectionMessages %0}
 #TRIGGER {* enters from reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; #additem ConnectionMessages %0}
 #TRIGGER {It's a new player! * enters from reality.} {playsound {Cosmic Rage/general/misc/Cheer.wav} @vol; #additem ConnectionMessages %0}

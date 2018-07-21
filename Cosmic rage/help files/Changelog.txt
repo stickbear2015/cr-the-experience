@@ -1,3 +1,5 @@
+567. Added tons of ambiences today. Bars, Diners, Cafes, ranches, halls, hallways, Up in the sky, Plaza, shore, Library, Lobby, tunnels, rivers and fixed a few other ambiences that've been broke for awhile.
+Copy Cosmic Rage.set, Cosmic Rage/misc/mainAmbience.set and sounds/ambiences.
 566. All ambiences and music will now stop upon entering a dwelling.
 Copy Cosmic Rage/misc/misc.set.
 565. Added a sound and buffer for the Origins channel.

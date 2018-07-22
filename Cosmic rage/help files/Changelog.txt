@@ -1,26 +1,41 @@
+568. Fixed a bug with the Plaza ambience.
+Changed on Saturday, July 21, 2018.
+Copy Cosmic Rage/misc/mainAmbience.set
 567. Added tons of ambiences today. Bars, Diners, Cafes, ranches, halls, hallways, Up in the sky, Plaza, shore, Library, Lobby, tunnels, rivers and fixed a few other ambiences that've been broke for awhile.
+Changed on Saturday, July 21, 2018.
 Copy Cosmic Rage.set, Cosmic Rage/misc/mainAmbience.set and sounds/ambiences.
 566. All ambiences and music will now stop upon entering a dwelling.
+Changed on Friday, July 20, 2018.
 Copy Cosmic Rage/misc/misc.set.
 565. Added a sound and buffer for the Origins channel.
+Changed on Tuesday, July 17, 2018.
 Copy Cosmic Rage/misc/buffers.set, comms.set and sounds/general/comms/Origins.wav
-564. Back by popular demand, the soundpack will now auto-save your settings and buffers every half hour. The saving happens totally in the background, and other than reading this change, you'd never know it was doing it. The alias and key for toggling silent soundpack save messages have been removed as they are no longer needed. If you find any bugs, or see any errors, please report them.
+564. Back by popular demand, 0the soundpack will now auto-save your settings and buffers every half hour. The saving happens totally in the background, and other than reading this change, you'd never know it was doing it. The alias and key for toggling silent soundpack save messages have been removed as they are no longer needed. If you find any bugs, or see any errors, please report them.
+Changed on Tuesday, July 17, 2018.
 Copy Cosmic Rage.set, Cosmic Rage/Help files, Cosmic rage/misc/ConfigurationManager.set, keys.set and soundpack.set.
 563. Fixed message boards. Happy Amazon Prime Day.
+Changed on Tuesday, July 17, 2018.
 Copy Cosmic Rage/misc/misc.set.
 562. Made a few changes to clocks. First off, the messages from the clocks will still appear in your output window if you have clock chiming enabled. The messages will just not be spoken. Second, if you have clock chimes disabled, the messages will display as normal.
+Changed on Tuesday, July 17, 2018.
 Copy Cosmic Rage/misc/ConfigurationManager.set and clocks.set.
 561. Changing the currently playing combat track to something else using the key control-shift-N now works as it should have all along. If you don't have combat music enabled, the pack will let you know that you must enable it for this feature to work correctly.
+Changed on Sunday, July 15, 2018.
 Copy Cosmic Rage/misc/keys.set.
 560. The spank and dogsocks social sounds have been removed do to people spamming them to death.
+Changed on Sunday, July 15, 2018.
 Copy Cosmic Rage/misc/socials.set.
 559. Reverted the message for when you enter an invalid command back to the default. Assuming you are using the standard message and not the more creative ones, you can choose to gag the message and simply play a sound by typing errortoggle.
+Changed on Saturday, July 14, 2018.
 Copy Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set and soundpack.set.
 558. As several people were having issues getting this to work, I've taken out the feature that allowed you to have different buffers and settings for different chars. You will need to save your pack and buffer settings again.
+Changed on Saturday, July 14, 2018.
 Copy Cosmic Rage.set, Cosmic Rage/misc/Buffers.set and soundpack.set.
 557. Buffer prompts will now respect if you have sounds muted or not. I've also gone in and turned down said prompts by 10 percent. When clearing a buffer, you will now no longer get  an okay prompt. And finally, A soundpack announcements buffer has also been added to the master buffer list.
+Changed on Saturday, July 14, 2018.
 Copy Cosmic Rage/misc/buffers.set and soundpack.set.
 556. Lifts are now working as they should.
+Changed on Saturday, July 14, 2018.
 Copy Cosmic Rage/misc/misc.set.
 555. Car ambiences should be fixed.
 Copy Cosmic Rage/misc/mainAmbience.set and Cosmic Rage/vehicle/vehicle.set

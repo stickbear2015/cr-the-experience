@@ -381,7 +381,7 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #trigger {*The computer announces: "External camera enabled."} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
 #trigger {The low thrum becomes a more urgent tremor as the ship* anti-gravity engines thrust it free of *} {playsound {Cosmic Rage/ships/misc/Grav1.wav} @vol}
 #trigger {The anti-gravity thrusters clunk offline and the ship slowly drifts into the orbit of *} {playsound {Cosmic Rage/ships/misc/Grav2.wav} @vol}
-#trigger {The gravity thrusters suddenly cut out as the power goes down and the ship begins to plummet!} {#sub {No! You're falling! You're falling! Help! You're falling and you can't get back up! Your time is slowly ticking away... Why oh why did you either have to run out of charge in your batteries, or power off the ship? Oh well. I guess it really doesn't matter now does it?}; loopsound {Cosmic Rage/ships/misc/Clock.wav} @vol; #var Clockhandle %playhandle; #var Clock 1}
+#trigger {The gravity thrusters suddenly cut out as the power goes down and the ship begins to plummet!} {loopsound {Cosmic Rage/ships/misc/Clock.wav} @vol; #var Clockhandle %playhandle; #var Clock 1}
 #trigger {The ship impacts and the room around you explodes!} {playsound {Cosmic Rage/ships/misc/Crash.wav} @vol; #if {@Clock = 1} {
 #pc @Clockhandle stop;
 #var Clock 0}}

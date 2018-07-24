@@ -1,3 +1,9 @@
+570. Factory PA is now being added to the PA buffer. How long has this been broken? I'll never know.
+Changed on Tuesday, July 24, 2018.
+Copy Cosmic Rage/misc/factory.set.
+569. After no less than perhaps 1000 people begging me to do it, and me deciding that it could perhaps be done, I've added sounds for doors. Note. If you change the door movement to custum, sounds will not play.
+Changed on Monday, July 23, 2018.
+Copy Cosmic Rage.set, Cosmic Rage/misc/doors.set and sounds/general/doors.
 568. Fixed a bug with the Plaza ambience.
 Changed on Saturday, July 21, 2018.
 Copy Cosmic Rage/misc/mainAmbience.set

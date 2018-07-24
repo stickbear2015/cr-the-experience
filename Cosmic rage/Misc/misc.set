@@ -267,3 +267,4 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol}
 #trigger {*whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
+#trigger {The pod banks *} {#if {@SilentPod = 1} {#gagline all}}

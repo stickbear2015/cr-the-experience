@@ -42,6 +42,7 @@
 #load misc/cars.set
 #load misc/comms.set
 #load misc/clocks.set
+#load misc/doors.set
 #load misc/factory.set
 #load misc/Farming.set
 #load misc/horses.set

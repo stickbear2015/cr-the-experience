@@ -78,7 +78,7 @@ playsound  {cosmic rage/general/factory/pourMilk*2.wav} @vol}
 #trigger {The sound of crashing, drilling and hammering can be heard as repair drones continue to repair the Factory} {
 #gagline all;
 playsound  {cosmic rage/general/factoryRepair.wav} @vol}
-#trigger {[[]* announcement from *],*} {playsound  {cosmic rage/general/factory/PA.wav} @vol; #additem PA %0} {} AnyCase
+#trigger {[[]* announcement from *],*} {playsound  {cosmic rage/general/factory/PA.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {Charge readout:} {
 playsound  {cosmic rage/ships/computer/display*4.wav} @vol}
 #trigger {Damage report:} {
@@ -91,4 +91,4 @@ playsound  {cosmic rage/ships/computer/keyboard*7.wav} @vol}
 #trigger {A drone wheels in and drops off some debris.} {#gagline all}
 #trigger {You hear a voice over the tannoy: All pilots please clear * we have an inbound starship.} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @vol}
 #trigger {You hear a voice over the tanoy: Attention: * undocking from *} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @vol}
-#trigger {Factory announcement, * just teleported *} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @vol}
+#trigger {Factory announcement, * just teleported *} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @CommsVol}

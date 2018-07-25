@@ -1,3 +1,6 @@
+571. added the following ambiences. Construction, mountains, streets, gardens and waterfalls.
+Changed on Wednesday, July 25, 2018.
+Copy Cosmic Rage/misc/mainAmbience.set and sounds/general/Ambiences.
 570. Factory PA is now being added to the PA buffer. How long has this been broken? I'll never know.
 Changed on Tuesday, July 24, 2018.
 Copy Cosmic Rage/misc/factory.set.

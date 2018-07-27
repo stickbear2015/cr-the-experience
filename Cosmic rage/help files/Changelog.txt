@@ -1,3 +1,6 @@
+572. Added some sounds for airpod defense. Also added sounds for launching and landing from Sola Virtus Invicta. One more thing. Added an ambience for Decontamination Units.
+Changed on Thursday, July 26, 2018.
+Copy Cosmic Rage.set, Cosmic Rage/misc/mainAmbience.set, Cosmic Rage/ships/pods.set, sounds/ambiences and sounds/ships.
 571. added the following ambiences. Construction, mountains, streets, gardens and waterfalls.
 Changed on Wednesday, July 25, 2018.
 Copy Cosmic Rage/misc/mainAmbience.set and sounds/general/Ambiences.

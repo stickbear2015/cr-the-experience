@@ -24,12 +24,12 @@
 #alias spversion {spp;#gagon;snapp;info}
 #trigger {Last change*} {#ungagon}
 #key alt-V {SpVersion}
-#alias {SpReload} {#say {Reloading the soundpack, please wait...} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {#say {Reloading complete! Please use Control-alt-shift-L, or type LoadBuffers to load your currently saved buffer list.} voiceonly}}
+#alias {SpReload} {#unalarm Saving; #say {Reloading the soundpack, please wait...} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {#say {Reloading complete! Please use Control-alt-shift-L, or type LoadBuffers to load your currently saved buffer list.} voiceonly}}
 
 
 ;Saving settings.
 
-#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; #say {Your soundpack settings have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
+#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffers have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};

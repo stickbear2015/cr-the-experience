@@ -50,7 +50,7 @@ playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}
 #TRIGGER {You hear a solid bong as the cleaning equipment returns with something.} {#gagline all; playsound {cosmic rage/general/misc/gottrash.wav} @vol};
 #TRIGGER {You ponder  *, "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
 #TRIGGER {* ponders*, "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
-#TRIGGER {* [[]Notice]: * - * * ***} {#sub {Notice! %2. . This notice was sent on %3 at %4.}; playsound {cosmic rage/general/misc/Notice.wav} @vol; #additem Notices %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1}} {} AnyCase 
+#TRIGGER {* [[]Notice]: * - * * ***} {playsound {cosmic rage/general/misc/Notice.wav} @vol; #additem Notices %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1}} {} AnyCase 
 #TRIGGER {You hear a ring, ring from *} {#gagline all; playsound {cosmic rage/general/misc/ring.wav} @vol};
 #TRIGGER {* plays a * tune} {playsound {cosmic rage/general/comms/phoneRing.wav} @vol};
 #TRIGGER {You tap a few buttons on * accessing its menu.} {#gagline all; playsound {cosmic rage/general/misc/complogin.wav} @vol};

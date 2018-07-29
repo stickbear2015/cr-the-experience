@@ -1,3 +1,9 @@
+574. I've taken out the sub text for notices, and messages have been changed when reporting soundpack bugs and submitting soundpack suggestions.
+Changed on Saturday, July 28, 2018.
+Copy Cosmic Rage/misc/misc.set and soundpack.set.
+573. When using the key Control-S, buffers are saved as well as pack settings.
+Changed on Thursday, July 26, 2018.
+Copy Cosmic Rage/misc/soundpack.set.
 572. Added some sounds for airpod defense. Also added sounds for launching and landing from Sola Virtus Invicta. One more thing. Added an ambience for Decontamination Units.
 Changed on Thursday, July 26, 2018.
 Copy Cosmic Rage.set, Cosmic Rage/misc/mainAmbience.set, Cosmic Rage/ships/pods.set, sounds/ambiences and sounds/ships.

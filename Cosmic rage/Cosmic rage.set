@@ -127,5 +127,5 @@ SaveSettings; #play {cosmic rage/general/misc/quit.wav} @vol;
 #Alias {logoff} {options;4;log;n} {}
 #Alias {afkon} {options;4;afk;y} {}
 #Alias {afkoff} {options;4;afk;n} {}
-#trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} 80; #sub {The connection to Cosmic Rage has been Re-established!}}
+#trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} 90}
 #alarm Saving -1800 {AutoSaveSettings; AutoSaveBuffers}

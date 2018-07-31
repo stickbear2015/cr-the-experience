@@ -268,3 +268,10 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {*whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
 #trigger {The pod banks *} {#if {@SilentPod = 1} {#gagline all}}
+#trigger {You unfirl your * wings and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} 100; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
+#trigger {You flap your wings, heading for *} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} 100; #if {@FlyingStart = 1} {
+#pc @FlyingStarthandle stop;
+#var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
+#trigger {You swoop down to land.} {playsound {Cosmic Rage/general/misc/DragonLanding.wav} 100; #if {@Flying = 1} {
+#pc @Flyinghandle stop;
+#var Flying 0}}

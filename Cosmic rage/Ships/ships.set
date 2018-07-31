@@ -357,9 +357,6 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 
 #trigger {A dull hum fills the air as the EMP ray prepares to fire.} {#gagline all}
 #trigger {The hatch closes with a soft hiss.} {playsound {Cosmic Rage/ships/misc/CloseAirlock.wav} @vol; #gagline all}
-
-#trigger {You tap a series of buttons, deactivating the ships power.} {#sub {Powering down, please wait...}}
-#trigger {You tap a series of buttons, activating the ships power.} {#gagline all}
 #trigger {*"Disabling primary power drives."} {#gagline all}
 #trigger {A rumble, like secondary engines, fills the ship for several moments as transport drones propel the ship away from an access tube and into a hangar.} {playsound {Cosmic Rage/ships/misc/TransportHangar.wav} @vol; #gagline voice}
 #trigger {the ship lifts slightly, then there is a thunk as transport drones attach to it. After a moment, the sound of muffled engines fill the area as the drones carry it from the hangar and onto an access tube.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
@@ -389,5 +386,19 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #TRIGGER {The humming sound ceases as the ship finishes recharging.} {
 #if {@rech = 1} {
 #pc @rechHandle stop; #var rech 0}}
-
 #trigger {On screen, you see the grabber of the ship snatch the pod up, and quickly yank it in.} {#gagline all; playsound {Cosmic Rage/ships/misc/Pressurize.wav} @vol}
+#trigger {You tap a small button near the inner airlock hatch.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/switch.wav} @vol}
+#trigger {The inner airlock hatch opens with a soft woosh.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/iopen.wav} @vol}
+#trigger {You tap a small button next to the inner airlock hatch.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/switch.wav} @vol}
+#trigger {The inner airlock closes with a soft woosh.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/iclose.wav} @vol}
+#trigger {You tap a small button.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/switch.wav} @vol}

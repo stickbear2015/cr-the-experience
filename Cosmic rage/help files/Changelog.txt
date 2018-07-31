@@ -1,3 +1,15 @@
+578. Credits, Jason Hamilton: Added some things with inner airlocks. Thanks Jason for the triggers.
+Changed on Tuesday, July 31, 2018.
+Copy Cosmic Rage/ships/ships.set.
+577. Fixed a major bug with ships powering on and off.
+Changed on Tuesday, July 31, 2018.
+Copy Cosmic Rage/ships/ships.set.
+576. Totally went and recoded flight control to make it much easier to modify in the future. All flight control sounds will now use CommsVolume, and new sounds have been added for red flight control messages, and smuggling messages. Also I've moved most of, if not all of the flight control sounds into a folder within the sounds/ships directory.
+Changed on Monday, July 30, 2018.
+Copy Cosmic Rage/ships/FlightControl.set and sounds/ships/FlightControl.
+575. Credits, Dealan Silver scale: Added sounds for dragons flying. Sound will play when you launch into the sky, when you're flying to your destination, and when you land. I'll add sounds for struggling to fly later on.
+Changed on Monday, July 30, 2018.
+Copy Cosmic Rage/misc/misc.set, and sounds/general/misc/DragonFlying.wav, DragonLanding.wav and DragonStartingToFly.wav.
 574. I've taken out the sub text for notices, and messages have been changed when reporting soundpack bugs and submitting soundpack suggestions.
 Changed on Saturday, July 28, 2018.
 Copy Cosmic Rage/misc/misc.set and soundpack.set.

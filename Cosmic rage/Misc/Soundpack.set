@@ -16,11 +16,11 @@
 #alias spp {>@soundpacks} {}
 #alias spbug {#gagon; spp;snapp;bug} {}
 #alias spsuggest {#gagon; spp;snapp;suggest}
-#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thanks for putting your suggestion in the suggestion box! One of the soundpack admins for this pack will add it as soon as possible!}}
+#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thanks for adding your suggestion to the suggestion box! Snapp will see what he can do!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
-#trigger {Please enter a long description for the suggestion.} {#sub {Please enter a long description for the suggestion. Remember to be as detailed as possible.}}
-#trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report now. Be sure to be as detailed as possible. Just putting in the error that you got, or a two worded message won't help the admins of this pack figure out the problem. Bugs containing just a few words or just the VIP error are likely to be deleted.}}
-#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for reporting the bug! An admin of the pack will hopefully have it resolved soon! Check back for updates! If needed, one of the packs admins will reach out to you for more information!}}
+#trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion. Please provide as much detail as possible. If possible, please include text that you would like sounds added for. Thank you. If needed, you will be reached for more information.}}
+#trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message won't really help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. Thank you.}}
+#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for sending this report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #alias spversion {spp;#gagon;snapp;info}
 #trigger {Last change*} {#ungagon}
 #key alt-V {SpVersion}

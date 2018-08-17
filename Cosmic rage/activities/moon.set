@@ -1,0 +1,39 @@
+#trigger {You hear a whir and then a low, powerful thrum fills the ship.} {#gagline all;
+playsound {cosmic rage/activities/moon/whir.wav} @vol} 
+#trigger {You slide some switches and tap at some buttons.} {
+#gagline all;
+playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol} 
+#trigger {You feel a shudder and hear a loud clattering sound as moon harvesting equipment is extended towards *} {
+#gagline all;
+playsound {cosmic rage/activities/moon/MoonExtend.wav} @vol} 
+#trigger {On screen, you see your moon equipment latch onto Moon *} {
+#gagline all;
+playsound {cosmic rage/activities/mechanicalMining/digging.wav} @vol} 
+#trigger {A drilling noise fills the ship.} {
+#gagline all;
+playsound {cosmic rage/activities/moon/drill.wav} @vol} 
+#trigger {You hear a whirring noise...} {
+#gagline all;
+playsound {cosmic rage/activities/moon/whirring.wav} @vol} 
+#trigger {On screen, you see your moon harvesting equipment begin to retract.} {
+#gagline all;
+playsound {cosmic rage/activities/moon/harvesterRetract.wav} @vol} 
+#trigger {You hear a clang and the ship rocks slightly.} {
+#gagline all;
+playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol} 
+#trigger {You hear a power buildup of some kind.} {
+#gagline all;
+playsound {cosmic rage/activities/moon/powerBuildup.wav} @vol} 
+#trigger {You hear a boom as a very powerful laser is fired!} {
+#gagline all;
+playsound {cosmic rage/activities/moon/laser.wav} @vol} 
+#trigger {You hear a grinding clunking sound as the lines return.} {
+#gagline all;
+playsound {cosmic rage/activities/moon/grind.wav} @vol} 
+#trigger {this is moon management at *} {playsound {cosmic rage/activities/moon/moonScanner.wav} @vol}
+#TRIGGER {You pull down, and then shove forward, a handle-shaped lever.} {#gagline all; playsound {Cosmic Rage/ships/misc/Lever*5.wav} @vol} {} AnyCase
+#TRIGGER {You hear a groan and the vehicle shudders.} {#gagline all;  playsound {Cosmic Rage/activities/moon/whir.wav} @vol} {} AnyCase
+#TRIGGER {You feel a slight shudder, and then a clunk.} {#gagline all;  playsound {Cosmic Rage/activities/moon/whir.wav} @vol} {} AnyCase
+#TRIGGER {The handle doesn't budge.} {playsound {Cosmic Rage/activities/moon/Stuck.wav} @vol} {} AnyCase
+#TRIGGER {The lever slams back up, nearly smacking you in the face!} {playsound {Cosmic Rage/ships/misc/Lever*5.wav} @vol} {} AnyCase
+#TRIGGER {some citizens stride in and begin construction on a new building.} {playsound {Cosmic Rage/activities/moon/construction.wav} @vol} {} AnyCase

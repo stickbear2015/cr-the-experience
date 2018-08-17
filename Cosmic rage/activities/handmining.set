@@ -1,0 +1,7 @@
+#TRIGGER {You begin digging.} {#gagline all; playsound {cosmic rage/activities/handmining/shovel*5.wav} @vol};
+#TRIGGER {You continue digging.} {#gagline all; playsound {cosmic rage/activities/handmining/shovel*5.wav} @vol};
+#TRIGGER {You put * into * mining container.} {playsound {cosmic rage/activities/handmining/putin.wav} @vol};
+#TRIGGER {Your shovel reveals something!} {#gagline all; playsound {cosmic rage/activities/handmining/find.wav} @vol};
+#trigger {You tap a button on * mining scanner.} {
+#gagline all;
+playsound {cosmic rage/activities/handMining/beep.wav} @vol};

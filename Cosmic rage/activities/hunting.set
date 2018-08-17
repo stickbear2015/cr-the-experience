@@ -1,0 +1,2 @@
+#TRIGGER {You hear the death cry of *} {playsound {cosmic rage/activities/hunting/AnimalDie*20.wav} @vol};
+#TRIGGER {You hear your spear snap in half!} {playsound {cosmic rage/activities/hunting/spearsnap.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)};

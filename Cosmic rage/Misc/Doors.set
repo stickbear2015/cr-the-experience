@@ -1,0 +1,42 @@
+;code for doors.
+
+#trigger {* door * shut.} {#if {%ifword(revolves,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose4.wav} @vol};
+#if {%ifword(lowers,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose2.wav} @vol};
+#if {%ifword(swings,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose.wav} @vol};
+#if {%ifword(slides,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose4.wav} @vol};
+#if {%ifword(hisses,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose4.wav} @vol}}
+
+#trigger {* door * shut.} {#if {%ifword(revolves,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose4.wav} @vol};
+#if {%ifword(lowers,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose2.wav} @vol};
+#if {%ifword(swings,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose1.wav} @vol};
+#if {%ifword(slides,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose4.wav} @vol};
+#if {%ifword(hisses,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorClose4.wav} @vol}}
+
+#trigger {* door * open.} {#if {%ifword(revolves,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol};
+#if {%ifword(lifts,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorOpen2.wav} @vol};
+#if {%ifword(swings,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorOpen1.wav} @vol};
+#if {%ifword(slides,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol};
+#if {%ifword(hisses,%2," ")} {
+playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol}}
+
+#trigger {You open * door} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}
+
+#trigger {You close * door} {playsound {Cosmic Rage/general/doors/doorClose3.wav} @vol}
+#trigger {You unlock the door.} {playsound {Cosmic Rage/general/doors/DoorUnlock.wav} @vol}
+#trigger {You flick across the bolt on the door.} {playsound {Cosmic Rage/general/doors/DoorLock.wav} @vol}
+#trigger {A heavy grinding noise comes from the ceiling as * descends with a slam.} {playsound {Cosmic Rage/general/doors/DoorWeightedClose.wav} 90}
+#trigger {With a heavy grinding noise, * rises into the ceiling.} {playsound {Cosmic Rage/general/doors/DoorWeightedOpen.wav} 90}

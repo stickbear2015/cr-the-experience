@@ -1,5 +1,0 @@
-#trigger {* lets out a soft whinny.} {playsound {cosmic rage/general/horses/horse*4.wav} @vol}
-#trigger {You * * on *} {#if {%1 = "trot"} {playsound {cosmic rage/general/horses/gallop.wav} @vol}; #if {%1 = "gallop"} {playsound {cosmic rage/general/horses/gallop.wav} @vol}; #if {%1 = "canter"} {playsound {cosmic rage/general/horses/Canter.wav} @vol}; #if {%1 = "plod"} {playsound {cosmic rage/general/horses/plod.wav} @vol}; #if {%1 = "sprint"} {playsound {cosmic rage/general/horses/gallop.wav} @vol}; #if {%1 = "charge"} {playsound {cosmic rage/general/horses/gallop.wav} @vol}; #if {%1 = "clop"} {playsound {cosmic rage/general/horses/gallop.wav} @vol}}
-#trigger {You tenderly stroke a * horses brush down the back of *} {#gagline all; playsound {cosmic rage/general/horses/brush.wav} @vol}
-#trigger {You gently rub * flank, causing * to Whinny with delight.} {playsound {cosmic rage/general/horses/horse*4.wav} @vol}
-#trigger {* gently pets * flank, causing him to Whinny in delight.} {playsound {cosmic rage/general/horses/horse*4.wav} @vol}

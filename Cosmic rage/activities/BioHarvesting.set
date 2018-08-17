@@ -1,4 +1,0 @@
-#trigger {You begin to manipulate the bioplasma harvesting rods.} {#gagline all}
-#trigger {There is a sliding noise * as a rod extends.} {playsound {Cosmic Rage/activities/BioHarvesting/RodExtend.wav} @vol; #gagline voice}
-#trigger {A low pulse goes through the rods as their field is increased.} {playsound {Cosmic Rage/Activities/BioHarvesting/RodPulse.wav} @vol; #gagline voice}
-#trigger {A sliding whining noise fills the ship as a rod retracts.} {playsound {Cosmic Rage/activities/BioHarvesting/RodRetract.wav} @vol}

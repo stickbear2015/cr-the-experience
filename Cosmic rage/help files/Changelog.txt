@@ -1,3 +1,6 @@
+587. Made several more changes to airlocks as well as docking and undocking.
+Changed on Friday, August 17, 2018.
+Copy Cosmic Rage/ships/ships.set and sounds/ships/misc.
 586. Fixed ships docking and undocking as the text had changed. Also added a few more sounds.
 Changed on Thursday, August 16, 2018.
 Copy Cosmic Rage/ships/ships.set and sounds/ships/misc.

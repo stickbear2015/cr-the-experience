@@ -265,7 +265,8 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol}
 #trigger {The pod turns *} {#if {@SilentPod = 1} {#gagline all}}
 #trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol}
-#trigger {*whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol}
+#trigger {You whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
+#trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
 #trigger {The pod banks *} {#if {@SilentPod = 1} {#gagline all}}
 #trigger {You unfirl your * wings and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} 100; #var FlyingStarthandle %playhandle; #var FlyingStart 1}

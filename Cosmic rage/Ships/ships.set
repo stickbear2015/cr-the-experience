@@ -128,7 +128,9 @@ playsound {cosmic rage/ships/movement/orbit.wav} @vol}
 playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; #pc @ShipHandle stop; #Var ShipSoundPlaying 0; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "off"}
 #trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {
 playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; #pc @ShipHandle stop; #Var ShipSoundPlaying 0; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "off"}
-#trigger {You hear a voice come from * on the main console. "This is * calling * you are clear for docking, I repeat, you are clear to dock."} {playsound {Cosmic Rage/ships/misc/StartDocking.wav} @vol}
+#trigger {You * up a narrow slope into The } {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
+#trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+#trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:} {playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
 #TRIGGER {The engines kick up into a slightly higher thrum as the ship begins to slowly cruise into a docking position.} {#gagline all; loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
 #trigger {You take hold of the controls and turn the vessel so that it is running parallel to *} {#gagline all}
 #trigger {You direct the ship around * looking for your docking point.} {#gagline all}

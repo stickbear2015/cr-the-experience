@@ -29,8 +29,7 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
-#TRIGGER {* trundles *.} {#if {@DroneSounds = 1} {#if {%2 = "out"} {playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}; #if {%2 = "in"} {playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}}};
-
+#TRIGGER {* follow*} {#if {@DroneSounds = 1} {playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
 #trigger {*delivery drone zooms *} {
 #if {%ifWord(in.,%2," ")} {
 playsound {cosmic rage/general/misc/DroidEnters.wav} @vol};

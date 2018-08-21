@@ -1,3 +1,6 @@
+588. Credits, Philip Williamson: Fixed a bug with things following you if you had drone sounds on.
+Changed on Monday, August 20, 2018.
+Copy Cosmic Rage/misc/misc.set
 587. Made several more changes to airlocks as well as docking and undocking.
 Changed on Friday, August 17, 2018.
 Copy Cosmic Rage/ships/ships.set and sounds/ships/misc.

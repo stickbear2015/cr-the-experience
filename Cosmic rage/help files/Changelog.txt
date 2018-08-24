@@ -1,3 +1,9 @@
+590. Fixed a rather large bug with saving pack settings. The file that had your char name/settings.set can be deleted, and it will never be created again.
+Changed on Tuesday, August 21, 2018.
+Copy Cosmic Rage/misc/ConfigurationManager.set and soundpack.set.
+589. Credits, Philip Williamson: Fixed yet another bug with things following you and drone sounds. Now, the drone sound will not play when something begins following you.
+Changed on Tuesday, August 21, 2018.
+Copy Cosmic Rage/misc/misc.set.
 588. Credits, Philip Williamson: Fixed a bug with things following you if you had drone sounds on.
 Changed on Monday, August 20, 2018.
 Copy Cosmic Rage/misc/misc.set

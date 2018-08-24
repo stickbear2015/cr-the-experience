@@ -29,7 +29,7 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
-#TRIGGER {* follow*} {#if {@DroneSounds = 1} {playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
+#TRIGGER {* follow* in.} {#if {@DroneSounds = 1} {playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
 #trigger {*delivery drone zooms *} {
 #if {%ifWord(in.,%2," ")} {
 playsound {cosmic rage/general/misc/DroidEnters.wav} @vol};
@@ -99,7 +99,7 @@ playsound {cosmic rage/general/misc/disband.wav} @vol} {} anycase
 playsound {cosmic rage/general/misc/joins.wav} @vol}
 #trigger {* disbands * group.} {
 playsound {cosmic rage/general/misc/disband.wav} @vol}
-#trigger {You gently take * by the hand and begin to lead *} {
+#trigger {You gently take * by the * and begin to lead *} {
 playsound {cosmic rage/general/misc/joins.wav} @vol}
 #trigger {You disband your group.} {
 playsound {cosmic rage/general/misc/disband.wav} @vol}

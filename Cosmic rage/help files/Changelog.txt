@@ -1,3 +1,6 @@
+591. When using the menu to pull up the list of channels that are being logged to files, the pack will only now show files for the currently logged in char.
+Changed on Thursday, August 23, 2018
+Copy Cosmic Rage/misc/buffers.set.
 590. Fixed a rather large bug with saving pack settings. The file that had your char name/settings.set can be deleted, and it will never be created again.
 Changed on Tuesday, August 21, 2018.
 Copy Cosmic Rage/misc/ConfigurationManager.set and soundpack.set.

@@ -1,3 +1,9 @@
+593. You can now if you wish, toggle the hearing of clan conflict messages. This can be done using the alias CCToggle. This option is saved upon saving of the pack, and a clan conflict buffer has been added. I've also renamed the clan sound to match that of the clan channel.
+Changed on Thursday, August 30, 2018.
+Copy Cosmic Rage.set, Cosmic Rage/misc/buffers.set, comms.set, ConfigurationManager.set, Soundpack.set, Cosmic Rage/general/misc/Silent.wav and Cosmic Rage/general/comms/ClanChat.wav.
+592. Fixed the buffer for A pilot's parody. It has been renamed and is no longer called Game.
+Changed on Thursday, August 30, 2018.
+Copy Cosmic Rage/misc/Buffers.set.
 591. When using the menu to pull up the list of channels that are being logged to files, the pack will only now show files for the currently logged in char.
 Changed on Thursday, August 23, 2018
 Copy Cosmic Rage/misc/buffers.set.

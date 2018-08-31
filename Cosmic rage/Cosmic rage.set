@@ -113,6 +113,7 @@
 #read 6 CommsVol 30;
 #read 6 ChannelLogging 31;
 #read 6 GameError 32;
+#read 6 SilentConflict 33;
 #close 6
 ;misc.
 #TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};

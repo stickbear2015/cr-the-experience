@@ -377,10 +377,6 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #trigger {the ship lifts slightly, then there is a thunk as transport drones attach to it. After a moment, the sound of muffled engines fill the area as the drones carry it from the hangar and onto an access tube.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
 #trigger {You feel a slight rocking as the ship is moved.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
 #trigger {*extending space scooper.} {playsound {Cosmic Rage/ships/misc/ExtendScoop.wav} @vol; #gagline voice}
-#trigger {A small blue circle begins to rotate on the main console.} {#gagline all}
-#trigger {*"running calibration and diagnostics tests."} {#gagline all}
-#trigger {the blue circle on the main console turns yellow.} {#gagline all}
-#trigger {The circle on the main console blinks to green.} {#gagline all}
 #trigger {The ship is lifted up about a foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {playsound {cosmic rage/ships/misc/landingPad.wav} @vol}
 #trigger {You wrench down a lever.} {playsound {Cosmic Rage/ships/misc/Lever1.wav} @vol; #gagline all}
 #trigger {You hear a slight wine as the cargo net lowers itself.} {playsound {Cosmic Rage/ships/misc/CargoNetLower.wav} @vol; #gagline all}

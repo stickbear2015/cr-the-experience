@@ -28,7 +28,7 @@ alternate vehicle engines:togglevehicle|
 alternate ship engines:toggleship|
 Short map text toggle:ShortMapText|
 gag ship combat toggle:gagscombat|
-Toggle the announcement of pod movement:TogglePods|
+announcement of pod movement toggle:TogglePods|
 pan ship combat toggle:pancombat|
 gag harvesting toggle:gagharvest|
 red alert toggle:toggleRedAlert|
@@ -38,17 +38,21 @@ gag weather toggle:gagweather|
 Old logon/logoff sounds toggle:toggleLogOn|
 Silent soundpack intro music toggle:SilentSPIntro|
 Clock sounds toggle:ToggleClocks|
-Toggle the sounds letting you know that you are still connected to the moo:ToggleConnectionCheck|
-Toggle the Numpad entering numbers:ToggleNumpad|
+sounds letting you know that you are still connected to the moo toggle:ToggleConnectionCheck|
+Numpad toggle:ToggleNumpad|
+Channel Logging toggle:Logging|
+I don't understand that messages toggle:ErrorToggle|
+clan conflict messages toggle:CCToggle|
 Save your list of buffers:SaveBuffers|
 Load your list of saved buffers:LoadBuffers|
-List of Alias's:Aliases|
-Buffers:Buffers|
-ToggleChannelLogging:Logging|
-Toggle hearing of I don't understand that messages:ErrorToggle|
-keystrokes:keys-help|
+Save settings for the intire pack. This also saves buffers:SaveSettings|
+Reload the soundpack:SpReload|
+Check the amount of lag between your connection and the game:lag|
+Alias's help:Aliases|
+Buffers help:Buffers|
+Keys help:keys|
 readme:readme|
-changelog:changelog}}}
+Changelog:changelog}}}
 ;Volumes
 #alias  genvoldown {
 #math Vol {@Vol - 10};
@@ -316,4 +320,7 @@ vehicle engine volume:vvol}}
 #alias GameGag {#if {@GagGame = 1} {#var GagGame 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Arcade messages will now be spoken.} voiceonly} {#var GagGame 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Arcade messages will no longer be spoken.} voiceonly}}
 #alias {Logging} {#if {@ChannelLogging  = 1} {#var ChannelLogging  0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Channel messages are no longer being logged.} Voiceonly} {#var ChannelLogging  1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Channel messages are now being logged. The directory where these files are stored is located in Cosmic Rage/logs.} voiceonly}}
 #alias {ErrorToggle} {#if {@GameError = 1} {#var GameError 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now hear the "I don't understand that messages."} Voiceonly} {#var GameError 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no longer hear the "I don't understand that messages."} voiceonly}}
+#alias {lag} {#var LagAmount 0;
+#alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
+echo Lag.test} {}
 #alias {CCToggle} {#if {@SilentConflict = 1} {#var SilentConflict 0; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now hear the clan conflict messages."} Voiceonly} {#var SilentConflict 1; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no longer hear the clan conflict messages."} voiceonly}}

@@ -213,10 +213,10 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {Via *, * located at * informs you:} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {%2 informs you}}
 #trigger {Your droid reports it attempted to do your command to the best of its ability.} {#gagline all}
 #trigger {* Game saved.} {playsound {Cosmic Rage/general/misc/GameSave.wav} @vol}
-#trigger {[[]Resource Market]:*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol} {} AnyCase
+#trigger {[[]Resource Market]:*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase
 #trigger {A new quote has been added to the quote database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
 #trigger {A quote was just removed from the database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
-#trigger {* indicating someone just made an order for something.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol}
+#trigger {* indicating someone just made an order for something.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
 #trigger {* lets out a horrible buzzing noise, before jerkily turning around and flying away.} {playsound {Cosmic Rage/general/misc/DroneBuzz.wav} @vol}
 #trigger {You slam into a wall.} {playsound {Cosmic Rage/general/misc/Wall.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
@@ -240,7 +240,6 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You close *washer} {playsound {Cosmic Rage/general/Washing/Washing1.wav} @vol; #gagline all}
 #trigger {*light flicks on * washer and through the door at the front you see the clothing begin to revolve clockwise.} {loopsound {Cosmic Rage/general/Washing/Washing2.wav} @vol; #gagline all; #var Washhandle %playhandle; #var Wash 1}
 #trigger {*washer gurgles, then rotates the clothing anti clockwise.} {#gagline all}
-
 #trigger {*washer shakes violently, tapping insessantly at nearby objects as it washes its contents.} {playsound {Cosmic Rage/general/washing/Washing4.wav} @vol; #gagline all; #if {@Wash = 1} {
 #pc @Washhandle stop;
 #var Wash 0}}
@@ -261,9 +260,9 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {*security camera* at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security camera located at %3 informs you %4}} {} AnyCase
 #trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
 #trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
-#trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol}
+#trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
 #trigger {The pod turns *} {#if {@SilentPod = 1} {#gagline all}}
-#trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol}
+#trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol; #additem InfoComputerNotifications %0}
 #trigger {You whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
 #trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
@@ -276,4 +275,4 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #pc @Flyinghandle stop;
 #var Flying 0}}
 #trigger {*tap* shoulder.} {playsound {Cosmic Rage/general/misc/Tap.wav.} 100}
-#trigger {[[]Marketing*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol} {} AnyCase
+#trigger {[[]Marketing*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase

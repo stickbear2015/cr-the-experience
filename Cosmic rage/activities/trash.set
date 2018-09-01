@@ -1,23 +1,23 @@
 #trigger {You type quickly into the orbit harvesting console.} {#gagline all;
-playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
+playsound {cosmic rage/Activities/Trash Collection/keyboard*7.wav} @vol}
 #trigger {You feel the ship rock a little as the orbit harvesting equipment activates.} {
 #gagline all;
-playsound {cosmic rage/activities/moon/moonExtend.wav} @vol} 
+playsound {cosmic rage/activities/Trash collection/Extend.wav} @vol} 
 #trigger {On screen, you see magnetic rods shoot from the underside of the ship.} {
 #gagline all;
-playsound {cosmic rage/ships/salvaging/droneGets.wav} @vol} 
+playsound {cosmic rage/Trash Collection/droneGets.wav} @vol} 
 #trigger {On screen, you see some junk from * atmosphere shoot to the rods magnetic field.} {
 #gagline all;
-playsound {cosmic rage/activities/planetoid/mineralScoop.wav} @vol} 
+playsound {cosmic rage/activities/Trash Collection/Scoop.wav} @vol} 
 #trigger {You hear a slight squeak as the rods retract.} {
 #gagline all;
-playsound {cosmic rage/activities/moon/moonExtend.wav} @vol} 
+playsound {cosmic rage/activities/Trash Collection/moonExtend.wav} @vol} 
 #trigger {You hear a grinding whir as rods extend from the bottom of the ship and a laser starts up.} {
 #gagline all;
-playsound {cosmic rage/activities/planetoid/grind.wav} @vol}
+playsound {cosmic rage/activities/Trash collection/grind.wav} @vol}
 #trigger {You feel a slight shudder as some trash is hauled up by the rods.} {
 #gagline all;
-playsound {cosmic rage/activities/planetoid/mineralScoop.wav} @vol} 
+playsound {cosmic rage/activities/Trash collection/Scoop.wav} @vol} 
 #trigger {You hear a whine.} {#gagline all; playsound {cosmic rage/ships/misc/whine.wav} @vol} 
 #trigger {You hear a loud slam.} {#gagline all;
 playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol} 
@@ -26,3 +26,9 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 playsound {cosmic rage/activities/moon/moonExtend.wav} @vol} 
 #trigger {There is a loud slam.} {#gagline all;
 playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
+#trigger {A small drone wanders through the cab.} {playsound {Cosmic Rage/activities/Trash collection/Investigate.wav} @vol}
+#trigger {The drone returns, carrying *} {playsound {Cosmic Rage/activities/Trash collection/DroneReturn.wav} @vol}
+#trigger {The drone emits a strong eletric pulse that sucks the moisture out of the air as it purifies the object.} {playsound {Cosmic Rage/activities/Trash collection/purify.wav} @vol}
+#trigger {* is reduced into a smashed wreck as the drone compresses it into * and carries it away.} {playsound {Cosmic Rage/activities/Trash collection/DroneSmash.wav} @vol}
+#trigger {You push down hard on a plunger.} {#gagline voice}
+#trigger {A very loud crunch is heard as the machine compresses some trash into a cube.} {playsound {Cosmic Rage/activities/Trash collection/Crunch.wav} @vol}

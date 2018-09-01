@@ -1,3 +1,18 @@
+598. Using the alias lag, you can now check the lag between your connection and the game.
+Changed on Saturday, September 01, 2018.
+Copy Cosmic Rage/Help files, and Cosmic Rage/misc/ConfigurationManager.set.
+597. Fixed bugs with powering on ships and boarding from access tubes.
+Changed on Saturday, September 01, 2018.
+Copy Cosmic Rage/ships/ships.set.
+596. Credits, Rheeni: Anything to do with info computers will now be put in the correct buffer.
+Changed on Saturday, September 01, 2018.
+Copy Cosmic Rage/misc/comms.set and misc.set.
+595. Cleaned up code in the configuration manager. Some options were missing, so they have been added. Let me know if you find something that hasn't been included.
+Changed on Saturday, September 01, 2018.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
+594. Credits, Calpurnia: Updated trash collecting and it's sounds quite a bit as the activity has changed.
+Changed on Saturday, September 01, 2018.
+Copy Cosmic Rage/activities/Trash.set and Sounds/activities/Trash collection.
 593. You can now if you wish, toggle the hearing of clan conflict messages. This can be done using the alias CCToggle. This option is saved upon saving of the pack, and a clan conflict buffer has been added. I've also renamed the clan sound to match that of the clan channel.
 Changed on Thursday, August 30, 2018.
 Copy Cosmic Rage.set, Cosmic Rage/misc/buffers.set, comms.set, ConfigurationManager.set, Soundpack.set, Cosmic Rage/general/misc/Silent.wav and Cosmic Rage/general/comms/ClanChat.wav.

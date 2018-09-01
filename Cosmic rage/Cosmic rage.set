@@ -74,7 +74,7 @@
 #class vehicleamb enable;
 ;Triggers for connecting to the moo.
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
-#trigger {Welcome to: Cosmic Rage!} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. If this is your first time running the soundpack, Please use Control-alt-shift-S or type SaveBuffers now. Thank you.}; #if {@SilentIntro = 0} {loopsound {cosmic rage/music/Intro.wav} @vol; #var IntroMusic %playhandle}};
+#trigger {Welcome to: Cosmic Rage!} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. Failing to do so will save the default buffer list upon the pack auto-saving. If this is your first time running the soundpack, Please use Control-alt-shift-S or type SaveBuffers now. Thank you.}; #if {@SilentIntro = 0} {loopsound {cosmic rage/music/Intro.wav} @vol; #var IntroMusic %playhandle}};
 #TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
 

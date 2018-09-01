@@ -77,3 +77,4 @@ GameGag:Gag or ungag certain Arcade messages.
 Logging:Toggle channel messages being stored to files.
 ErrorToggle: Toggle:hearing of I don't understand that messages.
 CCToggle: Toggle hearing of clan conflict messages.
+Lag:Check the amount of lag between your connection and the game.

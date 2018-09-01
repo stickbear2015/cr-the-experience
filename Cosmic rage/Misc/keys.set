@@ -23,9 +23,7 @@
 
 ;keys for toggles.
 #key f11 {ambtoggle}
-#Key {control-l} {#var LagAmount 0;
-#alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
-echo Lag.test} {}
+#Key {control-l} {lag}
 #key alt-shift-A {Aliases}
 #key Alt-shift-B {Buffers}
 #key alt-shift-c {Changelog}

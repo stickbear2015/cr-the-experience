@@ -1,3 +1,6 @@
+599. Two more credit sounds have been added. The sound will cycle between the four sounds upon spending credits, receiving credits or when typing cash.
+Changed on Sunday, September 02, 2018.
+Copy Cosmic Rage/misc/misc.set and sounds/general/misc/Credits1 through Credits4. Also, get rid of ching 1 and ching 2.
 598. Using the alias lag, you can now check the lag between your connection and the game.
 Changed on Saturday, September 01, 2018.
 Copy Cosmic Rage/Help files, and Cosmic Rage/misc/ConfigurationManager.set.

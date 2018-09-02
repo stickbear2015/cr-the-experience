@@ -26,9 +26,9 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {* muses*, "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
 #TRIGGER {You exclaim* "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
 #TRIGGER {* exclaims* "*"} {playsound {cosmic rage/general/misc/say.wav} @vol;#additem say %0}
-#TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
-#TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
-#TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/ching*2.wav} @vol};
+#TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol}
+#TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol};
+#TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol}
 #TRIGGER {* follow* in.} {#if {@DroneSounds = 1} {playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
 #trigger {*delivery drone zooms *} {
 #if {%ifWord(in.,%2," ")} {
@@ -198,7 +198,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {Data saved!} {playsound {Cosmic Rage/general/misc/DataSaved.wav} @vol; #gagline all}
 #trigger {A siren rings out through the area and you hear a voice announce: "All military officers, please proceed to your local boarding points. This is not a drill."} {playsound {Cosmic Rage/general/comms/evac.wav} @vol}
 #TRIGGER {* plays a cheery tune, informing you someone just put up an advertisement.} {playsound {Cosmic Rage/general/misc/advertisement.wav} @vol}
-#trigger {You have * credits} {playsound {Cosmic Rage/general/misc/ching1.wav} @vol}
+#trigger {You have * credits} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol}
 #trigger {You drink some *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
 #trigger {You eat some *} {playsound {Cosmic Rage/general/Food and drink/EatFood.wav} @vol}
 #trigger {You gulp down *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}

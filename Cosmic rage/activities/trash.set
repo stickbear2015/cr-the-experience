@@ -5,13 +5,13 @@ playsound {cosmic rage/Activities/Trash Collection/keyboard*7.wav} @vol}
 playsound {cosmic rage/activities/Trash collection/Extend.wav} @vol} 
 #trigger {On screen, you see magnetic rods shoot from the underside of the ship.} {
 #gagline all;
-playsound {cosmic rage/Trash Collection/droneGets.wav} @vol} 
+playsound {cosmic rage/Activities/Trash Collection/droneGets.wav} @vol} 
 #trigger {On screen, you see some junk from * atmosphere shoot to the rods magnetic field.} {
 #gagline all;
 playsound {cosmic rage/activities/Trash Collection/Scoop.wav} @vol} 
 #trigger {You hear a slight squeak as the rods retract.} {
 #gagline all;
-playsound {cosmic rage/activities/Trash Collection/moonExtend.wav} @vol} 
+playsound {cosmic rage/activities/Trash Collection/Extend.wav} @vol} 
 #trigger {You hear a grinding whir as rods extend from the bottom of the ship and a laser starts up.} {
 #gagline all;
 playsound {cosmic rage/activities/Trash collection/grind.wav} @vol}

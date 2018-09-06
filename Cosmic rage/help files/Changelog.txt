@@ -1,3 +1,15 @@
+603. Fixed several bugs with auctions. One of these being that auction items will no longer duplicate in the auction buffer.
+Changed on Tuesday, September 04, 2018.
+Copy Cosmic Rage/misc/comms.set.
+602. Fixed a major bug with clanchat. It will now add items to the buffer correctly. The buffer has also been renamed to clanchat.
+Changed on Tuesday, September 04, 2018.
+Copy Cosmic Rage/misc/buffers.set and comms.set.
+601. Fixed a slight bug with orbit harvesting.
+Changed on Tuesday, September 04, 2018.
+Copy Cosmic Rage/activities/Trash.set.
+600. A new sound has been added for receiving points.
+Changed on Tuesday, September 04, 2018.
+Copy Cosmic Rage/misc/misc.set and sounds/general/misc/GetPoints.wav
 599. Two more credit sounds have been added. The sound will cycle between the four sounds upon spending credits, receiving credits or when typing cash.
 Changed on Sunday, September 02, 2018.
 Copy Cosmic Rage/misc/misc.set and sounds/general/misc/Credits1 through Credits4. Also, get rid of ching 1 and ching 2.

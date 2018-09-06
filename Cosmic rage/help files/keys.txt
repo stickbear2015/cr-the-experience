@@ -55,6 +55,7 @@ Alt-X. Out.
 
 	Miscellaneous Keys
 
+Control-F11. Stop all playing sounds. Useful if a sound gets stuck.
 f11. Toggle room Ambience.
 alt-shift-m. Toggle planetary music.
 alt shift d. Toggle drone sounds.

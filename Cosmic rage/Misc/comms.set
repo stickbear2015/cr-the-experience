@@ -59,7 +59,7 @@ playsound {cosmic rage/general/comms/faze.wav} @Vol}
 #trigger {[[]Languages] *:*} {
 playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Brag]*} {playsound {cosmic rage/general/comms/brag.wav} @CommsVol; #additem brag %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Brag.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]clanchat], : *} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #if {@ChannelLogging = 1} {#additem Clan %0; #file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]clanchat], : *} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #additem Clanchat %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You turn * translator} {
 #if {%ifWord(on,%1," ")} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
@@ -127,10 +127,11 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {*translator announces *} {#additem say %0}
 #trigger {* flashes, blueprint software patch *} {playsound {Cosmic Rage/general/comms/Blueprint.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #TRIGGER {[[]Auction]:*} {playsound {cosmic rage/general/auction/auction bell*3.wav} @CommsVol; #additem Auction %0} {} AnyCase
+#TRIGGER {[[]Auction]: * just opened an auction for * The starting price is * credits.} {playsound {cosmic rage/general/auction/start auction.wav} @CommsVol} {} AnyCase
+#TRIGGER {[[]Auction]: Auction master careheart: * sold! Ending price * credits.*} {playsound {cosmic rage/general/auction/item sold.wav} @CommsVol} {} AnyCase
+#TRIGGER {[[]Auction]: * just opened an auction for * The starting price is * credits.} {playsound {cosmic rage/general/auction/start auction.wav} @CommsVol} {} AnyCase
+#TRIGGER {[[]Auction]: Auction master carehart announcing a bid: *} {playsound {cosmic rage/general/auction/bid.wav} @CommsVol} {} AnyCase
 #trigger {[[]Distress]:*} {playsound {Cosmic Rage/general/comms/distress.wav} @CommsVol; #additem Distress %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Distress.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]Auction]: Auction master careheart: * sold! Ending price * credits.*} {playsound {cosmic rage/general/auction/item sold.wav} @CommsVol; #additem Auction %0} {} AnyCase
-#TRIGGER {[[]Auction]: * just opened an auction for * The starting price is * credits.} {playsound {cosmic rage/general/auction/start auction.wav} @CommsVol; #additem Auction %0} {} AnyCase
-#TRIGGER {[[]Auction]: Auction master carehart announcing a bid: *} {playsound {cosmic rage/general/auction/bid.wav} @CommsVol; #additem Auction %0} {} AnyCase
 #trigger {Newbie is now on.} {playsound {Cosmic Rage/general/comms/activate.wav} @CommsVol}
 #trigger {Newbie is now off.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @CommsVol}
 #trigger {An ooc link from * has been automatically accepted.} {playsound {Cosmic Rage\general\comms\linkConfirmed.wav} @CommsVol} {} AnyCase

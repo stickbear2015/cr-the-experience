@@ -50,7 +50,7 @@ weather sounds toggle:weatherToggle|
 gag weather toggle:gagweather|
 Old logon/logoff sounds toggle:toggleLogOn|
 TTS:Toggle your speech.
-Toggle the connection sounds that let you know you are still connected to the mud:ToggleConnectionCheck
+Toggle the connection sounds that let you know you are connected to the moo, but idle:ToggleConnectionCheck
 Soundpack intro music toggle:SilentSPIntro|
 Clock sounds toggle:ToggleClocks|
 Mute sounds toggle:MuteSound|

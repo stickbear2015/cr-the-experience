@@ -29,6 +29,7 @@
 #key alt-shift-c {Changelog}
 #key alt-shift-K {Keys}
 #key alt-shift-R {Readme}
+#key Alt-shift-s {SpCredits}
 
 #key alt-shift-d {DroneToggle}
 #key alt-shift-m {togglemusic}
@@ -45,7 +46,7 @@
 #key control-shift-w {gagweather}
 #key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} voiceonly}
 #key alt-s {ShortMapText}
-#key Control-Alt-C {ToggleConnectionCheck}
+#key Control-Alt-C ToggleIdleSounds
 #key control-alt-M {SilentSPIntro}
 #key control-alt-T {ToggleClocks}
 #key control-shift-n {#if {@cMusic = 1} {#var combatmusicPlaying 1; #pc 0 stop; #say {The current combat track has been changed.} voiceonly; #playloop {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatMusicHandle %playHandle; #var combatmusicPlaying 1} {#if {@cMusic = 0} {#say {You must enable combat music for this feature to work correctly.} voiceonly}}}

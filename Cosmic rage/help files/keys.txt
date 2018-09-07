@@ -1,6 +1,16 @@
-Keys for the soundpack are as follows.
+This file contains all keys that are available to you while the soundpack is loaded.
 
-		Keys for adjusting sound volume.
+F2. Pull up the configuration manager.
+
+	Keys for accessing help files.
+Alt-shift-A. View the alias's help file.
+Alt-shift-B. View the buffers help file.
+alt-shift-c. View the changelog.
+alt-shift-k. View the keys help file.
+alt-shift-r. View the readme.
+Alt-shift-S. View the soundpacks credits
+
+	Keys for adjusting sound volume.
 
 shift-f3 shift-f4. adjust roomAmbienceVolume.
  f5 f6. Adjust ship ambience volume.
@@ -100,13 +110,7 @@ Misc keys.
 
 Control-Slash. Will force VIP to ungag your speech if something gets stuck and you hear that Gagging is in effect.
 Control-S. Save your current soundpack settings.
-Alt-shift-A. Load the list of alias's.
-Alt-shift-B. Pull up the buffers help file.
-alt-shift-c. Pull up the changelog.
-alt-shift-k. Pull up the text file containing all available keys you can use in the pack.
-alt-shift-r. Pull up the readme.
 Control-shift-R. Reload the soundpack.
 Control-shift-N. Cycle through the different ship combat music themes. You will need to have Ship combat music enabled for this to work correctly.
 Alt-V. Check the last logged change the moo has stored for the pack.
-F2. Pull up the configuration manager.
 Control-alt-L. Toggle channel logging.

@@ -1,3 +1,12 @@
+606. The new configuration manager will now show you the current value of each option. For toggled options, 1 means enabled, 0 means disabled. The manager can be accessed by hitting f-2, or by using the alias config.
+Changed on Friday, September 07, 2018 at 4:41 PM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set
+605. Changed the sounds for adjusting volume levels, and toggling options. I also fixed quite a few bugs with options that were toggled. As far as I've been able to test, everything works perfectly now.
+Changed on Friday, September 07, 2018 at 4:20 AM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set , Keys.set, Soundpack.set, and sounds/general/misc/On.wav, Off.wav, VolumeDown.wav and VolumeUp.wav.
+604. Cleaned up yet more code in the configuration manager. Things should not lag any longer, and messages for loading help files have been changed slightly. Also. Starting with this change, timestamps will be included alongside the date.
+Changed on Friday, September 07, 2018 at 2:45 AM CDT
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/ConfigurationManager.set, keys.set and soundpack.set.
 603. Fixed several bugs with auctions. One of these being that auction items will no longer duplicate in the auction buffer.
 Changed on Tuesday, September 04, 2018.
 Copy Cosmic Rage/misc/comms.set.

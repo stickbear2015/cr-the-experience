@@ -234,7 +234,7 @@ playsound {cosmic rage\general\socials\collapse3.wav} @CVol}
 #trigger {Planetary cannon starting up.} {
 #gagline all;
 playsound {cosmic rage\activities\moon\PowerBuildUp.wav} @CVol}
-#TRIGGER {*"Enemies inbound. I repeat, enemies inbound!"} {playsound {Cosmic Rage/ships/combat/Enemiesinbound.wav} #CVol; #gagline all}
+#TRIGGER {*"Enemies inbound. I repeat, enemies inbound!"} {playsound {Cosmic Rage/ships/combat/Enemiesinbound.wav} 80; #gagline all}
 #TRIGGER {You hear a powerful hum as the weapons power is restored.} {playsound {cosmic rage\ships\combat\WeaponsRecharge.wav} @CVol; #gagline voice}
 #trigger {You pull a tiny lever.} {playsound {Cosmic Rage/ships/combat/Lever.wav} @CVol; #gagline all}
 #Trigger {*"Holovid enabled."} {playsound {Cosmic Rage/ships/combat/HolovidOn.wav} @CVol}

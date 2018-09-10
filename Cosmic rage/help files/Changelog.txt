@@ -1,3 +1,6 @@
+607. Added a buffer for things said while in a spacesuit.
+Changed on Sunday, September 09, 2018 at 10:20 PM CDT.
+Copy Cosmic Rage/misc/buffers.set and comms.set.
 606. The new configuration manager will now show you the current value of each option. For toggled options, 1 means enabled, 0 means disabled. The manager can be accessed by hitting f-2, or by using the alias config.
 Changed on Friday, September 07, 2018 at 4:41 PM CDT.
 Copy Cosmic Rage/misc/ConfigurationManager.set

@@ -1,4 +1,4 @@
-#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GroundToAir|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Languages|Library|Mapper|Mentor|MI|Military|Missions|Movement|MusicFM|newbie|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PrivateNetwork|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
+#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GroundToAir|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Languages|Library|Mapper|Mentor|MI|Military|Missions|Movement|MusicFM|newbie|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PrivateNetwork|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Spacesuit|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
 #var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1
@@ -54,7 +54,9 @@
 #alias {LogFile} {#say {Please pick a channel from the menu below to read it's log file.}; #alarm 1 {playsound {Cosmic Rage/general/misc/ConfMan.wav} @90; #pick {p:Please select an option from the menu below|
 Read the administrator channels  log file for %char:#edit {Cosmic Rage/logs/%char admin.log}|
 Read the Administrators Chat log file for %char:#edit  {Cosmic Rage/logs/%char AdminChat.log}|
+Read the Announcements log file for %char:#edit  {Cosmic Rage/logs/%char Announcements.log}|
 Read the Brag channels log file for %char:#edit  {Cosmic Rage/logs/%char brag.log}|
+Read the changes log file for %char:#edit  {Cosmic Rage/logs/%char Changes.log}|
 Read the chargen channels  log file for %char:#edit  {Cosmic Rage/logs/%char chargen.log}|
 Read the Chat channels log file for %char:#edit  {Cosmic Rage/logs/%char chat.log}|
 Read the clanchat channels log file for %char:#edit  {Cosmic Rage/logs/%char ClanChat.log}|
@@ -83,10 +85,8 @@ Read the RP channels log file for %char:#edit  {Cosmic Rage/logs/%char RP.log}|
 Read the SDF channels log file for %char:#edit  {Cosmic Rage/logs/%char sdf.log}|
 Read the SDL channels log file for %char:#edit  {Cosmic Rage/logs/%char SDL.log}|
 Read the Soundpack channels log file for %char:#edit  {Cosmic Rage/logs/%char Soundpacks.log}|
+Read the SubAnnouncements log file for %char:#edit  {Cosmic Rage/logs/SubAnnouncements.log}|
 Read the Squadren channels log file for %char:#edit  {Cosmic Rage/logs/%char Squadren.log}|
 Read the Traceback channels log file for %char:#edit  {Cosmic Rage/logs/%char Tracebacks.log}|
 Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.log}|
-Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}|
-Read the Announcements log file for %char:#edit  {Cosmic Rage/logs/%char Announcements.log}|
-Read the SubAnnouncements log file for %char:#edit  {Cosmic Rage/logs/SubAnnouncements.log}|
-Read the changes log file for %char:#edit  {Cosmic Rage/logs/%char Changes.log}}}}
+Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}

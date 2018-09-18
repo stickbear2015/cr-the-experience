@@ -1,3 +1,12 @@
+610. Credits: Rheeni Purple scale. When making repairs to a Battlesuit, sounds will play and loop until repairs are complete. Note. I used repairing sounds that are already in the pack until I can find new ones.
+Changed on Tuesday, September 18, 2018 at 05:35 AM CDT.
+Copy Cosmic Rage/combat/battlesuits.set and sounds/general/battlesuit.
+609. Credits: Frederick Barnes131439. Fixed several issues with ambience sound files.
+Changed on Tuesday, September 18, 2018 at 05:20 AM CDT.
+Copy Sounds/ambiences.
+608. Credits: Ivan Metallic silver scale. Fixed a rather odd bug where train announcements would trigger the sound of the doors opening.
+Changed on Tuesday, September 18, 2018 at 05:13 AM CDT.
+Copy Cosmic Rage/misc/trains.set.
 607. Added a buffer for things said while in a spacesuit.
 Changed on Sunday, September 09, 2018 at 10:20 PM CDT.
 Copy Cosmic Rage/misc/buffers.set and comms.set.

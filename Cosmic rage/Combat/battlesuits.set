@@ -10,3 +10,8 @@
 #trigger {* lifts * arm and fires * grenade launcher at *.} {#gagline voice; playsound {Cosmic Rage/general/battlesuit/Grenade.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
 #trigger {* lifts * arm and fires a small rocket launcher at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/rocket.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
 #trigger {* lifts * arm and fires * pulse gun at *.} {#gagline all; playsound {Cosmic Rage/general/battlesuit/PulseGun*3.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {Small drones pop out of * and begin repairs.} {loopsound {Cosmic Rage/general/battlesuit/Repair*4.wav} @vol; #var RepairStarthandle %playhandle; #var RepairStart 1}
+#trigger {Drones continue to clamber over the outside of your battlesuit, making repairs.} {#gagline voice}
+#trigger {the drones repairing * retract back and disappear.} {playsound {Cosmic Rage/general/battlesuit/RepairComplete.wav} @vol; #if {@RepairStart = 1} {
+#pc @RepairStarthandle stop;
+#var RepairStart 0}} {} AnyCase

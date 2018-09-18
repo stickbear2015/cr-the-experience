@@ -3,7 +3,7 @@
 #trigger {The next station is *} {playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
 #trigger {The doors whoosh open.} {playsound {Cosmic Rage/general/trains/doorsopen.wav} @vol}
 #trigger {One of the fans of the trains kicks in.} {#gagline all}
-#trigger {A soothing female voice announces: *} {playsound {Cosmic Rage/general/trains/doorsclosed.wav} @vol}
+#trigger {A soothing female voice announces: *} {playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
 #trigger {the doors on * slide shut with a hiss.} {playsound {Cosmic Rage/general/trains/doorsclosed2.wav} @vol}
 #trigger {With a whoosh, * pulls out.} {playsound {Cosmic Rage/general/trains/leave2.wav} @vol}
 #trigger {The doors on * open with a whoosh.} {playsound {Cosmic Rage/general/trains/doorsopen2.wav} @vol}

@@ -38,7 +38,7 @@ Toggle the gagging of  weather text. This option is currently set to @gagweather
 Toggle the Old log on  and log off sounds. This option is currently set to @LogOn :toggleLogOn|
 Toggle the playing of the soundpack intro music. This option is currently set to @SilentIntro :SilentSPIntro|
 Toggle the sounds from clocks that can be bought in game. When clock sounds are enabled, text is gagged. When sounds are disabled, messages will be displayed. This option is currently set to @SilentClock :ToggleClocks|
-Toggle the Small tick sounds letting you know that you are connected to the moo but idle. This option is currently set to @ConnectionCheck :ToggleConnectionCheck|
+Toggle the Small tick sounds letting you know that you are connected to the moo but idle. This option is currently set to @ConnectionCheck:ToggleIdleSounds|
 Toggle what the Numpad enters. This option is currently set to @numpadon :ToggleNumpad|
 Toggle Channel Logging. This option is currently set to @ChannelLogging :Logging|
 Toggle gagging of I don't understand that messages. This option is currently set to @GameError :ErrorToggle|

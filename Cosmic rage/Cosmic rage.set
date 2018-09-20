@@ -74,7 +74,7 @@
 #class vehicleamb enable;
 ;Triggers for connecting to the moo.
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
-#trigger {Welcome to: Cosmic Rage!} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. Failing to do so will save the default buffer list upon the pack auto-saving. If this is your first time running the soundpack, Please use Control-alt-shift-S or type SaveBuffers now. Thank you.}; #if {@SilentIntro = 0} {loopsound {cosmic rage/music/Intro.wav} @vol; #var IntroMusic %playhandle}};
+#trigger {Welcome to: Cosmic Rage!} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. Failing to do so will save the default buffer list upon the pack auto-saving. If this is your first time running the soundpack, Please use Control-alt-shift-S or type SaveBuffers now. Thank you.}; version; #if {@SilentIntro = 0} {loopsound {cosmic rage/music/Intro.wav} @vol; #var IntroMusic %playhandle}};
 #TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
 
@@ -124,9 +124,11 @@ SaveSettings; #play {cosmic rage/general/misc/quit.wav} @vol;
 #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0};
 #if {@musicplaying = 1} {#pc @musichandle stop; #var musicplaying 0; #var planet ""}; #if {@vehiclesoundplaying = 1} {#pc @vehiclehandle stop; #var @vehiclesoundplaying 0};
 #if {@shipsoundplaying = 1} {#pc @shiphandle stop; #var shipsoundplaying 0}};
-#Alias {logon} {options;4;log;y} {}
-#Alias {logoff} {options;4;log;n} {}
-#Alias {afkon} {options;4;afk;y} {}
-#Alias {afkoff} {options;4;afk;n} {}
+#Alias {logon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {Log on and log off messages enabled.} voiceonly; #gagon; options;4;log;Yes} {}
+#Alias {logoff} {#play {Cosmic Rage/general/misc/Off.wav} 100; #say {Log on and log off messages disabled.} voiceonly; #gagon; options;4;log;No} {}
+#Alias {afkon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {AFK messages enabled.} Voiceonly; #gagon; options;4;afk;Yes} {}
+#Alias {afkoff} {#play {Cosmic Rage/general/misc/Off.wav} 100; #say {AFK messages disabled} Voiceonly; #gagon; options;4;afk;No} {}
+#trigger {AFK settings set!} {#ungagon}
+#trigger {Log on and log off messages set.} {#ungagon}
 #trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} 90}
 #alarm Saving -1800 {AutoSaveSettings; AutoSaveBuffers}

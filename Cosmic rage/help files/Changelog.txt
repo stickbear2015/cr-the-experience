@@ -1,3 +1,18 @@
+615. The aliases help file has been updated to include some aliases that were missing. A bit of text has also been added to let users know that aliases must always be one word.
+Changed on Thursday, September 20, 2018 at 4:30 PM CDT.
+Copy Cosmic Rage/Help files.
+614. Changed the sound for aborting a command, and ungagged that text.
+Changed on Thursday, September 20, 2018 at 5:15 AM CDT.
+Copy Cosmic Rage/misc/misc.set, sounds/general/misc/abort.wav, and get rid of abort, abort1, abort2, abort3 and abort4.
+613. When you connect to the game, the last change to the soundpack that was posted to the game will now be shown. You can get to this by reading the last line of your output window.
+Changed on Thursday, September 20, 2018 at 12:40 AM CDT.
+Copy Cosmic Rage.set.
+612. I've fixed the aliases for toggling AFK and logon/logoff notifications. The spam has been taken care of, and you now see a message letting you know things are enabled or disabled.
+Changed on Thursday, September 20, 2018 at 12:30 AM CDT.
+Copy Cosmic Rage.set.
+611. Credits: Gladr Gold scale. increased the volume of the Panaxes music by a huge amount.  I had no idea it was so quiet. Sorry about that.
+Changed on Wednesday, September 19, 2018 at 5:00 AM CDT.
+Copy sounds/music/Pllanets/panaxes.wav.
 610. Credits: Rheeni Purple scale. When making repairs to a Battlesuit, sounds will play and loop until repairs are complete. Note. I used repairing sounds that are already in the pack until I can find new ones.
 Changed on Tuesday, September 18, 2018 at 05:35 AM CDT.
 Copy Cosmic Rage/combat/battlesuits.set and sounds/general/battlesuit.

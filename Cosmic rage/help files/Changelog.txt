@@ -1,3 +1,6 @@
+616. Credits, Liam Erven39551: Fixed quite a few bugs with ships slowing down out of warp space, and decelerating in general. For now, the code has all sounds stopping when you do these things, this was done as I could not figure out why the code was breaking the way it was before, as things looked perfectly fine. A better fix for these bugs will be added as soon as I think of a new way to code things.
+Changed on Friday, September 21, 2018 at 3:50 AM CDT.
+Copy Cosmic Rage/ships/ships.set.
 615. The aliases help file has been updated to include some aliases that were missing. A bit of text has also been added to let users know that aliases must always be one word.
 Changed on Thursday, September 20, 2018 at 4:30 PM CDT.
 Copy Cosmic Rage/Help files.

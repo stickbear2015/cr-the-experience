@@ -81,3 +81,4 @@ afkon.  Enable AFK messages.  This will need to be enabled if you wish to go AFK
 Afkoff.  Disable AFK messages. 
 Logon.  Enable logon/logoff messages. 
 Logoff.  Disable logon/logoff messages. 
+ToggleLaunchText. Toggle seeing of launching and docking text.

@@ -1,3 +1,9 @@
+618. When launching, landing, docking or undocking, you can now decide if you wish to see that text or not. This setting is also saved upon the pack saving. Please see the help files for the correct key and alias.
+Changed on Sunday, September 23, 2018 at 2:00 PM CDT.
+Copy Cosmic Rage.set, Cosmic Rage/Help Files, Cosmic Rage/misc/ConfigurationManager.set, keys.set, Cosmic Rage/ships/ships.set and ships2.set.
+617. Hopefully, for users who are loading the pack for the first time, VIP will no longer freak out about a settings file that hasn't yet been created yet. It will create when you use the key control-s. Also, if you've never ran the pack before, some settings now have default values. These can of course be changed.
+Changed on Sunday, September 23, 2018 at 2:00 PM CDT.
+Copy Cosmic Rage.set.
 616. Credits, Liam Erven39551: Fixed quite a few bugs with ships slowing down out of warp space, and decelerating in general. For now, the code has all sounds stopping when you do these things, this was done as I could not figure out why the code was breaking the way it was before, as things looked perfectly fine. A better fix for these bugs will be added as soon as I think of a new way to code things.
 Changed on Friday, September 21, 2018 at 3:50 AM CDT.
 Copy Cosmic Rage/ships/ships.set.

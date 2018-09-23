@@ -98,3 +98,4 @@
 #key {control-/} {#ungagon; #say {Speech is no longer being gagged.}}
 #key control-alt-L {Logging}
 #key {control-s} {SaveSettings}
+#key {Alt-Shift-L} {ToggleLaunchText}

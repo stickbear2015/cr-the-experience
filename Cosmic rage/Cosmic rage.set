@@ -62,6 +62,7 @@
 #load ships/Rats.set
 #load ships/shipCombat.set
 #load ships/ships.set
+#load ships/ships2.set
 #load ships/Waypoints.set
 
 ;Vehicle set files.
@@ -114,7 +115,44 @@
 #read 6 ChannelLogging 31;
 #read 6 GameError 32;
 #read 6 SilentConflict 33;
+#read 6 LaunchText 34;
 #close 6
+
+#if {NOT %Defined(Vol)} {#Var Vol 60}
+#if {NOT %Defined(CommsVol)} {#Var CommsVol 60}
+#If {NOT %Defined(ambon)} {#Var ambon 1}
+#If {NOT %Defined(roomsoundplaying)} {#Var RoomSoundPlaying 0}
+#If {NOT %Defined(MusicSounds)} {#Var MusicSounds 1}
+#If {NOT %Defined(DroneSounds)} {#Var DroneSounds 1}
+#if {NOT %Defined(musicVol)} {#Var musicVol 60}
+#if {NOT %Defined(ShipVol)} {#Var ShipVol 60}
+#if {NOT %Defined(VehicleVol)} {#Var VehicleVol 60}
+#if {NOT %Defined(RoomVol)} {#Var RoomVol 60}
+#if {NOT %Defined(CVol)} {#Var CVol 60}
+#If {NOT %Defined(RedAlert)} {#Var RedAlert 1}
+#If {NOT %Defined(combatmusicPlaying)} {#Var combatmusicPlaying 0}
+#If {NOT %Defined(cMusic)} {#Var cMusic 1}
+#if {not %defined(MVol)} {#var MVol 60}
+#if {not %defined(altVehicleEngines)} {#var altVehicleEngines 0}
+#if {not %defined(altshipEngines)} {#var altshipEngines 0}
+#if {not %defined(gagShipCombat)} {#var gagShipCombat 1}
+#if {not %defined(PanShipCombat)} {#var PanShipCombat 1}
+#if {not %defined(gagHarvest)} {#var gagHarvest 1}
+#if {not %defined(evol)} {#var evol 60}
+#if {not %defined(veVol)} {#var veVol 60}
+#if {not %defined(gagSal)} {#var gagSal 1};
+#if {not %defined(weather)} {#var weather 1}
+#if {not %defined(gagweather)} {#var gagweather 1}
+#if {not %defined(ShortMapText)} {#var ShortMapText 0}
+#if {not %defined(LogOn)} {#var LogOn 0}
+#if {not %defined(SilentIntro)} {#var SilentIntro 0}
+#if {not %defined(SilentClock)} {#var SilentClock 0}
+#if {not %defined(ConnectionCheck)} {#var ConnectionCheck 0}
+#if {not %defined(numpadon)} {#var numpadon 0}
+#if {not %defined(ChannelLogging)} {#var ChannelLogging 0}
+#if {not %defined(GameError)} {#var GameError 0}
+#if {not %defined(SilentConflict)} {#var SilentConflict 0}
+#if {not %defined(LaunchText)} {#var LaunchText 0}
 ;misc.
 #TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
 #TRIGGER {lag.test} {#unalarm LagTest;

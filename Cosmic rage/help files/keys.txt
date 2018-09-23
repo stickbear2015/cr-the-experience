@@ -113,3 +113,4 @@ Control-shift-R. Reload the soundpack.
 Control-shift-N. Cycle through the different ship combat music themes. You will need to have Ship combat music enabled for this to work correctly.
 Alt-V. Check the last logged change the moo has stored for the pack.
 Control-alt-L. Toggle channel logging.
+Alt-shift-L. Toggle seeing of launching and docking text.

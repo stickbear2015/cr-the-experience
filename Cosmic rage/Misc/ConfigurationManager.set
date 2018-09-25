@@ -43,6 +43,7 @@ Toggle what the Numpad enters. This option is currently set to @numpadon :Toggle
 Toggle Channel Logging. This option is currently set to @ChannelLogging :Logging|
 Toggle gagging of I don't understand that messages. This option is currently set to @GameError :ErrorToggle|
 Toggle clan conflict messages. This option is currently set to @SilentConflict :CCToggle|
+Toggle gagging of launching and docking text. This option is currently set to @LaunchText :toggleLaunchText|
 Save your list of buffers:SaveBuffers|
 Load your list of saved buffers:LoadBuffers|
 Save settings for the intire pack. This also saves buffers:SaveSettings|

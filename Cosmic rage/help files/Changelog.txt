@@ -1,3 +1,9 @@
+620. Credits, Ivan Metallic silver scale: Text for trash collecting can now be gagged if you so wish. You may use the toggle for gagging harvesting messages to enable or disable this.
+Changed on Monday, September 24, 2018 at 7:20 PM CDT.
+Copy Cosmic Rage/Activities/Trash.set.
+619. The option to toggle launching and docking text is now in the configuration manager. If the option is set to 0, you will see text.
+Changed on Monday, September 24, 2018 at 7:10 PM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
 618. When launching, landing, docking or undocking, you can now decide if you wish to see that text or not. This setting is also saved upon the pack saving. Please see the help files for the correct key and alias.
 Changed on Sunday, September 23, 2018 at 2:00 PM CDT.
 Copy Cosmic Rage.set, Cosmic Rage/Help Files, Cosmic Rage/misc/ConfigurationManager.set, keys.set, Cosmic Rage/ships/ships.set and ships2.set.

@@ -2,14 +2,6 @@ This file contains all keys that are available to you while the soundpack is loa
 
 F2. Pull up the configuration manager.
 
-	Keys for accessing help files.
-Alt-shift-A. View the alias's help file.
-Alt-shift-B. View the buffers help file.
-alt-shift-c. View the changelog.
-alt-shift-k. View the keys help file.
-alt-shift-r. View the readme.
-Alt-shift-S. View the soundpacks credits
-
 	Keys for adjusting sound volume.
 
 shift-f3 shift-f4. adjust roomAmbienceVolume.
@@ -114,3 +106,4 @@ Control-shift-N. Cycle through the different ship combat music themes. You will 
 Alt-V. Check the last logged change the moo has stored for the pack.
 Control-alt-L. Toggle channel logging.
 Alt-shift-L. Toggle seeing of launching and docking text.
+Alt-shift-H. Pull up the list of all help files for the soundpack.

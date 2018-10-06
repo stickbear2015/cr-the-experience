@@ -49,6 +49,7 @@
 #Write 6 @ChannelLogging @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @GameError @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SilentConflict @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @LaunchText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #key {Control-shift-R} {SpReload}
 #trigger {*This is a system announcement from Snapp Blue scales Cosmic Rage Experience. *} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
@@ -87,4 +88,14 @@
 #Write 6 @ChannelLogging @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @GameError @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SilentConflict @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @LaunchText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
+;Reboot messages.
+#trigger {*Cosmic Rage is going down for maintenance in the next * minutes.*} {#if {%ifWord(30 minutes.,%2," ")} {playsound {cosmic rage/general/misc/Reboot30.wav} 100} {}; #if {%ifWord(15 minutes.,%2," ")} {playsound {cosmic rage/general/misc/Reboot15.wav} 100}}
+#alias {SpHelp} {#say {Loading the list of available help files. Please wait.} Voiceonly; #play {Cosmic Rage/general/misc/ConfMan.wav} 100; #pick {p:Please select an option from the list below|
+View the alias's help file:{#play {Cosmic Rage/general/Help/Aliases.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Aliases.txt}}}|
+View the buffers help file:{#play {Cosmic Rage/general/Help/Buffers.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/buffers.txt}}}|
+View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/changelog.txt}}}|
+View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/keys.txt}}}|
+View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
+View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}

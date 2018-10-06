@@ -24,13 +24,6 @@
 ;keys for toggles.
 #key f11 {ambtoggle}
 #Key {control-l} {lag}
-#key alt-shift-A {Aliases}
-#key Alt-shift-B {Buffers}
-#key alt-shift-c {Changelog}
-#key alt-shift-K {Keys}
-#key alt-shift-R {Readme}
-#key Alt-shift-s {SpCredits}
-
 #key alt-shift-d {DroneToggle}
 #key alt-shift-m {togglemusic}
 #key {control-shift-c} {togglecombat}
@@ -99,3 +92,4 @@
 #key control-alt-L {Logging}
 #key {control-s} {SaveSettings}
 #key {Alt-Shift-L} {ToggleLaunchText}
+#key {Alt-shift-H} {SpHelp}

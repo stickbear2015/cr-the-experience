@@ -1,3 +1,18 @@
+625. Removed a few unneeded options from the Configuration manager as those options have been tied into others.
+Changed on Thursday, October 04, 2018 at 5:20 AM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
+624. The help files system has totally been recoded. You can now pull up help files via a list, no more having to remember six different keys or aliases! I hope you all enjoy.
+Changed on Tuesday, October 02, 2018 at 7:00 PM CDT.
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/ConfigurationManager.set, keys.set, soundpack.set and sounds/general/Help.
+623. Aded a few more things to the gagging of launch text toggle, and now upon teleporting to or from your ship, all ambiences and music will stop.
+Changed on Tuesday, October 02, 2018 at 5:25 PM CDT.
+Copy Cosmic Rage/ships/ships2.set.
+622. Upon using the sleep or @quit commands, the pack will no longer play the sound that goes with soundpack settings being saved, however, settings and buffers will still save!
+Changed on Wednesday, September 26, 2018 at 4:55 PM CDT.
+Copy Cosmic Rage.set.
+621. Clan announcements will now work as they should have all along.
+Changed on Tuesday, September 25, 2018 at 3:30 PM CDT.
+Copy Cosmic Rage/misc/comms.set.
 620. Credits, Ivan Metallic silver scale: Text for trash collecting can now be gagged if you so wish. You may use the toggle for gagging harvesting messages to enable or disable this.
 Changed on Monday, September 24, 2018 at 7:20 PM CDT.
 Copy Cosmic Rage/Activities/Trash.set.

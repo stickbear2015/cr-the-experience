@@ -32,8 +32,9 @@ Simple Script Control checkbox. When checked, VipMud will use the simple scripti
 
 	Moving on to the next step.
 3. After you have obtained the soundpack and completed the necessary steps from within VIPMud, just select all from within the downloaded folder, then go and find your VIPMud directory. Assuming you haven't moved the directory, it will be in your documents directory. The directory name should look something like this. "C:\users\insertUsername\Documents\VIPMud." Paste the downloaded folders content, then either restart VIPMud, or use the #reload command.
+Upon first run of the pack, you will need to do the following three things. You will need to type SaveBuffers to create the file where your buffers are stored. You will then need to set up your settings like volumes, toggles, ETC. Please see the help files for aliases and keys. You will then need to save your packs settings with control-s.
+***notice***. Failing to follow the directions by not typing SaveBuffers will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not Snapps fault if you fail to do this. It's also a good idea to backup your buffer settings after you get them how you'd like.
 If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the instilation instructions outlined above  and apply any changes necessary before getting ahold of snapp.
-Upon first run of the pack, you will need to do the following three things. You will need to type SaveBuffers to create the file where your buffers are stored. You will then need to set up your settings like volumes, toggles, ETC Please see the help files for aliases and keys. You will then need to save your packs settings with control-s
 
 Updating your soundpack:
 
@@ -41,19 +42,20 @@ To update the soundpack using the Dropbox shared folder or BTSync, please do the
 Please hit alt-V or type SpVersion. Take note of the latest change listed. After this, open up the folder that the soundpack is downloading to. Check the changelog and make sure you are seeing the last change that the moo showed.  Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to backup your characters set file if you don't want to lose any added alias's or triggers.
 If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
  
+A note about updates.
+
+The Dropbox shared folder and BTSync folder packs are updated at least once a day, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
+
 Misc notes:
 
-	You may type SPVersion or use the key alt-V to check what the last logged change the moo sees was made to the soundpack.
-Please type SpCredits when the pack has loaded to view the list of credits.
-The Dropbox shared folder and BTSync folder packs are updated at least once a day, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
+A note about ambience.
+In some cases, ambience fails to work for some players. This is do to the fact that they have brief mode enabled. If brief mode is enabled, ambience will not work correctly. To fix this, type brief, then disable hiding of discriptions.
 To access the configuration manager, please hit "F-2."
 If by chance you find that a sound has gotten stuck, or is not acting as expected, you may use the key Control-F11 to stop all currently playing sounds.
 If you hear that gagging is in effect, please hit control-slash. This will force VIP to ungag your speech.
-To view the intire list of aliases available to you while running the pack, you can type "Aliases.," or use the key "Alt-shift-A."
-To view the intire list of keys available to you while the pack is loaded you can type "Keys," or use the key "Alt-shift-K."
-To see the full list of changes, you can either open the changelog located in the help files directory or hit Alt-Shift-C when you have the pack loaded.
-To see the last change that was made without opening the changelog, you can either type SpVersion, or go into the soundpacks menu, pick Snapps pack from the list, and view the pack info. You can also type version while on the log in screen of the mud.  The last change will always be listed here. Do note, please never use the key alt-V while on the logon screen. It breaks things.
-If you have a suggestion you'd like to see added to the pack, this can be  done by using the alias "SpSuggest."
+To view any of the help files related to this soundpack, you may either use the alias SpHelp, or use the key alt-shift-H.
+To see the last change that was posted, without opening the changelog, you can either type SpVersion, or use the key Alt-V.
+If you have a suggestion you'd like to see added to the pack, this can be  done by using the alias "SpSuggest." A note about suggestions. If snapp asks for text from you to make a trigger work, weather it be for gagging the text, adding a sound, etcetera, If after a month's time Snapp has no text to use to create the suggested trigger, the suggestion will be removed as it will be assumed it is no longer desired
 If you have a bug that you need to report, this can be done by using the alias "SpBug."  Please be as detailed as possible in your bug report. Try to include the error, the command you sent that gave you the error, and any other misc information.  Bugs that contain just an error, or two words, are likely to be deleted as Snapp can't fix most bugs simply based off of this.
 If you have any questions or concerns, Please first take a look at the Help Files directory. More than likely your question will be answered in one of those documents. If not, feel free to get a hold of Snapp via an OTR link or over the soundpacks channel in the game. To enable the soundpacks channel, please type spon from within the mud. To disable the channel use the command spoff. To establish an OTR link, please type olink then hit enter. You will then be presented with an edit field. Just type snapp and hit enter. Snapp will accept your link request as soon as possible. If more help is needed with OLinks, please read the help file "Communicating out of character" from within the muds help system.
 If Snapp is not around to answer your questions, you are more than welcome to send him mail on the mud and he will get back with you as soon as possible.
@@ -62,4 +64,17 @@ Legal Stuff no one wants to hear, but It's necessary to write:
 
 	Snapp is not a lawyer, does not know a lawyer, and is entirely unwilling to pay for the services of any legal advice regarding this project. That being said you should note that Snapp blue scale can not guarantee any level of functionality of this soundpack with your particular situation.  Snapp may not necessarily always be available to answer questions, help you install it, ETC.  If your computer suddenly decides that it can't handle it, catches fire, melts down or produces extreme amounts of smoke or radiation that result in your untimely demise, Snapp had nothing to do with it.  This soundpack has been tested under windows 7 and 10, as well as released for private beta use amongst friends. Snapp would not be releasing it as such if he believed that it would not be functional to a level of acceptableness. But do keep in mind that the pack is constantly being developed., so check back frequently for updates!
 
-Happy mudding!
+*A note from Nate, the head admin of Cosmic Rage.*
+
+	Hello!
+While it is not said often, please take a moment to think about this soundpack.
+Over 500, nearly 600 changes at the time of writing this file, stemming back over a year of soundpack development.
+The road is long, and definitely not smooth.
+Snapp working his way through like this though has been absolutely astounding.
+There may be things you dislike about the pack.
+There may be things you love about the pack.
+But when you use it, make sure and tip your hat to snapp in a "thank you", because he's worked dang hard for it.
+Thanks
+Nate.
+
+	Happy mudding!

@@ -59,3 +59,8 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #trigger {You relax your grip and allow the computer to handle the last part.} {#if {@LaunchText = 1} {#gagline all}}
 #trigger {You hold the ship steady as on screen, you see small docking points extend from the access tube and lock on to the vessel's various airlocks.} {#if {@LaunchText = 1} {#gagline all}}
 #trigger {A low level thrum comes from the gravity thrusters as they stop the ship from plummeting.} {#if {@LaunchText = 1} {#gagline all}}
+#trigger {Your vision goes temporarily black as you are yanked from your ship!} {#pc 0 stop}
+#trigger {Your vision goes black as you are teleported somewhere else!} {#pc 0 stop}
+
+#trigger {"Landing sequence complete. Heat shields deactivated."} {#if {@LaunchText = 1} {#gagline all}}
+#trigger {You begin to carefully align the ship  with the planet in order to begin its descent towards the surface.} {#if {@LaunchText = 1} {#gagline all}}

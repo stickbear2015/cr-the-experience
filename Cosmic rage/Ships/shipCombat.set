@@ -108,6 +108,7 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #TRIGGER {Self Destruction in 2} {playsound {cosmic rage/ships/combat/SelfDestructTwo.wav} @CVol};
 #TRIGGER {Self Destruction in 1} {playsound {cosmic rage/ships/combat/SelfDestructOne.wav} @CVol};
 #TRIGGER {As the walls of the ship begin to crumble, the vessels safety systems yank you into an escape pod.} {playsound {cosmic rage/ships/combat/YouDestroyed*3.wav} @CVol};
+#trigger {* hauled into an escape pod.} {playsound {cosmic rage/ships/combat/YouDestroyed*3.wav} @CVol};
 #TRIGGER {You hear several loud bongs as the defensive armour deflects damage.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
 #if {@panShipCombat = 1} {
 #pc %playhandle pan %random(-4000,4000)}}

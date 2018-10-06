@@ -58,11 +58,6 @@ Mute sounds toggle. MuteSound|
 Misc aliases. 
 
 save your soundpack settings. SaveSettings|
-List of Alias's. Alias's|
-Buffer help. Buffers|
-changelog. changelog}}}
-keystrokes. keys|
-readme. readme|
 Report a bug. SpBug|
 Suggest something you'd like added to the soundpack. SpSuggest. 
 Check the last logged change. SpVersion. 
@@ -82,3 +77,4 @@ Afkoff.  Disable AFK messages.
 Logon.  Enable logon/logoff messages. 
 Logoff.  Disable logon/logoff messages. 
 ToggleLaunchText. Toggle seeing of launching and docking text.
+SpHelp. Pull up the list of all help files for the soundpack.

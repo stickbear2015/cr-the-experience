@@ -149,7 +149,7 @@ playsound {cosmic rage/vehicle/lever.wav} @vol}
 #gagline all;
 playsound {cosmic rage/ships/misc/cycle.wav} @vol}
 #trigger {The hum of the engines come to an abrupt halt and the lights flicker to emergency level as the ships power goes offline.} {
-playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; #pc @ShipHandle stop; #Var ShipSoundPlaying 0; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "off"}
+#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
 #trigger {You hook * into the local computer systems and press the button on the top.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/buttonPush.wav} @vol}

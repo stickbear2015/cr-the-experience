@@ -74,10 +74,10 @@
 #class shipamb enable;
 #class vehicleamb enable;
 ;Triggers for connecting to the moo.
-#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
-#trigger {Welcome to: Cosmic Rage!} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. Failing to do so will save the default buffer list upon the pack auto-saving. If this is your first time running the soundpack, Please use Control-alt-shift-S or type SaveBuffers now. Thank you.}; version; #if {@SilentIntro = 0} {loopsound {cosmic rage/music/Intro.wav} @vol; #var IntroMusic %playhandle}};
-#TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
-#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
+#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop}};
+#trigger {Welcome to: Cosmic Rage!} {#if {@SpIntroMessage = "Enabled"} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. Failing to do so will save the default buffer list upon the pack auto-saving. If this is your first time running the soundpack, Please use the Control-S command now. Thank you.} voiceonly; #unkey {alt-V}; version}; #if {@SilentIntro = "Disabled"} {loopsound {cosmic rage/music/Intro.wav} @vol; #var IntroMusic %playhandle}}
+#TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop}};
+#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop}};
 
 ;Settings.
 
@@ -116,17 +116,17 @@
 #read 6 GameError 32;
 #read 6 SilentConflict 33;
 #read 6 LaunchText 34;
+#read 6 SocialSounds 35;
+#read 6 RebootSounds 36;
+#read 6 SpIntroMessage 37;
 #close 6
 
 ;misc.
-#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#if {@SilentIntro = 0} {#pc @IntroMusic stop}};
+#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop; #key {alt-V} {SpVersion}}};
 #TRIGGER {lag.test} {#unalarm LagTest;
 #sub {You have %eval(@LagAmount * 100) Milliseconds lag.}} {} AnyCase
 #alias {onDisconnect} {
-AutoSaveSettings; AutoSaveBuffers; #say {Settings saved!} voiceonly; #play {cosmic rage/general/misc/quit.wav} @vol;
-#if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0};
-#if {@musicplaying = 1} {#pc @musichandle stop; #var musicplaying 0; #var planet ""}; #if {@vehiclesoundplaying = 1} {#pc @vehiclehandle stop; #var @vehiclesoundplaying 0};
-#if {@shipsoundplaying = 1} {#pc @shiphandle stop; #var shipsoundplaying 0}};
+#pc 0 stop; AutoSaveSettings; AutoSaveBuffers; #say {Settings saved!} voiceonly; #play {cosmic rage/general/misc/quit.wav} @vol}
 #Alias {logon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {Log on and log off messages enabled.} voiceonly; #gagon; options;4;log;Yes} {}
 #Alias {logoff} {#play {Cosmic Rage/general/misc/Off.wav} 100; #say {Log on and log off messages disabled.} voiceonly; #gagon; options;4;log;No} {}
 #Alias {afkon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {AFK messages enabled.} Voiceonly; #gagon; options;4;afk;Yes} {}

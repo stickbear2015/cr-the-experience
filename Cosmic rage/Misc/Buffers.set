@@ -14,7 +14,7 @@
 #alias savebuffers {#file 5 bufferlist.txt; #write 5 "saving...";#close 5;#delfile bufferlist.txt; #file 5 bufferlist.txt; #forall @CurrentBufferList {#write 5 %i};#close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
 #alias AutoSaveBuffers {#file 5 bufferlist.txt; #write 5 "saving...";#close 5;#delfile bufferlist.txt; #file 5 bufferlist.txt; #forall @CurrentBufferList {#write 5 %i};#close 5}
 #alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt; #var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5; playsound {Cosmic Rage/general/misc/BuffersLoaded.wav} 80}
-
+#alias SilentlyLoadBuffers {#var CurrentBufferList {};#file 5 bufferlist.txt; #var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5}
 ;Keys for loading, reading  and saving buffers
 
 #key {Control-alt-shift-S} {SaveBuffers}

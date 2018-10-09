@@ -107,3 +107,6 @@ Alt-V. Check the last logged change the moo has stored for the pack.
 Control-alt-L. Toggle channel logging.
 Alt-shift-L. Toggle seeing of launching and docking text.
 Alt-shift-H. Pull up the list of all help files for the soundpack.
+Alt-shift-S. Toggle social sounds.
+Control-alt-R. Toggle reboot warnings.
+Control-alt-I. Toggle soundpack intro text.

@@ -1,8 +1,8 @@
-#trigger {*rolled a *.} {#if {@GagGame = 1} {#gagline all}}
-#trigger {* landed on*} {#if {@GagGame = 1} {#gagline all}}
-#trigger {A Pilot's Parody*} {#if {@GagGame = 1} {#gagline all}} {} AnyCase
-#trigger {*pixelated image*} {#if {@GagGame = 1} {#gagline all}} {} AnyCase
-#trigger {on the screen of A Pilot's Parody*} {#if {@GagGame = 1} {#gagline all}} {} AnyCase
+#trigger {*rolled a *.} {#if {@GagGame = "Enabled"} {#gagline all}}
+#trigger {* landed on*} {#if {@GagGame = "Enabled"} {#gagline all}}
+#trigger {A Pilot's Parody*} {#if {@GagGame = "Enabled"} {#gagline all}} {} AnyCase
+#trigger {*pixelated image*} {#if {@GagGame = "Enabled"} {#gagline all}} {} AnyCase
+#trigger {on the screen of A Pilot's Parody*} {#if {@GagGame = "Enabled"} {#gagline all}} {} AnyCase
 #trigger {You slide An antique bronze token into A Pilot's Parody.} {#gagline voice; playsound {Cosmic Rage/general/A Pilot's Parody/Coin.wav} @vol}
 #trigger {The arcade game console comes to life, playing a cheery tune in the style of an ancient 8-bit video game.} {#gagline all; playsound {Cosmic Rage/general/A Pilot's Parody/GameIntro.wav} @vol}
 #trigger {A small panel pops open on A Pilot's Parody and a robotic arm extends with a faint whine of its electrical motors. Before you can act, the arm places a game helmet atop your head and quickly retracts itself back into its compartment.} {#gagline all; playsound {Cosmic Rage/general/A Pilot's Parody/PlaceHelmet.wav} @vol}

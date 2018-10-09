@@ -1,15 +1,15 @@
 #TRIGGER {The vehicle dips sharply, heading towards a landing.} {#gagline all; playsound {cosmic rage/vehicle/land.wav} @vol};
 #TRIGGER {You direct the vehicle.} {
 #gagline all;
-#if {@altVehicleEngines = 0} {
+#if {@altVehicleEngines = "Disabled"} {
 playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
-#if {@altVehicleEngines = 1} {
+#if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #TRIGGER {* directs the vehicle.} {playsound {cosmic rage/vehicle/accelerate.wav} @vol};
 #TRIGGER {You hear a hum as the vehicle moves a little.} {#gagline all;
-#if {@altVehicleEngines = 0} {
+#if {@altVehicleEngines = "Disabled"} {
 playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
-#if {@altVehicleEngines = 1} {
+#if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all; playsound {cosmic rage/vehicle/EngineSTart.wav} @vol;
 #If {%IfWord(Trash,@PlanetName," ")} {
@@ -44,9 +44,9 @@ playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #var currentroom "volcano"}}}
 #TRIGGER {The hum of the engine slowly begins to die down.} {#gagline all; playsound {cosmic rage/vehicle/EngineStop.wav} @vol};
 #TRIGGER {The hum of the engines increase as the vehicle moves.} {#gagline all;
-#if {@altVehicleEngines = 0} {
+#if {@altVehicleEngines = "Disabled"} {
 playsound {cosmic rage/vehicle/cargo.wav} @veVol};
-#if {@altVehicleEngines =1} {
+#if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/cargo1.wav} @veVol}}
 #TRIGGER {You step out of the vehicle.} {#pc 0 stop; playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vol}
 #TRIGGER {A grinding noise fills the vehicle as the cleaning equipment is extended.} {#gagline all; playsound {cosmic rage/vehicle/dump.wav} @vol; #PC %Playhandle Pan %Random(-4000,4000)};
@@ -133,14 +133,14 @@ playsound {cosmic rage/vehicle/vehicleRam.wav} @vol}
 playsound {cosmic rage/vehicle/vehicleExplode.wav} @vol}
 #trigger {You hear the engines hum slightly louder as the vehicle maneuvers towards a bay.} {
 #gagline all;
-#if {@altVehicleEngines = 0} {
+#if {@altVehicleEngines = "Disabled"} {
 playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
-#if {@altVehicleEngines = 1} {
+#if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #trigger {The engines die down as the vehicle rolls to a stop.} {
-#gagline all;#if {@altVehicleEngines = 0} {
+#gagline all; #if {@altVehicleEngines = "Disabled"} {
 playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
-#if {@altVehicleEngines = 1} {
+#if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {
 #if {@roomsoundplaying = 1} {
@@ -181,7 +181,3 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol; #var chargeHandle %pla
 #if {@charging = 1} {
 #pc @chargeHandle stop;
 #var charging 0}}
-#trigger {The boat rocks slightly as the ship moves.} {#gagline all; #if {@altVehicleEngines = 0} {
-playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
-#if {@altVehicleEngines = 1} {
-playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}

@@ -1,6 +1,6 @@
 #trigger {* is disconnecting: *} {#additem ConnectionMessages %0}
-#TRIGGER {* returns to reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}; #additem ConnectionMessages %0}
-#TRIGGER {* enters from reality.} {#if {@LogOn = 1} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; #additem ConnectionMessages %0}
+#TRIGGER {* returns to reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}; #additem ConnectionMessages %0}
+#TRIGGER {* enters from reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; #additem ConnectionMessages %0}
 #TRIGGER {It's a new player! * enters from reality.} {playsound {Cosmic Rage/general/misc/Cheer.wav} @vol; #additem ConnectionMessages %0}
 #trigger {*is now AFK*} {#additem AFKMessages %0}
 #trigger {*will be right back*} {#additem AFKMessages %0}
@@ -41,7 +41,7 @@ playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
 playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}
 #TRIGGER {You knock on the hull of *} {playsound {cosmic rage/general/misc/knock.wav} @vol};
 #TRIGGER {You hear a soft knocking from the ships hull.} {#gagline all; playsound {cosmic rage/general/misc/knock.wav} @vol};
-#TRIGGER {*CosmicRage No sleeping on us} {#gagline all; #if {@ConnectionCheck = 1} {playsound {Cosmic Rage/general/misc/Connection*2.wav} 100}} {} AnyCase
+#TRIGGER {*CosmicRage No sleeping on us} {#gagline all; #if {@ConnectionCheck = "Enabled"} {playsound {Cosmic Rage/general/misc/Connection*2.wav} 100}} {} AnyCase
 #TRIGGER {You bolt * so it can not be moved.} {playsound {cosmic rage/general/misc/bolt.wav} @vol};
 #TRIGGER {You unbolt * and pick it up, ready for moving.} {playsound {cosmic rage/general/misc/unbolt.wav} @vol};
 #TRIGGER {* bolts * so it can not be moved.} {playsound {cosmic rage/general/misc/bolt.wav} @vol};
@@ -78,7 +78,7 @@ playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1
 #TRIGGER {You put on *} {playsound {cosmic rage/wear/head.wav} @vol};
 #TRIGGER {You give * a tug and pull it off.} {playsound {cosmic rage/wear/hold.wav} @vol};
 #TRIGGER {You raise your level to *} {playsound {cosmic rage/general/Level/Level.wav} @vol}
-#TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = 1} {#gagline all}}
+#TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Enabled"} {#gagline all}}
 #trigger {Type a line of input.} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 
@@ -221,16 +221,16 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
 #trigger {You indicate to * that * should follow you.} {playsound {cosmic rage/general/misc/joins.wav} @vol}
 #TRIGGER {You glance at a wall mounted display and see a route going*} {
-#if {@ShortMapText = 1} {
+#if {@ShortMapText = "Enabled"} {
 #sub %1}; #additem Mapper %0} {}
 #TRIGGER {Glancing at a * mapper's screen, you see the route is *} {
-#if {@ShortMapText = 1} {
+#if {@ShortMapText = "Enabled"} {
 #sub %2}; #additem Mapper %0} {}
 #trigger {* mapper displays: *} {
-#if {@ShortMapText = 1} {
+#if {@ShortMapText = "Enabled"} {
 #sub %2};#additem Mapper %0} {}
 #trigger {The on screen map shows that it is *} {
-#if {@ShortMapText = 1} {
+#if {@ShortMapText = "Enabled"} {
 #sub %1}; #additem Mapper %0} {}
 #trigger {* mapper and the screen displays: *} {
 #sub {%2};#additem Mapper %0}
@@ -260,12 +260,12 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
 #trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
-#trigger {The pod turns *} {#if {@SilentPod = 1} {#gagline all}}
+#trigger {The pod turns *} {#if {@SilentPod = "Enabled"} {#gagline all}}
 #trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol; #additem InfoComputerNotifications %0}
 #trigger {You whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
 #trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
-#trigger {The pod banks *} {#if {@SilentPod = 1} {#gagline all}}
+#trigger {The pod banks *} {#if {@SilentPod = "Enabled"} {#gagline all}}
 #trigger {You unfirl your * wings and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} 100; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
 #trigger {You flap your wings, heading for *} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} 100; #if {@FlyingStart = 1} {
 #pc @FlyingStarthandle stop;

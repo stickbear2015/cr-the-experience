@@ -78,3 +78,6 @@ Logon.  Enable logon/logoff messages.
 Logoff.  Disable logon/logoff messages. 
 ToggleLaunchText. Toggle seeing of launching and docking text.
 SpHelp. Pull up the list of all help files for the soundpack.
+ToggleSocialSounds. Toggles social sounds.
+Toggle reboot warnings. toggleReboot.
+Toggle soundpack intro text. ToggleSoundpackIntroMessage

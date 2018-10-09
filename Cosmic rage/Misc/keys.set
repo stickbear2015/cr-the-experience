@@ -42,7 +42,7 @@
 #key Control-Alt-C ToggleIdleSounds
 #key control-alt-M {SilentSPIntro}
 #key control-alt-T {ToggleClocks}
-#key control-shift-n {#if {@cMusic = 1} {#var combatmusicPlaying 1; #pc 0 stop; #say {The current combat track has been changed.} voiceonly; #playloop {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatMusicHandle %playHandle; #var combatmusicPlaying 1} {#if {@cMusic = 0} {#say {You must enable combat music for this feature to work correctly.} voiceonly}}}
+#key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1; #pc 0 stop; #say {The current combat track has been changed.} voiceonly; #playloop {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatMusicHandle %playHandle; #var combatmusicPlaying 1} {#if {@cMusic = "Disabled"} {#say {You must enable combat music for this feature to work correctly.} voiceonly}}}
 #key {alt-Enter} {togglenumpad}
 #Key {Numpad1} {1} {Numpad}
 #Key {Control-Numpad1} {sw}
@@ -93,3 +93,6 @@
 #key {control-s} {SaveSettings}
 #key {Alt-Shift-L} {ToggleLaunchText}
 #key {Alt-shift-H} {SpHelp}
+#key Alt-shift-S {ToggleSocialSounds}
+#key {Control-alt-R} {toggleReboot}
+#key {Control-alt-I} {toggleSoundpackIntroMessage}

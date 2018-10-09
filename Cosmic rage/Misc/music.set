@@ -1,7 +1,7 @@
 #var planet "";
 
 #Trigger {[[] &{PlanetName}; &{RoomName}*} {
-#if {@musicsounds = 1} {
+#if {@musicsounds = "Enabled"} {
 #If {%IfWord(Star Command,@planetname," ")} {
 #if {@planet <> "star"} {
 #if {@musicPlaying = 1} {

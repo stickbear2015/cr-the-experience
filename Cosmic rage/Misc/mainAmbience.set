@@ -1,6 +1,6 @@
 #Trigger {[[] &{PlanetName}; &{RoomName}*} {
 #var isvehicle 0;
-#if {@ambon = 1} {
+#if {@ambon = "Enabled"} {
 #if {@ShipSoundPlaying = 1} {
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
 #var currentroom2 "misc";

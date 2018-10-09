@@ -10,7 +10,7 @@
 #trigger {You feel the ship shudder slightly as the debris lines are firmly yanked into the ship.} {
 #gagline all} 
 #TRIGGER {*"All of our bays appear to be filled."} {playsound {cosmic rage/ships/salvaging/CargoBayFilled.wav} @vol}
-#trigger {*"* salvaged by drone."} {#if {@gagSal = 1} {#gagline voice} {playsound {cosmic rage/ships/salvaging/salvage*3.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}}
+#trigger {*"* salvaged by drone."} {#if {@gagSal = "Enabled"} {#gagline voice} {playsound {cosmic rage/ships/salvaging/salvage*3.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}}
 #trigger {You hear a hollow bang.} {#gagline all; playsound {cosmic rage/ships/salvaging/DroneReturn.wav} @vol}
 #trigger {*"firing up debris laser."} {playsound {Cosmic Rage/ships/salvaging/DebrisHum.wav} @vol; #gagline all}
 #trigger {You hear a ping as the debris laser fires.} {playsound {Cosmic Rage/ships/salvaging/DebrisLaser.wav} @vol; #gagline all; #PC %PlayHandle Pan %Random(-4000,4000)}

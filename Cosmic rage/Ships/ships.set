@@ -30,13 +30,13 @@ playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 #TRIGGER {A rumbling fills the ship as the cargo bay doors close.} {#gagline all; playsound {cosmic rage/ships/misc/TransferEnd.wav} @vol};
 #TRIGGER {You carefully begin to line the ship up for entry into the planets atmosphere.} {playsound {cosmic rage/ships/misc/youLanding.wav} @vol};
 #TRIGGER {The hum of the engines gets higher in pitch as the speed of the ship is increased} {#gagline all; 
-#if {@altShipEngines = 0} {
+#if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/acceleration.wav} @Evol; #var acc %playhandle; #var accing 1};
-#if {@altShipEngines = 1} {
+#if {@altShipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/acceleration1.wav} @Evol}};
-#TRIGGER {The hum of the engines flattens out to just a slight vibration as the ship reaches its destination.} {#gagline all; #if {@altshipEngines = 0} {
+#TRIGGER {The hum of the engines flattens out to just a slight vibration as the ship reaches its destination.} {#gagline all; #if {@altshipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/deceleration.wav} @Evol};
-#if {@altShipEngines =1} {
+#if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
 #TRIGGER {The ship begins to accelerate, as a rift opens up in front of it.} {#gagline all; playsound {cosmic rage/ships/movement/EnterJumpSpace.wav} @vol};
 #TRIGGER {Through the windows, you see the ship enter jump space.} {playsound {cosmic rage/ships/movement/rift.wav} @vol};
@@ -81,9 +81,9 @@ playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {The engines hum slightly as the ship moves.} {
 #gagline all;
-#if {@altShipEngines = 0} {
+#if {@altShipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/shipMove.wav} @Evol};
-#if {@altShipEngines = 1} {
+#if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/shipMove1.wav} @Evol}}
 #trigger {A siren *} {playsound {cosmic rage/general/misc/alarm.wav} @vol} {} AnyCase
 #TRIGGER {A siren rings out. "Warning. Warning. * inbound Ratika. Repeat, * inbound Ratika."} {playsound {cosmic rage/general/misc/alarm.wav} @vol};

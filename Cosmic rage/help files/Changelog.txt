@@ -1,3 +1,33 @@
+635. A small bug has been fixed with a few options in the configuration manager.
+Changed on Monday, October 08, 2018 at 1:30 PM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
+634. Added a second alias to the code that is loading buffers, As well, it has been documented in the section on automatically loading buffers in the buffers help file. you can decide to have buffers auto-loaded silently in the background if you so wish.
+Changed on Monday, October 08, 2018 at 7:58 AM CDT.
+Copy Cosmic Rage/Help files, and Cosmic Rage/misc/buffers.set.
+633. When using alt-V or SpVersion to check the last posted change to the soundpack, the soundpacks info is no longer spoken. It is still captured in your output window however.
+Changed on Sunday, October 07, 2018 at 9:20 PM CDT.
+Copy Cosmic Rage/misc/Soundpack.set.
+632. The buffers help file has been updated, letting users know how to auto-load buffers if they wish to do so.
+Changed on Sunday, October 07, 2018 at 8:50 PM CDT.
+Copy Cosmic Rage/Help files.
+631. You can now toggle the soundpack intro text letting you know about saving buffers, ETC.
+Changed on Sunday, October 07, 2018 at 2:00 PM CDT.
+Copy Cosmic Rage/help files, Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set, keys.set and soundpack.set.
+630. You can now toggle reboot warnings.
+Changed on Sunday, October 07, 2018 at 2:00 PM CDT.
+Copy Cosmic Rage/help files, Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set, keys.set and soundpack.set.
+629. Do to a discussion on the soundpacks channel, you can now no longer use the alt-V keystroke while on the main login screen. The alt-V key pulls the last change that was posted from the soundpacks info screen. This change has been done as using that key from the logon screen would have very bad results.
+Changed on Sunday, October 07, 2018 at 1:25 PM CDT.
+Copy Cosmic Rage.set and Cosmic Rage/misc/Soundpack.set.
+628. I was a bit bored, and I didn't like the way the configuration manager, or anything to do with toggling options was working. So. It took me about an hour, but anything you could toggle in the soundpack has been recoded. It's 100 percent better, and with luck, should never have issues again. As well. The configuration manager will now show you if an option is enabled or disabled instead of showing 0 or 1.
+Changed on Saturday, October 06, 2018 at 7:20 PM CDT.
+Just to save me the work of having to write every single file name, please just copy the intire folder containing set files.
+627. You will now hear audio prompts when the game is going to be rebooted.
+Changed on Saturday, October 06, 2018 at 8:35 AM CDT.
+Copy Cosmic Rage/misc/soundpack.set and sounds/general/misc/Alert.wav and reboot 1, 2, 3, 5, 10, 15 and 30.
+626. You can now toggle on and off Social sounds.
+Changed on Saturday, October 06, 2018 at 8:30 AM CDT.
+Copy Cosmic Rage.set, Cosmic Rage/help files, Cosmic Rage/misc/ConfigurationManager.set, keys.set, socials.set and soundpack.set.
 625. Removed a few unneeded options from the Configuration manager as those options have been tied into others.
 Changed on Thursday, October 04, 2018 at 5:20 AM CDT.
 Copy Cosmic Rage/misc/ConfigurationManager.set.

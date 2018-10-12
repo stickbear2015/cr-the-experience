@@ -1,4 +1,4 @@
-#alias {SpInfo} {#say {Soundpack name. Snapp Blue Scales Cosmic Rage Experience.  Main developer. Snapp Blue scale.  Client. VIPMud.  For download information, please type soundpacks and pick this one from the list.  Description.  This pack features tons of features and sounds. The BT Sync and Dropbox links are for a pack designed for VIPMud 2.0. The one under other information is for VIPMud1 and has some things missing due to limitations in VIP1. BtSync is updated often, Dropbox is updated once a week and the VIPMud1 is updated very rarely. A shared Dropbox folder has also been created for the VIP2 soundpack. If you'd like to join this folder, Just send Snapp a message with your email address and you will be added.}}
+#Alias SPInfo {#say {This pack features plenty of unique features and sounds, including a unique buffer system not found in any other soundpack, as well as well picked sounds and music. The BT Sync and Dropbox links are for a pack designed for VIPMud 2.0. The link shown under other information is for a pack that was made for VIPMud1.0, and has quite a few things missing due to limitations in VIPMud1.0. A shared Dropbox folder has been created for the VIP2 pack. If you'd like to join this folder, Just send Snapp a message via an OTRLink with your email address and you will be added.}}
 #alias Version {soundpack version Snapp Blue Scales Cosmic Rage Experience} {}
 #trigger {Soundpack last change *} {#sub {The latest soundpack change to be posted %1}}
 #alias spp {>@soundpacks} {}
@@ -11,12 +11,13 @@
 #trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for sending this report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #alias spversion {spp;#gagon;snapp;info}
 #trigger {Last change*} {#ungagon}
-#trigger {Description:} {#gagline 2 voice}
+#trigger {This pack features plenty of unique features and sounds including a unique buffer system not found in any other soundpack, as well as well picked sounds and music. The BT Sync and Dropbox link is for a pack designed for VIP 2.0. The link under other information is for VIPMud1 and has some things missing due to limitations in VIP1. A shared Dropbox folder has been created for the VIP2 pack. If you'd like to join this folder, Just send Snapp a message with your email address and you will be added.} {#gagline voice}
+#trigger {Description:} {#gagline voice}
 #key alt-V {SpVersion}
-#alias {SpReload} {#unalarm Saving; #say {Reloading the soundpack, please wait...} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {loadbuffers; #say {Reloading complete!} voiceonly}}
+#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {SilentlyLoadBuffers; #say {Reloading is now complete!} voiceonly}}
 ;Saving settings.
 
-#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffers have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
+#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffer list  have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -54,6 +55,7 @@
 #Write 6 @SocialSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @RebootSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SPIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #key {Control-shift-R} {SpReload}
 #trigger {*This is a system announcement from Snapp Blue scales Cosmic Rage Experience. *} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
@@ -95,6 +97,7 @@
 #Write 6 @LaunchText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SPIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 ;Reboot messages.
 #trigger {*Cosmic Rage is going down for maintenance in the next * minutes.*} {#if {@RebootMessages = 1} {#if {%ifWord(30,%2," ")} {playsound {cosmic rage/general/misc/Reboot 30 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(15,%2," ")} {playsound {cosmic rage/general/misc/Reboot 15 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}; #if {%ifWord(10,%2," ")} {playsound {cosmic rage/general/misc/Reboot 10 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(5,%2," ")} {playsound {cosmic rage/general/misc/Reboot 5 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(3,%2," ")} {playsound {cosmic rage/general/misc/Reboot 3 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(2,%2," ")} {playsound {cosmic rage/general/misc/Reboot 2 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(1,%2," ")} {playsound {cosmic rage/general/misc/Reboot 1 minute.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}}}
@@ -105,3 +108,10 @@ View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} 100; #play {C
 View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/keys.txt}}}|
 View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
 View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
+
+#Alias {logon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {Seeing of connection messages enabled.} voiceonly; #gagon; options;4;log;Yes} {}
+#Alias {logoff} {#play {Cosmic Rage/general/misc/Off.wav} 100; #say {Seeing of connection messages disabled.} voiceonly; #gagon; options;4;log;No} {}
+#Alias {afkon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {Seeing and posting of BRB and AFK messages enabled.} Voiceonly; #gagon; options;4;afk;Yes} {}
+#Alias {afkoff} {#play {Cosmic Rage/general/misc/Off.wav} 100; #say {Seeing and posting of BRB and AFK messages disabled} Voiceonly; #gagon; options;4;afk;No} {}
+#trigger {AFK settings set!} {#ungagon}
+#trigger {Log on and log off messages set.} {#ungagon}

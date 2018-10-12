@@ -6,7 +6,7 @@ playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
 #trigger {You feel a shudder and hear a loud clattering sound as moon harvesting equipment is extended towards *} {
 #gagline all;
 playsound {cosmic rage/activities/moon/MoonExtend.wav} @vol} 
-#trigger {On screen, you see your moon equipment latch onto Moon *} {
+#trigger {On screen, you see your moon equipment latch onto *} {
 #gagline all;
 playsound {cosmic rage/activities/mechanicalMining/digging.wav} @vol} 
 #trigger {A drilling noise fills the ship.} {

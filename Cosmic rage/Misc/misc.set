@@ -54,7 +54,7 @@ playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}
 #TRIGGER {* plays a * tune} {playsound {cosmic rage/general/comms/phoneRing.wav} @vol};
 #TRIGGER {You tap a few buttons on * accessing its menu.} {#gagline all; playsound {cosmic rage/general/misc/complogin.wav} @vol};
 #TRIGGER {You tap the shutdown icon.} {#gagline all; playsound {cosmic rage/general/misc/complogout.wav} @vol};
-#TRIGGER {>> Command Aborted <<} {playsound {cosmic rage/general/misc/abort.wav} @vol};
+#TRIGGER {*Command Aborted*} {#gagline all; playsound {cosmic rage/general/misc/abort.wav} @vol};
 #TRIGGER {Starting speedwalk.} {playsound {cosmic rage/general/misc/speedwalkon.wav} @vol};
 #TRIGGER {Speedwalk finished.} {playsound {cosmic rage/general/misc/speedwalkoff.wav} @vol};
 #TRIGGER {A soft ping can be heard from overhead, followed by a gentle, disembodied voice.*} {playsound {cosmic rage/general/misc/ping.wav} @vol}; 

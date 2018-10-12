@@ -1,7 +1,7 @@
 	#TRIGGER {The ship shudders as the beam cannons are fired.} {#gagline all; playsound {cosmic rage/ships/combat/beam.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
-#trigger {a barely noticeable ominous hum begins to resonate throughout the ship.} {#gagline voice; playsound {Cosmic Rage/ships/combat/ObfStart.wav} @CVol} {} AnyCase
+#trigger {* hum begins to resonate throughout the ship.} {#gagline all; playsound {Cosmic Rage/ships/combat/ObfStart.wav} @CVol} {} AnyCase
 #TRIGGER {The hum crescendos until, with a thump, the obfuscation field generator activates.} {#gagline all; playsound {cosmic rage/ships/combat/ObfOn.wav} @CVol} 
 #trigger {*"Deactivating obfuscation field."} {#gagline all; playsound {Cosmic Rage/ships/combat/ObfFade.wav} @CVol}
 #TRIGGER {Silence fills the ship as the obfuscation field generator goes offline.} {#gagline all; playsound {cosmic rage/ships/combat/ObfOff.wav} @CVol};

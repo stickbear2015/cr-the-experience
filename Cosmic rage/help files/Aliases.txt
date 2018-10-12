@@ -71,13 +71,14 @@ GameGag.  Gag or ungag certain Arcade messages.
 Logging.  Toggle channel messages being stored to files. 
 ErrorToggle.  Toggle hearing of I don't understand that messages. 
 CCToggle.  Toggle hearing of clan conflict messages. 
-Lag.  Check the amount of lag between your connection and the game. 
-afkon.  Enable AFK messages.  This will need to be enabled if you wish to go AFK. 
-Afkoff.  Disable AFK messages. 
-Logon.  Enable logon/logoff messages. 
-Logoff.  Disable logon/logoff messages. 
+Lag.  Check the amount of lag between your connection and the game. Note. This value may not always be 100 percent accurate.
+afkon.  Enable seeing and posting of AFK messages.  This will need to be enabled if you wish to go AFK. 
+Afkoff.  Disable seeing and posting of AFK messages. 
+Logon.  Enable connection  messages. 
+Logoff.  Disable connection messages. 
 ToggleLaunchText. Toggle seeing of launching and docking text.
 SpHelp. Pull up the list of all help files for the soundpack.
 ToggleSocialSounds. Toggles social sounds.
+ToggleSocialText. Toggles seeing of social text when you use socials. The text when others use socials is not effected..
 Toggle reboot warnings. toggleReboot.
 Toggle soundpack intro text. ToggleSoundpackIntroMessage

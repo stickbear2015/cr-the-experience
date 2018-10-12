@@ -1,4 +1,4 @@
-#trigger {* turns * on * and you hear someone *, "*"} {#if {@ShortMapText = 1} {
+#trigger {* turns * on * and you hear someone *, "*"} {#if {@ShortMapText = "Enabled"} {
 #sub {%1 turns %2, %5};#additem FlightControl {%1 turns %2, %5}} {#additem FlightControl %0}; #if {%ifWord(requiring urgent mobile infantry assistance!,%5," ")} {playsound {Cosmic Rage/ships/FlightControl/FCEmergency.wav} @CommsVol} {};
 #if {%ifWord(preparing to invade.,%5," ")} {playsound {Cosmic Rage/ships/FlightControl/FCInvasion.wav} @CommsVol} {};
 #if {%ifWord(just flew right into a star!,%5," ")} {playsound {Cosmic Rage/ships/FlightControl/FCFlyIntoStar.wav} @CommsVol} {};

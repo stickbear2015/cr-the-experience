@@ -108,5 +108,6 @@ Control-alt-L. Toggle channel logging.
 Alt-shift-L. Toggle seeing of launching and docking text.
 Alt-shift-H. Pull up the list of all help files for the soundpack.
 Alt-shift-S. Toggle social sounds.
+Alt-Shift-T. ToggleSocialText. Toggles seeing of social text when you use socials. The text when others use socials is not effected..
 Control-alt-R. Toggle reboot warnings.
 Control-alt-I. Toggle soundpack intro text.

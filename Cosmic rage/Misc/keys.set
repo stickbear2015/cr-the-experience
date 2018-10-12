@@ -94,5 +94,6 @@
 #key {Alt-Shift-L} {ToggleLaunchText}
 #key {Alt-shift-H} {SpHelp}
 #key Alt-shift-S {ToggleSocialSounds}
+#key Alt-shift-T {ToggleSocialText}
 #key {Control-alt-R} {toggleReboot}
 #key {Control-alt-I} {toggleSoundpackIntroMessage}

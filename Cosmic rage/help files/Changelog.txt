@@ -1,3 +1,18 @@
+640. Credits, Susan Guttenburg: You can now toggle seeing of social text when you use socials. Note. When others use socials, that text is not effected.
+Changed on Thursday, October 11, 2018 at 9:15 AM CDT.
+Copy Cosmic Rage.set, Cosmic Rage/Help Files, Cosmic Rage/misc/ConfigurationManager.set, keys.set, socials.set and soundpack.set.
+639. Credits, Jason Hamilton: Fixed a few bugs with activating obfuscation fields. The activation sounds will always play now, no matter what level you've activated.
+Changed on Tuesday, October 09, 2018 at 5:15 PM CDT.
+Copy Cosmic Rage/ships/shipCombat.set.
+638. Fixed a few bugs with the AFK and connection messages toggles and aliases.
+Changed on Tuesday, October 09, 2018 at 6:40 AM CDT.
+Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
+637. Finally, the configuration manager is 100 percent complete. If you notice any bugs at all, please do let me know.
+Changed on Tuesday, October 09, 2018 at 6:00 AM CDT.
+Copy Cosmic Rage/Help files, and Cosmic Rage/misc/ConfigurationManager.set.
+636. I've made changes to how the pack loads, and reloads. If for some reason you've turned off speech, or muted your sounds, reloading will force the pack to unmute both. Also, the pack is loading quite a bit faster do to some more code changes.
+Changed on Tuesday, October 09, 2018 at 5:45 AM CDT.
+Copy Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set and soundpack.set.
 635. A small bug has been fixed with a few options in the configuration manager.
 Changed on Monday, October 08, 2018 at 1:30 PM CDT.
 Copy Cosmic Rage/misc/ConfigurationManager.set.

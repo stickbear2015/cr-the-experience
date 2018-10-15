@@ -1,3 +1,9 @@
+642. Seeing as some users were having issues toggling speech do to an alarm containing a decimal point, that code has been changed to only include whole numbers. If any other issues like this are found, please report them.
+Changed on Sunday, October 14, 2018 at 7:18 AM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
+641. Credits, Liam Erven39551: Two new sounds have been added for volcano harvesting. Thank liam for both the sounds, and the triggers.
+Changed on Saturday, October 13, 2018 at 1:51 PM CDT.
+Copy Cosmic Rage/activities/VolcanoHarvesting.set and sounds/activities/VolcanoHarvesting/GearDown.wav and GearUp.wav.
 640. Credits, Susan Guttenburg: You can now toggle seeing of social text when you use socials. Note. When others use socials, that text is not effected.
 Changed on Thursday, October 11, 2018 at 9:15 AM CDT.
 Copy Cosmic Rage.set, Cosmic Rage/Help Files, Cosmic Rage/misc/ConfigurationManager.set, keys.set, socials.set and soundpack.set.

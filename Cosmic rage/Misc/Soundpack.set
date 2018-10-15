@@ -108,10 +108,3 @@ View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} 100; #play {C
 View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/keys.txt}}}|
 View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
 View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
-
-#Alias {logon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {Seeing of connection messages enabled.} voiceonly; #gagon; options;4;log;Yes} {}
-#Alias {logoff} {#play {Cosmic Rage/general/misc/Off.wav} 100; #say {Seeing of connection messages disabled.} voiceonly; #gagon; options;4;log;No} {}
-#Alias {afkon} {#play {Cosmic Rage/general/misc/On.wav} 100; #say {Seeing and posting of BRB and AFK messages enabled.} Voiceonly; #gagon; options;4;afk;Yes} {}
-#Alias {afkoff} {#play {Cosmic Rage/general/misc/Off.wav} 100; #say {Seeing and posting of BRB and AFK messages disabled} Voiceonly; #gagon; options;4;afk;No} {}
-#trigger {AFK settings set!} {#ungagon}
-#trigger {Log on and log off messages set.} {#ungagon}

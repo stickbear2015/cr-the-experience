@@ -29,3 +29,5 @@ playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
 #gagline all;
 playsound {cosmic rage/activities/volcanoHarvesting/volcanoTransferBegin.wav} @vol} 
 #trigger {The vehicle shudders slightly as the cargo hold is closed.} {#gagline all; playsound {cosmic rage/activities/volcanoHarvesting/volcanoTransferEnd.wav} @vol}
+#trigger {The harvesting gear clunks down slightly.} {playsound {cosmic rage/activities/volcanoHarvesting/GearDown.wav} @vol}
+#trigger {The harvesting gear clunks up slightly.} {playsound {cosmic rage/activities/volcanoHarvesting/GearUp.wav} @vol}

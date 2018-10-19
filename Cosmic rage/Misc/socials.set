@@ -74,3 +74,5 @@
 #trigger {* yells: *} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}
 #trigger {*woof*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}}
 #trigger {You bend over, and unabashedly push out a giant poop.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Poop.wav} @vol}}
+#trigger {you moan loudly.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Moan*5.wav} @vol}}
+#trigger {* moans loudly.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Moan*5.wav} @vol}}

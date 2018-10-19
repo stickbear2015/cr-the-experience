@@ -181,3 +181,4 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol; #var chargeHandle %pla
 #if {@charging = 1} {
 #pc @chargeHandle stop;
 #var charging 0}}
+#trigger {You exit the vessel.} {#pc 0 stop}

@@ -1,3 +1,22 @@
+648: Changed the moan sounds to something less cringey.
+changed on tuesday, October 16th 2018
+Copy moan1, moan2, moan3, moan4 and moan5.wav from sounds/general/socials
+copy socials.set from cosmic rage/misc
+647: Updated the readme to include the compatibility notice about the VipMud soundpack installer. also extended the legal notice slightly.
+changed on tuesday, October 16th 2018 at 21:34 GMT
+Copy cosmic rage/help files/readme.txt
+646. When exiting boats, recharging sounds will now shut up.
+Changed on Tuesday, October 16, 2018 at 1:25 PM CDT.
+Copy Cosmic Rage/vehicle/vehicle.set.
+645. Fixed errors with ore extraction.
+Changed on Tuesday, October 16, 2018 at 1:25 PM CDT.
+Copy Cosmic Rage/Activities/HandMining.set.
+644. Toggling the I don't understand that messages should now work correctly.
+Changed on Tuesday, October 16, 2018 at 1:13 PM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set and misc.set.
+643. Fixed the last remaining  bugs with the configuration manager.
+Changed on Monday, October 15, 2018 at 9:00 AM CDT.
+Copy Cosmic Rage/misc/Clocks.set and ConfigurationManager.set.
 642. Seeing as some users were having issues toggling speech do to an alarm containing a decimal point, that code has been changed to only include whole numbers. If any other issues like this are found, please report them.
 Changed on Sunday, October 14, 2018 at 7:18 AM CDT.
 Copy Cosmic Rage/misc/ConfigurationManager.set.

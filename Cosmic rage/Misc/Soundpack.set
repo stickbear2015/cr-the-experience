@@ -7,13 +7,9 @@
 #trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thanks for adding your suggestion to the suggestion box! Snapp will see what he can do!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
 #trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion. Please provide as much detail as possible. If possible, please include text that you would like sounds added for. Thank you. If needed, you will be reached for more information.}}
-#trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message won't really help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. Thank you.}}
 #trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for sending this report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
-#alias spversion {spp;#gagon;snapp;info}
-#trigger {Last change*} {#ungagon}
-#trigger {This pack features plenty of unique features and sounds including a unique buffer system not found in any other soundpack, as well as well picked sounds and music. The BT Sync and Dropbox link is for a pack designed for VIP 2.0. The link under other information is for VIPMud1 and has some things missing due to limitations in VIP1. A shared Dropbox folder has been created for the VIP2 pack. If you'd like to join this folder, Just send Snapp a message with your email address and you will be added.} {#gagline voice}
-#trigger {Description:} {#gagline voice}
-#key alt-V {SpVersion}
+#trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message won't really help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. Thank you.}}
+
 #alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {SilentlyLoadBuffers; #say {Reloading is now complete!} voiceonly}}
 ;Saving settings.
 
@@ -108,3 +104,6 @@ View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} 100; #play {C
 View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/keys.txt}}}|
 View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
 View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
+#alias spversion {spp;#gagon;snapp;info}
+#trigger {Last Change:} {#ungagon}
+#key alt-V {SpVersion}

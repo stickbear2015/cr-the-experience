@@ -5,3 +5,5 @@
 #trigger {You tap a button on * mining scanner.} {
 #gagline all;
 playsound {cosmic rage/activities/handMining/beep.wav} @vol};
+#trigger {You dig with * shovel*} {#gagline all; playsound {cosmic rage/activities/handmining/shovel*5.wav} @vol}
+#trigger {You find some ores and store them away.} {playsound {cosmic rage/activities/handmining/putin.wav} @vol}

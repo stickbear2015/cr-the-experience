@@ -5,5 +5,6 @@
 #if {%ifWord(is about to erupt. Get out of there!,%5," ")} {playsound {Cosmic Rage/ships/FlightControl/FCVolcanoAlarm.wav} @CommsVol} {};
 #if {%ifWord(That ship is smuggling! Bring it down!,%5," ")} {playsound {Cosmic Rage/ships/FlightControl/FCSmuggling.wav} @CommsVol} {};
 #if {%ifWord(Enemies retreating!,%5," ")} {playsound {Cosmic Rage/ships/FlightControl/FCCheer.wav} @CommsVol} {};
+#if {%ifWord(gold,%2," ")} {playsound {Cosmic Rage/ships/FlightControl/FCGold.wav} @CommsVol} {};
 #if {%ifWord(red,%2," ")} {playsound {Cosmic Rage/ships/FlightControl/FCRed.wav} @CommsVol} {};
 #if {%ifWord(green,%2," ")} {playsound {Cosmic Rage/ships/FlightControl/FCGreen.wav} @CommsVol}}

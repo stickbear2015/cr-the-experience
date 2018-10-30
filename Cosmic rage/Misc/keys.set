@@ -31,7 +31,6 @@
 #key control-shift-f8 {toggleship}
 #key control-g {gagscombat}
 #key control-h {gagharvest}
-#key alt-f12 {toggleRedAlert}
 #key control-p {pancombat}
 #key control-f5 {toggleLogOn}
 #key control-alt-s {salvageTextToggle}
@@ -42,7 +41,7 @@
 #key Control-Alt-C ToggleIdleSounds
 #key control-alt-M {SilentSPIntro}
 #key control-alt-T {ToggleClocks}
-#key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1; #pc 0 stop; #say {The current combat track has been changed.} voiceonly; #playloop {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatMusicHandle %playHandle; #var combatmusicPlaying 1} {#if {@cMusic = "Disabled"} {#say {You must enable combat music for this feature to work correctly.} voiceonly}}}
+#key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1; #pc @CombatmusicHandle stop; #say {The current combat track has been changed.} voiceonly; #playloop {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatMusicHandle %playHandle; #var combatmusicPlaying 1} {#if {@cMusic = "Disabled"} {#say {You must enable combat music for this feature to work correctly.} voiceonly}}}
 #key {alt-Enter} {togglenumpad}
 #Key {Numpad1} {1} {Numpad}
 #Key {Control-Numpad1} {sw}

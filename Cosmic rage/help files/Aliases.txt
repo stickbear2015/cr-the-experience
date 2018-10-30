@@ -44,7 +44,6 @@ Short map text toggle. ShortMapText|
 gag ship combat toggle. gagscombat|
 pan ship combat toggle. pancombat|
 gag harvesting toggle. gagharvest|
-red alert toggle. toggleRedAlert|
 salvage text toggle. salvageTextToggle|
 weather sounds toggle. weatherToggle|
 gag weather toggle. gagweather|
@@ -61,7 +60,6 @@ save your soundpack settings. SaveSettings|
 Report a bug. SpBug|
 Suggest something you'd like added to the soundpack. SpSuggest. 
 Check the last logged change. SpVersion. 
-View the info for the soundpack. SpInfo
 config. Load the configuration manager|
 SpReload. Reload the soundpack. 
 HappyBirthday. It's a secret. 
@@ -78,3 +76,4 @@ ToggleSocialSounds. Toggles social sounds.
 ToggleSocialText. Toggles seeing of social text when you use socials. The text when others use socials is not effected..
 Toggle reboot warnings. toggleReboot.
 Toggle soundpack intro text. ToggleSoundpackIntroMessage
+SPUnload. Unloads your soundpack for debugging purposes. Note. To reload the pack, use either the SPReload alias, or control-shift-R.

@@ -67,7 +67,6 @@ control-shift-f8. Toggle alternate ship engine sounds.
 control-g. Toggle the gagging of enemy locking while in ship combat.
 control-p. Toggle ship combat panning.
 control-h. Toggle the gagging of Harvesting announcements.
-alt-f12. Toggle the gagging of red alert.
 control-alt-s. Toggle salvage text.
 control-w. Toggle weather sounds.
 control-shift-w. Toggle the gagging of weather text.

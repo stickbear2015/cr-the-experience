@@ -19,13 +19,6 @@
 #TRIGGER {The ship jolts a little as phasers are fired.} {#gagline all; playsound {cosmic rage/ships/combat/phaser.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
-#TRIGGER {Klaxons continue to blare and red lights revolve in urgent circles.} {#gagline all;
-#if {@redAlert = "Enabled"} {
-playsound {cosmic rage/ships/combat/redAlert.wav} @CVol; #Var AlertPlaying 1; #Var AlertHandle %Playhandle}} {}
-#trigger {Red lights begin to revolve in urgent circles on the ceiling.} {
-#gagline all;
-#if {@redAlert = "Enabled"} {
-playsound {cosmic rage/ships/combat/redAlert.wav} @CVol;#Var AlertPlaying 1; #Var AlertHandle %Playhandle}} {}
 #TRIGGER {You hear a thunk and then * begin to slide down overhead tubes towards the launchers.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
 #trigger {You hear a series of clicks as the * are locked into place} {#gagline voice}
 #TRIGGER {You hear a sliding noise, before a loud thunk as * are loaded into the ships main banks.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
@@ -35,9 +28,6 @@ playsound {cosmic rage/ships/combat/redAlert.wav} @CVol;#Var AlertPlaying 1; #Va
 #TRIGGER {On screen, you see * fire torpedos at *} {#gagline all; playsound {cosmic rage/ships/combat/torpedo*10.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #PC %Playhandle Pan %Random(-4000,4000)}};
-#trigger {A hum  fills the ship as plasma is filtered into one of the cannons.} {
-#gagline all;
-playsound {cosmic rage/ships/combat/plasmaCannonFilter.wav} @CVol}
 #trigger {you hear a slight hum and a vibration begins beneath your feet as the plasma cannon begins to power up.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/plasmaCannonPowerup.wav} @CVol}
@@ -63,27 +53,14 @@ playsound {cosmic rage/ships/combat/plasmaCannonHum.wav} @CVol}
 #TRIGGER {On screen, you see * fire*missiles at *} {#gagline all; playsound {cosmic rage/ships/combat/enemyMissile.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #PC %Playhandle Pan %Random(-4000,4000)}};
-#trigger {You set the ship alert to red and call for all hands to stations.} {
-#pc 0 stop; #gagline all;
-playsound {cosmic rage/ships/combat/red.wav} @CVol;
-#if {@CMusic = "Enabled"} {
-loopsound {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatmusicHandle %playHandle; #var combatmusicPlaying 1}}
-#TRIGGER {You give an order over pa to stand down and set the alert on the ship to green.} {#gagline all;
-playsound {cosmic rage/ships/combat/green.wav} @CVol;
-#If {@AlertPlaying = 1} {
-#PC @AlertHandle stop;
-#Var AlertPlaying 0};
-#if {@CombatmusicPlaying = 1} {
-#pc @CombatmusicHandle stop;
-#var combatMusicPlaying 0}}
+#trigger {You set the ship alert to red and call for all hands to stations.} {#gagline all}
 #TRIGGER {The overhead strips turn green as you hear an order to stand down over the in ship pa.} {#gagline all;
 playsound {cosmic rage/ships/combat/green.wav} @CVol;
-#If {@AlertPlaying = 1} {
-#PC @AlertHandle stop;
-#Var AlertPlaying 0};
 #if {@CombatmusicPlaying = 1} {
 #pc @CombatmusicHandle stop;
-#var combatMusicPlaying 0}}
+#var combatMusicPlaying 0}; #if {@RedAlertStart = 1} {
+#pc @RedAlertStarthandle stop;
+#var RedAlertStart 0}}
 #TRIGGER {A siren blares through the ship, * has a lock on this starship.} {
 #if {@gagShipCombat = "Enabled"} {
 #gagline all};
@@ -107,7 +84,9 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #TRIGGER {Self Destruction in 3} {playsound {cosmic rage/ships/combat/SelfDestructThree.wav} @CVol};
 #TRIGGER {Self Destruction in 2} {playsound {cosmic rage/ships/combat/SelfDestructTwo.wav} @CVol};
 #TRIGGER {Self Destruction in 1} {playsound {cosmic rage/ships/combat/SelfDestructOne.wav} @CVol};
-#TRIGGER {As the walls of the ship begin to crumble, the vessels safety systems yank you into an escape pod.} {playsound {cosmic rage/ships/combat/YouDestroyed*3.wav} @CVol};
+#TRIGGER {As the walls of the ship begin to crumble, the vessels safety systems yank you into an escape pod.} {#pc 0 stop; #if {@CombatmusicPlaying = 1} {
+#pc @CombatmusicHandle stop;
+#var combatMusicPlaying 0}; playsound {cosmic rage/ships/combat/YouDestroyed*3.wav} @CVol}
 #trigger {* hauled into an escape pod.} {playsound {cosmic rage/ships/combat/YouDestroyed*3.wav} @CVol};
 #TRIGGER {You hear several loud bongs as the defensive armour deflects damage.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
@@ -254,7 +233,7 @@ playsound {cosmic rage\activities\moon\PowerBuildUp.wav} @CVol}
 #trigger {*"I am beginning repairs *} {playsound {Cosmic Rage/ships/misc/repair*7.wav} @vol} {} AnyCase
 #trigger {*"Defensive systems disengaged."} {playsound {Cosmic Rage/ships/combat/defoff3.wav} @CVol}
 #trigger {A siren rips through the ship as the heat shields drop lower.} {playsound {Cosmic Rage/ships/misc/HeatShieldsAlarm.wav} @vol}
-#trigger {You tap a button, setting the ship to yellow alert.} {#pc 0 stop; playsound {Cosmic Rage/ships/combat/yellowAlert.wav} @CVol}
+#trigger {You tap a button, setting the ship to yellow alert.} {playsound {Cosmic Rage/ships/combat/yellowAlert.wav} @CVol}
 #trigger {The ship shudders as torpedos are fired.} {#gagline all; playsound {cosmic rage/ships/combat/yourTorps.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
@@ -266,3 +245,13 @@ playsound {cosmic rage\activities\moon\PowerBuildUp.wav} @CVol}
 #TRIGGER {You dromatically slam down a lever, twiddle some dials, then smack a big red button} {#Gagline ALL; playsound {Cosmic Rage/ships/Combat/solar1.wav} @CVol; #var solarhandle %PlayHandle};
 #TRIGGER {all ship movement appears to completely stop for a moment as the ship's momentum is countered by a huge bludgening force.} {#Gagline all; #PC @solarhandle stop; playsound {Cosmic Rage/ships/Combat/solar2.wav} @CVol} {} AnyCase
 #trigger {*nester wheels in and settles in a charging station.} {playsound {Cosmic Rage/ships/Misc/ModuleMove*8.wav} @vol}
+#Trigger {You tap a button, setting the ship to * alert.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/switch.wav} @vol}
+#Alias {ws} {warning-shot}
+#Alias {hsig} {heat-signature}
+#TRIGGER {Klaxons continue to blare and red lights revolve in urgent circles.} {#gagline all}
+#trigger {Red lights begin to revolve in urgent circles on the ceiling.} {#gagline all; #if {@CMusic = "Enabled"} {
+loopsound {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatmusicHandle %playHandle; #var combatmusicPlaying 1; Loopsound {Cosmic Rage/ships/combat/RedAlert.wav} @CVol; #var RedAlertStarthandle %playhandle; #var RedAlertStart 1}}
+#trigger {You give an order over pa to stand down and set the alert on the ship to green.} {playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol}
+#trigger {A hum fills the ship as plasma is filtered into one of the cannons.} {#gagline all; playsound {cosmic rage/ships/combat/plasmaCannonFilter.wav} @CVol}

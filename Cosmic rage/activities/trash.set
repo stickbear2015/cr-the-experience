@@ -32,3 +32,4 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {* is reduced into a smashed wreck as the drone compresses it into * and carries it away.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/DroneSmash.wav} @vol}
 #trigger {You push down hard on a plunger.} {#gagline voice}
 #trigger {A very loud crunch is heard as the machine compresses some trash into a cube.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/Crunch.wav} @vol}
+#trigger {*trash collected*} {#if {@gagHarvest = "Enabled"} {#gagline all}}

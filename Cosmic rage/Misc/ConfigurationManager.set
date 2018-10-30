@@ -31,7 +31,6 @@ Toggle ship combat messages. This option is currently @gagShipCombat :gagscombat
 Toggle the announcement of Intraplanetary pod movement. This option is currently @SilentPod :TogglePods|
 Toggle the panning of  ship combat. This option is currently @panShipCombat :pancombat|
 Toggle harvest, trash collection and orbit cleaning messages. This option is currently @gagHarvest :gagharvest|
-Toggle the red alert sounds and messages. This option is currently @redalert :toggleRedAlert|
 Toggle debris salvage text. This option is currently @gagSal :salvageTextToggle|
 Toggle the weather sounds. This option is currently @weather :weatherToggle|
 Toggle weather text. This option is currently @gagweather :gagweather|
@@ -52,7 +51,6 @@ Check the amount of lag between your connection and the game. Note. This value m
 Submit a soundpack bug report:SpBug|
 Submit a soundpack suggestion:SpSuggest|
 View the last posted soundpack change. Note. This shows the last change that Snapp has posted to the game. This may not always be the last change you see in your changelog.:SpVersion|
-View the soundpacks info such as description, ETC:SpInfo|
 Clear the current buffers items. Useful if you start seeing buffer errors:ClearBuffer|
 Toggle your speech in the soundpack. This option is currently @speech. Note. When this option is enabled, your speech will be muted :TTS|
 Toggle mute sounds. This option is currently @soundson:MuteSound|
@@ -200,8 +198,6 @@ Reload the soundpack:SpReload| View the list of available help files for the sou
 #if {@panShipCombat = "Enabled"} {#var panShipCombat "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Panning of ship combat sounds disabled.} voiceonly} {#var panShipCombat "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Panning of ship combat sounds enabled.} voiceonly}};
 #alias gagharvest {
 #if {@gagHarvest = "Enabled"} {#var gagHarvest "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {harvest, trash collection and orbit cleaning messages disabled.} voiceonly} {#var gagHarvest "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {harvest, trash collection and orbit cleaning messages enabled.} voiceonly}};
-#alias toggleRedAlert {
-#if {@redalert = "Enabled"} {#var redalert "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Red alert sounds and messages disabled.} voiceonly} {#var redalert "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {red alert sounds and messages enabled.} voiceonly}}
 #alias salvageTextToggle {
 #if {@gagSal = "Enabled"} {#var gagSal "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Debris salvage messages disabled.} voiceonly} {#var gagSal "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Debris salvage messages enabled.} voiceonly}}
 #alias weatherToggle {
@@ -221,18 +217,18 @@ Reload the soundpack:SpReload| View the list of available help files for the sou
 #alias {lag} {#var LagAmount 0;
 #alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
 echo Lag.test} {}
-#alias {CCToggle} {#if {@SilentConflict = "Enabled"} {#var SilentConflict "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Clan conflict messages disabled.} Voiceonly} {#var SilentConflict "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Clan conflict messages enabled.} voiceonly}}
+#alias {CCToggle} {#if {@SilentConflict = "Enabled"} {#var SilentConflict "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will now see clan conflict messages.} Voiceonly} {#var SilentConflict "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will no longer see clan conflict messages.} voiceonly}}
 #alias {tts}  {
 #if {@Speech = "Disabled"} {
 #var Speech "Enabled";
-#play {Cosmic Rage/general/misc/On.wav} 100; #say {speech is now muted.} Voiceonly; #alarm 1 {#SetSpeech incoming off}} {
+#play {Cosmic Rage/general/misc/Off.wav} 100; #say {speech off.} Voiceonly; #alarm 1 {#SetSpeech incoming off}} {
 #var Speech "Disabled";
 #SetSpeech incoming on;
-#play {Cosmic Rage/general/misc/Off.wav} 100; #say {speech is now unmuted.} Voiceonly}}
+#play {Cosmic Rage/general/misc/On.wav} 100; #say {speech on.} Voiceonly}}
 #alias {playsound} {#if {@soundson = "Disabled"} {#play %1 %2}}
 #alias {loopsound} {#if {@soundson = "Disabled"} {#playloop %1 %2}}
 #alias ToggleIdleSounds {#if {@ConnectionCheck  = "Enabled"} {#var ConnectionCheck "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no longer hear the sounds letting you know that you are connected to the moo, but idle} voiceonly} {#var ConnectionCheck  "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now hear the sounds letting you know that you are connected to the moo, but idle.} voiceonly}}
-#alias {MuteSound} {#if {@soundson = "Disabled"} {#var soundson "Enabled"; #pc 0 stop; #play {Cosmic Rage/general/misc/on.wav} 100; #say {Sounds have been muted.} voiceonly} {#var soundson "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Sounds have been unmuted.} voiceonly}}
+#alias {MuteSound} {#if {@soundson = "Disabled"} {#var soundson "Enabled"; #pc 0 stop; #play {Cosmic Rage/general/misc/off.wav} 100; #say {Sounds will no longer  play.} voiceonly} {#var soundson "Disabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Sounds will now play.} voiceonly}}
 #alias {SpReload} {#unalarm Saving; #say {Reloading the soundpack, please wait...} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {loadbuffers; #say {Reloading complete!} voiceonly}}
 #alias toggleLaunchText {#if {@LaunchText = "Enabled"} {#var LaunchText "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will now see the text for ships launching, landing, docking and undocking.} voiceonly} {#var LaunchText "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will no longer see the text for ships launching, landing, docking and undocking.} voiceonly}}
 #alias toggleSocialSounds {#if {@SocialSounds = "Enabled"} {#var SocialSounds "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no  longer hear social sounds.} voiceonly} {#var SocialSounds "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now  hear social sounds.} voiceonly}}

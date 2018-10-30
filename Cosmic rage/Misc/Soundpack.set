@@ -1,4 +1,3 @@
-#Alias SPInfo {#say {This pack features plenty of unique features and sounds, including a unique buffer system not found in any other soundpack, as well as well picked sounds and music. The BT Sync and Dropbox links are for a pack designed for VIPMud 2.0. The link shown under other information is for a pack that was made for VIPMud1.0, and has quite a few things missing due to limitations in VIPMud1.0. A shared Dropbox folder has been created for the VIP2 pack. If you'd like to join this folder, Just send Snapp a message via an OTRLink with your email address and you will be added.}}
 #alias Version {soundpack version Snapp Blue Scales Cosmic Rage Experience} {}
 #trigger {Soundpack last change *} {#sub {The latest soundpack change to be posted %1}}
 #alias spp {>@soundpacks} {}
@@ -10,7 +9,7 @@
 #trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for sending this report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message won't really help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. Thank you.}}
 
-#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {SilentlyLoadBuffers; #say {Reloading is now complete!} voiceonly}}
+#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} voiceonly}}
 ;Saving settings.
 
 #alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffer list  have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;

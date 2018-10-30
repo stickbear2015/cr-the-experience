@@ -1,3 +1,33 @@
+658. Fixed a few bugs with bio harvesting.
+Changed on Monday, October 29, 2018 at 5:42 PM CDT.
+Copy Cosmic Rage/activities/BioHarvesting.set.
+657. Fixed a small bug with the pack writing your settings.
+Changed on Monday, October 29, 2018 at 5:41 PM CDT.
+Copy Cosmic Rage/misc/soundpack.set.
+656. Made a few changes to the code that works with setting your ship to different alert statuses.
+Changed on Thursday, October 25, 2018 at 7:15 AM CDT.
+Copy Cosmic Rage/ships/shipCombat.set and sounds/ships/combat/RedAlert.wav.
+655. An alias has been added that will unload your soundpack for debugging purposes. This also stopps all playing sounds. To reload your soundpack, you may use SPReload, Control-shift-R, or restart VIPMud.
+Changed on Wednesday, October 24, 2018 at 12:00 PM CDT.
+Copy Cosmic Rage.set and Cosmic Rage/Help Files.
+654. Fixed warp for hopefully the final time. It now works as it used to, hopefully without errors.
+Changed on Tuesday, October 23, 2018 at 8:00 PM CDT.
+Copy Cosmic Rage/ships/ships.set and sounds/ships/movement/WarpAcceleration.wav.
+653. Several changes have been made to ship combat code today. Firstly, upon changing the alert status, all sound is no longer required to stop. See, I said I'd work on a fix eventually. Second, code should no longer throw errors if something isn't toggled correctly. Thirdly, if you are in a room other than the control room when the ships status changes, the code will see this and start playing combat music and other related things assuming you have them enabled. Fourthly. If you decide to change the currently playing combat music, all sounds are not required to stop. And lastly. Thanks to Jason, we have two new aliases for ship combat. WS will fire a warningshot, and hsig will check your ships heat signature.
+Changed on Tuesday, October 23, 2018 at 11:30 AM CDT.
+Copy Cosmic Rage/misc/key.set and ships/shipCombat.set.
+652. Credits, vaareth. When flight control turns gold, a special sound has been added.
+Changed on Monday, October 22, 2018 at 9:38 AM CDT.
+Copy Cosmic Rage/ships/FlightControl.set and sounds/ships/FlightControl/FCGold.wav.
+651. Fixed an error with toggling clan conflict messages in the configuration manager.
+Changed on Sunday, October 21, 2018 at 4:40 PM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
+650. Removed the SPInfo alias and the option from the configuration manager. This option is no longer needed.
+Changed on Sunday, October 21, 2018 at 8:11 AM CDT.
+Copy Cosmic Rage/misc/ConfigurationManager.set and soundpack.set.
+649. Recoded ship movement. Ambiences will no longer stop upon moving your ship, and several errors have been fixed with jumping from one place to another.
+Changed on Saturday, October 20, 2018 at 4:22 AM CDT.
+Copy Cosmic Rage/ships/Jump.set, ships.set and sounds/ships/Movement.
 648: Changed the moan sounds to something less cringey.
 changed on tuesday, October 16th 2018
 Copy moan1, moan2, moan3, moan4 and moan5.wav from sounds/general/socials

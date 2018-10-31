@@ -1,3 +1,6 @@
+659. Reboot messages will now work correctly instead of not at all.
+Changed on Tuesday, October 30, 2018 at 2:14 PM CDT.
+Copy Cosmic Rage/misc/soundpack.set.
 658. Fixed a few bugs with bio harvesting.
 Changed on Monday, October 29, 2018 at 5:42 PM CDT.
 Copy Cosmic Rage/activities/BioHarvesting.set.

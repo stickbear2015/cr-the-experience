@@ -96,9 +96,7 @@ playsound {cosmic rage/activities/planetoid/low hum.wav} 70}
 playsound {cosmic rage/activities/planetoid/mineralScoop.wav} @vol} 
 #trigger {A siren rings through the landscape. Evacuate, evacuate. * seconds until planet disintigration.} {
 playsound {cosmic rage/activities/planetoid/siren.wav} @vol} 
-#trigger {The computer announces: "* harvested*"} {
-#if {@gagHarvest = "Enabled"} {
-#gagline voice}} 
+#trigger {The computer announces: *harvested*} {#if {@gagHarvest = "Enabled"} {#gagline voice}} {} AnyCase
 #trigger {You begin to wind a handle attached to a very important looking console.} {
 #gagline all;
 playsound {cosmic rage/activities/planetoid/handleWind.wav} @vol} 

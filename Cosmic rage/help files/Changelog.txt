@@ -1,3 +1,33 @@
+669. Seeing as Christmas will be upon us shortly, I have changed the soundpacks intro music. The pack will pick from a list of Christmas intro songs upon loading. I plan to perhaps add more music shortly. For now, you get 7 tracks that the pack will pick from.
+Changed on Wednesday, November 21, 2018 at 12:22 PM CST.
+Copy Cosmic Rage.set and sounds/music/IntroMusic.
+668. Added another line of text to the launch text gagging toggle.
+Changed on Wednesday, November 21, 2018 at 7:34 AM CST.
+Copy Cosmic Rage/ships/ships2.set.
+667. Fixed a bug with death. Upon dying, all sounds will now stop when entering the death sceens.
+Changed on Wednesday, November 21, 2018 at 07:00 AM CST.
+Copy Cosmic Rage/misc/mainAmbience.set.
+666. Credits, Susan Guttenburg: Sounds have been added for reloading some weapons, and fireing some weapons. The weapons that have sounds are debris cannons, missiles, and the molecular disruptor. As stated in soundpack announcements, I need you guys to grab the text for me if you want combat sounds fixed. Thank you.
+Changed on Monday, November 19, 2018 at 3:26 PM CST.
+Copy Cosmic Rage/ships/shipCombat.set.
+665. Shut up. I said, "Shut up!" When others are done done playing with fuel pumps, the sound now stops. This has been a bug for I have no idea how long.
+Changed on Sunday, November 18, 2018 at 7:15 AM CST.
+Copy Cosmic Rage/ships/ships.set.
+664. Fixed boarding quite a few ships. Before this change, upon boarding some ships, ambience and planet music would not stop. If you find any other ships that seem broken, please use the SPBug alias.
+Changed on Saturday, November 17, 2018 at 6:04 PM CST.
+Copy Cosmic Rage/ships/ships2.set
+663. The new text that was added to launching and landing can be toggled with the launch text toggle.
+Changed on Saturday, November 17, 2018 at 11:55 AM CST.
+Copy Cosmic Rage/ships/Ships2.set.
+662. An alias and key have been added to clear all text from all of your added buffers. I've had to change one of the current buffer keys for this change to work, but it actually works better this way. The new key to clear all text from every single of your active buffers is Control-Alt-Shift-Delete, and the alias is ClearAllBuffers.  The key for clearing a single buffer has been changed to alt-shift-delete. That alias is unchanged.
+Changed on Saturday, November 17, 2018 at 10:13 AM CST.
+Copy Cosmic Rage/Help Files and Cosmic Rage/misc/buffers.set.
+661. Fixed a bug with powering on your ship and ship ambience.
+Changed on Thursday, November 08, 2018 at 5:07 AM CST.
+Copy Cosmic Rage/ships/ShipPower.set.
+660. Credits, Jason Hamilton. Gagged some messages you saw when powering on and off ships.
+Changed on Wednesday, November 07, 2018 at 2:23 PM CST.
+Copy Cosmic Rage/ships/ShipPower.set.
 659. Reboot messages will now work correctly instead of not at all.
 Changed on Tuesday, October 30, 2018 at 2:14 PM CDT.
 Copy Cosmic Rage/misc/soundpack.set.

@@ -45,7 +45,8 @@ Just paste that code at the end of your char file, and you are now good to go fr
 
 misc keys.
 
-An alias and key have been created to clear the contents of a buffer if that buffer starts throwing errors. Do to a bug within VIP, buffers can only contain so much information. At the current time, it is unknown when this error shows up. But if it does, you may type ClearBuffer or use the key control-alt-shift-Delete.
+An alias and key have been created to clear the contents of a buffer if that buffer starts throwing errors. Do to a bug within VIP, buffers can only contain so much information. At the current time, it is unknown when this error shows up. But if it does, you may type ClearBuffer or use the key alt-shift-Delete.
+You may clear the text out of all of your buffers by using the key Control-Alt-Shift-Delete, or the alias ClearAllBuffers.
 
 Logging.
 

@@ -287,7 +287,7 @@ playsound {cosmic rage/ships/misc/courseSet.wav} @vol}
 #TRIGGER {Fuel begins to pump down a fuel line *} {#gagline all; loopsound {cosmic rage/ships/misc/SubAtomicFuelPump.wav} @vol; #var fuelhandle %playhandle; #var fuel 1} {} AnyCase
 #TRIGGER {You depress a lever.} {playsound {Cosmic Rage/ships/misc/Lever1.wav} @vol; #gagline all}
 #TRIGGER {You let the lever go.} {playsound {Cosmic Rage/ships/misc/Lever4.wav} @vol; #gagline all}
-#TRIGGER {You carefully place the fuel line back into its cradle.} {#if {@fuel = 1} {#pc @fuelhandle stop; #var fuel 0}; playsound {Cosmic Rage/ships/misc/FuelLineReplace.wav} @vol; #gagline all}
+#TRIGGER {* carefully * the fuel line back in* its cradle.} {#if {@fuel = 1} {#pc @fuelhandle stop; #var fuel 0}; playsound {Cosmic Rage/ships/misc/FuelLineReplace.wav} @vol; #gagline all}
 #trigger {*"Passcode required."} {playsound {Cosmic Rage/ships/computer/PasscodeRequired.wav} @vol; #gagline all}
 #trigger {The ship lands with a bone-rattling bang.} {playsound {Cosmic Rage/ships/Movement/factoryLandComplete.wav} @vol; #gagline all}
 #trigger {You feel a slight vibration as the ship begins to dock.} {playsound {Cosmic Rage/ships/misc/DockingBayDock.wav} @vol; #gagline all}

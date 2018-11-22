@@ -64,3 +64,7 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 
 #trigger {"Landing sequence complete. Heat shields deactivated."} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You begin to carefully align the ship  with the planet in order to begin its descent towards the surface.} {#if {@LaunchText = "Enabled"} {#gagline all}}
+#trigger {* forward and * into the broadcasting communicator set into the main console: * calling * do you read?"} {#if {@LaunchText = "Enabled"} {#gagline all}}
+#trigger {A voice comes from a small speaker set into the main console: * we receive you, go ahead"} {#if {@LaunchText = "Enabled"} {#gagline all}}
+#trigger {* up the * onto The *} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/BoardShip.wav} @vol}
+#trigger {The ship's engines stabilise as it launches into space.} {#if {@LaunchText = "Enabled"} {#gagline all}}

@@ -2,6 +2,9 @@ This is the readme.
 
 	Thank you for taking the time to download and install Snapp Blue Scales Cosmic Rage Experience!
 
+***Donating***.
+	Want to help with the production of the sound pack without coding? Donations are always accepted, and will be used to help pay for migraine medications which I use to allow me to continue to code, the purchase of other sounds for the pack, and similar things. You can send paypal donations to kyle9475@gmail.com. If you wish to use apple pay cash instead, contact me directly. Thanks!
+
 	System Requirements:
 
 A computer capable of running the latest version of VIP Mud2.0  is a requirement, and in addition the soundpack requires  at least 1 gB of RAM and a bit of extra processing power to accommodate the playing of wave files.  You should also have a sound card capable of playing multiple audio streams simultaneously. In this day and age, It's highly unlikely any one would have any issues what so ever, but it's best just to make sure.

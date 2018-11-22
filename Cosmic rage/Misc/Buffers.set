@@ -28,7 +28,7 @@
 #key {Shift-Alt-PageUp} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer < 20} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Not enough items to move that far up} voiceonly} {#math ItemPointer {@ItemPointer - 20}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 
 #alias ClearBuffer {#var @buffername ""; playsound {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {Contents of the @buffername buffer have been cleared.} Voiceonly}
-#key {Alt-control-shift-delete} {ClearBuffer}
+#key {Alt-shift-delete} {ClearBuffer}
 
 #key {Alt-Down} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 #key {Shift-Alt-PageDown} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|") - 20} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Not enough items in buffer to move that far down.} Voiceonly} {#math ItemPointer {@ItemPointer + 20}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
@@ -90,3 +90,5 @@ Read the Squadren channels log file for %char:#edit  {Cosmic Rage/logs/%char Squ
 Read the Traceback channels log file for %char:#edit  {Cosmic Rage/logs/%char Tracebacks.log}|
 Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.log}|
 Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}
+#alias {ClearAllBuffers} {#say {Clearing all buffer text. Please wait} Voiceonly; #alarm 1 {#unload misc/Buffers.set; #load misc/buffers.set; SilentlyLoadBuffers; #play {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {Buffer text is now cleared!} VoiceOnly}}
+#key Control-Alt-Shift-Delete {ClearAllBuffers}

@@ -1,3 +1,9 @@
+671. The option to silence the soundpacks intro music has been removed.
+Changed on Friday, November 23, 2018 at 5:11 PM CST.
+Copy Cosmic Rage.set, Cosmic Rage/Help Files and Cosmic Rage;/misc/ConfigurationManager.set.
+670. There is now an included announcements help file. This can be accessed via the help files menu.
+Changed on Thursday, November 22, 2018 at 7:51 PM CST.
+Copy Cosmic Rage/misc/soundpack.set and sounds/general/help.
 669. Seeing as Christmas will be upon us shortly, I have changed the soundpacks intro music. The pack will pick from a list of Christmas intro songs upon loading. I plan to perhaps add more music shortly. For now, you get 7 tracks that the pack will pick from.
 Changed on Wednesday, November 21, 2018 at 12:22 PM CST.
 Copy Cosmic Rage.set and sounds/music/IntroMusic.

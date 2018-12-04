@@ -146,3 +146,5 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Origins] *} {playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; #additem Origins %0}
 #trigger {[[]Clanchat], The conflict: *} {#if {@SilentConflict = "Enabled"} {playsound {Cosmic Rage/general/misc/silent.wav} @vol; #gagline all} {playsound {Cosmic Rage/general/comms/ClanChat.wav} @CommsVol; #additem ClanConflict %0}}
 #trigger {[[]Clanchat], General clans announcement: *} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #additem Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {Information: closest beacon: *} {#additem SOS %0}
+#trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} 80; #additem Htpc %0}

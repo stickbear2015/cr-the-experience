@@ -74,7 +74,6 @@ control-F5. Toggle between the new and old logon sounds.
 Alt-s. Toggle short mapper mode.
 Control-F1. Toggle your speech.
 Shift-F1. Toggle the muting of the intire soundpack excluding speech.
-Control-alt-M. Toggle the hearing of the soundpacks intro music.
 Control-alt-T. Toggle clock sounds.
 Control-alt-C. Toggle the sounds that let you know you are still connected to the mud.
 

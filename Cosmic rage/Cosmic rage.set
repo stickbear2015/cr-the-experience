@@ -63,6 +63,7 @@
 #load ships/jump.set
 #load ships/Rats.set
 #load ships/shipCombat.set
+#load ships/shipCombat2.set
 #load ships/ships.set
 #load ships/ships2.set
 #load ships/Waypoints.set
@@ -76,10 +77,10 @@
 #class shipamb enable;
 #class vehicleamb enable;
 ;Triggers for connecting to the moo.
-#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop}};
-#trigger {Welcome to: Cosmic Rage!} {#unkey {alt-V}; version; #if {@SpIntroMessage = "Enabled"} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. Failing to do so will save the default buffer list upon the pack auto-saving. If this is your first time running the soundpack, Please use the Control-S command now. Thank you.} voiceonly}; #if {@SilentIntro = "Disabled"} {loopsound {cosmic rage/music/IntroMusic/Intro*7.wav} 70; #var IntroMusic %playhandle}}
-#TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop}};
-#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop}};
+#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
+#trigger {Welcome to: Cosmic Rage!} {#unkey {alt-V}; version; #if {@SpIntroMessage = "Enabled"} {#say {Please use Control-alt-shift-L or type LoadBuffers to load your currently saved buffers list. Failing to do so will save the default buffer list upon the pack auto-saving. If this is your first time running the soundpack, Please use the Control-S command now. Thank you.} voiceonly}; {loopsound {cosmic rage/music/IntroMusic/Intro*7.wav} 70}}
+#TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop};
+#TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
 
 ;Settings.
 
@@ -125,7 +126,7 @@
 #close 6
 
 ;misc.
-#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#if {@SilentIntro = "Disabled"} {#pc @IntroMusic stop; #key {alt-V} {SpVersion}}};
+#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#pc 0 stop; #key {alt-V} {SpVersion}}
 #TRIGGER {lag.test} {#unalarm LagTest;
 #sub {You have %eval(@LagAmount * 100) Milliseconds lag.}} {} AnyCase
 #alias {onDisconnect} {

@@ -1,0 +1,14 @@
+#trigger {You give an order over pa to stand down and set the alert on the ship to green.} {playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol}
+#trigger {A hum fills the ship as plasma is filtered into one of the cannons.} {#gagline all; playsound {cosmic rage/ships/combat/plasmaCannonFilter.wav} @CVol}
+#TRIGGER {There is a deep boom as debris cannons fire.} {#gagline all; playsound {cosmic rage/ships/combat/beam.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#trigger {You bring up the weapons report on screen*} {playsound {cosmic rage/ships/computer/display*4.wav} @vol; #gagline all}
+#trigger {Intense, blinding light fills the windows for several long moments before the entire vessel is plunged into darkness.} {playsound {Cosmic Rage/ships/misc/stargate.wav} @CVol; #gagline all}
+#trigger {You guide the ship carefully into the rift.} {#gagline all}
+#trigger {The screens brighten to compensate for the darkness.} {#gagline all}
+#trigger {An on screen route appears, plotting the rift's course into enemy territory.} {#gagline all}
+#trigger {As though the star blinked, there is a moment of darkness throughout the vessel before it rifts into the mission sector.} {playsound {cosmic rage/ships/misc/exitRift.wav} @vol}
+#trigger {You manipulate the holographic depictions of the molecular disruptor at * and fire.} {playsound {cosmic rage/ships/combat/disruptor.wav} @CVol}
+#trigger {You manipulate the holographic depictions of the pulse cannon at * and fire.} {playsound {cosmic rage/ships/combat/planetary cannon.wav} @CVol; #if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}

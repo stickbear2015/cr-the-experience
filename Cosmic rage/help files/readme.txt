@@ -10,13 +10,21 @@ This is the readme.
 A computer capable of running the latest version of VIP Mud2.0  is a requirement, and in addition the soundpack requires  at least 1 gB of RAM and a bit of extra processing power to accommodate the playing of wave files.  You should also have a sound card capable of playing multiple audio streams simultaneously. In this day and age, It's highly unlikely any one would have any issues what so ever, but it's best just to make sure.
 Included in the main soundpack directory is a file called sounds.ini. This file has been optimised to allow VIP to play as many sound files as possible, that is 100 at a time. Just copy sounds.ini into your main documents VIP directory, and answer yes to the replace file prompt.
 
+***Notice***
+A VIP1 pack has been created do to some users wish not to upgrade to VIP2. This VIP1 pack is very limited in sounds and features do to limits put in place within the program.
+The link to download the VIP1 version of this soundpack is https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1.
+A shared folder has been created for the VIP1 pack. Just send Snapp a message with an email address and you will be added.
+
+
 	Installation:
 
 1. To install this soundpack, first go and obtain it. Several methods have been implemented for downloading the soundpack as well as all future updates.
 There is the standard .zip file. The  link to obtain this is, "https://www.dropbox.com/s/k3pwgzcmktwl5mr/Snapp%27s%20VIP2%20Dropbox%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1".
-A BTSync folder has been created. The BTSync key is  "BWW5UOEMBWRXV6QMUDCMW4BCFCSLCMP7S".
 A shared dropbox folder has been created as well. If you'd like to be invited to the folder, just let Snapp know in game, and you will be invited as soon as possible.
 
+A VIP1 pack has been created do to some users wish not to upgrade to VIP2. This VIP1 pack is very limited in sounds and features do to limits put in place within the program.
+The link to download the VIP1 version of this soundpack is https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1.
+A shared folder has been created for the VIP1 pack. Just send Snapp a message with an email address and you will be added.
 2. You will need to go and make sure all the information is correct in the connection setup wizard within VIPMud. several questions have been asked about this, so answers will be provided.
 	Under the Connect menu from within VIPMuds menu structure, find the Character Setup/Connect option. Hit enter on that and you'll be dropped into the connection wizard. A few edit boxes and options will present themselves. At least with the NVDA screen reader, the titles of these edit boxes are not spoken. The window text has been captured, and will be shown below. The following controls are available in this dialogue:
 Things that need information will be surrounded by stars.
@@ -44,13 +52,13 @@ If everything went according to plan, you should have a fully working pack! If s
 
 Updating your soundpack:
 
-To update the soundpack using the Dropbox shared folder or BTSync, please do the following.
+To update the soundpack using the Dropbox shared folder please do the following.
 Please hit alt-V or type SpVersion. Take note of the latest change listed. After this, open up the folder that the soundpack is downloading to. Check the changelog and make sure you are seeing the last change that the moo showed.  Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to backup your characters set file if you don't want to lose any added alias's or triggers.
 If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
  
 A note about updates.
 
-The Dropbox shared folder and BTSync folder packs are updated at least once a day, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
+The Dropbox shared folder is updated at least once a day, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
 
 Misc notes:
 

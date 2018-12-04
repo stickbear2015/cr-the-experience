@@ -68,3 +68,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #trigger {A voice comes from a small speaker set into the main console: * we receive you, go ahead"} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {* up the * onto The *} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/BoardShip.wav} @vol}
 #trigger {The ship's engines stabilise as it launches into space.} {#if {@LaunchText = "Enabled"} {#gagline all}}
+#trigger {The ship is shot straight up into the air, sending your stomach rocketing into your throat.} {#if {@LaunchText = "Enabled"} {#gagline all}}

@@ -35,7 +35,6 @@ Toggle debris salvage text. This option is currently @gagSal :salvageTextToggle|
 Toggle the weather sounds. This option is currently @weather :weatherToggle|
 Toggle weather text. This option is currently @gagweather :gagweather|
 Toggle the Old log on  and log off sounds. This option is currently @LogOn :toggleLogOn|
-Toggle the playing of the soundpack intro music. This option is currently @SilentIntro. If this option is enabled, soundpack intro music will not be heard:SilentSPIntro|
 Toggle the sounds from clocks that can be bought in stores in the game. When this option is enabled, sounds play, but text is not spoken. When this option is disabled, sounds will not play, but messages will be spoken. This option is currently @SilentClock :ToggleClocks|
 Toggle the Small tick sounds letting you know that you are connected to the moo but idle. This option is currently @ConnectionCheck:ToggleIdleSounds|
 Toggle what the Numpad enters. If this option is disabled, you may use your numpad to enter numbers directly without them effecting your characters movement, vehicle movement or ship movement. This option is currently @numpadon :ToggleNumpad|
@@ -51,7 +50,8 @@ Check the amount of lag between your connection and the game. Note. This value m
 Submit a soundpack bug report:SpBug|
 Submit a soundpack suggestion:SpSuggest|
 View the last posted soundpack change. Note. This shows the last change that Snapp has posted to the game. This may not always be the last change you see in your changelog.:SpVersion|
-Clear the current buffers items. Useful if you start seeing buffer errors:ClearBuffer|
+Clear the current buffers items. Useful if you start seeing buffer errors. Note. This only clears items from that one buffer:ClearBuffer|
+Clear All Buffers. Clears all text from all of your active buffers:ClearAllBuffers|
 Toggle your speech in the soundpack. This option is currently @speech. Note. When this option is enabled, your speech will be muted :TTS|
 Toggle mute sounds. This option is currently @soundson:MuteSound|
 Save your soundpack settings:SaveSettings|
@@ -207,7 +207,6 @@ Reload the soundpack:SpReload| View the list of available help files for the sou
 #alias toggleLogOn {#if {@LogOn = "Enabled"} {#var LogOn "Disabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Old Logon/logoff sounds disabled.} voiceonly} {#var LogOn "Enabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Old Logon/logoff Sounds enabled.} voiceonly}}
 #alias ShortMapText {
 #if {@ShortMapText = "Enabled"} {#var ShortMapText "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Shortened map and flight control announcements  disabled.} voiceonly} {#var ShortMapText "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Shortened map and flight control announcements enabled.} voiceonly}}
-#alias SilentSPIntro {#if {@SilentIntro = "Enabled"} {#var SilentIntro "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Soundpack intro music will now play.} voiceonly} {#var SilentIntro "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Soundpack intro music will no longer play.} voiceonly}}
 #alias ToggleClocks {#if {@SilentClock = "Enabled"} {#var SilentClock "Disabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Clocks will now chime, but the clocks messages will not be spoken.} voiceonly} {#var SilentClock "Enabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Clocks will no longer chime, and the clocks messages will be spoken} voiceonly}}
 #alias ToggleNumpad {#if {@numpadon = "Enabled"} {#class Numpad disable; #var numpadon "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You may now use the numpad to enter numbers directly without them trying to move your character around or navigate your vehicle or ship.} voiceonly} {#class Numpad enable; #var numpadon "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You may now use the numpad to move your character  around or navigate your vehicle or ship.} voiceonly}}
 #alias TogglePods {#if {@SilentPod = "Enabled"} {#var SilentPod "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Pod movement messages will now be spoken.} voiceonly} {#var SilentPod  "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Pod movement messages will no longer be spoken.} voiceonly}}

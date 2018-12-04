@@ -202,7 +202,7 @@ loopsound {cosmic rage/music/planets/Mulrala.wav} @musicvol;
 loopsound {cosmic rage/music/planets/SDF Outpost Theta15.wav} @musicvol;
 #var musicplaying 1; #var musichandle %playhandle; #var planet "Theta15"}};
 #If {%IfWord(Navidad,@planetname," ")} {
-#if {@planet <> "Navadid"} {
+#if {@planet <> "Navidad"} {
 #if {@musicPlaying = 1} {
 #pc @musichandle stop; #var MusicPlaying 0};
 loopsound {cosmic rage/music/planets/Navidad.wav} @musicvol;

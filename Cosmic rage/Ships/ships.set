@@ -106,10 +106,8 @@ playsound {cosmic rage/vehicle/lever.wav} @vol}
 #trigger {You hear a slight whine as the orbiting thrusters kick in.} {
 #gagline all;
 playsound {cosmic rage/ships/movement/orbit.wav} @vol}
-#trigger {The lights flicker and die from a power surge.} {
-playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; #pc @ShipHandle stop; #Var ShipSoundPlaying 0; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "off"}
-#trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {
-playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; #pc @ShipHandle stop; #Var ShipSoundPlaying 0; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "off"}
+#trigger {The lights flicker and die from a power surge.} {#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
+#trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
 #trigger {Blackness wizzes past the windows as the ship continues its ascent.} {
 #gagline all}
 #trigger {The upward thrust stops as the ship launches into space.} {

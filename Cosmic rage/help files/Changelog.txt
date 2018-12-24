@@ -1,3 +1,35 @@
+682. Babies eating should now, finally, be, fixed!
+Changed on Saturday, December 22, 2018 at 2:24 PM CST.
+Copy Cosmic Rage/misc/babies.set.
+681. Credits, Shrukin Gold designation: Gravjump errors are now fixed.
+Changed on Saturday, December 22, 2018 at 12:07 PM CST.
+Copy Cosmic Rage/ships/ships.set.
+680. Credits, Vaareth: Sounds have been added for Forging Armor frames!
+Changed on Saturday, December 01, 2018 at 06:54 AM CST.
+Copy Cosmic Rage/combat/combat.set and sounds/general/combat/armor.
+679. A sound and buffer have been created for the Htpc channel.
+Changed on Thursday, November 29, 2018 at 12:37 PM CST.
+Copy Cosmic Rage/misc/buffers.set and comms.set, and sounds/general/comms/Htpc.wav.
+678. A few more sounds have been added for fireing a few weapons as well as entering and exiting stargates. A second ship combat file has been created as I hit the limit that VIP has in place. After a file becomes so long, VIPMud will stop reading it all together and act like none of the triggers matter.
+Changed on Thursday, November 29, 2018 at 10:26 AM CST.
+Copy Cosmic Rage.set and Cosmic Rage/ships/shipCombat2.set.
+677. Credits, Octavia Rose designation: The old display sounds work once more when typing weapons on a ship.
+Changed on Thursday, November 29, 2018 at 10:08 AM CST.
+Copy Cosmic Rage/ships/shipCombat.set.
+676. Added more SOS information to the SOS buffer. It now captures what coordinates the ship is sending the SOS from. Note.This will be captured in two different buffer items for each SOS sent out. The first item is the basic SOS message, the second is what information the SOS contains.
+Changed on Wednesday, November 28, 2018 at 11:48 PM CST.
+Copy Cosmic Rage/misc/comms.set.
+675. Added the option to clear all of your buffer text to the configuration manager.
+Changed on Wednesday, November 28, 2018 at 11:00 AM CST.
+Copy Cosmic Rage/misc/ConfigurationManager.set.
+674. Fixed a bug with settings for new pack users.
+Changed on Wednesday, November 28, 2018 at 10:54 AM CST.
+673. Credits, Frederick Barnes131439: Added a line of text from launching off of beacon stations to the launch text toggle.
+Changed on Wednesday, November 28, 2018 at 10:47 AM CST.
+Copy Cosmic Rage/ships/ships2.set.
+672. Fixed a large error with the music that plays on Navidad. Upon moving around, the music would stop and start all over again. This has been corrected.
+Changed on Tuesday, November 27, 2018 at 2:22 AM CST.
+Copy Cosmic Rage/misc/Music.set.
 671. The option to silence the soundpacks intro music has been removed.
 Changed on Friday, November 23, 2018 at 5:11 PM CST.
 Copy Cosmic Rage.set, Cosmic Rage/Help Files and Cosmic Rage;/misc/ConfigurationManager.set.

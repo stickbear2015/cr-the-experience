@@ -1,4 +1,4 @@
-#TRIGGER {A barely noticeable hum starts up, vibrating through the walls and floor of the ship.} {#gagline all; playsound {cosmic rage/ships/misc/PowerOn.wav} @vol; #if {@ambon = "Enabled"} {
+#TRIGGER {A barely noticeable hum starts up, vibrating through the walls and floor of the ship.} {#gagline all; #pc 0 stop; playsound {cosmic rage/ships/misc/PowerOn.wav} @vol; #if {@ambon = "Enabled"} {
 #If {%IfWord(Airlock,@RoomName," ")} {
 #if {@currentroom <> "airlock"} {
 #If {@shipsoundplaying = 1} {

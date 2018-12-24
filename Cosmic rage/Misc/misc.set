@@ -275,3 +275,14 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #var Flying 0}}
 #trigger {*tap* shoulder.} {playsound {Cosmic Rage/general/misc/Tap.wav.} 100}
 #trigger {[[]Marketing*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase
+#trigger {A huddled group of ryuchi suddenly fills the landing pad with their raucous laughter.} {#gagline voice}
+#trigger {You open the lid and pull out a couple of specially made drones.} {#gagline voice}
+#trigger {The drones immediately get to work, pulling plates from the crate and some kind of insulation from inside themselves.} {#gagline voice}
+#trigger {There is a whole heck of a lot of banging as the drones attach plates to the walls and shove the insulation in the gaps created.} {#gagline voice}
+#trigger {With the walls done, the drones extend some kind of propulsion attachment and rise up to the ceiling, doing the same work there.} {#gagline voice}
+#trigger {With their work done, the drones each grab one end of the crate and leave for who knows where. This room is now soundproofed!} {#gagline voice}
+#trigger {A cleaning drone zooms across the floor.} {#gagline voice}
+#trigger {The engines groan for a moment.} {#gagline voice}
+#trigger {A console beeps repetitively.} {#gagline voice}
+#trigger {A maintenance drone wheels past.} {#gagline voice}
+#trigger {You hear a slight hum as some power is rooted to the lower part of the ship.} {#gagline voice}

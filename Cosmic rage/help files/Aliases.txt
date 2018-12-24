@@ -78,3 +78,4 @@ ToggleSocialText. Toggles seeing of social text when you use socials. The text w
 Toggle reboot warnings. toggleReboot.
 Toggle soundpack intro text. ToggleSoundpackIntroMessage
 SPUnload. Unloads your soundpack for debugging purposes. Note. To reload the pack, use either the SPReload alias, or control-shift-R.
+StopSound. Stopps all playing sounds.

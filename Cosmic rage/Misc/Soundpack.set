@@ -3,11 +3,11 @@
 #alias spp {>@soundpacks} {}
 #alias spbug {#gagon; spp;snapp;bug} {}
 #alias spsuggest {#gagon; spp;snapp;suggest}
-#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thanks for adding your suggestion to the suggestion box! Snapp will see what he can do!}}
+#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thanks for submitting your suggestion! A pack admin will work on it shortly!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
-#trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion. Please provide as much detail as possible. If possible, please include text that you would like sounds added for. Thank you. If needed, you will be reached for more information.}}
-#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for sending this report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
-#trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message won't really help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. Thank you.}}
+#trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you. If needed, you will be reached for more information.}}
+#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this report! A pack admin will be looking into it as soon as possible. If needed, you may be reached for more information.}}
+#trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message will not help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. If possible, try to include the steps you took that produced the error or bug. This will expedite the report getting resolved. Thank you.}}
 
 #alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} voiceonly}}
 ;Saving settings.

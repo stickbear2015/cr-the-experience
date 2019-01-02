@@ -10,18 +10,14 @@ This is the readme.
 A computer capable of running the latest version of VIP Mud2.0  is a requirement, and in addition the soundpack requires  at least 1 gB of RAM and a bit of extra processing power to accommodate the playing of wave files.  You should also have a sound card capable of playing multiple audio streams simultaneously. In this day and age, It's highly unlikely any one would have any issues what so ever, but it's best just to make sure.
 Included in the main soundpack directory is a file called sounds.ini. This file has been optimised to allow VIP to play as many sound files as possible, that is 100 at a time. Just copy sounds.ini into your main documents VIP directory, and answer yes to the replace file prompt.
 
-***Notice***
-A VIP1 pack has been created do to some users wish not to upgrade to VIP2. This VIP1 pack is very limited in sounds and features do to limits put in place within the program.
-The link to download the VIP1 version of this soundpack is https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1.
-A shared folder has been created for the VIP1 pack. Just send Snapp a message with an email address and you will be added.
-
-
 	Installation:
 
 1. To install this soundpack, first go and obtain it. Several methods have been implemented for downloading the soundpack as well as all future updates.
+	VIP2.0 downloads.
 There is the standard .zip file. The  link to obtain this is, "https://www.dropbox.com/s/k3pwgzcmktwl5mr/Snapp%27s%20VIP2%20Dropbox%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1".
 A shared dropbox folder has been created as well. If you'd like to be invited to the folder, just let Snapp know in game, and you will be invited as soon as possible.
 
+	VIPMud1.0 Downloads.
 A VIP1 pack has been created do to some users wish not to upgrade to VIP2. This VIP1 pack is very limited in sounds and features do to limits put in place within the program.
 The link to download the VIP1 version of this soundpack is https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1.
 A shared folder has been created for the VIP1 pack. Just send Snapp a message with an email address and you will be added.
@@ -45,7 +41,7 @@ Simple Script Control checkbox. When checked, VipMud will use the simple scripti
 3. After you have obtained the soundpack and completed the necessary steps from within VIPMud, just select all from within the downloaded folder, then go and find your VIPMud directory. Assuming you haven't moved the directory, it will be in your documents directory. The directory name should look something like this. "C:\users\insertUsername\Documents\VIPMud." Paste the downloaded folders content, then either restart VIPMud, or use the #reload command.
 
 Upon first run of the pack, you must do the following things.
-You must copy settings.set that is located in the root directory of the downloaded soundpack. This file must go in Cosmic Rage/misc. Failing to copy this file will load the pack with very odd settings values, including file volume being all the way at 100 percent. Users who already have settings how they'd like, feel free to ignore this file unless you happen to lose all of your settings data.
+You must copy settings.set that is located in the root directory of the downloaded soundpack. This file must go in Cosmic Rage/misc. Failing to copy this file will load the pack with very odd settings values, including audio volume being all the way at 100 percent. Users who already have settings how they'd like, feel free to ignore this file unless you happen to lose all of your settings data.
 Launch VIPMud. You will then need to set up your settings like buffers, volumes, toggles, ETC. Please see the help files for aliases and keys. You will then need to save your packs settings with control-s.
 ***notice***. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not Snapps fault if you fail to do this. It's also a good idea to backup your buffer settings and general pack settings after you get them how you'd like.
 If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the instilation instructions outlined above  and apply any changes necessary before getting ahold of snapp.
@@ -58,14 +54,14 @@ If you have downloaded the zip version of the pack, first extract the folder, th
  
 A note about updates.
 
-The Dropbox shared folder is updated at least once a day, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
+The Dropbox shared folder is updated as soon as changes to code or sounds are made, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
 
 Misc notes:
 
 A note about ambience.
 In some cases, ambience fails to work for some players. This is do to the fact that they have brief mode enabled. If brief mode is enabled, ambience will not work correctly. To fix this, type brief, then disable hiding of discriptions.
 To access the configuration manager, please hit "F-2."
-If by chance you find that a sound has gotten stuck, or is not acting as expected, you may use the key Control-F11 to stop all currently playing sounds.
+If by chance you find that a sound has gotten stuck, or is not acting as expected, you may use the alias StopSound, or the key Control-F11 to stop all currently playing sounds.
 If you hear that gagging is in effect, please hit control-slash. This will force VIP to ungag your speech.
 To view any of the help files related to this soundpack, you may either use the alias SpHelp, or use the key alt-shift-H.
 To see the last change that was posted, without opening the changelog, you can either type SpVersion, or use the key Alt-V.
@@ -73,11 +69,11 @@ If you have a suggestion you'd like to see added to the pack, this can be  done 
 If you have a bug that you need to report, this can be done by using the alias "SpBug."  Please be as detailed as possible in your bug report. Try to include the error, the command you sent that gave you the error, and any other misc information.  Bugs that contain just an error, or two words, are likely to be deleted as Snapp can't fix most bugs simply based off of this.
 
 ***Notice***.
-If you're seeing errors and you have not updated your pack prior to October 10th, you must totally replace the intire Cosmic Rage directory, get rid of Cosmic Rage/misc/settings.set, then resave. This is do to how options are now configured. Failing to do this causes the pack to try to read settings entries that are not in use any longer.
+If you're seeing errors and you have not updated your pack prior to October 10, 2018, you must totally replace the intire Cosmic Rage directory, get rid of Cosmic Rage/misc/settings.set, then resave. This is do to how options are now configured. Failing to do this causes the pack to try to read settings entries that are not in use any longer.
 If you have updated, and are not seeing errors when toggling options or changing volumes, you've nothing to worry about. This issue only seems to effect a small number of users.
 
 If you have any questions or concerns, Please first take a look at the Help Files directory. More than likely your question will be answered in one of those documents. If not, feel free to get a hold of Snapp via an OTR link or over the soundpacks channel in the game. To enable the soundpacks channel, please type spon from within the mud. To disable the channel use the command spoff. To establish an OTR link, please type olink then hit enter. You will then be presented with an edit field. Just type snapp and hit enter. Snapp will accept your link request as soon as possible. If more help is needed with OLinks, please read the help file "Communicating out of character" from within the muds help system.
-If Snapp is not around to answer your questions, you are more than welcome to send him mail on the mud and he will get back with you as soon as possible.
+If Snapp is not around to answer your questions, likely someone is on the soundpacks channel who can. If not, you are more than welcome to send him mail on the mud and he will get back with you as soon as possible.
 
 *** compatibility ***
 This soundpack supports the Nathan Tech VipMud soundpack installer.

@@ -1,3 +1,24 @@
+689. Changed the way Soundpack announcements look.
+Changed on Sunday, December 30, 2018 at 04:41 AM CST.
+Copy Cosmic Rage/misc/Soundpack.set.
+688. I hope you all had a wonderful Christmas. The Christmas greeting and Christmas intro music have been removed until December of 2019.
+Changed on Sunday, December 30, 2018 at 04:18 AM CST.
+Copy Cosmic Rage.set and Cosmic Rage/music/IntroMusic.
+687. Babies now have laughing sounds. More to come shortly.
+Changed on Sunday, December 30, 2018 at 03:38 AM CST.
+Copy Cosmic Rage/misc/babies.set and sounds/general/baby.
+686. Added a sound for vending machines.
+Changed on Saturday, December 29, 2018 at 05:56 AM CST.
+Copy Cosmic Rage/misc/misc.set and sounds/general/misc/Vending Machine.wav.
+685. Fixed a bug with recharging ships and gagged an unneeded message.
+Changed on Friday, December 28, 2018 at 10:44 PM CST.
+Copy Cosmic Rage/ships/ships.set and ships2.set
+684. Updated the Readme a bit.
+Changed on Thursday, December 27, 2018  at 06:22 AM CST.
+Copy Cosmic Rage/Help files.
+683. Made several changes to how the pack deals with ambience code. It should work at least a bit better now.
+Changed on Tuesday, December 25, 2018 at 12:53 AM CST.
+Copy Cosmic Rage/misc/MainAmbience.set.
 682. Babies eating should now, finally, be, fixed!
 Changed on Saturday, December 22, 2018 at 2:24 PM CST.
 Copy Cosmic Rage/misc/babies.set.

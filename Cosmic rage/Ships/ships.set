@@ -337,8 +337,8 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #trigger {An urgent siren shrieks through the ship as a synthesised voice announces: "Intruder alert. Intruder alert."} {playsound {Cosmic Rage/ships/misc/Intruder.wav} @vol}
 #trigger {A low, pulseing siren echoes throughout the ship as a synthesised voice announces: "Ratika detected. Ratika detected."} {playsound {Cosmic Rage/ships/misc/RatikaDetected.wav} @vol}
 #trigger {*The computer announces: "External camera enabled."} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
-#TRIGGER {A humming sound fills the ship as the recharging sequence begins.} {loopsound {cosmic rage/ships/misc/recharge.wav} @vol; #var rechHandle %playhandle; #var rech 1};
-#TRIGGER {The humming sound ceases as the ship finishes recharging.} {
+#TRIGGER {A humming sound fills the ship as the recharging sequence begins.} {#gagline all; loopsound {cosmic rage/ships/misc/recharge.wav} @vol; #var rechHandle %playhandle; #var rech 1};
+#TRIGGER {The humming sound ceases as the ship finishes recharging.} {#gagline all; 
 #if {@rech = 1} {
 #pc @rechHandle stop; #var rech 0}}
 #trigger {On screen, you see the grabber of the ship snatch the pod up, and quickly yank it in.} {#gagline all; playsound {Cosmic Rage/ships/misc/Pressurize.wav} @vol}

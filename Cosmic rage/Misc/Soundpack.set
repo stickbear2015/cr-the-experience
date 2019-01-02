@@ -53,7 +53,7 @@
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #key {Control-shift-R} {SpReload}
-#trigger {*This is a system announcement from Snapp Blue scales Cosmic Rage Experience. *} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
+#trigger {*Has just posted an announcement!*} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
 #trigger {[[]Soundpacks], A change was just posted to Snapp Blue Scales Cosmic Rage Experience} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
 #alias {AutoSaveSettings} {#File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};

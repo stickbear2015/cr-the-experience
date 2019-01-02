@@ -17,3 +17,4 @@
 #trigger {You gently lift * to your shoulder and burp *} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyEat = "Enabled"} {
 #pc @BabyEathandle stop;
 #var BabyEat "Disabled"}} 
+#trigger {* giggles happily.} {playsound {Cosmic Rage/general/baby/babylaugh1.wav} @vol}

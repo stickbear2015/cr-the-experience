@@ -78,7 +78,7 @@ playsound {cosmic rage/general/comms/G2A.wav} @CommsVol; #additem GroundToAir %0
 playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Chargen]*} {playsound {cosmic rage/general/comms/Chargen.wav} @CommsVol; #additem Chargen %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chargen.log};#write 1 %0;#close 1}}
 #trigger {[[]Mentor]*} {playsound {cosmic rage/general/comms/Mentor.wav} @CommsVol; #additem Mentor %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Mentor.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {* flashes * indicating you have a new mail titled *} {playsound {cosmic rage\general\comms\mail.wav} @CommsVol; #additem InfoComputerNotifications %0}
+#trigger {* flashes * indicating you have a new mail titled *} {playsound {cosmic rage\general\comms\mail.wav} @CommsVol; #additem Notices %0}
 #trigger {[[]News]*:*} {playsound {cosmic rage\general\comms\onews.wav} @CommsVol; #additem ONews %0}
 #TRIGGER {[[]* to *], *} {#if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage\general\comms\PrivOOCCom.wav} @CommsVol; #additem OOCPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1}} {playsound {Cosmic Rage\general\comms\PrivCom.wav} @CommsVol; #additem ICPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}}} {} AnyCase
 #trigger {[[]Trade]*} {playsound {cosmic rage/general/comms/trade.wav} @CommsVol; #additem Trade %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Trade.log};#write 1 %0;#close 1}} {} AnyCase
@@ -148,3 +148,4 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Clanchat], General clans announcement: *} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #additem Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {Information: closest beacon: *} {#additem SOS %0}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} 80; #additem Htpc %0}
+#Alias {mf} {Musicfm %0} {}

@@ -270,7 +270,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You flap your wings, heading for *} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} 100; #if {@FlyingStart = 1} {
 #pc @FlyingStarthandle stop;
 #var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
-#trigger {You swoop down to land.} {playsound {Cosmic Rage/general/misc/DragonLanding.wav} 100; #if {@Flying = 1} {
+#trigger {*swoop* down to land*} {playsound {Cosmic Rage/general/misc/DragonLanding.wav} 100; #if {@Flying = 1} {
 #pc @Flyinghandle stop;
 #var Flying 0}}
 #trigger {*tap* shoulder.} {playsound {Cosmic Rage/general/misc/Tap.wav.} 100}
@@ -289,3 +289,10 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {There is a rattle and then a thunk as * drops down into the tray of *} {#gagline all; playsound {Cosmic Rage/general/misc/Vending Machine.wav} 90}
 #trigger {You tap on the icon of * on * display before resting your *against the scanner.} {#gagline all}
 #trigger {* taps an icon on the screen of * vending machine before resting * on the scanner.} {#gagline all}
+#trigger {* unfurls * wings and launches into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} 100; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
+#trigger {* flaps * wings, heading towards a destination.} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} 100; #if {@FlyingStart = 1} {
+#pc @FlyingStarthandle stop;
+#var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
+#trigger {* swoops in for a landing.} {playsound {Cosmic Rage/general/misc/DragonLanding.wav} 100; #if {@Flying = 1} {
+#pc @Flyinghandle stop;
+#var Flying 0}}

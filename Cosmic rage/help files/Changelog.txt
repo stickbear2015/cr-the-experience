@@ -1,3 +1,24 @@
+696. Factory announcements for players teleporting to and from the factory should be fixed. I've also changed the factory PA sound to a new sound created by one of the players.
+Changed on Sunday, January 06, 2019 at 01:46 PM CST.
+Copy Cosmic Rage/misc/factory.set and sounds/general/factory/PA.wav.
+
+Changed on Saturday, January 05, 2019 at 06:34 PM CST.
+Copy Cosmic Rage/misc/trains.set
+694. Credits, Sutar Silvery blue designation: Gagged a few lines with bio harvesting.
+Changed on Saturday, January 05, 2019 at 03:41 PM CST.
+Copy Cosmic Rage/activities/BioHarvesting.set.
+693. Credits, Octavia: The pack should no longer throw errors when a vehicle runs out of charge.
+Changed on Saturday, January 05, 2019 at 11:03 AM CST.
+Copy Cosmic Rage/Vehicle/Vehicle.set.
+692. Added the MF alias to use the Musicfm channel as users were typing music by mistake and genorating VIPMud errors.
+Changed on Thursday, January 03, 2019 at 08:03 PM CST.
+Copy Cosmic Rage/misc/comms.set.
+691. People will now hear sounds for flying forms flying about. This also works if someone is riding the one who is flying. Flying sounds should also no longer get stuck.
+Changed on Thursday, January 03, 2019 at 01:53 PM CST.
+Copy Cosmic Rage/misc/misc.set.
+690. Mail notifications are now shown in the notices buffer.
+Changed on Thursday, January 03, 2019 at 06:12 AM CST.
+Copy Cosmic Rage/misc/comms.set.
 689. Changed the way Soundpack announcements look.
 Changed on Sunday, December 30, 2018 at 04:41 AM CST.
 Copy Cosmic Rage/misc/Soundpack.set.

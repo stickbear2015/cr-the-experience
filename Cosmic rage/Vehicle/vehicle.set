@@ -142,9 +142,7 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
-#trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {
-#if {@roomsoundplaying = 1} {
-#pc @vehiclehandle stop; #Var RoomSoundPlaying 0}; loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #Var VehicleHandle %Playhandle; #var RoomSoundPlaying 1; #var currentroom "off"}
+#trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {#pc 0 stop; loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol}
 #trigger {*lets out a short chirp and its lights flash *} {
 #if {%ifWord(once.,%2," ")} {
 playsound {cosmic rage/vehicle/chirpOnce.wav} @vol};

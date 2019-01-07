@@ -36,7 +36,7 @@
 #trigger {You cough*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/cough*5.wav} @vol}}
 #trigger {*coughs*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/cough*5.wav} @vol}}
 #trigger {You gag.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/gag*2.wav} @vol}} {} AnyCase
-#trigger {* gags *} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/gag*2.wav} @vol}}
+#trigger {* gags.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/gag*2.wav} @vol}}
 #trigger {You snore.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/snore.wav} @vol}}
 #trigger {*snores*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/snore.wav} @vol}}
 #trigger {You snort.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/snort.wav} @vol}}

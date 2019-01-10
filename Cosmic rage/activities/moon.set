@@ -37,3 +37,4 @@ playsound {cosmic rage/activities/moon/grind.wav} @vol}
 #TRIGGER {The handle doesn't budge.} {playsound {Cosmic Rage/activities/moon/Stuck.wav} @vol} {} AnyCase
 #TRIGGER {The lever slams back up, nearly smacking you in the face!} {playsound {Cosmic Rage/ships/misc/Lever*5.wav} @vol} {} AnyCase
 #TRIGGER {some citizens stride in and begin construction on a new building.} {playsound {Cosmic Rage/activities/moon/construction.wav} @vol} {} AnyCase
+#trigger {You hear a whir and then a slight ping.} {playsound {Cosmic Rage/activities/mechanicalMining/thunk.wav} @vol}

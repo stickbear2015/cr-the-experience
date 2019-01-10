@@ -149,3 +149,4 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {Information: closest beacon: *} {#additem SOS %0}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} 80; #additem Htpc %0}
 #Alias {mf} {Musicfm %0} {}
+#trigger {* lets out a short fanfare informing you that a new petition has been made publicly available.} {playsound {Cosmic Rage/general/comms/Petition.wav} 80; #additem InfoComputerNotifications %0; #additem Notices %0} {} AnyCase

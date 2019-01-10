@@ -126,8 +126,6 @@
 
 ;misc.
 #TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#pc 0 stop; #key {alt-V} {SpVersion}}
-#TRIGGER {lag.test} {#unalarm LagTest;
-#sub {You have %eval(@LagAmount * 100) Milliseconds lag.}} {} AnyCase
 #alias {onDisconnect} {
 AutoSaveSettings; AutoSaveBuffers; #say {Settings saved!} voiceonly; #pc 0 stop; #play {cosmic rage/general/misc/quit.wav} @vol}
 #trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} 90}

@@ -1,7 +1,19 @@
+700. Wow! Change 700 already! The brag and library channel sounds are much much louder now.
+Changed on Tuesday, January 08, 2019 at 08:08 PM CST.
+Copy Sounds/general/comms/brag.wav and library.wav
+699. Credits, Hunter Trask: A sound has been added letting you know when a new petition has been made publicly available. This message will also be added to both the notices buffer and Info computers buffer.
+Changed on Tuesday, January 08, 2019 at 07:18 PM CST.
+Copy Cosmic Rage/misc/comms.set and sounds/general/comms/Petition.wav.
+698. Totally reworked the code that is used to check connection lag. It is much much more accurate now!
+Changed on Tuesday, January 08, 2019 at 04:03 PM CST.
+Copy Cosmic Rage.set and Cosmic Rage/misc/ConfigurationManager.set.
+697. Cleaned up the code used for clearing either the items from one buffer or all of them at once. It should no longer throw errors.
+Changed on Monday, January 07, 2019 at 07:56 PM CST.
+Copy Cosmic Rage/misc/buffers.set.
 696. Factory announcements for players teleporting to and from the factory should be fixed. I've also changed the factory PA sound to a new sound created by one of the players.
 Changed on Sunday, January 06, 2019 at 01:46 PM CST.
 Copy Cosmic Rage/misc/factory.set and sounds/general/factory/PA.wav.
-
+695. Boarding and leaving trains should now stop all other music and ambience.
 Changed on Saturday, January 05, 2019 at 06:34 PM CST.
 Copy Cosmic Rage/misc/trains.set
 694. Credits, Sutar Silvery blue designation: Gagged a few lines with bio harvesting.

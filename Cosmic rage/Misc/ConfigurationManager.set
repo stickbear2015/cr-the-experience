@@ -235,3 +235,5 @@ echo Lag.test} {}
 #alias toggleReboot {#if {@RebootSounds = "Enabled"} {#var RebootSounds "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no  longer hear reboot warnings.} voiceonly} {#var RebootSounds "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now  hear reboot warnings.} voiceonly}}
 #alias toggleSoundpackIntroMessage {#if {@SpIntroMessage = "Enabled"} {#var SpIntroMessage "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no  longer see the intro message letting you know what needs to be done if you're a first time pack user} voiceonly} {#var SpIntroMessage "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now see the intro message letting you know what needs to be done if you're a first time pack user.} voiceonly}}
 #alias StopSound {#pc 0 stop; #pc %MP3Loop stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} voiceonly}
+#TRIGGER {lag.test} {#unalarm LagTest;
+#gagline all; #say {It's estimated that You have %eval(@LagAmount * 100) Milliseconds lag.} system} {} AnyCase

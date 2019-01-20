@@ -46,6 +46,7 @@ Toggle social sounds. This option is currently @SocialSounds :toggleSocialSounds
 Toggle social text. This option is currently @SocialText. When this option is enabled, you will not see text when you use socials:toggleSocialText|
 Toggle Reboot sounds. This option is currently @RebootSounds: toggleReboot|
 Toggle soundpack intro text. This option is currently @SpIntroMessage :toggleSoundpackIntroMessage|
+Toggle bio plasma regenoration sounds. This option is currently @TPR :TPR|
 Check the amount of lag between your connection and the game. Note. This value may not always be 100 percent accurate:lag|
 Submit a soundpack bug report:SpBug|
 Submit a soundpack suggestion:SpSuggest|
@@ -237,3 +238,4 @@ echo Lag.test} {}
 #alias StopSound {#pc 0 stop; #pc %MP3Loop stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} voiceonly}
 #TRIGGER {lag.test} {#unalarm LagTest;
 #gagline all; #say {It's estimated that You have %eval(@LagAmount * 100) Milliseconds lag.} system} {} AnyCase
+#alias TPR {#if {@TPR= "Enabled"} {#var TPR "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no  longer hear bio plasma regenoration sounds.} voiceonly} {#var TPR "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now hear bio plasma regenoration sounds.} voiceonly}}

@@ -3,13 +3,13 @@
 #alias spp {>@soundpacks} {}
 #alias spbug {#gagon; spp;snapp;bug} {}
 #alias spsuggest {#gagon; spp;snapp;suggest}
-#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thanks for submitting your suggestion! A pack admin will work on it shortly!}}
+#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thank you for submitting this suggestion! Snapp will work on it shortly and reach out if needed!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
-#trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you. If needed, you will be reached for more information.}}
-#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this report! A pack admin will be looking into it as soon as possible. If needed, you may be reached for more information.}}
+#trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you.}}
+#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this bug report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message will not help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. If possible, try to include the steps you took that produced the error or bug. This will expedite the report getting resolved. Thank you.}}
 
-#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} voiceonly}}
+#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} system}}
 ;Saving settings.
 
 #alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffer list  have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
@@ -49,12 +49,12 @@
 #Write 6 @LaunchText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @RebootSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SPIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SpIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #key {Control-shift-R} {SpReload}
 #trigger {*Has just posted an announcement!*} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
-#trigger {[[]Soundpacks], A change was just posted to Snapp Blue Scales Cosmic Rage Experience} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
 #alias {AutoSaveSettings} {#File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -91,8 +91,9 @@
 #Write 6 @SilentConflict @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @LaunchText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SPIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SpIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 ;Reboot messages.
 #trigger {*Cosmic Rage is going down for maintenance in the next * minutes*} {#if {@RebootSounds = "Enabled"} {#if {%ifWord(30,%2," ")} {playsound {cosmic rage/general/misc/Reboot 30 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(15,%2," ")} {playsound {cosmic rage/general/misc/Reboot 15 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}; #if {%ifWord(10,%2," ")} {playsound {cosmic rage/general/misc/Reboot 10 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(5,%2," ")} {playsound {cosmic rage/general/misc/Reboot 5 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(3,%2," ")} {playsound {cosmic rage/general/misc/Reboot 3 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(2,%2," ")} {playsound {cosmic rage/general/misc/Reboot 2 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(1,%2," ")} {playsound {cosmic rage/general/misc/Reboot 1 minute.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}}}

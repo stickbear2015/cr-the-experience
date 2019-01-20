@@ -55,7 +55,7 @@ playsound {cosmic rage/general/comms/faze.wav} @Vol}
 #TRIGGER {[[]Socials] *} {playsound {cosmic rage/general/comms/socials.wav} @CommsVol; #additem Socials %0; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Arena]*} {playsound {cosmic rage/general/comms/arena.wav} @CommsVol; #additem Arena %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Arena.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Music FM] *} {playsound {cosmic rage/general/comms/musicFm.wav} @CommsVol; #additem MusicFM %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char MusicFm.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]Library] *:*} {playsound {cosmic rage/general/comms/library.wav} @CommsVol; #additem Library %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Library.log};#write 1 %0;#close 1}}
+#trigger {[[]Library] *} {playsound {cosmic rage/general/comms/library.wav} @CommsVol; #additem Library %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Library.log};#write 1 %0;#close 1}}
 #trigger {[[]Languages] *:*} {
 playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Brag]*} {playsound {cosmic rage/general/comms/brag.wav} @CommsVol; #additem brag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Brag.log};#write 1 %0;#close 1}} {} AnyCase
@@ -72,7 +72,7 @@ playsound {cosmic rage/general/comms/movement.wav} @CommsVol; #additem Movement 
 #trigger {[[]G2A] *} {
 playsound {cosmic rage/general/comms/G2A.wav} @CommsVol; #additem GroundToAir %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char G2A.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Events]:*} {playsound {cosmic rage/general/comms/event.wav} @CommsVol}
-#TRIGGER {[[]Polls]*} {playsound {cosmic rage/general/comms/poll.wav} @CommsVol}
+#TRIGGER {[[]Polls]*} {playsound {cosmic rage/general/comms/poll.wav} @CommsVol; #additem Notices %0}
 #TRIGGER {[[]HTPL]*} {playsound {cosmic rage/general/comms/htpl.wav} @CommsVol; #additem HTPL %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char HTPL.log};#write 1 %0;#close 1}} {}
 #trigger {[[]Help]*} {
 playsound {cosmic rage/general/comms/help.wav} @CommsVol}

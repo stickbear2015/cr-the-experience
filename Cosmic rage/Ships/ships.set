@@ -13,7 +13,7 @@
 #TRIGGER {Cargo bay information:} {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
 #trigger {Cargo information:} {
 playsound {cosmic rage/ships/computer/display*4.wav} @vol}
-#trigger {Charge readout: *} {
+#trigger {You tap the screen, turning the status report to the charge readout.} {
 playsound {cosmic rage/ships/computer/display*4.wav} @vol}
 #trigger {Current charge: *} {
 playsound {cosmic rage/ships/computer/display*4.wav} @vol}
@@ -357,3 +357,4 @@ playsound {cosmic rage/ships/misc/iclose.wav} @vol}
 #trigger {You tap a small button.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/switch.wav} @vol}
+#trigger {You hear a slight grinding noise as the warp core slows down.} {playsound {cosmic rage/ships/movement/deceleration.wav} @vol}

@@ -1,3 +1,30 @@
+709. Credits, Hunter Trask: Checking charge status is fixed.
+Changed on Monday, January 21, 2019 at 6:58 PM CST.
+Copy Cosmic Rage/ships/ships.set.
+708. Using the alias TPR, you can now toggle bio plasma regenoration sounds. The state of this toggle is saved in your packs settings as well.
+Changed on Saturday, January 19, 2019 at 4:30 AM CST.
+Copy Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set, misc.set and soundpack.set.
+707. Made several changes to a few of the buffers in the pack, and added two more. When you spend or recieve credits, get points, raise your level, or your skill timer resets, those events are added to a new buffer, and message board posts are added to another new buffer. Also, several things now also show up in the notices buffer. One example is Pole notifications.
+Changed on Friday, January 18, 2019 at 8:26 PM CST.
+Copy Cosmic Rage/misc/buffers.set, comms.set and misc.set.
+706. Factory PA actually respects comms volume now. You all may kill me later.
+Changed on Wednesday, January 16, 2019 at 9:29 PM CST.
+Copy Cosmic Rage/misc/factory.set.
+705. The sounds for IC and OOC private comms have been changed. I hope you enjoy.
+Changed on Wednesday, January 16, 2019 at 9:17 PM CST.
+Copy Cosmic Rage/general/comms/Privcom.wav and PrivOOCCom.wav.
+704. You asked for it, I've been working on it for months! You have a buffer for helper drones now! i know the buffer has been in the buffers list, but it actually captures items now! I hope you all enjoy!
+Changed on Monday, January 14, 2019 at 8:23 PM CST.
+Copy Cosmic Rage/misc/misc.set.
+703. Credits, Dealan Silver scale: Fixed quite a few bugs with lifts. They should no longer throw errors, and the code looks much more beautiful. If any other bugs are found, report is your friend.
+Changed on Monday, January 14, 2019 at 3:14 PM CST.
+Copy Cosmic Rage/misc/misc.set.
+702. Removed my last change as it had no effect once VIPMud was restarted.
+Changed on Saturday, January 12, 2019 at 4:38 PM CST.
+Copy Cosmic Rage.set.
+701. SC now works as it should on the mud. There was a VIPMud alias that was conflicting. If you used the SC alias to find text, it has been reconfigured to SCC.
+Changed on Saturday, January 12, 2019 at 4:14 PM CST.
+Copy Cosmic Rage.set.
 700. Wow! Change 700 already! The brag and library channel sounds are much much louder now.
 Changed on Tuesday, January 08, 2019 at 08:08 PM CST.
 Copy Sounds/general/comms/brag.wav and library.wav

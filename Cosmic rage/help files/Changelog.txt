@@ -1,10 +1,16 @@
+711. Finally Flying sounds for all forms are fixed. That only took 4 months to figure out now didn't it?
+Changed on Tuesday, February 5, 2019 at 8:44 PM CST.
+Copy Cosmic Rage/misc/misc.set
+710. Fixed a large bug with the soundpack intro text that would let users know what to do if they were a first time user of the pack. The state of that toggle will save correctly from now on.
+Changed on Wednesday, January 23, 2019 at 9:29 PM CST.
+Copy Cosmic Rage.set
 709. Credits, Hunter Trask: Checking charge status is fixed.
 Changed on Monday, January 21, 2019 at 6:58 PM CST.
 Copy Cosmic Rage/ships/ships.set.
 708. Using the alias TPR, you can now toggle bio plasma regenoration sounds. The state of this toggle is saved in your packs settings as well.
 Changed on Saturday, January 19, 2019 at 4:30 AM CST.
 Copy Cosmic Rage.set, Cosmic Rage/misc/ConfigurationManager.set, misc.set and soundpack.set.
-707. Made several changes to a few of the buffers in the pack, and added two more. When you spend or recieve credits, get points, raise your level, or your skill timer resets, those events are added to a new buffer, and message board posts are added to another new buffer. Also, several things now also show up in the notices buffer. One example is Pole notifications.
+707. Made several changes to a few of the buffers in the pack, and added two more. When you spend or receive credits, get points, raise your level, or your skill timer resets, those events are added to a new buffer, and message board posts are added to another new buffer. Also, several things now also show up in the notices buffer. One example is Pole notifications.
 Changed on Friday, January 18, 2019 at 8:26 PM CST.
 Copy Cosmic Rage/misc/buffers.set, comms.set and misc.set.
 706. Factory PA actually respects comms volume now. You all may kill me later.

@@ -1,3 +1,6 @@
+712. Toggling movement of planetary pods will now save and load correctly instead of not at all.
+Changed on Saturday, February 9, 2019 at 5:51 AM CST.
+Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
 711. Finally Flying sounds for all forms are fixed. That only took 4 months to figure out now didn't it?
 Changed on Tuesday, February 5, 2019 at 8:44 PM CST.
 Copy Cosmic Rage/misc/misc.set

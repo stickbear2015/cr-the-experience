@@ -123,6 +123,7 @@
 #read 6 SpIntroMessage 37;
 #read 6 SocialText 38;
 #read 6 TPR 39;
+#read 6 SilentPod 40;
 #close 6
 
 ;misc.

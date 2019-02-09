@@ -52,6 +52,7 @@
 #Write 6 @SpIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SilentPod @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #key {Control-shift-R} {SpReload}
 #trigger {*Has just posted an announcement!*} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
@@ -94,6 +95,7 @@
 #Write 6 @SpIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @SilentPod @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 ;Reboot messages.
 #trigger {*Cosmic Rage is going down for maintenance in the next * minutes*} {#if {@RebootSounds = "Enabled"} {#if {%ifWord(30,%2," ")} {playsound {cosmic rage/general/misc/Reboot 30 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(15,%2," ")} {playsound {cosmic rage/general/misc/Reboot 15 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}; #if {%ifWord(10,%2," ")} {playsound {cosmic rage/general/misc/Reboot 10 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(5,%2," ")} {playsound {cosmic rage/general/misc/Reboot 5 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(3,%2," ")} {playsound {cosmic rage/general/misc/Reboot 3 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(2,%2," ")} {playsound {cosmic rage/general/misc/Reboot 2 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(1,%2," ")} {playsound {cosmic rage/general/misc/Reboot 1 minute.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}}}

@@ -77,7 +77,7 @@
 #class vehicleamb enable;
 ;Triggers for connecting to the moo.
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
-#trigger {Welcome to: Cosmic Rage!} {#unkey {alt-V}; version; #say {Welcome to Snapp Blue Scales Cosmic Rage Experience!} Voiceonly; loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol}
+#trigger {Current hosts:*} {#unkey {alt-V}; version; #say {Welcome to Snapp Blue Scales Cosmic Rage Experience!} Voiceonly; loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol} {} AnyCase
 #TRIGGER {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop};
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
 

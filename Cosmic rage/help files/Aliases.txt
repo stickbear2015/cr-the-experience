@@ -70,7 +70,6 @@ TogglePods. Toggle voice output of pod movement.
 GameGag.  Gag or ungag certain Arcade messages. 
 Logging.  Toggle channel messages being stored to files. 
 ErrorToggle.  Toggle hearing of I don't understand that messages. 
-CCToggle.  Toggle hearing of clan conflict messages. 
 Lag.  Check the amount of lag between your connection and the game. Note. This value may not always be 100 percent accurate.
 ToggleLaunchText. Toggle seeing of launching and docking text.
 ToggleSocialSounds. Toggles social sounds.
@@ -80,3 +79,4 @@ Toggle soundpack intro text. ToggleSoundpackIntroMessage
 SPUnload. Unloads your soundpack for debugging purposes. Note. To reload the pack, use either the SPReload alias, or control-shift-R.
 StopSound. Stopps all playing sounds.
 MF. An easier alias to use the Musicfm channel.
+TPR. Toggle bio plasma regenoration sounds.

@@ -40,7 +40,6 @@ Toggle the Small tick sounds letting you know that you are connected to the moo 
 Toggle what the Numpad enters. If this option is disabled, you may use your numpad to enter numbers directly without them effecting your characters movement, vehicle movement or ship movement. This option is currently @numpadon :ToggleNumpad|
 Toggle Channel Logging. This option is currently @ChannelLogging. If this option is enabled, you may use shift-F2 to pull up the list of channels that have been logged.:Logging|
 Toggle I don't understand that messages. This option is currently @GameError :ErrorToggle|
-Toggle clan conflict messages. This option is currently @SilentConflict :CCToggle|
 Toggle launching and docking text. This option is currently @LaunchText :toggleLaunchText|
 Toggle social sounds. This option is currently @SocialSounds :toggleSocialSounds|
 Toggle social text. This option is currently @SocialText. When this option is enabled, you will not see text when you use socials:toggleSocialText|
@@ -217,7 +216,6 @@ Reload the soundpack:SpReload| View the list of available help files for the sou
 #alias {lag} {#var LagAmount 0;
 #alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
 echo Lag.test} {}
-#alias {CCToggle} {#if {@SilentConflict = "Enabled"} {#var SilentConflict "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will now see clan conflict messages.} Voiceonly} {#var SilentConflict "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will no longer see clan conflict messages.} voiceonly}}
 #alias {tts}  {
 #if {@Speech = "Disabled"} {
 #var Speech "Enabled";
@@ -237,5 +235,5 @@ echo Lag.test} {}
 #alias toggleSoundpackIntroMessage {#if {@SpIntroMessage = "Enabled"} {#var SpIntroMessage "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no  longer see the intro message letting you know what needs to be done if you're a first time pack user} voiceonly} {#var SpIntroMessage "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now see the intro message letting you know what needs to be done if you're a first time pack user.} voiceonly}}
 #alias StopSound {#pc 0 stop; #pc %MP3Loop stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} voiceonly}
 #TRIGGER {lag.test} {#unalarm LagTest;
-#gagline all; #say {It's estimated that You have %eval(@LagAmount * 100) Milliseconds lag.} system} {} AnyCase
+#gagline all; #say {It's estimated that You have %eval(@LagAmount * 100) Milliseconds lag.} voiceonly} {} AnyCase
 #alias TPR {#if {@TPR= "Enabled"} {#var TPR "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {You will no  longer hear bio plasma regenoration sounds.} voiceonly} {#var TPR "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {You will now hear bio plasma regenoration sounds.} voiceonly}}

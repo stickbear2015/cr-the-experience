@@ -15,3 +15,5 @@
 #trigger {There is a deep boom as the * beam cannons fire.} {playsound {cosmic rage/ships/combat/beam.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#trigger {You notice the ship is at red alert!} {#gagline all; #if {@CMusic = "Enabled"} {
+loopsound {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatmusicHandle %playHandle; #var combatmusicPlaying 1; Loopsound {Cosmic Rage/ships/combat/RedAlert.wav} @CVol; #var RedAlertStarthandle %playhandle; #var RedAlertStart 1}}

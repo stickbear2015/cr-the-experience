@@ -59,7 +59,7 @@ playsound {cosmic rage/general/comms/faze.wav} @Vol}
 #trigger {[[]Languages] *:*} {
 playsound {cosmic rage/general/comms/lang.wav} @CommsVol; #additem Languages %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Languages.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Brag]*} {playsound {cosmic rage/general/comms/brag.wav} @CommsVol; #additem brag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Brag.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]clanchat], : *} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #additem Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]clanchat]*} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #additem Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You turn * translator} {
 #if {%ifWord(on,%1," ")} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
@@ -144,9 +144,16 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/OOCPa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; #additem APilotsParody %0} {} AnyCase
 #trigger {[[]Origins] *} {playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; #additem Origins %0}
-#trigger {[[]Clanchat], The conflict: *} {#if {@SilentConflict = "Enabled"} {playsound {Cosmic Rage/general/misc/silent.wav} @vol; #gagline all} {playsound {Cosmic Rage/general/comms/ClanChat.wav} @CommsVol; #additem ClanConflict %0}}
-#trigger {[[]Clanchat], General clans announcement: *} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #additem Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {Information: closest beacon: *} {#additem SOS %0}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} 80; #additem Htpc %0}
 #Alias {mf} {Musicfm %0} {}
 #trigger {* lets out a short fanfare informing you that a new petition has been made publicly available.} {playsound {Cosmic Rage/general/comms/Petition.wav} 80; #additem InfoComputerNotifications %0; #additem Notices %0} {} AnyCase
+#trigger {Languages *} {#if {%ifWord(enabled.,%1," ")} {
+playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
+#if {%ifWord(disabled.,%1," ")} {
+playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
+#trigger {Library enabled.} {playsound {cosmic rage/general/comms/activate.wav} @CommsVol}
+#trigger {origins *} {#if {%ifWord(enabled.,%1," ")} {
+playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
+#if {%ifWord(disabled.,%1," ")} {
+playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}

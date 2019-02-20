@@ -1,3 +1,33 @@
+722. Sounds now play when you toggle the origins channel.
+Changed on Tuesday, February 19, 2019 at 6:37 PM CST.
+Copy Cosmic Rage/misc/comms.set.
+721. Raising of ranks is fixed.
+Changed on Monday, February 18, 2019 at 6:38 AM CST.
+Copy Cosmic Rage/misc/misc.set.
+720. ***Importaint change***. You can now use the support command again without it trying to load the soundpack and do other bad things.
+Changed on Saturday, February 16, 2019 at 4:01 AM CST.
+Copy Cosmic Rage.set.
+719. It is advised that anyone running this soundpack update as soon as possible as this change effects everyone. I've fixed the pack loading for the last time I hope. It seems the intro text to the game changes from time to time. The text changing effected settings being loaded as well as some other background opperations.
+Changed on Friday, February 15, 2019 at 8:37 AM CST.
+Copy Cosmic Rage.set.
+\718. When boarding a ship that is on red alert, the packs code is now smart enough to figure this out.
+Changed on Thursday, February 14, 2019 at 12:05 PM CST.
+Copy Cosmic Rage/ships/shipCombat2.set.
+717. Exeting ships will now no longer throw errors. If it does, smack Shrukin.
+Changed on Thursday, February 14, 2019 at 11:49 AM CST.
+Copy Cosmic Rage/ships/ships.set.
+716. The pack will now load correctly. Seems something got changed that I wasn't aware of. As well, all settings will now save and load correctly.
+Changed on Thursday, February 14, 2019 at 11:15 AM CST.
+Copy Cosmic Rage.set.
+715. For now, clan conflict can no longer be toggled. This has been removed do to it causing a few issues for some users.
+Changed on Sunday, February 10, 2019 at 9:30 AM CST.
+Copy Cosmic Rage/Help files, Cosmic Rage/misc/comms.set and Cosmic Rage/misc/ConfigurationManager.set.
+714. You no longer need to hit enter when clearing either a single buffer, or all of your buffers.
+Changed on Saturday, February 9, 2019 at 7:48 PM CST.
+Copy Cosmic Rage/misc/buffers.set
+713. You no longer need to hit enter when checking your lag.
+Changed on Saturday, February 9, 2019 at 7:44 PM CST.
+Copy Cosmic Rage/misc/ConfigurationManager.set
 712. Toggling movement of planetary pods will now save and load correctly instead of not at all.
 Changed on Saturday, February 9, 2019 at 5:51 AM CST.
 Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.

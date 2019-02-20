@@ -57,10 +57,7 @@ playsound {cosmic rage/ships/misc/garage.wav} @vol};
 #TRIGGER {You feel a slight swaying as the ship is hauled up and onto a landing pad.} {#gagline all;
 playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 #TRIGGER  {* to * you are clear to land.} {playsound {cosmic rage/ships/Com/somethingToShip.wav} @vol};
-#TRIGGER {You disembark.} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/ExitShip.wav} @vol; #if {@combatMusicPlaying = 1} {
-#pc @combatMusicHandle stop;
-#var combatMusicPlaying 0}}
-
+#TRIGGER {You disembark.} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/ExitShip.wav} @vol}
 #TRIGGER {You board *} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/BoardShip.wav} @vol}
 #TRIGGER {You hear a dull hum that swiftly rises to a deafening roar as the subatomic drive activates.} {#gagline all; playsound {cosmic rage/ships/misc/subatomicdrive.wav} @vol};
 #TRIGGER {The airlock hatch opens with a soft woosh.} {#gagline all; playsound {cosmic rage/ships/misc/OpenAirlock.wav} @vol; #PC %PlayHandle Pan %Random(0,4000)} {}
@@ -192,7 +189,7 @@ playsound {cosmic rage/ships/movement/dockingGearRetract.wav} @vol}
 #gagline all}
 #trigger {on screen, you see the ship* hull glow red hot as it passes through the * atmosphere.} {
 #gagline all}
-#trigger {The computer announces: "* salvaged."} {
+#trigger {The computer announces: "* salvaged*"} {
 #if {@gagSal = 1} {
 #gagline voice}}
 #trigger {On screen, you notice as the ship enters * atmosphere.} {

@@ -1,15 +1,15 @@
-#alias Version {soundpack version Snapp Blue Scales Cosmic Rage Experience} {}
-#trigger {Soundpack last change *} {#sub {The latest soundpack change to be posted %1}}
+#alias Version {soundpack version The VIP Cosmic Rage Experience} {}
+#trigger {Soundpack last change *} {#sub {The last change that was posted to the game %1}}
 #alias spp {>@soundpacks} {}
-#alias spbug {#gagon; spp;snapp;bug} {}
-#alias spsuggest {#gagon; spp;snapp;suggest}
+#alias spbug {#gagon; spp;The VIP Cosmic Rage Experience;bug} {}
+#alias spsuggest {#gagon; spp;The VIP Cosmic Rage Experience;suggest}
 #trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thank you for submitting this suggestion! Snapp will work on it shortly and reach out if needed!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
 #trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you.}}
 #trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this bug report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message will not help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. If possible, try to include the steps you took that produced the error or bug. This will expedite the report getting resolved. Thank you.}}
 
-#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm .5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} system}}
+#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} system}}
 ;Saving settings.
 
 #alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffer list  have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
@@ -105,8 +105,7 @@ View the Announcements help file:{#play {Cosmic Rage/general/help/Announcements.
 View the buffers help file:{#play {Cosmic Rage/general/Help/Buffers.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/buffers.txt}}}|
 View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/changelog.txt}}}|
 View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/keys.txt}}}|
-View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
+View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.htm}}}|
 View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
-#alias spversion {spp;#gagon;snapp;info}
-#trigger {Last Change:} {#ungagon}
 #key alt-V {SpVersion}
+#alias spversion {spp;#gagon;3;1}

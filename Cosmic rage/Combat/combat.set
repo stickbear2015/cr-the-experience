@@ -1,4 +1,3 @@
-
 #TRIGGER {You draw a * from *} {
 #if {%ifWord(standard laser pistol,%1," ")} {
 playsound {cosmic rage/general/combat/drawPistol.wav} @vol};
@@ -22,9 +21,7 @@ playsound {cosmic rage/general/combat/handCannon*2.wav} @vol; #abort 1};
 playsound {cosmic rage/general/combat/stungun.wav} @vol; #abort 1};
 playsound {cosmic rage/general/combat/shoot.wav} @vol}
 #TRIGGER {* shoots a sniper at you!} {#gagline voice; playsound {cosmic rage/general/combat/shoot.wav} @vol};
-#trigger {You breathe a colum of brilliantly bright looking fire at *} {
-#gagline all;
-playsound {cosmic rage/general/combat/firebreath.wav} @vol}
+#trigger {You breathe *} {playsound {cosmic rage/general/combat/firebreath.wav} @vol}
 #trigger {You let out a bellowing roar!} {
 #gagline all;
 playsound {cosmic rage/general/combat/dragonRoar.wav} @vol}
@@ -73,7 +70,7 @@ playsound {cosmic rage/general/combat/ray.wav} @vol}
 #trigger {You sheathe * into *} {playsound {Cosmic Rage/general/combat/SheatheSword.wav} @vol; #gagline all}
 #trigger {You draw *} {playsound {Cosmic Rage/general/combat/DrawSword.wav} @vol; #gagline all}
 #trigger {You run * through the heart with *} {playsound {Cosmic Rage/general/combat/RunThrough*2.wav} @vol}
-#trigger {* runs you through with *} {playsound {Cosmic Rage/general/combat/RunThrough*2.wav} @vol}
+#trigger {* run * through with *} {playsound {Cosmic Rage/general/combat/RunThrough*2.wav} @vol}
 #trigger {Shalka brute steps out of the shadows.} {playsound {Cosmic Rage/general/combat/Shalka.wav} @vol}
 #trigger {You pull back a small lever on * and hear a satisfying click as a new round slides into place.} {playsound {Cosmic Rage/general/combat/Reload.wav} @vol; #gagline all}
 #trigger {* pivots and then fires a shell *.} {playsound {Cosmic Rage/general/combat/Fire.wav} @vol; #gagline voice}
@@ -107,3 +104,5 @@ playsound {cosmic rage/general/combat/ray.wav} @vol}
 #pc @HammerStarthandle stop;
 #var HammerStart 0}}
 #trigger {Trying again, you find the metal at least touchable, and tip it into a bucket of water.} {#gagline all; playsound {Cosmic Rage/general/combat/armor/water.wav} 80}
+#trigger {a bright red curtain of flame sweeps into the room.} {playsound {cosmic rage/general/combat/firebreath.wav} @vol}
+#trigger {* snatch* up * and spray* it*} {playsound {Cosmic Rage\ships\fire\extinguisher.wav} @vol}

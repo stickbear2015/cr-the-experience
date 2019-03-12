@@ -1,3 +1,48 @@
+737. You can now log into the mud normally now. Also alt-V and SPVersion work as they should.
+Changed on Monday, March 11, 2019 at 6:30 PM CDT.
+Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
+736. Added sounds for airpods!
+Changed on Thursday, March 7, 2019 at 9:44 AM CST.
+Copy Cosmic Rage.set, Cosmic Rage/combat/Airpods.set and sounds/general/combat.
+735. Added tons of stuff for Ground combat.
+Changed on Thursday, March 7, 2019 at 9:37 AM CST.
+Copy Cosmic Rage.set, Cosmic Rage/combat/GroundCombat.set and sounds/general/combat.
+734. Added mutariansi sounds.
+Changed on Thursday, March 7, 2019 at 9:25 AM CST.
+Copy Cosmic Rage.set, Cosmic Rage/misc/mutariansi.set and sounds/general/mutariansi.
+733. Fixed several bugs with the punch and kick socials. Thanks stormy for letting me know about these.
+Changed on Thursday, March 7, 2019 at 9:24 AM CST.
+Copy Cosmic Rage/misc/socials.set.
+732. You may now use the SpVersion, SpBug and SpSuggest aliases  and alt-V again without it breaking things. Huge oversight on my part.
+Changed on Wednesday, March 6, 2019 at 6:52 AM CST.
+Copy Cosmic Rage/misc/soundpack.set.
+731. Fixed more than a few bugs with combat. Sorry for killing you and setting the dwelling on fire Bokida.
+Changed on Wednesday, March 6, 2019 at 6:51 AM CST.
+Copy Cosmic Rage/combat and sounds/general/combat.
+730. Changed the sounds for dragons flying! Thank you stormy!
+Changed on Tuesday, March 5, 2019 at 11:53 AM CST.
+Copy Sounds/general/misc/DragonFlying.wav and DragonLanding.wav
+729. Bad soundpack. How dare you send stupid commands to the mud that the mud didn't ask for! Go to code timeout for 10 seconds!
+Changed on Sunday, March 3, 2019 at 5:25 PM CST.
+Copy Cosmic Rage/misc/soundpack.set.
+728. Added sounds for moon bases. Thanks to stormy for allowing me to use code from his pack. I'll be working to integrate both mine and his pack into one over the coming weeks.
+Changed on Saturday, March 2, 2019 at 11:24 AM CST.
+Copy Cosmic Rage.set, Cosmic Rage/activities/moonbase.set and sounds/activities/Moonbase.
+727. Changed the file name for your saved buffers. You *Must* save buffer settings again after updating. Not doing so will cause the pack to throw file not found errors. If you have the pack set to auto-load your buffers, you will get an error, feel free to ignore it then save your buffers. You'll be fine after that.
+Changed on Wednesday, February 27, 2019 at 8:28 AM CST.
+Copy Cosmic Rage/misc/buffers.set
+726. The Readme is so much nicer than it once was. Thank you so much to Dealan Silver scale! If you need anything to look beautiful, let him know! His information can be found at the end of the soundpack credits.
+Changed on Monday, February 25, 2019 at 6:15 PM CST.
+Copy Cosmic Rage/Helpfiles.
+725. Soundpack settings will now you know, actually save when leaving the game. Come to think of it, soundpack settings will now just save. You don't want to know how this got broken, but it did, and I blame faylen.
+Changed on Monday, February 25, 2019 at 9:42 AM CST.
+Copy Cosmic Rage/misc/soundpack.set.
+724. Changed the code that is used to grab the last posted change to the pack. You can still use the SPVersion alias once you log in, but not on the login screen. I know it's a bit spammy. I'm trying to work on a fix in the pack code. I may have to get the hosts to figure this one out. If anyone has any ideas, let me know.
+Changed on Friday, February 22, 2019 at 10:25 AM CST.
+Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
+723. Private networks are fixed. The sound has been changed, A new buffer called PN has been added, and the languages channel buffer has been removed.
+Changed on Thursday, February 21, 2019 at 9:36 AM CST.
+Copy Cosmic Rage/misc/buffers.set, comms.set and sounds/general/comms/privnet.wav.
 722. Sounds now play when you toggle the origins channel.
 Changed on Tuesday, February 19, 2019 at 6:37 PM CST.
 Copy Cosmic Rage/misc/comms.set.

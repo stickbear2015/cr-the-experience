@@ -80,3 +80,5 @@ SPUnload. Unloads your soundpack for debugging purposes. Note. To reload the pac
 StopSound. Stopps all playing sounds.
 MF. An easier alias to use the Musicfm channel.
 TPR. Toggle bio plasma regenoration sounds.
+AirPodHelp. Get help with the airpods system.
+FixBuffers. Fixes your buffers if you see file not found errors.

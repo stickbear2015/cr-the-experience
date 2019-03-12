@@ -1,4 +1,4 @@
-#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Languages|Library|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PrivateNetwork|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Spacesuit|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
+#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Library|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Spacesuit|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
 #var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1
@@ -11,7 +11,7 @@
 
 ;aliases for saving and reading preferred buffers.
 
-#alias savebuffers {#file 5 bufferlist.txt; #write 5 "saving...";#close 5;#delfile bufferlist.txt; #file 5 bufferlist.txt; #forall @CurrentBufferList {#write 5 %i};#close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
+#alias SaveBuffers {#file 5 bufferlist.txt; #write 5 "saving...";#close 5;#delfile bufferlist.txt; #file 5 bufferlist.txt; #forall @CurrentBufferList {#write 5 %i};#close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
 #alias AutoSaveBuffers {#file 5 bufferlist.txt; #write 5 "saving...";#close 5;#delfile bufferlist.txt; #file 5 bufferlist.txt; #forall @CurrentBufferList {#write 5 %i};#close 5}
 #alias loadbuffers {#var CurrentBufferList {};#file 5 bufferlist.txt; #var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5; playsound {Cosmic Rage/general/misc/BuffersLoaded.wav} 80}
 #alias SilentlyLoadBuffers {#var CurrentBufferList {};#file 5 bufferlist.txt; #var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5}
@@ -92,3 +92,4 @@ Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.
 Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}
 #alias {ClearAllBuffers} {#unload misc/Buffers.set; #load misc/buffers.set; SilentlyLoadBuffers; #play {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {The items contained in your active buffers have been cleared successfully!} Voiceonly}
 #key Control-Alt-Shift-Delete {ClearAllBuffers}
+#alias {FixBuffers} {#unload misc/buffers.set; #load misc/buffers.set; AutoSaveBuffers; #say {Your buffers have been fixed. You will need to create your buffer list again.} System}

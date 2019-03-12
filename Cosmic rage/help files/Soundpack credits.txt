@@ -21,3 +21,6 @@ Thanks
 Nate.
 
 ***People who have donated to the soundpack will be listed here***.
+
+Dealan Silver scale is the soundpack's official wordsmith, making sure the help files make more sense than they used to. If you need a project edited, email him at charles.hiser1993@gmail.com.
+Thanks to stormy for allowing me to pull code from his pack that is no longer listed on the mud.

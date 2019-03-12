@@ -1,3 +1,6 @@
+Announcement posted on Saturday, February 23, 2019 at 6:40 PM CST.
+Reporting bugs that you've lost your buffer list and are getting errors when loading the pack isn't a bug, and it's not really my problem. If you read the Readme, it states, very clearly, that you have to save your buffers if you're a first time pack user, and do not get rid of bufferlist.txt in the root of your VIP folder. This has been a constant issue from the time I added this buffer code, and I honestly wonder sometimes if it's best to remove buffers from the pack altogether. Anyway, rant over. Have a good evening.
+
 Announcement posted on Saturday, February 9, 2019 at 7:54 PM CST.
 Commenting on the Dropbox public link for the VIP2 version of my pack has been disabled as it was being strongly abused. Thank you for reading.
 

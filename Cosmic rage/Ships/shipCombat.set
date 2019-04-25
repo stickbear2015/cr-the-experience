@@ -19,17 +19,51 @@
 #TRIGGER {The ship jolts a little as phasers are fired.} {#gagline all; playsound {cosmic rage/ships/combat/phaser.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
-#TRIGGER {The sound of heavy machinery starting echoes throughout the vessel as railgun slugs are loaded into the launcher.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
+#TRIGGER {A gentle sliding sound can be heard as ammunition is moved in the ship's hold.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
+#trigger {A green light flashes beside the railgun.} {#gagline all}
 #trigger {You hear a series of clicks as the * are locked into place} {#gagline voice}
 #trigger {There is a rumbling clunk before the low thrum of the machines cut out, their work complete.} {#gagline all}
-#trigger {You slide a switch across and hold it.} {#gagline all}
-#trigger {You release the switch.} {#gagline all}
-#trigger {There are loud clunking sounds as warheads are loaded into the launchers.} {#gagline all; playsound {cosmic rage/ships/combat/reload.wav} @CVol}
-#trigger {There is a hiss as the launchers are pressurised and seeled.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/air.wav} @CVol}
+#trigger {There is a slide, followed by a sharp thud, as plasma missiles are drawn from the banks and slotted into tubes.} {#gagline all}
+#trigger {There is a slide, followed by a sharp thud, as standard missiles are drawn from the banks and slotted into tubes.} {#gagline all}
+#trigger {There is a slide, followed by a sharp thud, as standard torpedos are drawn from the banks and slotted into tubes.} {#gagline all}
+#trigger {The engines momentarily go offline as they are struck by warheads.} {#gagline all};
+#trigger {The engines momentarily go offline as they are struck by cannon fire.} {#gagline all};
+#trigger {The engines momentarily go offline as they are struck by laser fire.} {#gagline all};
+#trigger {The screens blink and go fuzzy for a moment as the computer systems are hit by warheads.} {#gagline all};
+#trigger {The screens blink and go fuzzy for a moment as the computer systems are hit by cannon fire.} {#gagline all};
+#trigger {The screens blink and go fuzzy for a moment as the computer systems are hit by laser fire.} {#gagline all};
+#trigger {The lights flicker dromaticly as the power systems are hit by warheads.} {#gagline all};
+#trigger {The lights flicker dromaticly as the power systems are hit by cannon fire.} {#gagline all};
+#trigger {The lights flicker dromaticly as the power systems are hit by laser fire.} {#gagline all};
+#trigger {There is a nasty metal against metal shriek as the planetary gear takes damage from warheads.} {#gagline all};
+#trigger {There is a nasty metal against metal shriek as the planetary gear takes damage from cannon fire.} {#gagline all};
+#trigger {There is a nasty metal against metal shriek as the planetary gear takes damage from laser fire.} {#gagline all};
+#trigger {The air seems to go thin for a moment and red warning lights flicker as the life support system takes damage from warheads.} {#gagline all};
+#trigger {The air seems to go thin for a moment and red warning lights flicker as the life support system takes damage from cannon fire.} {#gagline all};
+#trigger {The air seems to go thin for a moment and red warning lights flicker as the life support system takes damage from laser fire.} {#gagline all};
+#trigger {There is what sounds like a fuse or 5 popping all at the same time as the sensors are damage by warheads.} {#gagline all};
+#trigger {There is what sounds like a fuse or 5 popping all at the same time as the sensors are damage by cannon fire.} {#gagline all};
+#trigger {There is what sounds like a fuse or 5 popping all at the same time as the sensors are damage by laser fire.} {#gagline all};
+#trigger {There is a slight feeling of weightlessness as the safety systems are hit by warheads.} {#gagline all};
+#trigger {There is a slight feeling of weightlessness as the safety systems are hit by cannon fire.} {#gagline all};
+#trigger {There is a slight feeling of weightlessness as the safety systems are hit by laser fire.} {#gagline all};
+#trigger {From somewhere in the bowels of the ship there is a groan as warheads impact the cargo supports.} {#gagline all};
+#trigger {From somewhere in the bowels of the ship there is a groan as cannon fire impact the cargo supports.} {#gagline all};
+#trigger {From somewhere in the bowels of the ship there is a groan as laser fire impact the cargo supports.} {#gagline all};
+#trigger {A loud siren shrieks as the warp core is hit by warheads.} {#gagline all};
+#trigger {A loud siren shrieks as the warp core is hit by cannon fire.} {#gagline all};
+#trigger {A loud siren shrieks as the warp core is hit by laser fire.} {#gagline all};
+#trigger {You slide a switch across and hold it.} {#gagline all};
+#trigger {You release the switch.} {#gagline all};
+#trigger {A red light on screen fades to yellow as a reload begins to take place.} {#gagline all; playsound {cosmic rage/ships/combat/reload.wav} @CVol}
+#trigger {The light flashes green and the reload is complete.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/air.wav} @CVol}
 #TRIGGER {You hear a sliding noise, before a loud thunk as * are loaded into the ships main banks.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
-#TRIGGER {The ship rocks in place as * torpedos are fired.} {#gagline all; playsound {cosmic rage/ships/combat/yourTorps.wav} @CVol;
+#TRIGGER {The floor underfoot vibrates as * torpedos are fired.} {#gagline all; playsound {cosmic rage/ships/combat/yourTorps.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#TRIGGER {The floor underfoot vibrates as a payload of * torpedos are fired.} {#gagline all; playsound {cosmic rage/ships/combat/yourTorps.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}};
 #TRIGGER {On screen, you see * fire torpedos at *} {#gagline all; playsound {cosmic rage/ships/combat/torpedo*10.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #PC %Playhandle Pan %Random(-4000,4000)}};

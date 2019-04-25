@@ -1,4 +1,5 @@
-#TRIGGER {A barely noticeable hum starts up, vibrating through the walls and floor of the ship.} {#gagline all; #pc 0 stop; playsound {cosmic rage/ships/misc/PowerOn.wav} @vol; #if {@ambon = "Enabled"} {
+#TRIGGER {A barely noticeable hum starts up, vibrating through the walls and floor of the ship.} {#gagline all; #pc 0 stop; playsound {cosmic rage/ships/misc/PowerOn.wav} @vol;
+#var currentroom2 "misc";
 #If {%IfWord(Airlock,@RoomName," ")} {
 #if {@currentroom <> "airlock"} {
 #If {@shipsoundplaying = 1} {
@@ -226,9 +227,17 @@ loopsound {cosmic rage/ships/rooms/medicalCenter.wav} @Shipvol;
 #If {@shipsoundplaying = 1} {
 #pc @shiphandle stop};
 loopsound {cosmic rage/ships/rooms/VehicleBay.wav} @vol;
-#Var shiphandle %Playhandle; #var shipsoundplaying 1; #var currentroom "vehicle"}}}} 
+#Var shiphandle %Playhandle; #var shipsoundplaying 1; #var currentroom "vehicle"}}
+#If {@CurrentRoom2 = "misc"} {
+#if {@currentroom <> "misc"} {
+#var currentroom2 "notmisc";
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop;
+#Var ShipSoundPlaying 0};
+loopsound {cosmic rage/ships/rooms/Deck.wav} @Shipvol;
+#Var shiphandle %Playhandle; #Var ShipSoundPlaying 1; #Var CurrentRoom "misc"}}};
 #TRIGGER {The ever present hum of the power systems fades away as the charge running through the ship is taken offline.} {#gagline all;
-#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol}
+#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #var currentroom "off"};
 #trigger {A small blue circle begins to rotate on the main console.} {#gagline all}
 #trigger {the blue circle on the main console turns *} {#gagline all}
 #trigger {The circle on the main console blinks to green.} {#gagline all}

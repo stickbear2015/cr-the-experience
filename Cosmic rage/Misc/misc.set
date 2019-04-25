@@ -257,7 +257,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {* dryer shakes violently as it dries its contents.} {#gagline all}
 #trigger {* dryer lets out a grumble and begins to slow down.} {#gagline all}
 #trigger {[[]camera]: *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
-#trigger {*security droid* * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security droid located at %4 informs you %5}} {} AnyCase
+#trigger {*security drone* * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security drone located at %4 informs you %5}} {} AnyCase
 #trigger {*security camera* at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security camera located at %3 informs you %4}} {} AnyCase
 #trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
 #trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
@@ -303,3 +303,4 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #var Flying 0}; #if {@FlyingStart = 1} {
 #pc @FlyingStarthandle stop;
 #var FlyingStart 0}; #pc @Flyinghandle stop; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}
+#trigger {The flashing icons on * draw your attention *} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @CommsVol; #additem InfoComputerNotifications %0}

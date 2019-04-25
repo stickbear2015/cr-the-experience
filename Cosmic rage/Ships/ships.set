@@ -162,7 +162,7 @@ playsound {cosmic rage/ships/misc/moduleMove*8.wav} @vol}
 #trigger {You engage the orbital thrusters.} {
 #gagline all;
 playsound {cosmic rage/ships/movement/orbit.wav} @vol}
-#trigger {Several drones wheel out of the area.} {
+#trigger {* wheels into the bay and slots into a holder.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/droneWheeling.wav} @vol}
 #trigger {Your ship has been loaded up. *} {

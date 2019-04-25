@@ -1,6 +1,6 @@
 #alias Version {soundpack version The VIP Cosmic Rage Experience} {}
 #trigger {Soundpack last change *} {#sub {The last change that was posted to the game %1}}
-#alias spp {>@soundpacks} {}
+#alias spversion {>@soundpacks The VIP Cosmic Rage Experience} {}
 #alias spbug {#gagon; spp;The VIP Cosmic Rage Experience;bug} {}
 #alias spsuggest {#gagon; spp;The VIP Cosmic Rage Experience;suggest}
 #trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thank you for submitting this suggestion! Snapp will work on it shortly and reach out if needed!}}
@@ -107,5 +107,5 @@ View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} 100; #play {C
 View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/keys.txt}}}|
 View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.htm}}}|
 View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
-#key alt-V {SpVersion}
-#alias spversion {spp;#gagon;3;1}
+#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#pc 0 stop; #key alt-V {SpVersion}; #alias spversion {spp The VIP Cosmic Rage Experience}}
+#alias spp {>@soundpacks} {}

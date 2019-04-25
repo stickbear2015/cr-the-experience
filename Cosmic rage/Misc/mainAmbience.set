@@ -468,11 +468,11 @@ loopsound {cosmic rage/Ambiences/mining tunnel.wav} @roomvol;
 #if {@currentroom <> "misc"} {
 #If {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop};
-loopsound {cosmic rage/Ambiences/path.wav} @roomvol;
+loopsound {cosmic rage/Ambiences/lobby.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "misc"}}}} {ambon}
 #TRIGGER {The overhead lights are dim, indicating the ship is powered down and all nonessential systems have been disabled.} {#If {@ShipSoundPlaying = 1} {#pc @ShipHandle stop}; #Var ShipSoundPlaying 0; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #if {@vehiclesoundplaying = 1} {
 #pc @vehiclehandle stop; #var vehiclesoundplaying 0; #if {@RoomSoundPlaying = 1} {#pc @RoomHandle stop; #var roomsoundplaying 0};
-#if {@MusicSounds = 1} {#var MusicSounds 0; #var planet ""}}} {ambon}
+#if {@MusicSounds = 1} {#var MusicSounds 0; #var planet ""; #var currentroom "off"}}} {ambon}
 #trigger {[[]Space]} {
 #if {@currentroom <> "space"} {
 #If {@shipSoundPlaying = 1} {

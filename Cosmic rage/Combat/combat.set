@@ -21,7 +21,7 @@ playsound {cosmic rage/general/combat/handCannon*2.wav} @vol; #abort 1};
 playsound {cosmic rage/general/combat/stungun.wav} @vol; #abort 1};
 playsound {cosmic rage/general/combat/shoot.wav} @vol}
 #TRIGGER {* shoots a sniper at you!} {#gagline voice; playsound {cosmic rage/general/combat/shoot.wav} @vol};
-#trigger {You breathe *} {playsound {cosmic rage/general/combat/firebreath.wav} @vol}
+#trigger {You breathe *flame*} {playsound {cosmic rage/general/combat/FireBreath.wav} @vol}
 #trigger {You let out a bellowing roar!} {
 #gagline all;
 playsound {cosmic rage/general/combat/dragonRoar.wav} @vol}
@@ -106,3 +106,13 @@ playsound {cosmic rage/general/combat/ray.wav} @vol}
 #trigger {Trying again, you find the metal at least touchable, and tip it into a bucket of water.} {#gagline all; playsound {Cosmic Rage/general/combat/armor/water.wav} 80}
 #trigger {a bright red curtain of flame sweeps into the room.} {playsound {cosmic rage/general/combat/firebreath.wav} @vol}
 #trigger {* snatch* up * and spray* it*} {playsound {Cosmic Rage\ships\fire\extinguisher.wav} @vol}
+#var targetgun 1
+#var target 1
+
+
+#trigger {*, current target position.} {#if {%1 = "8"} {playsound {Cosmic Rage/general/combat/target/target.wav}  @vol; #PC %Playhandle Pan 3000; {#Var target 3000}}; {#if {%1 = "9"} {playsound {Cosmic Rage/general/combat/target/target.wav}  @vol; #PC %Playhandle Pan 4000; {#Var target 4000}}; {#if {%1 = "10"} {playsound {Cosmic Rage/general/combat/target/target.wav}  @vol; #PC %Playhandle Pan 5000; {#Var target 5000}}; {#if {%1 = "1"} {playsound {Cosmic Rage/general/combat/target/target.wav}  @vol; #PC %Playhandle Pan -4000; {#Var target -4000}}; {#if {%1 = "2"} {playsound {Cosmic Rage/general/combat/target/target.wav} @vol; #PC %Playhandle Pan -3000; {#Var target -3000}}; {#if {%1 = "3"} {playsound {Cosmic Rage/general/combat/target/target.wav} @vol; #PC %Playhandle Pan -2000; {#Var target -2000}}; {#if {%1 = "4"} {playsound {Cosmic Rage/general/combat/target/target.wav} @vol; #PC %Playhandle Pan -1000; {#Var target -1000}}; {#if {%1 = "5"} {playsound {Cosmic Rage/general/combat/target/target.wav} @vol; #PC %Playhandle Pan 0; {#Var target 0}}; {#if {%1 = "6"} {playsound {Cosmic Rage/general/combat/target/target.wav} @vol; #PC %Playhandle Pan 1000; {#Var target 1000}}; {#if {%1 = "7"} {playsound {Cosmic Rage/general/combat/target/target.wav} @vol; #PC %Playhandle Pan 2000; {#Var target 2000}}}}}}}}}}}}
+#trigger {Your foam dart bounces off of the wall behind the target.} {#gagline all; playsound {Cosmic Rage/general/combat/target/wall.wav} @vol; #PC %Playhandle Pan {@targetgun}};
+
+
+#trigger {Your foam dart thwumps into the target.} {#gagline all; playsound {Cosmic Rage/general/combat/target/smash.wav} @vol; #PC %Playhandle Pan {@targetgun}};
+#trigger {You aim carefully and fire a foam dart at position *.} {playsound {Cosmic Rage/general/combat/target/shoot.wav} @vol; {#if {%1 = "8"} {playsound {Cosmic Rage/general/combat/target/bullet.wav}  @vol; #PC %Playhandle Pan 3000; {#Var targetgun 3000}}; {#if {%1 = "9"} {playsound {Cosmic Rage/general/combat/target/bullet.wav}  @vol; #PC %Playhandle Pan 4000; {#Var targetgun 4000}}; {#if {%1 = "10"} {playsound {Cosmic Rage/general/combat/target/bullet.wav}  @vol; #PC %Playhandle Pan 5000; {#Var targetgun 5000}}; {#if {%1 = "1"} {playsound {Cosmic Rage/general/combat/target/bullet.wav}  @vol; #PC %Playhandle Pan -4000; {#Var targetgun -4000}}; {#if {%1 = "2"} {playsound {Cosmic Rage/general/combat/target/bullet.wav} @vol; #PC %Playhandle Pan -3000; {#Var targetgun -3000}}; {#if {%1 = "3"} {playsound {Cosmic Rage/general/combat/target/bullet.wav} @vol; #PC %Playhandle Pan -2000; {#Var targetgun -2000}}; {#if {%1 = "4"} {playsound {Cosmic Rage/general/combat/target/bullet.wav} @vol; #PC %Playhandle Pan -1000; {#Var targetgun -1000}}; {#if {%1 = "5"} {playsound {Cosmic Rage/general/combat/target/bullet.wav} @vol; #PC %Playhandle Pan 0; {#Var targetgun 0}}; {#if {%1 = "6"} {playsound {Cosmic Rage/general/combat/target/bullet.wav} @vol; #PC %Playhandle Pan 1000; {#Var targetgun 1000}}; {#if {%1 = "7"} {playsound {Cosmic Rage/general/combat/target/bullet.wav} @vol; #PC %Playhandle Pan 2000; {#Var targetgun 2000}}}}}}}}}}}}}

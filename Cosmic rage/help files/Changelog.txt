@@ -1,3 +1,38 @@
+750. Using SPVersion will now no longer throw you into a random menu. Also, sounds should no longer stop working for whatever reason. As well, any duplicate sounds have been removed from the pack.
+Changed on Thursday, April 25, 2019 at 10:28 AM CDT.
+Copy Cosmic Rage.set and replace your current Cosmic sounds dirrectory.
+749. Fixed issues with reforming.
+Changed on Thursday, April 25, 2019 at 10:12 AM CDT.
+Copy Cosmic Rage/combat and Sounds/general/combat.
+748: Addded a trigger that will play a sound, and gag the voice, when a droid unit explodes
+Changed on Thursday, April 25th, 2019 at 15:41 GMT.
+Copy cosmic rage/combat/GroundCombat.set
+747. . You may now submit soundpack bugs and suggestions again.
+Changed on Thursday, April 18, 2019 at 3:31 PM CDT.
+Copy Cosmic Rage/misc/soundpack.set.
+746. Alt-V and SPVersion are fixed.
+Changed on Monday, April 15, 2019 at 9:06 AM CDT.
+Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
+745. Fixed a bug with your buffers auto-saving.
+Changed on Tuesday, April 9, 2019 at 2:24 PM CDT.
+Copy Cosmic Rage/misc/buffers.set.
+744. Added code and sounds for the galactic academy shooting range!
+Changed on Tuesday, April 2, 2019 at 7:27 PM CDT.
+Copy Cosmic Rage/combat/combat.set and sounds/general/combat/target.
+743. I'm still here! Forced the pack to play a sound when the mud lets you know about unseen info computer notifications. This is also added to the correct buffer.
+Changed on Tuesday, April 2, 2019 at 7:16 PM CDT.
+Copy Cosmic Rage/misc/misc.set.
+742. Added a brand spanking new control room sound that is a lot more animated than the last one.
+Coppy sounds/cosmic rage/ships/rooms/ControlRoom.wav
+741. Added a new sound for misc ambiance rooms that do not have a dedicated sound. For the longest time we have had the sound of nature in stations that did not need to be there. This has been fixed. Thanks James Donivan for the coding help!
+Coppy mainAmbiance.set
+740. Added some code for vehicles that do not have a dedicated sound to allow for an all in one vehicle misc sound. Thanks once again james for your help with coding!
+coppy vehicle.set, vehicleAmbiance.set, and sounds/cosmic rage/ambiances/vehicleMisc.wav
+739. Made some wonderful changes to ship combat to make it a lot less spammy plus changed some triggers to fit the new text for sounds. Thankks to James donivan for his excelent job helping out with code!
+coppy shipCombat.set
+738. The alias SPVersion and the key Alt-V will now work after you connect to the mud. Sorry about that.
+Changed on Saturday, March 23, 2019 at 11:54 AM CDT.
+Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
 737. You can now log into the mud normally now. Also alt-V and SPVersion work as they should.
 Changed on Monday, March 11, 2019 at 6:30 PM CDT.
 Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.

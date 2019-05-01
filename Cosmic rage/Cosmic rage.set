@@ -41,7 +41,7 @@
 ;misc set files
 #load misc/APilot'sParody.set
 #load misc/Babies.set
-#load misc/Buffers.set
+#load misc/buffers.set.
 #load misc/cars.set
 #load misc/comms.set
 #load misc/clocks.set
@@ -79,7 +79,7 @@
 #class vehicleamb enable;
 ;Triggers for connecting to the moo.
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
-#trigger {Current hosts:*} {version; #unalias {SPVersion}; #unkey {alt-V}; #say {Welcome to the VIP Cosmic Rage experience!} Voiceonly; loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol} {} AnyCase
+#trigger {Current hosts:*} {version; #say {Welcome to the VIP Cosmic Rage experience!} Voiceonly; loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol} {} AnyCase
 
 ;Settings.
 
@@ -127,7 +127,7 @@
 #close 6
 
 ;misc.
-#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#pc 0 stop; #key alt-V {SpVersion}; #alias spversion {spp The VIP Cosmic Rage Experience}; #load misc/soundpack.set}
+#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {#pc 0 stop}
 #alias {onDisconnect} {
 #gvar disconnected 1;
 AutoSaveSettings; AutoSaveBuffers; #say {Settings saved!} voiceonly; #pc 0 stop; #play {cosmic rage/general/misc/quit.wav} @vol}
@@ -135,4 +135,3 @@ AutoSaveSettings; AutoSaveBuffers; #say {Settings saved!} voiceonly; #pc 0 stop;
 #alarm Saving -1800 {AutoSaveSettings; AutoSaveBuffers}
 #alias {SPUnload} {#say {Your soundpack has been unloaded. To reload, use either the alias SPReload, or the key control-shift-R. Thank you.} Voiceonly; #pc 0 stop; #unload misc/ConfigurationManager.set; #unload Activities/asteroidHarvesting.set; #unload Activities/BioHarvesting.set; #unload Activities/comets.set;  #unload Activities/DarkMatterMining.set; #unload Activities/handmining.set; #unload Activities/hunting.set; #unload Activities/mechanicalMining.set; #unload Activities/moon.set; #unload Activities/PlanetChunks.set; #unload Activities/planetoid.set; #unload Activities/salvaging.set; #unload Activities/StarCoring.set; #unload Activities/StarStudies.set; #unload Activities/trash.set; #unload Activities/volcanoHarvesting.set; #unload Activities/VolcanoMining.set; #unload misc/mainAmbience.set; #unload misc/music.set; #unload ships/shipAmbience.set; #unload ships/ShipPower.set; #unload vehicle/vehicleAmbience.set; #unload combat/battlesuits.set; #unload combat/combat.set; #unload misc/APilot'sParody.set; #unload misc/Babies.set; #unload misc/Buffers.set; #unload misc/cars.set; #unload misc/comms.set; #unload misc/clocks.set; #unload misc/doors.set; #unload misc/factory.set; #unload misc/Farming.set; #unload misc/horses.set; #unload misc/hosts.set; #unload misc/Jets.set; #unload misc/misc.set; #unload misc/socials.set; #unload misc/trains.set; #unload misc/trolley.set; #unload misc/weather.set; #unload ships/Pods.set; #unload ships/DeepSpaceRepair.set; #unload ships/FlightControl.set; #unload ships/jump.set; #unload ships/Rats.set; #unload ships/shipCombat.set; #unload ships/shipCombat2.set; #unload ships/ships.set; #unload ships/ships2.set; #unload ships/Waypoints.set; #unload vehicle/vehicle.set}
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
-#trigger {Last Change:*} {#ungagon}

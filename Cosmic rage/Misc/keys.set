@@ -96,3 +96,4 @@
 #key Alt-shift-T {ToggleSocialText}
 #key {Control-alt-R} {toggleReboot}
 #key {Control-alt-I} {toggleSoundpackIntroMessage}
+#key alt-v {spversion}

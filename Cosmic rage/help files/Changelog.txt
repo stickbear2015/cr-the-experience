@@ -1,3 +1,6 @@
+751. Alt-V and SPVersion are finally fixed. However, please avoid using them on the login screen.
+Changed on Tuesday, April 30, 2019 at 6:19 PM CDT.
+Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set and soundpack.set.
 750. Using SPVersion will now no longer throw you into a random menu. Also, sounds should no longer stop working for whatever reason. As well, any duplicate sounds have been removed from the pack.
 Changed on Thursday, April 25, 2019 at 10:28 AM CDT.
 Copy Cosmic Rage.set and replace your current Cosmic sounds dirrectory.

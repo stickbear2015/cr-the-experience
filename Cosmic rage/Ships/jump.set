@@ -1,4 +1,4 @@
-#trigger {You enter some data into the planetary rifting console.} {
+#trigger {* You enter some data into the planetary rifting console.} {
 #gagline all;
 playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
 #TRIGGER {On screen, you see Small satellites begin revolving anti-gravwell to *} {#gagline all; playsound {cosmic rage/ships/jump/sate.wav} @vol};

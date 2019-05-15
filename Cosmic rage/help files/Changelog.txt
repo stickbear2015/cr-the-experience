@@ -1,3 +1,19 @@
+757. Changed by: Snapp: The pack should load much faster now. As well, the reload command no longer throws errors.
+Changed on Tuesday, May 14, 2019 at 3:07 AM CDT.
+Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
+756. Changed by: Snapp: The Catcan social now respects if you have social sounds enabled or not.
+Changed on Monday, May 13, 2019 at 2:33 AM CDT.
+Copy Cosmic Rage/misc/socials.set.
+755. Changed by: Angelica. Fixed the catcan ooc social so that if all sounds are disabled in the soundpack using shift+f1, that sound will be muted as well.
+Copy misc/socials.set
+754. Changed by: Angelica. Credits: Stormy White Scale. Change: Added a sound for the catcan ooc social.
+Copy misc/socials.set and general/socials/trash.wav
+753. Changed by: Snapp: Buffers should no longer add a blank item at the top. If this happens again, please report it.
+Changed on Saturday, May 11, 2019 at 11:16 AM CDT.
+Copy Cosmic Rage/misc/buffers.set.
+752.  Changed by: Angelica Hamilton: Credits: Philip Williamson: Fixed the text for the completion of solar charging on factories. Now, it takes factory rank into consideration.
+Changed on Saturday, May 11, 2019 at 7:16 AM CDT.
+Copy Cosmic Rage\Misc\Factory.set
 751. Alt-V and SPVersion are finally fixed. However, please avoid using them on the login screen.
 Changed on Tuesday, April 30, 2019 at 6:19 PM CDT.
 Copy Cosmic Rage.set, Cosmic Rage/misc/keys.set and soundpack.set.

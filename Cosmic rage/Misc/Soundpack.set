@@ -1,14 +1,13 @@
 #alias Version {soundpack version The VIP Cosmic Rage Experience} {}
-#trigger {Soundpack last change *} {#sub {The last change that was posted to the game %1}}
+#trigger {Soundpack last change *} {#sub {The last soundpack change that was posted to the game %1}}
 #alias spversion {>@soundpacks The VIP Cosmic Rage Experience} {}
 #alias spbug {#gagon; spp;The VIP Cosmic Rage Experience;bug} {}
 #alias spsuggest {#gagon; spp;The VIP Cosmic Rage Experience;suggest}
-#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thank you for submitting this suggestion! Snapp will work on it shortly and reach out if needed!}}
+#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thank you for submitting this suggestion! An admin will work on it shortly and reach out if needed!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
 #trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you.}}
-#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this bug report! Snapp will be looking into it as soon as possible. If needed, you may be reached for more information.}}
+#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this bug report! An admin will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message will not help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. If possible, try to include the steps you took that produced the error or bug. This will expedite the report getting resolved. Thank you.}}
-
 #alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} system}}
 ;Saving settings.
 

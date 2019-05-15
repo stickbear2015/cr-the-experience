@@ -22,7 +22,7 @@ playsound  {cosmic rage/vehicle/lever.wav} @vol}
 #trigger {You hear a grinding whirring sound.} {
 #gagline all;
 playsound  {cosmic rage/activities/planetoid/grind.wav} @vol}
-#trigger {The grinding sound of solar panels fills the factory.} {
+#trigger {The grinding sound of solar panels fills the *} {
 #gagline all;
 playsound  {cosmic rage/activities/planetoid/grind.wav} @vol}
 #trigger {You type quickly into a nearby console and then start the refining process.} {

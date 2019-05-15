@@ -157,3 +157,4 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(disabled.,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
+#trigger {[[]PN Soundpack admins]*} {#additem SoundpackAdmins %0}

@@ -79,3 +79,5 @@
 #trigger {* barks madly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}}
 #trigger {* lets out a soft meow.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow.wav} @vol}}
 #trigger {* picks up * by the tail, swings * around * head a few times, then flings * into a trashcan!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/trash.wav} @vol}}
+#trigger {*Garry Blue Scale grins and knocks back a bottle of beer.} {#gagline all; playsound {Cosmic Rage/general/socials/GarryBeer.wav} 70}
+#trigger {Pilot Garry Blue Scale belches.} {#gagline all}

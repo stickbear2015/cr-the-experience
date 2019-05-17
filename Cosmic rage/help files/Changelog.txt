@@ -1,3 +1,12 @@
+760. Changed by: Angelica. Redid some of the ship docking/undocking/landing/launching texts. I still have a bit mor to work on, but I am releasing what I have. If you notice something that needs added/changed and I have not done so yet, please let me know either on soundpacks or via private ooc ooc comm.
+Changed at 10:19 PM EDT on 5/16/2019
+Copy ships/ships.set and ships/ships2.set
+759. Changed by: Jason: Added a trigger that will play a sound when someone other than yourself taps a button to open the outer airlock hatch aboard a ship.
+Readded to the changelog by Angelica at 10:12 PM EDT on 5/16/2019
+Copy ships/ships.set
+758. Credits: Courtney Kuznetsov: When you give Garry beer, you hear more sounds.
+Changed on Thursday, May 16, 2019 at 7:58 PM CDT.
+Copy Cosmic Rage/misc/socials.set and sounds/general/socials/GarryBeer.wav.
 757. Changed by: Snapp: The pack should load much faster now. As well, the reload command no longer throws errors.
 Changed on Tuesday, May 14, 2019 at 3:07 AM CDT.
 Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.

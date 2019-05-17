@@ -66,12 +66,12 @@ playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {You tap a series of buttons, deactivating the ships power.} {
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
-#trigger {You begin to tap information into the jump drive console.} {
+#trigger {Light * as  you enter some data into the planetary rifting console.} {
 #gagline all;
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {A voice crackles over the speaker on the main console: *} {
 playsound {cosmic rage/ships/com/pa*2.wav} @vol}
-#trigger {You say: * to enter jump space." into a small mike on the central console.} {
+#trigger {You say * to enter jump space." into a small mike on the central console.} {
 playsound {cosmic rage/ships/com/sector.wav} @vol}
 #trigger {You tap some buttons on the ships main console.} {
 #gagline all;
@@ -353,5 +353,7 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 playsound {cosmic rage/ships/misc/iclose.wav} @vol}
 #trigger {You tap a small button.} {
 #gagline all;
+playsound {cosmic rage/ships/misc/switch.wav} @vol}
+#trigger {* taps a small button.} {
 playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {You hear a slight grinding noise as the warp core slows down.} {playsound {cosmic rage/ships/movement/deceleration.wav} @vol}

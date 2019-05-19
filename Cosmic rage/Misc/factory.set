@@ -13,7 +13,7 @@ playsound  {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {The ever present hum of the primary systems come to a halt and the lights suddenly dim.} {
 #gagline all;
 playsound  {cosmic rage/general/factory/factoryPowerDown.wav} @vol}
-#trigger {A deep thrumming hum fills the Factory and the lights brighten as the primary power systems are brought online.} {
+#trigger {A deep thrumming hum fills the * and the lights brighten as the primary power systems are brought online.} {
 #gagline all;
 playsound  {cosmic rage/general/factory/factoryPowerup.wav} @vol}
 #trigger {You begin to maneuver a lever on the main control console.} {

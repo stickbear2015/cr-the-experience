@@ -1,3 +1,6 @@
+761. Changed by: Snapp: Added tons and tons and did I say tons of stuff for cars.
+Changed on Sunday, May 19, 2019 at 12:53 AM CDT.
+Copy Cosmic Rage/misc/cars.set and sounds/general/cars.
 760. Changed by: Angelica. Redid some of the ship docking/undocking/landing/launching texts. I still have a bit mor to work on, but I am releasing what I have. If you notice something that needs added/changed and I have not done so yet, please let me know either on soundpacks or via private ooc ooc comm.
 Changed at 10:19 PM EDT on 5/16/2019
 Copy ships/ships.set and ships/ships2.set

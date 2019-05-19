@@ -24,10 +24,10 @@ playsound {cosmic rage/general/combat/shoot.wav} @vol}
 #trigger {You breathe *flame*} {playsound {cosmic rage/general/combat/FireBreath.wav} @vol}
 #trigger {You let out a bellowing roar!} {
 #gagline all;
-playsound {cosmic rage/general/combat/dragonRoar.wav} @vol}
+playsound {cosmic rage/general/combat/Roar*3.wav} @vol}
 #trigger {* lets out a bellowing roar!} {
 #gagline voice;
-playsound {cosmic rage/general/combat/dragonRoar.wav} @vol}
+playsound {cosmic rage/general/combat/Roar*3.wav} @vol}
 #trigger {You lunge at * brandishing your wickedly sharp * claws!} {
 #gagline all;
 playsound {cosmic rage/general/combat/dragonClaw.wav} @vol}

@@ -81,3 +81,5 @@
 #trigger {* picks up * by the tail, swings * around * head a few times, then flings * into a trashcan!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/trash.wav} @vol}}
 #trigger {*Garry Blue Scale grins and knocks back a bottle of beer.} {#gagline all; playsound {Cosmic Rage/general/socials/GarryBeer.wav} 70}
 #trigger {Pilot Garry Blue Scale belches.} {#gagline all}
+#trigger {*grabs up the chainsaw of judgement and revs it maniacally.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgesaw.wav} @vol}}
+#trigger {*snatches up the chainsaw of judgement, gives it a quick rev, then decapitates * with it!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgesaw.wav} @vol}}

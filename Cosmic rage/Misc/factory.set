@@ -1,8 +1,8 @@
 #trigger {You hear a dull thrumming roar as a laser is fired.} {
 #gagline all;
 playsound  {cosmic rage/general/factory/laser.wav} @vol}
-#trigger {The factory computer announces: *} {
-#sub {%1};
+#trigger {The * computer announces: *} {
+#sub {%2};
 playsound  {cosmic rage/ships/computer/announce*4.wav} @vol}
 #trigger {* wheel in and drop off *} {
 #gagline voice;

@@ -1,3 +1,9 @@
+763. Changed by: Angelica. Updated misc/factories.set to account for the change to factory computers. My thanks to James Donivan for helping me to figure out where I'd gone wrong.
+Changed at 11:31 PM US EDT on 5/28/2019
+Copy Cosmic Rage/Misc/factory.set
+762. Changed by: Snapp: Added a sound for the judgesaw social.
+Changed on Thursday, May 23, 2019 at 5:39 PM CDT
+Copy Cosmic Rage/misc/socials.set and sounds/general/socials/judgesaw.wav.
 761. Changed by: Snapp: Added tons and tons and did I say tons of stuff for cars.
 Changed on Sunday, May 19, 2019 at 12:53 AM CDT.
 Copy Cosmic Rage/misc/cars.set and sounds/general/cars.

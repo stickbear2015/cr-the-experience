@@ -78,7 +78,7 @@ playsound {cosmic rage/ships/com/sector.wav} @vol}
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {You type details into the repairing console.} {
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
-#trigger {The engines hum slightly as the ship moves.} {
+#trigger {There is a slight lurching sensation as the rockets on the hull begin to shift the ship.} {
 #gagline all;
 #if {@altShipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/shipMove.wav} @Evol};

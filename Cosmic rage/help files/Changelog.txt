@@ -1,3 +1,16 @@
+766: Changed by: LAra
+Updated manual movement triggers for ships..
+Replace cosmic rage/ships/ships.set and cosmic rage/ships/ships2.set
+Date: June 23rd, 2019.
+765. Changed by: Angelica
+Credits: Thanks go to Stormy for designing the sound, and Frederick for helping me fix my broken.
+Added a new sound for the new NewbieHelpers channel, complete with  alogging-enabled buffer.
+Changed at 09:25 PM US EDT on 6/21/2019
+Replace misc/buffers.set and misc/comms.set.
+Add generel/comms/nh.wav
+764. Changed by: Angelica. Credits: Frederick. IN conjunction with the typo fix to asteroid harvesting, fixed the set file to reflect the change
+Copy Activities/asteroidHarvesting.set
+Changed at 07:06 PM EDT on 6/8/2019
 763. Changed by: Angelica. Updated misc/factories.set to account for the change to factory computers. My thanks to James Donivan for helping me to figure out where I'd gone wrong.
 Changed at 11:31 PM US EDT on 5/28/2019
 Copy Cosmic Rage/Misc/factory.set

@@ -157,4 +157,4 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(disabled.,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
-#trigger {[[]PN Soundpack admins]*} {#additem SoundpackAdmins %0}
+#TRIGGER {[[]newbie helpers]*} {playsound {Cosmic Rage\general\comms\nh.wav} @CommsVol; #additem newbiehelper %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1}} {} AnyCase

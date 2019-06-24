@@ -1,4 +1,4 @@
-#trigger {You Tap a few commands into the harvesting screen of the main ships console.} {
+#trigger {You tap a few commands into the harvesting screen of the main ship's console.} {
 #gagline all;
 playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
 #trigger {On screen, you see the harvesting equipment begin drilling into the asteroid.} {

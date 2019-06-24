@@ -15,13 +15,6 @@ playsound {Cosmic Rage/general/cars/\handbrake_up.wav} @vol} {}
 #TRIGGER {You drop down the handbrake.} {#Gagline ALL;
 playsound {Cosmic Rage/general/cars/\Handbrake_down.wav} @vol} {}
 #TRIGGER {The engine of the car revs furiously!} {playsound {Cosmic Rage/general/cars/\rev*5.wav} @vol} {}
-#trigger {The floor hums slightly with the vibration of the engines.} {
-#if {@roomsoundplaying = 1} {
-#if {@isvehicle = 1} {
-#pc @vehiclehandle stop}; 
-#if {@isvehicle = 0} {
-#pc @roomhandle stop};
-#Var RoomSoundPlaying 0}; Loopsound {Cosmic Rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #Var VehicleHandle %Playhandle; #var RoomSoundPlaying 1; #var currentroom "off"};
 #TRIGGER {You hear the engine of the car rev madly.} {#PC @drivehandle stop; #PC @acchandle stop; playsound {Cosmic Rage/general/cars/\rev*5.wav} @vol; Loopsound {Cosmic Rage/general/cars/idle.wav} @vol; #var oidlehandle %PlayHandle};
 #TRIGGER {* puts the key in the ignition and twists.} {#gagline all; playsound {Cosmic Rage/general/cars/key1.wav} @vol}
 #TRIGGER {* twists the key and yank* it out.} {#gagline all; playsound {Cosmic Rage/general/cars/key2.wav} @vol}

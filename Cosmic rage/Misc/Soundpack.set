@@ -1,3 +1,4 @@
+#var skice 2
 #alias Version {soundpack version The VIP Cosmic Rage Experience} {}
 #trigger {Soundpack last change *} {#sub {The last soundpack change that was posted to the game %1}}
 #alias spversion {>@soundpacks The VIP Cosmic Rage Experience} {}
@@ -107,3 +108,4 @@ View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {C
 View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
 View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
 #alias spp {>@soundpacks} {}
+#Alias {themechange} {#var skice %1}

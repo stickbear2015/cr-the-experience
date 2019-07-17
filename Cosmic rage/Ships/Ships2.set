@@ -6,8 +6,8 @@
 #trigger {You hear a voice come from a small speaker on the main console. "This is * calling * you are clear for docking, I repeat, you are clear to dock."} {playsound {cosmic rage/ships/com/pa*2.wav} @vol}
 #trigger {You say* * to * requesting to undock." into a small microphone on the main console.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/com/somethingToShip.wav} @vol}
 #trigger {A voice comes through a speaker on the main console, "This is * to * You are clear to undock. I repeat, you are clear to undock."} {playsound {cosmic rage/ships/com/pa*2.wav} @vol}
-; Docking and undocking.
 
+; Docking and undocking.
 #trigger {You * up a narrow slope into The *} {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
 #trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
 #trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
@@ -29,8 +29,17 @@
 #TRIGGER {The engines decrease in volume as the ship finishes undocking.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #TRIGGER {You hear a slight groan and the floor trembles as * begins to undock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol};
 #TRIGGER {The ground shakes a little as * begins to dock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol};
+#trigger {Blackness wizzes past the windows as the ship continues its ascent.} {
+#gagline all}
+#trigger {The upward thrust stops as the ship launches into space.} {
+#gagline all}
+#trigger {You begin to carefully align the ship with the top tube, all too aware of the difficult landing.} {#if {@LaunchText = "Enabled"} {#gagline all} { playsound {cosmic rage/ships/movement/BeaconLanding.wav} @vol}}
+#trigger {The engines slow to just a hum as it begins to descend towards a beacon station.} {
+#gagline all}
+#trigger {Blackness flies past the windows as the ship continues to descend.} {
+#gagline all}
 #trigger {You hear a thrum as the engines prepare to shoot the ship vertically upwards.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/movement/BeaconLaunch.wav} @vol}
-#TRIGGER {You hear a soft hum as the pressurising systems engage.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/launch.wav} @vol}
+#TRIGGER {You hear a soft hum as the pressurising systems engage.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/movement/launch*10.wav} @vol}
 #trigger {The low thrum becomes a more urgent tremor as the ship* anti-gravity engines thrust it free of *} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {Cosmic Rage/ships/misc/Grav1.wav} @vol}
 #trigger {The anti-gravity thrusters clunk offline and the ship slowly drifts into the orbit of *} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {Cosmic Rage/ships/misc/Grav2.wav} @vol}
 #trigger {The gravity thrusters suddenly cut out as the power goes down and the ship begins to plummet!} {loopsound {Cosmic Rage/ships/misc/Clock.wav} @vol; #var Clockhandle %playhandle; #var Clock 1}
@@ -39,7 +48,7 @@
 #var Clock 0}}
 #TRIGGER {* launches towards the sky with a roar, leaving behind a trail of engine fire and a storm of dust.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {The ship shudders as it enters an atmosphere.} {#if {@LaunchText = "Enabled"} {#gagline all};
-playsound {cosmic rage/ships/misc/landing.wav} @vol};
+playsound {cosmic rage/ships/movement/landing*4.wav} @vol};
 #TRIGGER {On screen, you see * begins to land on *} {playsound {cosmic rage/ships/misc/OtherLanding*3.wav} @vol}
 #TRIGGER {* lands with a slight bump.} {playsound {cosmic rage/ships/misc/OtherLanding*3.wav} @vol};
 #TRIGGER {* launches towards the sky with a roar, leaving behind a trail of engine fire and a storm of dust.} {playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
@@ -64,15 +73,9 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 
 #trigger {"Landing sequence complete. Heat shields deactivated."} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You begin to carefully align the ship  with the planet in order to begin its descent towards the surface.} {#if {@LaunchText = "Enabled"} {#gagline all}}
-#trigger {* push* the broadcast button on the main console with * and say* "* calling * do you read?"} {#if {@LaunchText = "Enabled"} {#gagline all}}
+#trigger {* push* the broadcast button on the main console with * and *: "*"} {#if {@LaunchText = "Enabled"} {#gagline voice}} {} anycase
 #trigger {A voice comes from a small speaker set into the main console: * we receive you, go ahead"} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {* up the * onto The *} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/BoardShip.wav} @vol}
 #trigger {The ship's engines stabilise as it launches into space.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The ship is shot straight up into the air, sending your stomach rocketing into your throat.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The ship is lifted up about a foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {#gagline all;}
-#trigger {Another lurch is felt throughout the ship as it comes to a stop.} {
-#gagline all;
-#if {@altShipEngines = "Disabled"} {
-playsound {cosmic rage/ships/movement/Deceleration.wav} @Evol};
-#if {@altShipEngines = "Enabled"} {
-playsound {cosmic rage/ships/movement/Deceleration1.wav} @Evol}}

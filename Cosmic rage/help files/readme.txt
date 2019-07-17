@@ -2,10 +2,6 @@
 
 Thank you for taking the time to download the VIP Cosmic Rage Experience! This document provides instructions for installing and running the soundpack, as well as references to useful commands built into the pack. It is highly recommended you read the other files in this folder as well to answer any questions you have. Snapp thanks you for doing your part to keep what's left of his sanity intact.
 
-			**Donating**
-
-Want to help with the soundpack without coding? Donations are always accepted and will be used to help pay for migraine medications, which allow me to code, as well as the purchase of new sounds for the pack, and other related costs. You can send PayPal donations to kyle9475@gmail.com. If you wish to use Apple Pay cash instead, contact me directly. Thanks!
-
 			**System Requirements**
 
 A computer capable of running the latest version of VIPMud 2.0 is a requirement. In addition, the soundpack requires at least 1 GB of RAM and a bit of extra processing power to accommodate the playing of wave files.  You should also have a sound card capable of playing multiple simultaneous audio streams. In this day and age, it's highly unlikely anyone would have issues, but best to be certain.
@@ -49,7 +45,17 @@ To update the soundpack using the Dropbox shared folder, please do the following
 3. Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to back up your characters .set file if you don't want to lose any added alias's or triggers.
 If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
 The Dropbox shared folder is updated as soon as changes to code or sounds are made, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
-
+adding custom music for ship combat
+1, find some music
+2, go to the sounds/music/combat folder
+3, rename the files like in the folder like
+theme 1.wav theme2.wav bla bla bla up to theme132.wav
+nnote, there is no limit for this, as long as the music is at the wav format, and if you renamed your files like i did, you wont struggle
+enter vipmud, note the pack should be loaded to this to work proparly, that means you must hear the sounds fine like normal
+5, type themechange and a number, this will be the max number that the music will end
+like if you have 100 music in the combat folder, you should type themechange 100
+note, if you dont want to pack to break, just type numbers here
+6, enjoy
 			**Miscellaneous Notes**
 
 In some cases, ambience fails to work for some players. This is due to the fact that they have brief mode enabled. To fix this, type brief, then disable hiding of descriptions.

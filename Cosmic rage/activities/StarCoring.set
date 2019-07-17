@@ -46,8 +46,6 @@ playsound {cosmic rage\activities\planetoid\gas.wav} @vol}
 playsound {cosmic rage\ships\combat\emp.wav} @vol} 
 
 ;star locks
-#trigger {On screen, you see arcs of electricity spiral out from the ship and stream towards *} {#gagline all;
-playsound {cosmic rage\activities\star cores\ElectricLoop1.wav} @vol} 
 #trigger {You type quickly into the star core console.} {playsound {Cosmic Rage/ships/computer/Keyboard1.wav} @vol; #gagline all}
 #trigger {The ships lights dim slowly as power is diverted into some laser cutters.} {#gagline voice; playsound {Cosmic Rage/activities/star cores/laser.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)}
 #trigger {On screen, you see the laser cutters dig about a 0.50 sized hole into the core.} {#gagline voice}
@@ -59,7 +57,6 @@ playsound {cosmic rage\activities\star cores\ElectricLoop1.wav} @vol}
 #trigger {*"Extraction completed."} {playsound {Cosmic Rage/activities/star study/TransferComplete.wav} @vol; #gagline all}
 #trigger {*"No more gas storage space available in external tanks."} {playsound {Cosmic Rage/activities/star cores/TanksFilled.wav} @vol}
 #trigger {On screen, you see the lasers cut into *} {#gagline voice}
-#trigger {There is a zing and then the steady thump, thump of three lasers firing at the same time.} {playsound {Cosmic Rage/activities/star cores/CoreLockLaser.wav} @vol; #gagline voice}
 #trigger {On screen, you see a targeting dot appear on the core.} {#gagline all}
 #trigger {You hear a slight whine as lasers shift.} {#gagline all}
 #trigger {*"Core already annalysed. powering down."} {playsound {Cosmic Rage/activities/star cores/PowerDown.wav} @vol} {} AnyCase
@@ -68,3 +65,8 @@ playsound {cosmic rage\activities\star cores\ElectricLoop1.wav} @vol}
 #trigger {*"Locked onto star core* Now attempting to pull it in."} {#sub {Please wait, locking onto star.}}
 #trigger {Through the windows, you see star core* lume up next to the ship.} {#gagline all}
 #trigger {some drones take some gas from * and shoot off into the sky with it.} {#gagline all}
+#TRIGGER {You hear a low hum from underfoot.} {playsound {cosmic rage/activities/star cores/corestart.wav} @vol; #gagline all}
+#TRIGGER {There is a zing and then the steady thump, thump of three lasers firing at the same time.} {playsound {cosmic rage/activities/star cores/core2.wav} @vol; #var core2handle %PlayHandle; #gagline all}
+#TRIGGER {On screen, you see arcs of electricity spiral out from the ship and stream towards *} {playsound {cosmic rage/activities/star cores/core3.wav} @vol; #PC @core2handle stop; #gagline all}
+#TRIGGER {On screen, You see a coil of electricity loop around the core and drag it towards the ship.} {playsound {cosmic rage/activities/star cores/core4.wav} @vol; #var core4handle %PlayHandle; #gagline all}
+#TRIGGER {Through the windows, you see * loom up next to the ship.} {#gagline all; playsound {cosmic rage/activities/star cores/core5.wav} @vol; #PC @core4handle stop};

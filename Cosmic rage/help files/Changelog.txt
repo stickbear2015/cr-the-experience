@@ -1,4 +1,139 @@
-766: Changed by: LAra
+821, changed the farm ambience, coppy sounds/cosmic rage/ambiences/farm.wav
+
+820: Frederick
+Removed a duplicate trigger and fixed a trigger with an incorrect filename.
+Update cosmic rage/activities/dust.set
+
+819, removed unwanted folders, remove activities hunting and hand mining folders
+818: Frederick
+Removed sounds no longer used.
+remove sounds/cosmic rage/general/misc/reboot 1 minute, 2 minutes, 3 minutes, 5 minutes, 10 minutes, 15 minutes, and 30 minutes.wav
+817: Credit Stormy.
+There is now a sound for the GMC channel.
+copy sounds/general/comms/gmc.wav
+816: Frederick
+Updated comm.set to include proper logging of the newbie helpers channel, as well as the new GMC channel.
+Update cosmic rage/misc/comms.set
+815, credits Blake Cromozov16158, added sounds for dust analazations
+coppy sounds/cosmic rage/activities/dust analyzing/alaser.wav, apowerdown.wav, apowerup.wav
+copy cosmic rage/cosmic rage.set and cosmic rage/activities/dust.set
+814: Frederick
+Added a buffer for GMC messages.
+copy cosmic rage/misc/buffers.set
+813, you now hear a sound wen your spacesuit is almost out of oxygen
+coppy misc.set and cosmic rage/general/misc/warning.wav
+812, stormy, reformed the trolleys, yaaaas, no more that old cartoonish sounds
+coppy trolley.set and general/trolley folder
+811, stormy, changed the  galactic music of the medical complex, it really now feels like your in an emergency situation, coppy music/gmc.wav
+810, stormy, you can now really, bark, madly
+coppy socials.set and general/socials.bark.wav
+809, credits Arthus, fixed mutariansi esniff, coppy mutariansi.set
+808, credits lucy, added sounds for box social coppy socials.set cosmic rage/general/socials.box.wav
+807: Frederick barnes131439
+Fixed some slight folume issues with ship combat.
+replace cosmic rage/ships/ShipCombat2.set
+806: Frederick barnes131439
+Reworked the trolley script file.
+Replaced two sounds in the trolley folder
+copy cosmic rage/misc/trolley.set
+replace cosmic rage/general/trolley/button.wav and fuse.wav
+805, stormy, credits firath and briana, added sounds for micro transport pods
+coppy cosmic rage/misc/mwtp.set and sounds/cosmic rage/general/mwtp/microdk.wav microdi.wav microii.wav and microik.wav
+804, credits firath, i'M sure that i fixed punt at this time
+copy cosmic rage/misc/socials.set
+
+803, credits firath, fixed the punt social
+coppy cosmic rage/misc/socials.set
+802: Changed by frederick Barnes131439.
+Sorry folks, there were some triggers in the factory script file that needed a little love.
+copy cosmic rage/misc/factory.set
+801, added a verry cool punt social sound, happy punting each other.
+coppy sounds/cosmic rage/general/socials/punt.wav and cosmic rage/misc/socials.set
+800, stormy, changed the sound for the judgesaw a liddle.
+coppy cosmic rage/misc/socials.set and sounds/cosmic rage/general/socials/judgesaw2.wav
+799, stormy, you can now customise your ship combat music, see the readme for the instructions, thank you my friend Albert for helping me with this
+coppy cosmic rage/misc/soundpack.set, and cosmic rage/ships/shipcombat.set
+798, the pack now has 2 combat themes instead of 10 do to reducing size attempts, if you have a greater music in mind, dont hezetate to suggest
+coppy sounds/cosmic rage/music/combat folder and cosmic rage/ships/shipcombat.set
+797, the removed bt sinc download has  enabled again
+note, you gotta install it yourself. Its verry simple. If you want to download bt sinc, google it. If you want to recilio, google it. 
+Note bt1.3 is more accessible though. Check the secret  is at the soundpacks download info section.
+796, stormy, trolleys are now, much more realistic.
+coppy cosmic rage/misc/trolley.set and sounds/cosmic rage/general/trolley folder
+795, credits, briana, lowered the volume of reloading sounds.
+coppy sounds/cosmic rage/ships/combat/reload1 and reload2.wav
+794, stormy, shortenned the music and undone the .mp3 change from 2 days ago, the pack now acts like it should to be
+coppy sounds/music folder ships/shipcombat.set  coppy cosmic rage.set
+793: Changed by Frederick Barnes 131439
+Fixed an error in Weather.
+Update cosmic rage\misc\weather.set
+792: Put doors.set back to how it was before as 791 broke more than it fixed
+Changed by: Lara
+copy cosmic rage/misc/doors.set
+791: Fixed up some door triggers
+Changed by: Lara
+Copy: cosmic rage/misc/doors.set
+790, got rid of the old pilot' parody and replaced with the new, funny and the cool one.
+delete sounds/cosmic rage/general/a-pilots-parody folder
+copppy sounds/cosmic rage/general/pp folder
+coppy cosmic rage/a-pilots-parody.set
+789, changed the gravwell sounds
+coppy sounds/cosmic rage/misc/grav1.wav and grav2.wav
+788, added sounds for blackdwarf harvesting
+coppy, sounds/activities/blackdwarf folder, cosmic rage/activities/blackdwarf.set and cosmic rage/cosmic rage.set
+787, stormy, added some new things for star cores,
+coppy cosmic rage/activities/starcoring.set and sounds/cosmic rage/activities/starcore folder
+786, stormy, credits, kuro,  fixed mutariansi flying, oooops?
+Coppy cosmic rage/misc/misc.set
+785, fixed bioharvesting activity
+coppy cosmic rage/activities/bioharvesting.set
+784, changed the sounic scream sound
+coppy sounds/cosmic rage/general/combat/sonic scream.wav
+783, stormy, added sounds for star rescueing
+coppy sounds/cosmic rage/activities/star study folder and cosmic rage/activities/starstudies.set
+782: Added line to main CR set file to load BioHarvesting.set
+copy cosmic rage/cosmicRage.set
+781, stormy, say bye to old bioharvesting sounds, and say hi to new realistic ones, coppy activities/nebula folder and bioharvesting.set
+780, stormy, added and changed lot of things about space combat, delete and coppy ships/combat and ships/computer folder, coppy shipcombat.set and shipcombat2.set
+779, got rid of the old cartoonish intruder sound, coppy ships/misc/Intruder.wav
+778, stormy, played with the inner airlock sounds, coppy, ships/misc/iopen.wav and iclose.wav
+777: Changed by Frederick Barnes131439
+stopped the default intro music from looping.
+replace cosmic rage/cosmicRage.set
+776, stormy, added sounds for mutariansi reforming, and gagged lot of texts
+coppy general/mutariansi/reform .wav and mutariansi.set
+775: Updated by Frederick Barnes131439
+Added stuff for the celestial cannon.
+Update cosmic rage/activities/planetoids.set
+Date: July 6th 2019
+774: Updated by Frederick Barnes131439
+Updated the cosmic rage main file to compliment Stormy's earlier change.
+update cosmic rage/cosmic rage.set
+Date: July 5th, 2019
+773, stormy, reduced the packs size about 400 450 mb, delete and coppy music folder and coppy music.set
+772, credits, lucy, stormy, added sounds for ship structural repairs, coppy ships/rep folder and ships.set file
+771, stormy, added some stuff for factory building, coppy sounds/general/factory folder and misc/factory.set
+770, randomised launch lands, coppy sounds/ships/movement and ships2.set, changed bye, stormy.
+769, removed some unused sounds, changed bye stormy. recoppy the hole sounds folder
+768: Fixed where sonic scream would not trigger if you had anything but the default.
+changed by: Lara the Stardust
+Update: cosmic rage/combat/ground combat.set
+767: Changed by Frederick Barnes131439
+Updated triggers in ships.set and ships2.set having to do with each race pressing a finger, claw, or whatever on the console before making a request.
+Updated factory.set with certain triggers in the gas compression room, as well as the factory's computer messages.
+Added a sound for when gas tanks are deposited in the gas compression facility.
+Updated weather.set with additional weather triggers.
+Updated misc.set with a sound when you hang items on shoulders.
+Created an ArmorMaking.set file and moved the relevant triggers from combat.set into the newly created file.
+Added the ArmorMaking.set file to load along with the other files necessary for the pack.
+so in short, please update the following files.
+cosmic rage/CosmicRage.set
+cosmic rage/ships/ships.set and ships2.set
+cosmic rage/combat/ArmourMaking.set and combat.set
+cosmic rage/misc/factory.set, misc.set and weather.set
+sounds/cosmic rage/general/factory/GasTank.wav
+date: July 4th, 2019
+766: Changed by: Lara
 Updated manual movement triggers for ships..
 Replace cosmic rage/ships/ships.set and cosmic rage/ships/ships2.set
 Date: June 23rd, 2019.

@@ -1,4 +1,4 @@
-#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Library|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelper|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Spacesuit|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
+#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Library|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelper|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Spacesuit|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
 #var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices|newbiehelper}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1
@@ -63,6 +63,7 @@ Read the clanchat channels log file for %char:#edit  {Cosmic Rage/logs/%char Cla
 Read the drone channels log file for %char:#edit  {Cosmic Rage/logs/%char Drone.log}|
 Read the G2A channels log file for %char:#edit  {Cosmic Rage/logs/%char G2A.log}|
 Read the General channels log file for %char:#edit  {Cosmic Rage/logs/%char general.log}|
+Read the GMC channels log file for %char:#edit  {Cosmic Rage/logs/%char GMC.log}|
 Read the HTPL channels log file for %char:#edit  {Cosmic Rage/logs/%char HTPL.log}|
 Read the Intel channels log file for %char:#edit  {Cosmic Rage/logs/%char intel.log}|
 Read the jag channels log file for %char:#edit  {Cosmic Rage/logs/ %char jag.log}|

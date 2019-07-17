@@ -7,3 +7,4 @@
 #trigger {* starting checkpoint. Database last checkpointed *} {playsound {Cosmic Rage/hosts/Checkpoint.wav} @vol} {} AnyCase
 #trigger {[[]Admin chat]*} {playsound {Cosmic Rage/hosts/AdminChat.wav} @vol; #additem AdminChat %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char AdminChat.log}; #write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]administrators]*} {playsound {Cosmic Rage\hosts\AdminTalk.wav} @vol; #additem Admin %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char admin.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {The * pause in their daily ruteen to recognise the achievements of the mortal *} {playsound {Cosmic Rage/hosts/transform.wav} @vol;  {#sub {The hosts pause in their daily ruteen to recognise the achievements of the mortal  %2} }}

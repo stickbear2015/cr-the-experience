@@ -1,7 +1,6 @@
 #trigger {You push down a plunger.} {#gagline all;
 playsound {cosmic rage/activities/planetoid/plunger.wav} @vol}
 #trigger {You hear a sound similar, but not quite the same too, glass being shattered.} {
-#gagline all;
 playsound {cosmic rage/activities/planetoid/breakingglass*3.wav} @vol} 
 #trigger {You hear a clang.} {
 #gagline all;
@@ -96,7 +95,9 @@ playsound {cosmic rage/activities/planetoid/low hum.wav} 70}
 playsound {cosmic rage/activities/planetoid/mineralScoop.wav} @vol} 
 #trigger {A siren rings through the landscape. Evacuate, evacuate. * seconds until planet disintigration.} {
 playsound {cosmic rage/activities/planetoid/siren.wav} @vol} 
-#trigger {The computer announces: *harvested*} {#if {@gagHarvest = "Enabled"} {#gagline voice}} {} AnyCase
+#trigger {The computer announces: "* harvested*"} {
+#if {@gagHarvest = "Enabled"} {
+#gagline voice}} 
 #trigger {You begin to wind a handle attached to a very important looking console.} {
 #gagline all;
 playsound {cosmic rage/activities/planetoid/handleWind.wav} @vol} 
@@ -116,6 +117,13 @@ playsound {cosmic rage/activities/planetoid/boom.wav} @vol}
 #gagline all;
 playsound {cosmic rage/vehicle/lever.wav} @vol} 
 #TRIGGER {*"I will begin repairs to the gas harvesting equipment. time until completion, * seconds."}  {playsound {cosmic rage/activities\planetoid\propellersRepair.wav} @vol}
+#trigger {Through the windows, you see as the gravity of * causes it to collapse inwards, no longer held together by any gas.} {
+#gagline all}
+#trigger {Through the windows, you see * rapidly expel all of the remaining *} {
+#sub {The empty nebula cloud explodes!};
+#alarm 1 {playsound {cosmic rage\ships\combat\OtherDestroyed1.wav}}}
+
+;planetoid harvesting drone
 #trigger {You begin to manipulate the tiny planetoid harvesting drone.} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/ManipulateDrone.wav} @vol}
 #trigger {On screen, you see the drone investigate a blockage.} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/investigate.wav} @vol}
 #trigger {On screen, The drone can be seen circling the blockage, attempting to identify it.} {#gagline voice}
@@ -128,3 +136,10 @@ playsound {cosmic rage/vehicle/lever.wav} @vol}
 #trigger {On screen, you see The drone attach a thin tube to the blockage and tug hard.} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/tug.wav} @vol}
 #trigger {On screen, you see the drone pull the blockage loose!} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/PullFree.wav} @vol}
 #trigger {You hear a crack as something catches in the planetoid equipment and gets stuck.} {playsound {Cosmic Rage/activities/planetoid/Crack.wav} 70}
+#trigger {The synthesised voice of the computer comes from * saying: "Alert. *"} {
+#sub {%2};
+playsound {cosmic rage\ships\com\pa*2.wav} @vol}
+#trigger {On screen, the beam slams into * and begins to laser its way to the core!} {#gagline voice}
+#trigger {On screen, A crate appears to float from the ship, directed by the slight magnetic pull of the celestial cannon beam.} {#gagline voice}
+#trigger {On screen, The crate floats slowly into the hole *!} {#gagline voice;playsound {cosmic rage\ships\comets\ProbeBoom.wav} @vol}
+

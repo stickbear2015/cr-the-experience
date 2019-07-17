@@ -49,7 +49,7 @@ Toggle bio plasma regenoration sounds. This option is currently @TPR :TPR|
 Check the amount of lag between your connection and the game. Note. This value may not always be 100 percent accurate:lag|
 Submit a soundpack bug report:SpBug|
 Submit a soundpack suggestion:SpSuggest|
-View the last posted soundpack change. Note. This shows the last change that Snapp has posted to the game. This may not always be the last change you see in your changelog.:SpVersion|
+View the last posted soundpack change. Note. This shows the last change that  has posted to the game. This may not always be the last change you see in your changelog.:SpVersion|
 Clear the current buffers items. Useful if you start seeing buffer errors. Note. This only clears items from that one buffer:ClearBuffer|
 Clear All Buffers. Clears all text from all of your active buffers:ClearAllBuffers|
 Toggle your speech in the soundpack. This option is currently @speech. Note. When this option is enabled, your speech will be muted :TTS|

@@ -76,6 +76,7 @@ playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1
 #TRIGGER {You wiggle your * into *} {playsound {cosmic rage/wear/OnBody.wav} @vol};
 #TRIGGER {You hang * from your neck} {playsound {cosmic rage/wear/neck.wav} @vol};
 #TRIGGER {You put on *} {playsound {cosmic rage/wear/head.wav} @vol};
+#trigger {You hang * from your * shoulder.} {playsound {cosmic rage/wear/AboutBody.wav} @vol}
 #TRIGGER {You give * a tug and pull it off.} {playsound {cosmic rage/wear/hold.wav} @vol};
 #TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; #additem CashPointsSkillsAndLeveling %0}
 #TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Disabled"} {#gagline all}}
@@ -268,7 +269,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
 #trigger {The pod banks *} {#if {@SilentPod = "Enabled"} {#gagline all}}
-#trigger {You unfirl your * wings and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
+#trigger {You unfirl your * and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
 #trigger {You flap your wings, heading for *} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
 #pc @FlyingStarthandle stop;
 #var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
@@ -304,3 +305,13 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #pc @FlyingStarthandle stop;
 #var FlyingStart 0}; #pc @Flyinghandle stop; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}
 #trigger {The flashing icons on * draw your attention *} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @CommsVol; #additem InfoComputerNotifications %0}
+#trigger {* Micro-wormhole Transportation Pod suddenly falls with a crash, the doors sliding open a moment later.} {#gagline all; playsound {Cosmic Rage/general/misc/microdi.wav} @vol}
+#trigger {There is a ripple just above the * before, with a flash, Micro-wormhole Transportation Pod launches upwards and straight into it!} {#gagline all; playsound {Cosmic Rage/general/misc/microdk.wav} @vol}
+#trigger {There is a slight pause while the doors are secured, then, with no warning, the pod rockets upwards!} {#gagline all; playsound {Cosmic Rage/general/misc/microik.wav} @vol}
+#trigger {In a weird moment that leaves many with vertigo, the pod goes from ascending, to violently descending.} {#gagline all; playsound {Cosmic Rage/general/misc/microii.wav} @vol}
+#trigger {The pod shakes violently!} {#gagline all}
+#trigger {There is a powerful hum as shielding is powered up.} {#gagline all}
+#trigger {A strange sound, almost like growling, fills the room and there is the dull thud of something hitting the outside of the pod.} {#gagline all}
+#trigger {There is a bone-rattling crash as the pod suddenly comes to a stop and the doors swing open.} {#gagline all}
+#trigger {The pod continues to drop, the shielding suddenly being taken offline.} {#gagline all}
+#TRIGGER {Warning! You have less than a minute of oxygen left in your spacesuit!} {#playsound {cosmic rage/general/Misc/warning.wav} @vol}

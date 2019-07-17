@@ -51,7 +51,9 @@ playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
 #gagline all;
 playsound {cosmic rage/vehicle/EngineStop.wav} @vol}
 #TRIGGER {The hum of the engines decreases as the speed is reduced.} {#gagline all; playsound {cosmic rage/ships/movement/deceleration.wav} @vol}
-#TRIGGER {The computer announces: *} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}};
+#TRIGGER {The computer announces: "*"} {
+#if {%1 <> "Extracting minerals..."} {
+playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}}
 #TRIGGER {The ship rocks slightly as it is transported by hydraulic arms into a  starship garage.} {#gagline all;
 playsound {cosmic rage/ships/misc/garage.wav} @vol};
 #TRIGGER {You feel a slight swaying as the ship is hauled up and onto a landing pad.} {#gagline all;
@@ -78,7 +80,7 @@ playsound {cosmic rage/ships/com/sector.wav} @vol}
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {You type details into the repairing console.} {
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
-#trigger {There is a slight lurching sensation as the rockets on the hull begin to shift the ship.} {
+#trigger {The engines hum slightly as the ship moves.} {
 #gagline all;
 #if {@altShipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/shipMove.wav} @Evol};
@@ -105,17 +107,6 @@ playsound {cosmic rage/vehicle/lever.wav} @vol}
 playsound {cosmic rage/ships/movement/orbit.wav} @vol}
 #trigger {The lights flicker and die from a power surge.} {#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
 #trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
-#trigger {Blackness wizzes past the windows as the ship continues its ascent.} {
-#gagline all}
-#trigger {The upward thrust stops as the ship launches into space.} {
-#gagline all}
-#trigger {You begin to carefully align the ship with the top tube, all too aware of the difficult landing.} {
-#gagline all; playsound {cosmic rage/ships/movement/BeaconLanding.wav} @vol}
-#trigger {The engines slow to just a hum as it begins to descend towards a beacon station.} {
-#gagline all}
-#trigger {Blackness flies past the windows as the ship continues to descend.} {
-#gagline all}
-
 #trigger {The roar of the engines calm down and the ship settles.} {
 #gagline all}
 #trigger {the ship lurches violently and you hear a deafening boom!} {
@@ -357,3 +348,13 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {* taps a small button.} {
 playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {You hear a slight grinding noise as the warp core slows down.} {playsound {cosmic rage/ships/movement/deceleration.wav} @vol}
+#trigger {You flip open the hatch and climb out of the ship's structure.} {#gagline all; playsound {cosmic rage/ships/rep/doorc.wav} @vol}
+#trigger {You climb * the hatch in the middle of the floor.} {#gagline all;  playsound {cosmic rage/ships/rep/dooro.wav} @vol}
+#trigger {You carefully climb *} {#gagline all; playsound {cosmic rage/ships/rep/c*6.wav} @vol}
+#trigger {You carefully climb *}  {#gagline all; playsound {cosmic rage/ships/rep/c*6.wav} @vol}
+#trigger {You pull yourself * in the structure.} {#gagline all; playsound {cosmic rage/ships/rep/c*6.wav} @vol}
+#trigger {You begin careful repairs on the *} {#gagline all; playsound {cosmic rage/ships/rep/r*2.wav} @vol}
+#trigger {You pull out some fuses, replace them, and then replace some wiring, before reinforcing the makeup of the entire thing.} {#gagline all; playsound {cosmic rage/ships/rep/r*2.wav} @vol}
+#trigger {You finish up your repair work.} {#gagline all; playsound {cosmic rage/ships/rep/f*3.wav} @vol}
+#trigger {* looks almost as good as new!} {playsound {cosmic rage/ships/rep/c.wav} @vol}
+#trigger {You are about as far down as you can get.} {playsound {cosmic rage/general/misc/wall.wav} @vol}

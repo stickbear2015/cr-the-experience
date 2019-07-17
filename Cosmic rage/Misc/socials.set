@@ -76,10 +76,15 @@
 #trigger {You bend over, and unabashedly push out a giant poop.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Poop.wav} @vol}}
 #trigger {you moan loudly.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Moan*5.wav} @vol}}
 #trigger {* moans loudly.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Moan*5.wav} @vol}}
-#trigger {* barks madly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}}
+#trigger {* barks madly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bark.wav} @vol}}
 #trigger {* lets out a soft meow.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow.wav} @vol}}
 #trigger {* picks up * by the tail, swings * around * head a few times, then flings * into a trashcan!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/trash.wav} @vol}}
 #trigger {*Garry Blue Scale grins and knocks back a bottle of beer.} {#gagline all; playsound {Cosmic Rage/general/socials/GarryBeer.wav} 70}
 #trigger {Pilot Garry Blue Scale belches.} {#gagline all}
 #trigger {*grabs up the chainsaw of judgement and revs it maniacally.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgesaw.wav} @vol}}
 #trigger {*snatches up the chainsaw of judgement, gives it a quick rev, then decapitates * with it!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgesaw.wav} @vol}}
+#TRIGGER {* looks to be laughing so hard that * can't breathe.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh2.wav} @vol}}
+#TRIGGER {* laughing uncontrollably.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh2.wav} @vol}}
+#trigger {*grabs up the chainsaw of judgement and revs it maniacally.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgesaw2.wav} @vol}}
+#trigger {* places a death cow in a tee, takes a few steps back, then a few more and decides to put on a steel-toed boot. Runnning like a freight train * punts the death cow high into the air! moooo mOooOO MOoOOOoO MOOOOOO MooOoOO mOoooOO mooo * gets squished by the obviously uncatchable death cow! *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/punt.wav} @vol}; {#sub {%1 punts %3} }}
+#trigger {* in a box, slams the lid, throws it into the sea, sets fire to it, then laughs crazily.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/box.wav} @vol}}

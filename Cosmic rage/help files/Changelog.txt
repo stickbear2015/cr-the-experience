@@ -1,5 +1,18 @@
-821, changed the farm ambience, coppy sounds/cosmic rage/ambiences/farm.wav
-
+827, credits jay and everyone that reported or experienced the micro pod bug, fixed micro pods
+coppy sounds/cosmic rage/general/mwtp folder
+826, credits sarah, fixed factory refining
+coppy factory.set
+825, credits firath, fixed factory scrubbing
+coppy factory.set
+824, credits blake, you can now adjust the sound volume bye 5, instead of 10 for greater flexebility
+coppy misc/configurationmanager.set
+823, credits firath, added sounds for factory airscrubbing
+coppy misc/factory.set
+copy sounds/cosmic rage/general/factory folder
+822, credits firath and avery, added sounds for the electrolysis  stuff
+coppy sounds/cosmic rage/general/factory folder and cosmic rage/misc/factory.set
+821, changed the farm ambience.
+coppy sounds/cosmic rage/ambiences/farm.wav
 820: Frederick
 Removed a duplicate trigger and fixed a trigger with an incorrect filename.
 Update cosmic rage/activities/dust.set

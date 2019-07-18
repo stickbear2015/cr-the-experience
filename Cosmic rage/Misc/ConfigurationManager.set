@@ -59,113 +59,113 @@ Reload the soundpack:SpReload| View the list of available help files for the sou
 
 ;Volumes
 #alias  genvoldown {
-#math Vol {@Vol - 10};
+#math Vol {@Vol - 5};
 #if {@Vol < 0} {@Vol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @vol; #say {Main Volume @Vol percent} Voiceonly}
 #alias genvolup {
-#math Vol {@Vol + 10};
+#math Vol {@Vol + 5};
 #if {@Vol > 100} {@Vol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @vol; #say {Main Volume @Vol percent} Voiceonly}; #if {@vol = 100} {
 #say {Volume maxed!} Voiceonly}
 
 #alias {CommsVolUp} {
-#math CommsVol {@CommsVol + 10};
+#math CommsVol {@CommsVol + 5};
 #if {@CommsVol > 100} {@CommsVol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @CommsVol; #say {Communication Volume @CommsVol percent} Voiceonly};
 #if {@CommsVol = 100} {
 #say {Communication Volume maxed!} Voiceonly}
 
 #alias  CommsVolDown {
-#math CommsVol {@CommsVol - 10};
+#math CommsVol {@CommsVol - 5};
 #if {@CommsVol < 0} {@CommsVol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @CommsVol; #say {Communication Volume @CommsVol percent} Voiceonly}
 
 #alias musicvoldown {
-#math musicVol {@musicVol - 10};
+#math musicVol {@musicVol - 5};
 #if {@musicVol < 0} {@musicVol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @musicVol; #say {Planet music Volume @musicVol percent} Voiceonly;
 #if {@musicplaying = 1} {
 #pc @musicHandle volume @musicvol}}
 #alias musicvolup {
-#math musicVol {@musicVol + 10};
+#math musicVol {@musicVol + 5};
 #if {@musicVol > 100} {@MusicVol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @musicVol; #say {Planet music Volume @musicVol percent} Voiceonly;
 #if {@musicplaying = 1} {
 #pc @musicHandle volume @musicvol}}
 #alias combatdown {
-#math MVol {@MVol - 10};
+#math MVol {@MVol - 5};
 #if {@MVol < 10} {@MVol = 10};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @MVol; #say {Combat music Volume @MVol percent} Voiceonly;
 #if {@Combatmusicplaying = 1} {
 #pc @combatmusicHandle volume @MVol}}
 #alias combatup {
-#math MVol {@MVol + 10};
+#math MVol {@MVol + 5};
 #if {@MVol > 100} {@MVol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @MVol; #say {Combat music Volume @MVol percent} Voiceonly;
 #if {@combatmusicplaying = 1} {
 #pc @combatmusicHandle volume @MVol}}
 #alias combatvolumedown {
-#math CVol {@CVol - 10};
+#math CVol {@CVol - 5};
 #if {@CVol < 0} {@CVol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @CVol; #say {Ship combat Volume @CVol percent} Voiceonly;
 #if {@CombatVolume = 1} {
 #pc @combatVolumeHandle volume @CVol}}
 #alias combatvolumeup {
-#math CVol {@CVol + 10};
+#math CVol {@CVol + 5};
 #if {@CVol > 100} {@CVol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @CVol; #say {Ship combat Volume @CVol percent} Voiceonly;
 #if {@combatVolume = 1} {
 #pc @combatVolumeHandle volume @CVol}}
 #alias vehiclEvoldown {
-#math VehiclEvol {@VehiclEvol - 10};
+#math VehiclEvol {@VehiclEvol - 5};
 #if {@VehiclEvol < 0} {@VehiclEvol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @VehiclEvol; #say {Vehicle ambience volume @VehiclEvol percent. You will need to look for this change to take effect.} Voiceonly;
 #if {@vehiclesoundplaying = 1} {
 #pc @VehicleHandle volume @vehiclEvol}}
 #alias  vehiclEvolup {
-#math VehiclEvol {@VehiclEvol + 10};
+#math VehiclEvol {@VehiclEvol + 5};
 #if {@VehiclEvol > 100} {@VehiclEvol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @VehiclEvol; #say {Vehicle ambience volume @VehiclEvol percent. You will need to look for this change to take effect.} Voiceonly;
 #if {@vehiclesoundplaying = 1} {
 #pc @VehicleHandle volume @vehiclEvol}}
 #alias shipvoldown {
-#math ShipVol {@ShipVol - 10};
+#math ShipVol {@ShipVol - 5};
 #if {@ShipVol < 0} {@ShipVol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @ShipVol; #say {Ship ambience volume @ShipVol percent} Voiceonly;
 #if {@shipsoundplaying = 1} {
 #pc @shipHandle volume @shipVol}}
 #alias shipvolup {
-#math ShipVol {@ShipVol + 10};
+#math ShipVol {@ShipVol + 5};
 #if {@ShipVol > 100} {@ShipVol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @ShipVol; #say {Ship ambience volume @ShipVol percent} Voiceonly;
 #if {@shipsoundplaying = 1} {
 #pc @shipHandle volume @shipVol}}
 #alias roomvoldown {
-#math RoomVol {@RoomVol - 10};
+#math RoomVol {@RoomVol - 5};
 #if {@RoomVol < 0} {@RoomVol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @RoomVol; #say {Room ambience volume @RoomVol percent} Voiceonly;
 #if {@roomsoundplaying = 1} {
 #pc @RoomHandle volume @Roomvol}}
 #alias roomvolup {
-#math RoomVol {@RoomVol + 10};
+#math RoomVol {@RoomVol + 5};
 #if {@RoomVol > 100} {@RoomVol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @RoomVol; #say {Room ambience volume @RoomVol percent} Voiceonly;
 #if {@roomsoundplaying = 1} {
 #pc @RoomHandle volume @Roomvol}}
 #alias shipEvoldown {
-#math Evol {@Evol - 10};
+#math Evol {@Evol - 5};
 #if {@Evol < 0} {@Evol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @Evol; #say {Ship engine  Volume @Evol percent} Voiceonly}
 #alias shipEvolup {
-#math Evol {@Evol + 10};
+#math Evol {@Evol + 5};
 #if {@Evol > 100} {@Evol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @Evol; #say {Ship engine Volume @Evol percent} Voiceonly}
 #alias vehicleengvoldown {
-#math vEvol {@vEvol - 10};
+#math vEvol {@vEvol - 5};
 #if {@vEvol < 0} {@vEvol = 0};
 #play {Cosmic Rage/general/misc/VolumeDown.wav} @vEvol; #say {vehicle engine  Volume @vEvol percent} Voiceonly}
 #alias vehicleengvolup {
-#math vEvol {@vEvol + 10};
+#math vEvol {@vEvol + 5};
 #if {@vEvol > 100} {@vEvol = 100};
 #play {Cosmic Rage/general/misc/VolumeUp.wav} @vEvol; #say {vehicle engine Volume @vEvol percent} Voiceonly}
 ;Other toggles

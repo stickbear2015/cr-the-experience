@@ -11,12 +11,12 @@ Included in the main soundpack directory is a file called sounds.ini. This file 
 
 1. To install this soundpack, first go and obtain it. Several methods have been implemented for downloading the soundpack as well as all future updates.
 	A. VIP2.0 downloads
-		1. There is the standard .zip file. The link to obtain this is, https://www.dropbox.com/s/k3pwgzcmktwl5mr/Snapp%27s%20VIP2%20Dropbox%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1
-		2. A shared Dropbox folder has been created as well. If you'd like to be invited to the folder, just let Snapp know in game, and you will be invited as soon as possible.
+		1. There is the standard .zip file. The link to obtain this is, https://www.dropbox.com/s/6s71ritxyidvkw3/Snapps%20VIP%20dropbox%20soundpack.zip?dl=1
+		2. A shared Dropbox folder has been created as well. If you'd like to be invited to the folder, just let Angelica Hamilton or Lara Stardust know in game, and you will be invited as soon as possible.
 	B. VIPMud 1.0 Downloads
 		1. A VIPMud 1.0 pack has been created to support those users staying on the older version of VIPMud. This pack is very limited in sounds and features do to limits put in place within the program.
-		2. The link to download this soundpack is https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1.
-		3. A shared Dropbox folder has been created as well. If you'd like to be invited to the folder, just let Snapp know in game, and you will be invited as soon as possible.
+		2. The link to download this soundpack is 
+https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1
 2. You will need to go and make sure all the information is correct in the connection setup wizard within VIPMud. several questions have been asked about this, so answers will be provided.
 	A. Under the Connect menu within VIPMud's menu structure, find the Character Setup/Connect option. Hit enter on that and you'll be dropped into the connection wizard. A few edit boxes and options will present themselves. The NVDA screen reader does not read these edit boxes, so the window text has been captured and is shown below. Fields that are required are marked with asterisks.
 		1. *Character Name*. This is normally the name you give your character within the MUD. Not filling this out will cause the pack to throw errors. Note: This cannot be "Unnamed" and cannot contain spaces.
@@ -34,8 +34,8 @@ Included in the main soundpack directory is a file called sounds.ini. This file 
 4. Upon first run of the pack, you must complete the following steps.
 	A. Copy settings.set that is located in the root directory of the soundpack, then paste this file in Cosmic Rage/misc. Failing to copy this file will load the pack with very odd settings values, including audio volume being all the way at 100 percent. Users who already have settings how they'd like, feel free to ignore this file unless you lose all your settings data.
 	B. Launch VIPMud. You will then need to set up your settings like buffers, volumes, toggles, ETC. Please see the help files for aliases and keys.
-	C. Finally, save your packs settings with control-s. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not Snapp's fault if you fail to do this. It's also a good idea to back up your buffer settings and general pack settings after you get them how you'd like.
-If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting Snapp.
+	C. Finally, save your packs settings with control-s. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not our fault if you fail to do this. It's also a good idea to back up your buffer settings and general pack settings after you get them how you'd like.
+If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting Angelica or Lara.
 
 			**Updating Your Soundpack**
 
@@ -51,7 +51,7 @@ adding custom music for ship combat
 3, rename the files like in the folder like
 theme 1.wav theme2.wav bla bla bla up to theme132.wav
 nnote, there is no limit for this, as long as the music is at the wav format, and if you renamed your files like i did, you wont struggle
-enter vipmud, note the pack should be loaded to this to work proparly, that means you must hear the sounds fine like normal
+enter vipmud, note the pack should be loaded to this to work properly, that means you must hear the sounds fine as normal
 5, type themechange and a number, this will be the max number that the music will end
 like if you have 100 music in the combat folder, you should type themechange 100
 note, if you dont want to pack to break, just type numbers here
@@ -64,15 +64,15 @@ If by chance you find that a sound has gotten stuck, or is not acting as expecte
 If you hear that gagging is in effect, please hit control-slash. This will force VIP to ungag your speech.
 To view any of the help files related to this soundpack, you may either use the alias SpHelp, or use the key alt-shift-H.
 To see the last change that was posted, without opening the changelog, you can either type SpVersion, or use the key Alt-V.
-If you have a suggestion you'd like to see added to the pack, this can be done by using the alias "SpSuggest." A note about suggestions. If Snapp asks for text from you to make a trigger work, whether it be for gagging the text, adding a sound, etcetera, and no text has been given to create the suggested trigger after a month's time, the suggestion will be removed as it will be assumed it is no longer desired
-If you have a bug that you need to report, this can be done by using the alias "SpBug."  Please be as detailed as possible in your bug report. Try to include the error, the command you sent that gave you the error, and any other misc information.  Bugs that contain just an error, or two words, are likely to be deleted as Snapp needs more details to effect a solution.
+If you have a suggestion you'd like to see added to the pack, this can be done by using the alias "SpSuggest." A note about suggestions. If one of the soundpack administrators asks for text from you to make a trigger work, whether it be for gagging the text, adding a sound, etcetera, and no text has been given to create the suggested trigger after a month's time, the suggestion will be removed as it will be assumed it is no longer desired
+If you have a bug that you need to report, this can be done by using the alias "SpBug."  Please be as detailed as possible in your bug report. Try to include the error, the command you sent that gave you the error, and any other misc information.  Bugs that contain just an error, or two words, are likely to be deleted as the soundpack administrators needs more details to implement a solution.
 
 			**Error Notice**
 
 If you're seeing errors and you have not updated your pack prior to October 10, 2018, you must totally replace the entire Cosmic Rage directory, get rid of Cosmic Rage/misc/settings.set, then resave. This is due to how options are now configured. Failing to do this causes the pack to try to read settings entries that are not in use any longer.
 If you have updated and are not seeing errors when toggling options or changing volumes, you've nothing to worry about. This issue only seems to affect a small number of users.
-If you have any questions or concerns, please first take a look at the Help Files directory. More than likely your question will be answered in one of those documents. If not, feel free to get a hold of Snapp via an OTR link or over the soundpacks channel in the game. To enable the soundpacks channel, please type spon from within the MUD. To disable the channel, use the command spoff. To establish an OTR link, please type olink then hit enter. You will then be presented with an edit field. Just type snapp and hit enter. Snapp will accept your link request as soon as possible. If more help is needed with OTR links, please read the help file "Communicating out of character" in Cosmic Rage's help system.
-If Snapp is not around to answer your questions, likely someone is on the soundpacks channel who can. If not, you are more than welcome to send him mail on the MUD and he will get back with you as soon as possible.
+If you have any questions or concerns, please first take a look at the Help Files directory. More than likely your question will be answered in one of those documents. If not, feel free to get ahold of one of the soundpack administrators via an OTR link or over the soundpacks channel in the game. To enable the soundpacks channel, please type spon from within the MUD. To disable the channel, use the command spoff. To establish an OTR link, please type olink then hit enter. You will then be presented with an edit field. Just type the name of one of the soundpack administrators and hit enter. One of the administrators will accept your link request as soon as possible. If more help is needed with OTR links, please read the help file "Communicating out of character" in Cosmic Rage's help system.
+If a soundpack administrator is not around to answer your questions, likely someone is on the soundpacks channel who can. If not, you are more than welcome to send one of them mail on the MUD and that person will get back with you as soon as possible.
 
 			**Compatibility**
 
@@ -81,7 +81,7 @@ Download from:  https://nathantech.net/files/VIPMud%20Soundpack%20Installer%20v1
 
 			**Legal Stuff and Things**
 
-Snapp is not a lawyer, does not know a lawyer, and is entirely unwilling to pay for the services of any legal advice regarding this project. That being said, you should note that Snapp Blue scale cannot guarantee any level of functionality of this soundpack with your particular situation.  Snapp may not necessarily always be available to answer questions, help you install it, ETC.  If your computer suddenly decides that it can't handle it, catches fire, melts down or produces extreme amounts of smoke or radiation that result in your untimely demise, Snapp had nothing to do with it.  This soundpack has been tested under windows 7 and 10, as well as released for private beta use amongst friends. Snapp would not be releasing it as such if he believed that it would not be functional to a level of acceptableness. But do keep in mind that the pack is constantly being developed, so check back frequently for updates! In smart and legal terms, Snapp or any other developer of this pack cannot be held liable for any damages caused by using this pack or anything relating to this pack.
+The soundpack administrators are not lawyers, don't know any lawyers, and are entirely unwilling to pay for the services of any legal advice regarding this project. That being said, you should note that the soundpack administrators do not guarantee any level of functionality of this soundpack with your particular situation.  The soundpack administrators may not necessarily always be available to answer questions, help you install it, ETC.  If your computer suddenly decides that it can't handle it, catches fire, melts down or produces extreme amounts of smoke or radiation that result in your untimely demise, we had nothing to do with it.  This soundpack has been tested under windows 7 and 10, as well as released for private beta use amongst friends. We would not be releasing it as such if he believed that it would not be functional to a level of acceptableness. But do keep in mind that the pack is constantly being developed, so check back frequently for updates! In smart and legal terms, we or any other developer of this pack cannot be held liable for any damages caused by using this pack or anything relating to this pack.
 
 		*A note from Nate, the head admin of Cosmic Rage*
 

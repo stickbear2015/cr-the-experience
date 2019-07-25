@@ -63,21 +63,24 @@ playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}
 #TRIGGER {*arrives in an electrical beam of light!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #trigger {You are enveloped by a bright beam of light!} {
 playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}}
-#TRIGGER {You put * on your head} {playsound {cosmic rage/wear/head.wav} @vol};
-#Trigger {You slip your arms through * and put it on} {playsound {cosmic rage/wear/OnBody.wav} @vol};
-#TRIGGER {You slip * onto your * wrist} {playsound {cosmic rage/wear/wrist*2.wav} @vol};
-#TRIGGER {You slip * over your hands.} {playsound {cosmic rage/wear/hands.wav} @vol};
-#TRIGGER {You slip your * paws into *} {playsound {cosmic rage/wear/wrist*2.wav} @vol};
-#TRIGGER {You slip * onto your finger} {playsound {cosmic rage/wear/ring.wav} @vol};
-#TRIGGER {You slip your legs into *} {playsound {cosmic rage/wear/legs.wav} @vol};
-#TRIGGER {You slip your feet into *} {playsound {cosmic rage/wear/feet.wav} @vol};
-#TRIGGER {You wrap * around your waist.} {playsound {cosmic rage/wear/waist.wav} @vol};
-#TRIGGER {You slip into *, letting it surround your body completely.} {playsound {cosmic rage/wear/AboutBody.wav} @vol};
-#TRIGGER {You wiggle your * into *} {playsound {cosmic rage/wear/OnBody.wav} @vol};
-#TRIGGER {You hang * from your neck} {playsound {cosmic rage/wear/neck.wav} @vol};
-#TRIGGER {You put on *} {playsound {cosmic rage/wear/head.wav} @vol};
+#TRIGGER {You put * on your head} {playsound {cosmic rage/wear/head.wav} @vol}
+#Trigger {You slip your arms through * and put it on} {playsound {cosmic rage/wear/OnBody.wav} @vol}
+#trigger {You struggle to put *} {playsound {cosmic rage/wear/OnBody.wav} @vol}
+#trigger {You struggle out of *} {playsound {cosmic rage/wear/OnBody.wav} @vol}
+
+#TRIGGER {You slip * onto your * wrist} {playsound {cosmic rage/wear/wrist*2.wav} @vol}
+#TRIGGER {You slip * over your hands.} {playsound {cosmic rage/wear/hands.wav} @vol}
+#TRIGGER {You slip your * paws into *} {playsound {cosmic rage/wear/wrist*2.wav} @vol}
+#TRIGGER {You slip * onto your finger} {playsound {cosmic rage/wear/ring.wav} @vol}
+#TRIGGER {You slip your legs into *} {playsound {cosmic rage/wear/legs.wav} @vol}
+#TRIGGER {You slip your feet into *} {playsound {cosmic rage/wear/feet.wav} @vol}
+#TRIGGER {You wrap * around your waist.} {playsound {cosmic rage/wear/waist.wav} @vol}
+#TRIGGER {You slip into *, letting it surround your body completely.} {playsound {cosmic rage/wear/AboutBody.wav} @vol}
+#TRIGGER {You wiggle your * into *} {playsound {cosmic rage/wear/OnBody.wav} @vol}
+#TRIGGER {You hang * from your neck} {playsound {cosmic rage/wear/neck.wav} @vol}
+#TRIGGER {You put on *} {playsound {cosmic rage/wear/head.wav} @vol}
 #trigger {You hang * from your * shoulder.} {playsound {cosmic rage/wear/AboutBody.wav} @vol}
-#TRIGGER {You give * a tug and pull it off.} {playsound {cosmic rage/wear/hold.wav} @vol};
+#TRIGGER {You give * a tug and pull it off.} {playsound {cosmic rage/wear/hold.wav} @vol}
 #TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; #additem CashPointsSkillsAndLeveling %0}
 #TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Disabled"} {#gagline all}}
 #trigger {Type a line of input.} {
@@ -238,7 +241,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {* mapper and the screen displays: *} {
 #sub {%2};#additem Mapper %0}
 #trigger {* scoops up * munching it in a few mighty chomps.} {playsound {Cosmic Rage\general\Misc\peteat.wav} @vol}
-#trigger {You have arrived at your destination.} {playsound {Cosmic Rage/general/misc/ArrivedDestination.wav} @vol; #additem Mapper %0}
+#trigger {* mapper quietly says in *: "You have arrived at your destination."} {#gagline voice;playsound {Cosmic Rage/general/misc/ArrivedDestination.wav} @vol; #additem Mapper %0}
 #trigger {You close *washer} {playsound {Cosmic Rage/general/Washing/Washing1.wav} @vol; #gagline all}
 #trigger {*light flicks on * washer and through the door at the front you see the clothing begin to revolve clockwise.} {loopsound {Cosmic Rage/general/Washing/Washing2.wav} @vol; #gagline all; #var Washhandle %playhandle; #var Wash 1}
 #trigger {*washer gurgles, then rotates the clothing anti clockwise.} {#gagline all}
@@ -295,8 +298,8 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You tap on the icon of * on * display before resting your *against the scanner.} {#gagline all}
 #trigger {* taps an icon on the screen of * vending machine before resting * on the scanner.} {#gagline all}
 #trigger {*} {#if {@HD = 1} {#Additem HelperDrone %0; #var HD 0}}
-#trigger {* unfurls * wings and launches into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
-#trigger {* flaps * wings, heading towards a destination.} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
+#trigger {* unfurls * wings and launches into the sky.} {playsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
+#trigger {* flaps * wings, heading towards a destination.} {playsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
 #pc @FlyingStarthandle stop;
 #var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
 #trigger {swoops in for a landing.} {#if {@Flying = 1} {
@@ -314,4 +317,9 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {A strange sound, almost like growling, fills the room and there is the dull thud of something hitting the outside of the pod.} {#gagline all}
 #trigger {There is a bone-rattling crash as the pod suddenly comes to a stop and the doors swing open.} {#gagline all}
 #trigger {The pod continues to drop, the shielding suddenly being taken offline.} {#gagline all}
-#TRIGGER {Warning! You have less than a minute of oxygen left in your spacesuit!} {#playsound {cosmic rage/general/Misc/warning.wav} @vol}
+#TRIGGER {Warning! You have less than a minute of oxygen left in your spacesuit!} {playsound {cosmic rage/general/Misc/warning.wav} @vol}
+#TRIGGER {[[]Poker], * tosses down some chips and joins the game.} {playsound {cosmic rage/general/Misc/pokerchips.wav} @vol}
+#TRIGGER {[[]Poker], The dealer shuffles the cards.} {playsound {cosmic rage/general/Misc/pokercard.wav} @vol}
+#TRIGGER {[[]Poker], the dealer flips over card *} {playsound {cosmic rage/general/Misc/pokerplay.wav} @vol}
+#TRIGGER {[[]Poker], * bets *} {playsound {cosmic rage/general/Misc/pokerbet.wav} @vol}
+#TRIGGER {[[]Poker], * chips in. All in.} {playsound {cosmic rage/general/Misc/pokerchips.wav} @vol}

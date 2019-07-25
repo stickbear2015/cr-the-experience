@@ -31,6 +31,10 @@ playsound  {cosmic rage/activities/planetoid/grind.wav} @vol}
 #trigger {The grinding sound of solar panels fills the *} {
 #gagline all;
 playsound  {cosmic rage/activities/planetoid/grind.wav} @vol}
+#trigger {You hear a loud boom and the * exit suddenly explodes.} {#gagline all;
+playsound {cosmic rage/general/factory/explode.wav} @vol}
+#trigger {You hear a faint rumbling sound.} {#gagline all;
+playsound {cosmic rage/general/factory/rumbling.wav} @vol}
 #trigger {You type quickly into a nearby console and then start the refining process.} {
 #gagline all;
 playsound  {cosmic rage/ships/computer/keyboard*7.wav} @vol}
@@ -122,3 +126,5 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {The air scrubbers power up with a gentle rumble.} {#gagline all; playsound {cosmic rage/general/factory/factorypowerup.wav} @vol}
 #trigger {The air scrubbers slowly grind to a halt.} {#gagline all; playsound {cosmic rage/activities/planetoid/low hum.wav} @vol}
 #trigger {A loud hissing can be heard as carbon dioxide is scrubbed from the air and pumped into a holding tank.} {#gagline all; playsound {cosmic rage/activities/planetoid/air.wav} @vol}
+#trigger {One of the drones topples over.} {#gagline all; playsound {cosmic rage/general/factory/build6.wav} @vol}
+#trigger {The drones continue working} {#gagline all; playsound {cosmic rage/general/factory/build*5.wav} @vol}

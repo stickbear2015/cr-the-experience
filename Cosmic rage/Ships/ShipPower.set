@@ -239,6 +239,6 @@ loopsound {cosmic rage/ships/rooms/Deck.wav} @Shipvol;
 #TRIGGER {The ever present hum of the power systems fades away as the charge running through the ship is taken offline.} {#gagline all;
 #pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #var currentroom "off"};
 #trigger {A small blue circle begins to rotate on the main console.} {#gagline all}
-#trigger {the blue circle on the main console turns *} {#gagline all}
+#trigger {The blue circle on the main console turns *} {#gagline all}
 #trigger {The circle on the main console blinks to green.} {#gagline all}
 #trigger {the lights begin to dim, the barely noticeable hum of the power systems falling away.} {#gagline all}

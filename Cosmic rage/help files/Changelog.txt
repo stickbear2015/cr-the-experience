@@ -1,3 +1,113 @@
+874, updated the readme with the website information
+
+873s. Cerenity/Angelica and Stormy: Deleted all prior announcements in the announcements sfile, and updated it with my latest one.
+872, fixed the broken unlooping gmc music, basicly the gmc music loops perfectly fine now
+coppy sounds music/planets gmc.wav
+871, stormy, i tryed so much to not add this but uh, we now have a buzz sound,, you can trigger that to scare me off, it is the best, o never mind why m i telling this?
+coppy misc/socials.set and sounds cosmic rage general socials buzz.wav
+870, credits all the dogsocks lovers, the dogsocks social is back
+misc/socials.set
+869, the last change about extra sound wen replying someone is reverted back because it was causing so many issues
+coppy misc/comms.set
+868, added a sound wen you open up a cargo barrel
+coppy ships/ships.set and sounds/ships/misc/barrel.wav
+867 added triggers for the new transferring with ships.
+copy cosmic rage/misc/doors.set
+866, frederic, the spreload now respect your ambience settings
+coppy misc/configurationmanager.set
+865, added a sound for ooc bearhug social, note this sound cant be applyed for the IC one, because you'Ll understand it wen you listen
+coppy misc/socials set and sounds/cosmic rage/general/socials/bearhug.
+864, started to  add sounds for telephones, coppy misc/misc.set , cosmicRage.set  misc/telephone.set and sounds/cosmic rage/general/telephone folder
+863 Corrected typo in star coring, now that it has been fixed in the game.
+copy cosmic rage/activities/StarCoring.set
+862, ratica are now much more scarry
+coppy ships/rats folder and ships/rats.set
+861, ladies and gentlemen, the tickle social, is no longer a social, i mean, listen it for yourself, noone's responsable if somethings happpens, though
+coppy socials.set and coppy sounds/cosmic rage/general/socials/tickle 1 and 2.wav
+860, credits francisco, fixed a bug about ship powering
+coppy ships/shippower.set
+859, starcores fixed
+coppy activities/starcoring.set
+858 sAdded an extra trigger to play a sound when orbit cleaning is finished.
+copy cosmic rage/activities/trash.set
+857, credits ivan, you now hear an extra sound when you send someone a private message
+coppy comms.set and sounds cosmic rage general comms privyou.wav
+856, credits blake,  the ooc headdesk sound is now works with its brother, inCharacter headdesk social too
+coppy socials.set
+855, credits Riszoqrava  and ivan, fixed a issue with dragon flying
+coppy misc.set
+854, added sounds for headdesk social
+coppy socials.set and general/socials/headdesk1 and 2.wavs
+853, fixed starcores for, good, i mean for verry good, i mean the locking should no longer break, if it breaks again, tickle frederic
+coppy starcoring.set
+852, changed the ryuchi chitter sounds, tell me if they are so offle
+coppy comms.set and sounds cosmic rage general comms ryuchiChitter 1 through 10.wav
+851, added sounds for shipwreck clamps, coppy ships2.set and sounds ships misc clamp 1 through 3.wav
+850, stormy, starcores should now work like they should to be, coppy starcore.set and sounds/cosmic rage/activities/ star coreing folder
+849, changed some of the moon sounds, coppy sounds activities moon folder
+848 Changed the number order of the core files for the star coring activity.
+updated cosmic/activities/StarCoring.set
+delete sounds/cosmic rage/activities/star cores/core 2 through 5.wav
+copy sounds/cosmic rage/activities/star cores/core1 through 4.wav
+847 fixed the combat music, red alert, and changing music tracks on the fly.
+update cosmic rage/misc/keys.set
+update cosmic rage/ships/ShipCombat.set
+846 Fixed up star coring
+Fixed some errors that were occurring, removed some triggers that are no longer necessary, and removed a sound file that no longer has a purpose.
+delete sounds/cosmic rage/activities/star cores/CoreStart.wav
+replace your copy of cosmic rage/activities/StarCoring.set
+845, added some more stuff for factories, coppy misc/factory.set and sounds/cosmic rage/general/factory/build6.wav
+844 changed by frederick
+fixed an error with mapper playing a sound when you have arrived at your destination.
+copy cosmic rage/misc/misc.set
+843 changed by Frederick
+Added a few more triggers for factories.
+copy cosmic rage/misc/factory.set
+842, fixed a trigger in the rats.set file
+coppy ships/rats.set
+841 Changed by Frederick
+Added a sound for orbit junk harvesting, particularly when the gear is retracting.
+copy cosmic rage/activities/trash.set
+copy sounds/cosmic rage/activities/trash collection/OrbitGearRetract.wav
+840 changed by frederick
+Ok, after much testing, and boy was it a pain in my behind, I hope I've fixed the ship combat file pertaining to combat music not playing, music not stopping, red alert sounds and all that. I tested with soundproof up and down, and weapon suppressing fields up and down.
+copy cosmic rage/ships/ShipCombat.set
+839 Angelica: Fixed a very important typo in the readme for the soundpac. The folder name is Cosmic Rage, so I fixed that.
+838, credits all the poker players wen i was coding this thing, changed and added new stuff for poker
+coppy misc/misc.set and sounds/cosmic rage/general/misc/ pokerplay, poker, pokerbet, pokerchips .wav files
+837, credits all the cult players, changed the cult sound because it was anoying
+coppy sounds/cosmic rage/general/misc/cult.wav
+836, credits frederic, you now hear a sound wen setting up  your combat music.
+coppy misc/soundpack.set and sounds/cosmic rage/general/comms/themesuccess.wav
+835 stormy, credits blake, added more stuff for volcano harvesting
+coppy cosmic rage/volcanoHarvesting.set
+834 Frederick
+Updated the ReadMe.txt file, and have placed a copy of it in the root directory of the dropbox folder.
+Hopefully, people will see and read this important document prior to setting up the soundpack, thus reducing the chance for errors to occur.
+You don't need to copy anything anywhere.
+833 Frederick
+Removed duplicate triggers and updated some variables in both of the ship combat files.
+copy cosmic rage/ships/ShipCombat.set and ShipCombat2.set
+832 Frederick
+Fixed red alert sounds not stopping when ship was switched from red back to green. 
+Thanks for reporting on that Ordenna.
+copy cosmic\ships\ShipCombat.set
+831, stormy, added sounds for execute social
+coppy  sounds/cosmic rage/general/socials/execute.wav, execute2.wav and socials.set
+830 change by Frederick Barnes131439
+I decided to get rid of a few unnecessary triggers to do with the planetary cannon in the ShipCombat and removed some useless triggers with the old pulse cannon from ShipCombat2 set file
+I removed the old planetary cannon sound file after all, and replaced it with a PulseCannon sound file
+remove any sounds having to do with the pulse cannon and planetary cannon.
+copy sounds/cosmic rage/ships/combat/PulseCannon.wav
+copy cosmic rage/ships/ShipCombat.set and ShipCombat2.set
+829 change by Frederick Barnes131439
+I have replaced the planetary cannon sound in the ships combat folder
+update sounds/cosmic rage/ships/combat/planetary cannon.wav
+828: Frederick Barnes131439 here
+I had to fix the comets set file a bit.
+Added the following files to the sounds/cosmic rage/ships/comets sound file.
+shovel1 through 5.wav
+copy cosmic rage/activities/comets.set
 827, credits jay and everyone that reported or experienced the micro pod bug, fixed micro pods
 coppy sounds/cosmic rage/general/mwtp folder
 826, credits sarah, fixed factory refining
@@ -16,7 +126,6 @@ coppy sounds/cosmic rage/ambiences/farm.wav
 820: Frederick
 Removed a duplicate trigger and fixed a trigger with an incorrect filename.
 Update cosmic rage/activities/dust.set
-
 819, removed unwanted folders, remove activities hunting and hand mining folders
 818: Frederick
 Removed sounds no longer used.
@@ -54,7 +163,6 @@ replace cosmic rage/general/trolley/button.wav and fuse.wav
 coppy cosmic rage/misc/mwtp.set and sounds/cosmic rage/general/mwtp/microdk.wav microdi.wav microii.wav and microik.wav
 804, credits firath, i'M sure that i fixed punt at this time
 copy cosmic rage/misc/socials.set
-
 803, credits firath, fixed the punt social
 coppy cosmic rage/misc/socials.set
 802: Changed by frederick Barnes131439.

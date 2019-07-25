@@ -29,13 +29,13 @@ playsound {cosmic rage/general/comms/sos.wav} @CommsVol; #additem SOS %0}
 #if {%ifWord(You,%1," ")} {
 #gagline all};
 #if {%ifWord(chitter,%1," ")} {
-playsound {cosmic rage/general/comms/Chitter*4.wav} @Vol; #additem Say %0};
+playsound {cosmic rage/general/comms/ryuchiChitter*10.wav} @Vol; #additem Say %0};
 #if {%ifWord(growl,%1," ")} {
 playsound {cosmic rage/general/comms/growl*3.wav} @Vol; #additem Say %0};
 #if {%ifWord(drone,%1," ")} {
 playsound {cosmic rage/general/comms/drone*2.wav} @Vol; #additem Say %0};
 #if {%ifWord(chitters,%1," ")} {
-playsound {cosmic rage/general/comms/Chitter*4.wav} @Vol; #additem Say %0};
+playsound {cosmic rage/general/comms/ryuchiChitter*10.wav} @Vol; #additem Say %0};
 #if {%ifWord(growls,%1," ")} {
 playsound {cosmic rage/general/comms/growl*3.wav} @Vol; #additem Say %0};
 #if {%ifWord(drones,%1," ")} {

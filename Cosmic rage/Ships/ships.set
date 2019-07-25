@@ -358,3 +358,6 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {You finish up your repair work.} {#gagline all; playsound {cosmic rage/ships/rep/f*3.wav} @vol}
 #trigger {* looks almost as good as new!} {playsound {cosmic rage/ships/rep/c.wav} @vol}
 #trigger {You are about as far down as you can get.} {playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {You yank the lid from a battered looking cargo barrel} {
+#gagline all;
+playsound {cosmic rage/ships/misc/barrel.wav} @vol}

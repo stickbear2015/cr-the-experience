@@ -9,9 +9,12 @@ playsound {cosmic rage/Activities/Trash Collection/droneGets.wav} @vol}
 #trigger {On screen, you see some junk from * atmosphere shoot to the rods magnetic field.} {
 #gagline all;
 playsound {cosmic rage/activities/Trash Collection/Scoop.wav} @vol} 
-#trigger {You hear a slight squeak as the rods retract.} {
-#gagline all;
-playsound {cosmic rage/activities/Trash Collection/Extend.wav} @vol} 
+#trigger {a slight squeak echoes throughout the ship for several moments.} {
+#gagline all}
+#trigger {You hear a slight squeak as the rods retract.} {#gagline all;
+playsound {cosmic rage/activities/trash collection/OrbitGearRetract.wav} @vol}
+#trigger {You hear a metallic sliding sound as the orbit harvesting gear completely retracts.} {#gagline all;
+playsound {cosmic rage/activities/trash collection/OrbitGearRetract.wav} @vol}
 #trigger {You hear a grinding whir as rods extend from the bottom of the ship and a laser starts up.} {
 #gagline all;
 playsound {cosmic rage/activities/Trash collection/grind.wav} @vol}
@@ -28,7 +31,7 @@ playsound {cosmic rage/activities/moon/moonExtend.wav} @vol}
 playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {A small drone wanders through the cab.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/Investigate.wav} @vol}
 #trigger {The drone returns, carrying *} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/DroneReturn.wav} @vol}
-#trigger {The drone emits a strong electric pulse that sucks the moisture out of the air as it purifies the object.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/purify.wav} @vol}
+#trigger {The drone emits a strong eletric pulse that sucks the moisture out of the air as it purifies the object.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/purify.wav} @vol}
 #trigger {* is reduced into a smashed wreck as the drone compresses it into * and carries it away.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/DroneSmash.wav} @vol}
 #trigger {You push down hard on a plunger.} {#gagline voice}
 #trigger {A very loud crunch is heard as the machine compresses some trash into a cube.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/Crunch.wav} @vol}

@@ -36,12 +36,19 @@
 #key control-alt-s {salvageTextToggle}
 #key control-w {weatherToggle}
 #key control-shift-w {gagweather}
-#key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} 100; #say {All currently playing sounds have been stopped.} voiceonly}
+#key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} @vol; #say {All currently playing sounds have been stopped.}}
 #key alt-s {ShortMapText}
 #key Control-Alt-C ToggleIdleSounds
 #key control-alt-M {SilentSPIntro}
 #key control-alt-T {ToggleClocks}
-#key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1; #pc @CombatmusicHandle stop; #say {The current combat track has been changed.} voiceonly; #playloop {cosmic rage/music/combat/Theme*10.wav} @MVol; #var combatMusicHandle %playHandle; #var combatmusicPlaying 1} {#if {@cMusic = "Disabled"} {#say {You must enable combat music for this feature to work correctly.} voiceonly}}}
+#key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1;
+#pc @CombatmusicPlayingHandle stop;
+#say {The current combat track has been changed.};
+#playloop {cosmic rage/music/combat/Theme*2.wav} @MVol;
+#var combatMusicPlayingHandle %playHandle;
+#var combatmusicPlaying 1} {
+#if {@cMusic = "Disabled"} {
+#say {You must enable combat music for this feature to work correctly.}}}}
 #key {alt-Enter} {togglenumpad}
 #Key {Numpad1} {1} {Numpad}
 #Key {Control-Numpad1} {sw}

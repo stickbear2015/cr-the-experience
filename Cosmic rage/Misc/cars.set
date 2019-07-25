@@ -28,4 +28,3 @@ playsound {Cosmic Rage/general/cars/\Handbrake_down.wav} @vol} {}
 #TRIGGER {The vehicle skids a little as it takes the corner} {#gagline all; playsound {Cosmic Rage/general/cars/skidin*3.wav} @vol; #gagline all}
 #TRIGGER {the vehicle skids along, straight into the next room!} {playsound {Cosmic Rage/general/cars/\skidin*3.wav}; {#PC @drivehandle stop; #playLoop {Cosmic Rage/general/cars/idle.wav}; #var oidlehandle %PlayHandle; #var oidlehandle 1 @vol}};
 #TRIGGER {the vehicle skids to a stop.} {playsound {Cosmic Rage/general/cars/\skidin*3.wav}; {#PC @drivehandle stop; #playLoop {Cosmic Rage/general/cars/idle.wav}; #var oidlehandle %PlayHandle; #var oidlehandle 1 @vol}};
-#TRIGGER {You step out of the vehicle.} {playsound {Cosmic Rage/vehicle/Exit Vehicle.wav} @vol; #if {@drive = 1 }; #pc @oidlehandle stop}

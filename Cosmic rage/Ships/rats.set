@@ -1,4 +1,4 @@
-#TRIGGER {*extinguisher kicks in and douses the fire.} {playsound {Cosmic Rage\ships\fire\extinguisher.wav} @vol} 
+#TRIGGER {* kicks in and douses the fire.} {playsound {Cosmic Rage\ships\fire\extinguisher.wav} @vol} 
 #TRIGGER {*"* is on fire."} {playsound {Cosmic Rage\ships\fire\siren.wav} @vol} 
 #TRIGGER {a jet of * spray shoots out of a nozzle nearby, dousing everything in a fine liquid.} {playsound {Cosmic Rage\ships\fire\spray.wav} @vol}
 #trigger {*"Attention. Attention. * ratika * inbound. I repeat, * on an inbound trajectory with this vessel."} {playsound {cosmic rage/ships/Ratika/alarm.wav} @vol}
@@ -19,3 +19,4 @@
 #trigger {*fires a volley of lasers into the nest.} {playsound {Cosmic Rage/ships/Ratika/Lasers.wav} @vol}
 #trigger {A ratika nest falls apart.} {playsound {Cosmic Rage/ships/Ratika/Break.wav} @vol}
 #trigger {*"error! A drone in the specified location is unavailable!"} {playsound {Cosmic Rage/ships/Ratika/Error.wav} @vol}
+#trigger {there is a clank, some scrabbling, then * arrives from the ducts.} {playsound {Cosmic Rage/ships/Ratika/ratappear.wav} @vol}

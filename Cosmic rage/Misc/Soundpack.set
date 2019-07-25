@@ -9,9 +9,9 @@
 #trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you.}}
 #trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this bug report! An admin will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message will not help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. If possible, try to include the steps you took that produced the error or bug. This will expedite the report getting resolved. Thank you.}}
-#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.} voiceonly; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!} system}}
-;Saving settings.
+#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.}; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!}}}
 
+;Saving settings.
 #alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffer list  have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -97,8 +97,6 @@
 #Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SilentPod @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
-;Reboot messages.
-#trigger {*Cosmic Rage is going down for maintenance in the next * minutes*} {#if {@RebootSounds = "Enabled"} {#if {%ifWord(30,%2," ")} {playsound {cosmic rage/general/misc/Reboot 30 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(15,%2," ")} {playsound {cosmic rage/general/misc/Reboot 15 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}; #if {%ifWord(10,%2," ")} {playsound {cosmic rage/general/misc/Reboot 10 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(5,%2," ")} {playsound {cosmic rage/general/misc/Reboot 5 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(3,%2," ")} {playsound {cosmic rage/general/misc/Reboot 3 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(2,%2," ")} {playsound {cosmic rage/general/misc/Reboot 2 minutes.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100} {}; #if {%ifWord(1,%2," ")} {playsound {cosmic rage/general/misc/Reboot 1 minute.wav} 100; playsound {Cosmic Rage/general/misc/Alert.wav} 100}}}
 #alias {SpHelp} {#say {Loading the list of available help files. Please wait.} Voiceonly; #play {Cosmic Rage/general/misc/ConfMan.wav} 100; #pick {p:Please select an option from the list below|
 View the alias's help file:{#play {Cosmic Rage/general/Help/Aliases.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Aliases.txt}}}|
 View the Announcements help file:{#play {Cosmic Rage/general/help/Announcements.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Announcements.txt}}}|
@@ -108,4 +106,4 @@ View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {C
 View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
 View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
 #alias spp {>@soundpacks} {}
-#Alias {themechange} {#var skice %1}
+#Alias {themechange} {playsound {Cosmic Rage/general/comms/themesuccess.wav}; #var skice %1}

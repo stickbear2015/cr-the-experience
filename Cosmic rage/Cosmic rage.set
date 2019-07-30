@@ -47,6 +47,7 @@
 #load misc/buffers.set.
 #load misc/cars.set
 #load misc/comms.set
+#load ships/pd.set.
 #load misc/clocks.set
 #load misc/doors.set
 #load misc/factory.set

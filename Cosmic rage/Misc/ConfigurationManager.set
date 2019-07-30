@@ -52,7 +52,7 @@ Submit a soundpack suggestion:SpSuggest|
 View the last posted soundpack change. Note. This shows the last change that  has posted to the game. This may not always be the last change you see in your changelog.:SpVersion|
 Clear the current buffers items. Useful if you start seeing buffer errors. Note. This only clears items from that one buffer:ClearBuffer|
 Clear All Buffers. Clears all text from all of your active buffers:ClearAllBuffers|
-Toggle your speech in the soundpack. This option is currently @speech. Note. When this option is enabled, your speech will be muted :TTS|
+Toggle your speech in the soundpack. This option is currently @speech. Note. When this option is enabled, your speech will be muted :smute|
 Toggle mute sounds. This option is currently @soundson:MuteSound|
 Save your soundpack settings:SaveSettings|
 Reload the soundpack:SpReload| View the list of available help files for the soundpack. Note. Files will be opened in your text editer of choice:SpHelp}}
@@ -216,7 +216,7 @@ Reload the soundpack:SpReload| View the list of available help files for the sou
 #alias {lag} {#var LagAmount 0;
 #alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
 echo Lag.test} {}
-#alias {tts}  {
+#alias {smute}  {
 #if {@Speech = "Disabled"} {
 #var Speech "Enabled";
 #play {Cosmic Rage/general/misc/Off.wav} 100; #say {speech off.} Voiceonly; #alarm 1 {#SetSpeech incoming off}} {

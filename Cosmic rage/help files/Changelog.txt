@@ -1,3 +1,38 @@
+889, dragon loving time, added a cool sound for firecloak
+coppy sounds general combat firecloak.wav and combat/combat.set
+888, credits sierra, added  new original tackle sounds
+coppy sounds cosmic rage general socials, tackle1 through 5.wav
+887, recoppy the sounds/ships/pd folder i fixed some things
+886, credits,  all the missioners that joined stormy in a specialest mission, after destroying all of my planetary destruction pods, i decided to  make an audiogame version of it, shortly we now have sounds for those, planetary destruction system
+coppy sounds ships pd folder, ships/pd.set and cosmic rage.set file
+885, round 6 or 7 what ever, ambience files, 3, stormy, 4, i mean ambience revampin finished, and the last victom was pool.wav yeah it loops fine now
+coppy cosmic rage/ambiences/pool.wav
+
+884, the road ambience is now loops, i mean verry good now
+coppy cosmic rage/ambiences/road.wav
+
+883, plaza ambience, works fine now
+coppy cosmic rage/ambiences/plaza.wav
+
+882, the hall.wav, i dont know which ambience is that, but loops verry good now
+coppy cosmic rage/ambiences/hall.wav
+881, oops, updated the keys.set do to my last change, see changelog entry 880
+coppy misc/keys.set
+
+880, credits all the cosmic ragers, the command is to turn speach and on is smute, not tts anymore do to its conflicting with a feature of the game
+coppy misc/configurationmanager.set
+879, the theater ambience, almost loops perfectly now
+coppy sounds/cosmic rage/ambiences/theater.wav
+
+878, the bar ambiences loops perfectly fine now
+coppy sounds/cosmic rage/ambiences/bar.wav
+
+877, ambiences and stormy, round 1, fight, i mean oops, the crushery sound loops perfectly fine now
+coppy sounds/cosmic rage/ambiences/crushary.wav
+876, STARPROBE SOUNDS ARE CHANGED
+COPPY SOUNDS/COSMÝC RAGE/ACTIVITIES/star study folder
+875, credits blake, fixed a thing in the ratica.set file
+coppy ships//rats.set
 874, updated the readme with the website information
 
 873s. Cerenity/Angelica and Stormy: Deleted all prior announcements in the announcements sfile, and updated it with my latest one.

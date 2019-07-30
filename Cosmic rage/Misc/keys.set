@@ -92,7 +92,7 @@
 #Key {Alt-X} {out} {}
 #key {Shift-F1} {MuteSound}
 #key F2 {config}
-#key {Control-F1} {TTS}
+#key {Control-F1} {smute}
 #key {Shift-F2} {LogFile}
 #key {control-/} {#ungagon; #say {Speech is no longer being gagged.}}
 #key control-alt-L {Logging}

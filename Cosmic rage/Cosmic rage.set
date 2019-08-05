@@ -25,6 +25,7 @@
 #load Activities/StarStudies.set
 #load Activities/trash.set
 #load Activities/volcanoHarvesting.set
+#load ships/component.set
 #load Activities/VolcanoMining.set
 
 ;Ambience set files
@@ -130,6 +131,8 @@
 #read 6 SocialText 38;
 #read 6 TPR 39;
 #read 6 SilentPod 40;
+#read 6 showermusic 41;
+
 #close 6
 
 ;misc.

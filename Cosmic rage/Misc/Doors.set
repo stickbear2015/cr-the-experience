@@ -42,8 +42,8 @@ playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol}}
 #trigger {With a heavy grinding noise, * rises into the ceiling.} {playsound {Cosmic Rage/general/doors/DoorWeightedOpen.wav} 90}
 #trigger {You send the signal for the cargo bay doors to open.} {#gagline all}
 #trigger {From nearby, the sound of a pair of doors sliding open can be heard.} {#gagline all;
-playsound {cosmic rage/general/doors/DoorOpen4.wav} @vol}
+playsound {cosmic rage/general/doors/transferopen.wav} @vol}
 #trigger {Closing cargo bay doors...} {#gagline all}
 #trigger {From nearby, the sound of a pair of doors sliding shut can be heard.} {#gagline all;
-playsound {cosmic rage/general/doors/DoorClose4.wav} @vol}
+playsound {cosmic rage/general/doors/transferclose.wav} @vol}
 

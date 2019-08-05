@@ -28,33 +28,6 @@
 #trigger {There is a slide, followed by a sharp thud, as plasma missiles are drawn from the banks and slotted into tubes.} {#gagline all}
 #trigger {There is a slide, followed by a sharp thud, as standard missiles are drawn from the banks and slotted into tubes.} {#gagline all}
 #trigger {There is a slide, followed by a sharp thud, as standard torpedos are drawn from the banks and slotted into tubes.} {#gagline all}
-#trigger {The engines momentarily go offline as they are struck by warheads.} {#gagline all};
-#trigger {The engines momentarily go offline as they are struck by cannon fire.} {#gagline all};
-#trigger {The engines momentarily go offline as they are struck by laser fire.} {#gagline all};
-#trigger {The screens blink and go fuzzy for a moment as the computer systems are hit by warheads.} {#gagline all};
-#trigger {The screens blink and go fuzzy for a moment as the computer systems are hit by cannon fire.} {#gagline all};
-#trigger {The screens blink and go fuzzy for a moment as the computer systems are hit by laser fire.} {#gagline all};
-#trigger {The lights flicker dromaticly as the power systems are hit by warheads.} {#gagline all};
-#trigger {The lights flicker dromaticly as the power systems are hit by cannon fire.} {#gagline all};
-#trigger {The lights flicker dromaticly as the power systems are hit by laser fire.} {#gagline all};
-#trigger {There is a nasty metal against metal shriek as the planetary gear takes damage from warheads.} {#gagline all};
-#trigger {There is a nasty metal against metal shriek as the planetary gear takes damage from cannon fire.} {#gagline all};
-#trigger {There is a nasty metal against metal shriek as the planetary gear takes damage from laser fire.} {#gagline all};
-#trigger {The air seems to go thin for a moment and red warning lights flicker as the life support system takes damage from warheads.} {#gagline all};
-#trigger {The air seems to go thin for a moment and red warning lights flicker as the life support system takes damage from cannon fire.} {#gagline all};
-#trigger {The air seems to go thin for a moment and red warning lights flicker as the life support system takes damage from laser fire.} {#gagline all};
-#trigger {There is what sounds like a fuse or 5 popping all at the same time as the sensors are damage by warheads.} {#gagline all};
-#trigger {There is what sounds like a fuse or 5 popping all at the same time as the sensors are damage by cannon fire.} {#gagline all};
-#trigger {There is what sounds like a fuse or 5 popping all at the same time as the sensors are damage by laser fire.} {#gagline all};
-#trigger {There is a slight feeling of weightlessness as the safety systems are hit by warheads.} {#gagline all};
-#trigger {There is a slight feeling of weightlessness as the safety systems are hit by cannon fire.} {#gagline all};
-#trigger {There is a slight feeling of weightlessness as the safety systems are hit by laser fire.} {#gagline all};
-#trigger {From somewhere in the bowels of the ship there is a groan as warheads impact the cargo supports.} {#gagline all};
-#trigger {From somewhere in the bowels of the ship there is a groan as cannon fire impact the cargo supports.} {#gagline all};
-#trigger {From somewhere in the bowels of the ship there is a groan as laser fire impact the cargo supports.} {#gagline all};
-#trigger {A loud siren shrieks as the warp core is hit by warheads.} {#gagline all};
-#trigger {A loud siren shrieks as the warp core is hit by cannon fire.} {#gagline all};
-#trigger {A loud siren shrieks as the warp core is hit by laser fire.} {#gagline all};
 #trigger {You slide a switch across and hold it.} {#gagline all};
 #trigger {You release the switch.} {#gagline all};
 #TRIGGER {You hear a sliding noise, before a loud thunk as * are loaded into the ships main banks.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};

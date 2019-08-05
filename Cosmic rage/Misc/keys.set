@@ -22,6 +22,7 @@
 #key {alt-f10} {vehicleengvolup}
 
 ;keys for toggles.
+#key {Control-shift-M} {showermusictoggle}
 #key f11 {ambtoggle}
 #Key {control-l} {lag}
 #key alt-shift-d {DroneToggle}

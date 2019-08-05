@@ -1,3 +1,42 @@
+907, credits Michael and everyone that kept beeing anoyed to to constant elephant trumpetting sounds do to baurgan trigger beeing triggered constantly, it is just fixed now, along with an embahi issue
+coppy combat/groundcombat.set
+906, credits all the players that experienced the long standing vehicle ambience bug, that bug is now sqwoshed
+coppy vehicle/vehicle.set
+905, credits blake, added a sound when a rat dugs out a hole in your cool ship
+ coppy sounds cr ships ratica hole.wav, and ships rats.set
+904, credits octavia, added a sound for the seatbelts
+coppy misc/misc.set and sounds cr general misc seatbelt.wav
+903, credits blake, ratica defence drones  now have sounds, too
+copppy ships/rats.set
+902,  changed the game time sounds because it was anoying
+coppy sounds cr general misc time.wav
+901, credits blake, sounds credit blake, guard drones have6 repair sounds instead of 1
+coppy ships rats.set and sounds cr ships ratica/repair folder
+900, wow we just, reached 900, that means a big, a verry big change, i mean a verry verry big change, no, yes, yes yes ok its probably yes, we now have a system that let vip mud create its own random sounds, so that means if we implement that system to the ship combat or similor, you dont hear the same borring meh sounds over and over, unique and diffrent each time, the first step is the component sounds, now when ever someone hits one of your ship components such as warp core, the sound will be randomised
+coppy ships/component.set,  cosmic rage.set, sounds cr ships combat component folder, and ships shipcombat.set
+899, credits blake, added a sound when a guard drone gos poof 
+coppy ships rats.set and sounds cosmic ships ratica guard.wav
+898, credits blake, thanks to blake, the transfer door sounds, are changed
+coppy misc doors.set and sounds cosmic rage general doors transferopen and close.wav
+897, credits blake, the vehicle crash no longer plays twice
+coppy vehicle vehicle.set
+896, credits ines, all the bugs about showering is fixed. added new sounds as well, at adetion, you can now abel to toggle the shower music on and off, the key is control shift m
+coppy cosmic rage.set misc comfigurationmanaager.set misc keys.set  sounds cosmic rage general misc showerstart.wav shower.wav showercurtainon.wav showercurtainoff.wav and showerend.wav
+895, credits blake and all the taxi users added some sounds for taxis
+coppy misc misc.set and coppy sounds general misc folder taxiopen.wav taxiphone.wav and taxihangup.wav
+894, overhaul overhaul yeah todays word is overhaul, changed the ryuchi phasing sounds
+coppy sounds general comms otherPhase.wav and faze.wav
+893 Credits Jay Smith.
+Resolved an issue with the Newbie Helpers buffer.
+copy cosmic rage/misc/buffers.set
+892, credits firath, firecloak is fixed
+copy combat combat.set
+891, stormy, credits all the ground combat fans, the ground comabt is overhauled, its now, much more realistic
+coppy sounds general combat folder, combat combat.set and combat groundcombat.set
+890 Changed sound for detected ratika.
+move sound RatikaDetected.wav from sounds/cosmic rage/ships/misc
+put RatikaDetected.wav in sounds/cosmic rage/ships/ratika
+copy cosmic rage/ships/rats.set
 889, dragon loving time, added a cool sound for firecloak
 coppy sounds general combat firecloak.wav and combat/combat.set
 888, credits sierra, added  new original tackle sounds
@@ -7,26 +46,20 @@ coppy sounds cosmic rage general socials, tackle1 through 5.wav
 coppy sounds ships pd folder, ships/pd.set and cosmic rage.set file
 885, round 6 or 7 what ever, ambience files, 3, stormy, 4, i mean ambience revampin finished, and the last victom was pool.wav yeah it loops fine now
 coppy cosmic rage/ambiences/pool.wav
-
 884, the road ambience is now loops, i mean verry good now
 coppy cosmic rage/ambiences/road.wav
-
 883, plaza ambience, works fine now
 coppy cosmic rage/ambiences/plaza.wav
-
 882, the hall.wav, i dont know which ambience is that, but loops verry good now
 coppy cosmic rage/ambiences/hall.wav
 881, oops, updated the keys.set do to my last change, see changelog entry 880
 coppy misc/keys.set
-
 880, credits all the cosmic ragers, the command is to turn speach and on is smute, not tts anymore do to its conflicting with a feature of the game
 coppy misc/configurationmanager.set
 879, the theater ambience, almost loops perfectly now
 coppy sounds/cosmic rage/ambiences/theater.wav
-
 878, the bar ambiences loops perfectly fine now
 coppy sounds/cosmic rage/ambiences/bar.wav
-
 877, ambiences and stormy, round 1, fight, i mean oops, the crushery sound loops perfectly fine now
 coppy sounds/cosmic rage/ambiences/crushary.wav
 876, STARPROBE SOUNDS ARE CHANGED
@@ -34,7 +67,6 @@ COPPY SOUNDS/COSMÝC RAGE/ACTIVITIES/star study folder
 875, credits blake, fixed a thing in the ratica.set file
 coppy ships//rats.set
 874, updated the readme with the website information
-
 873s. Cerenity/Angelica and Stormy: Deleted all prior announcements in the announcements sfile, and updated it with my latest one.
 872, fixed the broken unlooping gmc music, basicly the gmc music loops perfectly fine now
 coppy sounds music/planets gmc.wav

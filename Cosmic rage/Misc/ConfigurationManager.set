@@ -46,6 +46,8 @@ Toggle social text. This option is currently @SocialText. When this option is en
 Toggle Reboot sounds. This option is currently @RebootSounds: toggleReboot|
 Toggle soundpack intro text. This option is currently @SpIntroMessage :toggleSoundpackIntroMessage|
 Toggle bio plasma regenoration sounds. This option is currently @TPR :TPR|
+
+Toggle shower music. This option is currently @showermusic :showermusictoggle|
 Check the amount of lag between your connection and the game. Note. This value may not always be 100 percent accurate:lag|
 Submit a soundpack bug report:SpBug|
 Submit a soundpack suggestion:SpSuggest|
@@ -213,6 +215,9 @@ Reload the soundpack:SpReload| View the list of available help files for the sou
 #alias GameGag {#if {@GagGame = "Enabled"} {#var GagGame "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Arcade messages will now be spoken.} voiceonly} {#var GagGame "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Arcade messages will no longer be spoken.} voiceonly}}
 #alias {Logging} {#if {@ChannelLogging  = "Enabled"} {#var ChannelLogging  "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {Channel messages are no longer being logged to files.} Voiceonly} {#var ChannelLogging  "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {Channel messages are now being logged to files. The directory where these files are stored is located in Cosmic Rage/logs. Alternatively, you can access the list of log files by using the key Shift-F2, or the alias LogFile.} voiceonly}}
 #alias {ErrorToggle} {#if {@GameError = "Enabled"} {#var GameError "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {I don't understand that messages will not be displayed.} Voiceonly} {#var GameError "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {I don't understand that messages will now be displayed.} voiceonly}}
+
+#alias showermusicToggle {
+#if {@showermusic = "Enabled"} {#var showermusic "Disabled"; #play {Cosmic Rage/general/misc/Off.wav} 100; #say {shower music disabled} voiceonly} {#var showermusic "Enabled"; #play {Cosmic Rage/general/misc/On.wav} 100; #say {shower music enabled} voiceonly}}
 #alias {lag} {#var LagAmount 0;
 #alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
 echo Lag.test} {}

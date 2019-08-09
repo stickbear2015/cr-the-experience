@@ -1,5 +1,10 @@
 #TRIGGER {* kicks in and douses the fire.} {playsound {Cosmic Rage\ships\fire\extinguisher.wav} @vol} 
-#TRIGGER {*"* is on fire."} {playsound {Cosmic Rage\ships\fire\siren.wav} @vol} 
+#trigger {You snatch * fire extinguisher * from the wall and douse the fire with it.} {
+#gagline voice;
+playsound {cosmic rage/ships/fire/extinguisher.wav} @vol}
+#TRIGGER {*"A siren rings out. Warning. Warning. * is burning. Repeat, evacuate * it is on fire."} {
+#sub {%2 is on fire.};
+playsound {Cosmic Rage\ships\fire\siren.wav} @vol} 
 #TRIGGER {a jet of * spray shoots out of a nozzle nearby, dousing everything in a fine liquid.} {playsound {Cosmic Rage\ships\fire\spray.wav} @vol}
 #trigger {*"Attention. Attention. * ratika * inbound. I repeat, * on an inbound trajectory with this vessel."} {playsound {cosmic rage/ships/Ratika/alarm.wav} @vol}
 #trigger {* ratika guard drone * repairs some damage *} {playsound {Cosmic Rage/ships/Ratika/Repair/*6.wav} @vol}
@@ -24,3 +29,5 @@
 #trigger {With a sad little whistle, * erupts into a tiny ball of flame.} {playsound {cosmic rage/ships/Ratika/guard.wav} @vol}
 #trigger {* repairs some damage to its shell.} {playsound {Cosmic Rage/ships/Ratika/Repair/*6.wav} @vol}
 #trigger {* spits acid against the wall before scratching at it furiously with * claws.} {playsound {cosmic rage/ships/Ratika/hole.wav} @vol}
+#trigger {* guard drone * shuts down to preserve power.} {playsound {cosmic rage/ships/Ratika/powerdown.wav} @vol}
+#trigger {* guard drone * powers up.} {playsound {cosmic rage/ships/Ratika/powerup.wav} @vol}

@@ -1,3 +1,55 @@
+929 Changed by frederick. I fixed a trigger that was causing human speaking to only show what they said, and not who said it.
+copy cosmic rage/ships/ships.set
+928, credits frederic, fixed a volume issue with component random sound generator
+coppy ships/component.set
+927, stormy, credits blake, the power up sound comes with a keyboard sounds too
+coppy ships/ships.set
+926 Changed by Frederick
+Added a trigger to play a sound when you snatch up a fire extinguisher and douse a fire with it.
+copy cosmic rage/ships/rats.set
+925 Changed by frederick. Fixed the trigger dealing with nebula clouds exploding. I added a volume variable for the sound since it was missing one for some reason.
+copy cosmic rage/activities/planetoids.set
+924 changed by frederick. I removed a duplicate trigger in the ship combat file because it was just sitting there taking up space.
+copy cosmic rage/ships/ShipCombat.set
+923 changed by Frederick. I updated the main set file to be more alphabetical in the various section of the pack that load.
+copy cosmic rage/Cosmic Rage.set
+922 changed by Frederick. I added some more triggers to the volcano harvesting activity.
+copy cosmic rage/activities/VolcanoHarvesting.set
+921 Changed by Frederick. I have updated the triggers a bit in rats.set
+copy cosmic rage/ships/rats.set
+920, bearhug sound has been reformed
+copppy sounds cr general socials bearhug.wav
+919, credits blake, a volume issue about inter planetary pods has been fixed
+coppy misc misc.set
+918, sound credit blake, inter planetary pods are redone
+coppy misc misc.set, and sounds cr general pod folder
+917, airlock exitting fixed, for good, thank you blake
+coppy ships/ships2.set
+916 Changed by Frederick.
+Added something to the trigger when exiting an airlock to stop the ambiance.
+copy cosmic rage/ships/ships2.set
+915 stormy, credits lara/nate, message boards will play diffrent sounds for surton categories
+coppy misc/comms.set sounds cr general messageboards folder, sounds cr general misc mbn.wav
+914 Changed by frederick.
+Fixed a trigger with mappers.
+copy cosmic rage/misc/misc.set
+913 Changed by frederick.
+Added stuff for when research transportation ships dock and undock from access tubes.
+copy cosmic rage/ships/ships2.set
+912, credits firath, some more bugs about ground combat is fixed along with the new battlesuits.
+coppy combat groundcombat.set combat battlesuits.set, sounds cr general combat battlesuit folder
+911 Changed by frederick
+The sound for undocking a ship from an access tube will play once more.
+copy cosmic rage/ships/ships2.set
+910 Changed by Frederick.
+If your mapper's text shortening is enabled, you will only see the direction you must go.
+Also added a sound when mappers are telling you to go somewhere.
+copy sounds/cosmic rage/general/misc/mapper.wav
+copy cosmic rage/misc/misc.set
+909, mommy a Tyrannosaur  is coming! Added a sound for the dragonRush ability
+coppy combat combat.set and sounds cr general combat dragonrush.wav
+908, credits blake, sound credit blake, guard drones have sounds for powerdown and powerup now
+coppy ships rats.set, sounds cr ships ratica powerdown and powerup.wav
 907, credits Michael and everyone that kept beeing anoyed to to constant elephant trumpetting sounds do to baurgan trigger beeing triggered constantly, it is just fixed now, along with an embahi issue
 coppy combat/groundcombat.set
 906, credits all the players that experienced the long standing vehicle ambience bug, that bug is now sqwoshed

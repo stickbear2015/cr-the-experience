@@ -10,7 +10,9 @@
 ; Docking and undocking.
 #trigger {You * up a narrow slope into The *} {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
 #trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
-#trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+#trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+#TRIGGER {You see Research Transportation Ship * approaching a docking port of the tube.} {
+loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
 #TRIGGER {The engines kick up into a slightly higher thrum as the ship begins to slowly cruise into a docking position.} {#if {@LaunchText = "Enabled"} {#gagline all}; loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
 #trigger {You take hold of the controls and turn the vessel so that it is running parallel to *} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You direct the ship around * looking for your docking point.} {#if {@LaunchText = "Enabled"} {#gagline all}}
@@ -23,7 +25,14 @@
 #TRIGGER {A hollow bong sounds through the ship as a metal clamp secures the vessel in place.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {Cosmic Rage/ships/misc/FinishDocking.wav} @vol; #if {@DockingStart = 1} {
 #pc @DockingStarthandle stop;
 #var DockingStart 0}}
-#TRIGGER {Light * as  you tap the small icon of an airlock, sending the release signal.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/undock.wav} @vol}
+#TRIGGER {The tube shudders slightly as Research Transportation Ship * docks.} {
+playsound {Cosmic Rage/ships/misc/FinishDocking.wav} @vol;
+#if {@DockingStart = 1} {
+#pc @DockingStarthandle stop;
+#var DockingStart 0}}
+#TRIGGER {You tap the small icon of an airlock, sending the release signal.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/undock.wav} @vol}
+#trigger {The tube shudders slightly as Research Transportation Ship Epsilon 5 undocks.} {
+playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #trigger {A series of clunks can be heard as the airlocks are released.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The ships engines hum powerfully as the ship begins to pull away from a docking point.} {#if {@LaunchText = "Enabled"} {#gagline voice}}
 #TRIGGER {The engines decrease in volume as the ship finishes undocking.} {#if {@LaunchText = "Enabled"} {#gagline all}}

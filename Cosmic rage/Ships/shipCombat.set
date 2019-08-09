@@ -113,8 +113,14 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {A hum fills the ship as the shields are powered up.} {#gagline all; playsound {cosmic rage/ships/combat/shieldson.wav} @CVol};
 #TRIGGER {The hum begins to decrease as the shields begin to power off.} {#gagline all; playsound {cosmic rage/ships/combat/shieldsoff.wav} @CVol};
-#TRIGGER {Through the windows, you see * explode!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol; #if {@panShipCombat = "Enabled"} {
-#pc %playhandle pan %random(-4000,4000)}; #if {@gagShipCombat = "Enabled"} {#gagline all} {#if {@gagShipCombat = "Disabled"} {#sub {%1 has just exploded!}}}}
+#TRIGGER {*, you see * explode*} {
+playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)};
+#if {@gagShipCombat = "Enabled"} {
+#gagline all} {
+#if {@gagShipCombat = "Disabled"} {
+#sub {%2 has just exploded%3}}}}
 #trigger {You hear a metal ring then a click.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/bladeson.wav} @CVol}
@@ -203,9 +209,6 @@ playsound {cosmic rage/ships/combat/otherDefensiveSystemHit.wav} @CVol;#if {@pan
 playsound {cosmic rage\ships\combat\OtherShieldsHit.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}}
-#trigger {On screen, you see * explode*} {
-#sub {%1 explode%2};
-playsound {cosmic rage\ships\combat\OtherDestroyed*7.wav} @CVol}
 #trigger {The windows are filled with a bright light from *} {
 playsound {cosmic rage\ships\combat\SolarFlare.wav} @CVol}
 #trigger {* "* Ratika killed at *"} {

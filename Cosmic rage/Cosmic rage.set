@@ -3,8 +3,8 @@
 #var speech "Disabled"
 ;These are the Needed set files for the pack to function.
 
-#load misc/keys.set
 #load misc/ConfigurationManager.set
+#load misc/keys.set
 #load misc/Soundpack.set
 
 ; activities set files
@@ -25,7 +25,6 @@
 #load Activities/StarStudies.set
 #load Activities/trash.set
 #load Activities/volcanoHarvesting.set
-#load ships/component.set
 #load Activities/VolcanoMining.set
 
 ;Ambience set files
@@ -47,12 +46,10 @@
 #load misc/Babies.set
 #load misc/buffers.set.
 #load misc/cars.set
-#load misc/comms.set
-#load ships/pd.set.
 #load misc/clocks.set
+#load misc/comms.set
 #load misc/doors.set
 #load misc/factory.set
-#load misc/telephone.set
 #load misc/Farming.set
 #load misc/horses.set
 #load misc/hosts.set
@@ -61,14 +58,17 @@
 #load misc/Mutariansi.set
 #load misc/mwtp.set
 #load misc/socials.set
+#load misc/telephone.set
 #load misc/trains.set
 #load misc/trolley.set
 #load misc/weather.set
 
 ;Ship set files.
+#load ships/component.set
 #load ships/DeepSpaceRepair.set
 #load ships/FlightControl.set
 #load ships/jump.set
+#load ships/pd.set.
 #load ships/Rats.set
 #load ships/shipCombat.set
 #load ships/shipCombat2.set
@@ -78,18 +78,18 @@
 
 ;Vehicle set files.
 #load vehicle/vehicle.set
-;Classes.
 
+;Classes.
 #class ambon enable;
 #class music enable;
 #class shipamb enable;
 #class vehicleamb enable;
+
 ;Triggers for connecting to the moo.
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
 #trigger {Current hosts:*} {version; #say {Welcome to the VIP Cosmic Rage experience!} Voiceonly; playsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol} {} AnyCase
 
 ;Settings.
-
 #File 6 {cosmic rage/misc/settings.set} 1;
 #Read 6 vol 1;
 #read 6 shipVol 2;
@@ -140,7 +140,7 @@
 #alias {onDisconnect} {
 #gvar disconnected 1;
 AutoSaveSettings; AutoSaveBuffers; #say {Settings saved!} voiceonly; #pc 0 stop; #play {cosmic rage/general/misc/quit.wav} @vol}
-#trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} 90}
+#trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} @vol}
 #alarm Saving -1800 {AutoSaveSettings; AutoSaveBuffers}
 #alias {SPUnload} {#say {Your soundpack has been unloaded. To reload, use either the alias SPReload, or the key control-shift-R. Thank you.} Voiceonly; #pc 0 stop; #unload misc/ConfigurationManager.set; #unload Activities/asteroidHarvesting.set; #unload Activities/BioHarvesting.set; #unload Activities/comets.set;  #unload Activities/DarkMatterMining.set; #unload Activities/handmining.set; #unload Activities/hunting.set; #unload Activities/mechanicalMining.set; #unload Activities/moon.set; #unload Activities/PlanetChunks.set; #unload Activities/planetoid.set; #unload Activities/salvaging.set; #unload Activities/StarCoring.set; #unload Activities/StarStudies.set; #unload Activities/trash.set; #unload Activities/volcanoHarvesting.set; #unload Activities/VolcanoMining.set; #unload misc/mainAmbience.set; #unload misc/music.set; #unload ships/shipAmbience.set; #unload ships/ShipPower.set; #unload vehicle/vehicleAmbience.set; #unload combat/battlesuits.set; #unload combat/combat.set; #unload misc/APilot'sParody.set; #unload misc/Babies.set; #unload misc/Buffers.set; #unload misc/cars.set; #unload misc/comms.set; #unload misc/clocks.set; #unload misc/doors.set; #unload misc/factory.set; #unload misc/Farming.set; #unload misc/horses.set; #unload misc/hosts.set; #unload misc/Jets.set; #unload misc/misc.set; #unload misc/socials.set; #unload misc/trains.set; #unload misc/trolley.set; #unload misc/weather.set; #unload ships/Pods.set; #unload ships/DeepSpaceRepair.set; #unload ships/FlightControl.set; #unload ships/jump.set; #unload ships/Rats.set; #unload ships/shipCombat.set; #unload ships/shipCombat2.set; #unload ships/ships.set; #unload ships/ships2.set; #unload ships/Waypoints.set; #unload vehicle/vehicle.set}
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}

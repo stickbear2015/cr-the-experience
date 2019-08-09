@@ -1,3 +1,8 @@
+#trigger {On screen, you see a targeting dot appear on the core.} {#gagline all}
+#trigger {You hear a slight whine as lasers shift.} {#gagline all}
+#trigger {You hear a low hum from underfoot.} {#gagline all}
+#trigger {A low hum begins to emanate from under your feet.} {#gagline all}
+#trigger {There is a zing and then the steady thump, thump of three lasers firing at the same time.} {#gagline all}
 #trigger {On screen, you see the harvesting equipment begin to gather up minerals from holes dug by the lasers.} {#gagline all}
 #trigger {* "Extracting minerals*"} {
 #gagline all}
@@ -8,7 +13,7 @@
 #gagline all} 
 	#trigger {The ship shudders a little before a blaze of light fills the windows.} {
 #gagline all} 
-#trigger {* "locked on, now analysing and extracting gas."} {
+#trigger {* "locked on, now annalysing and extracting gas."} {
 #gagline all}
 #trigger {You feel the ship shake slightly, then you hear a loud crash as something is deposited into the ships hold.} {
 #gagline all; playsound {cosmic rage\activities\planetoid\MineralScoop.wav} @vol} 
@@ -47,11 +52,11 @@ playsound {cosmic rage\ships\combat\emp.wav} @vol}
 #trigger {*"Extraction completed."} {playsound {Cosmic Rage/activities/star study/TransferComplete.wav} @vol; #gagline all}
 #trigger {*"No more gas storage space available in external tanks."} {playsound {Cosmic Rage/activities/star cores/TanksFilled.wav} @vol}
 #trigger {On screen, you see the lasers cut into *} {#gagline voice}
-#trigger {*"Core already analysed. powering down."} {playsound {Cosmic Rage/activities/star cores/PowerDown.wav} @vol} {} AnyCase
-#trigger {*"Beginning to analyse star core*} {#sub {analysing, please wait.}}
 #trigger {You tap analyse.} {#gagline all}
+#trigger {*"Core already analysed. powering down."} {playsound {Cosmic Rage/activities/star cores/PowerDown.wav} @vol}
+#trigger {* "Beginning to analyse star core*} {#sub {analysing, please wait.}}
 #trigger {some drones take some gas from * and shoot off into the sky with it.} {#gagline all}
-#trigger {*: "Locked onto star core*. *"} {
+#trigger {* "Locked onto star core*. *"} {
 #sub {Locked on to the star core.};
 playsound {cosmic rage/activities/star cores/corestart.wav} @vol;
 #var CoreStartHandle %playhandle; #var corething 1}
@@ -63,6 +68,6 @@ playsound {cosmic rage/activities/star cores/core1.wav} @vol;#var coreArchsHandl
 #if {@corething = 0} {
 #pc @CoreArchsHandle stop;
 playsound {cosmic rage/activities/star cores/core2.wav} @vol; #var CoreLoopHandle %playhandle; #var corething 1}}
-#trigger {* "Star core locked successfully."} {
+#trigger {*: "Star core locked successfully."} {
 #if {@corething = 1} {
 #pc @CoreLoopHandle stop; playsound {cosmic rage/activities/star cores/core3.wav} @vol}}

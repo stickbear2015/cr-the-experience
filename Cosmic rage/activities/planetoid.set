@@ -121,7 +121,7 @@ playsound {cosmic rage/vehicle/lever.wav} @vol}
 #gagline all}
 #trigger {Through the windows, you see * rapidly expel all of the remaining *} {
 #sub {The empty nebula cloud explodes!};
-#alarm 1 {playsound {cosmic rage\ships\combat\OtherDestroyed1.wav}}}
+#alarm 1 {playsound {cosmic rage\ships\combat\OtherDestroyed1.wav} @CVol}}
 
 ;planetoid harvesting drone
 #trigger {You begin to manipulate the tiny planetoid harvesting drone.} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/ManipulateDrone.wav} @vol}

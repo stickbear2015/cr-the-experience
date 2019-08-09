@@ -86,3 +86,4 @@ playsound {cosmic rage/general/combat/ray.wav} @vol}
 #trigger {You take in a long breath...} {#gagline all; playsound {cosmic rage/general/combat/firecloak.wav} @vol}
 #trigger {You take in a long breath...} {#gagline all; playsound {cosmic rage/general/combat/firecloak.wav} @cvol}
 #trigger {You take in another breath, and feel the fire building up inside you.} {#gagline all}
+#trigger {You rush into * knocking * to the ground.} {#gagline all; playsound {cosmic rage/general/combat/dragonrush.wav} @cvol}

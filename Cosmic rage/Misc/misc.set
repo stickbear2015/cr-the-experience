@@ -148,16 +148,16 @@ playsound {cosmic rage/general/misc/sillystring.wav} @vol}
 playsound {cosmic rage/general/misc/partypopper.wav} @vol}
 #trigger {The pod begins to accelerate.} {
 #gagline all;
-playsound {cosmic rage/general/misc/pod start.wav} @vol; #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0}}
+playsound {cosmic rage/general/pod/doorc.wav} @vol; #alarm 1,9 {playsound {cosmic rage/general/pod/start.wav} @vol}; #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0}}
 #trigger {The pod reaches a steady moving pace and begins to travel along its journey.} {
 #gagline all;
-loopsound {cosmic rage/general/misc/podloop.wav} @vol; #var podhandle %playhandle; #var podloop 1}
+loopsound {cosmic rage/general/pod/loop.wav} @vol; #var podhandle %playhandle; #var podloop 1}
 #trigger {The doors swish open.} {
 #gagline all;
 #if {@podloop = 1} {
 #pc @podhandle stop;
 #var podloop 0};
-playsound {cosmic rage/general/misc/pod door open.wav} @vol}
+playsound {cosmic rage/general/pod/stop.wav} @vol; #wait 1; playsound {cosmic rage/general/pod/dooro.wav} @vol}
 #trigger {You turn on A hose requested by * and spray * with it.} {
 #gagline  all;
 playsound {cosmic rage/general/misc/hose.wav} @vol}
@@ -225,20 +225,16 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You slam into a wall.} {playsound {Cosmic Rage/general/misc/Wall.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
 #trigger {You indicate to * that * should follow you.} {playsound {cosmic rage/general/misc/joins.wav} @vol}
-#TRIGGER {You glance at a wall mounted display and see a route going*} {
+#TRIGGER {"Head *." says * mapper quietly in * voice.} {
 #if {@ShortMapText = "Enabled"} {
-#sub %1}; #additem Mapper %0} {}
-#TRIGGER {Glancing at a * mapper's screen, you see the route is *} {
+#sub {%1}; #additem Mapper %0};
+playsound {cosmic rage/general/misc/mapper.wav} @vol}
+#trigger {You tap a button on * mapper and the screen displays: *} {
 #if {@ShortMapText = "Enabled"} {
-#sub %2}; #additem Mapper %0} {}
-#trigger {* mapper displays: *} {
+#sub {%2}}}
+#trigger {You glance at a wall mounted display and see a route going *.} {
 #if {@ShortMapText = "Enabled"} {
-#sub %2};#additem Mapper %0} {}
-#trigger {The on screen map shows that it is *} {
-#if {@ShortMapText = "Enabled"} {
-#sub %1}; #additem Mapper %0} {}
-#trigger {* mapper and the screen displays: *} {
-#sub {%2};#additem Mapper %0}
+#sub {%1}; #additem mapper %0}}
 #trigger {* scoops up * munching it in a few mighty chomps.} {playsound {Cosmic Rage\general\Misc\peteat.wav} @vol}
 #trigger {* mapper quietly says in *: "You have arrived at your destination."} {#gagline voice;playsound {Cosmic Rage/general/misc/ArrivedDestination.wav} @vol; #additem Mapper %0}
 #trigger {You close *washer} {playsound {Cosmic Rage/general/Washing/Washing1.wav} @vol; #gagline all}

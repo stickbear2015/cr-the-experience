@@ -103,3 +103,5 @@
 #trigger {* yells, "I'm a dog and I like socks!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/socks.wav} @vol}}
 #trigger {* flies around * head, buzzing annoyingly into * ear.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/buzz.wav} @vol}}
 #trigger {* buzzes annoyingly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/buzz.wav} @vol}}
+
+#trigger {* walks up to * and without warning, gives * a vicious uppercut!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/uppercut.wav} @vol}}

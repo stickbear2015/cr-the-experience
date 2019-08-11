@@ -148,7 +148,7 @@ playsound {cosmic rage/general/misc/sillystring.wav} @vol}
 playsound {cosmic rage/general/misc/partypopper.wav} @vol}
 #trigger {The pod begins to accelerate.} {
 #gagline all;
-playsound {cosmic rage/general/pod/doorc.wav} @vol; #alarm 1,9 {playsound {cosmic rage/general/pod/start.wav} @vol}; #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0}}
+playsound {cosmic rage/general/pod/doorc.wav} @vol; #alarm 1,9 {playsound {cosmic rage/general/pod/start.wav}} @vol; #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0}}
 #trigger {The pod reaches a steady moving pace and begins to travel along its journey.} {
 #gagline all;
 loopsound {cosmic rage/general/pod/loop.wav} @vol; #var podhandle %playhandle; #var podloop 1}
@@ -157,7 +157,7 @@ loopsound {cosmic rage/general/pod/loop.wav} @vol; #var podhandle %playhandle; #
 #if {@podloop = 1} {
 #pc @podhandle stop;
 #var podloop 0};
-playsound {cosmic rage/general/pod/stop.wav} @vol; #wait 1; playsound {cosmic rage/general/pod/dooro.wav} @vol}
+playsound {cosmic rage/general/pod/stop.wav}; #wait 1; playsound {cosmic rage/general/pod/dooro.wav} @vol}
 #trigger {You turn on A hose requested by * and spray * with it.} {
 #gagline  all;
 playsound {cosmic rage/general/misc/hose.wav} @vol}
@@ -318,9 +318,9 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #TRIGGER {[[]Poker], the dealer flips over card *} {playsound {cosmic rage/general/Misc/pokerplay.wav} @vol}
 #TRIGGER {[[]Poker], * bets *} {playsound {cosmic rage/general/Misc/pokerbet.wav} @vol}
 #TRIGGER {[[]Poker], * chips in. All in.} {playsound {cosmic rage/general/Misc/pokerchips.wav} @vol}
-#TRIGGER {You pick up The Access Tube telephone and dial a number.} {#Gagline ALL;
+#TRIGGER {You pick up The * telephone and dial a number.} {#Gagline ALL;
 playsound {cosmic rage/general/misc/taxi_phone.wav} @vol} {}
-#TRIGGER {You hang up The Access Tube telephone with  a click.} {#Gagline ALL;
+#TRIGGER {You hang up The * telephone with  a click.} {#Gagline ALL;
 playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
 #TRIGGER {The doors on * slide open with a hiss.} {playsound {cosmic rage/general/misc/taxiopen.wav} @vol} {}
 #TRIGGER {you belt yourself in to your chair.} {playsound {cosmic rage/general/misc/seatbelt.wav} @vol} {}

@@ -30,11 +30,20 @@ playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 #TRIGGER {A rumbling fills the ship as the cargo bay doors close.} {#gagline all; playsound {cosmic rage/ships/misc/TransferEnd.wav} @vol};
 #TRIGGER {You carefully begin to line the ship up for entry into the planets atmosphere.} {playsound {cosmic rage/ships/misc/youLanding.wav} @vol};
 #TRIGGER {The hum of the engines gets higher in pitch as the speed of the ship is increased} {#gagline all; 
-#if {@altShipEngines = "Enabled"} {
-playsound {cosmic rage/ships/movement/acceleration.wav} @Evol};
 #if {@altShipEngines = "Disabled"} {
+playsound {cosmic rage/ships/movement/acceleration.wav} @Evol};
+#if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/acceleration1.wav} @Evol}};
 #TRIGGER {The hum of the engines flattens out to just a slight vibration as the ship reaches its destination.} {#gagline all; #if {@altshipEngines = "Disabled"} {
+playsound {cosmic rage/ships/movement/deceleration.wav} @Evol};
+#if {@altShipEngines = "Enabled"} {
+playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
+#TRIGGER {There is a slight lurching sensation as the rockets on the hull begin to shift the ship.} {#gagline all; 
+#if {@altShipEngines = "Disabled"} {
+playsound {cosmic rage/ships/movement/acceleration.wav} @Evol};
+#if {@altShipEngines = "Enabled"} {
+playsound {cosmic rage/ships/movement/acceleration1.wav} @Evol}};
+#TRIGGER {Another lurch is felt throughout the ship as it comes to a stop.} {#gagline all; playsound {cosmic rage/ships/misc/beep*10.wav} @vol; #if {@altshipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/deceleration.wav} @Evol};
 #if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
@@ -88,7 +97,6 @@ playsound {cosmic rage/ships/movement/shipMove.wav} @Evol};
 #if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/shipMove1.wav} @Evol}}
 #trigger {A siren *} {playsound {cosmic rage/general/misc/alarm.wav} @vol} {} AnyCase
-#TRIGGER {A siren rings out. "Warning. Warning. * inbound Ratika. Repeat, * inbound Ratika."} {playsound {cosmic rage/general/misc/alarm.wav} @vol};
 #trigger {You begin to manipulate the main engine console.} {
 #gagline all}
 #trigger {You navigate the ship.} {
@@ -99,6 +107,9 @@ playsound {cosmic rage/vehicle/EngineStop.wav} @vol}
 #trigger {You nudge a lever forward.} {
 #gagline all;
 playsound {cosmic rage/vehicle/lever.wav} @vol}
+#trigger {You heave on the controls, activating the thrusters on the hull and ordering them to move the vessel.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol}
 #trigger {The computer announces: "* mineral transferred."} {
 #gagline voice}
 #trigger {You begin to manipulate the warp controls.} {
@@ -130,7 +141,6 @@ playsound {cosmic rage/ships/misc/iclose.wav} @vol}} {} AnyCase
 #trigger {You hear a slight rumble as the airlock automatically cycles itself.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/cycle.wav} @vol}
-
 #trigger {You pull down a tiny lever next to the outer airlock hatch.} {
 #gagline all;
 playsound {cosmic rage/vehicle/lever.wav} @vol}
@@ -324,7 +334,6 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #trigger {You hear a slam.} {#gagline all; playsound {Cosmic Rage/ships/misc/NetSlam.wav} @vol}
 #trigger {The ships engines stabilise as it launches into space.} {#gagline all}
 #trigger {An urgent siren shrieks through the ship as a synthesised voice announces: "Intruder alert. Intruder alert."} {playsound {Cosmic Rage/ships/misc/Intruder.wav} @vol}
-#trigger {A low, pulseing siren echoes throughout the ship as a synthesised voice announces: "Ratika detected. Ratika detected."} {playsound {Cosmic Rage/ships/misc/RatikaDetected.wav} @vol}
 #trigger {*The computer announces: "External camera enabled."} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
 #TRIGGER {A humming sound fills the ship as the recharging sequence begins.} {#gagline all; loopsound {cosmic rage/ships/misc/recharge.wav} @vol; #var rechHandle %playhandle; #var rech 1};
 #TRIGGER {The humming sound ceases as the ship finishes recharging.} {#gagline all; 

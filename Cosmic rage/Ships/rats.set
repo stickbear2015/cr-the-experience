@@ -26,6 +26,7 @@ playsound {Cosmic Rage\ships\fire\siren.wav} @vol}
 #trigger {*"error! A drone in the specified location is unavailable!"} {playsound {Cosmic Rage/ships/Ratika/Error.wav} @vol}
 #trigger {there is a clank, some scrabbling, then * arrives from the ducts.} {playsound {Cosmic Rage/ships/Ratika/ratappear.wav} @vol}
 #trigger {A low, pulsing siren echoes throughout the ship as a synthesised voice announces: "Ratika detected. Ratika detected."} {playsound {cosmic rage/ships/Ratika/RatikaDetected.wav} @vol}
+#TRIGGER {A siren rings out. "Warning. Warning. * inbound Ratika. Repeat, * inbound Ratika."} {playsound {cosmic rage/general/misc/alarm.wav} @vol};
 #trigger {With a sad little whistle, * erupts into a tiny ball of flame.} {playsound {cosmic rage/ships/Ratika/guard.wav} @vol}
 #trigger {* repairs some damage to its shell.} {playsound {Cosmic Rage/ships/Ratika/Repair/*6.wav} @vol}
 #trigger {* spits acid against the wall before scratching at it furiously with * claws.} {playsound {cosmic rage/ships/Ratika/hole.wav} @vol}

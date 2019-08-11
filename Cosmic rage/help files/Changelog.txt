@@ -1,3 +1,40 @@
+945 Changed by Frederick. I have deleted a duplicate trigger to do with ratika from the ships stuff, and moved a trigger from ships into rats because it belongs there. Also had to fix humans speaking because it got messed up accidentally.
+copy cr/ships/ships.set and rats.set
+944, credits francisco and amara, added a sound for the uppercut social
+coppy misc socials.set and sounds cr general socials uppercut.wav
+943, i will be retiring from the cleaning work sune, cleaned all of the mess in misc folder
+i advise you to delete and coppy the sounds cr general misc folder all over again.
+942, cleaned and deleted   most of the mess  from the combat folder
+delete and coppy sounds cr general combat folder and combat /combat.set
+coppy  
+941, added sounds for military vehicle rockets
+coppy vehicle vehicle.set combat combat.set
+940, fixed bunch of volume related issues about ground combat
+coppy combat/combat.set
+939 Changed by Frederick.
+I may have gotten rid of the error people were experiencing with stepping out of a vehicle. Everyone rejoyce!
+copy cr/vehicle/vehicle.set
+938 Changed by frederick
+Moved all the dragon ability sounds into one folder and touched up the triggers to include when another dragon does the same abilities.
+delete all the dragon ability sounds from sounds/cr/general/combat
+copy sounds/cr/general/combat/dragons
+copy cr/combat/combat.set
+937, stormy, added a sound when your vehicle is beeing tugged
+coppy sounds cr vehicle tug.wav and cosmicrage/vehicle.set
+936 changed by Frederick. Muted some trigger to do with recharging a vehicle.
+copy cosmic rage/vehicle/vehicle.set
+935, stormy, added a sound for the dragon fireball creating
+coppy cosmic rage/combat.set and sounds cr general combat fireball.wav
+934, stormy, military vehicles have receaved some love, 1, added sound for the machinegun, 2, added sound for the targetting
+coppy vehicle/vehicle.set combat/combat.set, and sounds cosmic rage  general combat vehicle folder
+933 changed by Azzavare. Oh god manual piloting is so very very spammy. I can't take it anymore! Well...thankfully there is a solution to that now. Added completely unique acceleration and deceleration sounds that seek to immerse the player into the game even more. There is also a beeping sound that will be heard when the ship stops moving to make it more convenient for combat pilots.
+Coppy cosmic rage/ships/ships.set, sounds/cosmic rage/ships/misc/beeps 1 through 10.wav and controlStick 1 through 3.wav, and sound/cosmic rage/ships/movement/acceleration and deceleration.wav
+932 changed by Frederick. Updated the triggers for taxi calling to include landing areas, as well as the access tubes.
+copy cosmic rage/misc/misc.set
+931,  gravjump sound has been updated
+coppy sounds cr ships movement gravjump.wav
+930, x blames stormy, y yells him for destroying their ears, z smacks stormy's head do to breaking the volumes for the battlesuits, anyway enough, battlesuit volumes  are fixed
+coppy combat battlesuit.set
 929 Changed by frederick. I fixed a trigger that was causing human speaking to only show what they said, and not who said it.
 copy cosmic rage/ships/ships.set
 928, credits frederic, fixed a volume issue with component random sound generator

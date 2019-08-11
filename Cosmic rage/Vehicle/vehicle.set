@@ -61,10 +61,13 @@ playsound {cosmic rage/vehicle/transfer.wav} @vol};
 #trigger {You hear a slight thrumming noise as the engine begins to power up.} {
 #gagline all;
 playsound {cosmic rage/vehicle/start.wav} @vol};
+#trigger {* dramatically hit* a star-shaped button.} {
+#gagline voice}
 #trigger {A humming sound fills the vehicle as it begins to recharge.} {
 #gagline all;
 loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol;#var chargeHandle %playHandle; #var charging 1}
 #trigger {The humming comes to a stop as the vehicle finishes recharging.} {
+#gagline voice;
 #if {@charging = 1} {
 #pc @chargeHandle stop;
 #var charging 0}}
@@ -168,7 +171,6 @@ playsound {cosmic rage/vehicle/vehicleRelocate.wav} @vol}
 #trigger {The engine of the car splutters to a stop.} {#gagline all; #alarm 3 {#pc 0 stop; loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol}}
 #trigger {You put the key in the ignition and twist.} {#pc 0 stop; loopsound {Cosmic Rage/ambiences/OldCar.wav} @roomvol; look}
 #trigger {A strange rattling echoes throughout the vehicle.} {playsound {Cosmic Rage/general/combat/MachineGun.wav} @vol} {} AnyCase
-#trigger {You hear a whoosh as a rocket fires.} {playsound {Cosmic Rage/general/combat/RocketFire.wav} @vol} {} AnyCase
 #trigger {A siren rings out. Incoming * from *} {playsound {Cosmic Rage/ships/combat/haslock.wav} @vol} {} AnyCase
 #trigger {The vehicle lurches as something strikes it.} {playsound {Cosmic Rage/vehicle/Crash.wav} @vol}
 #trigger {Locked onto *} {playsound {Cosmic Rage/ships/combat/Targeted.wav} @vol}
@@ -182,4 +184,6 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol; #var chargeHandle %pla
 #pc @chargeHandle stop;
 #var charging 0}}
 #trigger {You exit the vessel.} {#pc 0 stop}
-#TRIGGER {You step out of the vehicle.} {#gagon; #pc 0 stop; #if {@ambon = "enabled"} {#var ambon disabled; #alarm 0,1 {#var ambon enabled}} playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vol; #ungagon; #alarm 0,2 {look}}
+#TRIGGER {You step out of the vehicle.} {#gagon; #pc 0 stop; #if {@ambon = "Enabled"} {#var ambon "Disabled"; #alarm 0,1 {#var ambon "Enabled"}}; playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vol; #ungagon; #alarm 0,2 {look}}
+#trigger {A clunk is heard as a tugging vehicle clamps on.} {playsound {cosmic rage/vehicle/tug.wav} @vol}
+#trigger {The motion comes to a stop as the tugging vehicle leaves.} {#gagline all;}

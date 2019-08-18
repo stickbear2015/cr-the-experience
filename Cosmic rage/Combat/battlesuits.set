@@ -1,4 +1,4 @@
-#trigger {You lift your *, and fire a small laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_smalllaser.wav}; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)} @cvol}
+#trigger {You lift your *, and fire a small laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_smalllaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {You lift your *, and fire a tiny laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_tinylaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {You lift your *, and fire a large laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_largelaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {You lift your *, and fire a medium laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_medlaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
@@ -21,9 +21,7 @@
 #trigger {the drones repairing * retract back and disappear.} {playsound {Cosmic Rage/general/combat/battlesuit/RepairComplete.wav} @cvol; #if {@RepairStart = 1} {
 #pc @RepairStarthandle stop;
 #var RepairStart 0}} {} AnyCase
-#trigger {You swing back, and punch * with a metal coated *} {playsound {cosmic rage/general/combat/battlesuit/battlepunch.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
-#trigger {You swing back, and punch * with a metal coated *} {playsound {cosmic rage/general/combat/battlesuit/battlepunch.wav}@cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
-#trigger {* swings back, and punches * with a metal coated *} {playsound {cosmic rage/general/combat/battlesuit/battlepunch.wav}@cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)} }
+#trigger {* swing* back, and punch* * with a metal-coated *} {playsound {cosmic rage/general/combat/battlesuit/battlepunch.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {A beam of light suddenly appears around you. when it clears, you find yourself somewhere else!} {#gagline all; playsound {Cosmic Rage/general/combat/battlesuit/beam.wav} @cvol}
 #trigger {* to computer, beam me up.} {#gagline all; playsound {Cosmic Rage/ships/computer/announce*4.wav} @cvol}
 #trigger {* pops up from the * of *} {#gagline all; playsound {Cosmic Rage/general/combat/battlesuit/extend.wav} @cvol}

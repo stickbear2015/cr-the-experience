@@ -30,7 +30,7 @@ playsound {Cosmic Rage/ships/misc/FinishDocking.wav} @vol;
 #if {@DockingStart = 1} {
 #pc @DockingStarthandle stop;
 #var DockingStart 0}}
-#TRIGGER {You tap the small icon of an airlock, sending the release signal.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/undock.wav} @vol}
+#TRIGGER {* tap* the small icon of an airlock, sending the release signal.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #trigger {The tube shudders slightly as Research Transportation Ship Epsilon 5 undocks.} {
 playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #trigger {A series of clunks can be heard as the airlocks are released.} {#if {@LaunchText = "Enabled"} {#gagline all}}
@@ -42,7 +42,7 @@ playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #gagline all}
 #trigger {The upward thrust stops as the ship launches into space.} {
 #gagline all}
-#trigger {You begin to carefully align the ship with the top tube, all too aware of the difficult landing.} {#if {@LaunchText = "Enabled"} {#gagline all} { playsound {cosmic rage/ships/movement/BeaconLanding.wav} @vol}}
+#trigger {You begin to carefully align the ship with the top tube, all too aware of the difficult landing.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/movement/BeaconLanding.wav} @vol}
 #trigger {The engines slow to just a hum as it begins to descend towards a beacon station.} {
 #gagline all}
 #trigger {Blackness flies past the windows as the ship continues to descend.} {

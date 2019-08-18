@@ -51,6 +51,7 @@
 #load misc/doors.set
 #load misc/factory.set
 #load misc/Farming.set
+#load misc/orgstuff.set
 #load misc/horses.set
 #load misc/hosts.set
 #load misc/Jets.set
@@ -132,7 +133,6 @@
 #read 6 TPR 39;
 #read 6 SilentPod 40;
 #read 6 showermusic 41;
-
 #close 6
 
 ;misc.

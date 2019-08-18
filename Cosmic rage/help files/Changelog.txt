@@ -1,3 +1,54 @@
+969 Changed by Frederick. Removed a duplicate trigger in the mutariansi file that was making the reform sound, sound much louder than it should.
+copy cosmic rage/misc/mutariansi.set
+968 Changed by Frederick. Fixed a typo in the trigger text for metal-coated things, now that it is fixed game side.
+copy cosmic rage/combat/battlesuits.set
+967 changed by Frederick. I modified the trigger for computer announcements, so that it will play the ship computer announce sounds for ship-related computer announcements, and factory computer announcement sounds for factory related computer announcements.
+If anything doesn't work the way it should with ship or factory computers, I want you to blame Stormy.
+copy cosmic rage/misc/factory.set
+copy cosmic rage/ships/ships.set
+966 STORMY, THE fireball sound has been redone
+copy sounds cr general combat dragons fireball.wav
+965 stormy, credit ines, added some sounds for gmc equipment, thank you ines for helping with the texts.
+coppy sounds cr general gmc folder, copy cosmic rage.set and misc/orgstuff.set
+964 Changed by frederick. Fixed the mapper output so it only shows the direction to take when the shortened mapper text is enabled.
+copy cosmic rage/misc/misc.set
+963 Changed by Frederick. Fixed beacon station landings so you will here the landing sound, even if landing text is gagged, which it will be if launch and land text gagging is enabled.
+copy cosmic rage/ships/ships2.set
+962. Changed by Aciath. Finally fixed the interplanetary pod code once and for all.
+Coppy cosmic rage/misc/misc.set
+961. Changed by Aciath: Fixed the FixBuffers command, fixed the pack saving and loading settings, made lag time just a bit faster in returning your lag amount, fixed a few issues in the config menue and fixed ship ambiences hopefully.
+Copy the CR script folder.
+960 Changed by Azzavare. Credits: Elyra Silver scale. Elyra was gracious to make a trigger correction for general planetary navigation with mappers. Thanks for that Elyra.
+Coppy cosmic rage/misc/misc.set
+959. Changed by Azzavare. Added two new commical reloading drone sounds. Mainly when the drone hums to itself as it starts a reload. Hope you enjoy!
+Coppy sound/cosmic rage/ships/combat/droneReloading1 and 2.wav and cosmic rage/ships/shipCombat.set
+958. Changed by Azzavare. Corrected a trigger for plasma cannons.
+Coppy cosmic rage/ships/shipCombat.set
+957 Changed by Frederick. Fixed again, an issue with undocking from access tubes.
+Copy cosmic rage/ships/ships2.set
+956 Changed by Frederick. I added a little something to the speedwalk triggers so you no longer have to keep banging on the control key to silence your screen reader.
+copy cosmic rage/misc/misc.set
+955 Changed by Frederick. Fixed a few triggers with ground combat.
+copy cosmic rage/combat/GroundCombat.set
+954, added a sound for when a dragon blows the fireball that they have created
+copy sounds cr general combat dragons fireblow.wav and combat/combat.set
+953, fireball sound is fixed
+copy combat/combat.set
+952. Changed by Snapp: Added the FixBuffers alias to hopefully correct things if you start seeing parcing errors with buffer code.
+Changed on Wednesday, August 14, 2019 at 2:00 AM CDT.
+Copy Cosmic Rage/misc/buffers.set.
+951, added sound for the ooc fail social
+copy misc socials.set and sounds cr general socials fail.wav
+950, added a sound when a mutariansi forgets a form
+coppy misc mutariansi.set and sounds cr general mutariansi forget.wav
+949, added a sound when a mutariansi reform in a plasma chamber
+coppy misc/mutariansi.set and sounds cr general mutariansi plasreform.wav
+948, added a sound when a bubbly bubbly slime talks
+coppy sounds cr general mutaransi bubble.wav and misc/mutariansi.set
+947, credits firath, many anoying bugs about ground combat are fixed, thanks firath.
+coppy combat groundcombat.set and combat.set
+946, credits kuro, the mutariansi reforming is fixed
+coppy combat groundcombat.set
 945 Changed by Frederick. I have deleted a duplicate trigger to do with ratika from the ships stuff, and moved a trigger from ships into rats because it belongs there. Also had to fix humans speaking because it got messed up accidentally.
 copy cr/ships/ships.set and rats.set
 944, credits francisco and amara, added a sound for the uppercut social

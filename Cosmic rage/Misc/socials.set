@@ -105,3 +105,5 @@
 #trigger {* buzzes annoyingly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/buzz.wav} @vol}}
 
 #trigger {* walks up to * and without warning, gives * a vicious uppercut!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/uppercut.wav} @vol}}
+#trigger {* explains to everyone, in a very convincing way, that * is a complete and utter failure.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/fail.wav} @vol}}
+#trigger {* explains that, really * is just a wapping big failure.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/fail.wav} @vol}}

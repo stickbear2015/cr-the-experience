@@ -82,11 +82,12 @@ playsound {cosmic rage/general/combat/ray.wav} @cvol}
 #trigger {You take in a long breath...} {#gagline all; playsound {cosmic rage/general/combat/dragons/firecloak.wav} @cvol}
 #trigger {You take in another breath, and feel the fire building up inside you.} {#gagline all}
 #trigger {You rush into * knocking * to the ground.} {#gagline all; playsound {cosmic rage/general/combat/dragons/dragonrush.wav} @cvol}
-#trigger {A spray of bullets are fired from *} {#gagline all; playsound {cosmic rage/general/combat/vehicle/machineout.wav} @cvol}
-#trigger {A strange rattling echoes throughout the vehicle.} {#gagline all; playsound {cosmic rage/general/combat/vehicle/machinein.wav} @cvol}
+#trigger {A spray of bullets are fired from *} {#gagline all; playsound {cosmic rage/general/combat/vehicles/machineout.wav} @cvol}
+#trigger {A strange rattling echoes throughout the vehicle.} {#gagline all; playsound {cosmic rage/general/combat/vehicles/machinein.wav} @cvol}
 #trigger {the turrets on The * swivvle to point *} {#gagline all;
-playsound {cosmic rage/general/combat/vehicle/turout.wav} @cvol}
-#trigger {You hear a scraping noise.} {#gagline all; playsound {cosmic rage/general/combat/vehicle/turin.wav} @cvol}
-#trigger {You hold out your foreclaw and breathe  * it, forming a fireball.} {#gagline all; playsound {cosmic rage/general/combat/dragons/fireball.wav} @cvol}
-#trigger {You hear a whoosh as a rocket fires.} {playsound {cosmic rage/general/combat/vehicle/rocket.wav} @cvol}
-#trigger {A rocket shoots from the turret of * straight towards *} {playsound {cosmic rage/general/combat/vehicle/rocket.wav} @cvol}
+playsound {cosmic rage/general/combat/vehicles/turout.wav} @cvol}
+#trigger {You hear a scraping noise.} {#gagline all; playsound {cosmic rage/general/combat/vehicles/turin.wav} @cvol}
+#trigger {You hold * breathe * into it, forming a fireball.} {#gagline all; playsound {cosmic rage/general/combat/dragons/fireball.wav} @cvol}
+#trigger {You hear a whoosh as a rocket fires.} {playsound {cosmic rage/general/combat/vehicles/rocket.wav} @cvol}
+#trigger {A rocket shoots from the turret of * straight towards *} {playsound {cosmic rage/general/combat/vehicles/rocket.wav} @cvol}
+#trigger {You blow out *} {#gagline all; playsound {cosmic rage/general/combat/dragons/fireblow.wav} @cvol}

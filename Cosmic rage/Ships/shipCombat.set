@@ -21,6 +21,7 @@
 #TRIGGER {The ship jolts a little as phasers are fired.} {#gagline all; playsound {cosmic rage/ships/combat/phaser.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#TRIGGER {* automatic reloading drone hums to itself as it starts a reload.} {#gagline all; playsound {cosmic rage/ships/combat/droneReloading*2.wav} @CVol};
 #TRIGGER {A gentle sliding sound can be heard as ammunition is moved in the ship's hold.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
 #trigger {A green light flashes beside the railgun.} {#gagline all}
 #trigger {You hear a series of clicks as the * are locked into place} {#gagline voice}
@@ -40,9 +41,9 @@
 #TRIGGER {On screen, you see * fire torpedos at *} {#gagline all; playsound {cosmic rage/ships/combat/torp.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #PC %Playhandle Pan %Random(-4000,4000)}};
-#trigger {you hear a slight hum and a vibration begins beneath your feet as the plasma cannon begins to power up.} {
+#TRIGGER {you hear a slight hum and a vibration begins beneath your feet as the plasma cannon begins to power up.} {
 #gagline all;
-playsound {cosmic rage/ships/combat/plasmaCannonPowerup.wav} @CVol}
+playsound {cosmic rage/ships/combat/plasmaCannonPowerup.wav} @CVol} {}
 #trigger {the humming grows as the plasma cannon prepares to fire.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/plasmaCannonHum.wav} @CVol}
@@ -258,7 +259,7 @@ playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol;
 #if {@RedAlertStart = 1} {
 #pc @RedAlertStartHandle stop};
 #var RedAlertStart 0}
-#trigger {A hum fills the ship as plasma is filtered into one of the cannons.} {#gagline all; playsound {cosmic rage/ships/combat/plasmaCannonFilter.wav} @CVol}
+#trigger {A hum  fills the ship as plasma is filtered into one of the cannons.} {#gagline all; playsound {cosmic rage/ships/combat/plasmaCannonFilter.wav} @CVol}
 #TRIGGER {There is a deep boom as debris cannons fire.} {#gagline all; playsound {cosmic rage/ships/combat/dc.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}

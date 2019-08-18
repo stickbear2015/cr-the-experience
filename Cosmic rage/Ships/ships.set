@@ -60,10 +60,6 @@ playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
 #gagline all;
 playsound {cosmic rage/vehicle/EngineStop.wav} @vol}
 #TRIGGER {The hum of the engines decreases as the speed is reduced.} {#gagline all; playsound {cosmic rage/ships/movement/deceleration.wav} @vol}
-#TRIGGER {* computer announces: "*"} {
-#if {%ifword(Extracting minerals...,%2," ")} {
-#abort 1} {
-playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%2}}}
 #TRIGGER {The ship rocks slightly as it is transported by hydraulic arms into a  starship garage.} {#gagline all;
 playsound {cosmic rage/ships/misc/garage.wav} @vol};
 #TRIGGER {You feel a slight swaying as the ship is hauled up and onto a landing pad.} {#gagline all;

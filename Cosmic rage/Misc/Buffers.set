@@ -1,5 +1,5 @@
 #var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Library|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelpers|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Spacesuit|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
-#var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices|newbiehelper}
+#var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices|newbiehelpers}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1
 #var BufferName {%word(@CurrentBufferList,"|",1)}
@@ -94,3 +94,4 @@ Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.
 Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}
 #alias {ClearAllBuffers} {#unload misc/Buffers.set; #load misc/buffers.set; SilentlyLoadBuffers; #play {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {The items contained in your active buffers have been cleared successfully!} Voiceonly}
 #key Control-Alt-Shift-Delete {ClearAllBuffers}
+#alias FixBuffers {#load misc/buffers.set;SaveBuffers; #say {buffer errors should now be corrected.}}

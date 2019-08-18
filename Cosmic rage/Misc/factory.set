@@ -1,9 +1,18 @@
 #trigger {You hear a dull thrumming roar as a laser is fired.} {
 #gagline all;
 playsound  {cosmic rage/general/factory/laser.wav} @vol}
-#trigger {The * computer announces: *} {
-#sub {%2};
-playsound  {cosmic rage/general/factory\computer*6.wav} 30}
+#trigger {The * computer announces: "*"} {
+#if {%ifword(Extracting minerals...,%2," ")} {
+#abort 1};
+#if {%ifword(factory,%2," ")} {
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
+#if {%ifword(starbase,%2," ")} {
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
+#if {%ifword(space station,%2," ")} {
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
+#if {%ifword(artificial,%2," ")} {
+playsound  {cosmic rage/general/factory\computer*6.wav} 30} {
+playsound {cosmic rage/ships/computer/announce*4.wav} @vol};#sub {%2}}
 #trigger {* wheel in and drop off *} {
 #gagline voice;
 playsound  {cosmic rage/general/factory/chunk.wav} @vol}

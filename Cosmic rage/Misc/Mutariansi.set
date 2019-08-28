@@ -1,13 +1,13 @@
 #TRIGGER {You claw viciously at *} {playsound {Cosmic Rage/General/mutariansi/cswing*3.wav} @Vol; #PC %Playhandle Pan %Random(-500,500); #Alarm 0.00  {playsound {Cosmic Rage/General/mutariansi/claw*3.wav} @Vol; #PC %Playhandle Pan %Random(-1000,1000)}}
 #TRIGGER {* claws viciously at *.} {playsound {Cosmic Rage/General/mutariansi/cswing*3.wav} @Vol; #PC %Playhandle Pan %Random(-500,500); #Alarm 0.00  {playsound {Cosmic Rage/General/mutariansi/claw*3.wav} @Vol; #PC %Playhandle Pan %Random(-1000,1000)}} {}
 #TRIGGER {You dive down from the sky, and attack *!} {playsound {Cosmic Rage/general/mutariansi/hawkdive.wav} @vol};
-#trigger {In your mind, you hear * say in a *: *} {#if {%2 = "moo"} {playsound {Cosmic Rage/general/mutariansi/moo*2.wav} @vol}; #if {%2 = "bark"} {playsound {Cosmic Rage/general/mutariansi/dogbark.wav} @vol}; #if {%2 = "deep bark"} {playsound {Cosmic Rage/general/mutariansi/bark*3.wav} @vol}; #if {%2 = "bubbling voice"} {playsound {Cosmic Rage/general/mutariansi/bubble.wav} @vol};  #if {%2 = "squeak"} {playsound {Cosmic Rage/general/mutariansi/squeak.wav}}};
+#trigger {In your mind, you hear * say in a *: *} {#if {%2 = "moo"} {playsound {Cosmic Rage/general/mutariansi/moo*2.wav} @vol}; #if {%2 = "bark"} {playsound {Cosmic Rage/general/mutariansi/dogbark.wav} @vol}; #if {%2 = "deep growl"} {playsound {Cosmic Rage/general/mutariansi/tigergrowl.wav} @vol}; #if {%2 = "deep bark"} {playsound {Cosmic Rage/general/mutariansi/bark*3.wav} @vol}; #if {%2 = "low bark"} {playsound {Cosmic Rage/general/mutariansi/wolfgrowl.wav} @vol}; #if {%2 = "mew"} {playsound {Cosmic Rage/general/mutariansi/snowlep.wav} @vol}; #if {%2 = "soft mew"} {playsound {Cosmic Rage/general/mutariansi/kitten.wav} @vol};  #if {%2 = "bubbling voice"} {playsound {Cosmic Rage/general/mutariansi/bubble.wav} @vol};  #if {%2 = "squeak"} {playsound {Cosmic Rage/general/mutariansi/squeak.wav} @vol}};
 #TRIGGER {You put your nose to the ground and sniff.} {playsound {Cosmic Rage/general/mutariansi/esniff1.wav} @vol};
 #TRIGGER {You take a huge chunk out of *.} {playsound {Cosmic Rage/general/mutariansi/bite.wav} @vol};
 #TRIGGER {You toss back your head and howl!} {playsound {Cosmic Rage/general/mutariansi/howl.wav} @vol};
 #TRIGGER {You swipe at * with your claws.} {playsound {Cosmic Rage/General/mutariansi/cswing*3.wav} @Vol; #PC %Playhandle Pan %Random(-500,500); #Alarm 0.00  {playsound {Cosmic Rage/General/mutariansi/swipe*3.wav} @Vol; #PC %Playhandle Pan %Random(-1000,1000)}}
 #TRIGGER {* sonar screech!} {playsound {Cosmic Rage/general/mutariansi/sonar.wav} @vol};
-#TRIGGER {You stretch out, becoming flat and motionless on the hard ground.} {playsound {Cosmic Rage/general/mutariansi/reform.wav} @vol};
+#TRIGGER {You stretch out, becoming flat and motionless on the hard ground.} {#gagline all;playsound {Cosmic Rage/general/mutariansi/reform.wav} @vol};
 #TRIGGER {You take a deep breath, centering yourself before you begin a beautiful, yet slightly sad, melody.} {playsound {Cosmic Rage/general/mutariansi/sirenssong.wav} @vol};
 #TRIGGER {The sounds of nature are noticeably absent as you continue your transformation.} {#gagline all}
 #TRIGGER {You breathe deeply, slowing your inner chaos, becoming still and, to the outsider, dead.} {#gagline all}
@@ -25,3 +25,4 @@
 #TRIGGER {You reveal your true plasma form.} {#gagline all}
 #TRIGGER {You easily morph into your natural form.} {#gagline all}
 #TRIGGER {You relax the hold on your inner animal, allowing the memory of * to flee away.} {playsound {Cosmic Rage/general/mutariansi/forget.wav} @vol};
+#TRIGGER {You charge *} {playsound {Cosmic Rage/general/mutariansi/bearcharge.wav} @vol};

@@ -10,9 +10,7 @@
 #TRIGGER {Defensive system status report:} {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
 #TRIGGER {Damage report: } {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
 #TRIGGER {Status report for *} {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
-#TRIGGER {Cargo bay information:} {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
-#trigger {Cargo information:} {
-playsound {cosmic rage/ships/computer/display*4.wav} @vol}
+#TRIGGER {* bring* up the cargo bay display*.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
 #trigger {You tap the screen, turning the status report to the charge readout.} {
 playsound {cosmic rage/ships/computer/display*4.wav} @vol}
 #trigger {Current charge: *} {
@@ -261,8 +259,6 @@ playsound {cosmic rage/ships/computer/display*4.wav} @vol}
 #trigger {You tap at buttons on the teleportation console.} {
 #gagline all;
 playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
-#trigger {Cargo report:} {
-playsound {cosmic rage/ships/computer/display*4.wav} @vol}
 #TRIGGER {You tap a small button near the airlock hatch.} {
 #gagline all;
 playsound {cosmic rage/ships/computer/keypress*4.wav} @vol}
@@ -284,7 +280,7 @@ playsound {cosmic rage/ships/misc/courseSet.wav} @vol}
 #trigger {*"Passcode required."} {playsound {Cosmic Rage/ships/computer/PasscodeRequired.wav} @vol; #gagline all}
 #trigger {The ship lands with a bone-rattling bang.} {playsound {Cosmic Rage/ships/Movement/factoryLandComplete.wav} @vol; #gagline all}
 #trigger {You feel a slight vibration as the ship begins to dock.} {playsound {Cosmic Rage/ships/misc/DockingBayDock.wav} @vol; #gagline all}
-#trigger {You hear a thump as the ship docks successfully.} {#gagline all}
+#trigger {You hear a thump as the ship docks successfully.} {#gagline all; playsound {cosmic rage/ships/misc/DockingAirlock.wav} @vol}
 #trigger {You pull back on a lever and then tap a few icons on the main screen.} {playsound {Cosmic Rage/ships/misc/Lever4.wav} @vol; #gagline all}
 #trigger {The ship rumbles slightly as its landing engines begin to move it.} {#gagline all}
 #trigger {The ship lurches and launches into space with a roar.} {playsound {Cosmic Rage/ships/misc/LaunchFromDockingBay.wav} @vol; #gagline all}
@@ -321,8 +317,9 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #trigger {A rumble, like secondary engines, fills the ship for several moments as transport drones propel the ship away from an access tube and into a hangar.} {playsound {Cosmic Rage/ships/misc/TransportHangar.wav} @vol; #gagline voice}
 #trigger {the ship lifts slightly, then there is a thunk as transport drones attach to it. After a moment, the sound of muffled engines fill the area as the drones carry it from the hangar and onto an access tube.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
 #trigger {You feel a slight rocking as the ship is moved.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
-#trigger {*extending space scooper.} {playsound {Cosmic Rage/ships/misc/ExtendScoop.wav} @vol; #gagline voice}
+#trigger {There is a mechanical clunk, followed by the slight sound of metal sliding from a holder.} {#gagline all; playsound {Cosmic Rage/ships/misc/ExtendScoop.wav} @vol}
 #trigger {The ship is lifted up about a foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {playsound {cosmic rage/ships/misc/landingPad.wav} @vol}
+#trigger {A rather curious sliding noise comes from beneath the floor.} {#gagline all; playsound {Cosmic Rage/ships/misc/scoopretract.wav} @vol}
 #trigger {You wrench down a lever.} {playsound {Cosmic Rage/ships/misc/Lever1.wav} @vol; #gagline all}
 #trigger {You hear a slight wine as the cargo net lowers itself.} {playsound {Cosmic Rage/ships/misc/CargoNetLower.wav} @vol; #gagline all}
 #trigger {A strange unwinding sound filters through the rooms of the vessel.} {#gagline all; playsound {Cosmic Rage/ships/misc/Unwind.wav} @vol}
@@ -356,7 +353,6 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {You hear a slight grinding noise as the warp core slows down.} {playsound {cosmic rage/ships/movement/deceleration.wav} @vol}
 #trigger {You flip open the hatch and climb out of the ship's structure.} {#gagline all; playsound {cosmic rage/ships/rep/doorc.wav} @vol}
 #trigger {You climb * the hatch in the middle of the floor.} {#gagline all;  playsound {cosmic rage/ships/rep/dooro.wav} @vol}
-#trigger {You carefully climb *} {#gagline all; playsound {cosmic rage/ships/rep/c*6.wav} @vol}
 #trigger {You carefully climb *}  {#gagline all; playsound {cosmic rage/ships/rep/c*6.wav} @vol}
 #trigger {You pull yourself * in the structure.} {#gagline all; playsound {cosmic rage/ships/rep/c*6.wav} @vol}
 #trigger {You begin careful repairs on the *} {#gagline all; playsound {cosmic rage/ships/rep/r*2.wav} @vol}
@@ -367,3 +363,8 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {You yank the lid from a battered looking cargo barrel} {
 #gagline all;
 playsound {cosmic rage/ships/misc/barrel.wav} @vol}
+#trigger {The computer announces: "*"} {
+#if {%ifword(Extracting minerals...,%1," ")} {
+#abort};
+playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}
+#trigger {There is a slight clunk, followed by the squeal of locking mechanisms.} {#gagline all}

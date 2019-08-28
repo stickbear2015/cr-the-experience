@@ -329,3 +329,5 @@ playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
 #trigger {Glancing at * you see the route is *.} {
 #if {@ShortMapText = "Enabled"} {
 #sub {%2}; #additem mapper %0}}
+#TRIGGER {The droid makes some adjustments, before carefully examining you in the mirror.} {#gagline all; {playsound {cosmic rage/general/misc/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}};
+#TRIGGER {The droid trims your hair, styling it as you wish and trimming down the length.} {#gagline all; {playsound {cosmic rage/general/misc/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}};

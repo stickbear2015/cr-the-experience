@@ -70,7 +70,7 @@ playsound {cosmic rage/ships/combat/plasmaCannonHum.wav} @CVol}
 playsound {cosmic rage/ships/combat/red.wav} @Cvol;
 #if {@CMusic = "Enabled"} {
 #var CombatMusicPlaying 1;
-loopsound {cosmic rage/music/combat/theme*2.wav} @MVol;
+loopsound {cosmic rage/music/combat/theme*@skice.wav} @MVol;
 #var CombatMusicPlayingHandle %playhandle};
 #if {@RedAlert = "Enabled"} {
 #var RedAlertStart 1}}

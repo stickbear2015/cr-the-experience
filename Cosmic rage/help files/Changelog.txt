@@ -1,3 +1,93 @@
+1013, credits firath, a bug about gr combat is fixed
+copy combat/ground combat.set
+1012, credits, noone, added a sound for the oocburp social
+copy misc/socials.set and sounds cr general socials oocburp1 and 2.wav
+1011, credits noone, added a sound when a host sends you a drink or something
+copy cr/mischosts.set and sounds cr general hosts folder
+1010, credits Aurelia, buzzzzz, and some more buzzz,a nd add some more buzz, i mean, flys, o i shouldnt said that, those bzzz insects are fixed, i'M not triggering that text because flys start to buzz on my keyboard for some reason after i do it
+copy activities/trash.set
+1009 Changed by Frederick. Updated bioharvesting a bit. Some of the triggers were missing volume control.
+copy cosmic rage/activities/bioharvesting.set
+1008 Changed by frederick. Updated triggers to do with cargo bay displaying.
+copy cosmic rage/ships/ships.set
+1007, STORMY, CREDÝTS SMART HOST, UPPERCUT social is fixed
+copy misc/socials.set
+1006, added a sound when a host kill someone
+copy misc/hosts.set and sounds cr hosts folder
+1005, added a sound wen a host shouts
+copy misc/socials.set and sounds cr hosts folder
+1004, stormy, credits eldrion, one of the gmc equipment sound is fixed
+copy misc/orgstuff.set
+1003 Changed by frederick. Removed old stuff from moons and added two more gagged messages.
+copy sounds/cosmic rage/activities/moons
+copy cosmic rage/activities/moons.set
+1002, credits fransisco, sound  credit fransisco, added a new sound for ship bridge ambience
+copy ships/shipambience.set and sounds cr ships rooms bridge1.wav and bridge2.wav
+1001, credits kuro, the snowleppord sound is fixed
+copy misc/mutariansi.set and sounds cr general mutariansi/snowlep.wav
+1000, yey, 1000, its a verry smoky and ashy one, this change will make you go fall from your chairs if you ever heard it, added sounds for volcanos
+copy misc/misc2.set and sounds cr general misc volcano.wav
+999 stormy, added an other sound when a n other host teleport, but i'M not going to spoil who they are
+copy sounds cr hosts folder and misc/hosts.set
+
+998 stormy, added a sound when a host teleport, but i'M not going to spoil who they are
+copy sounds cr hosts folder and misc/hosts.set
+997, stormy, credits blake, added a sound when a combat drone recalls,
+coppy ships/ships2.set and sounds cr ships combat recall.wav
+996, changed the fc smuggling sound, it sounds now more like emergency situation
+coppy sounds cr ships flight control fcsmuggling.wav
+995 stormy, credits kuro added lots of new mutariansi accents
+copy misc/mutariansi.set and sounds cr general mutariansi folder
+994 stormy, added more sounds for horses
+copy misc/hroses.set and sounds cr general horses folder
+993 stormy, credits jace, 2 more messages are gagged for moon splitting
+copy activities/moon.set
+992  stormy, credits jace, the battlesuit wear and remove sounds no longer pan
+copy combat/battlesuits.set
+991 stormy, credits ruby, horses are fixed
+copy misc/horses.set
+990 stormy, credits jace, gagged an unwanted text about scoopers
+copy ships/ships.set
+989 stormy, credits jace, gagged an unwanted text from the moon splitting
+copy activities/moon.set
+988 stormy, credits, my o never mind, overhaul overhaul overhaul, jets are overhauled o man we love this overhaul
+copy sounds cr general jets folder
+987  stormy, credits my old pack, added sounds for snowballs,
+coppy cosmic rage.set misc/misc2.set and sounds cr general misc snowball.wav, snowgather 1 and 2.wav and snowhit.wav
+986 credits  my old pack, added sounds for crystal refiners.
+copy misc/misc.set, sounds cr general misc crystaldrop.wav and crystalrefiner.wav
+985, credits my old pack, added sounds for haircuts
+copy misc/misc.set and sounds cr general misc haircut1 through haircut6.wav
+984, stormy, changed the SOS sound
+copy sounds cr general comms sos.wav
+983 stormy, credits, Mimosa,  ceriously, added sounds for flys, blame Mimosa  for that
+copy activities/trash.set sounds cr activities trash collection flydie.wav  and fly1 through fly3.wav 
+982 Credit Tobias. Updated salvaging to gag debris salvaged by debris lines.
+copy cosmic rage/activities/salvaging.set
+981 stormy, credits tobias, the gagging salvaging is fixed, if it isnt, blame frederic
+coppy activities/salvaging.set
+980 stormy, added shiny sparkly realistic sounds for moon splitting
+copy activities/moon.set and sounds cr activities moon folder
+979, stormy, credits ruby, added 3 funny sounds for peekaboo
+copy misc/babies.set and sounds cr general baby folder
+978. Changed by Azzavare. Ship computer announcement sounds should play properly.
+copy cosmic rage/ships/ship.set
+977 stormy, the vehicle overhaul is completed for today, added and changed lot of things, land launch for vehicles, power up power down, ETC ETC
+copy vehicle/vehicle.set and sounds cosmic rage vehicle folder
+976 stormy, vehicle overhauling is now begun, changed the swipe card and relocation sounds
+copy sounds cr vehicle vehicleRelocate.wav and vehicleSwipeID.wav
+975 stormy, credits,  ruby and tod, added sounds for firetrucks
+copy vehicle/vehicle.set, copy sounds cosmic rage vehicles/hose.wav, siren1.wav, siren2.wav, and sirenoff.wav
+974 stormy, credits ruby and jace, the new scoopers have new sounds, overhaul!
+copy ships/ships.set, sounds cr ships misc extendscoop.wav and scoopretract.wav
+973 stormy, huraaah! Added a sound for the mutariansi bear charge
+copy misc mutariansi.set and sounds general mutariansi/bearcharge.wav
+972 stormy, restored the custom ship theme changing feature, for some reason it got deleted
+copy ships.set
+971 stormy, deleted a duplicate trigger about ship repairs
+copy cosmic rage/ships2.set
+970 stormy, credits Elyra, you now hear a ship when the ship docks with an other starship.
+copy ships/ships.set 
 969 Changed by Frederick. Removed a duplicate trigger in the mutariansi file that was making the reform sound, sound much louder than it should.
 copy cosmic rage/misc/mutariansi.set
 968 Changed by Frederick. Fixed a typo in the trigger text for metal-coated things, now that it is fixed game side.
@@ -9,21 +99,21 @@ copy cosmic rage/ships/ships.set
 966 STORMY, THE fireball sound has been redone
 copy sounds cr general combat dragons fireball.wav
 965 stormy, credit ines, added some sounds for gmc equipment, thank you ines for helping with the texts.
-coppy sounds cr general gmc folder, copy cosmic rage.set and misc/orgstuff.set
+copy sounds cr general gmc folder, copy cosmic rage.set and misc/orgstuff.set
 964 Changed by frederick. Fixed the mapper output so it only shows the direction to take when the shortened mapper text is enabled.
 copy cosmic rage/misc/misc.set
 963 Changed by Frederick. Fixed beacon station landings so you will here the landing sound, even if landing text is gagged, which it will be if launch and land text gagging is enabled.
 copy cosmic rage/ships/ships2.set
 962. Changed by Aciath. Finally fixed the interplanetary pod code once and for all.
-Coppy cosmic rage/misc/misc.set
+copy cosmic rage/misc/misc.set
 961. Changed by Aciath: Fixed the FixBuffers command, fixed the pack saving and loading settings, made lag time just a bit faster in returning your lag amount, fixed a few issues in the config menue and fixed ship ambiences hopefully.
 Copy the CR script folder.
 960 Changed by Azzavare. Credits: Elyra Silver scale. Elyra was gracious to make a trigger correction for general planetary navigation with mappers. Thanks for that Elyra.
-Coppy cosmic rage/misc/misc.set
+copy cosmic rage/misc/misc.set
 959. Changed by Azzavare. Added two new commical reloading drone sounds. Mainly when the drone hums to itself as it starts a reload. Hope you enjoy!
-Coppy sound/cosmic rage/ships/combat/droneReloading1 and 2.wav and cosmic rage/ships/shipCombat.set
+copy sound/cosmic rage/ships/combat/droneReloading1 and 2.wav and cosmic rage/ships/shipCombat.set
 958. Changed by Azzavare. Corrected a trigger for plasma cannons.
-Coppy cosmic rage/ships/shipCombat.set
+copy cosmic rage/ships/shipCombat.set
 957 Changed by Frederick. Fixed again, an issue with undocking from access tubes.
 Copy cosmic rage/ships/ships2.set
 956 Changed by Frederick. I added a little something to the speedwalk triggers so you no longer have to keep banging on the control key to silence your screen reader.
@@ -40,28 +130,28 @@ Copy Cosmic Rage/misc/buffers.set.
 951, added sound for the ooc fail social
 copy misc socials.set and sounds cr general socials fail.wav
 950, added a sound when a mutariansi forgets a form
-coppy misc mutariansi.set and sounds cr general mutariansi forget.wav
+copy misc mutariansi.set and sounds cr general mutariansi forget.wav
 949, added a sound when a mutariansi reform in a plasma chamber
-coppy misc/mutariansi.set and sounds cr general mutariansi plasreform.wav
+copy misc/mutariansi.set and sounds cr general mutariansi plasreform.wav
 948, added a sound when a bubbly bubbly slime talks
-coppy sounds cr general mutaransi bubble.wav and misc/mutariansi.set
+copy sounds cr general mutaransi bubble.wav and misc/mutariansi.set
 947, credits firath, many anoying bugs about ground combat are fixed, thanks firath.
-coppy combat groundcombat.set and combat.set
+copy combat groundcombat.set and combat.set
 946, credits kuro, the mutariansi reforming is fixed
-coppy combat groundcombat.set
+copy combat groundcombat.set
 945 Changed by Frederick. I have deleted a duplicate trigger to do with ratika from the ships stuff, and moved a trigger from ships into rats because it belongs there. Also had to fix humans speaking because it got messed up accidentally.
 copy cr/ships/ships.set and rats.set
 944, credits francisco and amara, added a sound for the uppercut social
-coppy misc socials.set and sounds cr general socials uppercut.wav
+copy misc socials.set and sounds cr general socials uppercut.wav
 943, i will be retiring from the cleaning work sune, cleaned all of the mess in misc folder
-i advise you to delete and coppy the sounds cr general misc folder all over again.
+i advise you to delete and copy the sounds cr general misc folder all over again.
 942, cleaned and deleted   most of the mess  from the combat folder
-delete and coppy sounds cr general combat folder and combat /combat.set
-coppy  
+delete and copy sounds cr general combat folder and combat /combat.set
+copy  
 941, added sounds for military vehicle rockets
-coppy vehicle vehicle.set combat combat.set
+copy vehicle vehicle.set combat combat.set
 940, fixed bunch of volume related issues about ground combat
-coppy combat/combat.set
+copy combat/combat.set
 939 Changed by Frederick.
 I may have gotten rid of the error people were experiencing with stepping out of a vehicle. Everyone rejoyce!
 copy cr/vehicle/vehicle.set
@@ -71,27 +161,27 @@ delete all the dragon ability sounds from sounds/cr/general/combat
 copy sounds/cr/general/combat/dragons
 copy cr/combat/combat.set
 937, stormy, added a sound when your vehicle is beeing tugged
-coppy sounds cr vehicle tug.wav and cosmicrage/vehicle.set
+copy sounds cr vehicle tug.wav and cosmicrage/vehicle.set
 936 changed by Frederick. Muted some trigger to do with recharging a vehicle.
 copy cosmic rage/vehicle/vehicle.set
 935, stormy, added a sound for the dragon fireball creating
-coppy cosmic rage/combat.set and sounds cr general combat fireball.wav
+copy cosmic rage/combat.set and sounds cr general combat fireball.wav
 934, stormy, military vehicles have receaved some love, 1, added sound for the machinegun, 2, added sound for the targetting
-coppy vehicle/vehicle.set combat/combat.set, and sounds cosmic rage  general combat vehicle folder
+copy vehicle/vehicle.set combat/combat.set, and sounds cosmic rage  general combat vehicle folder
 933 changed by Azzavare. Oh god manual piloting is so very very spammy. I can't take it anymore! Well...thankfully there is a solution to that now. Added completely unique acceleration and deceleration sounds that seek to immerse the player into the game even more. There is also a beeping sound that will be heard when the ship stops moving to make it more convenient for combat pilots.
-Coppy cosmic rage/ships/ships.set, sounds/cosmic rage/ships/misc/beeps 1 through 10.wav and controlStick 1 through 3.wav, and sound/cosmic rage/ships/movement/acceleration and deceleration.wav
+copy cosmic rage/ships/ships.set, sounds/cosmic rage/ships/misc/beeps 1 through 10.wav and controlStick 1 through 3.wav, and sound/cosmic rage/ships/movement/acceleration and deceleration.wav
 932 changed by Frederick. Updated the triggers for taxi calling to include landing areas, as well as the access tubes.
 copy cosmic rage/misc/misc.set
 931,  gravjump sound has been updated
-coppy sounds cr ships movement gravjump.wav
+copy sounds cr ships movement gravjump.wav
 930, x blames stormy, y yells him for destroying their ears, z smacks stormy's head do to breaking the volumes for the battlesuits, anyway enough, battlesuit volumes  are fixed
-coppy combat battlesuit.set
+copy combat battlesuit.set
 929 Changed by frederick. I fixed a trigger that was causing human speaking to only show what they said, and not who said it.
 copy cosmic rage/ships/ships.set
 928, credits frederic, fixed a volume issue with component random sound generator
-coppy ships/component.set
+copy ships/component.set
 927, stormy, credits blake, the power up sound comes with a keyboard sounds too
-coppy ships/ships.set
+copy ships/ships.set
 926 Changed by Frederick
 Added a trigger to play a sound when you snatch up a fire extinguisher and douse a fire with it.
 copy cosmic rage/ships/rats.set
@@ -108,16 +198,16 @@ copy cosmic rage/ships/rats.set
 920, bearhug sound has been reformed
 copppy sounds cr general socials bearhug.wav
 919, credits blake, a volume issue about inter planetary pods has been fixed
-coppy misc misc.set
+copy misc misc.set
 918, sound credit blake, inter planetary pods are redone
-coppy misc misc.set, and sounds cr general pod folder
+copy misc misc.set, and sounds cr general pod folder
 917, airlock exitting fixed, for good, thank you blake
-coppy ships/ships2.set
+copy ships/ships2.set
 916 Changed by Frederick.
 Added something to the trigger when exiting an airlock to stop the ambiance.
 copy cosmic rage/ships/ships2.set
 915 stormy, credits lara/nate, message boards will play diffrent sounds for surton categories
-coppy misc/comms.set sounds cr general messageboards folder, sounds cr general misc mbn.wav
+copy misc/comms.set sounds cr general messageboards folder, sounds cr general misc mbn.wav
 914 Changed by frederick.
 Fixed a trigger with mappers.
 copy cosmic rage/misc/misc.set
@@ -125,7 +215,7 @@ copy cosmic rage/misc/misc.set
 Added stuff for when research transportation ships dock and undock from access tubes.
 copy cosmic rage/ships/ships2.set
 912, credits firath, some more bugs about ground combat is fixed along with the new battlesuits.
-coppy combat groundcombat.set combat battlesuits.set, sounds cr general combat battlesuit folder
+copy combat groundcombat.set combat battlesuits.set, sounds cr general combat battlesuit folder
 911 Changed by frederick
 The sound for undocking a ship from an access tube will play once more.
 copy cosmic rage/ships/ships2.set
@@ -135,123 +225,123 @@ Also added a sound when mappers are telling you to go somewhere.
 copy sounds/cosmic rage/general/misc/mapper.wav
 copy cosmic rage/misc/misc.set
 909, mommy a Tyrannosaur  is coming! Added a sound for the dragonRush ability
-coppy combat combat.set and sounds cr general combat dragonrush.wav
+copy combat combat.set and sounds cr general combat dragonrush.wav
 908, credits blake, sound credit blake, guard drones have sounds for powerdown and powerup now
-coppy ships rats.set, sounds cr ships ratica powerdown and powerup.wav
+copy ships rats.set, sounds cr ships ratica powerdown and powerup.wav
 907, credits Michael and everyone that kept beeing anoyed to to constant elephant trumpetting sounds do to baurgan trigger beeing triggered constantly, it is just fixed now, along with an embahi issue
-coppy combat/groundcombat.set
+copy combat/groundcombat.set
 906, credits all the players that experienced the long standing vehicle ambience bug, that bug is now sqwoshed
-coppy vehicle/vehicle.set
+copy vehicle/vehicle.set
 905, credits blake, added a sound when a rat dugs out a hole in your cool ship
- coppy sounds cr ships ratica hole.wav, and ships rats.set
+ copy sounds cr ships ratica hole.wav, and ships rats.set
 904, credits octavia, added a sound for the seatbelts
-coppy misc/misc.set and sounds cr general misc seatbelt.wav
+copy misc/misc.set and sounds cr general misc seatbelt.wav
 903, credits blake, ratica defence drones  now have sounds, too
 copppy ships/rats.set
 902,  changed the game time sounds because it was anoying
-coppy sounds cr general misc time.wav
+copy sounds cr general misc time.wav
 901, credits blake, sounds credit blake, guard drones have6 repair sounds instead of 1
-coppy ships rats.set and sounds cr ships ratica/repair folder
+copy ships rats.set and sounds cr ships ratica/repair folder
 900, wow we just, reached 900, that means a big, a verry big change, i mean a verry verry big change, no, yes, yes yes ok its probably yes, we now have a system that let vip mud create its own random sounds, so that means if we implement that system to the ship combat or similor, you dont hear the same borring meh sounds over and over, unique and diffrent each time, the first step is the component sounds, now when ever someone hits one of your ship components such as warp core, the sound will be randomised
-coppy ships/component.set,  cosmic rage.set, sounds cr ships combat component folder, and ships shipcombat.set
+copy ships/component.set,  cosmic rage.set, sounds cr ships combat component folder, and ships shipcombat.set
 899, credits blake, added a sound when a guard drone gos poof 
-coppy ships rats.set and sounds cosmic ships ratica guard.wav
+copy ships rats.set and sounds cosmic ships ratica guard.wav
 898, credits blake, thanks to blake, the transfer door sounds, are changed
-coppy misc doors.set and sounds cosmic rage general doors transferopen and close.wav
+copy misc doors.set and sounds cosmic rage general doors transferopen and close.wav
 897, credits blake, the vehicle crash no longer plays twice
-coppy vehicle vehicle.set
+copy vehicle vehicle.set
 896, credits ines, all the bugs about showering is fixed. added new sounds as well, at adetion, you can now abel to toggle the shower music on and off, the key is control shift m
-coppy cosmic rage.set misc comfigurationmanaager.set misc keys.set  sounds cosmic rage general misc showerstart.wav shower.wav showercurtainon.wav showercurtainoff.wav and showerend.wav
+copy cosmic rage.set misc comfigurationmanaager.set misc keys.set  sounds cosmic rage general misc showerstart.wav shower.wav showercurtainon.wav showercurtainoff.wav and showerend.wav
 895, credits blake and all the taxi users added some sounds for taxis
-coppy misc misc.set and coppy sounds general misc folder taxiopen.wav taxiphone.wav and taxihangup.wav
+copy misc misc.set and copy sounds general misc folder taxiopen.wav taxiphone.wav and taxihangup.wav
 894, overhaul overhaul yeah todays word is overhaul, changed the ryuchi phasing sounds
-coppy sounds general comms otherPhase.wav and faze.wav
+copy sounds general comms otherPhase.wav and faze.wav
 893 Credits Jay Smith.
 Resolved an issue with the Newbie Helpers buffer.
 copy cosmic rage/misc/buffers.set
 892, credits firath, firecloak is fixed
 copy combat combat.set
 891, stormy, credits all the ground combat fans, the ground comabt is overhauled, its now, much more realistic
-coppy sounds general combat folder, combat combat.set and combat groundcombat.set
+copy sounds general combat folder, combat combat.set and combat groundcombat.set
 890 Changed sound for detected ratika.
 move sound RatikaDetected.wav from sounds/cosmic rage/ships/misc
 put RatikaDetected.wav in sounds/cosmic rage/ships/ratika
 copy cosmic rage/ships/rats.set
 889, dragon loving time, added a cool sound for firecloak
-coppy sounds general combat firecloak.wav and combat/combat.set
+copy sounds general combat firecloak.wav and combat/combat.set
 888, credits sierra, added  new original tackle sounds
-coppy sounds cosmic rage general socials, tackle1 through 5.wav
-887, recoppy the sounds/ships/pd folder i fixed some things
+copy sounds cosmic rage general socials, tackle1 through 5.wav
+887, recopy the sounds/ships/pd folder i fixed some things
 886, credits,  all the missioners that joined stormy in a specialest mission, after destroying all of my planetary destruction pods, i decided to  make an audiogame version of it, shortly we now have sounds for those, planetary destruction system
-coppy sounds ships pd folder, ships/pd.set and cosmic rage.set file
+copy sounds ships pd folder, ships/pd.set and cosmic rage.set file
 885, round 6 or 7 what ever, ambience files, 3, stormy, 4, i mean ambience revampin finished, and the last victom was pool.wav yeah it loops fine now
-coppy cosmic rage/ambiences/pool.wav
+copy cosmic rage/ambiences/pool.wav
 884, the road ambience is now loops, i mean verry good now
-coppy cosmic rage/ambiences/road.wav
+copy cosmic rage/ambiences/road.wav
 883, plaza ambience, works fine now
-coppy cosmic rage/ambiences/plaza.wav
+copy cosmic rage/ambiences/plaza.wav
 882, the hall.wav, i dont know which ambience is that, but loops verry good now
-coppy cosmic rage/ambiences/hall.wav
+copy cosmic rage/ambiences/hall.wav
 881, oops, updated the keys.set do to my last change, see changelog entry 880
-coppy misc/keys.set
+copy misc/keys.set
 880, credits all the cosmic ragers, the command is to turn speach and on is smute, not tts anymore do to its conflicting with a feature of the game
-coppy misc/configurationmanager.set
+copy misc/configurationmanager.set
 879, the theater ambience, almost loops perfectly now
-coppy sounds/cosmic rage/ambiences/theater.wav
+copy sounds/cosmic rage/ambiences/theater.wav
 878, the bar ambiences loops perfectly fine now
-coppy sounds/cosmic rage/ambiences/bar.wav
+copy sounds/cosmic rage/ambiences/bar.wav
 877, ambiences and stormy, round 1, fight, i mean oops, the crushery sound loops perfectly fine now
-coppy sounds/cosmic rage/ambiences/crushary.wav
+copy sounds/cosmic rage/ambiences/crushary.wav
 876, STARPROBE SOUNDS ARE CHANGED
-COPPY SOUNDS/COSMÝC RAGE/ACTIVITIES/star study folder
+copy SOUNDS/COSMÝC RAGE/ACTIVITIES/star study folder
 875, credits blake, fixed a thing in the ratica.set file
-coppy ships//rats.set
+copy ships//rats.set
 874, updated the readme with the website information
 873s. Cerenity/Angelica and Stormy: Deleted all prior announcements in the announcements sfile, and updated it with my latest one.
 872, fixed the broken unlooping gmc music, basicly the gmc music loops perfectly fine now
-coppy sounds music/planets gmc.wav
+copy sounds music/planets gmc.wav
 871, stormy, i tryed so much to not add this but uh, we now have a buzz sound,, you can trigger that to scare me off, it is the best, o never mind why m i telling this?
-coppy misc/socials.set and sounds cosmic rage general socials buzz.wav
+copy misc/socials.set and sounds cosmic rage general socials buzz.wav
 870, credits all the dogsocks lovers, the dogsocks social is back
 misc/socials.set
 869, the last change about extra sound wen replying someone is reverted back because it was causing so many issues
-coppy misc/comms.set
+copy misc/comms.set
 868, added a sound wen you open up a cargo barrel
-coppy ships/ships.set and sounds/ships/misc/barrel.wav
+copy ships/ships.set and sounds/ships/misc/barrel.wav
 867 added triggers for the new transferring with ships.
 copy cosmic rage/misc/doors.set
 866, frederic, the spreload now respect your ambience settings
-coppy misc/configurationmanager.set
+copy misc/configurationmanager.set
 865, added a sound for ooc bearhug social, note this sound cant be applyed for the IC one, because you'Ll understand it wen you listen
-coppy misc/socials set and sounds/cosmic rage/general/socials/bearhug.
-864, started to  add sounds for telephones, coppy misc/misc.set , cosmicRage.set  misc/telephone.set and sounds/cosmic rage/general/telephone folder
+copy misc/socials set and sounds/cosmic rage/general/socials/bearhug.
+864, started to  add sounds for telephones, copy misc/misc.set , cosmicRage.set  misc/telephone.set and sounds/cosmic rage/general/telephone folder
 863 Corrected typo in star coring, now that it has been fixed in the game.
 copy cosmic rage/activities/StarCoring.set
 862, ratica are now much more scarry
-coppy ships/rats folder and ships/rats.set
+copy ships/rats folder and ships/rats.set
 861, ladies and gentlemen, the tickle social, is no longer a social, i mean, listen it for yourself, noone's responsable if somethings happpens, though
-coppy socials.set and coppy sounds/cosmic rage/general/socials/tickle 1 and 2.wav
+copy socials.set and copy sounds/cosmic rage/general/socials/tickle 1 and 2.wav
 860, credits francisco, fixed a bug about ship powering
-coppy ships/shippower.set
+copy ships/shippower.set
 859, starcores fixed
-coppy activities/starcoring.set
+copy activities/starcoring.set
 858 sAdded an extra trigger to play a sound when orbit cleaning is finished.
 copy cosmic rage/activities/trash.set
 857, credits ivan, you now hear an extra sound when you send someone a private message
-coppy comms.set and sounds cosmic rage general comms privyou.wav
+copy comms.set and sounds cosmic rage general comms privyou.wav
 856, credits blake,  the ooc headdesk sound is now works with its brother, inCharacter headdesk social too
-coppy socials.set
+copy socials.set
 855, credits Riszoqrava  and ivan, fixed a issue with dragon flying
-coppy misc.set
+copy misc.set
 854, added sounds for headdesk social
-coppy socials.set and general/socials/headdesk1 and 2.wavs
+copy socials.set and general/socials/headdesk1 and 2.wavs
 853, fixed starcores for, good, i mean for verry good, i mean the locking should no longer break, if it breaks again, tickle frederic
-coppy starcoring.set
+copy starcoring.set
 852, changed the ryuchi chitter sounds, tell me if they are so offle
-coppy comms.set and sounds cosmic rage general comms ryuchiChitter 1 through 10.wav
-851, added sounds for shipwreck clamps, coppy ships2.set and sounds ships misc clamp 1 through 3.wav
-850, stormy, starcores should now work like they should to be, coppy starcore.set and sounds/cosmic rage/activities/ star coreing folder
-849, changed some of the moon sounds, coppy sounds activities moon folder
+copy comms.set and sounds cosmic rage general comms ryuchiChitter 1 through 10.wav
+851, added sounds for shipwreck clamps, copy ships2.set and sounds ships misc clamp 1 through 3.wav
+850, stormy, starcores should now work like they should to be, copy starcore.set and sounds/cosmic rage/activities/ star coreing folder
+849, changed some of the moon sounds, copy sounds activities moon folder
 848 Changed the number order of the core files for the star coring activity.
 updated cosmic/activities/StarCoring.set
 delete sounds/cosmic rage/activities/star cores/core 2 through 5.wav
@@ -263,7 +353,7 @@ update cosmic rage/ships/ShipCombat.set
 Fixed some errors that were occurring, removed some triggers that are no longer necessary, and removed a sound file that no longer has a purpose.
 delete sounds/cosmic rage/activities/star cores/CoreStart.wav
 replace your copy of cosmic rage/activities/StarCoring.set
-845, added some more stuff for factories, coppy misc/factory.set and sounds/cosmic rage/general/factory/build6.wav
+845, added some more stuff for factories, copy misc/factory.set and sounds/cosmic rage/general/factory/build6.wav
 844 changed by frederick
 fixed an error with mapper playing a sound when you have arrived at your destination.
 copy cosmic rage/misc/misc.set
@@ -271,7 +361,7 @@ copy cosmic rage/misc/misc.set
 Added a few more triggers for factories.
 copy cosmic rage/misc/factory.set
 842, fixed a trigger in the rats.set file
-coppy ships/rats.set
+copy ships/rats.set
 841 Changed by Frederick
 Added a sound for orbit junk harvesting, particularly when the gear is retracting.
 copy cosmic rage/activities/trash.set
@@ -281,13 +371,13 @@ Ok, after much testing, and boy was it a pain in my behind, I hope I've fixed th
 copy cosmic rage/ships/ShipCombat.set
 839 Angelica: Fixed a very important typo in the readme for the soundpac. The folder name is Cosmic Rage, so I fixed that.
 838, credits all the poker players wen i was coding this thing, changed and added new stuff for poker
-coppy misc/misc.set and sounds/cosmic rage/general/misc/ pokerplay, poker, pokerbet, pokerchips .wav files
+copy misc/misc.set and sounds/cosmic rage/general/misc/ pokerplay, poker, pokerbet, pokerchips .wav files
 837, credits all the cult players, changed the cult sound because it was anoying
-coppy sounds/cosmic rage/general/misc/cult.wav
+copy sounds/cosmic rage/general/misc/cult.wav
 836, credits frederic, you now hear a sound wen setting up  your combat music.
-coppy misc/soundpack.set and sounds/cosmic rage/general/comms/themesuccess.wav
+copy misc/soundpack.set and sounds/cosmic rage/general/comms/themesuccess.wav
 835 stormy, credits blake, added more stuff for volcano harvesting
-coppy cosmic rage/volcanoHarvesting.set
+copy cosmic rage/volcanoHarvesting.set
 834 Frederick
 Updated the ReadMe.txt file, and have placed a copy of it in the root directory of the dropbox folder.
 Hopefully, people will see and read this important document prior to setting up the soundpack, thus reducing the chance for errors to occur.
@@ -300,7 +390,7 @@ Fixed red alert sounds not stopping when ship was switched from red back to gree
 Thanks for reporting on that Ordenna.
 copy cosmic\ships\ShipCombat.set
 831, stormy, added sounds for execute social
-coppy  sounds/cosmic rage/general/socials/execute.wav, execute2.wav and socials.set
+copy  sounds/cosmic rage/general/socials/execute.wav, execute2.wav and socials.set
 830 change by Frederick Barnes131439
 I decided to get rid of a few unnecessary triggers to do with the planetary cannon in the ShipCombat and removed some useless triggers with the old pulse cannon from ShipCombat2 set file
 I removed the old planetary cannon sound file after all, and replaced it with a PulseCannon sound file
@@ -316,20 +406,20 @@ Added the following files to the sounds/cosmic rage/ships/comets sound file.
 shovel1 through 5.wav
 copy cosmic rage/activities/comets.set
 827, credits jay and everyone that reported or experienced the micro pod bug, fixed micro pods
-coppy sounds/cosmic rage/general/mwtp folder
+copy sounds/cosmic rage/general/mwtp folder
 826, credits sarah, fixed factory refining
-coppy factory.set
+copy factory.set
 825, credits firath, fixed factory scrubbing
-coppy factory.set
+copy factory.set
 824, credits blake, you can now adjust the sound volume bye 5, instead of 10 for greater flexebility
-coppy misc/configurationmanager.set
+copy misc/configurationmanager.set
 823, credits firath, added sounds for factory airscrubbing
-coppy misc/factory.set
+copy misc/factory.set
 copy sounds/cosmic rage/general/factory folder
 822, credits firath and avery, added sounds for the electrolysis  stuff
-coppy sounds/cosmic rage/general/factory folder and cosmic rage/misc/factory.set
+copy sounds/cosmic rage/general/factory folder and cosmic rage/misc/factory.set
 821, changed the farm ambience.
-coppy sounds/cosmic rage/ambiences/farm.wav
+copy sounds/cosmic rage/ambiences/farm.wav
 820: Frederick
 Removed a duplicate trigger and fixed a trigger with an incorrect filename.
 Update cosmic rage/activities/dust.set
@@ -344,20 +434,20 @@ copy sounds/general/comms/gmc.wav
 Updated comm.set to include proper logging of the newbie helpers channel, as well as the new GMC channel.
 Update cosmic rage/misc/comms.set
 815, credits Blake Cromozov16158, added sounds for dust analazations
-coppy sounds/cosmic rage/activities/dust analyzing/alaser.wav, apowerdown.wav, apowerup.wav
+copy sounds/cosmic rage/activities/dust analyzing/alaser.wav, apowerdown.wav, apowerup.wav
 copy cosmic rage/cosmic rage.set and cosmic rage/activities/dust.set
 814: Frederick
 Added a buffer for GMC messages.
 copy cosmic rage/misc/buffers.set
 813, you now hear a sound wen your spacesuit is almost out of oxygen
-coppy misc.set and cosmic rage/general/misc/warning.wav
+copy misc.set and cosmic rage/general/misc/warning.wav
 812, stormy, reformed the trolleys, yaaaas, no more that old cartoonish sounds
-coppy trolley.set and general/trolley folder
-811, stormy, changed the  galactic music of the medical complex, it really now feels like your in an emergency situation, coppy music/gmc.wav
+copy trolley.set and general/trolley folder
+811, stormy, changed the  galactic music of the medical complex, it really now feels like your in an emergency situation, copy music/gmc.wav
 810, stormy, you can now really, bark, madly
-coppy socials.set and general/socials.bark.wav
-809, credits Arthus, fixed mutariansi esniff, coppy mutariansi.set
-808, credits lucy, added sounds for box social coppy socials.set cosmic rage/general/socials.box.wav
+copy socials.set and general/socials.bark.wav
+809, credits Arthus, fixed mutariansi esniff, copy mutariansi.set
+808, credits lucy, added sounds for box social copy socials.set cosmic rage/general/socials.box.wav
 807: Frederick barnes131439
 Fixed some slight folume issues with ship combat.
 replace cosmic rage/ships/ShipCombat2.set
@@ -367,31 +457,31 @@ Replaced two sounds in the trolley folder
 copy cosmic rage/misc/trolley.set
 replace cosmic rage/general/trolley/button.wav and fuse.wav
 805, stormy, credits firath and briana, added sounds for micro transport pods
-coppy cosmic rage/misc/mwtp.set and sounds/cosmic rage/general/mwtp/microdk.wav microdi.wav microii.wav and microik.wav
+copy cosmic rage/misc/mwtp.set and sounds/cosmic rage/general/mwtp/microdk.wav microdi.wav microii.wav and microik.wav
 804, credits firath, i'M sure that i fixed punt at this time
 copy cosmic rage/misc/socials.set
 803, credits firath, fixed the punt social
-coppy cosmic rage/misc/socials.set
+copy cosmic rage/misc/socials.set
 802: Changed by frederick Barnes131439.
 Sorry folks, there were some triggers in the factory script file that needed a little love.
 copy cosmic rage/misc/factory.set
 801, added a verry cool punt social sound, happy punting each other.
-coppy sounds/cosmic rage/general/socials/punt.wav and cosmic rage/misc/socials.set
+copy sounds/cosmic rage/general/socials/punt.wav and cosmic rage/misc/socials.set
 800, stormy, changed the sound for the judgesaw a liddle.
-coppy cosmic rage/misc/socials.set and sounds/cosmic rage/general/socials/judgesaw2.wav
+copy cosmic rage/misc/socials.set and sounds/cosmic rage/general/socials/judgesaw2.wav
 799, stormy, you can now customise your ship combat music, see the readme for the instructions, thank you my friend Albert for helping me with this
-coppy cosmic rage/misc/soundpack.set, and cosmic rage/ships/shipcombat.set
+copy cosmic rage/misc/soundpack.set, and cosmic rage/ships/shipcombat.set
 798, the pack now has 2 combat themes instead of 10 do to reducing size attempts, if you have a greater music in mind, dont hezetate to suggest
-coppy sounds/cosmic rage/music/combat folder and cosmic rage/ships/shipcombat.set
+copy sounds/cosmic rage/music/combat folder and cosmic rage/ships/shipcombat.set
 797, the removed bt sinc download has  enabled again
 note, you gotta install it yourself. Its verry simple. If you want to download bt sinc, google it. If you want to recilio, google it. 
 Note bt1.3 is more accessible though. Check the secret  is at the soundpacks download info section.
 796, stormy, trolleys are now, much more realistic.
-coppy cosmic rage/misc/trolley.set and sounds/cosmic rage/general/trolley folder
+copy cosmic rage/misc/trolley.set and sounds/cosmic rage/general/trolley folder
 795, credits, briana, lowered the volume of reloading sounds.
-coppy sounds/cosmic rage/ships/combat/reload1 and reload2.wav
+copy sounds/cosmic rage/ships/combat/reload1 and reload2.wav
 794, stormy, shortenned the music and undone the .mp3 change from 2 days ago, the pack now acts like it should to be
-coppy sounds/music folder ships/shipcombat.set  coppy cosmic rage.set
+copy sounds/music folder ships/shipcombat.set  copy cosmic rage.set
 793: Changed by Frederick Barnes 131439
 Fixed an error in Weather.
 Update cosmic rage\misc\weather.set
@@ -404,32 +494,32 @@ Copy: cosmic rage/misc/doors.set
 790, got rid of the old pilot' parody and replaced with the new, funny and the cool one.
 delete sounds/cosmic rage/general/a-pilots-parody folder
 copppy sounds/cosmic rage/general/pp folder
-coppy cosmic rage/a-pilots-parody.set
+copy cosmic rage/a-pilots-parody.set
 789, changed the gravwell sounds
-coppy sounds/cosmic rage/misc/grav1.wav and grav2.wav
+copy sounds/cosmic rage/misc/grav1.wav and grav2.wav
 788, added sounds for blackdwarf harvesting
-coppy, sounds/activities/blackdwarf folder, cosmic rage/activities/blackdwarf.set and cosmic rage/cosmic rage.set
+copy, sounds/activities/blackdwarf folder, cosmic rage/activities/blackdwarf.set and cosmic rage/cosmic rage.set
 787, stormy, added some new things for star cores,
-coppy cosmic rage/activities/starcoring.set and sounds/cosmic rage/activities/starcore folder
+copy cosmic rage/activities/starcoring.set and sounds/cosmic rage/activities/starcore folder
 786, stormy, credits, kuro,  fixed mutariansi flying, oooops?
-Coppy cosmic rage/misc/misc.set
+copy cosmic rage/misc/misc.set
 785, fixed bioharvesting activity
-coppy cosmic rage/activities/bioharvesting.set
+copy cosmic rage/activities/bioharvesting.set
 784, changed the sounic scream sound
-coppy sounds/cosmic rage/general/combat/sonic scream.wav
+copy sounds/cosmic rage/general/combat/sonic scream.wav
 783, stormy, added sounds for star rescueing
-coppy sounds/cosmic rage/activities/star study folder and cosmic rage/activities/starstudies.set
+copy sounds/cosmic rage/activities/star study folder and cosmic rage/activities/starstudies.set
 782: Added line to main CR set file to load BioHarvesting.set
 copy cosmic rage/cosmicRage.set
-781, stormy, say bye to old bioharvesting sounds, and say hi to new realistic ones, coppy activities/nebula folder and bioharvesting.set
-780, stormy, added and changed lot of things about space combat, delete and coppy ships/combat and ships/computer folder, coppy shipcombat.set and shipcombat2.set
-779, got rid of the old cartoonish intruder sound, coppy ships/misc/Intruder.wav
-778, stormy, played with the inner airlock sounds, coppy, ships/misc/iopen.wav and iclose.wav
+781, stormy, say bye to old bioharvesting sounds, and say hi to new realistic ones, copy activities/nebula folder and bioharvesting.set
+780, stormy, added and changed lot of things about space combat, delete and copy ships/combat and ships/computer folder, copy shipcombat.set and shipcombat2.set
+779, got rid of the old cartoonish intruder sound, copy ships/misc/Intruder.wav
+778, stormy, played with the inner airlock sounds, copy, ships/misc/iopen.wav and iclose.wav
 777: Changed by Frederick Barnes131439
 stopped the default intro music from looping.
 replace cosmic rage/cosmicRage.set
 776, stormy, added sounds for mutariansi reforming, and gagged lot of texts
-coppy general/mutariansi/reform .wav and mutariansi.set
+copy general/mutariansi/reform .wav and mutariansi.set
 775: Updated by Frederick Barnes131439
 Added stuff for the celestial cannon.
 Update cosmic rage/activities/planetoids.set
@@ -438,11 +528,11 @@ Date: July 6th 2019
 Updated the cosmic rage main file to compliment Stormy's earlier change.
 update cosmic rage/cosmic rage.set
 Date: July 5th, 2019
-773, stormy, reduced the packs size about 400 450 mb, delete and coppy music folder and coppy music.set
-772, credits, lucy, stormy, added sounds for ship structural repairs, coppy ships/rep folder and ships.set file
-771, stormy, added some stuff for factory building, coppy sounds/general/factory folder and misc/factory.set
-770, randomised launch lands, coppy sounds/ships/movement and ships2.set, changed bye, stormy.
-769, removed some unused sounds, changed bye stormy. recoppy the hole sounds folder
+773, stormy, reduced the packs size about 400 450 mb, delete and copy music folder and copy music.set
+772, credits, lucy, stormy, added sounds for ship structural repairs, copy ships/rep folder and ships.set file
+771, stormy, added some stuff for factory building, copy sounds/general/factory folder and misc/factory.set
+770, randomised launch lands, copy sounds/ships/movement and ships2.set, changed bye, stormy.
+769, removed some unused sounds, changed bye stormy. recopy the hole sounds folder
 768: Fixed where sonic scream would not trigger if you had anything but the default.
 changed by: Lara the Stardust
 Update: cosmic rage/combat/ground combat.set
@@ -536,13 +626,13 @@ Copy Cosmic Rage/combat/combat.set and sounds/general/combat/target.
 Changed on Tuesday, April 2, 2019 at 7:16 PM CDT.
 Copy Cosmic Rage/misc/misc.set.
 742. Added a brand spanking new control room sound that is a lot more animated than the last one.
-Coppy sounds/cosmic rage/ships/rooms/ControlRoom.wav
+copy sounds/cosmic rage/ships/rooms/ControlRoom.wav
 741. Added a new sound for misc ambiance rooms that do not have a dedicated sound. For the longest time we have had the sound of nature in stations that did not need to be there. This has been fixed. Thanks James Donivan for the coding help!
-Coppy mainAmbiance.set
+copy mainAmbiance.set
 740. Added some code for vehicles that do not have a dedicated sound to allow for an all in one vehicle misc sound. Thanks once again james for your help with coding!
-coppy vehicle.set, vehicleAmbiance.set, and sounds/cosmic rage/ambiances/vehicleMisc.wav
+copy vehicle.set, vehicleAmbiance.set, and sounds/cosmic rage/ambiances/vehicleMisc.wav
 739. Made some wonderful changes to ship combat to make it a lot less spammy plus changed some triggers to fit the new text for sounds. Thankks to James donivan for his excelent job helping out with code!
-coppy shipCombat.set
+copy shipCombat.set
 738. The alias SPVersion and the key Alt-V will now work after you connect to the mud. Sorry about that.
 Changed on Saturday, March 23, 2019 at 11:54 AM CDT.
 Copy Cosmic Rage.set and Cosmic Rage/misc/soundpack.set.
@@ -1290,7 +1380,7 @@ Copy Cosmic Rage/help files, Cosmic Rage.set and Cosmic Rage/misc/SoundpackInfo.
 458. With channel logging, the channels are logged based upon your charname. So for example, Snapp Soundpacks.log.
 Copy Cosmic Rage/misc/Comms.set
 457. Added a new command chamber sound for ships.
-Coppy Cosmic Rage/ships/rooms/CommandChamber.wav
+copy Cosmic Rage/ships/rooms/CommandChamber.wav
 456. Added the alias's help file. It is accessible from within the options menu, as well as using the key alt-shift-A.
 Copy Cosmic Rage/help files/alias's.txt, Cosmic Rage/misc/keys.set and optionsmenu.set.
 455. Credits, Gorngon Orange designation: Added a sound for when you are not clear to launch or land do to weather.
@@ -1332,7 +1422,7 @@ Copy Cosmic Rage/misc/Factory.set, and sounds/general/Factory/PA.wav and Tannoy.
 437. While the log in screen is displayed, you may type version to see the last soundpack change the moo has stored.
 Copy Cosmic Rage.set
 436. Added a new corridor sound, also added a few other interesting ambiences for holographic sceens on board a ship should you ship builders wish to be creative.
-Coppy ships/shipAmbience.set, cosmic rage/ships/rooms/corridor.wav, cosmic rage/ships/rooms/forest.wav, cosmic rage/ships/rooms/jungle.wav, and cosmic rage/ships/rooms/lake.wav.
+copy ships/shipAmbience.set, cosmic rage/ships/rooms/corridor.wav, cosmic rage/ships/rooms/forest.wav, cosmic rage/ships/rooms/jungle.wav, and cosmic rage/ships/rooms/lake.wav.
 435. Credits, vina: Added a sound for when something gets stuck in your planetoid gear.
 Copy Cosmic Rage/activities/Planetoid.set and sounds/activities/Planetoid/Crack.wav
 434. Credits, Groolyx Blood red designation: Added sounds for bio plasma harvesting.
@@ -1376,7 +1466,7 @@ Copy misc/keys.set, misc/MainAmbiance.set, ships/shipAmbiance.set and vehicle/Ve
 415. Made the activate and deactivate sounds play when enabling or disabling newbie.
 Copy Comms.set
 414. gagged all text with you firing from battlesuits and gagged only voice from other firing from battlesuits, Added sounds for pulse guns on battlesuits, also gagged a lot of combat messages but allowed it to be view in the output, so it helps with fighting on the ground, plus fixed spelling mistakes with plasma cannons for the word cannon was spelld canon, and also gagged some sounds with ship combat plus added new sounds for your defensive armour being hit, and changed enemy locking sounds.
-Coppy combat/battlesuits.set, combat/combat.set, ships/shipCombat.set, sounds/cosmic rage/ships/combat/yourDefs1 through 3, sounds/cosmic rage/ships/combat/haslock1 through 4, and sounds/cosmic rage/general/battlesuits/pulseGun1 pulseGun2 and pulseGun3.
+copy combat/battlesuits.set, combat/combat.set, ships/shipCombat.set, sounds/cosmic rage/ships/combat/yourDefs1 through 3, sounds/cosmic rage/ships/combat/haslock1 through 4, and sounds/cosmic rage/general/battlesuits/pulseGun1 pulseGun2 and pulseGun3.
 413. Totally changed the way the folder containing the set files looks. It's easier to work this way.
 Totally get rid of the Cosmic Rage folder containing set files, be sure to backup your char set file, then copy over the new folder.
 412. Updated the Readme. Please read.

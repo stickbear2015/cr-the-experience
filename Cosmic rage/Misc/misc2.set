@@ -1,0 +1,8 @@
+#TRIGGER {You find a * snowball!} {playsound {cosmic rage/general/misc/snowgather*2.wav} @vol} {}
+#TRIGGER {You roll a * snowball into A snow *.} {playsound {cosmic rage/general/misc/snowball.wav} @vol} {}
+#TRIGGER {You roll a * snowball into a * snowball.} {playsound {cosmic rage/general/misc/snowball.wav} @vol} {}
+#TRIGGER {a * snowball hits * straight in the face!} {playsound {cosmic rage/general/misc/snowhit.wav} @vol} {}
+#TRIGGER {A snow * hits * straight in the face!} {playsound {cosmic rage/general/misc/snowhit.wav} @vol} {}
+#TRIGGER {The mountain shudders violently!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
+#TRIGGER {In the distance, you see * erupt in a huge column of flame and ash!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
+#TRIGGER {Smoke begins to rise from * in the distance.} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}

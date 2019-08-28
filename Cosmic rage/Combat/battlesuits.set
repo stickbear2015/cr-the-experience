@@ -6,8 +6,8 @@
 #trigger {You lift your *, and fire a small grenade launcher at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_grenade.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {You lift your *, and fire a small rocket launcher at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_rocket.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {You lift your *, and fire a large electronic pulse gun at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_pulsegun.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
-#trigger {You slip into * battlesuit * letting it surround your body completely.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_wear.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
-#trigger {You give * battlesuit * a tug and pull it off.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_wear.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
+#trigger {You slip into * battlesuit * letting it surround your body completely.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_wear.wav} @cvol}
+#trigger {You give * battlesuit * a tug and pull it off.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_wear.wav} @cvol}
 #trigger {* lifts * * and fires a tiny laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_tinylaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {* lifts * * and fires a large laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_largelaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)} }
 #trigger {* lifts * * and fires a medium laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_medlaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}

@@ -63,4 +63,4 @@
 #TRIGGER {embahi * bodysslams *} {#sub {%1 attacks %2}; playsound {cosmic rage/general/combat/enemy/embahi/att*3.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0,2 {playsound {cosmic rage/general/combat/enemy/bodyslam.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
 #TRIGGER {embahi * slashes *} {#sub {%1 attacks %2}; playsound {cosmic rage/general/combat/enemy/embahi/att*3.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0,2 {playsound {cosmic rage/general/combat/enemy/slash.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
 #trigger {* * * is mangled.} {#if {%2 = "droid"} {playsound {cosmic rage/general/combat/enemy/drosmash.wav} @CVol}; playsound {cosmic rage/general/combat/break*4.wav} @CVol};
-#trigger {* erupts into a pillar of flame.} {playsound {Cosmic Rage/general/combat/enemy/droid/bigdie.wavv} @Cvol}
+#trigger {* erupts into a pillar of flame.} {playsound {Cosmic Rage/general/combat/enemy/droid/bigdie*3.wav} @Cvol}

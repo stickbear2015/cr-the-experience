@@ -36,3 +36,5 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {You push down hard on a plunger.} {#gagline voice}
 #trigger {A very loud crunch is heard as the machine compresses some trash into a cube.} {#if {@gagHarvest = "Enabled"} {#gagline all}; playsound {Cosmic Rage/activities/Trash collection/Crunch.wav} @vol}
 #trigger {*trash collected*} {#if {@gagHarvest = "Enabled"} {#gagline all}}
+#trigger {You lunge forward and, using your best batters swing, smack an annoying fly with *} {#gagline all; playsound {cosmic rage/activities/Trash collection/flydie.wav} @vol} 
+#trigger {An annoying fly *} {#gagline all; playsound {cosmic rage/activities/Trash collection/fly*3.wav} @vol} 

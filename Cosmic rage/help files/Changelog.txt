@@ -1,3 +1,63 @@
+1043 Changed by frederick. Added sound for delivery drone zooming away when it leaves the room.
+copy cosmic rage/misc/misc.set
+1042 credits malachai, quantim fixed
+copy ships/ships.set
+1041 credits my old old pack, quantim things are changed, like ceriously man, 100 percent
+copy ships ships.set and sounds cr ships misc and movement and computer folders
+1040 Changed by Frederick. Fixed volume when drones wheel out of the debris refinery. Also removed a duplicate trigger.
+copy cosmic rage/misc/factory.set
+1039 credits my old pack, warp is secretworded, note for the feuture players, secretword means overhaul
+copy sounds cr ships movement folder and ships/ships.set
+1038 Changed by Frederick, suggested by Stormy. I sped up the loading of the soundpack help files.
+copy cosmic rage/misc/Soundpack.set
+1037 credits perry, got rid of some anoying trolley spam
+copy misc/trolley.set
+1036 credits kevin and all those people experienced that bug dont ask me what it is, fixed something about the hosts
+copy misc/hosts.set
+1035, credits Maylynn , the horse called doinky is arrested after destroying her owners ears https://fakenews.com//, the volume issues about horses are fixed 
+copy misx/horse.set
+1034 stormy, credits fred because why not along with jace, added a sound for moonlanding
+copy activities/moonbase.set and copy sounds cr activities moonbase land.wav
+1033 Modified by Frederick. Fixed a small error with the previous change.
+copy cosmic rage/misc/misc.set
+1032 Changed by Frederick. Fixed the mapping destinations in vehicles to only show the directions if you have the short mapper text option enabled.
+copy cosmic rage/misc/misc.set
+1031 Changed by frederick. Credit to Firath. I hopefully have fixed dragons breathing fire.
+copy cosmic rage/general/combat/dragons/FireBreath1.wav, and remove the firebreath.wav in that same folder
+1030 Changed by Frederick. Updated trigger for harvesting minerals.
+copy cosmic rage/activities/planetoids.set
+1029  credits yaslene, added a sound for when a someone texts you
+copy misc/telephone.set and sounds cr general telephone message.wav
+1028 Changed by Frederick. Fixed an error with battlesuits.
+copy cosmic rage/combat/battlesuits.set
+1027 stormy, removed the poop social along with the sound, because, we dont needed that
+copy misc/socials.set
+1026 stormy, credits kuro, mutariansi chimping fixed, yeah a good term, chimping, i mean the chimp say, but i still think chimping is a good word
+copy misc/mutariansi.set
+1025 stormy, credits kuro, added lots of new mutariansi saying sounds
+copy misc/mutariansi.set and sounds cr general mutariansi folder
+1024 credits stormy, you no longer need to hear that bleep bleep thing when a mutariansi says something, if they have a say sound yes, otherWhise no sound, that means suggest more accents heh
+copy misc/comms.set
+1023 credits blake, i was planning to add this when pink eyed robots invade the earth but still, finally added the sounds for escape pods
+copy ships ships.set and sounds cr ships misc escape1 through 4.wav
+1022 Changed by Frederick. Modified an airlock trigger to account for multiple airlock ships.
+copy cosmic rage/ships/ships2.set
+1021, stormy, creds blake, shortened the planet chunk landing sounds
+copy sounds cr activities planet chunks land.wav
+1020, the sound of death bye stormy, changed the death sound, if you dont want to hear the sounds of screaming souls, well then dont replace the file
+copy sounds cr ambiences/death.wav
+1019 Changed by frederick and not by someone named Stormy. Fix the trigger for undocking. If soundproof is on, you won't hear undocking sound.
+copy cosmic rage/ships/ships2.set
+1018, credits dave, unchanged bye frederic and changed bye stormy, added sounds for delivery drones
+copy misc/misc.set and sounds cr general misc droneenters.wav, droneleaves.wav and dronesay.wav
+1017 Changed by Frederick Barnes131439. Updated a trigger for playing the bridge room sound in ships.
+copy cosmic rage/ships/ShipPower.set
+1016 Credits Firath. Just fixed a slight issue with OOCBurp.
+copy cosmic rage/misc/socials.set
+1015, credits stormy, the dragon roar is redone
+copy sounds cr general combat dragon dragonroar.wav
+1014, credits blake, fixed inter planetary pods
+copy misc/misc.set
 1013, credits firath, a bug about gr combat is fixed
 copy combat/ground combat.set
 1012, credits, noone, added a sound for the oocburp social

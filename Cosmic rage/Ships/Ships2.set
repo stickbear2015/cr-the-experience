@@ -26,15 +26,16 @@ loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStart
 #pc @DockingStarthandle stop;
 #var DockingStart 0}}
 #TRIGGER {The tube shudders slightly as Research Transportation Ship * docks.} {
+#if {@LaunchText = "Enabled"} {#gagline all};
 playsound {Cosmic Rage/ships/misc/FinishDocking.wav} @vol;
 #if {@DockingStart = 1} {
 #pc @DockingStarthandle stop;
 #var DockingStart 0}}
-#TRIGGER {* tap* the small icon of an airlock, sending the release signal.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/undock.wav} @vol}
+#TRIGGER {* tap* the small icon of an airlock, sending the release signal.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The tube shudders slightly as Research Transportation Ship Epsilon 5 undocks.} {
 playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #trigger {A series of clunks can be heard as the airlocks are released.} {#if {@LaunchText = "Enabled"} {#gagline all}}
-#trigger {The ships engines hum powerfully as the ship begins to pull away from a docking point.} {#if {@LaunchText = "Enabled"} {#gagline voice}}
+#trigger {The ships engines hum powerfully as the ship begins to pull away from a docking point.} {#if {@LaunchText = "Enabled"} {#gagline voice};playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #TRIGGER {The engines decrease in volume as the ship finishes undocking.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #TRIGGER {You hear a slight groan and the floor trembles as * begins to undock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol};
 #TRIGGER {The ground shakes a little as * begins to dock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol};
@@ -75,7 +76,7 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #trigger {You sharply accelerate the ship, pulling away from the station.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You ease off on the acceleration.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You relax your grip and allow the computer to handle the last part.} {#if {@LaunchText = "Enabled"} {#gagline all}}
-#trigger {You hold the ship steady as on screen, you see a docking point extend from the access tube and begin locking onto*} {#if {@LaunchText = "Enabled"} {#gagline all}}
+#trigger {You hold the ship steady as on screen, you see * docking point* extend from the access tube and *} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {A low level thrum comes from the gravity thrusters as they stop the ship from plummeting.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {Your vision goes temporarily black as you are yanked from your ship!} {#pc 0 stop}
 #trigger {Your vision goes black as you are teleported somewhere else!} {#pc 0 stop}

@@ -83,3 +83,8 @@ playsound {cosmic rage/general/trolley/metal.wav} @vol};
 playsound {cosmic rage/general/trolley/wood.wav} @vol}}
 #trigger {You tap dump on * trolley's screen.} {
 #gagline all}
+#trigger {* fusing items and so can not move.} {
+#gagline all;
+#if {@fuse = 1} {
+#pc @FuseHandle stop;
+#var fuse 0}};

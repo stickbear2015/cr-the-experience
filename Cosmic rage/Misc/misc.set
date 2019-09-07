@@ -30,14 +30,14 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {* follow* in.} {#if {@DroneSounds = 1} {playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
-#trigger {*delivery drone zooms *} {
-#if {%ifWord(in.,%2," ")} {
+#trigger {* delivery drone * zooms * *.} {
+#if {%ifword(in,%3," ")} {
 playsound {cosmic rage/general/misc/DroidEnters.wav} @vol};
-#if {%ifWord(out.,%2," ")} {
+#if {%ifword(out,%3," ")} {
 playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol};
-#if {%ifWord(away.,%2," ")} {
-playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
-#trigger {Your drone returns.} {
+#if {%ifword(away,%3," ")} {
+playsound {cosmic rage/general/mise/DroidLeaves.wav} @vol}}
+#trigger {* delivery drone zooms into the room.} {
 playsound {cosmic rage/general/misc/DroidEnters.wav} @vol}
 #TRIGGER {You knock on the hull of *} {playsound {cosmic rage/general/misc/knock.wav} @vol};
 #TRIGGER {You hear a soft knocking from the ships hull.} {#gagline all; playsound {cosmic rage/general/misc/knock.wav} @vol};
@@ -146,7 +146,7 @@ playsound {cosmic rage/general/misc/sillystring.wav} @vol}
 playsound {cosmic rage/general/misc/sillystring.wav} @vol}
 #trigger {* partypopper lets out a loud crack and sprays confetti everywhere!} {
 playsound {cosmic rage/general/misc/partypopper.wav} @vol}
-#trigger {The pod begins to accelerate.} {#gagline all; playsound {cosmic rage/general/pod/doorc.wav} @vol; #alarm 1.9 {playsound {cosmic rage/general/pod/start.wav} @vol; #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0}}}
+#trigger {The pod begins to accelerate.} {#gagline all; playsound {cosmic rage/general/pod/doorc.wav} @vol; #alarm 1,9 {playsound {cosmic rage/general/pod/start.wav} @vol; #if {@roomsoundplaying = 1} {#pc @roomhandle stop; #var roomsoundplaying 0}}}
 #trigger {The pod reaches a steady moving pace and begins to travel along its journey.} {
 #gagline all;
 loopsound {cosmic rage/general/pod/loop.wav} @vol; #var podhandle %playhandle; #var podloop 1}
@@ -219,7 +219,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {A new quote has been added to the quote database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
 #trigger {A quote was just removed from the database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
 #trigger {* indicating someone just made an order for something.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
-#trigger {* lets out a horrible buzzing noise, before jerkily turning around and flying away.} {playsound {Cosmic Rage/general/misc/DroneBuzz.wav} @vol}
+#trigger {* shaped delivery drone hovers in front of you and asks you, in a synthesized voice to accept its delivery of *.} {playsound {Cosmic Rage/general/misc/Dronesay.wav} @vol}
 #trigger {You slam into a wall.} {playsound {Cosmic Rage/general/misc/Wall.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
 #trigger {You indicate to * that * should follow you.} {playsound {cosmic rage/general/misc/joins.wav} @vol}
@@ -233,7 +233,9 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {You tap a button on * mapper and the screen displays: *} {
 #if {@ShortMapText = "Enabled"} {
-#sub {%2}}}
+#sub {%2};#additem mapper %0}}
+#trigger {The on screen map shows that it is *} {
+#if {@ShortMapText = "Enabled"} {#sub {%1};#additem mapper %0}}
 #trigger {You glance at a wall mounted display and see a route going *.} {
 #if {@ShortMapText = "Enabled"} {
 #sub {%1}; #additem mapper %0}}

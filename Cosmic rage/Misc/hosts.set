@@ -13,5 +13,5 @@
 
 #trigger {A full moon appears in the sky, down from which * descends on ghostly silver wings.} {playsound {Cosmic Rage/hosts/larain.wav} @vol}
 #trigger {A pair of ghostly silver wings spread out from * back and she lifts her arms, ascending into the heavens and vanishing into a sheet of moonlight.} {playsound {Cosmic Rage/hosts/laraout.wav} @vol}
-#trigger {* has just been killed!} {playsound {Cosmic Rage/hosts/kill.wav} @vol} {} AnyCase
-#trigger {* materialises in your hand.} {playsound {Cosmic Rage/hosts/kill.wav} @vol} {} AnyCase
+#trigger {* has just been killed!} {playsound {Cosmic Rage/hosts/kill1.wav} @vol} {} AnyCase
+#trigger {* materialises in your hand.} {playsound {Cosmic Rage/hosts/mater.wav} @vol} {} AnyCase

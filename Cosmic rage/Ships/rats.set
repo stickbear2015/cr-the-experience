@@ -30,5 +30,5 @@ playsound {Cosmic Rage\ships\fire\siren.wav} @vol}
 #trigger {With a sad little whistle, * erupts into a tiny ball of flame.} {playsound {cosmic rage/ships/Ratika/guard.wav} @vol}
 #trigger {* repairs some damage to its shell.} {playsound {Cosmic Rage/ships/Ratika/Repair/*6.wav} @vol}
 #trigger {* spits acid against the wall before scratching at it furiously with * claws.} {playsound {cosmic rage/ships/Ratika/hole.wav} @vol}
-#trigger {* guard drone * shuts down to preserve power.} {playsound {cosmic rage/ships/Ratika/powerdown.wav} @vol}
-#trigger {* guard drone * powers up.} {playsound {cosmic rage/ships/Ratika/powerup.wav} @vol}
+#trigger {* guard drone * shuts down to preserve power.} {#gagline voice;playsound {cosmic rage/ships/Ratika/powerdown.wav} @vol}
+#trigger {* guard drone * powers up.} {#gagline voice;playsound {cosmic rage/ships/Ratika/powerup.wav} @vol}

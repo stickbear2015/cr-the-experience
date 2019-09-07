@@ -7,7 +7,7 @@
 #TRIGGER {You mount *} {playsound {cosmic rage/general/horses/mount.wav} @vol}
 #TRIGGER {* rears up onto its hind legs, before slamming its hooves down onto the ground with a crash.} {playsound {cosmic rage/general/horses/rear*3.wav} @vol} {}
 #TRIGGER {* slowly approaches and sniffs into a bag of wheat.} {#Gagline ALL;
-playsound {cosmic rage/general\horses\sniff.wav}} {}
+playsound {cosmic rage/general\horses\sniff.wav @vol}} 
 #TRIGGER {* munches down to the bottom of the bag, giving a snort when * empties it completely.} {playsound {cosmic rage\general\horses\snort.wav} ;} {}
-#TRIGGER {* munches on the wheat inside the bag, looking pleased as * tail swishes behind him.} {playsound {cosmic rage\general\horses\eat.wav} ;
+#TRIGGER {* munches on the wheat inside the bag, looking pleased as * tail swishes behind him.} {playsound {cosmic rage\general\horses\eat.wav} @vol;
 #Gagline ALL} {}

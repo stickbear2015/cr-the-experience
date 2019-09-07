@@ -15,7 +15,7 @@ loopsound {cosmic rage/ships/rooms/AmmoChamber.wav} @vol;
 #if {@currentroom <> "bridge"} {
 #If {@shipsoundplaying = 1} {
 #pc @shiphandle stop};
-loopsound {cosmic rage/ships/rooms/bridge.wav} @vol;
+loopsound {cosmic rage/ships/rooms/bridge*2.wav} @vol;
 #Var shiphandle %Playhandle; #var shipsoundplaying 1; #var currentroom "bridge"}};
 #If {%IfWord(control,@RoomName," ")} {
 #if {@currentroom <> "control"} {

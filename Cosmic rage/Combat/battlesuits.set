@@ -14,7 +14,7 @@
 #trigger {* lifts * * and fires a huge laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_hugelaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)} }
 #trigger {* lifts * * and fires a small grenade launcher at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_grenade.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {* lifts * * and fires a small rocket launcher at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_rocket.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
-#trigger {* lifts * * and fires a large electronic pulse gun at *} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_pulsegun.wav}@cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
+#trigger {* lifts * * and fires a large electronic pulse gun at *} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_pulsegun.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {* lifts * * and fires a small laser at *.} {playsound {cosmic rage/general/combat/battlesuit/battlesuit_smalllaser.wav} @cvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {Small drones pop out of * and begin repairs.} {loopsound {Cosmic Rage/general/combat/battlesuit/Repair*4.wav} @cvol; #var RepairStarthandle %playhandle; #var RepairStart 1}
 #trigger {Drones continue to clamber over the outside of your battlesuit, making repairs.} {#gagline voice}

@@ -93,7 +93,7 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {You tap the menu icon on * Radio} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
 #trigger {You hear a quick beep beep, beep beep sound from *} {playsound {Cosmic Rage/general/comms/TextMessage.wav} @CommsVol}
 #trigger {You here a quick beep beep, beep beep sound from * informing you of a new picture message.} {playsound {Cosmic Rage/general/comms/PictureMessage.wav} @CommsVol}
-#trigger {In your mind, you hear *} {playsound {Cosmic Rage/general/comms/Mutariansi.wav} @CommsVol; #additem say %0} {}
+#trigger {In your mind, you hear *} {#additem say %0} {}
 #trigger {* flashes with * new mail messages.} {playsound {Cosmic Rage/general/comms/mail.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #trigger {* respectfully denied your request for an OOC link.} {playsound {Cosmic Rage/general/comms/OOCDenied.wav} @CommsVol}
 #trigger {* would like to establish an out of character communications link with you. Please type oaccept to accept or deny it.} {playsound {Cosmic Rage/general/comms/OOCRequest.wav} 85}

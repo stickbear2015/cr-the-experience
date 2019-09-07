@@ -106,7 +106,6 @@ playsound  {cosmic rage/general/factory/computer*6.wav} @vol}
 #gagline all;
 playsound  {cosmic rage/ships/computer/keyboard*7.wav} @vol}
 #trigger {A huge laser splits * apart!} {playsound  {Cosmic Rage/general/factory/hugeLaser.wav} @vol}
-#trigger {Some drones wheel out, carrying refined resources.} {#gagline all}
 #trigger {Some drones wheel in and carry off some minerals.} {#gagline all}
 
 #trigger {A drone wheels in and drops off some debris.} {#gagline all}
@@ -118,7 +117,7 @@ playsound {cosmic rage\general\factory\explode.wav} @vol}
 #trigger {Some drones wheel in, set down a massive tank of * then wheel out again.} {
 #sub {Drones wheel in and drop off a tank of %1.};
 playsound {cosmic rage\general\factory\GasTank.wav} @vol}
-#trigger {Some drones wheel out, carrying refined resources.} {#gagline all; playsound {cosmic rage/general/factory/droneout.wav} #PC %Playhandle Pan %Random(-2500,2500) @vol};
+#trigger {Some drones wheel out, carrying refined resources.} {#gagline all; playsound {cosmic rage/general/factory/droneout.wav} @vol;#PC %Playhandle Pan %Random(-2500,2500)};
 #trigger {A few drones wheel in carrying some items.} {#gagline all; playsound {cosmic rage/general/factory/dronein.wav} #PC %Playhandle Pan %Random(-1500,1500) @vol};
 
 #trigger {A drone uses an internal welding torch to fuse two items together.} {#gagline all; playsound {cosmic rage/general/factory/build5.wav} @vol}

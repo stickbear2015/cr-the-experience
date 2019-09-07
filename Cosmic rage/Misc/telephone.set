@@ -3,3 +3,4 @@
 #trigger {From * you hear short buzzes, indicating the target was unreachable. You quickly hang up.} {#gagline all; playsound {cosmic rage/general/telephone/error.wav} @vol}
 #trigger {You hear a click from *} {#gagline all; playsound {cosmic rage/general/telephone/click.wav} @vol}
 #TRIGGER {You hear a ring, ring from *} {#gagline all; playsound {cosmic rage/general/telephone/ring.wav} @vol};
+#TRIGGER {* lets out a quick beep beep, beep beep sound and * flashes on the screen.} {#gagline all; playsound {cosmic rage/general/telephone/message.wav} @vol};

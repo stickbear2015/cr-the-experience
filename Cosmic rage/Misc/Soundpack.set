@@ -98,12 +98,12 @@
 #Write 6 @SilentPod @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #alias {SpHelp} {#say {Loading the list of available help files. Please wait.} Voiceonly; #play {Cosmic Rage/general/misc/ConfMan.wav} 100; #pick {p:Please select an option from the list below|
-View the alias's help file:{#play {Cosmic Rage/general/Help/Aliases.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Aliases.txt}}}|
-View the Announcements help file:{#play {Cosmic Rage/general/help/Announcements.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Announcements.txt}}}|
-View the buffers help file:{#play {Cosmic Rage/general/Help/Buffers.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/buffers.txt}}}|
-View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/changelog.txt}}}|
-View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/keys.txt}}}|
-View the readme:{#play {Cosmic Rage/general/help/Readme.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/readme.txt}}}|
-View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} 100; #play {Cosmic Rage/general/misc/LoadingFile.wav} 60; #alarm 2 {#edit {cosmic rage/help files/Soundpack credits.txt}}}}}
+View the alias's help file:{#play {Cosmic Rage/general/Help/Aliases.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Aliases.txt}}|
+View the Announcements help file:{#play {Cosmic Rage/general/help/Announcements.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Announcements.txt}}|
+View the buffers help file:{#play {Cosmic Rage/general/Help/Buffers.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/buffers.txt}}|
+View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/changelog.txt}}|
+View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/keys.txt}}|
+View the readme:{#play {Cosmic Rage/general/help/Readme.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/readme.txt}}|
+View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Soundpack credits.txt}}}}
 #alias spp {>@soundpacks} {}
 #Alias {themechange} {playsound {Cosmic Rage/general/comms/themesuccess.wav}; #var skice %1}

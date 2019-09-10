@@ -5,3 +5,7 @@
 #TRIGGER {The lever slams back up, nearly smacking you in the face!} {playsound {Cosmic Rage/activities/moonbase/lever2.wav} @vol};
 #TRIGGER {some citizens stride in and begin construction on a new building.} {playsound {Cosmic Rage/activities/moonbase/construct.wav} @vol};
 #TRIGGER {You carefully begin to maneuver some levers and then pull sharply on a joystick.} {#gagline all; playsound {Cosmic Rage/activities/moonbase/launch.wav} @vol};
+#TRIGGER {You carefully begin to maneuver some levers and then pull sharply on a joystick.} {#gagline all; playsound {Cosmic Rage/activities/moonbase/launch.wav} @vol};
+#TRIGGER {You activate the processing unit with a slight flick of your wrist.} {#gagline all; loopsound {Cosmic Rage/activities/moonbase/process.wav} @vol; #var mprosHandle %playHandle; #var mpros 1}
+#trigger {You hear a rumbling crash, followed by a building hum.} {#gagline all; #if {@mpros = 0}  {loopsound {Cosmic Rage/activities/moonbase/process.wav} @vol; #var mprosHandle %playHandle; #var mpros 1}}
+#trigger {The hum quiets down, before cutting off abruptly as the processor finishes working.} {#gagline all; #if {@mpros = 1} {#pc @mprosHandle stop}; playsound {Cosmic Rage/activities/moonbase/process1.wav} @vol; #var mpros 0}

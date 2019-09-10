@@ -1,3 +1,36 @@
+1059 deleted 2 useless files
+delete sounds cr  ships misc cortinsert and report.wav
+1058 credits amara, added a verry cool sound for wormholes
+copy ships ships2.set and sounds cr ships movement wormhole.wav
+1057 credits frederic, added sounds for moon truck processing
+copy activities moonbase folder and activities/moonbase.set
+1056 modified by Frederick. Fixed up horses
+change 1.wav and 2.wav in sounds/cosmic rage/general/horses to whinny1.wav and whinny2.wav
+copy cosmic rage/misc/horses.set
+1055 Changed by Frederick. Text given by Jace. Stopped the quantum drive loop when ship runs out of quantum fuel. Note that the ship will drop into speed 40, so it won't actually come to a complete stop.
+copy cosmic rage/ships/ships.set
+1054 credits alexander, added as ound for the debris cannisters
+copy sounds cr general factories can.wav and misc/factories.set
+1053 credits, uh, players, fixed horses, sniffles sniffles sniffles
+copy misc/horses.set
+1052 Changed by Frederick. regarding quantum looping and ship engines. Make some adjustments so in the case where quantum reaches the destination, the ship will cease with the quantum engine loop, while playing the appropriate deceleration ship engine sound, depending on which ship engine sounds you've chosen to use. complicated I know, but just nod your head like you know what I'm talking about.
+copy cosmic rage/ships/ships.set
+1051 Credits to Jace. Found another instance to make quantum stop looping.
+copy cosmic rage/ships/ships.set
+1050 Change made by frederick. Quantum drive now loops both with quan number, and quantum using amu. The quantum has been looped, and will stop looping in all instances.
+copy cosmic rage/ships/ships.set
+1049 stormy, credits Haschwalth , the pulse cannon text is gagged
+copy ships/shipcombat2.set
+1048 Changed by Frederick. Removed the backslashes and replaced with slashes in the file paths throughout horses.
+copy cosmic rage/misc/horses.set
+1047 Changed by frederick. actually inspired by looking at quotes. Fixed an issue with host kills.
+copy cosmic rage/misc/hosts.set
+1046 Changed by Frederick because stormy was just too lazy to do it. Bad bad dragon! Fixed warp loop. It will stop when ship leaves warp space and all that stuff.
+copy cosmic rage/ships/ships.set
+1045 Changed by Frederick, credits to Eldrion. Fixed another line of text not gagged with gas harvesting.
+copy cosmic rage/activities/planetoids.set
+1044 credits jace, the bad bad bad bad rivver i mean verry bad river sound has been relooped it wasnt looping anyway
+copy sounds cr ambiences rivver.wav
 1043 Changed by frederick. Added sound for delivery drone zooming away when it leaves the room.
 copy cosmic rage/misc/misc.set
 1042 credits malachai, quantim fixed

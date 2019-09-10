@@ -88,7 +88,7 @@ playsound {cosmic rage/activities/planetoid/dull roar.wav} 50}
 #gagline all;
 playsound {cosmic rage/activities/planetoid/low hum.wav} 70} 
 #trigger {The ship lurches in place, the stabalising engines working overtime as it rocks in space.} {
-#gagline all} {harvesting}
+#gagline all}
 #trigger {On screen, you see a beam fly towards *}  {#gagline all; playsound {cosmic rage/activities/planetoid/beamCannon.wav} @vol} 
 #trigger {On screen, you see your collection lines grab up some chunks.} {
 #gagline all;
@@ -100,6 +100,8 @@ playsound {cosmic rage/activities/planetoid/siren.wav} @vol}
 #gagline voice}} 
 #trigger {The computer announces: "* minerals harvested."} {
 #if {@gagharvest = "Enabled"} {#gagline voice}}
+#trigger {The computer announces: "* samples of * gas harvested *."} {
+#if {@GagHarvest = "Enabled"} {#gagline voice}}
 #trigger {You begin to wind a handle attached to a very important looking console.} {
 #gagline all;
 playsound {cosmic rage/activities/planetoid/handleWind.wav} @vol} 

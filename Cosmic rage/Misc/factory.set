@@ -136,3 +136,4 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {A loud hissing can be heard as carbon dioxide is scrubbed from the air and pumped into a holding tank.} {#gagline all; playsound {cosmic rage/activities/planetoid/air.wav} @vol}
 #trigger {One of the drones topples over.} {#gagline all; playsound {cosmic rage/general/factory/build6.wav} @vol}
 #trigger {The drones continue working} {#gagline all; playsound {cosmic rage/general/factory/build*5.wav} @vol}
+#trigger {You empty * pieces of debris into the refinery.} {playsound {cosmic rage/general/factory/can.wav} @vol}

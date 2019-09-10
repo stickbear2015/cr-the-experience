@@ -30,7 +30,11 @@ playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 playsound {cosmic rage/ships/movement/acceleration.wav} @Evol};
 #if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/acceleration1.wav} @Evol}};
-#TRIGGER {The hum of the engines flattens out to just a slight vibration as the ship reaches its destination.} {#gagline all; #if {@altshipEngines = "Disabled"} {
+#TRIGGER {The hum of the engines flattens out to just a slight vibration as the ship reaches its destination.} {
+#gagline all;
+#if {@quan = 1} {
+#pc @quanhandle stop;#var quan 0};
+#if {@altshipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/deceleration.wav} @Evol};
 #if {@altShipEngines = "Enabled"} {
 playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
@@ -48,7 +52,7 @@ playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
 #trigger {The ship jumps forward, powerful vibrations tremoring underfoot as the power and energy of the warp core rattles the frame of the vessel.} {#gagline all; playsound {cosmic rage/ships/movement/WarpAcceleration.wav} @vol; #var WarpStarthandle %playhandle; #var WarpStart 1}
 #TRIGGER {The ship shudders as it enters warp space at warp *} {playsound {cosmic rage/ships/movement/warp.wav} @vol; #if {@WarpStart = 1} {
 #pc @WarpStarthandle stop;
-#var WarpStart 0}; loopsound {cosmic rage/ships/movement/Warpengine.wav} @vol; #var Warploophandle %playhandle; #var warploopStart 1}
+#var WarpStart 0}; loopsound {cosmic rage/ships/movement/Warpengine.wav} @vol; #var Warploophandle %playhandle; #var warploop 1}
 #TRIGGER {The engines become quiet as the ship exits warp space near its destination.} {#gagline all}
 #TRIGGER {The engines hum slightly as the ship slows out of warp space, coming to a halt.} {#gagline all; playsound {cosmic rage/ships/movement/warpend.wav} @vol}
 #TRIGGER {The ship slows dramatically as it exits warp space.} {playsound {cosmic rage/ships/movement/warpend.wav} @vol; #if {@Warploop = 1} { #pc @Warploophandle stop; #var Warploop 0}}
@@ -372,5 +376,20 @@ playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}
 #TRIGGER {You tap * into the quantum drive console, before ramping up a lever.} {playsound {cosmic rage/ships/computer/code.wav} @vol}
 #TRIGGER {You hear a slight groan as the warp cores vents open up to full.} {playsound {cosmic rage/ships/movement/quantimestart.wav} @vol}
 #TRIGGER {The ship suddenly begins to lurch forward, rapidly picking up speed!} {#gagline all};
-#TRIGGER {The ship shudders and leaps into quantum space!} {playsound {cosmic rage/ships/movement/quantime.wav} @vol; playsound {cosmic rage/ships/movement/quantimeengine.wav} @vol; #var quanhandle %playhandle; #var quan 1}
+#TRIGGER {The ship shudders* leaps* into quantum space*} {playsound {cosmic rage/ships/movement/quantime.wav} @vol; loopsound {cosmic rage/ships/movement/quantimeengine.wav} @vol; #var quanhandle %playhandle; #var quan 1}
 #TRIGGER {You hear a slight grinding noise as the warp core slows down.} {playsound {cosmic rage/ships/movement/quantimeend.wav} @vol; #if {@WarpStart = 1} {#pc @WarpStarthandle stop; #var WarpStart 0}}
+#trigger {The ship slows dramatically as it exits quantum space.} {
+#if {@quan = 1} {
+#pc @quanhandle stop; #var quan 0}}
+#trigger {You slam the lever down.} {#gagline all}
+#trigger {The ship judders to a stop.} {
+#gagline voice;
+playsound {cosmic rage/ships/movement/quantimeend.wav} @vol;
+#if {@quan = 1} {
+#pc @quanhandle stop;#var quan 0};speed 0}
+#trigger {The computer announces: "Amu aborted."} {
+#if {@quan = 1} {
+#pc @quanhandle stop;#var quan 0}}
+#trigger {The powerful thrum of the ships quantum core fades away, ending in a spluttery gasp as it runs out of power.} {
+#if {@quan = 1} {
+#pc @quanhandle stop;#var quan 0}}

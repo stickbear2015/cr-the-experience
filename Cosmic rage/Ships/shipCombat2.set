@@ -37,6 +37,8 @@ playsound {cosmic rage/ships/combat/indirect*2.wav} @CVol}}
 #trigger {* "armor at * percent."} {playsound {cosmic rage/ships/computer/dalert.wav} @vol}
 #trigger {* "shields at * percent."} {playsound {cosmic rage/ships/computer/salert.wav} @vol}
 #trigger {* "Hull breech at *"} {playsound {cosmic rage/ships/combat/hullbreech.wav} @vol}
-#TRIGGER {You hear the sound of the defense systems crumpling under from a hit.} {Play {cosmic rage\ships\Combat\yd*2.wav} @vol}
+#TRIGGER {You hear the sound of the defense systems crumpling under from a hit.} {Playsound {cosmic rage\ships\Combat\yd*2.wav} @vol}
 #trigger {You hear a buzz and then a crackle as the shields fail.} {playsound {cosmic rage/ships/combat/shieldsdown.wav} @vol}
 #trigger {You hear a soft ping sound.} {#gagline all; playsound {cosmic rage/ships/combat/recall.wav} @cvol}
+
+#trigger {There is a deep boom as the pulse cannon fires.} {#gagline all}

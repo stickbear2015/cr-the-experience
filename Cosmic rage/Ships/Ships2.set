@@ -96,3 +96,7 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #TRIGGER {You hear a slight tremble, then a clank as the ships dock together successfully.} {#gagline all};
 #TRIGGER {You jerk the handle.} {playsound {cosmic rage/ships/misc/clamp3.wav} @vol; #gagline all};
 #TRIGGER {You pull the two ships apart, then hit dock.} {#play {@cosmic rage/general/trolley/button.wav} @vol; #gagline all};
+#TRIGGER {The ship shudders again, changing course.} {#gagline all};
+#TRIGGER {Darkness rushes past the windows as the ship continues through a wormhole.} {#gagline all};
+#TRIGGER {*"Tracing wormhole destination."} {#gagline all};
+#TRIGGER {You hear a loud crash and suddenly both the engines and the warp core power up together, forcing the ship through a wormhole.} {playsound {cosmic rage/ships/movement/wormhole.wav} @vol; #gagline all};

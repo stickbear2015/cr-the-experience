@@ -1,3 +1,31 @@
+1073 Changed by Frederick. I added a little something in ground combat, for when you're on a ground mission, and that mission is complete.
+copy cosmic rage/combat/GroundCombat.set
+1072 Changed by Frederick. So I just alphabetized the files that load. I also moved StarCoring.set closer to the top of the list of files that load, so hopefully, those of you who have been having issues with the error after locking onto a star core will stop.
+copy cosmic rage/cosmic rage.set
+1071 stormy, changed the larkan drone sounds
+copy sounds cr general  comms drone1 and 2.wav
+1070 Changed by Frederick. Stopped the prompt sound playing twice in some cases.
+copy cosmic rage/misc/misc.set
+1069, credits, uh, firath, caults are fixed
+copy combat/groundcombat.set
+1068 fixed oocburp social
+copy misc/socials.set
+1067 stormy, credits firath, added sound for ic too ooc barrier social
+copy misc/socials.set and sounds cr general socials ic.wav
+1066 Changed by Frederick. because Nate loves changing things on us, I updated the trigger for mappers detecting enemies.
+copy cosmic rage/combat/combat.set
+1065 Fixed by frederick. small error with a trigger in the ship wrecking activity.
+copy cosmic rage/ships/ships2.set
+1064 Fixed by Frederick. Updated the prompt trigger because of the recent change.
+copy cosmic rage/misc/misc.set
+1063 Changed by frederick. Fixed the trigger to stop the looping sound when the moon truck finishes processing.
+copy cosmic rage/activities/moonbase.set
+1062 credits, my bad i forgot the name, the bearhugs sound's volume has been lowered
+copy sounds cr general socials bearhug.wav
+1061 credits ruby added 2 more sounds for bio harvesting
+copy activities/bioharvesting.set and sounds cr activities nebula beep and click.wav
+1060 stormy, credits frederic, added sounds for gameModes
+copy misc misc2.set and sounds cr general misc nightmare and normal.wav
 1059 deleted 2 useless files
 delete sounds cr  ships misc cortinsert and report.wav
 1058 credits amara, added a verry cool sound for wormholes
@@ -625,7 +653,7 @@ Date: July 5th, 2019
 772, credits, lucy, stormy, added sounds for ship structural repairs, copy ships/rep folder and ships.set file
 771, stormy, added some stuff for factory building, copy sounds/general/factory folder and misc/factory.set
 770, randomised launch lands, copy sounds/ships/movement and ships2.set, changed bye, stormy.
-769, removed some unused sounds, changed bye stormy. recopy the hole sounds folder
+769, removed some unused sounds, changed bye stormy. recopy the whole sounds folder
 768: Fixed where sonic scream would not trigger if you had anything but the default.
 changed by: Lara the Stardust
 Update: cosmic rage/combat/ground combat.set

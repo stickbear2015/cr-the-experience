@@ -6,6 +6,7 @@
 #load misc/ConfigurationManager.set
 #load misc/keys.set
 #load misc/Soundpack.set
+#load Activities/StarCoring.set
 
 ; activities set files
 #load Activities/asteroidHarvesting.set
@@ -14,14 +15,12 @@
 #load Activities/comets.set
 #load Activities/DarkMatterMining.set
 #load Activities/dust.set
-#load Activities/handmining.set
 #load Activities/mechanicalMining.set
-#load Activities/moonbase.set
 #load Activities/moon.set
+#load Activities/moonbase.set
 #load Activities/PlanetChunks.set
 #load Activities/planetoid.set
 #load Activities/salvaging.set
-#load Activities/StarCoring.set
 #load Activities/StarStudies.set
 #load Activities/trash.set
 #load Activities/volcanoHarvesting.set

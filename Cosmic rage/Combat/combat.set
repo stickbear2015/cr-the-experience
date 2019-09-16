@@ -65,7 +65,8 @@ playsound {cosmic rage/general/combat/ray.wav} @cvol}
 #trigger {You hear an explosion from the *} {playsound {Cosmic Rage/general/combat/GrenadeExplodeNextRoom.wav} @cvol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
 #trigger {You connect up the wires and the generator stabalises.} {playsound {Cosmic Rage/general/combat/AtmosphericGenerator.wav} @cvol}
 #trigger {*grenade explodes!} {playsound {Cosmic Rage/general/combat/GrenadeExplode.wav} @cvol}
-#trigger {*mapper lets out an urgent trill, informing you to the * it detects *} {playsound {Cosmic Rage/general/combat/enemy detected.wav} @cvol; #additem Mapper %0}
+#trigger {* mapper makes a warning trill, and a red arrow indicates *} {playsound {Cosmic Rage/general/combat/enemy detected.wav} @cvol; #additem Mapper %0;
+#sub {%2}}
 #trigger {You throw off the stun!} {playsound {Cosmic Rage/general/combat/ThrowOffStun.wav} @cvol}
 #trigger {A shimmering forcefield intersepts all of the force behind the hit*} {playsound {Cosmic Rage/general/combat/stun crystal.wav} @cvol}
 #trigger {You aren't stunned. Whew!} {playsound {Cosmic Rage/general/combat/ThrowOffStun.wav} @cvol}

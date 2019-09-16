@@ -6,8 +6,9 @@
 #trigger {*will be right back*} {#additem AFKMessages %0}
 #trigger {* has returned*} {#additem AFKMessages %0}
 #TRIGGER {You can't go that way.} {#gagline all; playsound {cosmic rage/general/misc/CantGo.wav} @vol};
-#TRIGGER {[[]Type a line of input or * a to abort the command.]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
 #TRIGGER {[[]Enter * or *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
+#trigger {[[]Type a line of input or the letter *a*, short for *abort* to cancel the command.[]]} {
+playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #trigger {[[]Type lines of input; use * to end or *abort' to abort the command.]} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #trigger {Type lines of input. for help, type *help.} {
@@ -83,8 +84,6 @@ playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1
 #TRIGGER {You give * a tug and pull it off.} {playsound {cosmic rage/wear/hold.wav} @vol}
 #TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; #additem CashPointsSkillsAndLeveling %0}
 #TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Disabled"} {#gagline all}}
-#trigger {Type a line of input.} {
-playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #trigger {There are * unread changes since your last login.} {playsound {cosmic rage/general/misc/Change.wav} @vol}
 #trigger {There have been * announcements since you last logged in.} {playsound {cosmic rage/general/comms/announcement.wav} @vol}
 #TRIGGER {You raise your * to *.0!} {playsound {cosmic rage/general/Level/level.wav} @vol; #additem CashPointsSkillsAndLeveling %0}

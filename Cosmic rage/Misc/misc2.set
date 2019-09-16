@@ -6,3 +6,5 @@
 #TRIGGER {The mountain shudders violently!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
 #TRIGGER {In the distance, you see * erupt in a huge column of flame and ash!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
 #TRIGGER {Smoke begins to rise from * in the distance.} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
+#TRIGGER {You hear a cheer rise up from an invisible crowd. * has just chosen *  mode!} {playsound {cosmic rage/general/misc/nightmare.wav} @vol} {}
+#TRIGGER {You hear clapping. * just reverted to * mode!} {playsound {cosmic rage/general/misc/normal.wav} @vol}

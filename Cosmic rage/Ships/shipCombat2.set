@@ -6,8 +6,6 @@
 #trigger {You manipulate the * of the molecular disruptor at * and fire.} {playsound {cosmic rage/ships/combat/disruptor.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
-#trigger {You manipulate the * of the pulse cannon at * and fire.} {playsound {cosmic rage/ships/combat/PulseCannon.wav} @CVol; #if {@panShipCombat = "Enabled"} {
-#pc %playhandle pan %random(-4000,4000)}}
 #trigger {There is a deep boom as the * beam cannons fire.} {playsound {cosmic rage/ships/combat/beam.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
@@ -41,4 +39,5 @@ playsound {cosmic rage/ships/combat/indirect*2.wav} @CVol}}
 #trigger {You hear a buzz and then a crackle as the shields fail.} {playsound {cosmic rage/ships/combat/shieldsdown.wav} @vol}
 #trigger {You hear a soft ping sound.} {#gagline all; playsound {cosmic rage/ships/combat/recall.wav} @cvol}
 
-#trigger {There is a deep boom as the pulse cannon fires.} {#gagline all}
+#trigger {There is a deep boom as the pulse cannon fires.} {#gagline all; playsound {cosmic rage/ships/combat/PulseCannon.wav} @CVol; #if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}

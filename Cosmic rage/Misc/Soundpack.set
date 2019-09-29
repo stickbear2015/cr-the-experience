@@ -2,17 +2,17 @@
 #alias Version {soundpack version The VIP Cosmic Rage Experience} {}
 #trigger {Soundpack last change *} {#sub {The last soundpack change that was posted to the game %1}}
 #alias spversion {>@soundpacks The VIP Cosmic Rage Experience} {}
-#alias spbug {#gagon; spp;The VIP Cosmic Rage Experience;bug} {}
+#alias spbug {#gagon; spp;The VIP Cosmic Rage Experience;bug}
 #alias spsuggest {#gagon; spp;The VIP Cosmic Rage Experience;suggest}
-#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} 100; #sub {Thank you for submitting this suggestion! An admin will work on it shortly and reach out if needed!}}
+#trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} @vol; #sub {Thank you for submitting this suggestion! An admin will work on it shortly and reach out if needed!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
 #trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you.}}
-#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} 100; #sub {Thank you for submitting this bug report! An admin will be looking into it as soon as possible. If needed, you may be reached for more information.}}
+#trigger {Bug reported!} {playsound {Cosmic Rage/general/misc/SpBug.wav} @vol; #sub {Thank you for submitting this bug report! An admin will be looking into it as soon as possible. If needed, you may be reached for more information.}}
 #trigger {Please enter a long description for the bug.} {#sub {Please enter your bug report. Please provide as much detail as possible. Note. Just putting in the error that you got, or a one or two worded message will not help in resolving the problem. Bugs containing just a few words or just the VIP error message are automatically deleted. If possible, try to include the steps you took that produced the error or bug. This will expedite the report getting resolved. Thank you.}}
-#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.}; #play {Cosmic Rage/general/misc/Reload.wav} 80; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!}}}
+#alias {SpReload} {#pc 0 stop; #unalarm Saving; #say {Reloading the soundpack. please wait.}; playsound {Cosmic Rage/general/misc/Reload.wav} @vol; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!}}}
 
 ;Saving settings.
-#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} 60; AutoSaveBuffers; #say {Your soundpack settings and buffer list  have successfully been saved!} VoiceOnly; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
+#alias {SaveSettings} {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol;#say {Your soundpack settings and buffer list  have successfully been saved!}; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -30,7 +30,7 @@
 #Write 6 @panShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @CVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @ambon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @redalert @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @RedAlert @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Evol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @veVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @gagSal @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -53,6 +53,8 @@
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SilentPod @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @showermusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @gvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #key {Control-shift-R} {SpReload}
 #trigger {*Has just posted an announcement!*} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
@@ -96,14 +98,16 @@
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SilentPod @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @showermusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @gvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
-#alias {SpHelp} {#say {Loading the list of available help files. Please wait.} Voiceonly; #play {Cosmic Rage/general/misc/ConfMan.wav} 100; #pick {p:Please select an option from the list below|
-View the alias's help file:{#play {Cosmic Rage/general/Help/Aliases.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Aliases.txt}}|
-View the Announcements help file:{#play {Cosmic Rage/general/help/Announcements.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Announcements.txt}}|
-View the buffers help file:{#play {Cosmic Rage/general/Help/Buffers.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/buffers.txt}}|
-View the Changelog:{#play {Cosmic Rage/general/Help/Changelog.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/changelog.txt}}|
-View the Keys help file:{#play {Cosmic Rage/general/help/Keys.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/keys.txt}}|
-View the readme:{#play {Cosmic Rage/general/help/Readme.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/readme.txt}}|
-View the Soundpack credits:{#play {Cosmic Rage/general/help/SoundpackCredits.wav} @vol; #play {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Soundpack credits.txt}}}}
+#alias {SpHelp} {#say {Loading the list of available help files. Please wait.}; playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol; #pick {p:Please select an option from the list below|
+View the alias's help file:{playsound {Cosmic Rage/general/Help/Aliases.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Aliases.txt}}|
+View the Announcements help file:{playsound {Cosmic Rage/general/help/Announcements.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Announcements.txt}}|
+View the buffers help file:{playsound {Cosmic Rage/general/Help/Buffers.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/buffers.txt}}|
+View the Changelog:{playsound {Cosmic Rage/general/Help/Changelog.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/changelog.txt}}|
+View the Keys help file:{playsound {Cosmic Rage/general/help/Keys.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/keys.txt}}|
+View the readme:{playsound {Cosmic Rage/general/help/Readme.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/readme.txt}}|
+View the Soundpack credits:{playsound {Cosmic Rage/general/help/SoundpackCredits.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Soundpack credits.txt}}}}
 #alias spp {>@soundpacks} {}
 #Alias {themechange} {playsound {Cosmic Rage/general/comms/themesuccess.wav}; #var skice %1}

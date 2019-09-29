@@ -100,3 +100,5 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #TRIGGER {Darkness rushes past the windows as the ship continues through a wormhole.} {#gagline all};
 #TRIGGER {*"Tracing wormhole destination."} {#gagline all};
 #TRIGGER {You hear a loud crash and suddenly both the engines and the warp core power up together, forcing the ship through a wormhole.} {playsound {cosmic rage/ships/movement/wormhole.wav} @vol; #gagline all};
+#TRIGGER {You hear a whine as retrieval lines extend from the ship.} {playsound {cosmic rage/ships/misc/ret1.wav} @vol; #gagline all};
+#TRIGGER {You hear a whine and a thunk as the ship retracts its retrieval lines.} {playsound {cosmic rage/ships/misc/ret2.wav} @vol; #gagline all};

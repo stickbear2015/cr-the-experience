@@ -4,6 +4,24 @@
 #if {@ShipSoundPlaying = 1} {
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
 #var currentroom2 "misc";
+#If {%IfWord(evacuation,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Chamber"} {
+#if {@roomSoundPlaying = 1} {
+#pc @roomHandle stop};
+#if {@vehiclesoundplaying = 1} {
+#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "chamber"; #var currentroom2 "notmisc"}};
+#If {%IfWord(escape,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Chamber"} {
+#if {@roomSoundPlaying = 1} {
+#pc @roomHandle stop};
+#if {@vehiclesoundplaying = 1} {
+#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "chamber"; #var currentroom2 "notmisc"}};
 #If {%IfWord(ocean,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Ocean"} {

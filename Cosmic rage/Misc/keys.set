@@ -20,13 +20,16 @@
 #key {control-f10} {shipEvolup}
 #key {alt-f9} {vehicleengvoldown}
 #key {alt-f10} {vehicleengvolup}
+#key {alt-shift-f7} {gvoldown}
+#key {alt-shift-f8} {gvolup}
 
 ;keys for toggles.
+#key {alt-shift-r} {RedAlertToggle}
 #key {Control-shift-M} {showermusictoggle}
 #key f11 {ambtoggle}
 #Key {control-l} {lag}
 #key alt-shift-d {DroneToggle}
-#key alt-shift-m {togglemusic}
+#key control-shift-p {togglemusic}
 #key {control-shift-c} {togglecombat}
 #key control-f8 {togglevehicle}
 #key control-shift-f8 {toggleship}
@@ -39,8 +42,8 @@
 #key control-shift-w {gagweather}
 #key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} @vol; #say {All currently playing sounds have been stopped.}}
 #key alt-s {ShortMapText}
-#key Control-Alt-C ToggleIdleSounds
-#key control-alt-M {SilentSPIntro}
+#key Control-Alt-C {ToggleIdleSounds}
+#key control-alt-M {toggleSoundpackIntroMessage}
 #key control-alt-T {ToggleClocks}
 #key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1;
 #pc @CombatmusicPlayingHandle stop;

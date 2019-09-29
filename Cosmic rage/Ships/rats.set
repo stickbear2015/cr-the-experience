@@ -2,7 +2,7 @@
 #trigger {You snatch * fire extinguisher * from the wall and douse the fire with it.} {
 #gagline voice;
 playsound {cosmic rage/ships/fire/extinguisher.wav} @vol}
-#TRIGGER {*"A siren rings out. Warning. Warning. * is burning. Repeat, evacuate * it is on fire."} {
+#TRIGGER {*"* is on fire."} {
 #sub {%2 is on fire.};
 playsound {Cosmic Rage\ships\fire\siren.wav} @vol} 
 #TRIGGER {a jet of * spray shoots out of a nozzle nearby, dousing everything in a fine liquid.} {playsound {Cosmic Rage\ships\fire\spray.wav} @vol}

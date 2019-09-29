@@ -1,4 +1,4 @@
-#TRIGGER {On screen * launches from the planet's defense array.} {#gagline all; playsound {cosmic rage/ships/pd/enemycome*2.wav} @CVol; #pc %playhandle pan %random(-4000,4000)}
+#TRIGGER {On screen * launches from the * defense array.} {#gagline all; playsound {cosmic rage/ships/pd/enemycome*2.wav} @CVol; #pc %playhandle pan %random(-4000,4000)}
 #TRIGGER {You rotate the pod to face * direction as shown on screen.} {#gagline all; playsound {cosmic rage/ships/pd/deploy.wav} @CVol}; 
 #trigger {You press the big red launch button.} {#gagline all}
 #trigger {The pods light brighten a little as the drone approaches Vacus Outpost4169704.} {#gagline all}

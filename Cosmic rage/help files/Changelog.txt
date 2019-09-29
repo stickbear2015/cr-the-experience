@@ -1,3 +1,221 @@
+1176 Updated by Frederick, credit to Gaius. Fixed the dust analyzing laser.
+copy sounds/cosmic rage/ activities/dust analyzing/alaser.wav and delete delete aliser.wav from that same folder in your personal copy
+copy cosmic rage/activities/dust.set
+1175 stormy, credits firath, fixed a bug about firecloak
+copy combat combat.set
+1174 Credits to Firath for mentioning the volumes were too loud when forging armor. I have attempted to lower them.
+copy cosmic rage/combat/ArmorMaking.set
+1173 stormy, credits firath, oocburp has been fixed
+copy misc socials.set
+1172 stormy, credits blake, planetary  pods fixed once again
+copy misc misc.set
+1171, James, Fixed a trigger for firing standard lasers.
+copy cosmic rage\ships\ShipCombat.set
+1170 stormy, credits jace, added a hardcore sound for hardcore mode 
+copy misc misc2.set and sounds cr general misc hardcore.wav
+1169, James, Corrected another #alarm command, this time in moon.set.
+copy cosmic rage\activities\moon.set
+1168 Updated by Frederick. gagged another trigger dealing with collecting multiple trash items at once.
+copy cosmic rage/activities/trash.set
+1167, James, Hopefully doors won't throw errors at you now if you have a wierd door trigger. Thanks to William Jones for reporting the one he had.
+copy cosmic rage\misc\doors.set
+1166 Credit goes to Syuri dark green scale. added a trigger for killing flies with fire.
+copy cosmic rage/activities/trash.set and sounds/cosmic rage/activities/trash collection/flyfly.wav
+1165 Updated by Frederick. Found a very small error with a trigger in doors.
+copy cosmic rage/misc/doors.set
+1164, James, We're back to doors again. I added an if statement so misc doors that fit the triggers will play a sound. Enjoy.
+copy cosmic rage\misc\doors.set
+1163 Updated by Frederick. Updated the trigger dealing with roundtime since it was adjusted gameside.
+copy cosmic rage/misc/misc.set
+1162, James, through trial and error, fixed my own mistake in wear.set. Putting on spacesuits and battlesuits should work once more.
+copy cosmic rage\misc\wear.set
+1161, James, I've updated the Configuration Manager so the menus tell you when text is being gagged, instead of just, insert message here, disabled or enabled. Enjoy.
+copy cosmic rage\misc\ConfigurationManager.set and cosmic rage\help files\keys.txt
+1160, James, changed a trigger in wear to be more specific because it was triggering when you step into a teleporting beam. Let me know if you have any issues.
+copy cosmic rage\misc\wear.set
+1159, James, removed panning from the trigger playing droneout.wav in factory.set
+copy cosmic rage\misc\factory.set
+1158, James, removed the panning code from that trigger because it was causing errors.
+copy cosmic rage\misc\factory.set
+1157, James, Fixed a trigger with dropping resources from debris refining in your factory room so it wouldn't just play at max volume. Also, gagged a trigger relating to quantum in ships.
+copy cosmic rage\misc\factory.set and cosmic rage\ships\ships.set
+1156 Updated by Frederick. Removed another unnecessary trigger from ships.
+copy cosmic rage/ships/ships.set
+1155 Updated by Frederick, your favorite cy-larkan. I fixed an issue with the trigger for alerting us when roundtime was up.
+copy cosmic rage/misc/misc.set
+1154 Upated by Frederick. Added another item to wearing items.
+copy cosmic rage/misc/wear.set
+1153 Updates from frederick. Ok guys. I removed duplicate triggers about micro wormhole pods because they were already in their own file. I removed triggers to do with wearing items and armor pieces, and put them all in their own file. wearing spacesuits and battlesuits now have sounds, so you all can rejoyce about that.
+copy cosmic rage/cosmic rage.set
+copy cosmic rage/misc/misc.set and wear.set
+1152, James, majorly fixed the configuration mannager, appologies about that. Altered autosave settings and SaveSettings aliases to make the saving code more streamlined.
+copy cosmic rage\misc\ConfigurationManager.set and Soundpack.set
+1151 stormy, added an ambience  for the trauma room at medical complex
+copy misc/mainambience.set and sounds cr ambiences/trauma.wav
+1150 stormy, deleted an unwated trigger
+copy ships/ships.set
+1149 Updated by Frederick. Added a trigger for when vacus warriors slime you.
+copy sounds/cosmic rage/general/combat/enemy/vacus/slime.wav
+copy cosmic rage/combat/GroundCombat.set
+1148 Updated by Frederick. Updated some issues that sprung up in the Configuration manager, as well as added some things that were missing from the SaveSettings alias.
+copy cosmic rage/misc/ConfigurationManager.set and soundpack.set
+1147 Updated by Frederick. Made star studies respect panning.
+copy cosmic rage/activities/StarStudies.set
+1146 Updated by Frederick. I've updated airpods and got rid of the pods.set file.
+delete cosmic rage/ships/pods.set
+copy cosmic rage/cosmic rage.set and cosmic rage/combat/airpods.set
+1145 Updated by Frederick. I gagged a few more things in Ground Combat that were not previously gagged. I have also changed anything that was gagline all to gagline voice, so that any sighted folks using this pack can still see what's going on, along with the sounds.
+copy cosmic rage/combat/groundCombat.set
+1144 Updated by frederick. I updated the SPUnload alias in the main CR file, as well as added the pods file to load, which it previously was not.
+copy cosmic rage/cosmic rage.set
+1143 Updated by frederick. Changed the volumes of any sounds playing at volume 100 to use the proper volume variable.
+copy cosmic rage/misc/ConfigurationManager.set
+1142 Updated by Frederick. Changed the keystroke to toggle continuous red alert sound to alt-shift-r.
+copy cosmic rage/misc/keys.set, and cosmic rage/help files/keys.txt
+1141 Updated by frederick. Fixed up airpods. Airpods will now respect ship combat volume, plus fixed up one or two errors in the process.
+copy cosmic rage/combat/airpods.set
+1140 Updated by frederick. I forgot to do this awhile back when I changed the planetary music keystroke. Sorry.
+copy cosmic rage/help files/keys.txt
+1139 stormy, credits Walric , fixed a bug about trash collecting
+copy activities/trash.set
+1138 Updated by frederick. I added panning to ground combat-related events. Ground combat also now has its own volume and can be raised and lowered. The keystrokes are alt-shift-f7 to lower, and alt-shift-f8 to raise. We hope this brings all of you great joy.
+copy cosmic rage/combat/battlesuits.set, combat.set, and GroundCombat.set
+1137, James, Added in a toggleable option to have the red alert siren constantly playing, if anyone wants that. It's toggleable under the menu, and with alt-r.
+copy cosmic rage\misc\ConfigurationManager.set, keys.set, and soundpack.set, cosmic rage\Cosmic rage.set, cosmic rage\ships\ShipCombat.set, and cosmic rage\help files\keys.txt
+1136, James, Had to fix keys.set, it should be working now. Actual changes to ground combat files to follow.
+copy cosmic rage\misc\keys.set
+1135, James, As part of adding a new ground combat volume, changes have been made to the configuration manager and to saving and loading settings.
+copy cosmic rage\misc\ConfigurationManager.set, Keys.set, and Soundpack.set, cosmic rage\cosmic rage.set, and cosmic rage\help files\keys.txt
+1134, James, Ungagged the text for battlesuit guns popping out and retracting.
+copy cosmic rage\combat\battlesuits.set
+1133, James, Undid last change because the facts as I thought they were at the time turned out to be false. the #alarm command is back in there, and you can feel confident that when you hear the sound, your roundtime is up.
+copy cosmic rage\misc\misc.set
+1132, James, Apparently, the round time message trigger was fixed and is in the appropriate place now, so the alarm has been taken out. Enjoy.
+copy cosmic rage\misc\misc.set
+1131, James, I've said this before, and I'll say it again. All types of doors should now work with this change. :). I hope I'm right this time.
+copy cosmic rage\misc\doors.set
+1130, James, somehow trains got broken again, fixed it.
+copy cosmic rage\misc\trains.set
+1129, James, Gave escape pods considerable love. Fixed all the ambiences with escape and evacuation pods, fixed the alarms in the landing and moving triggers, and modified them a little as well. Enjoy.
+copy cosmic rage\ships\ships.set and shipAmbience.set, cosmic rage\misc\MainAmbience.set, and sounds\cosmic rage\ships\misc\EscapePodLand.wav
+1128, James, Fixed a trigger with flying. You should no longer get errors if someone lands in front of you.
+copy cosmic rage\misc\misc.set
+1127, James, Fixed doors again.
+copy cosmic rage\misc\doors.set
+1126 credits stormy, added more stuff for gmc people
+copy misc/orgstuff.set
+1125 credits syurhi, added a sound for food scoffing
+copy misc/misc.set
+1124, James, Put my AnyCase code back in doors.
+copy cosmic rage\misc\misc.set
+1123, James, Updated triggers for phasers and pulse cannons, and modified the sound for external hatches closing.
+copy cosmic rage\ships.set, shipCombat.set, and shipCombat2.set
+1122 Changed by Frederick. Lowered the volume of the say triggers because it was like someone screaming "hey!" right in your ears!
+copy cosmic rage/misc/say.set
+1121, James, Added ambiance to micro wormhole transportation pods. Ambiance now works inside these and when exiting them.
+copy cosmic rage\misc\misc.set
+1120, James, Fixed the trigger with blades.
+copy cosmic rage\ships\ShipCombat.set
+1119, James, Added any case text to doors.
+copy cosmic rage\misc\doors.set
+1118 Changed by frederick. first, we actually have no ground combat volume keystrokes, so for now, I changed the combat volume for ground to the general volume variable. second, I changed the alarm amounts from using commas to periods. so for example, 0,2 became 0.2. Third, I removed the substitution texts that also had gagline functions in the triggers. we don't need to use both after all. Forth, I lowered the volumes for some of the droid attack sounds, as they were rather loud.
+copy cosmic rage/combat/battlesuits.set combat.set and GroundCombat.set
+1117 Changed by Frederick. Just modified some triggers in ships to cover hatches opening and closing. It will cover a single hatch, or messages like "one of the hatches...".
+copy cosmic rage/ships/ships.set
+1116, gagged all the mob attacking mob messages for ground combat, let me know if it helped
+copy combat/groundcombat.set
+1115, added a sound when your stun and try to move, note the others hear this sound, not you, mostly useful for medics
+copy combat/combat.set and sounds cr general combat stunned.wav
+1114, gagged the stun crystal text
+copy combat combat.set
+1113, added a sound for covering and gagged the messages
+copy combat combat.set and sounds cr general combat cover.wav
+1112 GROUND oVOERHAUL, ROUND 1, UNSPAMM, GAGGED BATTLESUÝT REPAÝR MESSAGES
+COPY MÝSC/battlesuit.SET
+1111 stormy, credits  Ulysses,  gagged the following person messages*
+copy combat/ground combat.set
+1110 stormy, added a sound for the whip ooc social, whip whip
+copy misc/socials.set and copy sounds cr general socials  whip.wav
+1109 stormy, the private netfork notification system is now works with multaple word channel names, see change 1097 for more details
+copy misc/comms.set
+1108 stormy, credits fred, added sounds for retreaveing lines
+copy ships/ships2.set and copy sounds cr ships misc ret1 and ret2.wav
+1107, James, Another change documenting my own stupidity, added an extra brace in the trigger that is the subject of the prior change. It has been corrected.
+copy cosmic rage\ships\ships.set
+1106, James, Updated a trigger with quantum so amu 0 will kill the loop like it's supposed to.
+copy cosmic rage\ships\ships.set
+1105, James, Stupid me, forgot to put the 1 in the alarm command. All fixed now.
+copy cosmic rage\misc\misc.set
+1104, James, Fixed a trigger with quantum, and put an alarm command in for round time so the sound plays when round time is actually up.
+copy cosmic rage\misc\misc.set and cosmic rage\ships\ships.set
+1103, James, Fixed computers in factory.set, for real this time.
+copy cosmic rage\misc\factory.set
+1102, James, Hopefully fixed computers in factory.set. Let me know if it worked.
+copy cosmic rage\misc\factory.set
+1101 Updated by Frederick. Removed a trigger in the doors section of the pack, and updated the entry hatch triggers in ships instead. It works out better.
+copy cosmic rage/ships/ships.set
+copy cosmic rage/misc/doors.set
+1100, James, Took the loop out for repairing battlesuits. Now, the sound only plays once when someone starts a repair.
+copy cosmic rage\combat\battlesuits.set
+1099 Changed by Frederick. In our continuing efferts to bring you state of the art doors, I added open and shut triggers for the entry hatch of the Elysium.
+copy cosmic rage/misc/doors.set
+1098, James, Added in triggers for opening and closing your ship.
+copy cosmic rage\ships\ships.set
+1097 stormy, after 1 hour of nonstop anoyance, i finally add a system that lets you play diffrent pitched sounds for, 4 private network channels that you have specified, the command is pn1 through 4, like pn1 brokenclub, known issues, if your channel's name is more then a word, it wont work, sorry, 2, if the pack keeps returning those values to their default state, you gotta check the box says keep variable values in your vip mud char settings that is at vip mud's connect screen, find your cosmic rage character, click edit, and checked the box says keep variable values check box and enjoy, well and, if you like this one, please hug me, i mean waht ever, you can do anything aside catcanning.
+copy misc/comms.set, copy sounds cr general comms pn 1 through 3.wav 
+1096 Changed by frederick. Fixed the trigger when someone switches to nightmare mode.
+copy cosmic rage/misc/misc2.set
+1095 Changed by Frederick this time. Just when you thought it was safe to go back in the water, a few more door triggers have been added again to cover cargo bay doors opening and closing during transfers.
+copy cosmic rage/misc/doors.set
+1094  twaked the moonlanding sound a liddle bit
+copy sounds cr activities moonbase land.wav
+1093, corrected the moon landing
+copy activities/moonbase.set
+1092 stormy, removed 2 sounds vehicle land/launch because new ones are already covering them
+copy vehicle/vehicle.set and delete sounds cr vehicle vehicleland.wav and vehicleshoot.wav
+1091, James, All can cheer! Reloading the soundpack now respects if you had your ambience turned off in saved settings!
+copy cosmic rage\Cosmic rage.set
+1090, James, I was wrong again, messed up doors again, I think I've fixed them, again. Hopefully this is the last time today.
+copy cosmic rage\misc\doors.set
+1089, James, Hopefully, done fixing doors, this time. Added a singular form to all the if statements so the host made doors on planets will play sounds too.
+copy cosmic rage\misc\doors.set
+1088, James, Doors should be fixed for good now. Let us know if any door sounds aren't working.
+copy cosmic rage\misc\doors.set
+1087, James, Trains required capital letters, so I had to fix them again.
+copy cosmic rage\misc\trains.set
+1086, James, Fixed an unforseen error with my train code.
+copy cosmic rage\misc\trains.set
+1085, James, added a few sound files that were missing from triggers.
+copy sounds\vehicle\vehicleLand.wav and vehicleShoot.wav
+1084, James, Fixed the triggers for taxi phones. The sounds should now work.
+copy cosmic rage\misc\misc.set
+1083, James, fixed some triggers in vehicle.set not pointing to correct sound files. Thanks Firath for reporting.
+copy cosmic rage\vehicle\vehicle.set
+1082, James, fixed a code issue with the new lift sounds, expanded door triggers to include more doors.
+copy cosmic rage/misc/doors.set, and cosmic rage/misc/misc.set
+1081, lifts are improved sound whise, removed 2 unused sounds, made the script a liddle polished and all done
+copy misc/misc.set, and sounds sounds cr general misc liftamb.wav liftbutton.wav, liftdoorclose.wav, liftdooropen.wav, liftmoving.wav liftstart.wav liftstop.wav and delete lift.wav and liftopen.wav
+1080 Nate, with help from stormy, added new say triggers and removed the old ones.
+Copy cosmic rage/misc/say.set and cosmic rage/misc/misc.set.
+copy cosmic rage.set
+1079 stormy, credits Reset Character number1391, added a sound for hardcore mode switch
+copy misc/misc2.set
+1078 changed by frederick. Changed the trigger when rooms are announced as being on fire because the in-game message was changed.
+copy cosmic rage/ships/rats.set
+1077 Credit to Stormy. Supplying us with a relaxation ambiance sound for those areas.
+copy sounds/cosmic rage/ships/rooms/relaxation.wav
+1076 Credits to James Donivan for the following updates.
+fixed us ship ambiences some more. Fixed trains some more. Lifts got a lift as well, they sound much better.
+I changed the keystroke for planetary music because users of jaws with newer versions can't use the old keystroke. The new keystroke for planetary music is control plus shift plus p.
+I fixed the keystroke to enable or disable the intro message. The keystroke was executing the wrong alias.
+copy cosmic rage/misc/keys.set misc.set trains.set
+copy cosmic rage/ships/ShipAmbience.set
+copy sounds/cosmic rage/general/misc/lift.wav liftamb.wav LiftButton.wav LiftDoorClose.wav LiftDoorOpen.wav LiftMoving.wav LiftOpen.wav LiftStart.wav LiftStop.wav 
+1075 Updated by Frederick. Credits to James Donivan. We've updated the ambiances with trains and vehicles. Fixed the error when entering or exiting vehicles with no power as well.
+copy cosmic rage/misc/trains.set
+copy cosmic rage/vehicles/vehicles.set and VehicleAmbience.set
+1074 stormy hopefully added sounds for new saying texts
+copy misc misc.set
 1073 Changed by Frederick. I added a little something in ground combat, for when you're on a ground mission, and that mission is complete.
 copy cosmic rage/combat/GroundCombat.set
 1072 Changed by Frederick. So I just alphabetized the files that load. I also moved StarCoring.set closer to the top of the list of files that load, so hopefully, those of you who have been having issues with the error after locking onto a star core will stop.

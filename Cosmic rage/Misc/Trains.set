@@ -11,14 +11,9 @@
 #trigger {The train bumps over the tracks.} {#gagline voice}
 #trigger {The wheels of the train squeel.} {#gagline voice}
 #trigger {You hear a squeaking from somewhere.} {#gagline voice}
-#trigger {You heave yourself abord * Train.} {#pc 0 stop; loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #var trainhandle %playhandle; #var train 1}
-#trigger {You disembark from the train.} {#if {@train = 1} {
-#pc @trainhandle stop;
-#var train 0};
-playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol}
+#trigger {A * (currently at *)} {#pc 0 stop; loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "train"; #var currentroom2 "notmisc"} {ambon};
+#trigger {A * (between stations)} {#pc 0 stop; loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "train"; #var currentroom2 "notmisc"} {ambon};
+#trigger {You disembark from the train.} {playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol};
 #trigger {The train approaching platform * is *.} {playsound {Cosmic Rage/general/trains/Announcement.wav} @vol}
 #trigger {You heave yourself abord * Pod.} {loopsound {cosmic rage/general/trains/TrainAmb.wav} @Roomvol; #var trainhandle %playhandle; #var train 1} {} AnyCase
-#trigger {You disembark from the *.} {#pc 0 stop; #if {@train = 1} {
-#pc @trainhandle stop;
-#var train 0};
-playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol}
+#trigger {You disembark from the *.} {playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol};

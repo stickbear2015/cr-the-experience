@@ -1,5 +1,10 @@
 #class ambon disable;
-	#TRIGGER {The floor hums slightly with the vibration of the engines.} {
+#trigger {A steady, loud thudding from above indicates the rotors are running and the collector is powered up.} {
+#If {%IfWord(pollution,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "pollution"} {#pc 0 stop; loopsound {cosmic rage/Ambiences/av.wav} @Vehiclevol;
+#var currentroom "pollution"}}};
+#TRIGGER {The floor hums slightly with the vibration of the engines.} {
 #var currentroom2 "vmisc";
 #If {%IfWord(Trash,@PlanetName," ")} {
 #var currentroom2 "notmisc";
@@ -24,7 +29,7 @@
 #If {%IfWord(Builders,@PlanetName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Builders"} {
-#say {building}; #pc 0 stop; loopsound {cosmic rage/Ambiences/build.wav} @Vehiclevol;
+#pc 0 stop; loopsound {cosmic rage/Ambiences/build.wav} @Vehiclevol;
 #var currentroom "Builders"}};
 #if {@currentroom2 = "vmisc"} {
 #pc 0 stop; loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @vehiclevol;

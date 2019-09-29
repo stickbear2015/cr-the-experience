@@ -106,6 +106,7 @@
 #trigger {* explains to everyone, in a very convincing way, that * is a complete and utter failure.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/fail.wav} @vol}}
 #trigger {* explains that, really * is just a wapping big failure.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/fail.wav} @vol}}
 #trigger {* burps so loudly, * is flung off of the moo.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp2.wav} @vol}}
-#trigger {* leans back and lets out an almighty, speaker rattling, ooc channel smashing, *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp1.wav} @vol}}
+#trigger {* leans back and lets out a loud burp!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp1.wav} @vol}}
 #trigger {* kicks * over the IC OOC barrier of life.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} @vol}}
 #trigger {* smashes the IC to OOC barrier like a boss.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} @vol}}
+#trigger {* cracks the *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/whip.wav} @vol}}

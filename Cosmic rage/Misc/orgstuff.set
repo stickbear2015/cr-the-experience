@@ -10,3 +10,5 @@
 #trigger {You tap a button on * causing a small needle to pop out.} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
 #trigger {You aim * and begin removing the *} {#gagline all; playsound {Cosmic Rage/general/gmc/laser.wav} @vol}
 #trigger {The screen lights up with scrolling text.} {#gagline all; playsound {Cosmic Rage/general/gmc/medscan.wav} @vol}
+#trigger {A spasm takes over your limbs as * and discharges a large amount of electricity into you.} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
+#trigger {* taps a button on *} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}

@@ -22,7 +22,7 @@ playsound {cosmic rage/activities/moon/harvesterRetract.wav} @vol}
 #gagline all;
 playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol} 
 #trigger {this is moon management at *} {playsound {cosmic rage/activities/moon/moonScanner.wav} @vol}
-#trigger {A powerful hum starts up from underfoot, sounding like a motor being warmed up.} {#gagline all; playsound {cosmic rage/activities/moon/sbegin.wav} @vol; #alarm 5,7 {loopsound {cosmic rage/activities/moon/sloop.wav} @vol; #var moonHandle %playHandle; #var moon 1}}
+#trigger {A powerful hum starts up from underfoot, sounding like a motor being warmed up.} {#gagline all; playsound {cosmic rage/activities/moon/sbegin.wav} @vol; #alarm 5.7 {loopsound {cosmic rage/activities/moon/sloop.wav} @vol; #var moonHandle %playHandle; #var moon 1}}
 #trigger {The mechanical winding noise stops, but is replaced by a repeated sequence of descending noises, like a machine is repeating a task over and over.} {#gagline all; playsound {cosmic rage/activities/moon/sshutdown.wav} @vol; #if {@moon = 1} {#pc @moonHandle stop; #var moon 0}}
 #trigger {A shudder goes through the ship as a huge electrical discharge is fired.} {#gagline all; playsound {cosmic rage/activities/moon/slaser.wav} @vol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {On screen, you see the moon's structure become too weak, causing it to simply fall apart.} {#gagline all; playsound {cosmic rage/activities/moon/sdestroy.wav} @vol}

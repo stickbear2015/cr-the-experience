@@ -126,12 +126,16 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 playsound {cosmic rage/ships/movement/gravjump.wav} @vol}
 #trigger {You hear a resounding explosion and the ship rockets forward.} {
 #gagline all}
-#trigger {A small entry hatch swings *} {
+#trigger {The airlock on * opens with *.} {playsound {cosmic rage/ships/misc/iopen.wav} @vol};
+#trigger {The airlock on * closes with *.} {playsound {cosmic rage/ships/misc/iclose.wav} @vol};
+#trigger {A * entry hatch*swings *} {
 #gagline all;
-#if {%ifWord(open.,%1," ")} {
-playsound {cosmic rage/ships/misc/iopen.wav} @vol};
-#if {%ifWord(closed.,%1," ")} {
-playsound {cosmic rage/ships/misc/iclose.wav} @vol}} {} AnyCase
+#if {%ifWord(open.,%3," ")} {
+playsound {cosmic rage/ships/misc/iopen.wav} @vol} {} Anycase;
+#if {%ifWord(closed.,%3," ")} {
+playsound {cosmic rage/ships/misc/iclose.wav} @vol} {} Anycase;
+#if {%ifword(shut.,%3," ")} {
+playsound {cosmic rage/ships/misc/iclose.wav} @vol}} {} Anycase
 #trigger {You hear a slight rumble as the airlock automatically cycles itself.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/cycle.wav} @vol}
@@ -217,9 +221,6 @@ playsound {cosmic rage/ships/misc/taxiDock.wav} @vol}
 playsound {cosmic rage/ships/misc/shipAttach.wav} @vol}
 #trigger {You feel a slight bump as the ship lands.} {
 #gagline all}
-#trigger {the doors slide open with a hiss and you hear a soft female voice announce: *} {
-#gagline all;
-playsound {cosmic rage/general/misc/pod Door Open.wav} @vol}
 #trigger {The doors slide shut with a hiss.} {
 #gagline all;
 playsound {cosmic rage/vehicle/door close.wav} @vol}
@@ -311,6 +312,15 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 
 #trigger {A dull hum fills the air as the EMP ray prepares to fire.} {#gagline all}
 #trigger {The hatch closes with a soft hiss.} {playsound {Cosmic Rage/ships/misc/CloseAirlock.wav} @vol; #gagline all}
+#trigger {One of the hatches on * * with a soft hiss.} {
+#if {%ifword(open,%2," ")} {
+playsound {cosmic rage/ships/misc/iopen.wav} @vol};
+#if {%ifword(opens,%2," ")} {
+playsound {cosmic rage/ships/misc/iopen.wav} @vol};
+#if {%ifword(close,%2," ")} {
+playsound {cosmic rage/ships/misc/iclose.wav} @vol};
+#if {%ifword(closes,%2," ")} {
+playsound {cosmic rage/ships/misc/iclose.wav} @vol}}
 #trigger {*"Disabling primary power drives."} {#gagline all}
 #trigger {A rumble, like secondary engines, fills the ship for several moments as transport drones propel the ship away from an access tube and into a hangar.} {playsound {Cosmic Rage/ships/misc/TransportHangar.wav} @vol; #gagline voice}
 #trigger {the ship lifts slightly, then there is a thunk as transport drones attach to it. After a moment, the sound of muffled engines fill the area as the drones carry it from the hangar and onto an access tube.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
@@ -330,7 +340,6 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #TRIGGER {The humming sound ceases as the ship finishes recharging.} {#gagline all; 
 #if {@rech = 1} {
 #pc @rechHandle stop; #var rech 0}}
-#trigger {On screen, you see the grabber of the ship snatch the pod up, and quickly yank it in.} {#gagline all; playsound {Cosmic Rage/ships/misc/Pressurize.wav} @vol}
 #trigger {You tap a small button near the inner airlock hatch.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/switch.wav} @vol}
@@ -368,13 +377,14 @@ playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}
 #trigger {There is a slight clunk, followed by the squeal of locking mechanisms.} {#gagline all}
 #TRIGGER {You turn some dials and adjust one or two massive levers which have no right to be in this day and age, before slapping a big red button as hard as you possibly can.} {#gagline all; playsound {cosmic rage/ships/misc/Escape4.wav} @vol
 };
-#TRIGGER {The pod shakes for a moment, before the engines fire to life and it begins to calibrate.} {#gagline all; #alarm 2,3 {playsound {cosmic rage/ships/misc/escape1.wav} @vol; #alarm 3 {loopsound {cosmic rage/ships/misc/escape2.wav} @vol; #var epodHandle %playHandle; #var epod 1}}};
+#TRIGGER {The pod shakes for a moment, before the engines fire to life and it begins to calibrate.} {#gagline all; #alarm 2.3 {playsound {cosmic rage/ships/misc/escape1.wav} @vol; #alarm 3 {loopsound {cosmic rage/ships/misc/escape2.wav} @vol; #var epodHandle %playHandle; #var epod 1}}};
 #TRIGGER {You push up the twin levers, bringing the pod to a stop.} {#gagline all; playsound {cosmic rage/ships/misc/Escape4.wav} @vol; #alarm 1 {#if {@epod = 1} {#pc @epodHandle stop; #var epod 0}}};
 #trigger {the pods engine comes to a stop.} {#gagline all}
 #trigger {Having run its systems diagnostics, the pod fires the thrusters and begins to move.} {#gagline all}
-#TRIGGER {The pod lands with a thump and you are tipped out.} {#gagline all; playsound {cosmic rage/ships/misc/Escape3.wav} @vol; #alarm 1 {#if {@epod = 1} {#pc @epodHandle stop; #var epod 0}}}
+#trigger {You feel the pod judder as it descends through a planets atmosphere.} {#gagline all; playsound {cosmic rage/ships/misc/EscapePodLand.wav} @vol; #alarm 1 {#if {@epod = 1} {#pc @epodHandle stop; #var epod 0}}}
+#TRIGGER {The pod lands with a thump and you are tipped out.} {#gagline all; playsound {cosmic rage/ships/misc/Escape3.wav} @vol}
 #TRIGGER {You tap * into the quantum drive console, before ramping up a lever.} {playsound {cosmic rage/ships/computer/code.wav} @vol}
-#TRIGGER {You hear a slight groan as the warp cores vents open up to full.} {playsound {cosmic rage/ships/movement/quantimestart.wav} @vol}
+#TRIGGER {You hear a slight groan as the warp cores vents open up to full.} {#gagline all; playsound {cosmic rage/ships/movement/quantimestart.wav} @vol}
 #TRIGGER {The ship suddenly begins to lurch forward, rapidly picking up speed!} {#gagline all};
 #TRIGGER {The ship shudders* leaps* into quantum space*} {playsound {cosmic rage/ships/movement/quantime.wav} @vol; loopsound {cosmic rage/ships/movement/quantimeengine.wav} @vol; #var quanhandle %playhandle; #var quan 1}
 #TRIGGER {You hear a slight grinding noise as the warp core slows down.} {playsound {cosmic rage/ships/movement/quantimeend.wav} @vol; #if {@WarpStart = 1} {#pc @WarpStarthandle stop; #var WarpStart 0}}
@@ -390,6 +400,9 @@ playsound {cosmic rage/ships/movement/quantimeend.wav} @vol;
 #trigger {The computer announces: "Amu aborted."} {
 #if {@quan = 1} {
 #pc @quanhandle stop;#var quan 0}}
+#trigger {The ship slows to a stop as the engines are powered down.} {
+#if {@quan = 1} {
+#pc @quanhandle stop;#var quan 0}};
 #trigger {The powerful thrum of the ships quantum core fades away, ending in a spluttery gasp as it runs out of power.} {
 #if {@quan = 1} {
 #pc @quanhandle stop;#var quan 0}}

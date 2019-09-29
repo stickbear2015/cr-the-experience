@@ -56,10 +56,10 @@ Alt-Z. In.
 Alt-X. Out.
 
 	Miscellaneous Keys
-
+alt-shift-r. Toggle Red alert sounds.
 Control-F11. Stop all playing sounds. Useful if a sound gets stuck.
 f11. Toggle room Ambience.
-alt-shift-m. Toggle planetary music.
+control-shift-p. Toggle planetary music.
 alt shift d. Toggle drone sounds.
 control-shift-c. Toggle ship combat music.
 control-f8. Toggle alternate vehicle engine sounds.
@@ -67,7 +67,7 @@ control-shift-f8. Toggle alternate ship engine sounds.
 control-g. Toggle the gagging of enemy locking while in ship combat.
 control-p. Toggle ship combat panning.
 control-h. Toggle the gagging of Harvesting announcements.
-control-alt-s. Toggle salvage text.
+control-alt-s. Toggle the gagging of salvage text.
 control-w. Toggle weather sounds.
 control-shift-w. Toggle the gagging of weather text.
 control-F5. Toggle between the new and old logon sounds.

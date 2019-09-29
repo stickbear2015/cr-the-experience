@@ -117,6 +117,13 @@ loopsound {cosmic rage/ships/rooms/WeaponRoom.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/WeaponRoom.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "gunning"; #var currentroom2 "notmisc"}};
+#If {%IfWord(Relaxation,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "relaxation"} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop};
+loopsound {cosmic rage/ships/rooms/Relaxation.wav} @Shipvol;
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "relaxation"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Holo,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Holo"} {
@@ -381,7 +388,7 @@ loopsound {cosmic rage/ships/rooms/MedicalCenter.wav} @Shipvol;
 #if {@currentroom <> "pod"} {
 #If {@ShipSoundPlaying = 1} {
 #pc @ShipHandle stop};
-loopsound {cosmic rage/Ambiences/escapePod.wav} @Shipvol;
+loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "pod"; #var currentroom2 "notmisc"}};
 #If {@CurrentRoom2 = "misc"} {
 #if {@currentroom <> "misc"} {

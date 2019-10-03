@@ -21,3 +21,4 @@
 #TRIGGER {You slam your right hand onto the stop button.} {#gagline all; #if {@rodloop = 1}; #pc @rodloophandle stop; #var rodloop 0; playsound {cosmic rage/activities/nebula/deactivate.wav} @Vol};
 #TRIGGER {On screen, a green light appears above *} {#gagline all; playsound {cosmic rage/activities\nebula\beep.wav} @vol}
 #TRIGGER {There is a subtle click of a rod being locked in place.} {#gagline all; playsound {cosmic rage/activities\nebula\click.wav} @vol}
+#trigger {You begin to manipulate the bioplasma harvesting rods.} {#gagline voice}

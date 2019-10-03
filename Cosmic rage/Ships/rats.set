@@ -32,3 +32,4 @@ playsound {Cosmic Rage\ships\fire\siren.wav} @vol}
 #trigger {* spits acid against the wall before scratching at it furiously with * claws.} {playsound {cosmic rage/ships/Ratika/hole.wav} @vol}
 #trigger {* guard drone * shuts down to preserve power.} {#gagline voice;playsound {cosmic rage/ships/Ratika/powerdown.wav} @vol}
 #trigger {* guard drone * powers up.} {#gagline voice;playsound {cosmic rage/ships/Ratika/powerup.wav} @vol}
+#trigger {* lets out a tiny belch.} {playsound {cosmic rage/ships/ratika/belch.wav} @vol}

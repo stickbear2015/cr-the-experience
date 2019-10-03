@@ -16,7 +16,6 @@ Ship combat volume down. combatvolumedown|
 Ship combat volume up. combatvolumeup|
 ground combat volume up. gvolup
 ground combat volume down. gvoldown
-looping red alert toggle. RedAlertToggle
 vehicle volume down. vehiclEvoldown|
 vehicle volume up. vehiclEvolup|
 ship ambience volume down. shipvoldown|
@@ -41,6 +40,8 @@ ClearAllBuffers. Clears all of your text from your active buffers, wiping them c
 Aliases for toggling different options. 
 
 ambience toggle. ambtoggle|
+looping red alert toggle. RedAlertToggle
+toggle soundpack update notifications on login. ToggleUpdate
 ToggleNumpad. Toggles the entering of numbers using the numpad. 
 drone sounds toggle. dronetoggle|
 planetary music toggle. togglemusic|

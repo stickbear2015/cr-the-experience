@@ -3,6 +3,12 @@
 #if {@ambon = "Enabled"} {
 #if {@ShipSoundPlaying = 1} {
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
+#if {@CombatMusicPlaying = 1} {
+#pc @CombatMusicPlayingHandle stop; #var CombatMusicPlaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 #var currentroom2 "misc";
 #If {%IfWord(evacuation,@PlanetName," ")} {
 #var currentroom2 "notmisc";
@@ -488,7 +494,10 @@ loopsound {cosmic rage/Ambiences/mining tunnel.wav} @roomvol;
 #pc @roomhandle stop};
 loopsound {cosmic rage/Ambiences/lobby.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "misc"}}}} {ambon}
-#TRIGGER {The overhead lights are dim, indicating the ship is powered down and all nonessential systems have been disabled.} {#If {@ShipSoundPlaying = 1} {#pc @ShipHandle stop}; #Var ShipSoundPlaying 0; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #if {@vehiclesoundplaying = 1} {
+#TRIGGER {The overhead lights are dim, indicating the ship is powered down and all nonessential systems have been disabled.} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop; #var ShipSoundPlaying 0};
+loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #if {@vehiclesoundplaying = 1} {
 #pc @vehiclehandle stop; #var vehiclesoundplaying 0; #if {@RoomSoundPlaying = 1} {#pc @RoomHandle stop; #var roomsoundplaying 0};
 #if {@MusicSounds = 1} {#var MusicSounds 0; #var planet ""; #var currentroom "off"}}} {ambon}
 #trigger {[[]Space]} {

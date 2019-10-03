@@ -6,7 +6,7 @@
 #trigger {You swing the laser to focus *.} {playsound {Cosmic Rage/general/combat/airpod/aim.wav} @cvol};
 #trigger {* is hit by a barrage!} {playsound {Cosmic Rage/general/combat/airpod/ehit.wav} @cvol; #if {@panshipcombat = "Enabled} {#PC %Playhandle Pan %Random(-1500,1500)}}
 #trigger {A missile streaks from the pod!} {playsound {Cosmic Rage/ships/combat/Missile.wav} @vol}
-#trigger {Through the windows, you see air pod * explodes!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @vol; #pc %playhandle pan %random(-4000,4000)}
+#trigger {Through the windows, you see air pod * explodes!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @vol; #if {@panshipcombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {air pod * dives under the pod and appears on the * side.} {playsound {Cosmic Rage/ships/misc/PodMove1.wav} @vol}
 #trigger {air pod * zooms into view on the * side.} {playsound {Cosmic Rage/ships/misc/PodMove2.wav} @vol}
 #trigger {Sorry, no targets are available.} {playsound {Cosmic Rage/ships/misc/error.wav} @vol}

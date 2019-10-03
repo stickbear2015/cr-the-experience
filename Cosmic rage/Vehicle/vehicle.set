@@ -45,11 +45,19 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol;#var chargeHandle %play
 #var charging 0}}
 #class ambon disable;
 #trigger {The engine hum ceases completely.} {
-#gagline all; #pc 0 stop; loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclepowerHandle %playHandle; #var vehiclepower 1} {vehicleamb};
+#gagline all;
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1} {vehicleamb};
 #class ambon disable;
 #trigger {There is a noticeable lack of engine noise about the place.} {
-#pc 0 stop; #var VehiclePower 0;
-#if {@vehiclepower = 0} {loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclepowerHandle %playHandle; #var vehiclepower 1}} {vehicleamb};
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+#if {@ShipSoundPlaying = 1} {
+#pc @shiphandle stop; #var ShipSoundPlaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1} {vehicleamb};
 #trigger {You tap a button and the doors slide open with a hiss.} {
 #gagline all;
 playsound {cosmic rage/vehicle/door open.wav} @vol}
@@ -112,7 +120,10 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
-#trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {#pc 0 stop; loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclepowerHandle %playHandle; #var vehiclepower 1}
+#trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1}
 #trigger {*lets out a short chirp and its lights flash *} {
 #if {%ifWord(once.,%2," ")} {
 playsound {cosmic rage/vehicle/chirpOnce.wav} @vol};
@@ -147,7 +158,7 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol; #var chargeHandle %pla
 #pc @chargeHandle stop;
 #var charging 0}}
 #trigger {You exit the vessel.} {#pc 0 stop}
-#TRIGGER {You step out of the vehicle.} {#gagon; #pc 0 stop; #if {@ambon = "Enabled"} {#var ambon "Disabled"; #alarm 0,1 {#var ambon "Enabled"}}; playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vol; #ungagon; #alarm 0,2 {look}}
+#TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vol}
 #trigger {A clunk is heard as a tugging vehicle clamps on.} {playsound {cosmic rage/vehicle/tug.wav} @vol}
 #trigger {The motion comes to a stop as the tugging vehicle leaves.} {#gagline all;}
 #trigger {You aim * at * and unleash a powerful blast of fire suppressing chemicals.} {playsound {cosmic rage/vehicle/hose.wav} @vol}
@@ -156,33 +167,32 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol; #var chargeHandle %pla
 #trigger {Outside, the siren continues to wail.} {#if {@siren = 0}  {loopsound {cosmic rage/vehicle/siren1.wav} @vol; #var sirenHandle %playHandle; #var siren 1}}
 #trigger {* emits a loud siren.} {playsound {cosmic rage/vehicle/siren2.wav} @vol}
 #TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all;
-#if {@vehiclepower = 1} {#pc 0 stop; #var vehiclepower 0}; 
+#if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 #var currentroom2 "vmisc";
 #If {%IfWord(Trash,@PlanetName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "Trash"} { loopsound {cosmic rage/Ambiences/trash.wav} @vehiclevol;
+#if {@currentroom <> "Trash"} { loopsound {cosmic rage/Ambiences/trash.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #var currentroom "trash"}};
 #If {%IfWord(grabber,@PlanetName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "grabber"} { loopsound {cosmic rage/Ambiences/grabber.wav} @vehiclevol;
+#if {@currentroom <> "grabber"} { loopsound {cosmic rage/Ambiences/grabber.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #var currentroom "grabber"}};
 #If {%IfWord(digger,@PlanetName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "digger"} {
- loopsound {cosmic rage/Ambiences/digger.wav} @vehiclevol;
+#if {@currentroom <> "digger"} {loopsound {cosmic rage/Ambiences/digger.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #var currentroom "digger"}};
 #If {%IfWord(Pollution,@PlanetName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "Pollution"} { loopsound {cosmic rage/Ambiences/av.wav} @Vehiclevol;
+#if {@currentroom <> "Pollution"} { loopsound {cosmic rage/Ambiences/av.wav} @Vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #var currentroom "Pollution"}};
 #If {%IfWord(volcano,@PlanetName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "volcano"} { loopsound {cosmic rage/Ambiences/volcano.wav} @Vehiclevol; #var currentroom "volcano"}};
+#if {@currentroom <> "volcano"} { loopsound {cosmic rage/Ambiences/volcano.wav} @Vehiclevol; #var currentroom "volcano"}}; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #If {%IfWord(Builders,@PlanetName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Builders"} {
-loopsound {cosmic rage/Ambiences/build.wav} @Vehiclevol;
+loopsound {cosmic rage/Ambiences/build.wav} @Vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #var currentroom "Builders"}};
 #if {@currentroom2 = "vmisc"} {
-#pc 0 stop; loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @vehiclevol;
+loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #var currentroom "vmisc"}} {vehicleamb}

@@ -25,6 +25,7 @@ vehicle engine volume up. The current value is @vEvol percent. :vehicleengvolup|
 Toggle Room, ship and vehicle ambience. This option is currently @ambon :ambtoggle|
 Toggle drone following sounds. This option is currently @DroneSounds :dronetoggle|
 Toggle constant red alert. This option is currently @RedAlert :RedAlertToggle|
+Toggle soundpack update notifications on login. This option is currently @UpdateToggle :ToggleUpdate|
 Toggle planetary music. This option is currently @MusicSounds :togglemusic|
 Toggle ship combat music. This option is currently @CMusic :togglecombat|
 Toggle alternate vehicle engines. This option is currently @altVehicleEngines :togglevehicle|
@@ -75,11 +76,11 @@ playsound {Cosmic Rage/general/misc/VolumeUp.wav} @vol; #say {Main Volume @Vol p
 #alias  gvoldown {
 #math gvol {@gvol - 5};
 #if {@gvol < 0} {@gvol = 0};
-playsound {Cosmic Rage/general/misc/VolumeDown.wav} @vol; #say {Ground Combat Volume @gvol percent}}
+playsound {Cosmic Rage/general/misc/VolumeDown.wav} @gvol; #say {Ground Combat Volume @gvol percent}}
 #alias gvolup {
 #math gvol {@gvol + 5};
 #if {@gvol > 100} {@gvol = 100};
-playsound {Cosmic Rage/general/misc/VolumeUp.wav} @vol; #say {Ground Combat Volume @gvol percent}}; #if {@gvol = 100} {
+playsound {Cosmic Rage/general/misc/VolumeUp.wav} @gvol; #say {Ground Combat Volume @gvol percent}}; #if {@gvol = 100} {
 #say {Volume maxed!}}
 
 #alias {CommsVolUp} {
@@ -200,6 +201,8 @@ playsound {Cosmic Rage/general/misc/VolumeUp.wav} @vEvol; #say {vehicle engine V
 #if {@DroneSounds = "Enabled"} {#var DroneSounds "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {drone sounds disabled}} {#var DroneSounds "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Drone Sounds enabled.}}};
 #Alias RedAlertToggle {
 #if {@RedAlert = "Enabled"} {#var RedAlert "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #if {@RedAlertLoop = 1} {#pc @RedAlertHandle stop; #var RedAlertLoop 0}; #say {constant red alert disabled}} {#var RedAlert "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {constant red alert enabled.}}}
+#Alias ToggleUpdate {
+#if {@UpdateToggle = "Enabled"} {#var UpdateToggle "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no longer receive update notifications on login.}} {#var UpdateToggle "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now receive update notifications on login.}}}
 #alias togglemusic {
 #if {@MusicSounds = "Enabled"} {#var MusicSounds "Disabled"; #var planet ""; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Planetary Music disabled.}; #if {@MusicPlaying = 1} {#var MusicPlaying 0; #pc @musichandle stop}} {#var MusicSounds "Enabled"; look; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Planetary music enabled.}}};
 #alias {togglecombat} {#if {@cMusic = "Enabled"} {#var cMusic "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Ship combat music disabled.}; #if {@combatMusicPlaying = 1} {#var combatMusicPlaying 0; #pc @combatmusichandle stop}} {#var cMusic "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Ship combat music enabled.}}}

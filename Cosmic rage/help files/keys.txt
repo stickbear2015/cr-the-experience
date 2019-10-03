@@ -14,6 +14,7 @@ alt-f7 alt-f8. Adjust music volume
 control-f2 control-f3. Adjust ship combat volume.
 control-f9 control-f10 Adjust Ship engine volume.
 alt-f9 alt-f10 Adjust Vehicle engine volume.
+alt-shift-f7 alt-shift-f8 adjust ground combat volume
 
 Directional keys.
 	 Numpad1. 1.
@@ -57,6 +58,7 @@ Alt-X. Out.
 
 	Miscellaneous Keys
 alt-shift-r. Toggle Red alert sounds.
+Alt-Shift-U, toggle soundpack update notifications on login.
 Control-F11. Stop all playing sounds. Useful if a sound gets stuck.
 f11. Toggle room Ambience.
 control-shift-p. Toggle planetary music.

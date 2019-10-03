@@ -1,1 +1,0 @@
-#TRIGGER {You swing back and begin to chop quickly into the undergrowth to the * trying to get branches.} {#gagline all; playsound {cosmic rage/activities/hunting/chop.wav} @vol};

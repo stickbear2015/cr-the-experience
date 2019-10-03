@@ -8,9 +8,9 @@
 #pc @musichandle stop; #var musicplaying 0; #var planet ""};
 #var currentroom2 "misc";
 #if {@roomSoundPlaying = 1} {
-#pc @roomhandle stop; #var roomsoundplaying 0};
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 #if {@VehicleSoundPlaying = 1} {
-#pc @Vehiclehandle stop; #var vehiclesoundplaying 0};
+#pc @Vehiclehandle stop; #var VehicleSoundPlaying 0};
 
 #If {%IfWord(Airlock,@RoomName," ")} {
 #var currentroom2 "notmisc";

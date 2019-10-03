@@ -1,3 +1,84 @@
+1215 Fixed by Frederick, credits to William Jones131507. Fixed a slight error with taxis drifting away from the access tube.
+copy cosmic rage/ships/ships2.set
+1214 Changed by Frederick with help from Mohammed red designation. I fixed the trigger for harcore mode.
+copy cosmic rage/misc/misc2.set
+1213 stormy, credits firath, fixed ratika belching
+copy ships/rats.set
+1212, James, Fixed the update notifications on logon toggle. It will now read correctly from your saved settings.
+copy cosmic rage\Cosmic rage.set
+1211, James, Gagged my new triggers for teleporting to and from ships over planets sense they didn't involve selecting the teleportation.
+copy cosmic rage\misc\misc.set
+1210, James, Updated train ambiances to make them in line with other ambiances by reducing interruption when you use the look command.
+copy cosmic rage\misc\trains.set
+1209 Changed by Frederick. I updated the code that controls the sounds that play if you have configured private network 1 through 4. It will accept single named channels, through however many words your private network channel contains.
+copy cosmic rage/cosmic rage.set and cosmic rage/misc/comms.set
+1208 stormy, credits frederic, added sounds for the waistland monsters
+copy combat groundcombat.set and sounds cr general combat enemies monstermiss, monsterpunch, and monsterdie.wav
+1207 Changed by Frederick. Added a sound when taxis drift away from access tubes.
+copy cosmic rage/ships/ships2.set
+1206 stormy, credits amanda, fixed a  sound conflicting problem with the org equipment
+copy misc/orgstuff.set
+1205 Updated by Frederick, but credits to Stormy for redoing and fixing some ship sounds.
+copy sounds/cosmic rage/ships/misc/BoardFromAccessTube.wav, BoardShip.wav, and StationAirlock.wav
+1204 stormy, airpods fixed
+copy combat airpod.set
+1203 stormy, credits frederic, thanks to him for bashing my head so hard i fixed the private network double sound thing and the buffer issue
+copy misc/comms.set
+1202, James, Majorly overhauled vehicle ambiance code and how vehicle sounds are killed. Vehicle sounds should perform more smoothly and you shouldn't get wierd issues if you for example, follow someone out of a vehicle.
+copy cosmic rage\vehicle\vehicle.set and VehicleAmbiance.set, cosmic rage\ships\ShipAmbiance.set, and cosmic rage\misc\MainAmbiance.set
+1201 stormy, credits blake, added a liddle funny sound for ratica belching
+copy sounds cr ships ratica belch.wav and ships rats.set
+1200 stormy, credits Elyra, added a sound for meteor monitoring
+copy misc/comms.set and sounds cr general comms meteor.wav
+1199 stormy, credits ruby, added sounds for washing your ship with a hose
+copy ships/ships2.set and sounds cr ships misc hose.wav
+1198 stormy, credits lennon, added sounds for upgrading drones
+copy ships/ships2.set and sounds cr ships misc dronein and droneout.wav
+1197 stormy, bzzzt, you now hear a sound if your a larkan and fry a poor fly
+copy activities/trash.set and sounds activities trash collection zap.wav
+1196, James, teleporting to and from your ship to a planet now has sounds. Also, teleporting to a planet will properly clear your combat music if it's playing.
+copy cosmic rage\misc\MainAmbiance.set and misc.set, and cosmic rage\ships\ships2.set
+1195 stormy, credits blake, added a sound for the pickup channel
+copy sounds cr genral comms pickup.wav and misc comms.set
+1194 stormy, added a sound when someone request a link with you in-char
+copy misc  comms.set and sounds cr general comms link.wav and delete linkrequest.wav
+1193, James, credits to all who can spell better than I. changed sense to since in the update checker, since someone has more sense than myself.
+copy cosmic rage\misc\soundpack.set
+1192, James, fixed the code errors in the cosmic rage.set file. The togglable update checker on login should be working again, and you shouldn't receive any more login errors.
+copy cosmic rage\Cosmic rage.set
+1191 Updated by Frederick. Just made a small change to the main CR file. I removed the hunting.set from the SPUnload alias because it didn't take last time I did it.
+copy cosmic rage/cosmic rage.set
+1190 Updated by Frederick. Fixed all triggers affected by the recent change to ground combat, which was to include the mob's coordinates before their actions if they were not in the same room location as you.
+copy cosmic rage/combat/GroundCombat.set
+1189, James, Fixed ground combat volume in configuration manager and added its keys.
+copy cosmic rage\misc\ConfigurationManager.set and cosmic rage\help files\keys.txt
+1188, James, Did a rather large overhaul to the update checker, including fixing an error I found and enabling a togglable check on login.
+copy cosmic rage/cosmic rage.set
+copy cosmic rage\misc\ConfigurationManager.set, Keys.set, and Soundpack.set, cosmic rage\help files\Aliases.txt and keys.txt
+1187, James, Now introducing our new and improved update checker, improved from a couple days ago. For developers, it will ignore if your current version is more up to date than the posted version. For anyone who needs to update, you will now see how many changes have been made since you updated. Enjoy.
+copy cosmic rage\misc\soundpack.set
+1186 Updated by Frederick. I changed the triggers for repairing battlesuits to gagline voice.
+copy cosmic rage/combat/battlesuits.set
+1185 James, removed the attempt to check soundpack version on login because it was not working.
+copy cosmic rage\Cosmic rage.set
+1184 Updated by Frederick. I updated the cosmic rage's SPUnload alias in the main script file, because there's just some files we aren't using right now. We're working on hand mining, and hunting, so we're removing their script files, as they were out-of-date. I moved triggers from pods.set into airpods.set already, so I removed that from trying to unload from the SPUnload alias as well.
+delete cosmic rage/activities/handmining.set and hunting.set
+delete cosmic rage/ships/pods.set
+copy cosmic rage/cosmic rage.set
+1183 Updated by frederick, credits go to a human named Jace. I fixed delivery drones and their sounds. Enjoy.
+copy cosmic rage/misc/misc.set
+1182 Updated by Frederick. I fixed a tiny issue in ground combat.
+copy cosmic rage/combat/GroundCombat.set
+1181 Updated by Frederick. Now I know you guys are going to like this. I updated all the triggers having to do with moving around a room with ground mobs. As you move, you'll hear sounds, as well as see where you are in the room. Enjoy
+cosmic rage/combat/GroundCombat.set
+1180 Updated by frederick. I added and gagged a trigger in bioplasma harvesting about manipulating the bioplasma rods. I figured we already knew we were doing something with them, no need to be told we were manipulating them. I also updated the trigger in planet chunks about what happens when you don't connect the wires correctly for the atmo generator.
+copy cosmic rage/misc/bioharvesting.set and planetChunks.set
+1179 James, Added version checking to the log in screen!
+copy cosmic rage\Cosmic rage.set
+1178 James, If the last change in your change log doesn't match the latest posted change, you will be prompted to update your soundpack when you press alt-v. Keep in mind that if you're updating manually, to update the changelog along with the selected files.
+copy cosmic rage\misc\keys.set and soundpack.set
+1177 James, About to hopefully add a version checker to the pack. Nothing to update at this time, but I needed to make a change to test the system.
+copy nothing
 1176 Updated by Frederick, credit to Gaius. Fixed the dust analyzing laser.
 copy sounds/cosmic rage/ activities/dust analyzing/alaser.wav and delete delete aliser.wav from that same folder in your personal copy
 copy cosmic rage/activities/dust.set

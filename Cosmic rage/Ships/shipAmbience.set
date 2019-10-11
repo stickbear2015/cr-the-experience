@@ -3,7 +3,12 @@
 #var ShipSoundPlaying 0;
 #Trigger {[[] &{ShipName}, &{SecondName}*} {
 #var RoomName @SecondName}
-#TRIGGER {The overhead lighting * colour,*} {
+#TRIGGER {The overhead lighting * colour,*} {green_alias}
+#Trigger {Forward momentum can be felt as gentle hums emanate from under the ship's flooring.} {green_alias}
+#trigger {Forward momentum can be felt as powerful thrums come from under the ship's flooring.} {green_alias}
+#trigger {Forward momentum can be felt as the floor vibrates and shakes from forces underneath it.} {green_alias}
+
+#alias {green_alias2} {
 #if {@musicplaying = 1} {
 #pc @musichandle stop; #var musicplaying 0; #var planet ""};
 #var currentroom2 "misc";

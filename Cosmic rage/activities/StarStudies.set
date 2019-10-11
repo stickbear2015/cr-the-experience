@@ -3,7 +3,6 @@
 #TRIGGER {The ship rocks heavily as a laser is fired.} {playsound {Cosmic Rage\activities\star study\lasers.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline voice}
 #TRIGGER {*"Transferring data..."} {playsound {Cosmic rage/activities/star study/TransferStarData.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline voice}
 #TRIGGER {The windows are filled with a bright light from *} {playsound {Cosmic Rage/ships/misc/SolarFlare.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)}}
-#TRIGGER {*"Probe lost."} {playsound {Cosmic rage/activities/star study/ProbeLost.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline voice}
 #TRIGGER {*"Transfer complete."} {playsound {Cosmic Rage/activities/star study/TransferComplete.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline voice}
 #TRIGGER {You hear a strange banging and scraping noise *.} {playsound {Cosmic Rage/activities/star study/LockingOn.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline voice}
 #trigger {On screen, you see your probe managing to store some liquified solar energy!} {playsound {Cosmic Rage/activities/star study/SolarEnergy.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline voice}

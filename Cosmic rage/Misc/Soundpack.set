@@ -9,10 +9,11 @@
 #read 3 chversion;
 #close 3;
 #var chresult %left(@chversion,4);
+#if {%IsNumber(@CurrentVersion) = 1} {
 #if {@chresult < @CurrentVersion} {
 #math chresult {@CurrentVersion - @chresult};
-#say {Your soundpack is not up to date. There have been @chresult changes since you last updated.}};
-#var cvcheck 0}}
+#if {@chresult = 1} {#say {Your soundpack is not up to date. There has been @chresult change since you last updated.}} {#say {Your soundpack is not up to date. There have been @chresult changes since you last updated.}}}};
+#if {%IsNumber(@CurrentVersion) = 1} {#var cvcheck 0}}}
 #alias spbug {#gagon; spp;The VIP Cosmic Rage Experience;bug}
 #alias spsuggest {#gagon; spp;The VIP Cosmic Rage Experience;suggest}
 #trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} @vol; #sub {Thank you for submitting this suggestion! An admin will work on it shortly and reach out if needed!}}
@@ -106,6 +107,7 @@
 #Write 6 @SilentConflict @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @LaunchText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @RebootSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SpIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -124,3 +126,4 @@ View the readme:{playsound {Cosmic Rage/general/help/Readme.wav} @vol; playsound
 View the Soundpack credits:{playsound {Cosmic Rage/general/help/SoundpackCredits.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Soundpack credits.txt}}}}
 #alias spp {>@soundpacks} {}
 #Alias {themechange} {playsound {Cosmic Rage/general/comms/themesuccess.wav}; #var skice %1}
+#Alias {green_alias} {#if {@ambon = "Enabled"} {green_alias2}}

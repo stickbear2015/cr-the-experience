@@ -33,3 +33,6 @@ playsound {Cosmic Rage\ships\fire\siren.wav} @vol}
 #trigger {* guard drone * shuts down to preserve power.} {#gagline voice;playsound {cosmic rage/ships/Ratika/powerdown.wav} @vol}
 #trigger {* guard drone * powers up.} {#gagline voice;playsound {cosmic rage/ships/Ratika/powerup.wav} @vol}
 #trigger {* lets out a tiny belch.} {playsound {cosmic rage/ships/ratika/belch.wav} @vol}
+#trigger {The nozzle of the spray bottle on the wall lets out a huff of empty air.} {#gagline voice; playsound {cosmic rage/ships/ratika/emptyspray.wav} @vol}
+#trigger {* drinks greedily from the warp fuel tanks!} {#gagline voice; playsound {cosmic rage/ships/ratika/drink.wav} @vol}
+#trigger {noise comes from inside A ratika nest.} {#gagline all}

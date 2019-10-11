@@ -57,7 +57,7 @@ loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehicleha
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1} {vehicleamb};
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb};
 #trigger {You tap a button and the doors slide open with a hiss.} {
 #gagline all;
 playsound {cosmic rage/vehicle/door open.wav} @vol}

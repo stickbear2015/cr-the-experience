@@ -113,7 +113,7 @@ playsound {cosmic rage/general/combat/enemy/exits/se.wav} @gvol; #alarm 0.2 {pla
 #TRIGGER {*opens fire on * with a machine gun!} {#gagline voice; playsound {cosmic rage/general/combat/enemy/droid/bigatt*3.wav} 40; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0.3 {playsound {cosmic rage/general/combat/enemy/machine2.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
 #TRIGGER {*rams head first into *} {#gagline voice; playsound {cosmic rage/general/combat/enemy/droid/bigatt*3.wav} 40; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0.2 {playsound {cosmic rage/general/combat/enemy/ram.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
 #TRIGGER {*tosses a plasma bomb into the air!} {#gagline voice; playsound {cosmic rage/general/combat/enemy/plagrenade.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
-#TRIGGER {*tosses a plasma grenade into the air, then shoots it!} {#gagline voice; playsound {cosmic rage/general/combat/enemy/plagrenade.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %payhandle pan %random(-4000,4000)}}
+#TRIGGER {*tosses a plasma grenade into the air, then shoots it!} {#gagline voice; playsound {cosmic rage/general/combat/enemy/plagrenade.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {*shoots a stun rifal at *} {#gagline voice; playsound {cosmic rage/general/combat/enemy/stungun.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {*shoots a stun cannon at *} {#gagline voice; playsound {cosmic rage/general/combat/enemy/droid/bigatt*3.wav} 40; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0.3 {playsound {cosmic rage/general/combat/enemy/smallcannon.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
 #TRIGGER {*wheels around and opens fire with a laser machine gun!} {#gagline voice; playsound {cosmic rage/general/combat/enemy/droid/bigatt*3.wav} 40; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0.3 {playsound {cosmic rage/general/combat/enemy/machine1.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
@@ -126,9 +126,12 @@ playsound {cosmic rage/general/combat/enemy/exits/se.wav} @gvol; #alarm 0.2 {pla
 #TRIGGER {*embahi * slashes *} {#gagline voice; playsound {cosmic rage/general/combat/enemy/embahi/att*3.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0.2 {playsound {cosmic rage/general/combat/enemy/slash.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
 #trigger {* * * is mangled.} {#if {%2 = "droid"} {playsound {cosmic rage/general/combat/enemy/drosmash.wav} @gvol}; #alarm 0.3 {playsound {cosmic rage/general/combat/break*4.wav} @gvol}}
 #trigger {* erupts into a pillar of flame.} {playsound {Cosmic Rage/general/combat/enemy/droid/bigdie*3.wav} @gvol}
-#trigger {*Looks like that was the last one.} {
+#trigger {Looks like that was the last one.} {
 playsound {cosmic rage/general/misc/alert.wav} @gvol}
-#TRIGGER {* follow *} {#gagline voice};
-#TRIGGER {* follow *} {#gagline voice};
-#trigger {wasteland monster swings a fist at you, and misses!} {playsound {Cosmic Rage/general/combat/enemy/monstermiss.wav} @gvol}
-#trigger {wasteland monster punches you.} {playsound {Cosmic Rage/general/combat/enemy/monsterpunch.wav} @gvol}
+#trigger {*wasteland monster swings a fist at you, and misses!} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monstermiss.wav} @gvol}
+#trigger {*wasteland monster punches you.} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monsterpunch.wav} @gvol}
+#trigger {wasteland monster falls to the ground, dead.} {
+playsound {cosmic rage/general/combat/enemy/monsterdie.wav} @gvol}
+
+
+#trigger {* lunges from out of a pile of trash!} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monsterapp.wav} @gvol}

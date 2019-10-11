@@ -6,7 +6,6 @@
 #load misc/ConfigurationManager.set
 #load misc/keys.set
 #load misc/Soundpack.set
-#load Activities/StarCoring.set
 
 ; activities set files
 #load Activities/asteroidHarvesting.set
@@ -15,12 +14,14 @@
 #load Activities/comets.set
 #load Activities/DarkMatterMining.set
 #load Activities/dust.set
+#load activities/handmining.set
 #load Activities/mechanicalMining.set
 #load Activities/moon.set
 #load Activities/moonbase.set
 #load Activities/PlanetChunks.set
 #load Activities/planetoid.set
 #load Activities/salvaging.set
+#load Activities/StarCoring.set
 #load Activities/StarStudies.set
 #load Activities/trash.set
 #load Activities/volcanoHarvesting.set
@@ -39,12 +40,12 @@
 #load combat/battlesuits.set
 #load combat/combat.set
 #load Combat/GroundCombat.set
+#load combat/megasuit.set
 
 ;misc set files
 #load misc/APilot'sParody.set
 #load misc/Babies.set
 #load misc/buffers.set.
-#load misc/cars.set
 #load misc/clocks.set
 #load misc/comms.set
 #load misc/doors.set
@@ -80,6 +81,7 @@
 #load ships/Waypoints.set
 
 ;Vehicle set files.
+#load vehicle/cars.set
 #load vehicle/vehicle.set
 
 ;Classes.
@@ -149,7 +151,7 @@ AutoSaveSettings; AutoSaveBuffers; #say {Settings saved!} voiceonly; #pc 0 stop;
 #trigger {Your synaptic signal wavers for a moment, then returns with a snap!} {#pc 0 stop; #play {Cosmic Rage/general/misc/synapticReturn.wav} @vol}
 #alarm Saving -1800 {AutoSaveSettings; AutoSaveBuffers}
 #alias {SPUnload} {#say {Your soundpack has been unloaded. To reload, use either the alias SPReload, or the key control-shift-R. Thank you.} Voiceonly; #pc 0 stop;
-#unload Activities/asteroidHarvesting.set; #unload Activities/BioHarvesting.set; #unload activities/blackdwarf.set; #unload Activities/comets.set;  #unload Activities/DarkMatterMining.set; #unload activities/dust.set; #unload Activities/mechanicalMining.set; #unload Activities/moon.set; #unload activities/moonbase.set; #unload Activities/PlanetChunks.set; #unload Activities/planetoid.set; #unload Activities/salvaging.set; #unload Activities/StarCoring.set; #unload Activities/StarStudies.set; #unload Activities/trash.set; #unload Activities/volcanoHarvesting.set; #unload Activities/VolcanoMining.set; #unload misc/mainAmbience.set; #unload misc/music.set; #unload ships/shipAmbience.set; #unload ships/ShipPower.set; #unload vehicle/vehicleAmbience.set; #unload combat/airpod.set; #unload combat/armormaking.set; #unload combat/battlesuits.set; #unload combat/combat.set; #unload combat/GroundCombat.set; #unload misc/APilot'sParody.set; #unload misc/Babies.set; #unload misc/Buffers.set; #unload misc/cars.set; #unload misc/clocks.set; #unload misc/comms.set; #unload misc/doors.set; #unload misc/factory.set; #unload misc/Farming.set; #unload misc/horses.set; #unload misc/hosts.set; #unload misc/Jets.set; #unload misc/misc.set; #unload misc/misc2.set; #unload misc/mutariansi.set; #unload misc/mwtp.set; #unload misc/orgstuff.set; #unload misc/say.set; #unload misc/socials.set; #unload misc/telephone.set; #unload misc/trains.set; #unload misc/trolley.set; #unload misc/weather.set; #unload ships/component.set; #unload ships/DeepSpaceRepair.set; #unload ships/FlightControl.set; #unload ships/jump.set; #unload ships/pd.set; #unload ships/Rats.set; #unload ships/shipCombat.set; #unload ships/shipCombat2.set; #unload ships/ships.set; #unload ships/ships2.set; #unload ships/Waypoints.set; #unload vehicle/vehicle.set}
+#unload Activities/asteroidHarvesting.set; #unload Activities/BioHarvesting.set; #unload activities/blackdwarf.set; #unload Activities/comets.set;  #unload Activities/DarkMatterMining.set; #unload activities/dust.set; #unload activities/handmining.set; #unload Activities/mechanicalMining.set; #unload Activities/moon.set; #unload activities/moonbase.set; #unload Activities/PlanetChunks.set; #unload Activities/planetoid.set; #unload Activities/salvaging.set; #unload Activities/StarCoring.set; #unload Activities/StarStudies.set; #unload Activities/trash.set; #unload Activities/volcanoHarvesting.set; #unload Activities/VolcanoMining.set; #unload misc/mainAmbience.set; #unload misc/music.set; #unload ships/shipAmbience.set; #unload ships/ShipPower.set; #unload vehicle/vehicleAmbience.set; #unload combat/airpod.set; #unload combat/armormaking.set; #unload combat/battlesuits.set; #unload combat/combat.set; #unload combat/GroundCombat.set; #unload combat/megasuit.set; #unload misc/APilot'sParody.set; #unload misc/Babies.set; #unload misc/Buffers.set; #unload misc/clocks.set; #unload misc/comms.set; #unload misc/doors.set; #unload misc/factory.set; #unload misc/Farming.set; #unload misc/horses.set; #unload misc/hosts.set; #unload misc/Jets.set; #unload misc/misc.set; #unload misc/misc2.set; #unload misc/mutariansi.set; #unload misc/mwtp.set; #unload misc/orgstuff.set; #unload misc/say.set; #unload misc/socials.set; #unload misc/telephone.set; #unload misc/trains.set; #unload misc/trolley.set; #unload misc/weather.set; #unload ships/component.set; #unload ships/DeepSpaceRepair.set; #unload ships/FlightControl.set; #unload ships/jump.set; #unload ships/pd.set; #unload ships/Rats.set; #unload ships/shipCombat.set; #unload ships/shipCombat2.set; #unload ships/ships.set; #unload ships/ships2.set; #unload ships/Waypoints.set; #unload vehicle/cars.set; #unload vehicle/vehicle.set}
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop}
 #Alias {pn1} {playsound {Cosmic Rage/general/comms/pn3.wav} @commsvol; #PC %Playhandle Frequency 40000; #var priv1 %0}
 #Alias {pn2} {playsound {Cosmic Rage/general/comms/pn3.wav} @commsvol;  #PC %Playhandle Frequency 50000; #var priv2 %0}

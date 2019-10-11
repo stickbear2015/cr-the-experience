@@ -406,3 +406,5 @@ playsound {cosmic rage/ships/movement/quantimeend.wav} @vol;
 #trigger {The powerful thrum of the ships quantum core fades away, ending in a spluttery gasp as it runs out of power.} {
 #if {@quan = 1} {
 #pc @quanhandle stop;#var quan 0}}
+#trigger {You tap a button, sliding a recovered artifact into * storage facility.} {#gagline all;
+playsound {cosmic rage/ships/misc/artifact.wav} @vol}

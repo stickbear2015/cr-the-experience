@@ -21,5 +21,5 @@ playsound {cosmic rage/general/Jets/jetGoing.wav} @vol}
 #trigger {the doors of * Jet slam.} {playsound {Cosmic Rage/general/Jets/doorsclosed.wav} @vol; #gagline all}
 #trigger {* zooms in over your head!} {playsound {Cosmic Rage/general/Jets/jetApproach.wav} @vol}
 #trigger {* pulls sharply away, gaining speed rapidly as it shoots towards the end of the runway, engines screaming.} {playsound {Cosmic Rage/general/Jets/jetGoing.wav} @vol; #gagline all}
-#trigger {Just as you think * Jet is going to crash, it shoots up into the sky, climbing rapidly out of sight!} {#sub {Look out! Holy crap! Oh no! Don't get hit by that flying thing in the sky! It's gonna, it's gonna... Oh good! it's gone!}}
+
 #trigger {The doors on * Jet slide open.} {playsound {Cosmic Rage/general/Jets/doorsopen.wav} @vol; #gagline all}

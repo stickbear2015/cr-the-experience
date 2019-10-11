@@ -5,493 +5,377 @@
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
 #if {@CombatMusicPlaying = 1} {
 #pc @CombatMusicPlayingHandle stop; #var CombatMusicPlaying 0};
-#if {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop; #var RoomSoundPlaying 0};
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 #var currentroom2 "misc";
 #If {%IfWord(evacuation,@PlanetName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Chamber"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "chamber"; #var currentroom2 "notmisc"}};
 #If {%IfWord(escape,@PlanetName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Chamber"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "chamber"; #var currentroom2 "notmisc"}};
 #If {%IfWord(ocean,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Ocean"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/beach.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "ocean"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Refectory,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "refectory"} {
-#If {@ShipSoundPlaying = 1} {
-#pc @ShipHandle stop};
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/ships/rooms/lounge.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "refectory"; #var currentroom2 "notmisc"}};
 #If {%IfWord(theater,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "theater"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Theater.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "theater"; #var currentroom2 "notmisc"}};
 #If {%IfWord(waterfall,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "waterfall"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Waterfall.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "waterfall"; #var currentroom2 "notmisc"}};
 #If {%IfWord(construction,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "construction"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/construction.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "construction"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Jet,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Jet"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Jet.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Jet"}};
 #If {%IfWord(Inside,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Inside"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Inside"}};
 #If {%IfWord(woods,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "woods"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Woods.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "woods"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Farm,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Farm"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Farm.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Farm"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Ranch,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Ranch"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Farm.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Ranch"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Garden,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Garden"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Garden.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Garden"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Mountain,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "mount"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Mountain.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "mount"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Pub,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Pub"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Bar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Pub"; #var currentroom2 "notmisc"}};
 #If {%IfWord(tavern,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Tavern"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Bar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Tavern"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Bar,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Bar"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Bar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Bar"; #var currentroom2 "notmisc"}};
 #If {%IfWord(forest,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "woods"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Woods.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "woods"; #var currentroom2 "notmisc"}};
 #If {%IfWord(pool,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "pool"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Pool.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "pool"; #var currentroom2 "notmisc"}};
 #If {%IfWord(shore,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "shore"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/beach.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "shore"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Sky,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Sky"} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/InTheSky.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Sky"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Beach,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "beach"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/beach.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "beach"; #var currentroom2 "notmisc"}};
 #If {%IfWord(tube,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "tube"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/AccessTube.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "tube"; #var currentroom2 "notmisc"}};
 #If {%IfWord(hangar,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "hangar"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
-loopsound {cosmic rage/Ambiences/Hangar.wav} @roomvol;
-#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "hangar"; #var currentroom2 "notmisc"}};
-#If {%IfWord(hangar,@RoomName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "hangar"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Hangar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "hangar"; #var currentroom2 "notmisc"}};
 #If {%IfWord(hangars,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "hangars"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Hangar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "hangars"; #var currentroom2 "notmisc"}};
 #If {%IfWord(control,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "control"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Factory Control Room.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "control"; #var currentroom2 "notmisc"}};
 #If {%IfWord(lounge,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "lounge"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Factory Lounge.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "lounge"; #var currentroom2 "notmisc"}};
 #If {%IfWord(crushery,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "crushery"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/crushary.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "crushery"; #var currentroom2 "notmisc"}};
 #If {%IfWord(crushary,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "crushary"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/crushary.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "crushary"; #var currentroom2 "notmisc"}};
 #If {%IfWord(storage,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "storage"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Storage.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "storage"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Teleportation,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "teleportation"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Storage.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "teleportation"; #var currentroom2 "notmisc"}};
 #If {%IfWord(drone,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "drone"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Drone Operations.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "drone"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Office,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "office"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Office.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "office"; #var currentroom2 "notmisc"}};
 #If {%IfWord(plaza,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "plaza"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/hall.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "plaza"}};
 #If {%IfWord(Park ,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "park"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/park.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "park"}};
 #If {%IfWord(Street,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "street"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/park.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "street"}};
 #If {%IfWord(Road,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "road"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Road.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "road"}};
 #If {%IfWord(Shopping,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Shopping"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Plaza.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Shopping"}};
 #If {%IfWord(Hallway,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Hallway"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Hallway.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Hallway"}};
 #If {%IfWord(River,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "River"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/River.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "River"}};
 #If {%IfWord(Lobby,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Lobby"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Lobby.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Lobby"}};
 #If {%IfWord(Library,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Library"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Library.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Library"}};
 #If {%IfWord(Dining,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Dining"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Dining.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Dining"}};
 #If {%IfWord(Cafe,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Cafe"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Dining.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Cafe"}};
 #If {%IfWord(garage,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "garage"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/garage.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "garage"}};
 #If {%IfWord(lake,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "lake"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/lake.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "lake"}};
 #If {%IfWord(landing,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "landing"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/LandingPad.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "landing"}};
 #If {%IfWord(cave,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "cave"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/cave.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "cave"}};
 #If {%IfWord(Cavern,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Cavern"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/cave.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Cavern"}};
 #If {%IfWord(path,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "path"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/path.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "path"}};
 #If {%IfWord(corridor,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "corridor"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/corridor.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "corridor"}};
 #If {%IfWord(Tunnel,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Tunnel"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
-#if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/mining tunnel.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Tunnel"}};
 #if {@currentroom2 = "misc"} {
 #if {@currentroom <> "misc"} {
-#If {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/lobby.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "misc"}}}} {ambon}
 #TRIGGER {The overhead lights are dim, indicating the ship is powered down and all nonessential systems have been disabled.} {

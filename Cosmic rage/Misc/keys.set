@@ -49,7 +49,7 @@
 #key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1;
 #pc @CombatmusicPlayingHandle stop;
 #say {The current combat track has been changed.};
-#playloop {cosmic rage/music/combat/Theme*2.wav} @MVol;
+#playloop {cosmic rage/music/combat/theme*@skice.wav.wav} @MVol;
 #var combatMusicPlayingHandle %playHandle;
 #var combatmusicPlaying 1} {
 #if {@cMusic = "Disabled"} {

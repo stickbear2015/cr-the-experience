@@ -109,3 +109,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #TRIGGER {* hums to life as it begins to shoot water at *} {#gagline all};
 #TRIGGER {Dirt and dust falls in lumps and is washed away from  *} {#gagline all};
 #TRIGGER { The gleaming hull of *} {#gagline all};
+#TRIGGER {Loud bangs and crashes, accompanied by hammering sounds, can be heard from the hull.} {playsound {cosmic rage/ships/misc/upgrade.wav} @vol; #gagline all};

@@ -41,4 +41,4 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {You lunge forward and, using your best batters swing, smack an annoying fly with *} {#gagline all; playsound {cosmic rage/activities/Trash collection/flydie.wav} @vol} 
 #trigger {An annoying fly *} {#gagline all; playsound {cosmic rage/activities/Trash collection/fly*3.wav} @vol} 
 #trigger {You let forth a burst of flame and totally incinerate an annoying fly.} {#gagline voice;playsound {cosmic rage/activities/trash collection/flyfly.wav} @vol}
-#trigger {You lash out with a coil of electricity and crispy fry an annoying fly.} {#gagline voice;playsound {cosmic rage/activities/trash collection/zap.wav} @vol}
+#trigger {You lash out with a coil of electricity and crispy fry an annoying fly. *} {#gagline voice;playsound {cosmic rage/activities/trash collection/zap.wav} @vol}

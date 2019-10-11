@@ -1,3 +1,98 @@
+1261 Updated by Frederick. Gagged the message that tells you that noise is coming from inside the ratika nest.
+copy cosmic rage/ships/rats.set
+1260 Updated by frederick. I have totally fixed the component issue I'll bet some of you have experienced with components getting hit in space missions. Commands will no longer be sent to the mud by mistake.
+copy cosmic rage/ships/component.set
+1259 Updated by Frederick, sound by stormy, credits to a mutariansi named Cerenity. Storing an artifact into your spacesuit now has a sound.
+copy sounds/cosmic rage/ships/misc/artifact.wav and cosmic rage/ships/ships.set
+1258 Updated by frederick. Just updated megasuit file in a few places with the ground combat volume.
+copy combat/megasuit.set
+1257 Updated by frederick. sorry folks. It seems that megasuit.set wasn't set in cosmic rage.set to load even though it was added to the pack.
+copy cosmic rage/cosmic rage.set
+1256 Updated by Frederick. Removed duplicates, deleted blank lines, and in general, made the socials.set file a lot nicer. Credits to save for all the sobbing he did over the sobbing social as well. It will no longer play if social sounds are disabled.
+copy cosmic rage/misc/socials.set
+1255 Nate: Removed a trigger whose only purpose was to rewrite a game message to do with jets.
+Copy misc/jets.set
+1254 stormy, testing helpers gladr, and firath, an extra credit to nate because for some reason he pushed me to release this early then i was planned, yeah finally, after 2 days of testing, we now sounds for megasuits, they are cool in my apinion
+copy combat/megasuit.set and sounds cr general combat megasuit folder.
+1253 Updated by Frederick, credits to Sivath Lime scale. Fixed an issue with the drying of the soil message.
+copy cosmic rage/activities/handmining.set
+1252: Nate: Fixed ship ambients to work with the slightly changed texts.
+Copy misc/soundpack.set and ships/shipAmbience.set
+1251. Angelica: Added the unlock.wav file into sounds/cosmic rage/activities/planetoid since that also works for locking/unlocking apartment doors. Copy activities/planetoid/unlock.wav
+1250 stormy, credits firath, the sob and glvoe socials fixed, also the sound also play for ingame sob social as well
+copy  misc/socials.set
+1249, James, Credits Nate, Thanks Nate for giving us a trigger for classic cars. After much editing and sprucing up of code, we're ready to give you classic car ambience. As always, report if something doesn't work right, especially if the drive sound is still playing when it shouldn't.
+copy cosmic rage\vehicle\cars.set and vehicle.set, and cosmic rage\cosmic rage.set
+delete cosmic rage\misc\cars.set
+1248 Updated by Frederick, credit to Danny Withers. Added a trigger for completing a task. These tasks are obtainable by typing the "task" command.
+copy cosmic rage/misc/misc.set
+copy sounds/cosmic rage/general/misc/congratulations.wav
+1247 stormy, updated readme
+copy helpfiles/readme.txt
+1246 stormy, credits malachai, sobbing fixed
+copy misc socials.set
+1245 Nate, Updated the credits file, and the announcements file. Also updated the link for the musics folder to something more perminant.
+Copy help files/Soundpack credits.txt and soundpacks/Announcements.txt
+1244 stormy, added sound for sob ingame social
+copy sounds cr general socials sob.wav and copy misc socials.set
+1243 Updated by Frederick, credits to that human named Jace. Just fixed a little error with the trigger regarding plasma grenades.
+copy cosmic rage/combat/GroundCombat.set
+1242 stormy, added a sound for glove social when you use it on someone
+copy sounds cr general socials glove.wav and misc socials.set
+1241 stormy,  credits crunchy the crunchity my favorite baker, added a sound for taco social
+copy sounds cr general socials eat.wav and misc/socials.set
+1240 stormy, credits, uh haha, added a sound for the squeaking social, this has nothing to do with the exact social text but, this will be a memory
+copy sounds cr general socials squeak.wav and misc socials.set
+1239 stormy, gmc membors or any guy or girl doing this activity now going to get a heartAttack after hearing this sound, added a sound when a planet ask for medical evacuations
+copy misc orgstuff.set and sounds cr general gmc alarm.wav
+1238 STORMY, added fiew sounds for volcano mining
+copy activities/volcanomining.set and copy sounds activities volcano mining folder
+1237 Changed by frederick. Added a trigger in misc. Updated some triggers in the hand mining activity as well.
+copy cosmic rage/misc/misc.set and cosmic rage/activities/handmining.set
+1236 stormy credits blake, added a sound when your ship is beeing upgraded
+copy ships ships2.set and sounds cr ships misc upgrade.wav
+1235 stormy, credits tod, an other bug about prompts was fixed because i broke it
+copy misc/misc.set
+1234, James, Fixed the update checker.
+copy cosmic rage\misc\soundpack.set
+1233 Updated by Frederick. I added more things to hand mining, and fixed a trigger or two along the way.
+copy cosmic rage/activities/handmining.set
+1232 stormy, prompts are fixed for good for this time.
+copy misc/misc.set
+1231 stormy, credits nate, fixed prompts bad bad, ho, anyway 
+copy misc/misc.set
+1230 stormy, added a sound when a ratica drinks from warp fuel
+copy ships rats.set and sounds cr ships ratika drink.wav
+1229 stormy, added a sound for empty spray bottles
+copy sounds cr ships ratika emptyspray.wav and ships rats.set
+1228 stormy, added a sound when a wasteland monster appears
+copy combat groundcombat.set and sounds cr general combat enemy monsterapp.wav
+1227 stormy, credits blake, added a sound for cargo repairs
+copy activities/planetoid.set and sounds cr activities planetoid cargorepair.wav
+1226 stormy, credits blake, added an extra sound for the nebula harvesting
+copy activities planetoid.set
+1225 stormy, credits dave, fixed a bug about  custom theme adder, you can now safely use shift ctrl n with that one
+copy ships/shipcombat.set
+1224 Updated by frederick. Sounds contributed by Stormy. Stormy and I proudly bring you the all new hand mining activity. It is still a work in progress, as I may have missed som things, but for the most part, this activity has been redone.
+copy cosmic rage/cosmic rage.set
+copy cosmic rage/activities/handmining.set
+copy sounds/cosmic rage/activities/hand mining
+1223 Updated by frederick. Fixed triggers with wasteland monsters. Also fixed trigger with larkan zapping flies.
+copy cosmic rage/combat/GroundCombat.set and cosmic rage/activities/trash.set
+1222, James, Removed gagging of following because it was causing issues.
+copy cosmic rage\combat\GroundCombat.set
+1221 stormy, credits dave, star studies fixed
+copy activities/starstudies.set
+1220, James, credits Frederick, Added a check so that if there's only been one change since you updated, it presents in a grammatically correct manner.
+copy cosmic rage\misc\soundpack.set
+1219, James, Updated vehicles slightly so sounds play continuously if you look while in your vehicle.
+copy cosmic rage\vehicle\VehicleAmbience.set
+1218, James, Had to add some things back to mainAmbience.set because it was causing issues. All fixed now.
+copy cosmic rage\misc\mainAmbience.set
+1217, James, removed a whole lot of unnecessary statements from mainAmbience.set.
+copy cosmic rage\misc\mainAmbience.set
+1216, James, Fixed a bug with autosaving.
+copy cosmic rage\misc\soundpack.set
 1215 Fixed by Frederick, credits to William Jones131507. Fixed a slight error with taxis drifting away from the access tube.
 copy cosmic rage/ships/ships2.set
 1214 Changed by Frederick with help from Mohammed red designation. I fixed the trigger for harcore mode.

@@ -56,6 +56,22 @@ enter vipmud, note the pack should be loaded to this to work properly, that mean
 like if you have 100 music in the combat folder, you should type themechange 100
 note, if you dont want to pack to break, just type numbers here
 6, enjoy
+		 customising private networks
+if your connected to more then 1 prvate network at a time, the channels may confuse
+there for, we have a system that lets you spesify the networks your in and play diffrent sounds
+1, go to the vipmud char manager, and click the cosmic rage character, like john cosmic rage
+2, find edit
+3, checked the save the variables apon logging off checkbox.
+4, click ok.
+5, login to game
+6, type pn1, to for and a channelname
+like
+pn1  animal kingdom
+the name should be exact with the game, 
+or
+pn4 ghostbusters
+hope that helps
+
 			**Miscellaneous Notes**
 
 In some cases, ambience fails to work for some players. This is due to the fact that they have brief mode enabled. To fix this, type brief, then disable hiding of descriptions.

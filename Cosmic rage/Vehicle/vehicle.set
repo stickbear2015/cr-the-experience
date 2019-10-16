@@ -48,7 +48,7 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol;#var chargeHandle %play
 #gagline all;
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
-loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1} {vehicleamb};
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb};
 #class ambon disable;
 #trigger {There is a noticeable lack of engine noise about the place.} {
 #if {@VehicleSoundPlaying = 1} {
@@ -123,7 +123,7 @@ playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
-loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1}
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"}
 #trigger {*lets out a short chirp and its lights flash *} {
 #if {%ifWord(once.,%2," ")} {
 playsound {cosmic rage/vehicle/chirpOnce.wav} @vol};
@@ -166,33 +166,4 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol; #var chargeHandle %pla
 #trigger {You shut off the siren.} {playsound {cosmic rage/vehicle/sirenoff.wav} @vol; #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}}
 #trigger {Outside, the siren continues to wail.} {#if {@siren = 0}  {loopsound {cosmic rage/vehicle/siren1.wav} @vol; #var sirenHandle %playHandle; #var siren 1}}
 #trigger {* emits a loud siren.} {playsound {cosmic rage/vehicle/siren2.wav} @vol}
-#TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all;
-#if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
-#var currentroom2 "vmisc";
-#If {%IfWord(Trash,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "Trash"} { loopsound {cosmic rage/Ambiences/trash.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "trash"}};
-#If {%IfWord(grabber,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "grabber"} { loopsound {cosmic rage/Ambiences/grabber.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "grabber"}};
-#If {%IfWord(digger,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "digger"} {loopsound {cosmic rage/Ambiences/digger.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "digger"}};
-#If {%IfWord(Pollution,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "Pollution"} { loopsound {cosmic rage/Ambiences/av.wav} @Vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "Pollution"}};
-#If {%IfWord(volcano,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "volcano"} { loopsound {cosmic rage/Ambiences/volcano.wav} @Vehiclevol; #var currentroom "volcano"}}; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#If {%IfWord(Builders,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "Builders"} {
-loopsound {cosmic rage/Ambiences/build.wav} @Vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "Builders"}};
-#if {@currentroom2 = "vmisc"} {
-loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "vmisc"}} {vehicleamb}
+#TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all; v_amb}

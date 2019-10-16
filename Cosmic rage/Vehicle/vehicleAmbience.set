@@ -1,22 +1,19 @@
 #class ambon disable;
-#trigger {A steady, loud thudding from above indicates the rotors are running and the collector is powered up.} {
-#If {%IfWord(pollution,@PlanetName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "pollution"} {
-#if {@VehicleSoundPlaying = 1} {
-#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
-#if {@ShipSoundPlaying = 1} {
-#pc @shiphandle stop; #var ShipSoundPlaying 0};
-#if {@RoomSoundPlaying = 1} {
-#pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/Ambiences/av.wav} @Vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "pollution"}}};
-#TRIGGER {The floor hums slightly with the vibration of the engines.} {
+#trigger {A steady, loud thudding from above indicates the rotors are running and the collector is powered up.} {v_amb};
+#TRIGGER {The floor hums slightly with the vibration of the engines.} {v_amb};
+#alias v_amb {
 #if {@ShipSoundPlaying = 1} {
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 #var currentroom2 "vmisc";
+#If {%IfWord(pollution,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "pollution"} {
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/av.wav} @Vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
+#var currentroom "pollution"}};
 #If {%IfWord(Trash,@PlanetName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Trash"} {

@@ -57,6 +57,8 @@ playsound {cosmic rage/ships/movement/deceleration1.wav} @Evol}};
 #TRIGGER {The engines hum slightly as the ship slows out of warp space, coming to a halt.} {#gagline all; playsound {cosmic rage/ships/movement/warpend.wav} @vol}
 #TRIGGER {The ship slows dramatically as it exits warp space.} {playsound {cosmic rage/ships/movement/warpend.wav} @vol; #if {@Warploop = 1} { #pc @Warploophandle stop; #var Warploop 0}}
 #trigger {The warp core gives a low whine and the ship slowly comes to a stop.} {playsound {cosmic rage/ships/movement/warpend.wav} @vol; #if {@Warploop = 1} { #pc @Warploophandle stop; #var Warploop 0}}
+#trigger {The powerful thrum of the ships warp core fades away, ending in a spluttery gasp as it runs out of power.} {playsound {cosmic rage/ships/movement/warpend.wav} @vol; #if {@Warploop = 1} { #pc @Warploophandle stop; #var Warploop 0}}
+
 #TRIGGER {The hum of the engines decreases as the speed is reduced.} {#gagline all; playsound {cosmic rage/ships/movement/deceleration.wav} @vol}
 #TRIGGER {The ship rocks slightly as it is transported by hydraulic arms into a  starship garage.} {#gagline all;
 playsound {cosmic rage/ships/misc/garage.wav} @vol};

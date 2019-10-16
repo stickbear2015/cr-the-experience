@@ -146,7 +146,7 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; #additem APilotsParody %0} {} AnyCase
 #trigger {[[]Origins] *} {playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; #additem Origins %0}
 #trigger {Information: closest beacon: *} {#additem SOS %0}
-#trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} 80; #additem Htpc %0}
+#trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} @commsvol; #additem Htpc %0}
 #Alias {mf} {Musicfm %0} {}
 #trigger {* lets out a short fanfare informing you that a new petition has been made publicly available.} {playsound {Cosmic Rage/general/comms/Petition.wav} 80; #additem InfoComputerNotifications %0; #additem Notices %0} {} AnyCase
 #trigger {Languages *} {#if {%ifWord(enabled.,%1," ")} {
@@ -161,5 +161,5 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #trigger {* message board flashes * indicating a new message was just received on *} {#if {%ifword(boards/ic/graduations,%3," ")} {playsound {cosmic rage/general/messageboards/graduate.wav} @Vol}; #if {%ifword(boards/ooc/host thank you's,%3," ")} {playsound {cosmic rage/general/messageboards/hostthankyou.wav} @Vol}; #if {%ifword(boards/ooc/jokes,%3," ")} {playsound {cosmic rage/general/messageboards/notice.wav} @Vol}; #if {%ifword(boards/ooc/gripe discussion,%3," ")} {playsound {cosmic rage/general/messageboards/gripe.wav} @Vol}; #if {%ifword(boards/ic/renames,%3," ")} {playsound {cosmic rage/general/messageboards/namechange.wav} @Vol}; #if {%ifword(boards/ic/pilot announcements,%3," ")} {playsound {cosmic rage/general/messageboards/pilotnotice.wav} @Vol}; #if {%ifword(boards/ooc/chatroom,%3," ")} {playsound {cosmic rage/general/messageboards/oocchat.wav} @Vol}}
 #trigger {[[]PN *], *} {playsound {cosmic rage/general/comms/pn1.wav} @CommsVol;#if {%ifword(%1,@priv1," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 40000}; #if {%ifword(%1,@priv2," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 55000}; #if {%ifword(%1,@priv3," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 62000}; #if {%ifword(%1,@priv4," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 75000}; #additem PN %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {* would like to link to you.} {playsound {Cosmic Rage/general/comms/link.wav} 85} {} AnyCase
-#TRIGGER {You hear an urgent beeping from * informing you someone requires picking up.} {playsound {Cosmic Rage/general/comms/meteor.wav} 90} {} AnyCase
-#TRIGGER {This is meteor monitoring at * A meteor storm just opened up *} {playsound {Cosmic Rage/general/comms/pickup.wav} 5} {} AnyCase
+#TRIGGER {You hear an urgent beeping from * informing you someone requires picking up.} {playsound {Cosmic Rage/general/comms/pickup.wav} @commsvol} {} AnyCase
+#TRIGGER {This is meteor monitoring at * A meteor storm just opened up *} {playsound {Cosmic Rage/general/comms/meteor.wav} #commsvol} {} AnyCase

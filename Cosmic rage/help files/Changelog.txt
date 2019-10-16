@@ -1,3 +1,27 @@
+1272 Nate, but done by Stormy: Added sounds for tonights event.
+Copy sounds/cosmic rage/general/combat/suit, cosmic rage.set and combat/suit.set
+
+1271 stormy, fixed some stuff about ratika
+copy hsips rats.set
+1270 stormy, changed the probe lost sound for the star studies because, blame frederic.
+copy sounds/cr/activities/star studies/ProbeLost.wav
+
+1269 Updated by frederick, credits to A human named Jace, although sometimes I question if he's really a human, or something pretending to be. Added another trigger to stop the warp engine sound when you run out of fuel.
+copy cosmic rage/ships/ships.set
+1268, James, I streamlined vehicle ambiances a bit. Thanks to nate for the alias idea that he used in ships.
+copy cosmic rage\vehicle\vehicle.set and VehicleAmbiance.set
+1267, James, I've tweaked reporting and suggesting a bit. There's now a reminder for people to make sure their pack is up to date before reporting a bug or suggesting, and we now log what change each user is on when they report a bug or make a suggestion. This has been done because we get bug and suggestion reports for things that we have already fixed or added. We'd like to ask everyone, please update your soundpack and make sure what you're noticing as a bug or what you want as a suggestion hasn't been fixed or added. Thank you.
+copy cosmic rage\misc\soundpack.set
+1266 Updated some more by frederick. sorry guys, I had to update another trigger in order for it to play the sound it is suppose to play. It was the star probes launching. Plus because some people seem to want the text totally not to be displayed, I changed the gag voiced triggers to all gagged. I hope no one complains about not having a clue what's going on when they're star studying.
+copy cosmic rage/activities/StarStudies.set
+1265 Updated by frederick. Updated the trigger that indicates number of probes returning so it plays the sound it was suppose to be playing.
+copy cosmic rage/activities/StarStudies.set
+1264 Updated by frederick, credits to Blake Madison. shortened the sound when you lose a probe to a star.
+copy sounds/cosmic rage/activities/star studies/ProbeLost.wav
+1263 Updated by Frederick. changed the sound that plays for pickup and meteors because meteors played the pickup sound, and pickup played the meteors sound. don't try to reason that one out logically folks. Plus neither of those sounds were playing using the communications volume.
+copy cosmic rage/misc/comms.set
+1262 Updated by Frederick, credits to Kurai. Fixed an error with socials.
+copy cosmic rage/misc/socials.set
 1261 Updated by Frederick. Gagged the message that tells you that noise is coming from inside the ratika nest.
 copy cosmic rage/ships/rats.set
 1260 Updated by frederick. I have totally fixed the component issue I'll bet some of you have experienced with components getting hit in space missions. Commands will no longer be sent to the mud by mistake.

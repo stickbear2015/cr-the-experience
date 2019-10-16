@@ -27,7 +27,7 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {A shudder goes through the ship as a huge electrical discharge is fired.} {#gagline all; playsound {cosmic rage/activities/moon/slaser.wav} @vol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {On screen, you see the moon's structure become too weak, causing it to simply fall apart.} {#gagline all; playsound {cosmic rage/activities/moon/sdestroy.wav} @vol}
 #trigger {the engines hum a little as the ship moves slightly to the right.} {#gagline all}
-#trigger {A small status readout next to the image of * indicates that * laser hits should break it up into chunks.} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%2 shots needed for the destruction}}
+#trigger {A small status readout next to the image of * indicates that * laser hit* should break it up into chunks.} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #if {%2 = 1} {#sub {%2 shot needed for the destruction.}} {#sub {%2 shots needed for the destruction.}}}
 #trigger {You ease the ship to the right, circling the moon to get into prime position.} {#gagline all}
 #TRIGGER {You tap a button on the moon console, sending out a scan.} {playsound {Cosmic Rage/activities/blackdwarf/button.wav} @vol}
 #trigger {There is a clunk, and the sound of the machinery dies away.} {#gagline all}

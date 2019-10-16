@@ -42,6 +42,7 @@
 #load Combat/GroundCombat.set
 #load combat/megasuit.set
 
+#load combat/suit.set
 ;misc set files
 #load misc/APilot'sParody.set
 #load misc/Babies.set

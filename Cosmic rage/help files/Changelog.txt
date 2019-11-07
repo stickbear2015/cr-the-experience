@@ -1,11 +1,128 @@
+1332, James, Fixed bugs related to showers.
+copy cosmic rage\misc\misc.set
+1331 Updated by frederick. Removed the silence off the end of the launch sound from moons.
+copy sounds/cosmic rage/activities/moonbase/launch.wav
+1330 stormy, credits some wierd lifeform, no giving names :p, added judgewhip social
+copy misc socials.set and sounds general socials judgewhip.wav
+1329 stormy, reverted the old intro music
+copy music/intromusic/defaultmusic.wav
+
+1328, James, Updated some things to do with ship ambience.
+copy cosmic rage\misc\mainAmbience.set and cosmic rage\ships\ShipPower.set
+1327 STORMY, looped the battlestation music for good at this time.
+copy sounds/cosmic rage/music/planets/BattleStations.wav
+1326 Updated by Frederick. Updated the current battle stations music with the original. Credit to Seth Martinez for sending that original music file to me.
+copy sounds/cosmic rage/music/planets/BattleStations.wav
+1325 Updated by fred. Removed duplicate music and changed Sola's music to the original SDF Outpost Theta 15's music.
+copy sounds/cosmic rage/music
+1324 stormy, credits soulsuckers, added a sound for those are sucking souls/planets
+copy misc/misc2.set and sounds cr general misc soulsuck.wav
+1323 stormy, credits, halloween, changed the intro music for the time beeing
+copy music/intromusic/defaultmusic.wav
+1322 stormy, fixed a bug with access tube boarding
+copy ships ships2.set 
+1321 Updated by frederick. Added more gagged text to pollution cleaning.
+copy cosmic rage/activities/pol.set
+1320 Updated by frederick. Added some more texts to do with the collection scoopers. These texts were gaglined all.
+copy cosmic rage/activities/pol.set
+1319 stormy, credits stormy, added a liddle extra code back stage code for polution cleaning
+copy activities^/pol.set
+1318 stormy, copy this file to make sure that polution cleaners are working as it should to be
+copy ambiences av.wav
+1317 stormy, credits larglarg, added a liddle thing for mutariansi's
+copy misc mutariansi.set
+1316 Updated by frederick. Just touched up the pollution cleaning file a bit. Nothing major.
+copy cosmic rage/activities/pol.set
+1315 Updated by Frederick. Fixed an issue with loading the new pollution cleaning script file.
+copy cosmic rage/cosmic rage.set
+1314 Updated by Frederick. Fixed some issues with battlesuit charging.
+copy cosmic rage/combat/Battlesuits.set
+1313 stormy, evin though my vehicle just got exploded at the end but added some crazy sounds for polution collection, its worth doing, check it out
+copy activities/pol.set and sounds cr activities pol folder and coscmic rage.set
+1312 stormy, added a sound for decontamination  chambers
+copy misc misc2.set and sounds cr general misc decontamination.wav
+1311 stormy, added a rather crazy sound for the ooc cry social
+copy misc socials.set and sounds cr general socials ooccry.wav
+1310 Updated by Frederick. Changed a few triggers in star studying to gagline all instead of gagline voice. Added another trigger to the studying file where the computer announces the probe being lost.
+copy cosmic rage/activities/StarStudies.set
+1309 stormy, gagged helper remote usage
+copy misc/misc2.set
+1308 credits firath, added a sound for the iblink social
+copy cosmic rage/misc/socials.set and sounds/coscmic rage/general/socials/iblink.wav
+1307 stormy, credit freddy the larkan, added sounds for battlesuit charging
+copy combat battlesuits.set and sounds cr general combat battlesuit folder.
+1306 added a sound for driveout
+copy vehicle vehicle.set
+1305, James, Blank buffers are a thing of the past, and saving your pack saves buffers now as well.
+copy cosmic rage\misc\soundpack.set and buffers.set
+1304 Updated by Frederick. I have removed triggers for channels that are no longer apart of the game, such as sports, screen readers, and languages. I also removed a complicate trigger with auctions.
+copy cosmic rage/misc/comms.set
+1303, James, Fixed an alias issue with ship power.
+copy cosmic rage\ships\ShipPower.set
+1302 Updated by frederick, credit to Ruby Mitchell. Fixed an issue with the meteor monitor volume.
+copy cosmic rage/misc/comms.set
+1301, James, credits Frederick, fixed the bugs that Frederick reported with the vehicle alias and SPReload.
+copy cosmic rage\misc\soundpack.set, cosmic rage\vehicle\vehicle.set and VehicleAmbience.set
+1300 Updated by frederick. Updated a trigger in the planetoids file, and deleted a blank line I found in moons.
+copy cosmic rage/activities/moons.set and planetoids.set
+1299 stormy, credits frederick, added sounds for vehicle gps movement
+copy vehicle/vehicles.set
+1298 stormy, credits frank, the pack has now a FAQ file, check it out
+copy helpfiles/faq.txt
+1297 stormy, credits tod fixed a possible issue with the ship power
+copy ships/shippower.set
+1296, James, Updated ambiences again, ship and room ambiences.
+copy cosmic rage\ships\shipAmbience.set and cosmic rage\misc\MainAmbience.set
+1295, James, Had to fix something with ship ambience code, sorry about that.
+copy cosmic rage\ships\shipAmbience.set and cosmic rage\misc\soundpack.set
+1294, James, streamlined code with ship ambience and powering on, it all refers to the new alias, and some of the code with it has been spruced up a bit. All and all, ship power is a whole lot smaller.
+copy cosmic rage\ships\shipAmbience.set and ShipPower.set
+1293, James, Reloading your pack will now cause you to look when done to get your ambiance sounds back.
+copy cosmic rage\misc\soundpack.set
+1292, James, Buffers should work now. You'll need to run fixbuffers after you update, but then you should be able to save and add buffers at your leasure.
+copy cosmic rage\cosmic rage.set and cosmic rage\misc\buffers.set
+1290 stormy, credits noone, added a sound for murder social
+copy misc socials.set and sounds cr general socials murder.wav
+1289 stormy, credits, a rusty larkan named frederick, added sounds for larkan recharging
+copy sounds general misc larkancharge.wav, lark.wav and cosmic rage misc2.set
+1288 Updated by Frederick. Fixed the trigger for unblocking debris.
+copy cosmic rage/combat/combat.set
+1287 Updated by frederick. Modified the commandline for a trigger is misc2 slightly, so that it doesn't play connection1.wav twice, but rather, plays connection1.wav, and then connection2.wav as I think it was always intended to.
+copy cosmic rage/misc/misc2.set
+1286 Updated by frederick. Just fixing very very slight errors with trash and comms.
+copy cosmic rage/activities/trash.set and cosmic rage/misc/comms.set
+1285 stormy, credits jace, added  sounds for icecreams, sort of
+copy misc misc2.set
+1284 stormy, credits blake, added sounds for vehicle returning
+copy vehicle/vehicle.set
+1283  stormy, credits syuri, added sounds for sharpenning dragon claws
+copy misc misc2.set and sounds cr general combat dragons sharpen.wav
+1282 stormy, added sounds for adverts
+copy sounds cr general misc comp.wav and cosmic rage misc misc2.set
+1281 stormy, credits gabriel, addeda  sound for when you unblock a room.
+copy combat combat.set and sounds cr general misc unblock.wav
+1280 stormy, credits firath, added sounds for dragon rumble, rumble rumble!
+copy misc comms.set and sounds cr general comms rumble1 through 3.wav
+1279 stormy, credits rusty, added a sound for ship food processors
+copy misc misc2.set and sounds cr general misc food.wav
+1278 stormy, credits jace, added some dramatic sounds for communicating with the flys.
+copy sounds activities trash collection flymut.wav and flygo.wav and cosmic rage trash.set
+1277 Updated by frederick. Hopefully, I have stopped the errors from occurring when locking on to a star core.
+copy cosmic rage/activities/StarCoring.set
+1276 stormy, credits to dave because i feel like it, added a sound when you exit from a wormhole
+copy ships/ships2.set and sounds cr ships movement wormhole2.wav
+1275 Updated by Frederick, credits to a powerfully-built mare named Cerenity. Fixed an issue with Volcano harvesting.
+copy cosmic rage/activities/VolcanoHarvesting.set
+1274 Updated by Frederick. Added a ground combat volume variable in a looping trigger in the suits.set file, as well as removed a blank line from the file.
+copy cosmic rage/combat/suit.set
+1273 Updated by frederick. Modified a trigger in the moons activity, to account for only one shot needed to break the moon up into chunks.
+copy cosmic rage/activities/moons.set
 1272 Nate, but done by Stormy: Added sounds for tonights event.
 Copy sounds/cosmic rage/general/combat/suit, cosmic rage.set and combat/suit.set
-
 1271 stormy, fixed some stuff about ratika
-copy hsips rats.set
+copy ships rats.set
 1270 stormy, changed the probe lost sound for the star studies because, blame frederic.
 copy sounds/cr/activities/star studies/ProbeLost.wav
-
 1269 Updated by frederick, credits to A human named Jace, although sometimes I question if he's really a human, or something pretending to be. Added another trigger to stop the warp engine sound when you run out of fuel.
 copy cosmic rage/ships/ships.set
 1268, James, I streamlined vehicle ambiances a bit. Thanks to nate for the alias idea that he used in ships.

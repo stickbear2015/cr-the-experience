@@ -24,3 +24,5 @@
 #trigger {* reach* around and tap* a button on *.} {#gagline voice}
 #trigger {* pops up from the * of *} {playsound {Cosmic Rage/general/combat/battlesuit/extend.wav} @vol}
 #trigger {* retracts back into the * of *} {playsound {Cosmic Rage/general/combat/battlesuit/retract.wav} @vol}
+#trigger {You plug * into the * systems.} {#gagline voice; playsound {cosmic rage/general/combat/battlesuit/charge2.wav} @gvol; #alarm 1.2 {loopsound {cosmic rage/general/combat/battlesuit/charge1.wav} @gvol;#var bchargeHandle %playHandle; #var bcharge 1}}
+#trigger {a charging light flashes green, and you unplug *} {#gagline voice; #alarm 0.1 {#if {@bcharge = 1} {#pc @bchargeHandle stop; #var bcharge 0}; playsound {cosmic rage/general/combat/battlesuit/charge2.wav} @gvol}}

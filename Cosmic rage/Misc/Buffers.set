@@ -6,15 +6,15 @@
 #var ItemPointer 1
 #alias delbuffer  {playsound {Cosmic Rage/general/misc/BufferDelete.wav} 80; #var item {%pick(p:Which buffer do you want to delete?|@CurrentBufferList)};#var CurrentBufferList {%delitem(@CurrentBufferList,@item)};playsound {Cosmic Rage/general/misc/BufferRemoved.wav} 80; #var BufferPointer 1}
 #key {ALT-SHIFT-LEFT} {delbuffer}
-#alias addbuffer {playsound {Cosmic Rage/general/misc/BufferAdd.wav} 80; #var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)};#if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {playsound {Cosmic Rage/general/misc/BufferActive.wav} 80} {#additem CurrentBufferList @newitem; playsound {Cosmic Rage/general/misc/BufferAdded.wav} 80} {#var BufferPointer 1}}
+#alias addbuffer {playsound {Cosmic Rage/general/misc/BufferAdd.wav} 80; #var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)}; #if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {playsound {Cosmic Rage/general/misc/BufferActive.wav} 80} {#if {%ifword(@newitem,@MasterBufferList,"|") = 1} {#additem CurrentBufferList @newitem; playsound {Cosmic Rage/general/misc/BufferAdded.wav} 80}} {#var BufferPointer 1}}
 #key {ALT-SHIFT-RIGHT} {addbuffer}
 
 ;aliases for saving and reading preferred buffers.
 
-#alias savebuffers {#file 5 CosmicRageBufferlist.txt; #write 5 "saving...";#close 5;#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #forall @CurrentBufferList {#write 5 %i};#close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
-#alias AutoSaveBuffers {#file 5 CosmicRageBufferlist.txt; #write 5 "saving...";#close 5;#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #forall @CurrentBufferList {#write 5 %i};#close 5}
-#alias loadbuffers {#var CurrentBufferList {};#file 5 CosmicRageBufferlist.txt; #var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5; playsound {Cosmic Rage/general/misc/BuffersLoaded.wav} 80}
-#alias SilentlyLoadBuffers {#var CurrentBufferList {};#file 5 CosmicRageBufferlist.txt; #var temp 0;#while {@temp <> "[EOF]"} {#read 5 temp;#if {@temp <> "[EOF]"} {#additem currentbufferlist @temp noduplicates} {}};#close 5}
+#alias savebuffers {#say {saving...}; #delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
+#alias AutoSaveBuffers {#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5}
+#alias loadbuffers {#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersLoaded.wav} 80}
+#alias SilentlyLoadBuffers {#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5}
 ;Keys for loading, reading  and saving buffers
 
 #key {Control-alt-shift-S} {SaveBuffers}
@@ -27,7 +27,7 @@
 #key {Alt-Up} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} voiceonly} {#if {@ItemPointer < 2} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of Buffer} voiceonly} {#math ItemPointer {@ItemPointer - 1}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 #key {Shift-Alt-PageUp} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer < 20} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Not enough items have been stored in the buffer to move that far up} Voiceonly} {#math ItemPointer {@ItemPointer - 20}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
 
-#alias ClearBuffer {#var @buffername ""; playsound {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {The items contained in the @buffername buffer have been cleared successfully!} Voiceonly}
+#alias ClearBuffer {#var @buffername ""; playsound {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {The items contained in the @buffername buffer have been cleared successfully!}}
 #key {Alt-shift-delete} {ClearBuffer}
 
 #key {Alt-Down} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}

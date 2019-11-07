@@ -3,12 +3,13 @@
 #var ShipSoundPlaying 0;
 #Trigger {[[] &{ShipName}, &{SecondName}*} {
 #var RoomName @SecondName}
-#TRIGGER {The overhead lighting * colour,*} {green_alias}
-#Trigger {Forward momentum can be felt as gentle hums emanate from under the ship's flooring.} {green_alias}
-#trigger {Forward momentum can be felt as powerful thrums come from under the ship's flooring.} {green_alias}
-#trigger {Forward momentum can be felt as the floor vibrates and shakes from forces underneath it.} {green_alias}
+#TRIGGER {The overhead lighting * colour,*} {ShipRoom1}
+#Trigger {Forward momentum can be felt as gentle hums emanate from under the ship's flooring.} {ShipRoom1}
+#trigger {Forward momentum can be felt as powerful thrums come from under the ship's flooring.} {ShipRoom1}
+#trigger {Forward momentum can be felt as the floor vibrates and shakes from forces underneath it.} {ShipRoom1}
 
-#alias {green_alias2} {
+#Alias ShipRoom1 {#if {@ambon = "Enabled"} {ShipRoom2}}
+#alias ShipRoom2 {
 #if {@musicplaying = 1} {
 #pc @musichandle stop; #var musicplaying 0; #var planet ""};
 #var currentroom2 "misc";
@@ -23,7 +24,7 @@
 #If {@ShipSoundPlaying = 1} {
 #pc @Shiphandle stop};
 loopsound {cosmic rage/ships/rooms/airlock.wav} @Shipvol;
-#Var ShipHandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "Airlock"; #var currentroom2 "airlock"}};
+#Var ShipHandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "Airlock"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Ammo ,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom "ammo"} {
@@ -399,7 +400,6 @@ loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
 #if {@currentroom <> "misc"} {
 #var currentroom2 "notmisc";
 #If {@ShipSoundPlaying = 1} {
-#pc @ShipHandle stop;
-#Var ShipSoundPlaying 0};
+#pc @ShipHandle stop; #Var ShipSoundPlaying 0};
 loopsound {cosmic rage/ships/rooms/Deck.wav} @Shipvol;
-#Var shiphandle %Playhandle; #Var ShipSoundPlaying 1; #Var CurrentRoom "misc"}}} {shipamb}
+#Var shiphandle %Playhandle; #Var ShipSoundPlaying 1; #Var CurrentRoom "misc"}}}

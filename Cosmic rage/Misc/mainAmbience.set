@@ -244,7 +244,7 @@ loopsound {cosmic rage/Ambiences/Office.wav} @roomvol;
 #if {@currentroom <> "plaza"} {
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/Ambiences/hall.wav} @roomvol;
+loopsound {cosmic rage/Ambiences/plaza.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "plaza"}};
 #If {%IfWord(Park ,@RoomName," ")} {
 #var currentroom2 "notmisc";
@@ -269,11 +269,11 @@ loopsound {cosmic rage/Ambiences/Road.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "road"}};
 #If {%IfWord(Shopping,@RoomName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "Shopping"} {
+#if {@currentroom <> "plaza"} {
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Plaza.wav} @roomvol;
-#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Shopping"}};
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "plaza"}};
 #If {%IfWord(Hallway,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Hallway"} {
@@ -381,9 +381,12 @@ loopsound {cosmic rage/Ambiences/lobby.wav} @roomvol;
 #TRIGGER {The overhead lights are dim, indicating the ship is powered down and all nonessential systems have been disabled.} {
 #If {@ShipSoundPlaying = 1} {
 #pc @ShipHandle stop; #var ShipSoundPlaying 0};
-loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #if {@vehiclesoundplaying = 1} {
-#pc @vehiclehandle stop; #var vehiclesoundplaying 0; #if {@RoomSoundPlaying = 1} {#pc @RoomHandle stop; #var roomsoundplaying 0};
-#if {@MusicSounds = 1} {#var MusicSounds 0; #var planet ""; #var currentroom "off"}}} {ambon}
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+#if {@MusicSounds = 1} {#var MusicSounds 0};
+loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #var planet ""; #var currentroom "off"; #var currentroom2 "notmisc"} {ambon}
 #trigger {[[]Space]} {
 #if {@currentroom <> "space"} {
 #If {@shipSoundPlaying = 1} {

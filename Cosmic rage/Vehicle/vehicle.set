@@ -166,4 +166,21 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol; #var chargeHandle %pla
 #trigger {You shut off the siren.} {playsound {cosmic rage/vehicle/sirenoff.wav} @vol; #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}}
 #trigger {Outside, the siren continues to wail.} {#if {@siren = 0}  {loopsound {cosmic rage/vehicle/siren1.wav} @vol; #var sirenHandle %playHandle; #var siren 1}}
 #trigger {* emits a loud siren.} {playsound {cosmic rage/vehicle/siren2.wav} @vol}
-#TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all; v_amb}
+#TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all; v_amb1}
+#trigger {The hum of the vehicles engines get higher in pitch as it begins to move.} {#gagline all; playsound {Cosmic Rage/general/cars/accelerate.wav} @vol}
+#trigger {You put the vehicle into park as it comes to a halt.} {#gagline all; playsound {Cosmic Rage/general/cars/decelerate.wav} @ vol}
+#TRIGGER {You hear the engines give a slight vibration before the vehicle suddenly begins to move.} {#gagline all;
+#if {@altVehicleEngines = "Disabled"} {
+playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
+#if {@altVehicleEngines = "Enabled"} {
+playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
+#TRIGGER {The vehicle grinds to a halt.} {#gagline all;
+#if {@altVehicleEngines = "Disabled"} {
+playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
+#if {@altVehicleEngines = "Enabled"} {
+playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
+#TRIGGER {You carefully drive the vehicle out of the bay.} {#gagline all;
+#if {@altVehicleEngines = "Disabled"} {
+playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
+#if {@altVehicleEngines = "Enabled"} {
+playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}

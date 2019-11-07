@@ -9,7 +9,7 @@
 
 ; Docking and undocking.
 #trigger {You * up a narrow slope into The *} {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
-#trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+#trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {#gagline all}
 #trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
 #TRIGGER {You see Research Transportation Ship * approaching a docking port of the tube.} {
 loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
@@ -110,3 +110,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #TRIGGER {Dirt and dust falls in lumps and is washed away from  *} {#gagline all};
 #TRIGGER { The gleaming hull of *} {#gagline all};
 #TRIGGER {Loud bangs and crashes, accompanied by hammering sounds, can be heard from the hull.} {playsound {cosmic rage/ships/misc/upgrade.wav} @vol; #gagline all};
+#TRIGGER {The ship shudders once more and finally exits the wormhole.} {playsound {cosmic rage/ships/movement/wormhole2.wav} @vol; #gagline all};

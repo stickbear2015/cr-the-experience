@@ -21,3 +21,10 @@
 #trigger {You finish using a remote control for a helper drone and lock it with the button at the top.} {#gagline all}
 #TRIGGER  {You pause by a decontamination unit.} {#gagline all; playsound {cosmic rage/general/misc/decontamination.wav} @vol}
 #TRIGGER  {A small piece of glittering soul escapes from * to be devoured by A rotting skull!} {#gagline all; playsound {cosmic rage/general/misc/soulsuck.wav} @vol}
+#TRIGGER  {A cheery tune fills the house as someone presses the doorbell.} {#gagline all; playsound {cosmic rage/general/misc/doorblell.wav} @vol}
+#trigger {You press the button of the doorbell and hear a faint tune.} {#gagline all; playsound {cosmic rage/general/misc/doorbell.wav} @vol}
+#TRIGGER  {*** System announcement: *} { playsound {cosmic rage/general/misc/boop.wav} @vol}
+#TRIGGER {* You hear a crowd booing and hissing. *} {playsound {Cosmic Rage/general/misc/pvpoff.wav} @vol}
+#TRIGGER {* You hear the roar of an approving crowd. *} {playsound {Cosmic Rage/general/misc/pvpon.wav} @vol}
+#TRIGGER {You toss *} {playsound {Cosmic Rage/general/misc/trash.wav} @vol}
+#TRIGGER {You land with a painful thump on the other side of the room.} {playsound {Cosmic Rage/general/misc/thump.wav} @vol}

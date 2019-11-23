@@ -26,3 +26,9 @@ playsound {cosmic rage/activities/mechanicalMining/arm.wav} @vol}
 playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol} 
 #trigger {You hear a loud thunk and then a whir.} {#gagline all;
 playsound {cosmic rage/activities/mechanicalMining/whirling.wav} @vol}
+#trigger {You raise the laser console by tapping a button next to it and decide to sort the *} {#gagline all; playsound {cosmic rage/activities/mechanicalMining/sort1.wav} @vol}
+#trigger {There is a rumbling noise as rocks are shuffled out of the cargo bay and into a different compartment.} {#gagline all}
+#trigger {There is a slight clink as the computer shuts the compartment door.} {#gagline all}
+#trigger {The rock burns a bright orange colour, far too hot to not burn away the elements inside!} {playsound {cosmic rage/activities/mechanicalMining/laser2.wav} @vol; #sub {too high.}}
+#trigger {The laser appears to be making no headway.} {playsound {cosmic rage/activities/mechanicalMining/laser2.wav} @vol; #sub {too low}}
+#trigger {The laser manages to burn away the rock and quickly vents the steam outside.} {playsound {cosmic rage/activities/mechanicalMining/laser2.wav} @vol; #sub {perfect.}}

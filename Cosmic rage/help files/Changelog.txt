@@ -1,3 +1,91 @@
+1375 stormy, updated the config manager with missing help files
+copy misc soundpacks.set
+1374 stormy, updated the f a q  help file
+copy helpfiles faq.txt
+1373 stormy, added the demos help file for those want to listen the various features of the pack
+copy helpfiles demos.txt
+1372 stormy, gagged an other message
+copy ships shipcombat2.set
+
+1371 stormy, gagged a reloading message
+copy ships shipcombat2.set
+1370 stormy, credits frederick the shining larkan, added sounds for ship docking
+copy ships ships2.set and sounds cr ships misc dock1 and 2.wav
+1369 stormy, thumpatity thump thump thump, added a thump sound
+copy misc misc2.set and sounds  general misc thump.wav
+1368 Updated by frederick. Gagged a text in vehicles. Fixed a typo in a trigger for blood splattering since it was fixed in the game. Tightened up the starting and stopping of battlesuit recharging.
+copy cosmic rage/combat/battlesuit.set and combat.set and cosmic rage/vehicle/vehicle.set
+1367 stormy, credits Gulliver, a bio harvesting text is gagged
+copy activities bioharvesting.set
+1366 stormy, credits amara, you now hear a sound when you trash something, trash trash
+copy misc misc2.set and sounds cr general misc trash.wav
+1365 stormy, credits jim, added sounds for pvp turns
+copy misc misc2.set and sounds general misc pvpon and pvpoff.wav
+1364 stormy, knocked the volume of unblocking sound
+copy sounds cr general misc  unblock.wav
+1363 Updated by frederick. Gagged some more texts with ground combat, specifically when a creature dies due to a critical part.
+copy cosmic rage/combat/GroundCombat.set
+1362 stormy, credits Gaius,  added fiew more sounds for planetoids
+copy activities planetoid.set and sounds activities planetoid
+1361 stormy, added a sound for factories
+copy misc factories.set
+1360 added a sound when blood drips to your clothing
+copy sounds cr general combat blood.wav and combat combat.set
+1359  ungagged the take cover text
+copy combat combat.set
+1358 Updated by Frederick because Stormy's tired from those exams. Straightened out the sorting stuff in mechanical mining.
+copy cosmic rage/activities/MechanicalMining.set
+1357 stormy, credits frederick, added sounds for laser sorting for mechanical mining
+copy activities/mechanical mining.set and sounds cr activities mechanical folder
+1356 stormy, credits raven, the bioharvesting now respects gag harvesting options, blame dave alderton if its broken
+copy activities bioharvesting.set
+1355 Updated by frederick, credits to Stormy for suggestion. Added a keystroke to instantly tell you the number of your last change entry.
+It is keystroke alt-shift-v.
+copy cosmic rage/misc/keys.set
+1354, James, fixed disruptor sounds.
+copy cosmic rage\ships\ShipCombat.set
+1353 Updated by frederick. I went through the vehicles file, and added a few triggers, or modified existing triggers to do with vehicle recharging. I fixed a trigger with a volume issue when a vehicle finished returning to a vehicle bay. I also changed some of the vehicle engine triggers that were using the main soundpack volume, to using the vehicle engine volume instead. enjoy.
+copy cosmic rage/vehicle/vehicle.set
+1352 stormy, credits fred, added sounds for plasma reloads
+copy ships shipcombat2.set
+1351 by Nate: Added so that the default computer bleeps play for all of the 50 standard ship avatars. Note that due to the way some of them say things, you may hear the say sound as well,
+copy ships/computers.set and cosmic rage.set
+1350 Updated by Frederick, credits to Amara Navy blue designation. Added another trigger for doorbells.
+copy cosmic rage/misc/misc2.set
+1349 Updated by Frederick, credits to Amara Navy blue designation. Added a sound for milking the cows.
+copy cosmic rage/misc/factory.set
+1348 updated by Frederick. The in character pa and out of character pa triggers were pointing to the wrong sounds, so they've now been fixed. I don't know how long it has been that way, but there ya have it.
+copy cosmic rage/misc/comms.set
+1347 Fixed by Frederick, credits to Gaius steel gray designation. Fixed a trigger dealing with warp loop variable.
+copy ships/ships.set
+1346 stormy, credits gaious, added ship upgrade sounds
+copy ships ships2.set
+1345 stormy, credits gaious, added vehicle upgrade sounds
+copy vehicles vehicle.set
+1344 stormy, credits Walric , added a sound when you finish planetary destruction
+copy ships pd.set and sounds cr ships pd link.wav
+1343 stormy, credits Avyanna , opa sound is changed
+copy misc comms.set and sounds cr ships comms opa.wav
+1342 stormy, credits jim, added a sound for system announcements
+copy misc misc2.set and sounds cr general misc boop.wav
+1341 stormy, credits fred, added a sound for telephones
+copy misc telephone.set
+1340 stormy, credits amara, added a sound for doorbells
+copy misc misc2.set and sounds cr general misc doorbell.wav
+1339 lowered the hardcore sound volume
+copy sounds general misc hardcore.wav
+1338 added a sound for emergency command
+copy cr misc comms.set
+1337, James, updated some code behind warp and quantum sound loops.
+copy cosmic rage\ships\ships.set
+1336 Updated by Frederick. Fixed up the SpUnload alias in the cosmic rage main file to include the pollution repairation file, and the new hunting file.
+copy cosmic rage/cosmic rage.set
+1335 Updated by frederick, with sound modification from stormy. Lowered the volume on the decontamination sound.
+copy sounds/cosmic rage/general/misc/decontamination.wav
+1334 stormy, added sounds for hunting
+copy cosmic rage set, activities hunting.set and sounds activities hunt folder
+1333 Update by Frederick, credit to Arrie Silvery blue scale for suggestion, credit to stormy for sound modification. Lowered the volume a bit on the crush sound in trash collection.
+copy sounds/cosmic rage/activities/trash collection/crush.wav
 1332, James, Fixed bugs related to showers.
 copy cosmic rage\misc\misc.set
 1331 Updated by frederick. Removed the silence off the end of the launch sound from moons.

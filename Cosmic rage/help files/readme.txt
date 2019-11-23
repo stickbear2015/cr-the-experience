@@ -34,7 +34,8 @@ https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20C
 4. Upon first run of the pack, you must complete the following steps.
 	A. Copy settings.set that is located in the root directory of the soundpack, then paste this file in Cosmic Rage/misc. Failing to copy this file will load the pack with very odd settings values, including audio volume being all the way at 100 percent. Users who already have settings how they'd like, feel free to ignore this file unless you lose all your settings data.
 	B. Launch VIPMud. You will then need to set up your settings like buffers, volumes, toggles, ETC. Please see the help files for aliases and keys.
-	C. Finally, save your packs settings with control-s. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not our fault if you fail to do this. It's also a good idea to back up your buffer settings and general pack settings after you get them how you'd like.
+	C. Create a blank txt file and name it CosmicRageBufferlist.txt. Not having this bufferlist file in the vipmud root directory, will cause the soundpack to get angry and throw errors at you.
+	D. Finally, save your packs settings with control-s. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not our fault if you fail to do this. It's also a good idea to back up your buffer settings and general pack settings after you get them how you'd like.
 If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting Angelica or Lara.
 
 			**Updating Your Soundpack**

@@ -133,9 +133,9 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {Newbie is now off.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @CommsVol}
 #trigger {An ooc link from * has been automatically accepted.} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} @CommsVol} {} AnyCase
 #trigger {A very crackley voice can barely be heard over the main console saying "*calling requesting starship,  due to bad weather, you are unable to * at the current time*"} {playsound {Cosmic Rage/ships/misc/BadWeather.wav} @CommsVol; #additem FlightControl %0}
-#trigger {[[]OOC PA]*} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
+#trigger {[[]OOC PA]*} {playsound {cosmic rage/ships/com/oocpa.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @CommsVol; #additem OOCPrivate %0} {} AnyCase
-#trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/OOCPa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
+#trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; #additem APilotsParody %0} {} AnyCase
 #trigger {[[]Origins] *} {playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; #additem Origins %0}
 #trigger {Information: closest beacon: *} {#additem SOS %0}
@@ -154,3 +154,4 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #TRIGGER {This is meteor monitoring at * A meteor storm just opened up *} {playsound {Cosmic Rage/general/comms/meteor.wav} @commsvol} {} AnyCase
 #trigger {You rumble *} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol;#additem say %0}
 #trigger {* rumbles *} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol;#additem say %0}
+#trigger {emergency! *} {playsound {Cosmic Rage/general/gmc/alarm.wav} @vol}

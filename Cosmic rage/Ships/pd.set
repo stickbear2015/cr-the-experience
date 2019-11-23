@@ -18,3 +18,4 @@
 #TRIGGER {You recall the drone.} {#gagline all; playsound {cosmic rage/ships/pd/woosh.wav} @CVol}; 
 #TRIGGER {You recall the drone.} {#gagline all; playsound {cosmic rage/ships/pd/woosh.wav} @CVol}; 
 #TRIGGER {You hear a whoosh as something launches.} {#gagline all; playsound {cosmic rage/ships/pd/woosh.wav} @CVol}; 
+#TRIGGER {Destruction signal received. Link up with pod now being broken.} {#gagline all; playsound {cosmic rage/ships/pd/link.wav} @CVol}; 

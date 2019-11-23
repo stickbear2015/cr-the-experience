@@ -141,6 +141,7 @@ playsound {cosmic rage/general/combat/vehicles/turout.wav} @gvol}
 #trigger {You hear a whoosh as a rocket fires.} {playsound {cosmic rage/general/combat/vehicles/rocket.wav} @gvol}
 #trigger {A rocket shoots from the turret of * straight towards *} {playsound {cosmic rage/general/combat/vehicles/rocket.wav} @gvol}
 #trigger {You blow out *} {#gagline all; playsound {cosmic rage/general/combat/dragons/fireblow.wav} @gvol}
-#trigger {* take* cover!} {#gagline all; playsound {Cosmic Rage/general/combat/cover.wav} @gvol}
+#trigger {* take* cover!} {playsound {Cosmic Rage/general/combat/cover.wav} @gvol}
 #trigger {* struggles to try and do something, but can't.} {#sub {%1 is stunned.};playsound {cosmic Rage/general/combat/stunned.wav} @gvol}
 #trigger {You heave at some of the rocks and debris.} {#gagline all;playsound {cosmic Rage/general/misc/unblock.wav} @gvol}
+#trigger {Blood splatters on *} {playsound {Cosmic Rage/general/combat/blood.wav} @gvol}

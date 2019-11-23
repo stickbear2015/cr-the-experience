@@ -138,3 +138,8 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {One of the drones topples over.} {#gagline all; playsound {cosmic rage/general/factory/build6.wav} @vol}
 #trigger {The drones continue working} {#gagline all; playsound {cosmic rage/general/factory/build*5.wav} @vol}
 #trigger {You empty * pieces of debris into the refinery.} {playsound {cosmic rage/general/factory/can.wav} @vol}
+#trigger {You begin to milk your cows.} {#gagline all;
+playloop {cosmic rage/general/factory/milk.wav} @vol; #var milkhandle %playhandle}
+#trigger {You finish milking the cows.} {#gagline all;
+#pc @milkhandle stop}
+#trigger {The sound of scrapes and bangs can be heard as drones move about.} {playsound {cosmic rage/general/factory/clang.wav} @vol}

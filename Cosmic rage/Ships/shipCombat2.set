@@ -41,3 +41,10 @@ playsound {cosmic rage/ships/combat/indirect*2.wav} @CVol}}
 
 #trigger {There is a deep boom as the pulse cannon fires.} {#gagline all; playsound {cosmic rage/ships/combat/PulseCannon.wav} @CVol; #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#TRIGGER {The hum of compression systems can be heard for a short moment as ammunition is shifted in the ship's hold.} {#Gagline ALL; playsound {cosmic rage/ships\Combat\RELOAD1.wav} @Cvol; #var reloadhandle %PlayHandle};
+#TRIGGER {On screen, you see the image of the * flicker from yellow to green as the reload completes.} {#Gagline ALL; #PC @reloadhandle stop; playsound {cosmic rage/ships\Combat\reload2.wav} @cvol}
+#trigger {You make a few selections on the main screen, before sliding a slider at the bottom to full.} {#gagline all; playsound {cosmic rage/ships/computer/code.wav} @cvol}
+#trigger {On screen, you see the image of the * flicker from red to yellow as a reload begins.} {#gagline all};
+#trigger {A red light on screen fades to yellow as a reload begins to take place.} {#gagline all}
+#trigger {The light flashes green and the reload is complete.} {#gagline all}
+#Alias {escan} {#trigger {* distance * unit*} {#sub {distance %2, %1 }}; scan ship; #alarm 0.5 {#untrig {* distance * unit*}}};

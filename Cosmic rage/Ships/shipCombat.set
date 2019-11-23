@@ -138,7 +138,7 @@ playsound {cosmic rage/ships/combat/heatShieldsBoost.wav} @CVol}
 #trigger {You hear a peculiar humming noise as the heat shields are taken offline.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/heatShieldsOff.wav} @CVol}
-#trigger {A slight zing is heard as molecular disruptor* fire*.} {
+#trigger {A slight zing is heard as the molecular disruptor fires.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/disruptor.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {

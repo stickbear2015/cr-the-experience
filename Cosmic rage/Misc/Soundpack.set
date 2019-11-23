@@ -133,6 +133,8 @@ View the alias's help file:{playsound {Cosmic Rage/general/Help/Aliases.wav} @vo
 View the Announcements help file:{playsound {Cosmic Rage/general/help/Announcements.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Announcements.txt}}|
 View the buffers help file:{playsound {Cosmic Rage/general/Help/Buffers.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/buffers.txt}}|
 View the Changelog:{playsound {Cosmic Rage/general/Help/Changelog.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/changelog.txt}}|
+view the soundpack demos:{playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/demos.txt}}|
+view the soundpack  F A Q:{playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/faq.txt}}|
 View the Keys help file:{playsound {Cosmic Rage/general/help/Keys.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/keys.txt}}|
 View the readme:{playsound {Cosmic Rage/general/help/Readme.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/readme.txt}}|
 View the Soundpack credits:{playsound {Cosmic Rage/general/help/SoundpackCredits.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Soundpack credits.txt}}}}

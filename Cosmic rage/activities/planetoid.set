@@ -146,3 +146,5 @@ playsound {cosmic rage\ships\com\pa*2.wav} @vol}
 #trigger {You see some colourful mineral ores being sucked up by the tubing systems.} {#gagline all}
 #trigger {You hear a slight hiss and gas is shoved into one of the storage tanks from a pipe.} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/air.wav} @vol}
 #trigger {Several drones slam their hammers into some weak spots, before covering it with a metal panel, and hammering some more.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/cargorepair.wav} @vol}
+#trigger {* The surface of * to tremble violently.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/tremble.wav} @vol}
+#trigger {* The surface of * rumbles as it tears itself apart, sending rocks and debris in all directions.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/impact.wav} @vol}

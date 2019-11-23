@@ -39,8 +39,8 @@ playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #trigger {* retracts its docking gear and begins to drift away from the tube.} {#if {@launchtext = "Enabled"} {#gagline voice};
 playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #TRIGGER {The engines decrease in volume as the ship finishes undocking.} {#if {@LaunchText = "Enabled"} {#gagline all}}
-#TRIGGER {You hear a slight groan and the floor trembles as * begins to undock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol};
-#TRIGGER {The ground shakes a little as * begins to dock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol};
+#TRIGGER {You hear a slight groan and the floor trembles as * begins to undock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol}
+#TRIGGER {The ground shakes a little as * begins to dock.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/dock.wav} @vol}
 #trigger {Blackness wizzes past the windows as the ship continues its ascent.} {
 #gagline all}
 #trigger {The upward thrust stops as the ship launches into space.} {
@@ -60,14 +60,14 @@ playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #var Clock 0}}
 #TRIGGER {* launches towards the sky with a roar, leaving behind a trail of engine fire and a storm of dust.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {The ship shudders as it enters an atmosphere.} {#if {@LaunchText = "Enabled"} {#gagline all};
-playsound {cosmic rage/ships/movement/landing*4.wav} @vol};
+playsound {cosmic rage/ships/movement/landing*4.wav} @vol}
 #TRIGGER {On screen, you see * begins to land on *} {playsound {cosmic rage/ships/misc/OtherLanding*3.wav} @vol}
-#TRIGGER {* lands with a slight bump.} {playsound {cosmic rage/ships/misc/OtherLanding*3.wav} @vol};
-#TRIGGER {* launches towards the sky with a roar, leaving behind a trail of engine fire and a storm of dust.} {playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
+#TRIGGER {* lands with a slight bump.} {playsound {cosmic rage/ships/misc/OtherLanding*3.wav} @vol}
+#TRIGGER {* launches towards the sky with a roar, leaving behind a trail of engine fire and a storm of dust.} {playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #trigger {* launches with a roar of engines towards the sky, kicking up a storm of dust in its wake.} {
-playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
+playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {On screen, you see * launch from *} {playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
-#TRIGGER {* you are clear to launch.} {playsound {cosmic rage/ships/Com/somethingToShip.wav} @vol};
+#TRIGGER {* you are clear to launch.} {playsound {cosmic rage/ships/Com/somethingToShip.wav} @vol}
 #trigger {The ships engines stabilise as the ship launches into space.} {
 #gagline all}
 #trigger {on screen, you see the ship* hull glow red hot as it passes through the * atmosphere.} {
@@ -80,7 +80,6 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #trigger {You relax your grip and allow the computer to handle the last part.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You hold the ship steady as on screen, you see * docking point* extend from the access tube and *} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {A low level thrum comes from the gravity thrusters as they stop the ship from plummeting.} {#if {@LaunchText = "Enabled"} {#gagline all}}
-
 #trigger {"Landing sequence complete. Heat shields deactivated."} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You begin to carefully align the ship  with the planet in order to begin its descent towards the surface.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {* push* the broadcast button on the main console with * and *: "*"} {#if {@LaunchText = "Enabled"} {#gagline voice}} {} anycase
@@ -88,26 +87,30 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol};
 #trigger {* up the * onto The *} {#pc 0 stop; #gagline all; playsound {cosmic rage/ships/misc/BoardShip.wav} @vol}
 #trigger {The ship's engines stabilise as it launches into space.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The ship is shot straight up into the air, sending your stomach rocketing into your throat.} {#if {@LaunchText = "Enabled"} {#gagline all}}
-#trigger {The ship is lifted up about a foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {#gagline all;}
-#TRIGGER {You angle the ship up slightly, moving it so that it is diagonal to the enemy vessel.} {playsound {cosmic rage/ships/misc/clamp1.wav} @vol; #gagline all};
-#TRIGGER {The ship shudders, slowly drifting to the right.} {#gagline all};
+#trigger {The ship is lifted up about a foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {#gagline all}
+#TRIGGER {You angle the ship up slightly, moving it so that it is diagonal to the enemy vessel.} {playsound {cosmic rage/ships/misc/clamp1.wav} @vol; #gagline all}
+#TRIGGER {The ship shudders, slowly drifting to the right.} {#gagline all}
 #TRIGGER {You hear a loud crash as the two ships slam together!} {playsound {cosmic rage/ships/misc/clamp2.wav} @vol; #gagline all};
-#TRIGGER {You yell: } {#gagline all};
+#TRIGGER {You yell: } {#gagline all}
 #TRIGGER {You hear a slight tremble, then a clank as the ships dock together successfully.} {#gagline all};
-#TRIGGER {You jerk the handle.} {playsound {cosmic rage/ships/misc/clamp3.wav} @vol; #gagline all};
-#TRIGGER {You pull the two ships apart, then hit dock.} {#play {cosmic rage/general/trolley/button.wav} @vol; #gagline all};
-#TRIGGER {The ship shudders again, changing course.} {#gagline all};
+#TRIGGER {You jerk the handle.} {playsound {cosmic rage/ships/misc/clamp3.wav} @vol; #gagline all}
+#TRIGGER {You pull the two ships apart, then hit dock.} {#play {cosmic rage/general/trolley/button.wav} @vol; #gagline all}
+#TRIGGER {The ship shudders again, changing course.} {#gagline all}
 #TRIGGER {Darkness rushes past the windows as the ship continues through a wormhole.} {#gagline all};
-#TRIGGER {*"Tracing wormhole destination."} {#gagline all};
-#TRIGGER {You hear a loud crash and suddenly both the engines and the warp core power up together, forcing the ship through a wormhole.} {playsound {cosmic rage/ships/movement/wormhole.wav} @vol; #gagline all};
-#TRIGGER {You hear a whine as retrieval lines extend from the ship.} {playsound {cosmic rage/ships/misc/ret1.wav} @vol; #gagline all};
-#TRIGGER {You hear a whine and a thunk as the ship retracts its retrieval lines.} {playsound {cosmic rage/ships/misc/ret2.wav} @vol; #gagline all};
-#TRIGGER {a swarm of * drones leave the store.} {playsound {cosmic rage/ships/misc/droneout.wav} @vol; #gagline all};
-#TRIGGER {a swarm of * drones storm in and disappear out the back, their work complete.} {playsound {cosmic rage/ships/misc/dronein.wav} @vol; #gagline all};
-#TRIGGER {You turn on * and walk over to *  begin cleaning it.} {playsound {cosmic rage/ships/misc/hose.wav} @vol; #gagline all};
-#TRIGGER {* turns on * and walks over to *  begin cleaning it.} {playsound {cosmic rage/ships/misc/hose.wav} @vol; #gagline all};
+#TRIGGER {*"Tracing wormhole destination."} {#gagline all}
+#TRIGGER {You hear a loud crash and suddenly both the engines and the warp core power up together, forcing the ship through a wormhole.} {playsound {cosmic rage/ships/movement/wormhole.wav} @vol; #gagline all}
+#TRIGGER {You hear a whine as retrieval lines extend from the ship.} {playsound {cosmic rage/ships/misc/ret1.wav} @vol; #gagline all}
+#TRIGGER {You hear a whine and a thunk as the ship retracts its retrieval lines.} {playsound {cosmic rage/ships/misc/ret2.wav} @vol; #gagline all}
+#TRIGGER {a swarm of * drones leave the store.} {playsound {cosmic rage/ships/misc/droneout.wav} @vol; #gagline all}
+#TRIGGER {a swarm of * drones storm in and disappear out the back, their work complete.} {playsound {cosmic rage/ships/misc/dronein.wav} @vol; #gagline all}
+#TRIGGER {You turn on * and walk over to *  begin cleaning it.} {playsound {cosmic rage/ships/misc/hose.wav} @vol; #gagline all}
+#TRIGGER {* turns on * and walks over to *  begin cleaning it.} {playsound {cosmic rage/ships/misc/hose.wav} @vol; #gagline all}
 #TRIGGER {* hums to life as it begins to shoot water at *} {#gagline all};
-#TRIGGER {Dirt and dust falls in lumps and is washed away from  *} {#gagline all};
-#TRIGGER { The gleaming hull of *} {#gagline all};
-#TRIGGER {Loud bangs and crashes, accompanied by hammering sounds, can be heard from the hull.} {playsound {cosmic rage/ships/misc/upgrade.wav} @vol; #gagline all};
-#TRIGGER {The ship shudders once more and finally exits the wormhole.} {playsound {cosmic rage/ships/movement/wormhole2.wav} @vol; #gagline all};
+#TRIGGER {Dirt and dust falls in lumps and is washed away from  *} {#gagline all}
+#TRIGGER { The gleaming hull of *} {#gagline all}
+#TRIGGER {Loud bangs and crashes, accompanied by hammering sounds, can be heard from the hull.} {playsound {cosmic rage/ships/misc/upgrade.wav} @vol; #gagline all}
+#TRIGGER {The ship shudders once more and finally exits the wormhole.} {playsound {cosmic rage/ships/movement/wormhole2.wav} @vol; #gagline all}
+#trigger {Half of a swarm of gleaming silver drones go into The * while the other half begin work on the outside.} {playsound {Cosmic Rage/activities/planetoid/cargorepair.wav} @vol; #alarm 2 {playsound {Cosmic Rage/general/combat/suit/repair.wav} @Vol}}
+#TRIGGER {You feel a vibration as a ship begins to dock.} {playsound {cosmic rage/ships/misc/dock2.wav} @vol; #gagline all}
+#trigger {The vibrations stop as a ship docks.} {#gagline all}
+#TRIGGER {A rumbling fills the ship as something undocks.} {playsound {cosmic rage/ships/misc/dock1.wav} @vol; #gagline all}

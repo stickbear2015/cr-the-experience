@@ -9,6 +9,8 @@ playsound {Cosmic Rage/general/combat/enemy/drosmash.wav} @gvol;
 playsound {Cosmic Rage/general/combat/enemy/drosmash.wav} @gvol;
 #if {@PanShipCombat = "Enables"} {
 #PC %Playhandle Pan %Random(-2500,3500)}}}
+#trigger {* dies due to a mangled *.} {#gagline all}
+#trigger {Nothing drop to the ground.} {#gagline all}
 #trigger {It hits * * *} {#if {%1 = "droidic"} {playsound {Cosmic Rage/general/combat/enemy/droid/hurt*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%2 = "embahi"} {playsound {Cosmic Rage/general/combat/enemy/embhit*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%1 = "Baurgan"} {playsound {Cosmic Rage/general/combat/enemy/baurg/hurt*4.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%1 = "vacus"} {playsound {Cosmic Rage/general/combat/enemy/vacushit*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%2 = "alian"} {playsound {Cosmic Rage/general/combat/enemy/alianhit*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%2 = "droid"} {playsound {Cosmic Rage/general/combat/enemy/droid/bighurt*3.wav}@gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}}
 #trigger {* * falls to the ground, dead.} {#if {%1 = "droidic"} {playsound {Cosmic Rage/general/combat/enemy/droid/die*3.wav} @gvol}; #if {%2 = "embahi"} {playsound {Cosmic Rage/general/combat/enemy/embdie.wav} @gvol}; #if {%1 = "Baurgan"} {playsound {Cosmic Rage/general/combat/enemy/baurg/die*2.wav} @gvol}; #if {%1 = "vacus"} {playsound {Cosmic Rage/general/combat/enemy/vacusdie.wav} @gvol}; #if {%2 = "alian"} {playsound {Cosmic Rage/general/combat/enemy/aliandie*2.wav} @gvol}; #if {%2 = "wasteland monster"} {playsound {Cosmic Rage/general/combat/enemy/monsterdie.wav} @gvol}; #if {%2 = "droid"} {playsound {Cosmic Rage/general/combat/enemy/droid/bigdie*3.wav} @gvol}}
 #trigger {The stun is absorbed by *} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/stunarmor.wav} @gvol}
@@ -135,3 +137,4 @@ playsound {cosmic rage/general/combat/enemy/monsterdie.wav} @gvol}
 
 
 #trigger {* lunges from out of a pile of trash!} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monsterapp.wav} @gvol}
+#trigger {The head of * sails away, cleanly knocked off.} {#gagline all}

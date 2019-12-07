@@ -17,8 +17,10 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You sit*} {playsound {cosmic rage/general/misc/sit.wav} @vol} {} AnyCase
 #TRIGGER {* sits down *} {playsound {cosmic rage/general/misc/sit.wav} @vol};
-#TRIGGER {You stand up.} {playsound {cosmic rage/general/misc/stand.wav} @vol};
-#TRIGGER {* stands up.} {playsound {cosmic rage/general/misc/stand.wav} @vol};
+#TRIGGER {You stand up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
+#TRIGGER {* stands up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
+#trigger {You lie down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
+#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
 #TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
@@ -55,6 +57,8 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {You tap an icon and are surrounded by a beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}}
 #trigger {Your vision goes temporarily black as you are yanked from your ship!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol}
 #trigger {Your vision goes black as you are teleported somewhere else!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};
+#trigger {A beam of light suddenly appears around you. when it clears, you are somewhere else!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};
+#trigger {A beam of light pearces the clouds and you are suddenly swept up by a teleporter.} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};
 #TRIGGER {*selects an icon on the teleportation console and is surrounded by a beam of light. When the light fades * is no longer there!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #TRIGGER {* vanishes in a bright beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #trigger {* vanishes in a beam of light!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};

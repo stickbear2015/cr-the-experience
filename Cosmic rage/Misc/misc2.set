@@ -28,3 +28,6 @@
 #TRIGGER {* You hear the roar of an approving crowd. *} {playsound {Cosmic Rage/general/misc/pvpon.wav} @vol}
 #TRIGGER {You toss *} {playsound {Cosmic Rage/general/misc/trash.wav} @vol}
 #TRIGGER {You land with a painful thump on the other side of the room.} {playsound {Cosmic Rage/general/misc/thump.wav} @vol}
+#TRIGGER {you enter some digits into a crystal refiner, before tapping go.} {playsound {Cosmic Rage/general/misc/crystalrefiner.wav} @vol}
+#TRIGGER {a crystal refiner falls silent.} {playsound {Cosmic Rage/general/misc/crystalDROP.wav} @vol}
+#TRIGGER {This save came courtesy of *} {playsound {Cosmic Rage/general/misc/save.wav} @vol}

@@ -114,3 +114,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {You feel a vibration as a ship begins to dock.} {playsound {cosmic rage/ships/misc/dock2.wav} @vol; #gagline all}
 #trigger {The vibrations stop as a ship docks.} {#gagline all}
 #TRIGGER {A rumbling fills the ship as something undocks.} {playsound {cosmic rage/ships/misc/dock1.wav} @vol; #gagline all}
+#trigger {The ship shudders as it enters warp space at warp premium level.} {#gagline all}

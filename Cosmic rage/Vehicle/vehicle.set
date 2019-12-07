@@ -26,23 +26,16 @@ playsound {cosmic rage/vehicle/transfer.wav} @vol}
 #trigger {You hear a slight thrumming noise as the engine begins to power up.} {
 #gagline all;
 playsound {cosmic rage/vehicle/start.wav} @Vevol}
-#trigger {* dramatically hit* a star shaped button.} {
+#trigger {* dramatically hit* a star*shaped button.} {
 #gagline all}
-#trigger {A humming sound fills the vehicle as it begins to recharge.} {
-#gagline all;
-loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol;#var chargeHandle %playHandle; #var charging 1}
 #trigger {The hum* stop* as the vehicle * recharg*.} {
 #gagline all;
 #if {@charging = 1} {
 #pc @chargeHandle stop;
 #var charging 0}}
-#trigger {A low hum fills the vehicle as it begins to recharge.} {
+#trigger {A*hum*fills the vehicle as it begins to recharge.} {
 #gagline all;
 loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vol;#var chargeHandle %playHandle; #var charging 1}
-#trigger {The hum stops as the vehicle is fully recharged.} {
-#if {@charging = 1} {
-#pc @chargeHandle stop;
-#var charging 0}}
 #class ambon disable
 #trigger {The engine hum ceases completely.} {
 #gagline all;
@@ -188,6 +181,5 @@ playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
-#trigger {The engine hum ceases completely.} {#gagline all}
 #trigger {a gleaming silver drone clamps onto * and tugs it into the back of the store, out of sight.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/cargorepair.wav} @vol; #alarm 2 {playsound {Cosmic Rage/general/combat/suit/repair.wav} @Vol}}
 #trigger {a gleaming silver drone pushes * into the store.} {#gagline all}

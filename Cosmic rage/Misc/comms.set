@@ -153,5 +153,12 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #TRIGGER {You hear an urgent beeping from * informing you someone requires picking up.} {playsound {Cosmic Rage/general/comms/pickup.wav} @commsvol} {} AnyCase
 #TRIGGER {This is meteor monitoring at * A meteor storm just opened up *} {playsound {Cosmic Rage/general/comms/meteor.wav} @commsvol} {} AnyCase
 #trigger {You rumble *} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol;#additem say %0}
-#trigger {* rumbles *} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol;#additem say %0}
+#trigger {* rumbles *} {
+#if {%ifword(engine,%1," ") or %ifword(pod,%1," ")} {
+#abort 1} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol};#additem say %0}\
 #trigger {emergency! *} {playsound {Cosmic Rage/general/gmc/alarm.wav} @vol}
+#trigger {You * the external microphone.} {
+#if {%ifword(activate,%1," ")} {
+playsound {cosmic rage/general/comms/activate.wav} @vol};
+#if {%ifword(deactivate,%1," ")} {
+playsound {cosmic rage/general/comms/deactivate.wav} @vol}}

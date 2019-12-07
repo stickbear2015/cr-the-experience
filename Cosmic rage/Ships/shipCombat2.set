@@ -29,14 +29,16 @@ playsound {cosmic rage/ships\combat\otherhit*3.wav} @cvol;#if {@panShipCombat = 
 #TRIGGER {An on screen hologram shows a * hit on * of *.} {
 #sub {%1 hit on %2 of %3.};
 #if {%ifword(direct,%1," ")} {
-playsound {cosmic rage/ships/combat/direct1.wav} @cvol};
+playsound {cosmic rage/ships/combat/direct3.wav} @cvol};
 #if {%ifword(indirect,%1," ")} {
 playsound {cosmic rage/ships/combat/indirect*2.wav} @CVol}}
 #trigger {* "armor at * percent."} {playsound {cosmic rage/ships/computer/dalert.wav} @vol}
 #trigger {* "shields at * percent."} {playsound {cosmic rage/ships/computer/salert.wav} @vol}
 #trigger {* "Hull breech at *"} {playsound {cosmic rage/ships/combat/hullbreech.wav} @vol}
 #TRIGGER {You hear the sound of the defense systems crumpling under from a hit.} {Playsound {cosmic rage\ships\Combat\yd*2.wav} @vol}
-#trigger {You hear a buzz and then a crackle as the shields fail.} {playsound {cosmic rage/ships/combat/shieldsdown.wav} @vol}
+#trigger {The ship gives a giant shudder and there is an alarmingly loud crash and smash from the hull as the defensive armour completely fails.} {Playsound {cosmic rage\ships\Combat\yd*2.wav} @vol}
+#trigger {You hear a buzz and then a crackle as the shields fail.} {playsound {cosmic rage/ships/combat/ShieldsFail.wav} @vol}
+#trigger {There is an ominous buzz followed by a loud, electronic crackle as the shields completely fail.} {playsound {cosmic rage/ships/combat/ShieldsFail.wav} @vol}
 #trigger {You hear a soft ping sound.} {#gagline all; playsound {cosmic rage/ships/combat/recall.wav} @cvol}
 
 #trigger {There is a deep boom as the pulse cannon fires.} {#gagline all; playsound {cosmic rage/ships/combat/PulseCannon.wav} @CVol; #if {@panShipCombat = "Enabled"} {

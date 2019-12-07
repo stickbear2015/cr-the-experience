@@ -5,6 +5,7 @@
 #pc %playhandle pan %random(-4000,4000)}}
 #trigger {* hum begins to resonate throughout the ship.} {#gagline all; playsound {Cosmic Rage/ships/combat/ObfStart.wav} @CVol} {} AnyCase
 #TRIGGER {The hum crescendos until, with a thump, the obfuscation field generator activates.} {#gagline all; playsound {cosmic rage/ships/combat/ObfOn.wav} @CVol} 
+#trigger {There is the strained whine of power enhancers as the obfiscation field works to deflect incoming damage.} {#gagline all}
 #trigger {*"Deactivating obfuscation field."} {#gagline all; playsound {Cosmic Rage/ships/combat/ObfFade.wav} @CVol}
 #TRIGGER {Silence fills the ship as the obfuscation field generator goes offline.} {#gagline all; playsound {cosmic rage/ships/combat/ObfOff.wav} @CVol};
 #TRIGGER {You here a voom as the EMP is fired.} {#gagline all; playsound {cosmic rage/ships/combat/emp.wav} @CVol;
@@ -110,7 +111,31 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #TRIGGER {You hear several loud bongs as the defensive armour deflects damage.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#TRIGGER {The defensive armour creaks and lets out short sharp pings as laser fire hits it.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#TRIGGER {The defensive armour lets out several dull booms as it is slammed by cannon fire.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#TRIGGER {Loud explosions echo throughout the ship as a warhead slams into the defensive armour.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#TRIGGER {The defensive armour lets out loud bongs as it continually deflects damage.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {The ship lurches as something impacts it directly.} {#gagline all; playsound {cosmic rage/ships/combat/YouHit*6.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#trigger {The hull creaks and lets out short sharp pings as laser fire hits it.} {#gagline all; playsound {cosmic rage/ships/combat/YouHit*6.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#trigger {The hull groans alarmingly as it is slammed by cannon fire.} {#gagline all; playsound {cosmic rage/ships/combat/YouHit*6.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#trigger {An explosion comes from the ship's hull as a warhead slams into it.} {#gagline all; playsound {cosmic rage/ships/combat/YouHit*6.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#trigger {The hull lets out alarmingly loud cracks as it continually takes damage.} {#gagline all; playsound {cosmic rage/ships/combat/YouHit*6.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {A hum fills the ship as the shields are powered up.} {#gagline all; playsound {cosmic rage/ships/combat/shieldson.wav} @CVol};
@@ -162,14 +187,21 @@ playsound {cosmic rage/ships/combat/lightning laser.wav} @CVol;
 playsound {cosmic rage/ships/combat/shieldDeflect.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#trigger {There is a light zing as laser fire ricochets off of the shields.} {
+#gagline all;
+playsound {cosmic rage/ships/combat/shieldDeflect.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#trigger {The shields let out loud hums as they continually deflect damage.} {
+#gagline all;
+playsound {cosmic rage/ships/combat/shieldDeflect.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
 #trigger {A drone wheels out of the bay.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/combat drone launch.wav} @CVol}
 #trigger {You hear the whoosh of a combat drone launching into space.} {
 #gagline all}
-#trigger {* drone wheels in and settles in a charging station.} {
-#gagline all;
-playsound {cosmic rage/ships/combat/combatDroneRecall.wav} @CVol}
 #trigger {* combat drone slides into the slot with a click, ready for use.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/combatDroneInstall.wav} @CVol}

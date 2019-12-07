@@ -1,3 +1,57 @@
+1402 Updated by Frederick. Added some code so that the rumbling of the automated pods do not trigger the dragon rumble sounds. These pods are the ones you take to and from ground combat missions.
+copy cosmic rage/misc/comms.set
+1401 Updated by frederick, sound provided by Stormy. I have updated the sorting process by adding some code to bring the initial sorting sound to a stop when the laser fires at the rocks. Also, a sound has been added for when the item chosen to be sorted, has already been dealt with, so the sorting laser lowers back into the console. Enjoy.
+copy sounds/activities/MechanicalMining/SortLower.wav, and cosmic rage/activities/MechanicalMining.set
+1400 stormy, credits Walric, added a sound when someone force saves
+copy misc misc2.set and sounds  general misc save.wav
+1399, James, added new triggers to social sounds.
+copy cosmic rage\misc\socials.set
+1398 Updated by Frederick. I have fixed it so if the gagging of harvesting items is enabled, you will not hear everything the volcano harvester gathers. If Gagging of harvested items is disabled, you'll hear what's being harvested.
+copy cosmic rage/activities/VolcanoHarvesting.set
+1397 STORMY, ADDED SOUNDS FOR PLANETARY POD acccelarating and decelerating
+copy ships pd.set
+1396 Updated by frederick. Removed a trigger that had sub text for analyzing a star core because, in actuality, it didn't really need to have sub text for it.
+copy cosmic rage/activities/StarCoring.set
+1395 stormy, changed the auction sounds because old ones are verry bad
+copy sounds general auction folder
+1394 stormy, removed a comma from the last  change viewer
+copy misc keys.set
+1393 stormy, credits dave, gagged one of the warp messages
+copy ships  ships2.set
+1392  stormy, credits james, raised one of the room ship volumes
+copy sounds ships room deck.wav
+1391, James, cleaned up some choppy code in ships.set. gravjump now sets a handle for the no power sound when it loops, and a new trigger was added for someone else flipping a switch so the sound plays.
+copy cosmic rage\ships\ships.set
+1390, James, Added a lot of new triggers to shipCombat and shipCombat2 to go with the new combat messages. If you want sounds to go with them, please let us know.
+copy cosmic rage\ships\shipCombat.set and shipCombat2.set
+1389, James, Corrected a reference to a file for the shields failing sound.
+copy cosmic rage\ships\shipCombat2.set
+1388, James, updated messages for shields failing.
+copy cosmic rage\ships\shipCombat2.set
+1387, James, fixed a power off trigger in vehicles.
+copy cosmic rage\vehicle\vehicle.set
+1386, James, updated a trigger with defensive armor failing.
+copy cosmic rage\ships\shipCombat2.set
+1385 stormy, removed taht component damage thing because blame nate
+copy ships component.set
+1384 stormy, fixed up crystal refiners
+copy misc misc2.set
+1383 stormy, fixed up combat drones, fixed bunch of sounds, fixed some weapons and other things i forgot
+copy sounds cr ships folder and ships script folder
+1382, James, Fixed a spelling error in trash collection.
+copy cosmic rage\activities\trash.set
+1381 Updated by Frederick. We once again have a sound when a ground combat mission is over.
+copy cosmic rage/combat/GroundCombat.set
+1380, James, added some more triggers for teleportation, this time involving taxis and planets blocked by weather.
+copy cosmic rage\misc\misc.set
+1379 Updated by frederick. added triggers having to do with lying down on things.
+copy cosmic rage/misc/misc.set
+1378 updated by Lara: Fixed a couple stand triggers.
+copy misc/misc.set
+1377 Updated by frederick. Tightened up the code on recharing vehicles, so there is just one trigger for starting the recharge, and one for when it finishes, despite the subtle word changes in the recharge texts among vehicles.
+copy cosmic rage/vehicle/vehicle.set
+1376 Updated by Frederick, credits to Keeka Davis. I added some code to stop the eating loop when someone else feeds a baby, where the baby then cuddles up to their parent all full up, but the eating kept going.
+copy cosmic rage/misc/babies.set
 1375 stormy, updated the config manager with missing help files
 copy misc soundpacks.set
 1374 stormy, updated the f a q  help file

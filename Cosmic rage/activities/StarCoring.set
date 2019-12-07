@@ -57,9 +57,8 @@ playsound {cosmic rage\ships\combat\emp.wav} @vol}
 #trigger {On screen, you see the lasers cut into *} {#gagline voice}
 #trigger {You tap analyse.} {#gagline all}
 #trigger {*"Core already analysed. powering down."} {playsound {Cosmic Rage/activities/star cores/PowerDown.wav} @vol}
-#trigger {* "Beginning to analyse star core*} {#sub {analysing, please wait.}}
 #trigger {some drones take some gas from * and shoot off into the sky with it.} {#gagline all}
-#trigger {*"Locked onto star core*"} {
+#trigger {The computer announces: "Locked onto star *. *."} {
 #sub {Locked on to the star core.};
 playsound {cosmic rage/activities/star cores/corestart.wav} @vol;
 #var CoreStartHandle %playhandle}

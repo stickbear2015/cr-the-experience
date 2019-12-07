@@ -38,5 +38,5 @@ playsound {cosmic rage/ships/computer/keyboard*5.wav} @vol}
 #trigger {You hear a clang as the harvesting equipment loses grip and returns to the vehicle.} {
 #gagline voice;
 playsound {cosmic rage/activities/MechanicalMining/slam.wav} @vol}
-#trigger {* harvested.} {
-#if {@gagharvest = "Enabled"} {#gagline all} {#sub {%1 harvested.}}}
+#trigger {The computer announces: "* harvested."} {
+#if {@gagharvest = "Enabled"} {#gagline voice}}

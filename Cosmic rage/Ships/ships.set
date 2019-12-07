@@ -115,14 +115,17 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol}
 #trigger {You hear a slight whine as the orbiting thrusters kick in.} {
 #gagline all;
 playsound {cosmic rage/ships/movement/orbit.wav} @vol}
-#trigger {The lights flicker and die from a power surge.} {#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
-#trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
+#trigger {The lights flicker and die from a power surge.} {#if {@ShipSoundPlaying = 1} {#pc @shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #pc @shiphandle %Playhandle; #var ShipSoundplaying 1; #var CurrentRoom "off"; #var CurrentRoom2 "notmisc"}
+#trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {#if {@ShipSoundPlaying = 1} {#pc @shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #pc @shiphandle %Playhandle; #var ShipSoundplaying 1; #var CurrentRoom "off"; #var CurrentRoom2 "notmisc"}
 #trigger {The roar of the engines calm down and the ship settles.} {
 #gagline all}
 #trigger {the ship lurches violently and you hear a deafening boom!} {
 #gagline all;
 playsound {cosmic rage/ships/misc/boom.wav} @vol}
 #trigger {You flip a switch on the main console.} {
+#gagline all;
+playsound {cosmic rage/ships/misc/switch.wav} @vol}
+#trigger {* flips a switch on the main console.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {You hear a groan and the ship begins to lurch forwards.} {
@@ -168,7 +171,7 @@ playsound {cosmic rage/ships/misc/moduleMove*8.wav} @vol}
 playsound {cosmic rage/ships/movement/orbit.wav} @vol}
 #trigger {* wheels into the bay and slots into a holder.} {
 #gagline all;
-playsound {cosmic rage/ships/misc/droneWheeling.wav} @vol}
+playsound {cosmic rage/ships/combat/combatdronerecall.wav} @cvol}
 #trigger {Your ship has been loaded up. *} {
 playsound {cosmic rage/ships/misc/transferEnd.wav} @vol}
 #trigger {You heave at the controls, slowing the ship to a mere crawl.} {

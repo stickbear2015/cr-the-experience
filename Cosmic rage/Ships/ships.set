@@ -115,8 +115,8 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol}
 #trigger {You hear a slight whine as the orbiting thrusters kick in.} {
 #gagline all;
 playsound {cosmic rage/ships/movement/orbit.wav} @vol}
-#trigger {The lights flicker and die from a power surge.} {#if {@ShipSoundPlaying = 1} {#pc @shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #pc @shiphandle %Playhandle; #var ShipSoundplaying 1; #var CurrentRoom "off"; #var CurrentRoom2 "notmisc"}
-#trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {#if {@ShipSoundPlaying = 1} {#pc @shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #pc @shiphandle %Playhandle; #var ShipSoundplaying 1; #var CurrentRoom "off"; #var CurrentRoom2 "notmisc"}
+#trigger {The lights flicker and die from a power surge.} {#if {@ShipSoundPlaying = 1} {#pc @Shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #var Shiphandle %Playhandle; #var ShipSoundPlaying 1; #var CurrentRoom "off"; #var CurrentRoom2 "notmisc"}
+#trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {#if {@ShipSoundPlaying = 1} {#pc @Shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #pc @Shiphandle %Playhandle; #var ShipSoundplaying 1; #var CurrentRoom "off"; #var CurrentRoom2 "notmisc"}
 #trigger {The roar of the engines calm down and the ship settles.} {
 #gagline all}
 #trigger {the ship lurches violently and you hear a deafening boom!} {
@@ -153,7 +153,7 @@ playsound {cosmic rage/vehicle/lever.wav} @vol}
 #gagline all;
 playsound {cosmic rage/ships/misc/cycle.wav} @vol}
 #trigger {The hum of the engines come to an abrupt halt and the lights flicker to emergency level as the ships power goes offline.} {
-#pc 0 stop; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol}
+#if {@ShipSoundPlaying = 1} {#pc @Shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #pc @Shiphandle %playhandle; #var ShipSoundPlaying 1}
 #trigger {You hook * into the local computer systems and press the button on the top.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/buttonPush.wav} @vol}
@@ -292,6 +292,7 @@ playsound {cosmic rage/ships/misc/courseSet.wav} @vol}
 #trigger {You pull back on a lever and then tap a few icons on the main screen.} {playsound {Cosmic Rage/ships/misc/Lever4.wav} @vol; #gagline all}
 #trigger {The ship rumbles slightly as its landing engines begin to move it.} {#gagline all}
 #trigger {The ship lurches and launches into space with a roar.} {playsound {Cosmic Rage/ships/misc/LaunchFromDockingBay.wav} @vol; #gagline all}
+#trigger {The ship's engines rumble and then quiet as the ship settles on its equalising thrusters.} {playsound {Cosmic Rage/ships/misc/LaunchFromDockingBay.wav} @vol; #gagline all}
 #trigger {The ship lurches and begins to slow down.} {playsound {Cosmic Rage/ships/Movement/deceleration.wav} @vol; #gagline all}
 #trigger {you carefully maneuver the ship into * orbit.}  {playsound {Cosmic Rage/ships/movement/orbit.wav} @vol; #gagline all}
 #trigger {The ship buckles and jerks as it exits a rift, the engines roaring loudly as they struggle to combat inertia.} {playsound {Cosmic Rage/ships/misc/ExitRift.wav} @vol; #gagline all}
@@ -378,6 +379,10 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #gagline all;
 playsound {cosmic rage/ships/misc/barrel.wav} @vol}
 #trigger {The computer announces: "*"} {
+#if {%ifword(Extracting minerals...,%1," ")} {
+#abort};
+playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}
+#trigger {The computer announces:  "*"} {
 #if {%ifword(Extracting minerals...,%1," ")} {
 #abort};
 playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}

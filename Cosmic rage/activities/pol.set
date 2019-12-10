@@ -57,5 +57,5 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {the sound of well-oiled mechanics can be heard as, on screen, the pollution scoopers retract.} {#gagline all}
 #trigger {A slight whine fills the air as the scoopers continue to retract.} {#gagline all}
 #trigger {The pod rocks a little as just next to it, and visible on the screen, the scoopers enter the vehicle.} {#gagline all}
-#trigger {The vehicle rocks in place as several heavy-duty lasers are fired at an object!} {#gagline all; playsound {Cosmic Rage/activities/star study/laser.wav} @vol}
+#trigger {The vehicle rocks in place as several heavy-duty lasers are fired at an object!} {#gagline all; playsound {Cosmic Rage/activities/star study/lasers.wav} @vol}
 #trigger {You tap stop.} {#gagline all; #if {@launch = 1}  {playsound {Cosmic Rage/activities/pol/move4.wav} @vol; #alarm 0.4 {#PC @launchhandle Frequency 44000}}}

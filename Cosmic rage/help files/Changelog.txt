@@ -1,3 +1,13 @@
+1407, James, Added a trigger for launching out of docking bays in ships because some ships aren't using the right one for some reason.
+copy cosmic rage\ships\ships.set
+1406 stormy, credits maylynn, lowered the volume of the medic medic medic stunned sound because why not, i mean i never planned but you kno
+copy sounds general combat stunned.wav
+1405, James, Fixed an error in a file reference in pollution reparation.
+copy cosmic rage\activities\pol.set
+1404 stormy, hardcore sound is redone
+copy sounds general misc hardcore.wav
+1403, James, thought i had fixed gravjumps, but I had a bad command in there. It's fixed now. Enjoy.
+copy cosmic rage\ships\ships.set
 1402 Updated by Frederick. Added some code so that the rumbling of the automated pods do not trigger the dragon rumble sounds. These pods are the ones you take to and from ground combat missions.
 copy cosmic rage/misc/comms.set
 1401 Updated by frederick, sound provided by Stormy. I have updated the sorting process by adding some code to bring the initial sorting sound to a stop when the laser fires at the rocks. Also, a sound has been added for when the item chosen to be sorted, has already been dealt with, so the sorting laser lowers back into the console. Enjoy.

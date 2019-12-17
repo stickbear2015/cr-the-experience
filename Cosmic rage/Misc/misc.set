@@ -57,8 +57,6 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {You tap an icon and are surrounded by a beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}}
 #trigger {Your vision goes temporarily black as you are yanked from your ship!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol}
 #trigger {Your vision goes black as you are teleported somewhere else!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};
-#trigger {A beam of light suddenly appears around you. when it clears, you are somewhere else!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};
-#trigger {A beam of light pearces the clouds and you are suddenly swept up by a teleporter.} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};
 #TRIGGER {*selects an icon on the teleportation console and is surrounded by a beam of light. When the light fades * is no longer there!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #TRIGGER {* vanishes in a bright beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #trigger {* vanishes in a beam of light!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
@@ -327,3 +325,10 @@ playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
 #trigger {Enter a number, or a partial item name.} {#gagline all}
 #trigger {*C O N G R A T U L A T I O N S!*} {#sub {Congratulations! You have completed a task!};
 playsound {cosmic rage/general/misc/congratulations.wav} @vol}
+#trigger {A * light blinks cheerily from the screen of a basic communications pack.} {
+#if {%ifword(red,%1," ")} {
+playsound {cosmic rage/general/misc/CommPackRed.wav} @vol};
+#if {%ifword(green,%1," ")} {
+playsound {cosmic rage/general/misc/CommPackGreen.wav} @vol};
+#sub {%1 light.}}
+#trigger {You click test on a basic communications pack.} {#gagline all}

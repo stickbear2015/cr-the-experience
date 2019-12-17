@@ -1,3 +1,12 @@
+1411 Updated by frederick. Added sounds for when you get green or red light after testing a communications pack.
+copy sounds/cr/general/misc/CommPackGreen.wav and CommPackRed.wav
+copy cosmic rage/misc/misc.set
+1410 Updated by Frederick, updated file provided by Dave Alderton. Updated the deck ambiance for ships.
+copy sounds/cr/ships/rooms/deck.wav
+1409, James, Updated a trigger to remove a quotation mark at the end of the temperature trigger for bioplasma harvesting.
+copy cosmic rage\activities\BioHarvesting.set
+1408 stormy, updated the help files about the ability to toggling the shower music
+copy help files folder
 1407, James, Added a trigger for launching out of docking bays in ships because some ships aren't using the right one for some reason.
 copy cosmic rage\ships\ships.set
 1406 stormy, credits maylynn, lowered the volume of the medic medic medic stunned sound because why not, i mean i never planned but you kno

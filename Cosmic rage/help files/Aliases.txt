@@ -86,3 +86,4 @@ MF. An easier alias to use the Musicfm channel.
 TPR. Toggle bio plasma regenoration sounds.
 AirPodHelp. Get help with the airpods system.
 FixBuffers. Fixes your buffers if you see file not found errors.
+SHOWERMUSÝCTOGGLE, TOGGLES THE SHOWER MUSÝC ON AND OFF

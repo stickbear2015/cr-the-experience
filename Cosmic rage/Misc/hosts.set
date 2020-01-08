@@ -15,3 +15,4 @@
 #trigger {A pair of ghostly silver wings spread out from * back and she lifts her arms, ascending into the heavens and vanishing into a sheet of moonlight.} {playsound {Cosmic Rage/hosts/laraout.wav} @vol}
 #trigger {* has just been killed!} {playsound {Cosmic Rage/hosts/kill1.wav} @vol} {} AnyCase
 #trigger {* materialises in your hand.} {playsound {Cosmic Rage/hosts/mater.wav} @vol} {} AnyCase
+#trigger {The entire universe gives a tremble of terror as godly bolts of energy thunder down from the sky., *} {playsound {Cosmic Rage/hosts/evil.wav} @vol} {} AnyCase

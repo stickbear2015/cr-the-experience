@@ -1,3 +1,11 @@
+1415 stormy, credits gaius, added fiew ratika stuff
+copy ships rats.set and sounds cr ships ratika folder
+1414 stormy, credits seth, the auction bidding sound plays once again
+copy misc misc.set
+1413 stormy, credits dave, added an evil sound for hosts
+copy misc hosts.set and sounds cr hosts evil.wav
+1412 stormy, credits frederick, added a sound when droids repair themselves
+copy combat groundcombat.set and sounds cr general combat enemy dorid repair.wav
 1411 Updated by frederick. Added sounds for when you get green or red light after testing a communications pack.
 copy sounds/cr/general/misc/CommPackGreen.wav and CommPackRed.wav
 copy cosmic rage/misc/misc.set

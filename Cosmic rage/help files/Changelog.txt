@@ -1,3 +1,37 @@
+1440 stormy, cleaned fiew ambiences as well, with all those ambience optimisations, the pack is now 120 mb smaller
+copy sounds whole ambiences folder
+1439 stormy, optimised the volcano harvester sound, so its no longer rhumbly and crackly.
+copy sounds ambiences volcano.wav
+1438 stormy, played with the pool ambience
+copy sounds ambiences pool.wav
+1437 STORMY, THE PLASA AMBÝENCE HAS BEEN REDONE
+COPY SOUNDS AMB Plaza.wav
+1436 STORMY, CHANGED THE OperationsCenter AND PARK AMBÝENCES
+COPY SOUNDS AMBÝENCES PARK AND cOperationsCenter.wav
+1435 stormy, mountin and lake sounds are changed
+copy sounds amb mountin and lake.wav
+1434 stormy, hangar ambience is changed
+copy sounds amb hangar.wav
+1433 stormy, changed the Hallway.wav, no idea which ambience is it
+copy sounds ambiences Hallway.wav
+1432 stormy, changed the hall ambience
+copy sounds ambiences hall.wav
+1431 stormy, changed the factory lounge ambience
+copy sounds cr ambiences Factory Lounge.wav
+1430 stormy, changed cave ambience
+copy sounds cr ambiences cave.wav
+1429 stormy, changed the cathedral sound
+copy sounds cr ambiences cathedral.wav
+1428 stormy, changed the beach ambience
+copy sounds cr ambience beach.wav
+1427 stormy, the 4.5 minute bar sound is now 14.5 seconds
+copy sounds cr ambiences bar.wav
+1426 stormy, 4 minute woods ambience is now 8.265 seconds
+copy sounds cr ambiences woods.wav
+1426 stormy, credits, firath and lara, the almost 4 minute shopping center ambience is now 9.97 seconds
+copy  sounds cr ambiences shopping.wav
+1425, James, the link request sound will no longer yell at you, as it has now been linked properly to the comms volume.
+copy cosmic rage\misc\comms.set
 1424 stormy, credits, ,,, , removed those pesky moan sounds
 copy misc socials.set
 1423 stormy, credits frederick, added a sound when the volcano harvest gear centered

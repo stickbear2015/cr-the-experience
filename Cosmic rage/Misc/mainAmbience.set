@@ -190,6 +190,13 @@ loopsound {cosmic rage/Ambiences/Hangar.wav} @roomvol;
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Factory Control Room.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "control"; #var currentroom2 "notmisc"}};
+#If {%IfWord(operations,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "operations"} {
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/Factory Control Room.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "operations"; #var currentroom2 "notmisc"}};
 #If {%IfWord(lounge,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "lounge"} {

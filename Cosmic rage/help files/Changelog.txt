@@ -1,3 +1,5 @@
+1441, James, credits Shelby, the OperationsCenter.wav file now plays for factory operations centers.
+copy cosmic rage\misc\MainAmbience.set
 1440 stormy, cleaned fiew ambiences as well, with all those ambience optimisations, the pack is now 120 mb smaller
 copy sounds whole ambiences folder
 1439 stormy, optimised the volcano harvester sound, so its no longer rhumbly and crackly.

@@ -1,3 +1,5 @@
+1442, James, Fixed the issues with the volcano harvesting centering sound not playing.
+copy cosmic rage\activities\volcanoHarvesting.set and cosmic rage\ships\ships.set
 1441, James, credits Shelby, the OperationsCenter.wav file now plays for factory operations centers.
 copy cosmic rage\misc\MainAmbience.set
 1440 stormy, cleaned fiew ambiences as well, with all those ambience optimisations, the pack is now 120 mb smaller

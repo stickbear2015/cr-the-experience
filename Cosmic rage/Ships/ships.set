@@ -381,6 +381,8 @@ playsound {cosmic rage/ships/misc/barrel.wav} @vol}
 #trigger {The computer announces: "*"} {
 #if {%ifword(Extracting minerals...,%1," ")} {
 #abort};
+#if {%ifword(Harvesting gear centered.,%1," ")} {
+playsound {cosmic rage/activities/volcanoHarvesting/center.wav} @vol};
 playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}
 #trigger {The computer announces:  "*"} {
 #if {%ifword(Extracting minerals...,%1," ")} {

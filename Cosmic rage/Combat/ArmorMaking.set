@@ -4,3 +4,4 @@
 #pc @HammerStarthandle stop;
 #var HammerStart 0}}
 #trigger {Trying again, you find the metal at least touchable, and tip it into a bucket of water.} {#gagline all; playsound {Cosmic Rage/general/combat/armor/water.wav} @vol}
+#trigger {You dig into the ground with *} {#gagline all; playsound {cosmic rage/activities/hand mining/dig*2.wav} @vol}

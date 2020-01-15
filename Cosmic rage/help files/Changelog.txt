@@ -1,3 +1,5 @@
+1446 stormy, credits dmitri, added fiew more sounds for armor
+copy misc wear.set
 1445 stormy, added a sound when you dig for armor parts
 copy combat armormaking.set
 1444 stormy, credits, all the people got sic of those train sounds, after 1 hour of listening over 20 train sounds and an extra 30 mins for testing and coding, i'd like you to introduce to our brand new realistic trains, enjoy

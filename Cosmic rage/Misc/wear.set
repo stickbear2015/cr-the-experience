@@ -20,3 +20,5 @@
 #trigger {You do up the buckles around the waist part of *, joining *} {playsound {cosmic rage/wear/waist.wav} @vol}
 #trigger {You step into *sui*.} {playsound {cosmic rage/wear/AboutBody.wav} @vol}
 #trigger {You step * bottom half of * and gather it up.} {playsound {cosmic rage/wear/AboutBody.wav} @vol}
+#TRIGGER {you slide your left leg into *} {playsound {cosmic rage/wear/feet.wav} @vol}
+#TRIGGER {You pull * up your legs, and buckle it around your waist.} {playsound {cosmic rage/wear/legs.wav} @vol; playsound {cosmic rage/wear/waist.wav} @vol}

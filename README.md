@@ -2,18 +2,18 @@
 This is the repository for the dropbox maintained the experience soundpack for cosmic rage.
 note all documentation is in the cosmic rage/helpfiles folder
 # readme file
-##note: this file is also available in cosmic rage/helpfiles/readme.txt
+## note: this file is also available in cosmic rage/helpfiles/readme.txt
 
-			**Introduction**
+			# Introduction
 
 Thank you for taking the time to download the VIP Cosmic Rage Experience! This document provides instructions for installing and running the soundpack, as well as references to useful commands built into the pack. It is highly recommended you read the other files in this folder as well to answer any questions you have. Snapp thanks you for doing your part to keep what's left of his sanity intact.
 
-			**System Requirements**
+			# System Requirements
 
 A computer capable of running the latest version of VIPMud 2.0 is a requirement. In addition, the soundpack requires at least 1 GB of RAM and a bit of extra processing power to accommodate the playing of wave files.  You should also have a sound card capable of playing multiple simultaneous audio streams. In this day and age, it's highly unlikely anyone would have issues, but best to be certain.
 Included in the main soundpack directory is a file called sounds.ini. This file has been optimized to allow VIP to play up to 100 sound files at a time. Just copy sounds.ini into your main documents VIP directory and answer yes to the replace file prompt if you would like to take advantage of this feature.
 
-			**Installation**
+			# Installation
 
 1. To install this soundpack, first go and obtain it. Several methods have been implemented for downloading the soundpack as well as all future updates.
 	A. VIP2.0 downloads
@@ -44,13 +44,13 @@ https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20C
 	D. Finally, save your packs settings with control-s. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not our fault if you fail to do this. It's also a good idea to back up your buffer settings and general pack settings after you get them how you'd like.
 If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting Angelica or Lara.
 
-			**Updating Your Soundpack**
+			# Updating Your Soundpack
 
 To update the soundpack using the Dropbox shared folder, please do the following:
 1. Please hit alt-V or type SpVersion and take note of the latest change listed.
 2. After this, open the folder that the soundpack is downloading to. Check the changelog and make sure you are seeing the last change that the moo showed.
 3. Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to back up your characters .set file if you don't want to lose any added alias's or triggers.
-If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
+If you have downloaded the zip version of the pack, from the github repository or if available the dropbox link, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
 The Dropbox shared folder is updated as soon as changes to code or sounds are made, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
 adding custom music for ship combat
 1, find some music
@@ -79,7 +79,7 @@ or
 pn4 ghostbusters
 hope that helps
 
-			**Miscellaneous Notes**
+			# Miscellaneous Notes
 
 In some cases, ambience fails to work for some players. This is due to the fact that they have brief mode enabled. To fix this, type brief, then disable hiding of descriptions.
 To access the configuration manager, please hit "F-2."
@@ -90,19 +90,19 @@ To see the last change that was posted, without opening the changelog, you can e
 If you have a suggestion you'd like to see added to the pack, this can be done by using the alias "SpSuggest." A note about suggestions. If one of the soundpack administrators asks for text from you to make a trigger work, whether it be for gagging the text, adding a sound, etcetera, and no text has been given to create the suggested trigger after a month's time, the suggestion will be removed as it will be assumed it is no longer desired
 If you have a bug that you need to report, this can be done by using the alias "SpBug."  Please be as detailed as possible in your bug report. Try to include the error, the command you sent that gave you the error, and any other misc information.  Bugs that contain just an error, or two words, are likely to be deleted as the soundpack administrators needs more details to implement a solution.
 
-			**Error Notice**
+			# Error Notice
 
 If you're seeing errors and you have not updated your pack prior to October 10, 2018, you must totally replace the entire Cosmic Rage directory, get rid of Cosmic Rage/misc/settings.set, then resave. This is due to how options are now configured. Failing to do this causes the pack to try to read settings entries that are not in use any longer.
 If you have updated and are not seeing errors when toggling options or changing volumes, you've nothing to worry about. This issue only seems to affect a small number of users.
 If you have any questions or concerns, please first take a look at the Help Files directory. More than likely your question will be answered in one of those documents. If not, feel free to get ahold of one of the soundpack administrators via an OTR link or over the soundpacks channel in the game. To enable the soundpacks channel, please type spon from within the MUD. To disable the channel, use the command spoff. To establish an OTR link, please type olink then hit enter. You will then be presented with an edit field. Just type the name of one of the soundpack administrators and hit enter. One of the administrators will accept your link request as soon as possible. If more help is needed with OTR links, please read the help file "Communicating out of character" in Cosmic Rage's help system.
 If a soundpack administrator is not around to answer your questions, likely someone is on the soundpacks channel who can. If not, you are more than welcome to send one of them mail on the MUD and that person will get back with you as soon as possible.
 
-			**Compatibility**
+			# Compatibility
 
 This soundpack supports the Nathan Tech VIPMud soundpack installer.
 Download from:  https://nathantech.net/files/VIPMud%20Soundpack%20Installer%20v1.0%20setup.exe
 
-			**Legal Stuff and Things**
+			# Legal Stuff and Things
 
 The soundpack administrators are not lawyers, don't know any lawyers, and are entirely unwilling to pay for the services of any legal advice regarding this project. That being said, you should note that the soundpack administrators do not guarantee any level of functionality of this soundpack with your particular situation.  The soundpack administrators may not necessarily always be available to answer questions, help you install it, ETC.  If your computer suddenly decides that it can't handle it, catches fire, melts down or produces extreme amounts of smoke or radiation that result in your untimely demise, we had nothing to do with it.  This soundpack has been tested under windows 7 and 10, as well as released for private beta use amongst friends. We would not be releasing it as such if he believed that it would not be functional to a level of acceptableness. But do keep in mind that the pack is constantly being developed, so check back frequently for updates! In smart and legal terms, we or any other developer of this pack cannot be held liable for any damages caused by using this pack or anything relating to this pack.
 

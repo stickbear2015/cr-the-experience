@@ -3,6 +3,7 @@ This is the repository for the dropbox maintained the experience soundpack for c
 note all documentation is in the cosmic rage/helpfiles folder
 # readme file
 ##note: this file is also available in cosmic rage/helpfiles/readme.txt
+
 			**Introduction**
 
 Thank you for taking the time to download the VIP Cosmic Rage Experience! This document provides instructions for installing and running the soundpack, as well as references to useful commands built into the pack. It is highly recommended you read the other files in this folder as well to answer any questions you have. Snapp thanks you for doing your part to keep what's left of his sanity intact.

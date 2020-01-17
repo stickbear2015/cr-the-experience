@@ -150,3 +150,6 @@ playsound {cosmic rage\ships\com\pa*2.wav} @vol}
 #trigger {* The surface of * rumbles as it tears itself apart, sending rocks and debris in all directions.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/impact.wav} @vol}
 #trigger {A gust of air from the planetoid equipment causes the drone to rise back up.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/gust.wav} @vol}
 #trigger {The entire ship shudders as the planetoid harvesting equipment tries to move, and fails.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/pdd.wav} @vol; #say {planetoid equipment stuck}}
+#trigger {You hear a rather unhealthy whine.} {
+#gagline all;
+playsound {cosmic rage/activities/planetoid/unwind.wav} @vol} 

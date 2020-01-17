@@ -1,5 +1,9 @@
-1450 stormy, credits blake, the transport sounds play for outside ship transports from now on
+1452 stormy, credits blake, the planetoid equipment will play a sound when it stuck for god
+copy activities/planetoid.set and sounds activities planetoid pdd.wav
 
+1451 stormy, credits brandon, the  uh, road sound will play for streats now, for some reason it was playing the park ambience before, wierd yes.
+copy misc mainambience.set
+1450 stormy, credits blake, the transport sounds play for outside ship transports from now on
 1449 stormy, credits dmitri, the volcano rock fall sound changed
 copy sounds activities volcano harvesting rockfall.wav
 1448 stormy, credits william, fixed train door  bug

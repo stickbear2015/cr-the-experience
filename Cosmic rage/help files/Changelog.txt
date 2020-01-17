@@ -1,3 +1,5 @@
+1447 stormy, changed the dragonbite sound
+COPY SOUNDS CR GENERAL COMBAT DRAGONS DRAGONBITE.WAV
 1446 stormy, credits dmitri, added fiew more sounds for armor
 copy misc wear.set
 1445 stormy, added a sound when you dig for armor parts

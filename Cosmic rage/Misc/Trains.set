@@ -3,8 +3,8 @@
 #trigger {The next station is *} {playsound {Cosmic Rage/general/trains/announcement.wav} @vol; #sub {next station, %1}}
 #trigger {The doors whoosh open.} {#gagline all; playsound {Cosmic Rage/general/trains/doorsopen.wav} @vol}
 #trigger {One of the fans of the trains kicks in.} {#gagline all}
-#trigger {the doors on * slide shut with a hiss.} { playsound {Cosmic Rage/general/trains/doorsclosed2.wav} @vol}
-#trigger {With a whoosh, * pulls out.} {playsound {Cosmic Rage/general/trains/leave2.wav} @vol}
+#trigger {The doors on * slide shut with a hiss.} {#subs {doors closed}; playsound {Cosmic Rage/general/trains/doorsclosed2.wav} @vol}
+#trigger {With a whoosh, * pulls out.} {#gagline all; playsound {Cosmic Rage/general/trains/leave2.wav} @vol}
 #trigger {The doors on * open with a whoosh.} {#gagline all; #alarm 7  {playsound {Cosmic Rage/general/trains/doorsopen2.wav} @vol}}
 #trigger {The train slows, before with a chuf of breaks, it stops completely.} {#gagline all; playsound {Cosmic Rage/general/trains/stop.wav} @vol; #gagline all; #if {@train = 1} {#pc @trainHandle stop; #var train 0}}
 #trigger {The train bumps over the tracks.} {#gagline all}

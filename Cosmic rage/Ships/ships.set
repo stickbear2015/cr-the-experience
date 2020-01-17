@@ -316,7 +316,6 @@ playsound {cosmic rage/ships/misc/AsteroidLaunch.wav} @vol}
 #trigger {You feel the ship launch away from the * with a roar.} {
 #gagline all}
 #trigger {A wind begins to whip your face.} {playsound {Cosmic Rage/ships/misc/wind.wav} @vol}
-#trigger {The doors on * with a hiss.} {playsound {Cosmic Rage/ships/misc/Doors.wav} @vol}
 
 #trigger {A dull hum fills the air as the EMP ray prepares to fire.} {#gagline all}
 #trigger {The hatch closes with a soft hiss.} {playsound {Cosmic Rage/ships/misc/CloseAirlock.wav} @vol; #gagline all}

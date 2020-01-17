@@ -1,3 +1,6 @@
+1448 stormy, credits william, fixed train door  bug
+copy ships ships.set, misc trains.set and sounds general trains folder
+
 1447 stormy, changed the dragonbite sound
 COPY SOUNDS CR GENERAL COMBAT DRAGONS DRAGONBITE.WAV
 1446 stormy, credits dmitri, added fiew more sounds for armor

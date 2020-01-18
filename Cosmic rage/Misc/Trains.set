@@ -27,7 +27,7 @@ loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playh
 
 #trigger {A soothing female voice announces: This is *} {#var tra %1; #gagline all; #alarm 3 {#say {welcome to @tra}}}
 #trigger {A soothing female voice announces: Please mind the doors.} {#gagline all; #alarm 1 {#say {please mind the doors}}; playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
-#trigger {A soothing female voice announces: We are now approaching *} {#subs {aproaching to %1}; playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
+#trigger {A soothing female voice announces: We are now approaching *} {#subs {aproaching %1}; playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
 #trigger {A soothing female voice announces: The next station is *, *} {#subs {next station, %2}; playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
 
 #trigger {An insistant beeping comes from the doors, before with a soft hiss, they close and lock with a click.} {#gagline all; playsound {Cosmic Rage/general/trains/doorsclosed.wav} @vol}

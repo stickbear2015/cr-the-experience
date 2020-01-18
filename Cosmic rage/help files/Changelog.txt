@@ -1,3 +1,8 @@
+1458 stormy, credits ted, added and fixed bunch of stuff with trains
+copy misc trains.set and sounds cr general trains folder
+1457 stormy, credits gladr, corrected a navu ambience 
+copy misc mainambience.set
+
 1456 stormy, removed the ooc cry social because its all broken
 copy misc socials.set and delete sounds general socials ooccry.wav
 1455 stormy, changed the fishing rod casting sound

@@ -1,3 +1,5 @@
+1454 stormy, credits blake, added sounds when you load and unload ice from grabbers
+copy activities planetoid.set and sounds cr activities planetoid iceload and unload.wav
 1453 stormy, credits blake, added a sound for orbit harvesting
 copy activities planetoid.set
 1452 stormy, credits blake, the planetoid equipment will play a sound when it stuck for god

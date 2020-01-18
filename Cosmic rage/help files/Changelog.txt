@@ -1,10 +1,13 @@
+1456 stormy, removed the ooc cry social because its all broken
+copy misc socials.set and delete sounds general socials ooccry.wav
+1455 stormy, changed the fishing rod casting sound
+copy sounds activities fishing cast.wav
 1454 stormy, credits blake, added sounds when you load and unload ice from grabbers
 copy activities planetoid.set and sounds cr activities planetoid iceload and unload.wav
 1453 stormy, credits blake, added a sound for orbit harvesting
 copy activities planetoid.set
 1452 stormy, credits blake, the planetoid equipment will play a sound when it stuck for god
 copy activities/planetoid.set and sounds activities planetoid pdd.wav
-
 1451 stormy, credits brandon, the  uh, road sound will play for streats now, for some reason it was playing the park ambience before, wierd yes.
 copy misc mainambience.set
 1450 stormy, credits blake, the transport sounds play for outside ship transports from now on

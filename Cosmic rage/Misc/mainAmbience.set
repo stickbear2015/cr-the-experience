@@ -330,6 +330,13 @@ loopsound {cosmic rage/Ambiences/Dining.wav} @roomvol;
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/garage.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "garage"}};
+#If {%IfWord(clearing,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "clearing"} {
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/path.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "clearing"}};
 #If {%IfWord(lake,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "lake"} {

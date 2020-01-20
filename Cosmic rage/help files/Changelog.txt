@@ -1,19 +1,20 @@
+1460 stormy, credits dmitri, added an other sound for volcano harvesting
+copy activities volcanoharvesting.set
 1459, James, that's why the ping sound was playing louder for trains than factories. Added the volume varriable to trains.set, so the ping sound can be made what it originally was.
 copy misc\trains.set
 1458 stormy, credits ted, added and fixed bunch of stuff with trains
 copy misc trains.set and sounds cr general trains folder
 1457 stormy, credits gladr, corrected a navu ambience 
 copy misc mainambience.set
-
 1456 stormy, removed the ooc cry social because its all broken
 copy misc socials.set and delete sounds general socials ooccry.wav
 1455 stormy, changed the fishing rod casting sound
-copy sounds activities fishing cast.wav
+copy sounds activities fishing cast.wavc
 1454 stormy, credits blake, added sounds when you load and unload ice from grabbers
 copy activities planetoid.set and sounds cr activities planetoid iceload and unload.wav
 1453 stormy, credits blake, added a sound for orbit harvesting
 copy activities planetoid.set
-1452 stormy, credits blake, the planetoid equipment will play a sound when it stuck for god
+1452 stormy, credits blake, the planetoid equipment will play a sound when it stuck for good
 copy activities/planetoid.set and sounds activities planetoid pdd.wav
 1451 stormy, credits brandon, the  uh, road sound will play for streats now, for some reason it was playing the park ambience before, wierd yes.
 copy misc mainambience.set
@@ -22,9 +23,8 @@ copy misc mainambience.set
 copy sounds activities volcano harvesting rockfall.wav
 1448 stormy, credits william, fixed train door  bug
 copy ships ships.set, misc trains.set and sounds general trains folder
-
 1447 stormy, changed the dragonbite sound
-COPY SOUNDS CR GENERAL COMBAT DRAGONS DRAGONBITE.WAV
+COPY SOUNDS CR GENERAL COMBAT DRAGONS DRAGONBÝTE.WAV
 1446 stormy, credits dmitri, added fiew more sounds for armor
 copy misc wear.set
 1445 stormy, added a sound when you dig for armor parts

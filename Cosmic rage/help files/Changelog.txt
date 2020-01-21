@@ -1,3 +1,6 @@
+1462 Credit to Malachai Silver scale. Fixed a small error with the OOCCry trigger.
+copy cr/misc/socials.set
+
 1461 stormy, credits frederick, added sounds for ratika trap crunching
 copy ships rats.set and sounds ships ratika sniff and snap.wav
 

@@ -1,3 +1,5 @@
+1464, James, updated the change log numbers to reflect we're in the 1460s not the 1360s.
+copy cosmic rage\help files\changelog.txt
 1463 stormy, fixed a possible ship boardding bug
 copy ships ships2.set
 1462 Credit to Malachai Silver scale. Fixed a small error with the OOCCry trigger.

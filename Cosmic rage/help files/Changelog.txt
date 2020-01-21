@@ -1,3 +1,5 @@
+1465 STORMY, removed the extra spaces at the clock chiming sounds
+copy sounds general misc clock sounds
 1464, James, updated the change log numbers to reflect we're in the 1460s not the 1360s.
 copy cosmic rage\help files\changelog.txt
 1463 stormy, fixed a possible ship boardding bug

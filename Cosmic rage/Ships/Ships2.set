@@ -8,7 +8,7 @@
 #trigger {A voice comes through a speaker on the main console, "This is * to * You are clear to undock. I repeat, you are clear to undock."} {playsound {cosmic rage/ships/com/pa*2.wav} @vol}
 
 ; Docking and undocking.
-#trigger {You * up a narrow slope into The *} {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
+#trigger {You * narrow slope into *} {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
 #trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {#gagline all}
 #trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
 #TRIGGER {You see Research Transportation Ship * approaching a docking port of the tube.} {

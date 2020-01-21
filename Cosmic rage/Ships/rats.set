@@ -37,3 +37,5 @@ playsound {Cosmic Rage\ships\fire\siren.wav} @vol}
 #trigger {* drinks greedily from the warp fuel tanks!} {#gagline voice; playsound {cosmic rage/ships/ratika/drink.wav} @vol}
 #trigger {You give a great snarl, and snatch up *into * head first!} {#gagline all; playsound {cosmic rage/ships/Ratika/cage.wav} @vol}
 #trigger {noise comes from inside A ratika nest.} {#gagline all; playsound {cosmic rage/ships/Ratika/noise.wav} @vol}
+#trigger {* moves over to * and sniffs about.} {#gagline all; playsound {cosmic rage/ships/Ratika/sniff.wav} @vol}
+#trigger {* snaps the head off of * in a quick, and efficient, crunch!} {#gagline all; playsound {cosmic rage/ships/Ratika/snap.wav} @vol}

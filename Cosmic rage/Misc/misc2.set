@@ -12,6 +12,7 @@
 #TRIGGER {The yellow light turns green and a tray slides out, holding *} {playsound {cosmic rage/general/misc/food.wav} @vol}
 #TRIGGER {* plays a cheery tune, informing you someone just *} {playsound {cosmic rage/general/misc/comp.wav} @vol}
 #TRIGGER {You pick one with *} {#gagline all; playsound {cosmic rage/general/combat/dragons/sharpen.wav} @vol}
+#TRIGGER {You run your claws along the edge of the rock, slowly sharpening them.} {#gagline all}
 #TRIGGER {You change your angle, and sharpen the tips of the claws.} {#gagline all}
 #trigger {You finish sharpening your claws, and shove the rock into the water with a splash.} {#gagline all; playsound {Cosmic Rage/general/combat/armor/water.wav} @vol}
 #TRIGGER {You enter * and then tap * on * LCD screen.} {playsound {cosmic rage/general/misc/connection1.wav} @vol; #alarm 0.1 {playsound {cosmic rage/general/misc/connection2.wav} @vol}}

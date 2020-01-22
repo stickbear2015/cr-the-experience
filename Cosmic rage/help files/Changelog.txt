@@ -1,3 +1,5 @@
+1466 stormy, gagged an uneeded message about claw sharpening
+copy misc misc2.set
 1465 STORMY, removed the extra spaces at the clock chiming sounds
 copy sounds general misc clock sounds
 1464, James, updated the change log numbers to reflect we're in the 1460s not the 1360s.

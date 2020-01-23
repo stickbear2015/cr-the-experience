@@ -1,4 +1,5 @@
-
+1468 storrmy, credits morgan, turned down the washer and dryer sounds a liddle, they were a bit loud, evin with the general volume down
+copy sounds general washers folder
 1467 stormy, credits syuri, added a sound for factory refineries
 copy factory.set
 1466 stormy, gagged an uneeded message about claw sharpening

@@ -1,3 +1,6 @@
+
+1467 stormy, credits syuri, added a sound for factory refineries
+copy factory.set
 1466 stormy, gagged an uneeded message about claw sharpening
 copy misc misc2.set
 1465 STORMY, removed the extra spaces at the clock chiming sounds

@@ -32,3 +32,4 @@
 #TRIGGER {you enter some digits into a crystal refiner, before tapping go.} {playsound {Cosmic Rage/general/misc/crystalrefiner.wav} @vol}
 #TRIGGER {a crystal refiner falls silent.} {playsound {Cosmic Rage/general/misc/crystalDROP.wav} @vol}
 #TRIGGER {This save came courtesy of *} {playsound {Cosmic Rage/general/misc/save.wav} @vol}
+#TRIGGER {* is emoting... Hold on a sec.} {playsound {Cosmic Rage/general/misc/emote.wav} @vol}

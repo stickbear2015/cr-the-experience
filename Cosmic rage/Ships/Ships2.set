@@ -121,3 +121,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #trigger {You hear a thunk as the airlocks lock together, the docking complete.} {#gagline all;}
 #TRIGGER  {The engines power increases as the ship begins to undock from another starship.} {#gagline all; playsound {cosmic rage/ships/misc/dock1.wav} @vol;}
 #trigger {The engines power decreases as the ship finishes undocking.} {#gagline all;}
+#trigger {A low-level thrum comes from the gravity thrusters as they stop the ship from plummeting.} {#gagline all}

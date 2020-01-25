@@ -1,3 +1,13 @@
+1473, James, Fixed up the changelog a bit and added Frederick's recent change to it.
+copy cosmic rage\help files\changelog.txt
+1472 Updated by Frederick. Credits go to Walric Gontas11983. Fixed a miner issue with the droid repairing trigger.
+copy cr/combat/GroundCombat.set
+1471 stormy, credits, someone i forgot, fixed some bugs about planetary drone descend and ascend sounds
+copy ships pd.set
+1470 stormy, credits blake, gagged an orbitting message
+copy ships/ships2.set
+1469 stormy, credits eldreon, you now hear a sound when someone types the emoting command
+copy misc misc2.set and sounds general misc emote.wav
 1468 storrmy, credits morgan, turned down the washer and dryer sounds a liddle, they were a bit loud, evin with the general volume down
 copy sounds general washers folder
 1467 stormy, credits syuri, added a sound for factory refineries
@@ -12,10 +22,8 @@ copy cosmic rage\help files\changelog.txt
 copy ships ships2.set
 1462 Credit to Malachai Silver scale. Fixed a small error with the OOCCry trigger.
 copy cr/misc/socials.set
-
 1461 stormy, credits frederick, added sounds for ratika trap crunching
 copy ships rats.set and sounds ships ratika sniff and snap.wav
-
 1460 stormy, credits dmitri, added an other sound for volcano harvesting
 copy activities volcanoharvesting.set
 1459, James, that's why the ping sound was playing louder for trains than factories. Added the volume varriable to trains.set, so the ping sound can be made what it originally was.

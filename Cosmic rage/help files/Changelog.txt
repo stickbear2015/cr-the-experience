@@ -1,3 +1,5 @@
+1476 stormy, credits malachai, fixed a gagging issue with stargates
+copy ships shipcombat.set
 1475 stormy, added a brand new cool sound for stargate jumps and gagged the messages
 copy ships shipcombat.set and sounds cr ships movement stargate.wav
 1474 stormy, credits blake, added the ship upgrading sound to an other text

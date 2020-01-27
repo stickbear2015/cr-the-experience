@@ -1,3 +1,5 @@
+1475 stormy, added a brand new cool sound for stargate jumps and gagged the messages
+copy ships shipcombat.set and sounds cr ships movement stargate.wav
 1474 stormy, credits blake, added the ship upgrading sound to an other text
 copy ships ships2.set
 1473, James, Fixed up the changelog a bit and added Frederick's recent change to it.

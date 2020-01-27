@@ -253,7 +253,7 @@ playsound {cosmic rage\general\socials\collapse3.wav} @CVol}
 #trigger {*"Holovid disabled."} {playsound {Cosmic Rage/ships/combat/HolovidOff.wav} @CVol}
 #trigger {the overhead lights blink yellow, informing you the ship is on standby.} {playsound {Cosmic Rage/ships/combat/yellowAlert.wav} @CVol; #gagline all}
 #trigger {*fires an electric beam from a socket on it's underside.} {playsound {Cosmic Rage/ships/combat/Electric.wav} @CVol; #PC %PlayHandle Pan %Random(-4000,4000)}
-#trigger {A bright flash fills the windows and the ship shoots into a stargate.} {playsound {Cosmic Rage/ships/misc/stargate.wav} @CVol; #gagline all}
+#trigger {A bright flash fills the windows and the ship shoots into a stargate.} {playsound {Cosmic Rage/ships/movement/stargate.wav} @CVol; #gagline all}
 #trigger {alternating dark and light flashes fill the room as the ship continues to travel through the stargate.} {playsound {Cosmic Rage/ships/misc/StargateFlash.wav} @CVol; #pc %playhandle pan %random(-4000,4000); #gagline all}
 #trigger {Another bright flash fills the room as the ship exits the stargate!} {playsound {Cosmic Rage/ships/misc/stargateNotification.wav} @CVol; #gagline all}
 #trigger {*"Warning, warning, enemies detected in the sector. enemies detected in the sector."} {playsound {Cosmic Rage/ships/misc/Buzzer.wav} @CVol}
@@ -297,3 +297,7 @@ playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
 #trigger {You bring up the weapons report on screen*} {playsound {cosmic rage/ships/computer/display*4.wav} @vol; #gagline all}
+#trigger {The ship rocks a little before the wheine of the stabilisers kick in and steady it.} {#gagline all}
+#trigger {A pulsing red light appears on screen, informing you that the mission location has been established.} {#gagline all}
+#trigger {The ship's engines slow down, the vessel twisting a little as it prepares to exit the rift.} {#ggagline all}
+#trigger {As though the star blinked, there is a moment of darkness throughout the vessel before it rifts into the mission sector.} {#gagline all}

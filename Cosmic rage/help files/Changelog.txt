@@ -1,3 +1,5 @@
+1474 stormy, credits blake, added the ship upgrading sound to an other text
+copy ships ships2.set
 1473, James, Fixed up the changelog a bit and added Frederick's recent change to it.
 copy cosmic rage\help files\changelog.txt
 1472 Updated by Frederick. Credits go to Walric Gontas11983. Fixed a miner issue with the droid repairing trigger.

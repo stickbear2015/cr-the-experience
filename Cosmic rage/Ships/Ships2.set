@@ -109,6 +109,8 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {Dirt and dust falls in lumps and is washed away from  *} {#gagline all}
 #TRIGGER { The gleaming hull of *} {#gagline all}
 #TRIGGER {Loud bangs and crashes, accompanied by hammering sounds, can be heard from the hull.} {playsound {cosmic rage/ships/misc/upgrade.wav} @vol; #gagline all}
+#TRIGGER {Bangs and crashes come from outside as the ship is upgraded.} {playsound {cosmic rage/ships/misc/upgrade.wav} @vol; #gagline all}
+
 #TRIGGER {The ship shudders once more and finally exits the wormhole.} {playsound {cosmic rage/ships/movement/wormhole2.wav} @vol; #gagline all}
 #trigger {Half of a swarm of gleaming silver drones go into The * while the other half begin work on the outside.} {playsound {Cosmic Rage/activities/planetoid/cargorepair.wav} @vol; #alarm 2 {playsound {Cosmic Rage/general/combat/suit/repair.wav} @Vol}}
 #TRIGGER {You feel a vibration as a ship begins to dock.} {playsound {cosmic rage/ships/misc/dock2.wav} @vol; #gagline all}

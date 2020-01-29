@@ -144,3 +144,5 @@ playloop {cosmic rage/general/factory/milk.wav} @vol; #var milkhandle %playhandl
 #trigger {You finish milking the cows.} {#gagline all;
 #pc @milkhandle stop}
 #trigger {The sound of scrapes and bangs can be heard as drones move about.} {playsound {cosmic rage/general/factory/clang.wav} @vol}
+#trigger {A huge foot comes down, smashing the bricks into salinarum!} {playsound {cosmic rage/general/factory/crushbrick.wav} @vol}
+#trigger {You pull down a large lever.} { #gagline all; playsound {cosmic rage/vehicle/lever.wav} @vol}

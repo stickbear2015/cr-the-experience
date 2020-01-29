@@ -98,24 +98,6 @@ playsound {cosmic rage/general/misc/cargoDrone.wav} @vol}
 #gagline all}
 #trigger {* drone slams its hammer with an air of finality into the tank one last time before shoving it over to the wall.} {
 #gagline all}
-;#trigger {You enter * shower} {}
-#trigger {You turn a tap, causing water to shoot from the shower head.} {#if {@showermusic = "enabled"} {loopsound {cosmic rage/general/misc/Showersong.wav} @vol; #var showermHandle %playhandle; #var showerm 1}; playsound {cosmic rage/general/misc/Showerstart.wav} @vol; #alarm 1.8 {loopsound {cosmic rage/general/misc/Shower.wav} @vol; #var showerHandle %playhandle; #var shower 1}}
-#trigger {You shut off the water.} {#if {@showerm = 1} {#pc @showermHandle stop; #var showerm 0};
-#if {@shower = 1} {
-#pc @showerHandle stop; #var shower 0};
-playsound {cosmic rage/general/misc/showerEnd.wav} @vol}
-#trigger {Water shoots from the showerhead.} {
-#if {@shower = 0} {loopsound {cosmic rage/general/misc/shower.wav} @vol; #var showerHandle %playhandle; #var shower 1}}
-#trigger {You hop out of the shower.} {
-#if {@showerm = 1} {
-#pc @showermHandle stop; #var showerm 0};
-#if {@shower = 1} {
-#pc @showerhandle stop; #var shower 0}}
-#trigger {You * the curtain on * shower} {
-#if {%ifWord(open,%1," ")} {
-playsound {cosmic rage/general/misc/ShowerCurtainOpen.wav} @vol};
-#if {%ifWord(close,%1," ")} {
-playsound {cosmic rage/general/misc/ShowerCurtainClose.wav} @vol}} {} AnyCase
 #TRIGGER {*The game time is now*} {
 #sub {%2}; playsound {cosmic rage/general/misc/time.wav} @vol}
 #trigger {[[]Newbie tip!]*} {playsound {cosmic rage/general/misc/tip.wav} @vol; #additem Newbie %0}

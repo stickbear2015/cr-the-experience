@@ -11,6 +11,8 @@
 #trigger {You * narrow slope into *} {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
 #trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {#gagline all}
 #trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+#trigger {You disembark onto *} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+
 #TRIGGER {You see Research Transportation Ship * approaching a docking port of the tube.} {
 loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
 #TRIGGER {The engines kick up into a slightly higher thrum as the ship begins to slowly cruise into a docking position.} {#if {@LaunchText = "Enabled"} {#gagline all}; loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}

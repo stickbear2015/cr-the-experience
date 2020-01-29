@@ -1,3 +1,21 @@
+1485 stormy, added sounds for toothbrushes
+copy misc house.set and sounds cr general house folder
+1484 stormy, added sounds for sinks
+copy misc house.set and sounds cr general house folder
+1483 stormy, added sounds for toilets
+copy misc house.set and sounds general house folder
+1482  stormy, hair dryers are now a thing
+copy misc/house.set and sounds general house hairdry.wav
+1481 stormy, began adding house and human related stuff, added sounds for shaving, happy humans
+copy cosmic rage.set misc house.set and sounds cr general house shave.wav
+1480 stormy, credits syuri, you now hear sounds when you crush brick in industrial plants
+copy misc factory.set and sounds cr general factory crushbrick.wav
+1479 stormy, credits  blake, you now hear a sound when you exit from a research craft
+copy ships ships.set
+1478 stormy, moved shower stuff to a new file
+copy misc/misc.set and misc/bath.set
+1477 stormy, credits ruby and 1 other players that wanting sounds for baths, yeah you guessed it right, baths have now some cool sounds
+copy cosmicrage.set misc bath.set and sounds general misc bath1 to 6.wav
 1476 stormy, credits malachai, fixed a gagging issue with stargates
 copy ships shipcombat.set
 1475 stormy, added a brand new cool sound for stargate jumps and gagged the messages

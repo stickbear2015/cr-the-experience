@@ -6,7 +6,6 @@
 #load misc/ConfigurationManager.set
 #load misc/keys.set
 #load misc/Soundpack.set
-#load misc/bath.set
 
 ; activities set files
 #load Activities/asteroidHarvesting.set
@@ -44,10 +43,11 @@
 #load combat/combat.set
 #load Combat/GroundCombat.set
 #load combat/megasuit.set
-
 #load combat/suit.set
+
 ;misc set files
 #load misc/APilot'sParody.set
+#load misc/bath.set
 #load misc/Babies.set
 #load misc/buffers.set.
 #load misc/clocks.set
@@ -55,6 +55,7 @@
 #load misc/doors.set
 #load misc/factory.set
 #load misc/Farming.set
+#load misc/house.set
 #load misc/horses.set
 #load misc/hosts.set
 #load misc/Jets.set
@@ -68,7 +69,6 @@
 #load misc/telephone.set
 #load misc/trains.set
 #load misc/trolley.set
-#load misc/house.set
 #load misc/wear.set
 #load misc/weather.set
 

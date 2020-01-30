@@ -9,3 +9,9 @@
 #TRIGGER {You squeeze some toothpaste onto *} {playsound {Cosmic Rage/general/house/tooth1.wav} @vol}
 #TRIGGER {You carefully begin cleaning your front teeth with *} {playsound {Cosmic Rage/general/house/tooth2.wav} @vol}
 #TRIGGER {* squeezes some toothpaste onto *} {playsound {Cosmic Rage/general/house/tooth1.wav} @vol}
+#TRIGGER {You start to use * mop.} {playsound {Cosmic Rage/general/house/mop.wav} @vol}
+#TRIGGER {* starts to use * mop.} {playsound {Cosmic Rage/general/house/mop.wav} @vol}
+#TRIGGER {You check * charge after having pressed a small button. Satisfied, you prepare the vacume cleaner and switch it on.} {playsound {Cosmic Rage/general/house/vacuum.wav} @vol}
+#TRIGGER {* checks * charge after having pressed a small button. Satisfied, * prepares the vacume cleaner and switches it on.} {playsound {Cosmic Rage/general/house/vacuum.wav} @vol}
+#TRIGGER {You take * in both * and begin to sweep the room with it.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}
+#TRIGGER {* takes * in both * and begins to sweep the room with it.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}

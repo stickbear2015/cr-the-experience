@@ -1,3 +1,19 @@
+1493 stormy, credits blake, planetoid grabbers now have an other sound
+copy activities planetoid.set
+1492 stormy, corrected an erorr about volcano mining
+copy activities volcanomining.set
+1491 stormy, credits blake, added more sounds for ship upgrades
+copy ships ships2.set and sounds cr ships misc upgyellow, upggood and upgred.wav
+1490 stormy, credits blake, added a sound  when you refuel plasma with a cannister.
+copy ships ships2.set and sounds cr ship misc plasmacan.wav
+1489 stormy, made the larkan charging sound better
+copy sounds general misc lark.wav
+1488 stormy, broom sounds are now a thing, happy cleaning
+copy misc house.set and sounds cr general house folder
+1487 stormy, vacuum cleaner sounds are now a thing
+copy misc house.set and sounds cr general house folder
+1486 stormy, added sounds for mops
+copy misc house.set and sounds cr general house folder
 1485 stormy, added sounds for toothbrushes
 copy misc house.set and sounds cr general house folder
 1484 stormy, added sounds for sinks

@@ -37,7 +37,7 @@ loopsound {cosmic rage/ships/rooms/AmmoChamber.wav} @Shipvol;
 #if {@currentroom <> "bridge"} {
 #If {@ShipSoundPlaying = 1} {
 #pc @ShipHandle stop};
-loopsound {cosmic rage/ships/rooms/bridge*2.wav} @Shipvol;
+loopsound {cosmic rage/ships/rooms/bridge*3.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "bridge"; #var currentroom2 "notmisc"}};
 #If {%IfWord(control,@RoomName," ")} {
 #var currentroom2 "notmisc";
@@ -53,6 +53,13 @@ loopsound {cosmic rage/ships/rooms/ControlRoom.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/CommandChamber.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "command"; #var currentroom2 "notmisc"}};
+#If {%IfWord(drone,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "drone"} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop};
+loopsound {cosmic rage/ships/rooms/dronebay.wav} @Shipvol;
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "drone"; #var currentroom2 "notmisc"}};
 #If {%IfWord(storage,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "storage"} {

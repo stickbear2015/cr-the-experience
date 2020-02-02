@@ -1,3 +1,14 @@
+1500 stormy, changed fiew ship ambiences and added new bridge sound
+copy ships shipambience.set and sounds cr ships rooms folder
+
+1499 stormy, added the dronebay ambience for ships
+copy ships shipambience.set and sounds cr ships rooms folder
+1498 stormy, credits blake, fixed something about ship upgrading
+copy ships ships2.set
+1497 stormy, credits james, the WarpAcceleration should be a bit longer, at the cost of some quality loss, blame frederick for this
+copy sounds cr ships movement WarpAcceleration.wav
+1496 stormy, credits blake, while warping, if you stop before reaching full warp, the warpacceleration sound now stops
+copy ships ships.set
 1495 stormy, credits syuri, sound credit Blake Cromozov16158, added a sound when a ratika falls from the nest
 copy ships rats.set and sounds cr ships ratika fall.wav
 1494 stormy, credits Elizabeth , fixed all the vehicle volume variables, they are now toggled with alt f9 f10

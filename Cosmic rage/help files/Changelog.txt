@@ -1,3 +1,7 @@
+1495 stormy, credits syuri, sound credit Blake Cromozov16158, added a sound when a ratika falls from the nest
+copy ships rats.set and sounds cr ships ratika fall.wav
+1494 stormy, credits Elizabeth , fixed all the vehicle volume variables, they are now toggled with alt f9 f10
+copy vehicl/vehicle.set
 1493 stormy, credits blake, planetoid grabbers now have an other sound
 copy activities planetoid.set
 1492 stormy, corrected an erorr about volcano mining

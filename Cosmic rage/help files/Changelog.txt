@@ -1,3 +1,5 @@
+1504 stormy, ungagged the ship transport messages
+copy ships ships.set
 1503, James, updated the normal blades trigger in Ship Combat.
 copy cosmic rage\ships\ShipCombat.set
 1502 stormy, credits blake, the organic  arvesting thing now respects the gag harvest message setting

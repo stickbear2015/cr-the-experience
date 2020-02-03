@@ -425,7 +425,5 @@ playsound {cosmic rage/ships/movement/quantimeend.wav} @vol;
 #trigger {You tap a button, sliding a recovered artifact into * storage facility.} {#gagline all;
 playsound {cosmic rage/ships/misc/artifact.wav} @vol}
 #trigger {the doors slide open with a hiss and you hear a soft female voice announce: "Welcome to *} {playsound {Cosmic Rage/ships/misc/Doors.wav} @vol}
-#TRIGGER {Several drones wheel in and carry away *} {#gagline all;
-playsound {cosmic rage/ships/misc/garage.wav} @vol};
-#TRIGGER {Outside, you notice * rise into view, being carried by several hydraulic movement droids.} {#gagline all;
-playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
+#TRIGGER {Several drones wheel in and carry away *} {playsound {cosmic rage/ships/misc/garage.wav} @vol};
+#TRIGGER {Outside, you notice * rise into view, being carried by several hydraulic movement droids.} {playsound {cosmic rage/ships/misc/landingPad.wav} @vol};

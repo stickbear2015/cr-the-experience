@@ -173,6 +173,11 @@ playsound {cosmic rage/ships/combat/disruptor.wav} @CVol;
 playsound {cosmic rage/ships/combat/bladeslice*5.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#trigger {You hear the scream of metal as the blades slice into the hull of a ship.} {
+#gagline all;
+playsound {cosmic rage/ships/combat/bladeslice*5.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
 #trigger {A loud, urgent thrum shakes the ship.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/lightning laser.wav} @CVol;

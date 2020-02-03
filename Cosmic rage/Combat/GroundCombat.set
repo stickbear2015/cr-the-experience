@@ -12,7 +12,21 @@ playsound {Cosmic Rage/general/combat/enemy/drosmash.wav} @gvol;
 #trigger {* dies due to a mangled *.} {#gagline all}
 #trigger {Nothing drop to the ground.} {#gagline all}
 #trigger {It hits * * *} {#if {%1 = "droidic"} {playsound {Cosmic Rage/general/combat/enemy/droid/hurt*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%2 = "embahi"} {playsound {Cosmic Rage/general/combat/enemy/embhit*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%1 = "Baurgan"} {playsound {Cosmic Rage/general/combat/enemy/baurg/hurt*4.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%1 = "vacus"} {playsound {Cosmic Rage/general/combat/enemy/vacushit*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%2 = "alian"} {playsound {Cosmic Rage/general/combat/enemy/alianhit*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}; #if {%2 = "droid"} {playsound {Cosmic Rage/general/combat/enemy/droid/bighurt*3.wav}@gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,3500)}}}
-#trigger {* * falls to the ground, dead.} {#if {%1 = "droidic"} {playsound {Cosmic Rage/general/combat/enemy/droid/die*3.wav} @gvol}; #if {%2 = "embahi"} {playsound {Cosmic Rage/general/combat/enemy/embdie.wav} @gvol}; #if {%1 = "Baurgan"} {playsound {Cosmic Rage/general/combat/enemy/baurg/die*2.wav} @gvol}; #if {%1 = "vacus"} {playsound {Cosmic Rage/general/combat/enemy/vacusdie.wav} @gvol}; #if {%2 = "alian"} {playsound {Cosmic Rage/general/combat/enemy/aliandie*2.wav} @gvol}; #if {%2 = "wasteland monster"} {playsound {Cosmic Rage/general/combat/enemy/monsterdie.wav} @gvol}; #if {%2 = "droid"} {playsound {Cosmic Rage/general/combat/enemy/droid/bigdie*3.wav} @gvol}}
+#trigger {* falls to the ground, dead.} {
+#if {%ifword(droidic,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/droid/die*3.wav} @gvol};
+#if {%ifword(embahi,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/embdie.wav} @gvol};
+#if {%ifword(Baurgan,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/baurg/die*2.wav} @gvol};
+#if {%ifword(vacus,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/vacusdie.wav} @gvol};
+#if {%ifword(alien,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/aliandie*2.wav} @gvol};
+#if {%ifword(wasteland monster,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/monsterdie.wav} @gvol};
+#if {%ifword(droid,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/droid/bigdie*3.wav} @gvol}}
 #trigger {The stun is absorbed by *} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/stunarmor.wav} @gvol}
 #trigger {a dulfarite dies due to a mangled head.} {playsound {Cosmic Rage/general/combat/enemy/dulfdie.wav} @gvol}
 #trigger {It hits a dulfarite's *} {playsound {Cosmic Rage/general/combat/enemy/dulfhit*3.wav} @gvol}
@@ -130,8 +144,6 @@ playsound {cosmic rage/general/combat/enemy/exits/se.wav} @gvol; #alarm 0.2 {pla
 #trigger {* erupts into a pillar of flame.} {playsound {Cosmic Rage/general/combat/enemy/droid/bigdie*3.wav} @gvol}
 #trigger {*wasteland monster swings a fist at you, and misses!} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monstermiss.wav} @gvol}
 #trigger {*wasteland monster punches you.} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monsterpunch.wav} @gvol}
-#trigger {wasteland monster falls to the ground, dead.} {
-playsound {cosmic rage/general/combat/enemy/monsterdie.wav} @gvol}
 #trigger {* lunges from out of a pile of trash!} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monsterapp.wav} @gvol}
 #trigger {The head of * sails away, cleanly knocked off.} {#gagline all}
 #trigger {Looks like that was the last one.} {playsound {cosmic rage/general/combat/beep.wav} @vol}

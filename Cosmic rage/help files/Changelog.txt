@@ -1,7 +1,12 @@
+1503, James, updated the normal blades trigger in Ship Combat.
+copy cosmic rage\ships\ShipCombat.set
+1502 stormy, credits blake, the organic  arvesting thing now respects the gag harvest message setting
+copy activities planetoid.set
+1501 Updated by Frederick. Fixed up the trigger for when ground mobs fall to the ground, dead. Now, in addition to the other ground mob death sounds, you'll now hear the sounds when aliens fall to the ground dead as well.
+copy cr/combat/GroundCombat.set
 1500 stormy, changed fiew ship ambiences and added new bridge sound
 copy ships shipambience.set and sounds cr ships rooms folder
-
-1499 stormy, added the dronebay ambience for ships
+1499 stormy, added the drone bay ambience for ships
 copy ships shipambience.set and sounds cr ships rooms folder
 1498 stormy, credits blake, fixed something about ship upgrading
 copy ships ships2.set

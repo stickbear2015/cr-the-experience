@@ -29,6 +29,13 @@ loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/beach.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "ocean"; #var currentroom2 "notmisc"}};
+#If {%IfWord(operating,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "operating"} {
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/operatingroom.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "operating"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Refectory,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "refectory"} {

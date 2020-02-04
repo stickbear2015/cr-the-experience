@@ -1,3 +1,9 @@
+1507 stormy, added transfer sounds for polution vehicles
+copy activities pol.set
+1506 stormy, credits dmitri, added a sound when you deploy polution pods
+copy activities pol.set and sounds cr activities pol deploy.wav
+1505 stormy, added a rather crazy operating room ambience, lets go gmc
+copy misc mainambience.set and sounds cr  ambience operatingroom.wav
 1504 stormy, ungagged the ship transport messages
 copy ships ships.set
 1503, James, updated the normal blades trigger in Ship Combat.

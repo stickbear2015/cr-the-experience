@@ -1,3 +1,7 @@
+1509 stormy, credits frederick, some social sounds no longer play twice, bad bad, fred, oh never mind its not his fault
+copy misc socials.set
+1508 stormy, credits amanda, the sob sound no longer plays for anything containing the word sob at the middle
+copy misc socials.set
 1507 stormy, added transfer sounds for polution vehicles
 copy activities pol.set
 1506 stormy, credits dmitri, added a sound when you deploy polution pods

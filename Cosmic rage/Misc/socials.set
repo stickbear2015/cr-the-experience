@@ -12,7 +12,6 @@
 #TRIGGER {* giggles.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/giggle.wav} @vol}}
 #TRIGGER {You*laugh.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
 #TRIGGER {* laughs.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
-#TRIGGER {* laugh.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
 #TRIGGER {You scream.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/scream*6.wav} @vol}}
 #TRIGGER {* screams.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/scream*6.wav} @vol}}
 #TRIGGER {You yawn.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/yawn*2.wav} @vol}}
@@ -32,7 +31,6 @@
 #trigger {*chortles*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chortle.wav} @vol}}
 #trigger {You*chuckle.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chuckle.wav} @vol}}
 #trigger {*chuckles*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chuckle.wav} @vol}}
-#trigger {*chuckle*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chuckle.wav} @vol}}
 #trigger {You burst into tears*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/cry*4.wav} @vol}}
 #trigger {* bursts into tears*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/cry*4.wav} @vol}}
 #trigger {You cough*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/cough*5.wav} @vol}}
@@ -111,9 +109,10 @@
 #trigger {* squeaks, and runs away in fear from *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/squeak.wav} @vol}}
 #trigger {* shoves * into a taco and eats *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/eat.wav} @vol}}
 #trigger {* pulls out a boxing glove, and smacks *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/glove.wav} @vol}}
-#trigger {* sobs *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}
+#trigger {* sobs broken heartedly at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}
 #trigger {* publically murders *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/murder.wav} @vol}}
 #trigger {* blinks innocently *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/iblink.wav} @vol}}
 #trigger {* blinks his eyes *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/iblink.wav} @vol}}
 ;#trigger  {* cries quietly *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ooccry.wav} @vol}}
 #trigger   {* violently lashes the whip of judgment across *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgewhip.wav} @vol}}
+#trigger {* sobs * broken heartedly} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}

@@ -1,3 +1,9 @@
+1512 stormy, gagged a scooper message
+copy ships ships2.set
+1511 stormy, fixed the merchant ship sounds blame frederick for that
+copy ships ships.set
+1510 stormy, you now hear a sound when you press the doorbell from outside
+copy misc misc2.set
 1509 stormy, credits frederick, some social sounds no longer play twice, bad bad, fred, oh never mind its not his fault
 copy misc socials.set
 1508 stormy, credits amanda, the sob sound no longer plays for anything containing the word sob at the middle

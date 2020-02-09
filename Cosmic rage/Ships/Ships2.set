@@ -13,7 +13,7 @@
 #trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
 #trigger {You disembark onto *} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
 
-#TRIGGER {You see Research Transportation Ship * approaching a docking port of the tube.} {
+#TRIGGER {You see * * approaching a docking port of the tube.} {
 loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
 #TRIGGER {The engines kick up into a slightly higher thrum as the ship begins to slowly cruise into a docking position.} {#if {@LaunchText = "Enabled"} {#gagline all}; loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
 #trigger {You take hold of the controls and turn the vessel so that it is running parallel to *} {#if {@LaunchText = "Enabled"} {#gagline all}}
@@ -27,14 +27,14 @@ loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStart
 #TRIGGER {A hollow bong sounds through the ship as a metal clamp secures the vessel in place.} {#if {@LaunchText = "Enabled"} {#gagline all}; playsound {Cosmic Rage/ships/misc/FinishDocking.wav} @vol; #if {@DockingStart = 1} {
 #pc @DockingStarthandle stop;
 #var DockingStart 0}}
-#TRIGGER {The tube shudders slightly as Research Transportation Ship * docks.} {
+#TRIGGER {The tube shudders slightly as * * docks.} {
 #if {@LaunchText = "Enabled"} {#gagline all};
 playsound {Cosmic Rage/ships/misc/FinishDocking.wav} @vol;
 #if {@DockingStart = 1} {
 #pc @DockingStarthandle stop;
 #var DockingStart 0}}
 #TRIGGER {* tap* the small icon of an airlock, sending the release signal.} {#if {@LaunchText = "Enabled"} {#gagline all}}
-#trigger {The tube shudders slightly as Research Transportation Ship Epsilon 5 undocks.} {
+#trigger {The tube shudders slightly as * undocks.} {
 playsound {cosmic rage/ships/misc/undock.wav} @vol}
 #trigger {A series of clunks can be heard as the airlocks are released.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The ships engines hum powerfully as the ship begins to pull away from a docking point.} {#if {@LaunchText = "Enabled"} {#gagline voice};playsound {cosmic rage/ships/misc/undock.wav} @vol}
@@ -134,3 +134,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {A green alert flashes on a brightly glowing display board and a message reads: "Upgrade successfully applied to *} {playsound {cosmic rage/ships/misc/upggood.wav} @cvol; #subs {upgrades successfully applyed to %1}}
 #TRIGGER {A red alert flashes on a brightly glowing display board and a message reads: "Upgrade unsuccessful."} {playsound {cosmic rage/ships/misc/upgred.wav} @cvol; #subs {upgrade unsuccesfull}}
 #TRIGGER {A yellow alert flashes on a brightly glowing display board and a message reads: "Upgrades are already being applied on the vessel named * Further upgrades will be queued."} {playsound {cosmic rage/ships/misc/upgyellow.wav} @cvol; #subs {the selected ship is already upgraded, further upgrades will be queued.}}
+#trig {The mechanical sliding noise dies away.} {#gagline all}

@@ -23,6 +23,8 @@
 #TRIGGER  {You pause by a decontamination unit.} {#gagline all; playsound {cosmic rage/general/misc/decontamination.wav} @vol}
 #TRIGGER  {A small piece of glittering soul escapes from * to be devoured by A rotting skull!} {#gagline all; playsound {cosmic rage/general/misc/soulsuck.wav} @vol}
 #TRIGGER  {A cheery tune fills the house as someone presses the doorbell.} {#gagline all; playsound {cosmic rage/general/misc/doorblell.wav} @vol}
+#TRIGGER  {You push the doorbell.} {#gagline all; playsound {cosmic rage/general/misc/doorblell.wav} @vol}
+
 #trigger {You press the button of the doorbell and hear a faint tune.} {#gagline all; playsound {cosmic rage/general/misc/doorbell.wav} @vol}
 #TRIGGER  {*** System announcement: *} { playsound {cosmic rage/general/misc/boop.wav} @vol}
 #TRIGGER {* You hear a crowd booing and hissing. *} {playsound {Cosmic Rage/general/misc/pvpoff.wav} @vol}

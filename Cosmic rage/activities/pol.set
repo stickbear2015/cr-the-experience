@@ -57,7 +57,11 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {the sound of well-oiled mechanics can be heard as, on screen, the pollution scoopers retract.} {#gagline all}
 #trigger {A slight whine fills the air as the scoopers continue to retract.} {#gagline all}
 #trigger {The pod rocks a little as just next to it, and visible on the screen, the scoopers enter the vehicle.} {#gagline all}
-#trigger {The vehicle rocks in place as several heavy-duty lasers are fired at an object!} {#gagline all; playsound {Cosmic Rage/activities/star study/lasers.wav} @vol}
+#trigger {The vehicle rocks in place as several heavy-duty lasers are fired at an object!} {#gagline all; playsound {Cosmic Rage/activities/star study/laser.wav} @vol}
 #trigger {You tap stop.} {#gagline all; #if {@launch = 1}  {playsound {Cosmic Rage/activities/pol/move4.wav} @vol; #alarm 0.4 {#PC @launchhandle Frequency 44000}}}
 #trigger {Two pods open up, one on either side of the vehicle.} {#gagline all; playsound {Cosmic Rage/activities/pol/deploy.wav} @vol}
-#trigger {A group of * transfer drones hover in, load up with * and then hover away.} {#gagline all; playsound {cosmic rage/general/factory/droneout.wav} @vol};
+#trigger {A group of * transfer drones hover in, load up with * and then hover away.} {#gagline all; playsound {cosmic rage/general/factory/dronein.wav} @vol};
+#trigger {There is a quiet clunk as the vehicle's internal drones manage some new storage.} {#gagline all; playsound {Cosmic Rage/activities/pol/sta1.wav} @vol}
+#trigger {On screen, the aiming tracks retract.} {#gagline all}
+#trigger {there is a metal on metal sliding sound that is swiftly followed by a thunk.} {#gagline all}
+#trigger {On screen, you see the object split in half.} {#gagline all; playsound {Cosmic Rage/activities/pol/split.wav} @vol}

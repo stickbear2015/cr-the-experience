@@ -1,3 +1,13 @@
+1517 stormy,  credits frederick and dmitri, added sounds for polution debris splitting process
+copy activities pol.set and sounds cr activities pol split.wav
+1516 stormy, changed the polution laser fire sound
+copy activities pol.set and sounds cr activities pol laser.wav
+1515 stormy, credits dmitri and frederick, added a sound for polution debris salvaging
+copy sounds activities pol storage.wav and activities pol.set
+1514 STORMY, added more sounds for armour mining
+copy combat armourmaking.set
+1513 stormy, credits Wanderer, airpods are fixed and gagged and shortened some of the messages
+copy combat airpod.set
 1512 stormy, gagged a scooper message
 copy ships ships2.set
 1511 stormy, fixed the merchant ship sounds blame frederick for that

@@ -35,3 +35,4 @@
 #TRIGGER {a crystal refiner falls silent.} {playsound {Cosmic Rage/general/misc/crystalDROP.wav} @vol}
 #TRIGGER {This save came courtesy of *} {playsound {Cosmic Rage/general/misc/save.wav} @vol}
 #TRIGGER {* is emoting... Hold on a sec.} {playsound {Cosmic Rage/general/misc/emote.wav} @vol}
+#TRIGGER {on * A flashing orange and yellow border wraps itself around the screen and the feed switches to an emergency alert.} {playsound {Cosmic Rage/general/misc/emergency.wav} @vol}

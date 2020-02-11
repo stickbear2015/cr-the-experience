@@ -47,16 +47,14 @@ playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
 #gagline all;
 #if {@rech = 1} {
 #pc @rechHandle stop; #var rech 0};
-#pc 0 stop; playsound {cosmic rage/general/comms/faze.wav} @Vol}
+#pc 0 stop; playsound {cosmic rage/general/comms/phase.wav} @Vol}
 #trigger {* fades from sight as * phases*} {
 playsound {cosmic rage/general/comms/otherPhase.wav} @Vol}
 #trigger {A rip appears in the air and slowly grows until * is phased through in a beam of * light!} {
-playsound {cosmic rage/general/comms/faze.wav} @Vol}
+playsound {cosmic rage/general/comms/phase.wav} @Vol}
 #TRIGGER {[[]RP]*} {playsound {cosmic rage/general/comms/rp.wav} @CommsVol; #additem RP %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char RP.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Socials] *} {playsound {cosmic rage/general/comms/socials.wav} @CommsVol; #additem Socials %0; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Arena]*} {playsound {cosmic rage/general/comms/arena.wav} @CommsVol; #additem Arena %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Arena.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]Music FM] *} {playsound {cosmic rage/general/comms/musicFm.wav} @CommsVol; #additem MusicFM %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char MusicFm.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]Library] *} {playsound {cosmic rage/general/comms/library.wav} @CommsVol; #additem Library %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Library.log};#write 1 %0;#close 1}}
 #TRIGGER {[[]Brag]*} {playsound {cosmic rage/general/comms/brag.wav} @CommsVol; #additem brag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Brag.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]clanchat]*} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; #additem Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You turn * translator} {
@@ -142,7 +140,6 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} @commsvol; #additem Htpc %0}
 #Alias {mf} {Musicfm %0} {}
 #trigger {* lets out a short fanfare informing you that a new petition has been made publicly available.} {playsound {Cosmic Rage/general/comms/Petition.wav} 80; #additem InfoComputerNotifications %0; #additem Notices %0} {} AnyCase
-#trigger {Library enabled.} {playsound {cosmic rage/general/comms/activate.wav} @CommsVol}
 #trigger {origins *} {#if {%ifWord(enabled.,%1," ")} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(disabled.,%1," ")} {

@@ -1,3 +1,12 @@
+1521 Updated by Frederick. Ok guys. I removed files from the sounds cr general comms folder that were linked to channels that no longer exist. Soon, the MusicFM and Rewards channels will be gone too so I removed those sound files as well. I've updated the comms.set file to reflect these changes. also, I renamed the phase and OtherPhase files in that comms folder I mention and updated the spellings appropriately in comms.set
+replace sounds cr general comms folder
+copy cr misc comms.set
+1520 stormy, credits amara, lowered the volumes of ryuchi phasings
+copy sounds cr general comms phase.wav and otherphase.wav
+1519 stormy, credits dave, added sounds for a host, dont ask who it is
+copy sounds cr hosts folder and misc hosts.set
+1518 stormy, credits dave, added sound for fire emergency alerts on tvs
+copy sounds cr misc emergency.wav and misc misc2.set
 1517 stormy,  credits frederick and dmitri, added sounds for polution debris splitting process
 copy activities pol.set and sounds cr activities pol split.wav
 1516 stormy, changed the polution laser fire sound

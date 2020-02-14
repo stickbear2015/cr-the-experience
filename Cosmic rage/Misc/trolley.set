@@ -88,3 +88,6 @@ playsound {cosmic rage/general/trolley/wood.wav} @vol}}
 #if {@fuse = 1} {
 #pc @FuseHandle stop;
 #var fuse 0}};
+#trigger {* loads * corpses onto a tray.} {
+#gagline voice;
+playsound {cosmic rage/general/trolley/corpse.wav} @vol}

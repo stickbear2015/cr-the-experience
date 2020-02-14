@@ -4,10 +4,14 @@
 #trigger {Artificial atmosphere generater destabilised.} {playsound {Cosmic Rage/activities/PlanetChunks/generaterWarning.wav} @vol; #sub {Warning! Warning! The Artificial atmosphere generater has become unstable!}}
 #trigger {You carefully aline the ship and begin to gently nudge it towards the planet chunks surface.} {playsound {Cosmic Rage/activities/PlanetChunks/land.wav} @vol}
 #trigger {The ship rocks as it destabilises an artificial atmosphere.} {#gagline voice}
-#trigger {Warning, atmosphere damaged.} {playsound {Cosmic Rage/activities/PlanetChunks/Warning.wav} @vol}
+#trigger {* "Warning, atmosphere damaged."} {playsound {Cosmic Rage/activities/PlanetChunks/Warning.wav} @vol}
+#trigger {* "Artificial atmosphere generator destabilised."} {playsound {Cosmic Rage/activities/PlanetChunks/Warning.wav} @vol}
 #trigger {The ship begins to dip as it comes towards a landing.} {#gagline voice}
 #trigger {The ship judders and begins its final descent towards the planet chunks surface.} {#gagline voice}
 #trigger {The ship lands with a dull thump and a slight shake.} {#gagline voice}
+#trigger {The ship slows dramatically and begins to descend sharply towards something.} {#gagline all;
+playsound {Cosmic Rage/activities/PlanetChunks/land.wav} @vol}
+#trigger {The ship lands with an almighty thump.} {#gagline voice}
 #trigger {You attempt to begin to reconnect the wires.} {loopsound {Cosmic Rage/activities/PlanetChunks/ConnectingWires.wav} @vol; #var Shockhandle %playhandle; #var Shock 1}
 #trigger {You connect up the wires and the generator stabilises.} {playsound {Cosmic Rage/activities/PlanetChunks/AtmosphericGenerator.wav} @vol; #if {@Shock = 1} {#pc @Shockhandle stop; #var shock 0}}
 #trigger {You begin to carefully aline the ship with a part of a ruined outpost} {playsound {Cosmic Rage/activities/PlanetChunks/land.wav} @vol}

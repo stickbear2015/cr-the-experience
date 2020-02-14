@@ -1,3 +1,17 @@
+1529 Updated by Frederick. Fixed up as well as added a few triggers to planet chunking.
+copy cr activities PlanetChunks.set
+1528 stormy, credits blake, added a sound when a larkan gets stuntime during polluted air
+copy misc misc2.set and sounds cr gneral msic larkdown.wav
+1527 stormy, credits syuri, you now hear when you collect corpses with a trolley
+copy misc trolley.set and sounds general trolley corpse.wav
+1526 stormy, credits syuri, tehre are now sounds for venting oxygen and phosgene
+copy ships ships2.set and sounds ships misc vent.wav
+1525 stormy, fixed plasma cannister refueling sound
+copy ships ships2.set
+1523 stormy, credits dave and fransisco, the drone ambiance changed a liddle bit basicly removed the high part of the telemetry beep
+copy sounds ships rooms dronebay.wav
+1522 stormy, credits kostas, the brag sound is changed
+copy sounds general coms brag.wav
 1521 Updated by Frederick. Ok guys. I removed files from the sounds cr general comms folder that were linked to channels that no longer exist. Soon, the MusicFM and Rewards channels will be gone too so I removed those sound files as well. I've updated the comms.set file to reflect these changes. also, I renamed the phase and OtherPhase files in that comms folder I mention and updated the spellings appropriately in comms.set
 replace sounds cr general comms folder
 copy cr misc comms.set

@@ -1,3 +1,5 @@
+1530 stormy, credits dmitri, the laser firing for polution cleaners has been fixed
+copy activities pol.set
 1529 Updated by Frederick. Fixed up as well as added a few triggers to planet chunking.
 copy cr activities PlanetChunks.set
 1528 stormy, credits blake, added a sound when a larkan gets stuntime during polluted air

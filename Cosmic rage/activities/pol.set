@@ -1,4 +1,4 @@
-#trigger {A thrum comes from underfoot as power begins to be routed through the vehicle.} {#gagline all; playsound {Cosmic Rage/activities/pol/sta1.wav} @vol}
+#trigger {A thrum comes from underfoot as power begins to be routed through the vehicle.} {#gagline all; playsound {CosHmic Rage/activities/pol/sta1.wav} @vol}
 #trigger {A steady thudding comes from the roof as the rotors reach a constant speed and the vehicle completes the startup.} {#gagline all; playsound {Cosmic Rage/activities/pol/sta2.wav} @vol}
 #trigger {The steady thudding from above begins to decrease in speed as the rotors are slowed down.} {#gagline all; playsound {Cosmic Rage/activities/pol/stop.wav} @vol}
 #trigger {A slow whirring comes from overhead as the rotors begin to slowly spin.} {#gagline all}
@@ -57,7 +57,7 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {the sound of well-oiled mechanics can be heard as, on screen, the pollution scoopers retract.} {#gagline all}
 #trigger {A slight whine fills the air as the scoopers continue to retract.} {#gagline all}
 #trigger {The pod rocks a little as just next to it, and visible on the screen, the scoopers enter the vehicle.} {#gagline all}
-#trigger {The vehicle rocks in place as several heavy-duty lasers are fired at an object!} {#gagline all; playsound {Cosmic Rage/activities/star study/laser.wav} @vol}
+#trigger {The vehicle rocks in place as several heavy-duty lasers are fired at an object!} {#gagline all; playsound {Cosmic Rage/activities/pol/laser.wav} @vol}
 #trigger {You tap stop.} {#gagline all; #if {@launch = 1}  {playsound {Cosmic Rage/activities/pol/move4.wav} @vol; #alarm 0.4 {#PC @launchhandle Frequency 44000}}}
 #trigger {Two pods open up, one on either side of the vehicle.} {#gagline all; playsound {Cosmic Rage/activities/pol/deploy.wav} @vol}
 #trigger {A group of * transfer drones hover in, load up with * and then hover away.} {#gagline all; playsound {cosmic rage/general/factory/dronein.wav} @vol};

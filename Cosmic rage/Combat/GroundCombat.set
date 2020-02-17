@@ -148,3 +148,5 @@ playsound {cosmic rage/general/combat/enemy/exits/se.wav} @gvol; #alarm 0.2 {pla
 #trigger {The head of * sails away, cleanly knocked off.} {#gagline all}
 #trigger {Looks like that was the last one.} {playsound {cosmic rage/general/combat/beep.wav} @vol}
 #TRIGGER {* performs emergency repairs on *} {playsound {cosmic rage/general/combat/enemy/droid/repair.wav} @gvol; #sub {%2 is repaired on %1}}
+#trigger {* uses something in its hand to heal *.} {
+playsound {cosmic rage/general/combat/enemy/droid/repair.wav} @gvol; #sub {%1 heals %2}}

@@ -1,3 +1,10 @@
+1533 Updated by Frederick, credits to Vivian blue designation for the suggestion.
+added a sound for time left when exploring planet chunks.
+copy sounds cr activities PlanetChunks TimeLeft.wav and cr activities PlanetChunks.set
+1532 Updated by frederick. Added a trigger for when ground mobs that are not droids heal a body part.
+copy cr combat GroundCombat.set
+1531 stormy, credits dmitri, you now hear marching sounds when you transfer from maraqutaa
+copy ships ships.set and sounds cr general misc march.wav
 1530 stormy, credits dmitri, the laser firing for polution cleaners has been fixed
 copy activities pol.set
 1529 Updated by Frederick. Fixed up as well as added a few triggers to planet chunking.

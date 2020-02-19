@@ -1,3 +1,5 @@
+1534 stormy, credits akasha, added a sound for Escalators
+copy misc misc2.set and sounds cr general misc Escalator.wav
 1533 Updated by Frederick, credits to Vivian blue designation for the suggestion.
 added a sound for time left when exploring planet chunks.
 copy sounds cr activities PlanetChunks TimeLeft.wav and cr activities PlanetChunks.set

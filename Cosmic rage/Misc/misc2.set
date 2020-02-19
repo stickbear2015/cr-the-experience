@@ -38,3 +38,4 @@
 #TRIGGER {on * A flashing orange and yellow border wraps itself around the screen and the feed switches to an emergency alert.} {playsound {Cosmic Rage/general/misc/emergency.wav} @vol}
 
 #TRIGGER {Your air filtration system overloads from the pollution in the air and is forced to reboot.} {playsound {Cosmic Rage/general/misc/larkdown.wav} @vol}
+#TRIGGER {You step on the * and are carried *} {playsound {Cosmic Rage/general/misc/Escalator.wav} @vol}

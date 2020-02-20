@@ -314,3 +314,5 @@ playsound {cosmic rage/general/misc/CommPackRed.wav} @vol};
 playsound {cosmic rage/general/misc/CommPackGreen.wav} @vol};
 #sub {%1 light.}}
 #trigger {You click test on a basic communications pack.} {#gagline all}
+#trigger {You flick out * with a quick gesture, studying the cash readout displayed in the top right hand corner.} {#gagline all;
+playsound {cosmic rage/general/misc/CashCheck.wav} @vol}

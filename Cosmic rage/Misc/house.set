@@ -15,3 +15,5 @@
 #TRIGGER {* checks * charge after having pressed a small button. Satisfied, * prepares the vacume cleaner and switches it on.} {playsound {Cosmic Rage/general/house/vacuum.wav} @vol}
 #TRIGGER {You take * in both * and begin to sweep the room with it.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}
 #TRIGGER {* takes * in both * and begins to sweep the room with it.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}
+#TRIGGER {you put * in *} {playsound {Cosmic Rage/general/house/put.wav} @vol}
+#TRIGGER {you get * from *} {playsound {Cosmic Rage/general/house/get.wav} @vol}

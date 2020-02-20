@@ -1,4 +1,4 @@
-#trigger {A thrum comes from underfoot as power begins to be routed through the vehicle.} {#gagline all; playsound {CosHmic Rage/activities/pol/sta1.wav} @vol}
+#trigger {A thrum comes from underfoot as power begins to be routed through the vehicle.} {#gagline all; playsound {Cosmic Rage/activities/pol/sta1.wav} @vol}
 #trigger {A steady thudding comes from the roof as the rotors reach a constant speed and the vehicle completes the startup.} {#gagline all; playsound {Cosmic Rage/activities/pol/sta2.wav} @vol}
 #trigger {The steady thudding from above begins to decrease in speed as the rotors are slowed down.} {#gagline all; playsound {Cosmic Rage/activities/pol/stop.wav} @vol}
 #trigger {A slow whirring comes from overhead as the rotors begin to slowly spin.} {#gagline all}

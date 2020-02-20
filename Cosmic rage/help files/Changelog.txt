@@ -1,3 +1,12 @@
+1540, James, fixed an error with pollution cleaners.
+copy cosmic rage\activities\pol.set
+1539 stormy, credits syuri, added sounds for breach drones
+copy ships ships2.set and sounds cr ships rep folder
+1538 stormy, credits Anastasia, added sounds for putting and getting something from a container
+copy misc house.set and sounds cr general house folder
+1537 Updated by frederick, credit goes to Syuri dark green scale. A sound will play when checking your cash using the cash command.
+copy sounds cr general misc CashCheck.wav
+copy cr misc misc.set
 1536, James, Fixed a bug with planetary music playing in powered down ships.
 copy cosmic rage\misc\mainAmbience.set
 1535 stormy, credits dmitri, added sounds for polution meteor splitting 

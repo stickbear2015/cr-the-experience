@@ -137,3 +137,5 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #trig {The mechanical sliding noise dies away.} {#gagline all}
 #TRIGGER {You fiddle with the ventilation system for a moment, before finally managing to get it to start pumping Phosgene.} {playsound {cosmic rage/ships/misc/vent.wav} @vol; #gagline all}
 #TRIGGER {You make some adjustments on the ventilation system, bringing in fresh oxygen.} {playsound {cosmic rage/ships/misc/vent.wav} @vol; #gagline all}
+#TRIGGER {* skitters in on tiny clawed feet.} {playsound {cosmic rage/ships/rep/bre1.wav} @vol; #gagline all}
+#TRIGGER {You gently place * on the floor... Then kick it *} {playsound {cosmic rage/ships/rep/bre2.wav} @vol; #gagline all}

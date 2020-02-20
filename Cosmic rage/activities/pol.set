@@ -65,3 +65,5 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {On screen, the aiming tracks retract.} {#gagline all}
 #trigger {there is a metal on metal sliding sound that is swiftly followed by a thunk.} {#gagline all}
 #trigger {On screen, you see the object split in half.} {#gagline all; playsound {Cosmic Rage/activities/pol/split.wav} @vol}
+#trigger {You carefully aim, and then prepare to fire, at the meteor!} {#gagline all; playsound {Cosmic Rage/activities/pol/aim.wav} @vol}
+#trigger {The laser slams into the meteor and sends it spinning!} {#gagline all; playsound {Cosmic Rage/activities/pol/poof.wav} @vol}

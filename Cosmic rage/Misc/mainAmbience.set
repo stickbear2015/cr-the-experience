@@ -406,7 +406,8 @@ loopsound {cosmic rage/Ambiences/lobby.wav} @roomvol;
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-#if {@MusicSounds = 1} {#var MusicSounds 0};
+#if {@musicplaying = 1} {
+#pc @musichandle stop; #var musicplaying 0; #var planet ""};
 loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #Var ShipHandle %Playhandle; #var shipsoundplaying 1; #var planet ""; #var currentroom "off"; #var currentroom2 "notmisc"} {ambon}
 #trigger {[[]Space]} {
 #if {@currentroom <> "space"} {

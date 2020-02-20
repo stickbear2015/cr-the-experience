@@ -1,3 +1,7 @@
+1536, James, Fixed a bug with planetary music playing in powered down ships.
+copy cosmic rage\misc\mainAmbience.set
+1535 stormy, credits dmitri, added sounds for polution meteor splitting 
+copy activities pol.set and sounds cr activities pol folder
 1534 stormy, credits akasha, added a sound for Escalators
 copy misc misc2.set and sounds cr general misc Escalator.wav
 1533 Updated by Frederick, credits to Vivian blue designation for the suggestion.

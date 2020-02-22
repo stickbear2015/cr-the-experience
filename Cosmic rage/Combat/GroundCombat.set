@@ -25,6 +25,10 @@ playsound {Cosmic Rage/general/combat/enemy/vacusdie.wav} @gvol};
 playsound {Cosmic Rage/general/combat/enemy/aliandie*2.wav} @gvol};
 #if {%ifword(wasteland monster,%1," ")} {
 playsound {Cosmic Rage/general/combat/enemy/monsterdie.wav} @gvol};
+#if {%ifword(space worm,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/spacewormdie.wav} @gvol};
+#if {%ifword(queen ratika,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/ratqueen.wav} @gvol};
 #if {%ifword(droid,%1," ")} {
 playsound {Cosmic Rage/general/combat/enemy/droid/bigdie*3.wav} @gvol}}
 #trigger {The stun is absorbed by *} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/stunarmor.wav} @gvol}

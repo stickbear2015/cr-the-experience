@@ -16,3 +16,4 @@
 #trigger {You tap a few keys and hit fire.} {#gagline all}
 #TRIGGER {On screen, you see the grabber of the ship snatch the pod up, and quickly yank it in.} {#gagline all;playsound {cosmic rage/activities/star study/srr.wav} @vol;#if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)}}
 #TRIGGER {On screen, you see the pod spiral into the star!} {#gagline all; playsound {cosmic rage/activities/star study/srd.wav} @vol;#if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)}}
+#trigger {The computer announces: "* passengers saved."} {#gagline all}

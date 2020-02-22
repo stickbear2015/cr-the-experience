@@ -157,3 +157,4 @@ playsound {cosmic rage/activities/planetoid/unwind.wav} @vol}
 #trigger {the vehicle rocks a little as * units are loaded on board.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/iceload.wav} @vol}
 #TRIGGER {the vehicle rocks a little as * units are unloaded.} {#gagline all;  playsound {Cosmic Rage/activities/moonbase/moontruckwork2.wav} @vol};
 #trigger {* samples of organic material gathered.} {playsound {cosmic rage/activities/planetoid/mineralScoop.wav} @vol; #if {@gagHarvest = "Enabled"} { #gagline voice}} 
+#trigger {One of the drones makes a slight whir, before cooling the metal with an icer.} {#gagline all; playsound {cosmic rage/activities/planetoid/cargoice.wav} @vol; #if {@gagHarvest = "Enabled"} { #gagline voice}} 

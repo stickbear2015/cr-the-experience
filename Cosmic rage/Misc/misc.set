@@ -192,7 +192,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {"And a happy new year!"} {#gagline all}
 #trigger {*You can raise your rank!} {playsound {Cosmic Rage/general/Level/Raise.wav} @vol}
 #trigger {* reports it attempted to do your command to the best of its ability.} {#gagline all; #var HD 0}
-#trigger {Via *, * located at * informs you:} {#var HD 1; playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {%2 informs you}}
+#trigger {Via *, * located at * informs you:} { #gagline all; #var HD 1; playsound {Cosmic Rage/general/misc/droid.wav} @vol}
 #trigger {* Game saved.} {playsound {Cosmic Rage/general/misc/GameSave.wav} @vol}
 #trigger {[[]Resource Market]:*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase
 #trigger {A new quote has been added to the quote database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}

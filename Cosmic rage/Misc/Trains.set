@@ -37,4 +37,4 @@ loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playh
 #trigger {The train rattles a little.} {#gagline all}
 #trigger {The train climbs sharply up a hill.} {#gagline all}
 #trigger {A soothing female voice announces: The train approaching platform * is *} {playsound {cosmic rage/general/misc/ping.wav} @vol}
-#trigger {One of the fans of the train kicks in.} {#gagline al;}
+#trigger {One of the fans of the train kicks in.} {#gagline all}

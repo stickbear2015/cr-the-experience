@@ -1,15 +1,20 @@
-1548 stormy, credits syuri, added sounds for drone recalling and deploying from control rooms
+1550, James, corrected a numbering skip error in the changelog. The changes skipped over a number, but they are correct now.
+copy cosmic rage\help files\changelog.txt
+1549 Updated by frederick. Fixed a typo in deploying combat drones.
+copy cr ships ShipCombat2.set
+1548 Updated by frederick. Fixed a trigger with trains.
+copy cr misc trains.set
+1547 stormy, credits syuri, added sounds for drone recalling and deploying from control rooms
 copy ships shipcombat2.set and sounds cr ships misc combatdrone.wav
-1547 stormy, credits fred, added a sound for cargo repairing
+1546 stormy, credits fred, added a sound for cargo repairing
 copy activities planetoid.set and sounds cr activities planetoid cargoice.wav
-1546 stormy, credits mohammed, gagged a message for star rescueing
+1545 stormy, credits mohammed, gagged a message for star rescueing
 copy activities starstudies.set
-1545 stormy, credits mohammed, gagged the droid informs you text and added a diffrent text for it 
+1544 stormy, credits mohammed, gagged the droid informs you text and added a diffrent text for it 
 copy misc misc.set and sounds cr general  misc droid.wav
-1544 stormy, credits frederick, added a sound when a ratika queen dies
+1543 stormy, credits frederick, added a sound when a ratika queen dies
 copy combat groundcombat.set and sounds cr general combat enemy ratqueendie.wav
-
-1543 stormy, credits frederick, added a sound for spaceworm dieing
+1542 stormy, credits frederick, added a sound for spaceworm dieing
 copy combat groundcombat.set and sounds cr general combat enemy spacewormdie.wav
 1541 stormy, credits dmitriy, gagged one of the train messages
 copy misc trains.set

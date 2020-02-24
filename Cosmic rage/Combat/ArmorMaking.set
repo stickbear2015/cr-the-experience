@@ -7,4 +7,4 @@
 #trigger {You dig into the ground with *} {#gagline all; playsound {cosmic rage/activities/hand mining/dig*2.wav} @vol}
 #trigger {You think there is more here to mine!} {playsound {cosmic rage/activities/hand mining/CanDig.wav} @vol}
 #trigger {That looks like all you can get here.} {playsound {cosmic rage/activities/hand mining/REVEAL.wav} @vol}
-#trigger {You find *} {playsound {cosmic rage/activities/hand mining/find.wav} @vol}
+#trigger {You find * strips!} {playsound {cosmic rage/activities/hand mining/find.wav} @vol}

@@ -1,3 +1,18 @@
+1556 stormy, credits fred, added a sound for the big slimy blobs in planetoid exploration
+copy combat groundcombat.set and sounds cr general combat enemy blob.wav
+1555 Updated by Frederick, credits to anastasia for the suggestion, We proudly bring to you.. dramatic drum roll please!!!
+We are proud to bring to you, grilling!
+Now you should enjoy grilling because we now have sounds for this activity, thanks to sir Stormy. Give him a round of applause!
+copy sounds cr general grilling
+copy cosmic rage.set and cr misc grilling.set
+1554 stormy, credits cort events, added a sound for the speak command, dont know how the describe more clear
+copy misc misc2.set and sounds cr general mic.wav
+1553 stormy, credits, cort events, added a sound for judgehammers aka gavels
+copy misc misc2.set and sounds cr general misc gavel.wav
+1552 stormy, credits amara, lowered down the volume of oen of the battlesuit charging sounds
+copy sounds cr general combat battlesuits charge1.wav
+1551 Updated by Frederick. Made some cosmetic changes, as well as tweaked the trigger for finding strips in armor making.
+copy cr combat ArmorMaking.set and misc misc2.set
 1550, James, corrected a numbering skip error in the changelog. The changes skipped over a number, but they are correct now.
 copy cosmic rage\help files\changelog.txt
 1549 Updated by frederick. Fixed a typo in deploying combat drones.
@@ -10,7 +25,7 @@ copy ships shipcombat2.set and sounds cr ships misc combatdrone.wav
 copy activities planetoid.set and sounds cr activities planetoid cargoice.wav
 1545 stormy, credits mohammed, gagged a message for star rescueing
 copy activities starstudies.set
-1544 stormy, credits mohammed, gagged the droid informs you text and added a diffrent text for it 
+1544 stormy, credits mohammed, gagged the droid informs you text.
 copy misc misc.set and sounds cr general  misc droid.wav
 1543 stormy, credits frederick, added a sound when a ratika queen dies
 copy combat groundcombat.set and sounds cr general combat enemy ratqueendie.wav

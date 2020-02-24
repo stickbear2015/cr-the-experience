@@ -19,6 +19,8 @@ playsound {Cosmic Rage/general/combat/enemy/droid/die*3.wav} @gvol};
 playsound {Cosmic Rage/general/combat/enemy/embdie.wav} @gvol};
 #if {%ifword(Baurgan,%1," ")} {
 playsound {Cosmic Rage/general/combat/enemy/baurg/die*2.wav} @gvol};
+#if {%ifword(amorphous blob,%1," ")} {
+playsound {Cosmic Rage/general/combat/enemy/blob.wav} @gvol};
 #if {%ifword(vacus,%1," ")} {
 playsound {Cosmic Rage/general/combat/enemy/vacusdie.wav} @gvol};
 #if {%ifword(alien,%1," ")} {

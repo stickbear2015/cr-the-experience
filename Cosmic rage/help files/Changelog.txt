@@ -1,3 +1,7 @@
+1558 Updated by Frederick, cause by Michael Lawson. Fixed an issue with dragons swooping in for a landing.
+copy cr misc misc.set
+1557 stormy, credits michael, ungagged 2 ratika messages
+copy ships rats.set
 1556 stormy, credits fred, added a sound for the big slimy blobs in planetoid exploration
 copy combat groundcombat.set and sounds cr general combat enemy blob.wav
 1555 Updated by Frederick, credits to anastasia for the suggestion, We proudly bring to you.. dramatic drum roll please!!!

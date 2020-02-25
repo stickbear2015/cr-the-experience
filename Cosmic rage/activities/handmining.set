@@ -38,7 +38,7 @@ playsound {cosmic rage/activities/hand mining/ShovelClean.wav} @vol}
 ;The scruffy man
 #trigger {A scruffy-looking man suddenly shoves into the area. *} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/ManCome.wav} @vol}
-#trigger {You swing a blue shovel at A scruffy-looking man.} {#gagline voice;
+#trigger {You swing * at A scruffy-looking man.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/ShovelSwing.wav} @vol}
 #trigger {A scruffy-looking man deflects the blow with his shovel, a loud clang echoing throughout the area.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/ManBlock.wav} @vol}

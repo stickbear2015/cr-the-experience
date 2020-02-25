@@ -15,3 +15,7 @@
 #trigger {a startled * fox skitters back, looking surprised.} {playsound {cosmic rage/activities/hunt/foxshock.wav} @vol};
 #TRIGGER {You crash into the ground.} {#gagline all; playsound {cosmic rage/activities/hunt/failjump.wav} @vol};
 #TRIGGER {You use some sheets from * to carefully wrap * and store it away.} {#gagline all; playsound {cosmic rage/activities/hunt/wrap.wav} @vol};
+#TRIGGER {You strip the pelt from *} {#gagline all; playsound {cosmic rage/activities/hunt/STRÝP.wav} @vol};
+#trigger {You swing * axe.} {#gagline voice;
+playsound {cosmic rage/activities/hand mining/ShovelSwing.wav} @vol}
+#TRIGGER {* bites into a tree and cuts it down!} {#gagline all; playsound {cosmic rage/activities/hunt/chop.wav} @vol};

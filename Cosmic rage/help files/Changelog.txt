@@ -1,3 +1,9 @@
+1561 stormy, fixed a trigger for hand mining
+copy activities handmining.set
+1560 stormy, credits amara, added sounds for tree chopping.
+copy activities hunting.set and sounds cr activities hunt tree.wav
+1559 Stormy, credits Amara, added a sound for pelt stripping.
+copy cd activities hunting.set and sounds cr activities hunt strip.WAV
 1558 Updated by Frederick, cause by Michael Lawson. Fixed an issue with dragons swooping in for a landing.
 copy cr misc misc.set
 1557 stormy, credits michael, ungagged 2 ratika messages

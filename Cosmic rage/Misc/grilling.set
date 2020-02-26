@@ -16,3 +16,7 @@ loopsound {cosmic rage/general/grilling/cook.wav} @vol;
 playsound {cosmic rage/general/grilling/done.wav} @vol}
 #trigger {You press a button on the front of *causing the coals to be extinguished.} {#sub {You extinguish the grill.};
 playsound {cosmic rage/general/grilling/ext.wav} @vol}
+#trigger {* empties * bag of coal into *.} {#gagline all;
+playsound {cosmic rage/general/grilling/coal.wav} @vol}
+#trigger {* refill* * from a refill pack for grills.} {#gagline all;
+playsound {cosmic rage/general/grilling/coal.wav} @vol}

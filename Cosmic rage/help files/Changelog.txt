@@ -1,3 +1,5 @@
+1562 Updated by Frederick, sound provided by stormy. Added a sound for emptying bags of coal and refilling the grills with more food.
+copy sounds cr general grilling coal.wav and cr misc grilling.set
 1561 stormy, fixed a trigger for hand mining
 copy activities handmining.set
 1560 stormy, credits amara, added sounds for tree chopping.

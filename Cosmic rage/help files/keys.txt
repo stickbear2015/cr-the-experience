@@ -113,3 +113,4 @@ Alt-Shift-T. ToggleSocialText. Toggles seeing of social text when you use social
 Control-alt-R. Toggle reboot warnings.
 Control-alt-I. Toggle soundpack intro text.
 ctrl shift m, toggles the shower  music on and off
+ctrl shift i, toggles the intro  music on and off

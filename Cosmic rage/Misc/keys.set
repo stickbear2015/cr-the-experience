@@ -27,6 +27,7 @@
 #key {alt-shift-r} {RedAlertToggle}
 #key {alt-shift-u} {ToggleUpdate}
 #key {Control-shift-M} {showermusictoggle}
+#key {Control-shift-I} {intromusictoggle}
 #key f11 {ambtoggle}
 #Key {control-l} {lag}
 #key alt-shift-d {DroneToggle}

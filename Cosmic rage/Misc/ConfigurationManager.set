@@ -51,6 +51,7 @@ Toggle Reboot sounds. This option is currently @RebootSounds: toggleReboot|
 Toggle soundpack intro text. This option is currently @SpIntroMessage :toggleSoundpackIntroMessage|
 Toggle bio plasma regenoration sounds. This option is currently @TPR :TPR|
 Toggle shower music. This option is currently @showermusic :showermusictoggle|
+Toggle the playing of intro music on startup. This option is currently @intromusic :intromusictoggle|
 Check the amount of lag between your connection and the game. Note. This value may not always be @vol percent accurate:lag|
 Submit a soundpack bug report:SpBug|
 Submit a soundpack suggestion:SpSuggest|
@@ -235,6 +236,8 @@ playsound {Cosmic Rage/general/misc/VolumeUp.wav} @vEvol; #say {vehicle engine V
 
 #alias showermusicToggle {
 #if {@showermusic = "Enabled"} {#var showermusic "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {shower music disabled}} {#var showermusic "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {shower music enabled}}}
+#alias intromusicToggle {
+#if {@intromusic = "Enabled"} {#var intromusic "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {intro music disabled}} {#var intromusic "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {intro music enabled}}}
 #alias {lag} {#var LagAmount 0;
 #alarm LagTest {-0@{DecimalChar}1} {#math LagAmount {@LagAmount + 1}};
 echo Lag.test} {}

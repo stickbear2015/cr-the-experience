@@ -1,3 +1,5 @@
+1563, James, Added a toggle for intro music and overhauled the way settings are saved.
+copy cosmic rage\misc\ConfigurationMannager.set, keys.set, and Soundpack.set, cosmic rage\help files\keys.txt, and cosmic rage\Cosmic rage.set
 1562 Updated by Frederick, sound provided by stormy. Added a sound for emptying bags of coal and refilling the grills with more food.
 copy sounds cr general grilling coal.wav and cr misc grilling.set
 1561 stormy, fixed a trigger for hand mining

@@ -36,7 +36,7 @@
 #alias SpReload {#pc 0 stop; #say {Reloading the soundpack. please wait.}; playsound {Cosmic Rage/general/misc/Reload.wav} @vol; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!}; #if {@ambon = "enabled"} {look}}}
 
 ;Saving settings.
-#alias SaveSettings {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Your soundpack settings and buffer list  have successfully been saved!}; savebuffers; #File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
+#alias ActualSave {#File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -80,54 +80,11 @@
 #Write 6 @showermusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @gvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #Write 6 @UpdateToggle @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#Write 6 @intromusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
+#alias SaveSettings {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Your soundpack settings and buffer list  have successfully been saved!}; savebuffers; ActualSave}
 #key {Control-shift-R} {SpReload}
 #trigger {*Has just posted an announcement!*} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
-#alias {AutoSaveSettings} {#File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
-#Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @Shipvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @vehiclevol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @roomvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @DroneSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @MusicSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @MusicVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @combatMusicplaying @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @MVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @CMusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @altVehicleEngines @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @altshipEngines @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagHarvest @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @panShipCombat @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @CVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @ambon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @redalert @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @Evol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @veVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagSal @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @weather @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gagweather @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @LogOn @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @ShortMapText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SilentIntro @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SilentClock @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @ConnectionCheck @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @numpadon @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @CommsVol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @ChannelLogging @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @GameError @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SilentConflict @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @LaunchText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SocialSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @RebootSounds @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SpIntroMessage @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SocialText @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @TPR @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @SilentPod @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @showermusic @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @gvol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#Write 6 @UpdateToggle @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
-#close 6}
 #alias {SpHelp} {#say {Loading the list of available help files. Please wait.}; playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol; #pick {p:Please select an option from the list below|
 View the alias's help file:{playsound {Cosmic Rage/general/Help/Aliases.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Aliases.txt}}|
 View the Announcements help file:{playsound {Cosmic Rage/general/help/Announcements.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Announcements.txt}}|

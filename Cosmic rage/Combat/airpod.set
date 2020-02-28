@@ -3,7 +3,7 @@
 #trigger {You fire the laser.} {#gagline all; playsound {Cosmic Rage/general/combat/airpod/laser.wav} @cvol; #var airpodhandle %playhandle}
 #trigger {Lasers streak out from the pod!} {#gagline all; playsound {Cosmic Rage/general/combat/airpod/laserstop.wav} @cvol; #pc @airpodhandle stop;};
 #trigger {A laser shot slams the pod!} {playsound {Cosmic Rage/general/combat/airpod/yourhit.wav} @cvol};
-#trigger {You swing the laser to focus *.} {#subs {aiming tward %1} playsound {Cosmic Rage/general/combat/airpod/aim.wav} @cvol};
+#trigger {You swing the laser to focus *.} {#subs {aiming tward %1}; playsound {Cosmic Rage/general/combat/airpod/aim.wav} @cvol};
 #trigger {* is hit by a barrage!} {playsound {Cosmic Rage/general/combat/airpod/ehit.wav} @cvol; #if {@panShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-1500,1500)}}
 #trigger {A missile streaks from the pod!} {#gagline all; playsound {Cosmic Rage/ships/combat/Missile.wav} @vol}
 #trigger {Through the windows, you see air pod * explodes!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @vol; #if {@panshipcombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}

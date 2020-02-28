@@ -13,6 +13,7 @@
 #TRIGGER {[[]Room OOC]*} {playsound {cosmic rage/general/comms/rooc.wav} @CommsVol; #additem rooc %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char rooc.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Intel] *} {playsound {cosmic rage/general/comms/intel.wav} @CommsVol; #additem intel %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char intel.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Recruitments]:*} {playsound {cosmic rage/general/comms/recruiting.wav} @CommsVol; #additem recruitments %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Recruitments.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]MFAS]*} {playsound {Cosmic Rage/general/comms/mfas.wav} @CommsVol}
 #TRIGGER {You enable * on *.} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol} {} AnyCase
 #TRIGGER {You disable * on *.} {
@@ -159,3 +160,5 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 playsound {cosmic rage/general/comms/activate.wav} @vol};
 #if {%ifword(deactivate,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
+#trigger {Over * you hear * say *} {
+playsound {cosmic rage/general/comms/battlesuit.wav} @CommsVol; #additem Spacesuit %0; #additem say %0} {}

@@ -183,3 +183,4 @@ playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
 playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #trigger {a gleaming silver drone clamps onto * and tugs it into the back of the store, out of sight.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/cargorepair.wav} @vevol; #alarm 2 {playsound {Cosmic Rage/general/combat/suit/repair.wav} @vevol}}
 #trigger {a gleaming silver drone pushes * into the store.} {#gagline all}
+#TRIGGER {A red light flashes urgently on your vehicle's display, informing you of hostiles being detected.} {#gagline voice; playsound {cosmic rage/vehicle/land.wav} @vevol};

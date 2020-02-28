@@ -1,3 +1,13 @@
+1569, James, Credits Stormy and Mohammed, Added a general sound for MFAS devices
+copy cosmic rage\misc\comms.set and sounds\cosmic rage\general\comms\mfas.wav
+1568 stormy, credits james, added a sound for battlesuit/spacesuit talking
+copy misc comms.set and sounds cr comms battlesuit.wav
+1567 stormy, credits syuri, added a sound when your vehicle informs there are enemies nearby
+copy vehicles vehicles.set and sounds cr vehicles alarm.wav
+1566 stormy, credits syuri, added a sound for trashcans
+copy misc misc2.set and sounds cr general misc recycle.wav
+1565 stormy, credits dave, added a sound for ratika pods
+copy ships rats.set and sounds cr ships rats pod.wav
 1564 stormy, credits daniel, fixed airpods
 copy combat airpod.set
 1563, James, Added a toggle for intro music and overhauled the way settings are saved.

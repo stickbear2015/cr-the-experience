@@ -67,3 +67,5 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {On screen, you see the object split in half.} {#gagline all; playsound {Cosmic Rage/activities/pol/split.wav} @vol}
 #trigger {You carefully aim, and then prepare to fire, at the meteor!} {#gagline all; playsound {Cosmic Rage/activities/pol/aim.wav} @vol}
 #trigger {The laser slams into the meteor and sends it spinning!} {#gagline all; playsound {Cosmic Rage/activities/pol/poof.wav} @vol}
+#trigger {You hear a siren blair and a synthesised voice announces: This Vehicle is damaged.} {playsound {cosmic rage/ships/Ratika/alarm.wav} @vol}
+#trigger {The vehicle rocks as something blasts off from the planet below.} {#gagline all; playsound {Cosmic Rage/activities/pol/split.wav} @vol}

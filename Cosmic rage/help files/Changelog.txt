@@ -1,3 +1,25 @@
+1580 stormy, added sounds for poison curing plants
+copy misc misc2.set and sounds cr general misc curefind curesearch and curefind.wav
+1579 Updated by Frederick. Fixed a tiny issue in factories.
+copy cr misc factories.set
+1578 stormy, fixed putting and getting stuff from container triggers
+copy misc house set and sounds cr general house folder
+1577 stormy, credits amara, added sounds for pools
+copy misc house set and sounds cr general house folder
+1576 stormy, credits amara, added a sound for towels
+copy misc house.set and sounds general house towel.wav
+1575 stormy, credits frank, fly communication for mutariansi is fixed
+copy activities trash.set
+1574 stormy, credits dmitrryy added an other sound for polution cleaners.
+copy activities pol.set
+1573 stormy, credits dmitryy added a sound for the polution vehicles
+copy activities pol.set
+1572 stormy, credits Haschwalth, fixed a bug about hunting
+copy activities hunting.set
+1571, James, fixed a typo with trains
+copy cosmic rage\misc\trains.set
+1570, James, fixed a bug with machine guns firing in military vehicles.
+copy cosmic rage\vehicle\vehicle.set
 1569, James, Credits Stormy and Mohammed, Added a general sound for MFAS devices
 copy cosmic rage\misc\comms.set and sounds\cosmic rage\general\comms\mfas.wav
 1568 stormy, credits james, added a sound for battlesuit/spacesuit talking

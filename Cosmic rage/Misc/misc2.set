@@ -40,3 +40,8 @@
 #TRIGGER {On Seat Of The Judge, * calmly picks up the gavel and taps it against the desk.} {playsound {Cosmic Rage/general/misc/gavel.wav} @vol}
 #TRIGGER {A nearby speaker projects the voice of *} {playsound {Cosmic Rage/general/misc/mic.wav} @vol}
 #TRIGGER {* Trash Can makes a short, sharp crashing smashing noise as it recycles its contents.} {playsound {Cosmic Rage/general/misc/recycle.wav} @vol}
+#TRIGGER {You look around for a plant to pick...} {#gagline voice; playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
+#TRIGGER {* looks around for a plant to pick...} {#gagline voice; playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
+#TRIGGER {You find a *!} {#gagline voice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
+#TRIGGER {* finds a *!} {#gagline voice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
+#TRIGGER {You taste * though it seems to have little effect.} {#gagline voice; playsound {Cosmic Rage/general/misc/cureeat.wav} @vol}

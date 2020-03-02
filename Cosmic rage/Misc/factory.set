@@ -5,7 +5,7 @@ playsound  {cosmic rage/general/factory/laser.wav} @vol}
 #if {%ifword(factory,%1," ")} {
 playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
 #if {%ifword(large factory,%1," ")} {
-playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCasease;
+playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
 #if {%ifword(Starbase,%1," ")} {
 playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
 #if {%ifword(mini space station,%1," ")} {

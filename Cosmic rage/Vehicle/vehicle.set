@@ -139,7 +139,6 @@ playsound {cosmic rage/vehicle/vehicleLock.wav} @vevol}
 #trigger {The vehicle shudders horribly as it is put through a teleport.} {
 #gagline all;
 playsound {cosmic rage/vehicle/vehicleRelocate.wav} @vevol}
-#trigger {A strange rattling echoes throughout the vehicle.} {playsound {Cosmic Rage/general/combat/MachineGun.wav} @vevol} {} AnyCase
 #trigger {A siren rings out. Incoming * from *} {playsound {Cosmic Rage/general/misc/alarm.wav} @vevol} {} AnyCase
 #trigger {The vehicle lurches as something strikes it.} {playsound {Cosmic Rage/vehicle/Crash.wav} @vevol}
 #trigger {Locked onto *} {playsound {Cosmic Rage/ships/combat/Targeted.wav} @vevol}

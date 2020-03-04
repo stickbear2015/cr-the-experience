@@ -161,4 +161,5 @@ playsound {cosmic rage/general/comms/activate.wav} @vol};
 #if {%ifword(deactivate,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #trigger {Over * you hear * say *} {
-playsound {cosmic rage/general/comms/battlesuit.wav} @CommsVol; #additem Spacesuit %0; #additem say %0} {}
+#if {%IfWord(sector,%1," ")} {
+#abort 1} {playsound {cosmic rage/general/comms/battlesuit.wav} @CommsVol}; #additem Spacesuit %0; #additem say %0} {}

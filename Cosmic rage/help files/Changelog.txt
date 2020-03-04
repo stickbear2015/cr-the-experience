@@ -1,3 +1,7 @@
+1582 Updated by Frederick. Fixed factory PA announcement trigger.
+copy cr misc factory.set
+1581, James, fixed a small bug with the new spacesuit/battlesuit comms messages
+copy cosmic rage\misc\comms.set
 1580 stormy, added sounds for poison curing plants
 copy misc misc2.set and sounds cr general misc curefind curesearch and curefind.wav
 1579 Updated by Frederick. Fixed a tiny issue in factories.

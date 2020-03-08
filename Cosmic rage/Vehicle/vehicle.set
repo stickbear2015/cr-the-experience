@@ -154,7 +154,7 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol; #var chargeHandle %p
 #pc @chargeHandle stop;
 #var charging 0}}
 #trigger {You exit the vessel.} {#pc 0 stop}
-#TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vevol; #if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0}}
+#TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vevol; #if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0}; #var siren 0;}
 #trigger {A clunk is heard as a tugging vehicle clamps on.} {playsound {cosmic rage/vehicle/tug.wav} @vevol}
 #trigger {The motion comes to a stop as the tugging vehicle leaves.} {#gagline all;}
 #trigger {You aim * at * and unleash a powerful blast of fire suppressing chemicals.} {playsound {cosmic rage/vehicle/hose.wav} @vevol}

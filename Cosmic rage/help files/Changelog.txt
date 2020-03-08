@@ -1,3 +1,7 @@
+1584 stormy, huge thanks to malachai silver scale, added sounds for gmc ambulances
+copy misc orgstuff.set and sounds cr general gmc folder
+1583 stormy, fixed something about firetruck sirens
+copy vehicles vehicle.set
 1582 Updated by Frederick. Fixed factory PA announcement trigger.
 copy cr misc factory.set
 1581, James, fixed a small bug with the new spacesuit/battlesuit comms messages

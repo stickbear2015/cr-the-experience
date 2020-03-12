@@ -1,0 +1,31 @@
+;sharpening
+#TRIGGER {You pick one with *} {#gagline all; playsound {cosmic rage/general/combat/dragons/sharpen.wav} @vol}
+#TRIGGER {You run your claws along the edge of the rock, slowly sharpening them.} {#gagline all}
+#TRIGGER {You change your angle, and sharpen the tips of the claws.} {#gagline all}
+#trigger {You finish sharpening your claws, and shove the rock into the water with a splash.} {#gagline all; playsound {Cosmic Rage/general/combat/armor/water.wav} @vol}
+
+;flying
+#trigger {You unfirl your * and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
+#trigger {You flap your wings, heading for *} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
+#pc @FlyingStarthandle stop;
+#var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
+#trigger {You swoop down to land.} {#if {@Flying = 1} {
+#pc @Flyinghandle stop;
+#var Flying 0}; #if {@FlyingStart = 1} {
+#pc @FlyingStarthandle stop;
+#var FlyingStart 0}; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}
+#var FlyingHandle 0
+#var FlyingStartHandle 0
+#trigger {* unfurls * wings and launches into the sky.} {playsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
+#trigger {* flaps * wings, heading towards a destination.} {playsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
+#pc @FlyingStarthandle stop;
+#var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
+#trigger {*swoops in for a landing.} {#if {@Flying = 1} {
+#if {@flyinghandle > 0} {
+#pc @Flyinghandle stop;
+#var Flying 0}}; #if {@FlyingStart = 1} {
+#if {@FlyingStartHandle > 0} {
+#pc @FlyingStarthandle stop;
+#var FlyingStart 0}};
+#if {@flyinghandle > 0} {
+#pc @Flyinghandle stop}; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}

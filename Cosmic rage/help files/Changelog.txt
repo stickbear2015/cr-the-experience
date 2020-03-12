@@ -1,3 +1,7 @@
+1585 Updated by Frederick. In an effert to get the pack a little more organized, I have begun moving things around such that some triggers get their own script file, while other things get their own sounds folder. This project may be ongoing.
+copy cosmic rage.set
+copy cr activities volcanoHarvesting.set, cr misc doors.set, dragons.set, games.set, house.set, misc.set and misc2.set
+copy sounds cr general games and the misc folder
 1584 stormy, huge thanks to malachai silver scale, added sounds for gmc ambulances
 copy misc orgstuff.set and sounds cr general gmc folder
 1583 stormy, fixed something about firetruck sirens

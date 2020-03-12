@@ -7,7 +7,6 @@
 #trigger {* has returned*} {#additem AFKMessages %0}
 #TRIGGER {You can't go that way.} {#gagline all; playsound {cosmic rage/general/misc/CantGo.wav} @vol};
 #TRIGGER {[[]Type a line of input *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
-
 #TRIGGER {[[]Enter * or *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
 #trigger {[[]Type lines of input; use * to end or *abort' to abort the command.]} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
@@ -204,7 +203,6 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 playsound {cosmic rage/general/misc/wall.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
 #trigger {You indicate to * that * should follow you.} {playsound {cosmic rage/general/misc/joins.wav} @vol}
-
 #trigger {"Continue * *" says * mapper quietly in * voice.} {
 #if {@shortMapText = "Enabled"} {
 #sub {%1};#additem mapper %0}}
@@ -241,8 +239,6 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {[[]camera]: *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
 #trigger {*security drone* * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security drone located at %4 informs you %5}} {} AnyCase
 #trigger {*security camera* at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security camera located at %3 informs you %4}} {} AnyCase
-#trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
-#trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
 #trigger {The pod turns *} {#if {@SilentPod = "Enabled"} {#gagline all}}
 #trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol; #additem InfoComputerNotifications %0}
@@ -250,15 +246,6 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
 #trigger {The pod banks *} {#if {@SilentPod = "Enabled"} {#gagline all}}
-#trigger {You unfirl your * and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
-#trigger {You flap your wings, heading for *} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
-#pc @FlyingStarthandle stop;
-#var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
-#trigger {You swoop down to land.} {#if {@Flying = 1} {
-#pc @Flyinghandle stop;
-#var Flying 0}; #if {@FlyingStart = 1} {
-#pc @FlyingStarthandle stop;
-#var FlyingStart 0}; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}
 #trigger {*tap* shoulder.} {playsound {Cosmic Rage/general/misc/Tap.wav.} @vol}
 #trigger {[[]Marketing*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase
 #trigger {A huddled group of ryuchi suddenly fills the landing pad with their raucous laughter.} {#gagline voice}
@@ -276,40 +263,16 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {You tap on the icon of * on * display before resting your *against the scanner.} {#gagline all}
 #trigger {* taps an icon on the screen of * vending machine before resting * on the scanner.} {#gagline all}
 #trigger {*} {#if {@HD = 1} {#Additem HelperDrone %0; #var HD 0}}
-#var FlyingHandle 0
-#var FlyingStartHandle 0
-
-#trigger {* unfurls * wings and launches into the sky.} {playsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
-#trigger {* flaps * wings, heading towards a destination.} {playsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
-#pc @FlyingStarthandle stop;
-#var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}
-#trigger {*swoops in for a landing.} {#if {@Flying = 1} {
-#if {@flyinghandle > 0} {
-#pc @Flyinghandle stop;
-#var Flying 0}}; #if {@FlyingStart = 1} {
-#if {@FlyingStartHandle > 0} {
-#pc @FlyingStarthandle stop;
-#var FlyingStart 0}};
-#if {@flyinghandle > 0} {
-#pc @Flyinghandle stop}; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}
 #trigger {The flashing icons on * draw your attention *} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #TRIGGER {Warning! You have less than a minute of oxygen left in your spacesuit!} {playsound {cosmic rage/general/Misc/warning.wav} @vol}
-#TRIGGER {[[]Poker], * tosses down some chips and joins the game.} {playsound {cosmic rage/general/Misc/pokerchips.wav} @vol}
-#TRIGGER {[[]Poker], The dealer shuffles the cards.} {playsound {cosmic rage/general/Misc/pokercard.wav} @vol}
-#TRIGGER {[[]Poker], the dealer flips over card *} {playsound {cosmic rage/general/Misc/pokerplay.wav} @vol}
-#TRIGGER {[[]Poker], * bets *} {playsound {cosmic rage/general/Misc/pokerbet.wav} @vol}
-#TRIGGER {[[]Poker], * chips in. All in.} {playsound {cosmic rage/general/Misc/pokerchips.wav} @vol}
 #TRIGGER {You pick up * and dial a number.} {#Gagline ALL;
 playsound {cosmic rage/general/misc/taxi_phone.wav} @vol} {}
 #TRIGGER {You hang up * with  a click.} {#Gagline ALL;
 playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
-#TRIGGER {The doors on * slide open with a hiss.} {playsound {cosmic rage/general/misc/taxiopen.wav} @vol} {}
 #TRIGGER {you belt yourself in to your chair.} {playsound {cosmic rage/general/misc/seatbelt.wav} @vol} {}
 #trigger {Glancing at * you see the route is *.} {
 #if {@ShortMapText = "Enabled"} {
 #sub {%2}; #additem mapper %0}}
-#TRIGGER {The droid makes some adjustments, before carefully examining you in the mirror.} {#gagline all; {playsound {cosmic rage/general/misc/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}};
-#TRIGGER {The droid trims your hair, styling it as you wish and trimming down the length.} {#gagline all; {playsound {cosmic rage/general/misc/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}};
 #TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/general/misc/liftbutton.wav} @vol} {}
 #trigger {Enter a number, or a partial item name.} {#gagline all}
 #trigger {*C O N G R A T U L A T I O N S!*} {#sub {Congratulations! You have completed a task!};

@@ -41,3 +41,6 @@ playsound {cosmic rage/activities/MechanicalMining/slam.wav} @vol}
 #trigger {The computer announces: "* harvested."} {
 #if {@gagharvest = "Enabled"} {#gagline voice}}
 #trigger {The harvesting grinds to a halt.} {#gagline all; playsound {cosmic rage/activities/volcanoHarvesting/volcanoTransferEnd.wav} @vol; playsound {cosmic rage/activities/volcanoHarvesting/GearDown.wav} @vol}
+#TRIGGER {The mountain shudders violently!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
+#TRIGGER {In the distance, you see * erupt in a huge column of flame and ash!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
+#TRIGGER {Smoke begins to rise from * in the distance.} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}

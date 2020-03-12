@@ -89,3 +89,4 @@ playsound {cosmic rage/general/doors/transferclose.wav} @vol}
 playsound {cosmic rage/general/doors/DoorOpen4.wav} @vol};
 #if {%ifword(shut,%1," ")} {
 playsound {cosmic rage/general/doors/DoorClose4.wav} @vol}}
+#TRIGGER {The doors on * slide open with a hiss.} {playsound {cosmic rage/general/misc/taxiopen.wav} @vol} {}

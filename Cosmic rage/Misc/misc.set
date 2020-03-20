@@ -143,20 +143,6 @@ playsound {cosmic rage/general/misc/doorlock.wav} @vol}}
 #trigger {*One or more polls have been posted. Please type * to see what.} {playsound {cosmic rage/general/misc/vote.wav} @vol; #additem Notices %0}
 #trigger {There have been the following message board posts that you are required to read: *} {
 playsound {cosmic rage/general/comms/messageBoardNotify.wav} @vol; #additem MessageBoard %0}
-#TRIGGER {the lift arrives and the doors open.} {#gagline all; playsound {cosmic rage/general/misc/liftdooropen.wav} @vol} {} AnyCase
-#TRIGGER {The doors of the lift * open.} {#gagline all; playsound {cosmic rage/general/misc/liftdooropen.wav} @vol} {} AnyCase
-#TRIGGER {the lift} {
-#if {@roomSoundPlaying = 1} {
-#pc @roomHandle stop};
-#If {@ShipSoundPlaying = 1} {
-#pc @Shiphandle stop};
-LOOPSOUND {cosmic rage/general/misc/liftamb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "lift"; #var currentroom2 "notmisc"} {ambon};
-#TRIGGER {You tap the * and the lift begins to move.} {playsound {cosmic rage/general/misc/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/misc/LiftDoorClose.wav} @vol}};
-#TRIGGER {* taps the * and the lift begins to move.} {playsound {cosmic rage/general/misc/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/misc/LiftDoorClose.wav} @vol}}
-#trigger {the lift begins to * move.} {#gagline all; playsound {cosmic rage/general/misc/LiftStart.wav} @vol; #alarm 2 {loopsound {cosmic rage/general/misc/LiftMoving.wav} @vol; #var lifthandle %playhandle}};
-#trigger {the lift hums as it continues to move.} {#gagline all};
-#trigger {the lift slows down as it approaches the destination.} {#gagline all; playsound {cosmic rage/general/misc/LiftStop.wav} @vol; #pc @lifthandle stop};
-#TRIGGER {the lift comes to a stop and the doors hiss open.} {#gagline all; playsound {cosmic rage/general/misc/LiftDoorOpen.wav} @vol};
 
 #trigger {You feel * units of plasma return to your form.} {#if {@TPR = "Enabled"} {#gagline all;
 playsound {cosmic rage/general/misc/plasmaRecover.wav} @vol}}

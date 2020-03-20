@@ -1,5 +1,5 @@
 ;games
-#trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult*2.wav} @vol; #additem Cult %0}
+#trigger {[[]Cult],*} {playsound {Cosmic Rage/general/misc/Cult.wav} @vol; #additem Cult %0}
 
 #trigger {[[]Poker],*} {playsound {Cosmic Rage/general/misc/Poker.wav} @vol; #additem Poker %0}
 #TRIGGER {[[]Poker], * tosses down some chips and joins the game.} {playsound {cosmic rage/general/Misc/pokerchips.wav} @vol}

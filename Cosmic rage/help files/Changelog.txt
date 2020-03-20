@@ -1,3 +1,21 @@
+1594 stormy, credits luke, added soundwhen someone knocks a door from outside
+copy misc doros.set and copy sounds general doors doorknock.wav
+1593 stormy, credits rich, fixed showers
+copy misc bath.set
+1592 stormy, credits my old pack, changed outside airlock open/close sounds
+copy sounds ships misc openairlock and closeairlock.wav
+1591 stormy, moved lifts to their right spot
+copy house.set and sounds cr  general house folder
+1590 stormy, moved crystal refiners to the right spot
+copy misc factory.set and sounds cr general house folder
+1589 stormy, moved the clocks to the related folder
+copy misc clocks.set and sounds cr general house folder
+1588 stormy, moved the shower stuff to the related folder
+copy misc bath.set and sounds cr general house folder
+1587 stormy, moved bath sounds to the related folder
+copy misc bath.set and sounds cr general house folder
+1586 stormy, fixed something about cult
+copy misc games.set
 1585 Updated by Frederick. In an effert to get the pack a little more organized, I have begun moving things around such that some triggers get their own script file, while other things get their own sounds folder. This project may be ongoing.
 copy cosmic rage.set
 copy cr activities volcanoHarvesting.set, cr misc doors.set, dragons.set, games.set, house.set, misc.set and misc2.set

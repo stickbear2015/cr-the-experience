@@ -20,3 +20,17 @@
 #TRIGGER {You begin to dry * towel.} {playsound {Cosmic Rage/general/house/towel.wav} @vol}
 #TRIGGER {You launch into the air, jumping into the pool with a huge splash!} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
 #TRIGGER {You push * into the pool!} {playsound {Cosmic Rage/general/house/poolpush.wav} @vol}
+#TRIGGER {the lift arrives and the doors open.} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol} {} AnyCase
+#TRIGGER {The doors of the lift * open.} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol} {} AnyCase
+#TRIGGER {the lift} {
+#if {@roomSoundPlaying = 1} {
+#pc @roomHandle stop};
+#If {@ShipSoundPlaying = 1} {
+#pc @Shiphandle stop};
+LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "lift"; #var currentroom2 "nothouse"} {ambon};
+#TRIGGER {You tap the * and the lift begins to move.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}};
+#TRIGGER {* taps the * and the lift begins to move.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}
+#trigger {the lift begins to * move.} {#gagline all; playsound {cosmic rage/general/house/LiftStart.wav} @vol; #alarm 2 {loopsound {cosmic rage/general/house/LiftMoving.wav} @vol; #var lifthandle %playhandle}};
+#trigger {the lift hums as it continues to move.} {#gagline all};
+#trigger {the lift slows down as it approaches the destination.} {#gagline all; playsound {cosmic rage/general/house/LiftStop.wav} @vol; #pc @lifthandle stop};
+#TRIGGER {the lift comes to a stop and the doors hiss open.} {#gagline all; playsound {cosmic rage/general/house/LiftDoorOpen.wav} @vol};

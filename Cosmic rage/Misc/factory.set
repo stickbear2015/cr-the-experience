@@ -146,3 +146,5 @@ playloop {cosmic rage/general/factory/milk.wav} @vol; #var milkhandle %playhandl
 #trigger {The sound of scrapes and bangs can be heard as drones move about.} {playsound {cosmic rage/general/factory/clang.wav} @vol}
 #trigger {A huge foot comes down, smashing the bricks into salinarum!} {playsound {cosmic rage/general/factory/crushbrick.wav} @vol}
 #trigger {You pull down a large lever.} { #gagline all; playsound {cosmic rage/vehicle/lever.wav} @vol}
+#TRIGGER {you enter some digits into a crystal refiner, before tapping go.} {playsound {Cosmic Rage/general/house/crystalrefiner.wav} @vol}
+#TRIGGER {a crystal refiner falls silent.} {playsound {Cosmic Rage/general/house/crystalDROP.wav} @vol}

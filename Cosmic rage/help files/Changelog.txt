@@ -1,3 +1,7 @@
+1596 stormy, credits jim, added a sound for combat drone repairing
+copy ships shipcombat2.set
+1595 stormy, added some sounds for hosts
+copy misc hosts.set and sounds cr hosts folder
 1594 stormy, credits luke, added soundwhen someone knocks a door from outside
 copy misc doros.set and copy sounds general doors doorknock.wav
 1593 stormy, credits rich, fixed showers

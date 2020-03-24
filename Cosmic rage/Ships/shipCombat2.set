@@ -52,3 +52,4 @@ playsound {cosmic rage/ships/combat/indirect*2.wav} @CVol}}
 #Alias {escan} {#trigger {* distance * unit*} {#sub {distance %2, %1 }}; scan ship; #alarm 0.5 {#untrig {* distance * unit*}}};
 #trigger {The computer announces: "* reports all selected drones have been deployed."} {playsound {Cosmic Rage/ships/misc/combatdrone.wav} @CVol};
 #trigger {The computer announces: "The recalling of drones at * is now complete."} {playsound {Cosmic Rage/ships/misc/combatdrone.wav} @CVol};
+#trigger {A repair drone repairs some damage on *} {playsound {Cosmic Rage/ships/Ratika/Repair/*6.wav} @vol}

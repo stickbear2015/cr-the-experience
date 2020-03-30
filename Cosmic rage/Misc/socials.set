@@ -116,3 +116,5 @@
 ;#trigger  {* cries quietly *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ooccry.wav} @vol}}
 #trigger   {* violently lashes the whip of judgment across *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgewhip.wav} @vol}}
 #trigger {* sobs * broken heartedly} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}
+;#trigger  {*lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}
+;#trigger  {* lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}

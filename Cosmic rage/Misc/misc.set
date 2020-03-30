@@ -184,9 +184,6 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {A quote was just removed from the database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
 #trigger {* indicating someone just made an order for something.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
 #trigger {* lets out a horrible buzzing noise, before jerkily turning around and flying away.} {playsound {Cosmic Rage/general/misc/DroneBuzz.wav} @vol}
-#trigger {You slam into a wall.} {playsound {Cosmic Rage/general/misc/Wall.wav} @vol}
-#trigger {You walk straight into a wall. Good job.} {#gagline all;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
 #trigger {You indicate to * that * should follow you.} {playsound {cosmic rage/general/misc/joins.wav} @vol}
 #trigger {"Continue * *" says * mapper quietly in * voice.} {

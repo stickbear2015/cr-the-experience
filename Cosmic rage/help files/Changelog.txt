@@ -1,3 +1,13 @@
+1601 stormy, credits my old pack, changed and addded new dark matter mining sounds
+copy activities dark matter.set and sounds cr activities dark matter folder
+1600 Updated by Frederick. Added more triggers for bumping into walls or trying to go to exits that don't exist. Created a new file for the wall triggers and moved them out of the misc.set file
+copy cosmic rage.set and misc misc.set and wall.set
+1599 stormy, credits firath, added sounds for headbash social
+copy misc socials set and sounds cr general socials headbash.wav
+1598 stormy, credits prisoner recovery mission, you no longer hear a sound when a mob heals their ass or something else, the text is gagged.
+copy combat groundcombat.set
+1597 stormy, changed something about planetary destruction
+copy ships pd.set
 1596 stormy, credits jim, added a sound for combat drone repairing
 copy ships shipcombat2.set
 1595 stormy, added some sounds for hosts

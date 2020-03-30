@@ -1,0 +1,23 @@
+#trigger {You slam * wall.} {#gagline all;
+playsound {Cosmic Rage/general/misc/Wall.wav} @vol}
+#trigger {You walk straight into a wall. Good job.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {Hey, who put that wall there?} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {Wow, walls actually hurt.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {You try to walk through a wall... And fail Miserably.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {Interesting, apparently this game doesn't have the ability for players to walk straight through walls.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {Can't trust them exits, they keep moving.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {Nope. Still can't walk through walls.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {Oops... thought that was an exit.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {That used to be an exit. I swear it did!} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {Ow! That wall hurt!} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
+

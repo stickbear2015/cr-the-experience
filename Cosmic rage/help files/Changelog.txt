@@ -1,3 +1,9 @@
+1604 stormy, credits amara, the office ambience has been changed
+copy sounds cr ambiences office.wav
+1603 stormy, credits amara for some suggestions, katana for forcing me to use a horse, (sort of), horses are completely cosmicly overhauled like the trains, dont be surprised if you want to ride a horse after this change like the trains
+copy misc horses.set and sounds cr general horses folder
+1602 stormy, haircut sounds are back
+copy misc house.set and sounds cr general house folder
 1601 stormy, credits my old pack, changed and addded new dark matter mining sounds
 copy activities dark matter.set and sounds cr activities dark matter folder
 1600 Updated by Frederick. Added more triggers for bumping into walls or trying to go to exits that don't exist. Created a new file for the wall triggers and moved them out of the misc.set file

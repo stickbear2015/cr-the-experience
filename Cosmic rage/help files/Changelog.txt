@@ -1,3 +1,9 @@
+1607 stormy, credits kuro, swapped the headdesk and headbash sounds
+copy misc socials.set
+1606 stormy, credits the hosty of ravens, grills are fixed, i believe you should no longer encounter any bleeps or errors while using those
+copy misc grilling.set
+1605 stormy, credits hosty the elijah perez, the lake ambience has been changed
+copy ambiences lake.wav
 1604 stormy, credits amara, the office ambience has been changed
 copy sounds cr ambiences office.wav
 1603 stormy, credits amara for some suggestions, katana for forcing me to use a horse, (sort of), horses are completely cosmicly overhauled like the trains, dont be surprised if you want to ride a horse after this change like the trains

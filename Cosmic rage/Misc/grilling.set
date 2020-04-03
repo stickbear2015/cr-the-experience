@@ -6,14 +6,12 @@ playsound {cosmic rage/general/grilling/open.wav} @vol}
 #trigger {You set * atop the grill.} {playsound {cosmic rage/general/grilling/set.wav} @vol}
 #trigger {The smell of slowly grilling food wafts out from *.} {#gagline all;
 loopsound {cosmic rage/general/grilling/cook.wav} @vol;
-#var cookhandle %playhandle}
+#var cookhandle %playhandle; #var cook 1}
 #trigger {Your stomach growls in anticipation of your food.} {#gagline all}
 #trigger {Slight sizzling is heard from * as it continues to cook *.} {#gagline all}
 #trigger {You turn * over, ensuring it gets completely cooked.} {#gagline all}
 #trigger {The smells wafting from * are absolutely delicious!} {#gagline all}
-#trigger {You pluck * from *.} {#sub {You remove %1 from the grill.};
-#pc @cookhandle stop;
-playsound {cosmic rage/general/grilling/done.wav} @vol}
+#trigger {You pluck * from *.} {#if {@cook = 0} {#pc @cookhandle stop; #var cook 0}; playsound {cosmic rage/general/grilling/done.wav} @vol}
 #trigger {You press a button on the front of *causing the coals to be extinguished.} {#sub {You extinguish the grill.};
 playsound {cosmic rage/general/grilling/ext.wav} @vol}
 #trigger {* empties * bag of coal into *.} {#gagline all;

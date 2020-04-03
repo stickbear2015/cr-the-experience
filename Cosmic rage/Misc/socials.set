@@ -86,9 +86,9 @@
 #trigger {* in a box, slams the lid, throws it into the sea, sets fire to it, then laughs crazily.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/box.wav} @vol}}
 #trigger {* lifts up the executioner's sword.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/execute2.wav} @vol}}
 #trigger {* With a swing of the sword, * cleanly decapitates * much to the general good cheer of everyone else.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/execute.wav} @vol}}
-#trigger {* headdesks furiously!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} @vol}}
+#trigger {* headdesks furiously!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}
 #trigger {* slams * face into the desk!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} @vol}}
-#trigger {You grab * by the hair, and slam their face into a desk!} {#if {@socialText = "Disabled"} {#gagline all};#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} @vol}}
+#trigger {You grab * by the hair, and slam their face into a desk!} {#if {@socialText = "Disabled"} {#gagline all};#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}
 #trigger {* grabbes * by the hair, and slams their face into a desk!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} @vol}}
 #trigger {You bang your head into a nearby desk.} {#if {@socialText = "Disabled"} {#gagline all};#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} @vol}}
 #trigger {* bangs * head into a nearby desk.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} @vol}}
@@ -116,5 +116,5 @@
 ;#trigger  {* cries quietly *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ooccry.wav} @vol}}
 #trigger   {* violently lashes the whip of judgment across *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgewhip.wav} @vol}}
 #trigger {* sobs * broken heartedly} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}
-;#trigger  {*lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}
-;#trigger  {* lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}
+;#trigger  {*lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} @vol}}
+;#trigger  {* lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} @vol}}

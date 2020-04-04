@@ -1,3 +1,5 @@
+1608 stormy, added some great sounds for farming
+copy activities farming.set cosmic rage.set and sounds activities farming folder
 1607 stormy, credits kuro, swapped the headdesk and headbash sounds
 copy misc socials.set
 1606 stormy, credits the hosty of ravens, grills are fixed, i believe you should no longer encounter any bleeps or errors while using those

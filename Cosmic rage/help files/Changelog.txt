@@ -1,3 +1,10 @@
+1611 Updated by Frederick. Removed a duplicate farming file and updated the cosmic rage set file.
+delete misc farming.set
+copy cosmic rage.set
+1610 stormy, fixed all the farm sound errors
+copy sounds activities farming.folder and activities farming.set
+1609 stormy, creditsJoyeux, fixed a lift bug
+copy misc house.set and misc misc.set
 1608 stormy, added some great sounds for farming
 copy activities farming.set cosmic rage.set and sounds activities farming folder
 1607 stormy, credits kuro, swapped the headdesk and headbash sounds

@@ -1,3 +1,5 @@
+1612 stormy, credits kostas, fixed a script loading bug caused by the big larkan freddy
+copy cosmic rage.set
 1611 Updated by Frederick. Removed a duplicate farming file and updated the cosmic rage set file.
 delete misc farming.set
 copy cosmic rage.set

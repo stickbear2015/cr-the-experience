@@ -24,3 +24,4 @@
 #trigger {You begin to manipulate the bioplasma harvesting rods.} {#gagline voice}
 
 #trigger {You begin to manipulate the bioplasma harvesting rods.} {#gagline all}
+#trigger {On screen, You see the soupy mixture of the bioplasma nebula begin to collect around the tubing of the vessel.} {#gagline all}

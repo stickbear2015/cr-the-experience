@@ -1,3 +1,13 @@
+1617, James, credits Ulysses, added checks for the jump loop sound so you don't get an error for trying to stop it when it's not playing.
+copy cosmic rage\ships\jump.set
+1616 stormy, added a check for the warp sound, now it shouldnt play the sound over and over, if you switch to a new warp level while the warp is setteling
+copy ships ships.set
+1615 stormy, gagged a message about bio harvesting
+copy activities bioharvesting.set
+1614 stormy, credits host elijah parez, added a sound for jag case notifications
+copy misc comms.set and sounds cr general comms reminder.wav
+1613, James, a couple things. First, fixed a bug with the lift button sound. second, added the misc vehicle ambience to the transportation pods used in farming, enjoy.
+copy cosmic rage\misc\house.set and misc.set
 1612 stormy, credits kostas, fixed a script loading bug caused by the big larkan freddy
 copy cosmic rage.set
 1611 Updated by Frederick. Removed a duplicate farming file and updated the cosmic rage set file.

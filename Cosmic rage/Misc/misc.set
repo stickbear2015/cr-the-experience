@@ -128,6 +128,10 @@ loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @roomvol; #Var RoomHandle %Pla
 #if {@roomSoundPlaying = 1} {
 #pc @roomHandle stop};
 loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @roomvol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "pod"; #var currentroom2 "notmisc"} {ambon};
+#trigger {transportation pod} {
+#if {@roomSoundPlaying = 1} {
+#pc @roomHandle stop};
+loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @roomvol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "pod"; #var currentroom2 "notmisc"} {ambon};
 #trigger {You turn on A hose requested by * and spray * with it.} {
 #gagline  all;
 playsound {cosmic rage/general/misc/hose.wav} @vol}
@@ -256,7 +260,6 @@ playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
 #trigger {Glancing at * you see the route is *.} {
 #if {@ShortMapText = "Enabled"} {
 #sub {%2}; #additem mapper %0}}
-#TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/house/misc/liftbutton.wav} @vol} {}
 #trigger {Enter a number, or a partial item name.} {#gagline all}
 #trigger {*C O N G R A T U L A T I O N S!*} {#sub {Congratulations! You have completed a task!};
 playsound {cosmic rage/general/misc/congratulations.wav} @vol}

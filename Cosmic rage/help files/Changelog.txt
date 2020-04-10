@@ -1,3 +1,7 @@
+1619 stormy, credits host the elijah parez, you now hear something when the game chooses the only option in prompts
+copy misc misc.set and sounsds cr general misc auto.wav
+1618 stormy, credits, everyone, you now hear sounds when a third person uses a gril
+copy misc grilling.set
 1617, James, credits Ulysses, added checks for the jump loop sound so you don't get an error for trying to stop it when it's not playing.
 copy cosmic rage\ships\jump.set
 1616 stormy, added a check for the warp sound, now it shouldnt play the sound over and over, if you switch to a new warp level while the warp is setteling

@@ -1,3 +1,9 @@
+1622, James, Overhauled grilling a bit, fixing a few bugs in some of the triggers.
+copy cosmic rage\misc\grilling.set
+1621, James, updated the text that triggers the intro music. It is now the following. Welcome to: cosmic rage!
+copy cosmic rage\cosmic rage.set
+1620, James, Thanks to the people who reported it, the soundpack error is no longer the sound you hear when the moo autoselects a prompt option, :). The trigger wasn't pointing to an existing sound file. This has now been fixed, though it may be updated again if I didn't point it to the intended file.
+copy cosmic rage\misc\misc.set
 1619 stormy, credits host the elijah parez, you now hear something when the game chooses the only option in prompts
 copy misc misc.set and sounsds cr general misc auto.wav
 1618 stormy, credits, everyone, you now hear sounds when a third person uses a gril

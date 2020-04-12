@@ -103,7 +103,7 @@
 
 ;Triggers for connecting to the moo.
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop; loadbuffers}
-#trigger {Current hosts:*} {version; #say {Welcome to the VIP Cosmic Rage experience!}; #if {@intromusic = "enabled"} {playsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol}} {} AnyCase
+#trigger {Welcome to: cosmic rage!} {version; #say {Welcome to the VIP Cosmic Rage experience!}; #if {@intromusic = "enabled"} {playsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol}} {} AnyCase
 
 ;Settings.
 #File 6 {cosmic rage/misc/settings.set} 1;

@@ -1,3 +1,9 @@
+1625 Updated by frederick. Recent in-game text change about ships exploding.
+copy cosmic rage ships ShipCombat.set
+1624, James, fixed a bug by removing a period from a line it shouldn't have been on.
+copy cosmic rage\misc\hosts.set
+1623, stormy, fixed one of the hosty things
+copy misc hosts.set
 1622, James, Overhauled grilling a bit, fixing a few bugs in some of the triggers.
 copy cosmic rage\misc\grilling.set
 1621, James, updated the text that triggers the intro music. It is now the following. Welcome to: cosmic rage!

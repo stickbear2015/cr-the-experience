@@ -140,7 +140,7 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {A hum fills the ship as the shields are powered up.} {#gagline all; playsound {cosmic rage/ships/combat/shieldson.wav} @CVol};
 #TRIGGER {The hum begins to decrease as the shields begin to power off.} {#gagline all; playsound {cosmic rage/ships/combat/shieldsoff.wav} @CVol};
-#TRIGGER {*, you see * explode*} {
+#TRIGGER {Through the windows: * explodes!} {
 playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)};

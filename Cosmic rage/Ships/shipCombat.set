@@ -54,7 +54,7 @@ playsound {cosmic rage/ships/combat/plasmaCannonHum.wav} @CVol}
 #TRIGGER {You hear an earsplitting boom as the plasma cannon fires.} {#gagline all; playsound {cosmic rage/ships/combat/Plasma.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
-#TRIGGER {On screen, you see * explode!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
+#TRIGGER {On screen, * explode!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {A grating noise fills the ship as the armor activates.} {#gagline all; playsound {cosmic rage/ships/combat/defon1.wav} @CVol};
@@ -147,7 +147,7 @@ playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
 #if {@gagShipCombat = "Enabled"} {
 #gagline all} {
 #if {@gagShipCombat = "Disabled"} {
-#sub {%2 has just exploded%3}}}}
+#sub {%1 has just exploded%3}}}}
 #trigger {You hear a metal ring then a click.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/bladeson.wav} @CVol}

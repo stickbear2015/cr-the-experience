@@ -11,6 +11,7 @@
 #TRIGGER {You*giggle.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/giggle.wav} @vol}}
 #TRIGGER {* giggles.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/giggle.wav} @vol}}
 #TRIGGER {You*laugh.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
+#trigger {* lets out a * laugh.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
 #TRIGGER {* laughs.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh.wav} @vol}}
 #TRIGGER {You scream.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/scream*6.wav} @vol}}
 #TRIGGER {* screams.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/scream*6.wav} @vol}}

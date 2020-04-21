@@ -1,3 +1,11 @@
+1629 stormy, fixed explosions for real, i mean real blame frederick for the confusion
+copy ships shipcombat.set
+1628 Updated by Frederick. Modified the triggers for Professor Brandon red designation.
+copy cosmic rage misc hosts.set
+1627, James, Updated the socials file, laughing should work now.
+copy cosmic rage\misc\socials.set
+1626 Updated by Frederick. Fixed the trigger for enemy ships exploding for real.
+copy cosmic rage ships ShipCombat.set
 1625 Updated by frederick. Recent in-game text change about ships exploding.
 copy cosmic rage ships ShipCombat.set
 1624, James, fixed a bug by removing a period from a line it shouldn't have been on.

@@ -1,3 +1,7 @@
+1631 Update by frederick, credit to Kuro for the report. Fixed Cult, I hope. also fixed poker since I had moved the sounds for that game into the same folder as cult.
+copy cosmic rage misc games.set
+1630 stormy/frederick, credits jim, fixed the sp suggest and spbug
+copy misc souncpack.set
 1629 stormy, fixed explosions for real, i mean real blame frederick for the confusion
 copy ships shipcombat.set
 1628 Updated by Frederick. Modified the triggers for Professor Brandon red designation.

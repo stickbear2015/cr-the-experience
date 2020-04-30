@@ -1,3 +1,9 @@
+1634 stormy, changed ryuchi chitter sounds le tme know what you think
+copy misc comms.set and sounds cr general comms folder
+1633, James, Fixed explosions for real, I mean for real for real, you will actually see what explodes now if you don't gag combat text.
+copy cosmic rage\ships\ShipCombat.set
+1632 Updated by frederick, thank to Host Eli for the heads up. Changed the trigger text for the trash can social.
+copy cosmic rage misc socials.set
 1631 Update by frederick, credit to Kuro for the report. Fixed Cult, I hope. also fixed poker since I had moved the sounds for that game into the same folder as cult.
 copy cosmic rage misc games.set
 1630 stormy/frederick, credits jim, fixed the sp suggest and spbug

@@ -33,9 +33,9 @@ playsound {cosmic rage/general/comms/growl*3.wav} @Vol; #additem Say %0};
 #if {%ifWord(drone,%1," ")} {
 playsound {cosmic rage/general/comms/drone*2.wav} @Vol; #additem Say %0};
 #if {%ifword(chitter,%1," ")} {
-playsound {cosmic rage/general/comms/ryuchiChitter*10.wav} @Vol; #additem Say %0};
+playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @Vol; #additem Say %0};
 #if {%ifWord(chitters,%1," ")} {
-playsound {cosmic rage/general/comms/ryuchiChitter*10.wav} @Vol; #additem Say %0};
+playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @Vol; #additem Say %0};
 #if {%ifWord(growls,%1," ")} {
 playsound {cosmic rage/general/comms/growl*3.wav} @Vol; #additem Say %0};
 #if {%ifWord(drones,%1," ")} {

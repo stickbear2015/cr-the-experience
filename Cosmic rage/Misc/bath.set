@@ -24,5 +24,5 @@ playsound {cosmic rage/general/house/ShowerCurtainClose.wav} @vol}} {} AnyCase
 #trigger {the water level rises a little.} {#gagline all}
 #trigger {* shuts off the taps.} {#gagline all; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
 #trigger {the taps shut off.} {#gagline all; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
-#trigger {You climb out of *} {#gagline all; #var bathloop 0; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}; #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
+#trigger {You climb out of *} {#var bathloop 0; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}; #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
 #trigger {the taps are on.} {#if {@bathloop = 0} {loopsound {cosmic rage/general/house/bath4.wav} @vol; #var bath1Handle %playHandle; #var bath1 1}}

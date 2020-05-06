@@ -1,3 +1,5 @@
+1635 stormy, credits lara the stardust, ungagged a bath message
+copy misc bath.set
 1634 stormy, changed ryuchi chitter sounds le tme know what you think
 copy misc comms.set and sounds cr general comms folder
 1633, James, Fixed explosions for real, I mean for real for real, you will actually see what explodes now if you don't gag combat text.

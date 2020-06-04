@@ -144,7 +144,7 @@ playsound {cosmic rage/vehicle/vehicleRelocate.wav} @vevol}
 #trigger {Locked onto *} {playsound {Cosmic Rage/ships/combat/Targeted.wav} @vevol}
 #trigger {You pull the trigger of the lasers.} {playsound {Cosmic Rage/ships/combat/Laser.wav} @vevol;#gagline all}
 #trigger {The vehicle rocks slightly as lasers are fired.} {#gagline all}
-#trigger {The vehicle rocks violently as something impacts it.} {playsound {cosmic rage/vehicle/vehicleRam.wav} @vevol}
+#trigger {The vehicle rocks violently as something impacts it.} {#gagline voice}
 #trigger {The boat begins to vibrate under your feet as the vessel is recharged.} {#gagline all;
 loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol; #var chargeHandle %playHandle; #var charging 1}
 #trigger {Recharging complete.} {#gagline all}
@@ -183,3 +183,4 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #trigger {a gleaming silver drone clamps onto * and tugs it into the back of the store, out of sight.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/cargorepair.wav} @vevol; #alarm 2 {playsound {Cosmic Rage/general/combat/suit/repair.wav} @vevol}}
 #trigger {a gleaming silver drone pushes * into the store.} {#gagline all}
 #TRIGGER {A red light flashes urgently on your vehicle's display, informing you of hostiles being detected.} {#gagline voice; playsound {cosmic rage/vehicle/land.wav} @vevol};
+#TRIGGER {Screetching sirens fill the air from * as revolving lights circle its main body.} {#gagline voice; playsound {cosmic rage/vehicle/caralarm.wav} @vevol};

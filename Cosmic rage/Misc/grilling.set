@@ -1,31 +1,26 @@
 #trigger {* presses a button on the front of * causing the coals inside to flair to life.} {
-#sub {%1 lights the grill.};
 playsound {cosmic rage/general/grilling/light.wav} @vol}
 #trigger {You push a button on the front of * causing the coals inside to flame to life.} {
-#sub {You light the grill.};
 playsound {cosmic rage/general/grilling/light.wav} @vol}
-#trigger {You open * at the bottom of * and take out *.} {#sub {You take %3 out of %1.};
-playsound {cosmic rage/general/grilling/open.wav} @vol}
+#trigger {You open * at the bottom of * and take out *.} {playsound {cosmic rage/general/grilling/open.wav} @vol}
 #trigger {You set * atop the grill.} {playsound {cosmic rage/general/grilling/set.wav} @vol}
-#trigger {The smell of slowly grilling food wafts out from *.} {#gagline all;
+#trigger {The smell of slowly grilling food wafts out from *.} {#gagline voice;
 loopsound {cosmic rage/general/grilling/cook.wav} @vol;
 #var cookhandle %playhandle; #var cook 1}
 #trigger {Your stomach growls in anticipation of your food.} {#gagline all}
-#trigger {Slight sizzling is heard from * as it continues to cook *.} {#gagline all}
-#trigger {You turn * over, ensuring it gets completely cooked.} {#gagline all}
-#trigger {The smells wafting from * are absolutely delicious!} {#gagline all}
+#trigger {Slight sizzling is heard from * as it continues to cook *.} {#gagline voice}
+#trigger {You turn * over, ensuring it gets completely cooked.} {#gagline voice}
+#trigger {The smells wafting from * are absolutely delicious!} {#gagline voice}
 #trigger {You pluck * from *.} {#if {@cook = 1} {#pc @cookhandle stop; #var cook 0}; playsound {cosmic rage/general/grilling/done.wav} @vol}
 #trigger {* plucks * from *.} {#if {@cook = 1} {#pc @cookhandle stop; #var cook 0}; playsound {cosmic rage/general/grilling/done.wav} @vol}
-#trigger {You press a button on the front of * causing the coals to be extinguished.} {#sub {You extinguish the grill.};
+#trigger {You press a button on the front of * causing the coals to be extinguished.} {
 playsound {cosmic rage/general/grilling/ext.wav} @vol}
-#trigger {* empties * bag of coal into *.} {#gagline all;
+#trigger {* empties * bag of coal into *.} {#gagline voice;
 playsound {cosmic rage/general/grilling/coal.wav} @vol}
-#trigger {* refill* * from a refill pack for grills.} {#gagline all;
+#trigger {* refill* * from a refill pack for grills.} {#gagline voice;
 playsound {cosmic rage/general/grilling/coal.wav} @vol}
-#trigger {* opens * at the bottom of * and takes out *.} {#sub {%1 takes %3 out of %4.};
-playsound {cosmic rage/general/grilling/open.wav} @vol}
+#trigger {* opens * at the bottom of * and takes out *.} {playsound {cosmic rage/general/grilling/open.wav} @vol}
 
-#trigger {* presses a button on the front of * causing the coals to be extinguished.} {#sub {%1 extinguishes the grill.};
-playsound {cosmic rage/general/grilling/ext.wav} @vol}
+#trigger {* presses a button on the front of * causing the coals to be extinguished.} {playsound {cosmic rage/general/grilling/ext.wav} @vol}
 #trigger {* plucks * from *.} {#if {@cook = 1} {#pc @cookhandle stop; #var cook 0}; playsound {cosmic rage/general/grilling/done.wav} @vol}
 #trigger {* sets * atop the grill.} {playsound {cosmic rage/general/grilling/set.wav} @vol}

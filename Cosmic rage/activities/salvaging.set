@@ -16,4 +16,4 @@
 #trigger {*"firing up debris laser."} {playsound {Cosmic Rage/ships/salvaging/DebrisHum.wav} @vol; #gagline all}
 #trigger {You hear a ping as the debris laser fires.} {playsound {Cosmic Rage/ships/salvaging/DebrisLaser.wav} @vol; #gagline all; #PC %PlayHandle Pan %Random(-4000,4000)}
 #trigger {You target the debris cloud laser and hit fire.} {#gagline all}
-#trigger {*"No clouds found."} {#sub {No debris clouds within range of debris laser.}}
+

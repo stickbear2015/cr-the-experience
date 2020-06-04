@@ -59,7 +59,7 @@ playsound {cosmic rage\ships\combat\emp.wav} @vol}
 #trigger {*"Core already analysed. powering down."} {playsound {Cosmic Rage/activities/star cores/PowerDown.wav} @vol}
 #trigger {some drones take some gas from * and shoot off into the sky with it.} {#gagline all}
 #trigger {The computer announces: "Locked onto star *. *."} {
-#sub {Locked on to the star core.};
+
 playsound {cosmic rage/activities/star cores/corestart.wav} @vol;
 #var CoreStartHandle %playhandle}
 #TRIGGER {On screen, you see arcs of electricity spiral out from the ship and stream towards *} {#gagline all;
@@ -76,3 +76,4 @@ playsound {cosmic rage/activities/star cores/core2.wav} @vol; #var CoreLoopHandl
 #if {@CoreLoopHandle < 0} {#abort 1} {
 #if {@coreLoopHandle > 0} {
 #pc @CoreLoopHandle stop}; playsound {cosmic rage/activities/star cores/core3.wav} @vol}}
+#trigger {Some pressurised gas is released from the star core.} {#gagline voice}

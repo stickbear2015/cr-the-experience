@@ -18,3 +18,4 @@ playsound {cosmic rage/general/horses/sniff.wav} @vol}
 #Gagline ALL} 
 #trigger {You turn on * and begin to hose down *} {playsound {cosmic rage/general/horses/clean.wav} @vol}
 #trigger {You hold out *} {playsound {cosmic rage/general/horses/treat.wav} @vol}
+#trigger {* neighs loudly!} {playsound {cosmic rage/general/horses/whinny*2.wav} @vol}

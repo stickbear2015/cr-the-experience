@@ -2,7 +2,7 @@
 #trigger {You feel the ship begin to gently rise off the ground.} {playsound {Cosmic Rage/activities/PlanetChunks/Launch.wav} @vol;
 #gagline voice}
 #trigger {The ship launches skywards with a roar.} {#gagline all}
-#trigger {Artificial atmosphere generater destabilised.} {playsound {Cosmic Rage/activities/PlanetChunks/generaterWarning.wav} @vol; #sub {Warning! Warning! The Artificial atmosphere generater has become unstable!}}
+#trigger {Artificial atmosphere generater destabilised.} {playsound {Cosmic Rage/activities/PlanetChunks/generaterWarning.wav} @vol; }
 #trigger {You carefully aline the ship and begin to gently nudge it towards the planet chunks surface.} {playsound {Cosmic Rage/activities/PlanetChunks/land.wav} @vol}
 #trigger {The ship rocks as it destabilises an artificial atmosphere.} {#gagline voice}
 #trigger {* "Warning, atmosphere damaged."} {playsound {Cosmic Rage/activities/PlanetChunks/Warning.wav} @vol}

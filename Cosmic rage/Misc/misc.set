@@ -261,7 +261,7 @@ playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
 #if {@ShortMapText = "Enabled"} {
 #sub {%2}; #additem mapper %0}}
 #trigger {Enter a number, or a partial item name.} {#gagline all}
-#trigger {*C O N G R A T U L A T I O N S!*} {#sub {Congratulations! You have completed a task!};
+#trigger {*C O N G R A T U L A T I O N S!*} {
 playsound {cosmic rage/general/misc/congratulations.wav} @vol}
 #trigger {A * light blinks cheerily from the screen of a basic communications pack.} {
 #if {%ifword(red,%1," ")} {

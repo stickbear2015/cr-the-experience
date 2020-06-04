@@ -1,3 +1,53 @@
+1662 stormy, credits wanderer, adjusted the tarania music volume
+1661, James, Fixed laughing for those without a gendered laugh.
+copy cosmic rage\misc\socials.set
+1660 stormy, credits Ryanna  and wanderer, fixed dragon flying
+1659 stormy, credits Kyleigh, gagged a starcore message
+1658 stormy, credits elijah, added a sound fo automatic airlock opening
+1657 stormy, credits Zorgaph , added souds for caralarms
+copy vehicle vehicle.set and sounds cr  vehicle caralarm.wav
+1656    stormy, credits blake, sound credits blake, at long last, added some cool things about highways, there is also a demo link in the demos.txt file.
+copy vehicle folder cosmic rage.set and sounds cr general highway folder
+1655, James, With the new intro text, I've patched the pack with reguard to intro music. It works now!
+copy Cosmic Rage\Cosmic Rage.set
+1654 stormy,  credits Eldrion , fixed up hand mining
+copy activities hand mining set
+1653: Lara, removed a bunch of subs along with storms.
+Copy ships/ship combat.set, misc/trains.set, misc/trolleys.set, misc/socials.set, misc/hosts.set and misc/misc.set
+1652, lara: A sub was taken out from hosts
+copy misc/hosts.set
+1651, lara: A sub was taken out from factories and the parody
+copy misc/factories.set and misc/a pilot's parody.set
+1650 stormy,  cleaned the sounds for most of the socials, those have no longer have wierd crackles or spaces in the beginning
+copy sounds general socials folder
+1649, lara: A sub was taken out from combat
+copy combat/ground combat.set
+1648, lara: A sub was taken out from combat
+copy combat/combat.set
+1647, lara: A sub was taken out from star coring
+copy activities/star coring.set
+1646, lara: A sub was taken out from salvaging
+copy activities/salvaging.set
+1645, lara: A sub was taken out from planetoids
+copy activities/planetoid.set
+1644 stormy, credits host-request, a subbed text has been gone from the planetoid chunks activity
+copy activities planetoid chunks.set
+1643: Lara, Deleted all the naughty subs in grilling
+copy misc/grilling.set
+1642 stormy, credits host-request, the samething, but for moons for this time
+copy activities moons.set
+1641 stormy, credits host-request, deleted the changed texts about the mecahnical mining activity
+copy activities mechanicalmining.set
+1640 stormy, credits host-request, deleted most of the sub texts about hand mining activity and fixed various bugs
+copy activities handmining.set
+1639 stormy, credits Charles, fixed most of the phrases that contains the word, snap, the finger snapping should no longer play when that happens
+copy misc socials.set
+1638 stormy, credits venus, added a sound for horses
+copy misc horses.set
+1637 stormy, fixed shitsqueeze social
+copy misc socials.set
+1636, James, Shortened text surrounding the message about ratika being detected on your ship.
+copy cosmic rage\ships\rats.set
 1635 stormy, credits lara the stardust, ungagged a bath message
 copy misc bath.set
 1634 stormy, changed ryuchi chitter sounds le tme know what you think

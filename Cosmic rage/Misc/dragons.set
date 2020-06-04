@@ -5,7 +5,7 @@
 #trigger {You finish sharpening your claws, and shove the rock into the water with a splash.} {#gagline all; playsound {Cosmic Rage/general/combat/armor/water.wav} @vol}
 
 ;flying
-#trigger {You unfirl your * and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
+#trigger {You unfurl your * and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
 #trigger {You flap your wings, heading for *} {loopsound {Cosmic Rage/general/misc/DragonFlying.wav} @vol; #if {@FlyingStart = 1} {
 #pc @FlyingStarthandle stop;
 #var FlyingStart 0; #var Flyinghandle %playhandle; #var Flying 1}}

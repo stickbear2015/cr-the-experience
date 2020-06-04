@@ -147,7 +147,7 @@ playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
 #if {@gagShipCombat = "Enabled"} {
 #gagline all} {
 #if {@gagShipCombat = "Disabled"} {
-#sub {%1 has just exploded%3}}}}
+#sub {%1 explodes!}}}}
 #trigger {You hear a metal ring then a click.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/bladeson.wav} @CVol}

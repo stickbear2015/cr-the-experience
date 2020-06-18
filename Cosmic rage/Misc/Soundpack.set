@@ -14,8 +14,8 @@
 #math chresult {@CurrentVersion - @chresult};
 #if {@chresult = 1} {#say {Your soundpack is not up to date. There has been @chresult change since you last updated.}} {#say {Your soundpack is not up to date. There have been @chresult changes since you last updated.}}}};
 #if {%IsNumber(@CurrentVersion) = 1} {#var cvcheck 0}}}
-#alias spbug {#say {Please make sure your soundpack is up to date before making a bug report or suggestion. Thank you.}; #gagon; spp;bug}
-#alias spsuggest {#say {Please make sure your soundpack is up to date before making a bug report or suggestion. Thank you.}; #gagon; spp;suggest}
+#alias spbug {#say {Please make sure your soundpack is up to date before making a bug report or suggestion. Thank you.}; #gagon; spp;1;bug}
+#alias spsuggest {#say {Please make sure your soundpack is up to date before making a bug report or suggestion. Thank you.}; #gagon; spp;1;suggest}
 #trigger {Suggestion submitted!} {playsound {Cosmic Rage/general/misc/SpSuggest.wav} @vol; #sub {Thank you for submitting this suggestion! An admin will work on it shortly and reach out if needed!}}
 #trigger {Enter a short subject line for the *.} {#ungagon}
 #trigger {Please enter a long description for the suggestion.} {#sub {Please enter your suggestion now. Please provide as much detail as possible,  including text that you would like sounds or gags added for. Thank you.};

@@ -1,3 +1,9 @@
+1666 stormy, if your having difficulties installing the sound pack, there is now a file that lets you do it automaticly. Important note! if you copy this file to your vipmud directory, it will delete all of your existing added muds from the v i p character selection list, use this file as a last resort option. the file is called character.mud, and its at the main folder and should be coppied to c:\users username documents vipmud folder
+1665, James, The pack now automatically has you look to restore ambience sounds if you reconnect so you don't have to.
+copy cosmic rage\cosmic rage.set
+1664, james, logging in no longer throws errors for those with intro music disabled. Thanks Firath for reporting.
+copy cosmic rage\cosmic rage.set
+1663 stormy, credits william, spbug and spsuggest commands are fixed
 1662 stormy, credits wanderer, adjusted the tarania music volume
 1661, James, Fixed laughing for those without a gendered laugh.
 copy cosmic rage\misc\socials.set

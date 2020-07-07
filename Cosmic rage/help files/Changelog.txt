@@ -1,3 +1,13 @@
+1671 stormy, fixed the world tentackles triggering the tackle sound, how rude
+copy misc socials.set
+1670, James, Someone went in and removed the sound command for vehicles smashing into things, making it so that people wouldn't notice any vehicle damage. This has been corrected.
+copy cosmic rage\vehicle\vehicle.set
+1669, James, Updated the traceback trigger to the new text.
+copy cosmic rage\misc\comms.set
+1668, James, fixed lift sounds.
+copy cosmic rage\misc\house.set
+1667: Lara: Updated the comms.set file to correct the OOC channel as per change in game. This may not necessarily be needed but, just to be safe.
+Copy: misc/comms.set
 1666 stormy, if your having difficulties installing the sound pack, there is now a file that lets you do it automaticly. Important note! if you copy this file to your vipmud directory, it will delete all of your existing added muds from the v i p character selection list, use this file as a last resort option. the file is called character.mud, and its at the main folder and should be coppied to c:\users username documents vipmud folder
 1665, James, The pack now automatically has you look to restore ambience sounds if you reconnect so you don't have to.
 copy cosmic rage\cosmic rage.set

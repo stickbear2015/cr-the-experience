@@ -56,7 +56,7 @@
 #trigger {You practice your rugby tackles.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}}
 #trigger {* kicks * smack bang in the stomach!} {#if {@SocialSounds = "Enabled"} {playsound  {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}}
 #trigger {You tackle *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}}
-#trigger {*tackles*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}}
+#trigger {* tackles*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/tackle*5.wav} @vol}}
 #trigger {You purr.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/purr.wav} @vol}}
 #trigger {You purr at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/purr.wav} @vol}}
 #trigger {*purrs*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/purr.wav} @vol}}

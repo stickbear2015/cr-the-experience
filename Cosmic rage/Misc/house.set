@@ -30,10 +30,10 @@
 LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "lift"; #var currentroom2 "nothouse"} {ambon};
 #TRIGGER {You tap the * and the lift begins to move.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}};
 #TRIGGER {* taps the * and the lift begins to move.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}
-#trigger {the lift begins to * move.} {#gagline all; playsound {cosmic rage/general/house/LiftStart.wav} @vol; #alarm 2 {loopsound {cosmic rage/general/house/LiftMoving.wav} @vol; #var lifthandle %playhandle}};
-#trigger {the lift hums as it continues to move.} {#gagline all};
-#trigger {the lift slows down as it approaches the destination.} {#gagline all; playsound {cosmic rage/general/house/LiftStop.wav} @vol; #pc @lifthandle stop};
-#TRIGGER {the lift comes to a stop and the doors hiss open.} {#gagline all; playsound {cosmic rage/general/house/LiftDoorOpen.wav} @vol};
+#trigger {The lift begins to * move.} {#gagline all; playsound {cosmic rage/general/house/LiftStart.wav} @vol; #alarm 2 {loopsound {cosmic rage/general/house/LiftMoving.wav} @vol; #var lifthandle %playhandle}} {} AnyCase
+#trigger {The lift hums as it continues to move.} {#gagline all} {} AnyCase
+#trigger {The lift slows down as it approaches the destination.} {#gagline all; playsound {cosmic rage/general/house/LiftStop.wav} @vol; #pc @lifthandle stop} {} AnyCase
+#TRIGGER {The lift comes to a stop and the doors hiss open.} {#gagline all; playsound {cosmic rage/general/house/LiftDoorOpen.wav} @vol} {} AnyCase
 #TRIGGER {The droid makes some adjustments, before carefully examining you in the mirror.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}};
 #TRIGGER {The droid trims your hair, styling it as you wish and trimming down the length.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}};
 #TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}

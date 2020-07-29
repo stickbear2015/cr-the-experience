@@ -164,3 +164,4 @@ playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #if {%IfWord(sector,%1," ")} {
 #abort 1} {playsound {cosmic rage/general/comms/battlesuit.wav} @CommsVol}; #additem Spacesuit %0; #additem say %0} {}
 #trigger {A synthetic tone issues forth from * "Reminder! There are open cases on the docket at the hall of *} {playsound {Cosmic Rage/general/comms/reminder.wav} @vol}
+#trigger {You * into *} {#if {@commtoggle = "Enabled"} {#gagline all}}

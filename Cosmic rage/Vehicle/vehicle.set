@@ -155,7 +155,6 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol; #var chargeHandle %p
 #pc @chargeHandle stop;
 #var charging 0}}
 #trigger {You exit the vessel.} {#pc 0 stop}
-#TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vevol; #if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0}; #var siren 0;}
 #trigger {A clunk is heard as a tugging vehicle clamps on.} {playsound {cosmic rage/vehicle/tug.wav} @vevol}
 #trigger {The motion comes to a stop as the tugging vehicle leaves.} {#gagline all;}
 #trigger {You aim * at * and unleash a powerful blast of fire suppressing chemicals.} {playsound {cosmic rage/vehicle/hose.wav} @vevol}
@@ -185,3 +184,4 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #trigger {a gleaming silver drone pushes * into the store.} {#gagline all}
 #TRIGGER {A red light flashes urgently on your vehicle's display, informing you of hostiles being detected.} {#gagline voice; playsound {cosmic rage/vehicle/land.wav} @vevol};
 #TRIGGER {Screetching sirens fill the air from * as revolving lights circle its main body.} {#gagline voice; playsound {cosmic rage/vehicle/caralarm.wav} @vevol};
+#TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vevol; #if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0}; #var siren 0; #if {@charging = 1} {#pc @chargeHandle stop}}

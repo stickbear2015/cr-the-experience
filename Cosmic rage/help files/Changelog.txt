@@ -1,3 +1,31 @@
+1685 stormy, credits maddis, vehicles fixed
+copy  veh vehicle.set
+1684 stormy, credits kayla, the  vehicle charge sound now stops looping when you exit a vehicle
+copy vehicle vehicle.set
+1683 stormy, credits morgan, bathtubs are fixed 
+copy misc bath.set
+1682 stormy, credits francisco the config manager is fixed
+copy misc conf.set
+1681 stormy, communication toggling now works.
+copy misc conf.set
+1680 stormy, credits lara, special thanks to Raju Laini, Aaron Dizon and Anastasia Palmara for helping me along the way, from now on, when your brouzing through the config manager, youw ill hear the shortcuts of the options that you want to toggle, for example, enable disable social sounds, shortcut alt shift s.
+copy misc conf.set
+1679 stormy, credits everyone, i have to thank james for this one anyway, settings are not propparly saves, bad bad stormy
+copy cr.set misc sp.set and misc  config  manager.set
+1678 Updated by Frederick, credit to Karsyn Asketelle. Fixed the fly sound not ceasing to loop after fly has been swatted.
+copy cr/ activities/trash.set
+1677 stormy, credits noone, the ooc burp, shitsqueeze, headbash and some other wierd social is now works
+copy misc socials.set
+1676 stormy, credits katana and others, changed the death ambience, welcome to the draconic heaven
+copy sounds amb death.wav
+1675, James, added the read part to the new toggle. Also, for people still having issues with settings, we believe the issue is resolved, but update wasn't logged.
+copy cosmic rage\Cosmic Rage.set and cosmic rage\misc\soundpack.set
+1674 Updated by frederick. The sound once again plays when you're scanning for a hand mining find, and when you reach the destination your computer indicates.
+copy cr/activities/HandMining.set
+1673 stormy, credits katana, helper drone remote suff has been all gagged, let me know if something is wierd, probably its wierd because i gagged all the phrases containing a remote control for a helper drone
+copy misc misc2.set
+1672, James, Fixed the trigger for ship acceleration.
+copy cosmic rage\ships\ships.set
 1671 stormy, fixed the world tentackles triggering the tackle sound, how rude
 copy misc socials.set
 1670, James, Someone went in and removed the sound command for vehicles smashing into things, making it so that people wouldn't notice any vehicle damage. This has been corrected.

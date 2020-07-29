@@ -12,7 +12,7 @@
 #TRIGGER  {* hums a little.} {#gagline all; playsound {cosmic rage/general/misc/food.wav} @vol}
 #TRIGGER  {You step onto the recharging station.} {#gagline all; playsound {cosmic rage/general/misc/larkancharge.wav} @vol; #alarm 4.7 {loopsound {cosmic rage/general/misc/lark.wav} @vol; #var larkanHandle %playHandle; #var larkan 1}}
 #trigger {You step down from the recharging station, fully charged and ready to take on practically anything.} {#gagline all; #if {@larkan = 1} {#pc @larkanHandle stop; #var larkan 0}}
-#trigger {You finish using a remote control for a helper drone and lock it with the button at the top.} {#gagline all}
+#trigger {* remote control for a helper drone*} {#gagline all}
 #TRIGGER  {You pause by a decontamination unit.} {#gagline all; playsound {cosmic rage/general/misc/decontamination.wav} @vol}
 #TRIGGER  {A small piece of glittering soul escapes from * to be devoured by A rotting skull!} {#gagline all; playsound {cosmic rage/general/misc/soulsuck.wav} @vol}
 #TRIGGER  {*** System announcement: *} { playsound {cosmic rage/general/misc/boop.wav} @vol}

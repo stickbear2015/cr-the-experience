@@ -2,8 +2,8 @@
 ;scanning for hand-mining finds
 #trigger {You hold * out above the ground, allowing it to scan.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/scan.wav} @vol}
-#trigger {* indicates it has detected something nearby at *.} {#var hmfind1 %2;#sub {%1 indicates it has detected something nearby at %2.}}
-#trigger {You are in the * at *.} {#var hmfind2 %2;
+#trigger {* indicates it has detected something nearby at * *, * underground.} {#var hmfind1 {%2 %3};#sub {%1 indicates it has detected something nearby at %2, %3.}}
+#trigger {You are in the * at * *.} {#var hmfind2 {%2 %3};
 #if {@hmfind2 = @hmfind1} {playsound {cosmic rage/activities/hand mining/CanDig.wav} @vol}}
 #trigger {You pick your way through the mining area, heading *.} {#sub {You're heading %1.}}
 

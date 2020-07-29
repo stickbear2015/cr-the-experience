@@ -25,7 +25,7 @@ playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 #TRIGGER {A rumble fills the ship as the cargo bay doors slide open.} {#gagline all; playsound {cosmic rage/ships/misc/TransferStart.wav} @vol};
 #TRIGGER {A rumbling fills the ship as the cargo bay doors close.} {#gagline all; playsound {cosmic rage/ships/misc/TransferEnd.wav} @vol};
 #TRIGGER {You carefully begin to line the ship up for entry into the planets atmosphere.} {playsound {cosmic rage/ships/misc/youLanding.wav} @vol};
-#TRIGGER {The hum of the engines gets higher in pitch as the speed of the ship is increased} {#gagline all; 
+#TRIGGER {The hum of the engines gets higher in pitch as the speed of the ship is increased.} {#gagline all; 
 #if {@altShipEngines = "Disabled"} {
 playsound {cosmic rage/ships/movement/acceleration.wav} @Evol};
 #if {@altShipEngines = "Enabled"} {
@@ -119,9 +119,9 @@ playsound {cosmic rage/ships/movement/orbit.wav} @vol}
 #trigger {The hum of the engines come to an abrupt hault and the lights flicker to emergancy level as the ships power goes offline.} {#if {@ShipSoundPlaying = 1} {#pc @Shiphandle stop; #var ShipSoundPlaying 0}; playsound {cosmic rage/ships/misc/PowerOff.wav} @Shipvol; loopsound {cosmic rage/ships/misc/NoPower.wav} @Shipvol; #pc @Shiphandle %Playhandle; #var ShipSoundplaying 1; #var CurrentRoom "off"; #var CurrentRoom2 "notmisc"}
 #trigger {The roar of the engines calm down and the ship settles.} {
 #gagline all}
-#trigger {the ship lurches violently and you hear a deafening boom!} {
+#trigger {The ship lurches violently and you hear a deafening boom!} {
 #gagline all;
-playsound {cosmic rage/ships/misc/boom.wav} @vol}
+playsound {cosmic rage/ships/misc/boom.wav} @vol} {} AnyCase
 #trigger {You flip a switch on the main console.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/switch.wav} @vol}

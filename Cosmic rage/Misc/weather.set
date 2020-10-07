@@ -8,7 +8,7 @@ playsound {cosmic rage/general/weather/pouringRain.wav} @vol}}
 #gagline all};
 #if {@weather = "Enabled"} {
 playsound {cosmic rage/general/weather/pouringRain.wav} @vol}}
-#trigger {You hear the rain as it hits the ground outside} {
+#trigger {You hear the rain as it hits the ground outside.} {
 #if {@gagWeather = "Enabled"} {
 #gagline all};
 #if {@weather = "Enabled"} {

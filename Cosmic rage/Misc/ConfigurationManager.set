@@ -114,13 +114,13 @@ playsound {Cosmic Rage/general/misc/VolumeUp.wav} @musicVol; #say {Planet music 
 #if {@MVol < 0} {@MVol = 0};
 playsound {Cosmic Rage/general/misc/VolumeDown.wav} @MVol; #say {Combat music Volume @MVol percent};
 #if {@Combatmusicplaying = 1} {
-#pc @combatmusicHandle volume @MVol}}
+#pc @combatmusicPlayingHandle volume @MVol}}
 #alias combatup {
 #math MVol {@MVol + 5};
 #if {@MVol > 100} {@MVol = 100};
 playsound {Cosmic Rage/general/misc/VolumeUp.wav} @MVol; #say {Combat music Volume @MVol percent};
 #if {@combatmusicplaying = 1} {
-#pc @combatmusicHandle volume @MVol}}
+#pc @combatmusicPlayingHandle volume @MVol}}
 #alias combatvolumedown {
 #math CVol {@CVol - 5};
 #if {@CVol < 0} {@CVol = 0};
@@ -207,7 +207,7 @@ playsound {Cosmic Rage/general/misc/VolumeUp.wav} @vEvol; #say {vehicle engine V
 #if {@UpdateToggle = "Enabled"} {#var UpdateToggle "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no longer receive update notifications on login.}} {#var UpdateToggle "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now receive update notifications on login.}}}
 #alias togglemusic {
 #if {@MusicSounds = "Enabled"} {#var MusicSounds "Disabled"; #var planet ""; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Planetary Music disabled.}; #if {@MusicPlaying = 1} {#var MusicPlaying 0; #pc @musichandle stop}} {#var MusicSounds "Enabled"; look; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Planetary music enabled.}}};
-#alias {togglecombat} {#if {@cMusic = "Enabled"} {#var cMusic "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Ship combat music disabled.}; #if {@combatMusicPlaying = 1} {#var combatMusicPlaying 0; #pc @combatmusichandle stop}} {#var cMusic "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Ship combat music enabled.}}}
+#alias {togglecombat} {#if {@cMusic = "Enabled"} {#var cMusic "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Ship combat music disabled.}; #if {@combatMusicPlaying = 1} {#var combatMusicPlaying 0; #pc @combatmusicPlayingHandle stop}} {#var cMusic "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Ship combat music enabled.}}}
 
 #alias togglevehicle {
 #if {@altVehicleEngines = "Enabled"} {#var altVehicleEngines "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {alternate vehicle engines disabled.}} {#var altVehicleEngines "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Alternate vehicle engines enabled.}}};
@@ -262,4 +262,4 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.}}}
 #alias StopSound {#pc 0 stop; #pc %MP3Loop stop; playsound {Cosmic Rage/general/misc/SoundsStopped.wav} @vol; #say {All currently playing sounds have been stopped.}}
 #TRIGGER {lag.test} {#unalarm LagTest; #gagline all; #say {It's estimated that You have %eval(@LagAmount * @vol) Milliseconds lag.}} {} AnyCase
 #alias TPR {#if {@TPR= "Enabled"} {#var TPR "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no  longer hear bio plasma regenoration sounds.}} {#var TPR "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now hear bio plasma regenoration sounds.}}}
-#alias commtoggle  {#if {@commtoggle= "Enabled"} {#var commtoggle "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no longer see communication texts}} {#var commtoggle "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now see communication texts}}}
+#alias commtoggle  {#if {@commtoggle= "Enabled"} {#var commtoggle "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see communication texts}} {#var commtoggle "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see communication texts}}}

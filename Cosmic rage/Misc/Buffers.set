@@ -11,12 +11,12 @@
 
 ;aliases for saving and reading preferred buffers.
 
-#alias savebuffers {#say {saving...}; #delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
+#alias savebuffers {#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
 #alias AutoSaveBuffers {#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5}
 #alias loadbuffers {#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersLoaded.wav} 80}
 #alias SilentlyLoadBuffers {#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5}
-;Keys for loading, reading  and saving buffers
 
+;Keys for loading, reading  and saving buffers
 #key {Control-alt-shift-S} {SaveBuffers}
 #key {Control-alt-shift-L} {LoadBuffers}
 

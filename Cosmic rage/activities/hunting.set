@@ -5,7 +5,7 @@
 #TRIGGER {You sail over the bush!} {playsound {cosmic rage/activities/hunt/sale.wav} @vol};
 #TRIGGER {You land squarely in the bush.} {playsound {cosmic rage/activities/hunt/failjump.wav} @vol};
 #trigger {You pull back * and yank it free.} {#gagline all}
-#trigger {* Incora *} {playsound {cosmic rage/activities/hunt/inc.wav} @vol};
+#trigger {You see a colourful Incora(minding * own business) here.} {playsound {cosmic rage/activities/hunt/inc.wav} @vol};
 #trigger {* branches lay here.} {playsound {cosmic rage/activities/hunt/branch.wav} @vol};
 #trigger {A few lumps in the ground indicate their could be fox holes here.} {playsound {cosmic rage/activities/hunt/foxhole.wav} @vol};
 #trigger {a startled * fox pops out of the ground!} {playsound {cosmic rage/activities/hunt/foxpanic.wav} @vol};

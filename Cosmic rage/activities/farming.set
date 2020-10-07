@@ -83,3 +83,6 @@ loopsound {cosmic rage/activities/farming/house.wav} @roomvol;
 #trig {a * is selling * horses.} {playsound {Cosmic Rage/activities/farming/horse.wav} @vol}
 #trig {a * is selling * goats.} {playsound {Cosmic Rage/activities/farming/goat.wav} @vol}
 #trig {a * is selling * sheeps.} {playsound {Cosmic Rage/activities/farming/sheep.wav} @vol}
+#trig {You use the loose soil to cover the seeds with * shovel.} {
+#gagline voice;
+playsound {cosmic rage/activities/hand mining/dirt.wav} @vol}

@@ -33,3 +33,7 @@ playsound {cosmic rage/activities/mechanicalMining/whirling.wav} @vol}
 #trigger {The rock burns a bright orange colour, far too hot to not burn away the elements inside!} {#if {@Sortinghandle > 0} {#pc @SortingHandle stop};playsound {cosmic rage/activities/mechanicalMining/laser2.wav} @vol; }
 #trigger {The laser appears to be making no headway.} {#if {@SortingHandle > 0} {#pc @SortingHandle stop};playsound {cosmic rage/activities/mechanicalMining/laser2.wav} @vol; }
 #trigger {The laser manages to burn away the rock and quickly vents the steam outside.} {#if {@SortingHandle > 0} {#pc @SortingHandle stop};playsound {cosmic rage/activities/mechanicalMining/laser2.wav} @vol;}
+#trigger {You tap engage.} {#gagline voice;
+playsound {cosmic rage/ships/computer/MiniKeyboard.wav} @vol}
+#trigger {A short burst of alarm emits from the speakers, indicating that a meteor is about to be engaged.} {playsound {cosmic rage/general/combat/warning.wav} @vol}
+

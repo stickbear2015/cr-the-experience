@@ -186,7 +186,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {[[]Resource Market]:*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase
 #trigger {A new quote has been added to the quote database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
 #trigger {A quote was just removed from the database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
-#trigger {* indicating someone just made an order for something.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
+#trigger {* flashes bright blue, indicating someone just * order *} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
 #trigger {* lets out a horrible buzzing noise, before jerkily turning around and flying away.} {playsound {Cosmic Rage/general/misc/DroneBuzz.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
 #trigger {You indicate to * that * should follow you.} {playsound {cosmic rage/general/misc/joins.wav} @vol}
@@ -273,3 +273,4 @@ playsound {cosmic rage/general/misc/CommPackGreen.wav} @vol};
 #trigger {You flick out * with a quick gesture, studying the cash readout displayed in the top right hand corner.} {#gagline all;
 playsound {cosmic rage/general/misc/CashCheck.wav} @vol}
 #TRIGGER {Automatically selected *} {playsound {cosmic rage/general/misc/auto.wav} @vol} {}
+#trigger {You flip the screen of * out with a flick of your *} {#gagline all}

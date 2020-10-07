@@ -37,3 +37,5 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {The droid makes some adjustments, before carefully examining you in the mirror.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}};
 #TRIGGER {The droid trims your hair, styling it as you wish and trimming down the length.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}};
 #TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}
+#TRIGGER {You grab a paper cup and put it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
+#TRIGGER {* grabs a paper cup and puts it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}

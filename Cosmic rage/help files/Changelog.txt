@@ -1,3 +1,148 @@
+1749 stormy, credits hale,  we now have the snarl sound for the ingame social
+copy misc socials.set and sounds cr general socials snarl.wav
+1748 stormy, the reduced the base present in the purr sound
+1747 stormy, the fridge water thing is fixed for good this time
+copy misc house.set
+1746 stormy, fixed hatch repairs
+copy ships ships2.set
+1745 stormy, credits william, fridge water thing is fixed
+copy misc house.set
+1744 stormy, credits kayla, there was a bug about say for humans, but its fixed now
+copy misc say.set
+1743 stormy, credits kayla, gagged something about planetoids
+copy activities planetoid.set
+1742 stormy, credits remo, added sounds for fridges when you get a water
+copy misc house.set and sounds general house watercool.wav
+1741 stormy, credits blake, added fiew neet things for highways, 1, the accelirate sound no longer plays over and over when you quickly type it twice, 2, pedal sounds has been added
+copy sounds general highway folder and vehicle highway.set
+1740 stormy, i've moved back the help files folder because it caused some unexpected things
+copy helpfiles folder to cr folder
+1739 stormy, the sp credits and readme files are updated
+copy helpfiles folder
+1738 stormy, moved the help files folder to outside of cosmic rage folder for easyer access
+1737, James, Fixed a trigger and added a couple more for merchant ships.
+copy ships\ships.set
+1736, James, Added a trigger for merchant ship doors opening on the inside.
+copy cosmic rage\ships\ships.set
+1735, James, Fixed the bug with classic cars starting.
+copy cosmic rage\vehicle\cars.set
+1734 stormy, credits alex and shelby, thanks to sp history, the boat starting bug is fixed
+copy vehicle vehicle.set
+1733, James, You'll no longer hear the trash can sound unless trash is in the text, my guarantee. Also, added the howl trigger to the text you get when someone else howls. Enjoy.
+copy cosmic rage\misc\Mutariansi.set and misc2.set
+1732, James, Just discovered and corrected another bug. You can now disable combat music while at red alert without getting an error.
+copy cosmic rage\misc\ConfigurationManager.set
+1731, James, Fixed adjusting combat music volume. Adjust as you please.
+copy cosmic rage\misc\ConfigurationManager.set
+1730 stormy, the helper drone text  stuff now appears in the output window, but it still doesnt spoken
+copy misc misc2.set
+1729 Updated by Frederick.
+Fixed a trigger with babies crying. Hopefully they will work now.
+Copy cr/misc/babies.set
+1728 Updated by Frederick, credits to Amara Navy blue designation.
+Added a sound when planting seeds.
+copy cr/activities/farming.set
+1727 Update by Frederick.
+I have made the sound volumes in the battlesuits set file, use the ground combat volume instead of the general volume, since they are ground combat related.
+copy cosmic rage/combat/battlesuits.set
+1726 Updated by Frederick, credits to Blake Cromozov16158.
+Hopefully got the second-hand message of another person flying pollution cleaners taken care of.
+copy cosmic rage/activities/pol.set
+1725 stormy, the commtoggle feature has been fixed for good
+copy misc comms.set
+1724 Updated by Frederick, broken by Stormy. Shame on you Stormy, now go sit over there in the corner.
+Fixed a trigger a some set files.
+copy cr ships ships2.set and cr vehicles/vehicles.set
+1723 stormy, credits syuri, added sounds forsuba cooling
+copy ships ships2.st and sounds cr ships misc cool.wav
+1722 stormy, credits amara, added a sound for processing units
+copy misc factory set and sounds cr general factory folder
+1721 stormy, credits frederick, added sounds for planetoid cannons
+copy activiti planetoid set and sounds cr act planetoid fodler
+1720 stormy, credits dave, the order sound is fixed
+copy misc misc.set
+1719 stormy, credits Cypro, added sounds for boat starting
+copy vehicle vehicle.set and sounds cr vehicle boatstart.wav
+1718 stormy, credits katana, although you guys known me  with my demonic or gremlin sounds, this new sound will trigger your parrenting urges. Added a sound when a baby sobs for good.
+copy misc baby.set nd sounds cr general baby sob.wav
+1717 stormy, credits amar, added sound for stun crystal clipping
+copy misc wear.set and sounds cr wear clip.wav
+1716 stormy, added a sound for a vehicle thing
+copy vehicle vehicle.set and sounds cr vehicle button.wav
+1715 stormy, credits dmitriy, added a sound when a volcano harvester is being unloaded from a factory
+copy activities volcanoharvesting.set
+1714 stormy, credits blake, fixed jet triggers copy misc jets.set
+1713 Frederick Barnes, credit to Tony BuFalo.
+Modify the trigger for hunting Incora.
+copy cosmic rage/activities/hunting.set
+1712 stormy, credits dmitriy, the transport sound bug is fixed
+copy ships ships2.set
+1711 Updated by Frederick.
+Added sounds for storing and retrieving hand-mining finds from your hand-mining kits.
+copy cosmic rage/activities/HandMining.set
+1710 Updated by Frederick.
+I gagged a line about picking your way through the dig site. we already know what we're doing since we're moving aren't we?
+copy cosmic rage/activities/HandMining.set
+1709 Updated by Frederick, credits for suggestion from Chris Blue designation.
+gagged a line for info computer when you flip them open.
+copy cosmic rage/misc/misc.set
+1708 Updated by Frederick, credits to Dmitriy Patrikov12185. added sounds when you engage meteors.
+copy cosmic rage/activities/MechanicalMining.set
+1707 stormy, credits blake, a trigger has been corrected
+copy vehicle highway.set
+1706 stormy, credits francisco, the rat alarm sound no longer clips
+copy sounds cr ships ratika alarm.wav
+1705 Updated by Frederick, credits to Dmitriy Patrikov12185, sound provided by Stormy.
+Added a sound for repair holes left behind by rats using a repair kit.
+copy cosmic rage/ships/rats.set, and sounds cr ships ratika repair repair.wav
+
+1704 Updated by Frederick, suggestion credits to Karsyn Asketelle, sounds provided by Stormy.
+Added sounds to activity in the dark matter mining base when constructing drones.
+copy cosmic rage/activities/DarkMatterMining.set
+copy sounds/cosmic rage/activities/dark matter mining
+1703 stormy, thanks to fred the comms thing is now fixed
+copy misc comms.set
+1702 Updated by frederick, with possible credits to John Smith. I say that because this thing I fixed in the communications file may be related.
+Fixed something with a trigger in comms.set.
+copy cosmic rage/misc/comms.set
+1701 stormy, credits blake, added a sound when the planetoid equipment is stuck for good
+copy act planetoid.set and sounds act planetoid stuck.wav
+1700 stormy, credits blake, the garage transportation sound is fixed
+ships ships.set
+1699 Updated by Frederick.
+I added a trigger when you are in an airlock and that airlock is locked. If you try to move in a direction that would take you out of the airlock, it will now play a sound like when you slam into a wall.
+copy cosmic rage/misc/wall.set
+1698 stormy, credits frederick, commtoggle is fixed
+copy misc comms.set
+1697 Updated by Frederick, credits to Blake Cromozov16158.
+when using the hotkey control plus s to save sound settings and buffer list, you will no longer hear an extra line of text that just says "saving...".
+copy cosmic rage/misc/buffers.set
+1696 stormy, credits stormy, i was going to change the purr sound but decide to optimise the curront one got recorded by snapp blue scale as a form of respect, his change was follows like this, 299. Because I finally got a good recording of my cat purring, You all have a new purr sound.
+copy sounds cr general socials purr.wav
+
+ i optimised the quality of the purr sound wich was recorded by the former developer snapp blue scale, his change was follows like this, 299. Because I finally got a good recording of my cat purring, You all have a new purr sound.
+1695 Update by Frederick.
+Fixed a trigger for weather.
+Added triggers for the small transportation cart doors sliding open and shut on Sola.
+copy cosmic rage/misc/doors.set and weather.set
+1694 stormy, credits blake, the crushery ambience now loops
+copy sounds ambiences crusher.wav
+1693 stormy, credits hail the hale, the soundpack is fixed
+copy misc misc2.set
+1692 stormy, credits dave, the comm toggle now works like it should to be now
+copy misc confmanager.set
+1691 stormy, credits all, fixed helper drones
+copy misc misc2.set
+1690 stormy, credits Maddis, since noone toled me before and i never new about it, the comm toggle also works for mutariansi now
+copy misc comms.set
+1689 stormy, credits dmitriy, you now hear souds for polution vehicles when someone else does the activity
+copy activities pol.set
+1688 stormy, credits dmitriy, fixed something about polution cleaners
+copy activities pol.set
+1687 stormy, credits blake, the trolley fusing is fixed
+copy misc trolley.set
+1686 Lara: Murdered substitutes in hand mining and upgrades which were causing people to report typos and such and were unnecesary anyway.
+Copy ships/ships2.set and activities/hand mining.set
 1685 stormy, credits maddis, vehicles fixed
 copy  veh vehicle.set
 1684 stormy, credits kayla, the  vehicle charge sound now stops looping when you exit a vehicle

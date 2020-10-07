@@ -1,7 +1,7 @@
 #trigger {You type in your security code into * trolley} {
 #gagline all;
 playsound {cosmic rage/general/trolley/button.wav} @vol}
-#trigger {You hear what sounds like fusing from * trolley} {
+#trigger {You hear what sounds like fusing from *} {
 #gagline all;
 playsound {cosmic rage/general/trolley/fuses.wav} @vol;
 #wait 2; {

@@ -1,4 +1,4 @@
-here you can find the ansers of most asked questions.
+here you can find the ansers of the most asked questions.
 q, help, my ship sounds arent playing, did i break the pack?
 a, possibly no, if your pack is up to date, try typing soundproof in your ships control room.
 q, a sound just stuck looping, what do i do and its anoying.

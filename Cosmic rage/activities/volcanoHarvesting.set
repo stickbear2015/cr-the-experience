@@ -44,3 +44,6 @@ playsound {cosmic rage/activities/MechanicalMining/slam.wav} @vol}
 #TRIGGER {The mountain shudders violently!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
 #TRIGGER {In the distance, you see * erupt in a huge column of flame and ash!} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
 #TRIGGER {Smoke begins to rise from * in the distance.} {playsound {cosmic rage/general/misc/volcano.wav} @vol} {}
+
+#trigger {A drone wheels in and scoops up a fossilized squirrel before wheeling out again.} {
+#gagline voice; playsound  {cosmic rage/general/misc/DroidLeaves.wav} @vol}

@@ -147,3 +147,4 @@ playloop {cosmic rage/general/factory/milk.wav} @vol; #var milkhandle %playhandl
 #TRIGGER {you enter some digits into a crystal refiner, before tapping go.} {playsound {Cosmic Rage/general/house/crystalrefiner.wav} @vol}
 #TRIGGER {a crystal refiner falls silent.} {playsound {Cosmic Rage/general/house/crystalDROP.wav} @vol}
 #trigger {The drones lift a chunk and slam it down, shattering it into smaller pieces which they then use lasers to cut into bricks.} {playsound {cosmic rage/general/factory/can.wav} @vol; playsound {cosmic rage/general/factory/fanActivate.wav} @vol}
+#trigger {a metal processing unit lets out a shrill whistle and spits out * tritanium and copper strips.} {playsound {cosmic rage/general/factory/metalprocess.wav} @vol; playsound {cosmic rage/general/factory/fanActivate.wav} @vol}

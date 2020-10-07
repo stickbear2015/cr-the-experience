@@ -12,13 +12,13 @@
 #TRIGGER  {* hums a little.} {#gagline all; playsound {cosmic rage/general/misc/food.wav} @vol}
 #TRIGGER  {You step onto the recharging station.} {#gagline all; playsound {cosmic rage/general/misc/larkancharge.wav} @vol; #alarm 4.7 {loopsound {cosmic rage/general/misc/lark.wav} @vol; #var larkanHandle %playHandle; #var larkan 1}}
 #trigger {You step down from the recharging station, fully charged and ready to take on practically anything.} {#gagline all; #if {@larkan = 1} {#pc @larkanHandle stop; #var larkan 0}}
-#trigger {* remote control for a helper drone*} {#gagline all}
+#trigger {* begin to control your droid wirelessly using *} {#gagline all}
 #TRIGGER  {You pause by a decontamination unit.} {#gagline all; playsound {cosmic rage/general/misc/decontamination.wav} @vol}
 #TRIGGER  {A small piece of glittering soul escapes from * to be devoured by A rotting skull!} {#gagline all; playsound {cosmic rage/general/misc/soulsuck.wav} @vol}
 #TRIGGER  {*** System announcement: *} { playsound {cosmic rage/general/misc/boop.wav} @vol}
 #TRIGGER {* You hear a crowd booing and hissing. *} {playsound {Cosmic Rage/general/misc/pvpoff.wav} @vol}
 #TRIGGER {* You hear the roar of an approving crowd. *} {playsound {Cosmic Rage/general/misc/pvpon.wav} @vol}
-#TRIGGER {You toss *} {playsound {Cosmic Rage/general/misc/trash.wav} @vol}
+#TRIGGER {You toss *} {#if {%IfWord(trash,%1,"")} {playsound {Cosmic Rage/general/misc/trash.wav} @vol}}
 #TRIGGER {You land with a painful thump on the other side of the room.} {playsound {Cosmic Rage/general/misc/thump.wav} @vol}
 #TRIGGER {you enter some digits into a crystal refiner, before tapping go.} {playsound {Cosmic Rage/general/misc/crystalrefiner.wav} @vol}
 #TRIGGER {a crystal refiner falls silent.} {playsound {Cosmic Rage/general/misc/crystalDROP.wav} @vol}
@@ -35,3 +35,6 @@
 #TRIGGER {You find a *!} {#gagline voice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
 #TRIGGER {* finds a *!} {#gagline voice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
 #TRIGGER {You taste * though it seems to have little effect.} {#gagline voice; playsound {Cosmic Rage/general/misc/cureeat.wav} @vol}
+#trigger {* begins to control * droid wirelessly using *} {#gagline all}
+#trigger {You finish using * and lock it with the button at the top.} {#gagline voice}
+#trigger {* finishes using * and locks it with the button at the top.} {#gagline voice}

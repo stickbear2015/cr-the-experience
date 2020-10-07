@@ -28,7 +28,8 @@ playsound {cosmic rage/vehicle/transfer.wav} @vevol}
 #gagline all;
 playsound {cosmic rage/vehicle/start.wav} @Vevol}
 #trigger {* dramatically hit* a star*shaped button.} {
-#gagline all}
+#gagline all;
+playsound {cosmic rage/vehicle/button.wav} @vevol}
 #trigger {The hum* stop* as the vehicle * recharg*.} {
 #gagline all;
 #if {@charging = 1} {
@@ -185,3 +186,9 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #TRIGGER {A red light flashes urgently on your vehicle's display, informing you of hostiles being detected.} {#gagline voice; playsound {cosmic rage/vehicle/land.wav} @vevol};
 #TRIGGER {Screetching sirens fill the air from * as revolving lights circle its main body.} {#gagline voice; playsound {cosmic rage/vehicle/caralarm.wav} @vevol};
 #TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vevol; #if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0}; #var siren 0; #if {@charging = 1} {#pc @chargeHandle stop}}
+#TRIGGER {The deck hums with power as engine 1 is fired up.} {#gagline voice; playsound {cosmic rage/vehicle/boatstart.wav} @vevol};
+#trig {The deck hums with power as engine 2 is fired up.} {#gagline voice}
+
+#trigger {You swipe your ID card across the control screen.} {
+#gagline all;
+playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}

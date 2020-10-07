@@ -131,11 +131,13 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {Drones return to the store, having just completed a job.} {playsound {cosmic rage/ships/misc/droneout.wav} @vol; #gagline all}
 #TRIGGER {Drones return to the store and disappear out the back.} {playsound {cosmic rage/ships/misc/dronein.wav} @vol; #gagline all}
 #TRIGGER {Drones head out of the store on a job.} {playsound {cosmic rage/ships/misc/droneout.wav} @vol; #gagline all}
-#TRIGGER {A green alert flashes on a brightly glowing display board and a message reads: "Upgrade successfully applied to *} {playsound {cosmic rage/ships/misc/upggood.wav} @cvol; #subs {upgrades successfully applyed to %1}}
-#TRIGGER {A red alert flashes on a brightly glowing display board and a message reads: "Upgrade unsuccessful."} {playsound {cosmic rage/ships/misc/upgred.wav} @cvol; #subs {upgrade unsuccesfull}}
-#TRIGGER {A yellow alert flashes on a brightly glowing display board and a message reads: "Upgrades are already being applied on the vessel named * Further upgrades will be queued."} {playsound {cosmic rage/ships/misc/upgyellow.wav} @cvol; #subs {the selected ship is already upgraded, further upgrades will be queued.}}
+#TRIGGER {A green alert flashes on a brightly glowing display board and a message reads: "Upgrade successfully applied to *} {playsound {cosmic rage/ships/misc/upggood.wav} @cvol}
+#TRIGGER {A red alert flashes on a brightly glowing display board and a message reads: "Upgrade unsuccessful."} {playsound {cosmic rage/ships/misc/upgred.wav} @cvol}
+#TRIGGER {A yellow alert flashes on a brightly glowing display board and a message reads: "Upgrades are already being applied on the vessel named * Further upgrades will be queued."} {playsound {cosmic rage/ships/misc/upgyellow.wav} @cvol}
 #trig {The mechanical sliding noise dies away.} {#gagline all}
 #TRIGGER {You fiddle with the ventilation system for a moment, before finally managing to get it to start pumping Phosgene.} {playsound {cosmic rage/ships/misc/vent.wav} @vol; #gagline all}
 #TRIGGER {You make some adjustments on the ventilation system, bringing in fresh oxygen.} {playsound {cosmic rage/ships/misc/vent.wav} @vol; #gagline all}
 #TRIGGER {* skitters in on tiny clawed feet.} {playsound {cosmic rage/ships/rep/bre1.wav} @vol; #gagline all}
 #TRIGGER {You gently place * on the floor... Then kick it *} {playsound {cosmic rage/ships/rep/bre2.wav} @vol; #gagline all}
+#TRIGGER {You tap cooldown on the subatomic console.} {playsound {cosmic rage/vehicle/button.wav} @vol}
+#TRIGGER {A flood of what sounds like water drains through the lower parts of the ship for several moments, before trickling away.} {playsound {cosmic rage/ships/misc/cool.wav} @vol; #gagline all}

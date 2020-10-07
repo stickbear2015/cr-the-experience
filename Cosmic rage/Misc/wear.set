@@ -22,3 +22,4 @@
 #trigger {You step * bottom half of * and gather it up.} {playsound {cosmic rage/wear/AboutBody.wav} @vol}
 #TRIGGER {you slide your left leg into *} {playsound {cosmic rage/wear/feet.wav} @vol}
 #TRIGGER {You pull * up your legs, and buckle it around your waist.} {playsound {cosmic rage/wear/legs.wav} @vol; playsound {cosmic rage/wear/waist.wav} @vol}
+#TRIGGER {You clip * to * and use a magnet to make sure the field is active.} {playsound {cosmic rage/wear/clip.wav} @vol; playsound {cosmic rage/wear/waist.wav} @vol}

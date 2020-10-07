@@ -20,4 +20,6 @@ playsound {cosmic rage/general/misc/wall.wav} @vol}
 playsound {cosmic rage/general/misc/wall.wav} @vol}
 #trigger {Ow! That wall hurt!} {#gagline all;
 playsound {cosmic rage/general/misc/wall.wav} @vol}
+#trigger {You slam head first into * good job.} {#gagline all;
+playsound {cosmic rage/general/misc/wall.wav} @vol}
 

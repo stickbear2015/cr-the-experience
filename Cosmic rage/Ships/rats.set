@@ -42,3 +42,5 @@ playsound {Cosmic Rage\ships\fire\siren.wav} @vol}
 #TRIGGER {You kick at A ratika nest trying to irritate the ratika inside it.} {playsound {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol};
 #TRIGGER {* falls out the nest with a bump.} {playsound {cosmic rage/ships/Ratika/sniff.wav} @vol}
 #TRIGGER {On screen, you see * ratika podship rams into the side of * boring a hole in the side and forcing its way in.} {playsound {cosmic rage/ships/Ratika/pod.wav} @vol}
+#trigger {You snap open the lid of * and begin to repair holes.} {#gagline voice;
+playsound {cosmic rage/ships/ratika/repair/repair.wav} @vol}

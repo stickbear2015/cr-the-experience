@@ -231,9 +231,14 @@ playsound {cosmic rage/ships/misc/shipAttach.wav} @vol}
 #trigger {The doors slide shut with a hiss.} {
 #gagline all;
 playsound {cosmic rage/vehicle/door close.wav} @vol}
+#trigger {The doors slide open with a hiss and you hear a soft female voice announce: "*".} {
+#sub {%1};
+playsound {cosmic rage/vehicle/door open.wav} @vol; playsound {cosmic rage/general/comms/merchant.wav} @vol}
+#trigger {The doors hiss open.} {#gagline all; playsound {cosmic rage/vehicle/door open.wav} @vol}
+#trigger {You hear a ping and a soft, female voice announces: "*"} {#sub {%1}; playsound {cosmic rage/general/comms/merchant.wav} @vol}
 #trigger {The ship lands with a slight bump.} {
 #gagline all}
-#trigger {the ship descends sharply, heading for a planet.} {
+#trigger {The ship descends sharply, heading for a planet.} {
 #gagline all;
 playsound {cosmic rage/ships/movement/shipDescend.wav} @vol}
 #trigger {The engines kick in, directing the ship gently onto its course.} {
@@ -330,7 +335,7 @@ playsound {cosmic rage/ships/misc/iclose.wav} @vol};
 playsound {cosmic rage/ships/misc/iclose.wav} @vol}}
 #trigger {*"Disabling primary power drives."} {#gagline all}
 #trigger {A rumble, like secondary engines, fills the ship for several moments as transport drones propel the ship away from an access tube and into a hangar.} {playsound {Cosmic Rage/ships/misc/TransportHangar.wav} @vol; #gagline voice}
-#trigger {the ship lifts slightly, then there is a thunk as transport drones attach to it. After a moment, the sound of muffled engines fill the area as the drones carry it from the hangar and onto an access tube.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
+#trigger {The ship lifts slightly, then there is a thunk as transport drones attach to it. After a moment, the sound of muffled engines fill the area as the drones carry it from the hangar and onto an access tube.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
 #trigger {You feel a slight rocking as the ship is moved.} {playsound {Cosmic Rage/ships/misc/TransportAccessTube.wav} @vol; #gagline voice}
 #trigger {There is a mechanical clunk, followed by the slight sound of metal sliding from a holder.} {#gagline all; playsound {Cosmic Rage/ships/misc/ExtendScoop.wav} @vol}
 #trigger {The ship is lifted up about a foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {playsound {cosmic rage/ships/misc/landingPad.wav} @vol}
@@ -372,7 +377,7 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 #trigger {You begin careful repairs on the *} {#gagline all; playsound {cosmic rage/ships/rep/r*2.wav} @vol}
 #trigger {You pull out some fuses, replace them, and then replace some wiring, before reinforcing the makeup of the entire thing.} {#gagline all; playsound {cosmic rage/ships/rep/r*2.wav} @vol}
 #trigger {You finish up your repair work.} {#gagline all; playsound {cosmic rage/ships/rep/f*3.wav} @vol}
-#trigger {* looks almost as good as new!} {playsound {cosmic rage/ships/rep/c.wav} @vol}
+#trigger {* look almost as good as new!} {playsound {cosmic rage/ships/rep/c.wav} @vol}
 #trigger {You are about as far down as you can get.} {playsound {cosmic rage/general/misc/wall.wav} @vol}
 #trigger {You yank the lid from a battered looking cargo barrel} {
 #gagline all;
@@ -429,3 +434,4 @@ playsound {cosmic rage/ships/misc/artifact.wav} @vol}
 #TRIGGER {Outside, you notice * rise into view, being carried by several hydraulic movement droids.} {playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 #TRIGGER {a group of Pauagiwa march in, load up with * and then march away.} {playsound {cosmic rage/general/misc/march.wav} @vol};
 #TRIGGER {Sensing an approaching biological form, the airlocks on The *} {#gagline voice; playsound {cosmic rage/ships/misc/airprox.wav} @vol}
+#TRIGGER {The ship lifts slightly off of the ground as something attaches to it and it is moved. After a couple of seconds it lowers with a slight shake onto some kind of rack, which slowly settles it down into a garage.} {playsound {cosmic rage/ships/misc/garage.wav} @vol};

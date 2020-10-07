@@ -5,8 +5,7 @@ playsound {cosmic rage/activities/hand mining/scan.wav} @vol}
 #trigger {* indicates it has detected something nearby at * *, * underground.} {#var hmfind1 {%2 %3};#sub {%1 indicates it has detected something nearby at %2, %3.}}
 #trigger {You are in the * at * *.} {#var hmfind2 {%2 %3};
 #if {@hmfind2 = @hmfind1} {playsound {cosmic rage/activities/hand mining/CanDig.wav} @vol}}
-#trigger {You pick your way through the mining area, heading *.} {#sub {You're heading %1.}}
-
+#trigger {You pick your way through the mining area, *} {#sub {You are %1}}
 ;digging for hand-mining finds
 #trigger {You put the edge of * shovel into the dirt and begin to dig.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/dig*2.wav} @vol}
@@ -46,10 +45,8 @@ playsound {cosmic rage/activities/hand mining/ManKillYou.wav} @vol}
 #trigger {You flip a small switch on * hand mining kit and use the laser tool to attempt to polish a hand-mining find.} {playsound {cosmic rage/activities/hand mining/laser.wav} @vol}
 #trigger {The laser causes a hand-mining find to erupt in flames!} {
 playsound {cosmic rage/activities/hand mining/erupt.wav} @vol}
-#trigger {The laser polishes up the gem, revealing it to be *!} {#sub {%1 is revealed!};
-playsound {cosmic rage/activities/hand mining/reveal.wav} @vol}
-#trigger {You pick up a pair of minature tongs from * hand mining kit, *} {#sub {You bathe the hand-mining find in acid};
-playsound {cosmic rage/activities/hand mining/acid.wav} @vol; #var acidhandle %playhandle}
+#trigger {The laser polishes up the gem, revealing it to be *!} {playsound {cosmic rage/activities/hand mining/reveal.wav} @vol}
+#trigger {You pick up a pair of minature tongs from * hand mining kit, *} {playsound {cosmic rage/activities/hand mining/acid.wav} @vol; #var acidhandle %playhandle}
 #trigger {The outer shell burns away from *} {#gagline voice}
 #trigger {You quickly pull * out of the acid, *} {#if {@acidhandle > 0} {
 #pc @acidhandle stop};
@@ -61,8 +58,7 @@ playsound {cosmic rage/activities/hand mining/dissolve.wav} @vol}
 #trigger {As the water clears away the dirt, * is revealed!} {#if {@waterhandle > 0} {#pc @waterhandle stop};playsound {cosmic rage/activities/hand mining/reveal.wav} @vol}
 #trigger {You put a hand-mining find into the small grinding tool of * hand mining kit and tap go.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/grindnothing.wav} @vol; #var grinderhandle %playhandle}
-#trigger {The grinder sorts through the dirt, eventually spitting out *, which you quickly scoop up!} {#sub {%1 are revealed!};
-playsound {cosmic rage/activities/hand mining/reveal.wav} @vol}
+#trigger {The grinder sorts through the dirt, eventually spitting out *, which you quickly scoop up!} {playsound {cosmic rage/activities/hand mining/reveal.wav} @vol}
 #trigger {The grinder utterly destroys a hand-mining find.} {
 #if {@grinderhandle > 0} {#pc @grinderhandle stop};playsound {cosmic rage/activities/hand mining/findbreak.wav} @vol}
 #trigger {You carefully line up a hand-mining find before going around its outer edge with the cutting tool of * hand mining kit.} {#gagline voice;
@@ -73,3 +69,7 @@ playsound {cosmic rage/activities/hand mining/cuttingtool.wav} @vol;#var cutting
 #trigger {the cutting tool causes a hand-mining find to fall apart.} {#if {@cuttingtoolhandle > 0} {#pc @cuttingtoolhandle stop};
 playsound {cosmic rage/activities/hand mining/findbreak.wav} @vol}
 #trigger {You grab up a container of water from * hand mining kit and pour it on the ground around you.} {playsound {cosmic rage/activities/hand mining/wet*2.wav} @vol}
+#trigger {You slot * find into a holder on the side of * hand mining kit.} {#gagline voice;
+playsound {cosmic rage/general/house/put.wav} @vol}
+#trigger {You retrieve a hand-mining find from a purple hand mining kit.} {#gagline voice;
+playsound {cosmic rage/general/house/get.wav} @vol}

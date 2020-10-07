@@ -119,3 +119,4 @@
 #trigger  {* lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} @vol}}
 #trigger  {* squeezes the shit out of *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/shitsqueeze.wav} @vol}}
 #trigger {* leans back and lets out a loud burp.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp1.wav} @vol}}
+#trigger {* bar* * teeth and snar*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/snarl.wav} @vol}}

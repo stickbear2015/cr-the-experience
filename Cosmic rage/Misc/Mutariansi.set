@@ -7,6 +7,7 @@
 #TRIGGER {You put your nose to the ground and sniff.} {playsound {Cosmic Rage/general/mutariansi/esniff1.wav} @vol};
 #TRIGGER {You take a huge chunk out of *.} {playsound {Cosmic Rage/general/mutariansi/bite.wav} @vol};
 #TRIGGER {You toss back your head and howl!} {playsound {Cosmic Rage/general/mutariansi/howl.wav} @vol};
+#TRIGGER {* tosses back * head and howls!} {playsound {Cosmic Rage/general/mutariansi/howl.wav} @vol};
 #TRIGGER {You swipe at * with your claws.} {playsound {Cosmic Rage/General/mutariansi/cswing*3.wav} @Vol; #PC %Playhandle Pan %Random(-500,500); #Alarm 0.00  {playsound {Cosmic Rage/General/mutariansi/swipe*3.wav} @Vol; #PC %Playhandle Pan %Random(-1000,1000)}}
 #TRIGGER {* sonar screech!} {playsound {Cosmic Rage/general/mutariansi/sonar.wav} @vol};
 #TRIGGER {You stretch out, becoming flat and motionless on the hard ground.} {#gagline all;playsound {Cosmic Rage/general/mutariansi/reform.wav} @vol};

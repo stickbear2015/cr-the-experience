@@ -1,3 +1,21 @@
+1758 stormy, creddits some unknown sound thief, seems there was a little popping issue in one of the sounds for planetoids, wich i just fixed
+copy activities planetoid folder.
+1757 stormy, fixed few things about jump drives
+copy ships ump.set and ships.set
+1756 stormy, credits dave, and some other people, i've finally changed the planetary rift sounds, i have no idea who was the creator of the old sound, but i'd like to apoligise from them for keeping the soud here for so long without giving the credit. But eather way, the new sounds are just, cool in my apinion, try it out yourself and bug me about it
+copy ships ump.set and sounds ship jump folder
+1755 stormy, credits Orion, ungagged fiew telephone messages
+copy misc telephone.set
+1754 stormy, credits maddess, escape pod landing fixed
+copy ships ships.set
+1753 stormy, credits Maddis, we now have a sound when an escape pod lands
+copy ships ships.set and sounds cr ships misc escape5.wav
+1752 stormy, credits everyone that experienced  the train bug, the trains are now fixed
+copy misc trains.set
+1751 stormy, credits blake, fixed highways once again
+copy vehicle highway.set
+1750 stormy, improved the sound qualety of 2 sounds
+copy sounds general misc lead.wav and ping.wav
 1749 stormy, credits hale,  we now have the snarl sound for the ingame social
 copy misc socials.set and sounds cr general socials snarl.wav
 1748 stormy, the reduced the base present in the purr sound

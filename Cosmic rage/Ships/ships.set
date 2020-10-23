@@ -300,7 +300,7 @@ playsound {cosmic rage/ships/misc/courseSet.wav} @vol}
 #trigger {The ship's engines rumble and then quiet as the ship settles on its equalising thrusters.} {playsound {Cosmic Rage/ships/misc/LaunchFromDockingBay.wav} @vol; #gagline all}
 #trigger {The ship lurches and begins to slow down.} {playsound {Cosmic Rage/ships/Movement/deceleration.wav} @vol; #gagline all}
 #trigger {you carefully maneuver the ship into * orbit.}  {playsound {Cosmic Rage/ships/movement/orbit.wav} @vol; #gagline all}
-#trigger {The ship buckles and jerks as it exits a rift, the engines roaring loudly as they struggle to combat inertia.} {playsound {Cosmic Rage/ships/misc/ExitRift.wav} @vol; #gagline all}
+#trigger {The ship buckles and jerks as it exits a rift, the engines roaring loudly as they struggle to combat inertia.} {#gagline all}
 #trigger {* into the quantum drive * up a lever.} {playsound {Cosmic Rage/ships/misc/Lever1.wav} @vol; #gagline voice}
 #trigger {The ship sways slightly before suddenly moving off.} {playsound {Cosmic Rage/ships/misc/TransportHangar.wav} @vol; #gagline all}
 #trigger {The ship is lifted vertically up about  foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {playsound {Cosmic Rage/ships/misc/hangar2.wav} @vol; #gagline all}
@@ -399,7 +399,7 @@ playsound {cosmic rage/ships/computer/announce*4.wav} @vol; #sub {%1}}
 #TRIGGER {You push up the twin levers, bringing the pod to a stop.} {#gagline all; playsound {cosmic rage/ships/misc/Escape4.wav} @vol; #alarm 1 {#if {@epod = 1} {#pc @epodHandle stop; #var epod 0}}};
 #trigger {the pods engine comes to a stop.} {#gagline all}
 #trigger {Having run its systems diagnostics, the pod fires the thrusters and begins to move.} {#gagline all}
-#trigger {You feel the pod judder as it descends through a planets atmosphere.} {#gagline all; playsound {cosmic rage/ships/misc/EscapePodLand.wav} @vol; #alarm 1 {#if {@epod = 1} {#pc @epodHandle stop; #var epod 0}}}
+#trigger {You feel the pod judder as it descends through a planets atmosphere.} {#gagline all; playsound {cosmic rage/ships/misc/Escape5.wav} @vol; #alarm 1 {#if {@epod = 1} {#pc @epodHandle stop; #var epod 0}}}
 #TRIGGER {The pod lands with a thump and you are tipped out.} {#gagline all; playsound {cosmic rage/ships/misc/Escape3.wav} @vol}
 #TRIGGER {You tap * into the quantum drive console, before ramping up a lever.} {playsound {cosmic rage/ships/computer/code.wav} @vol}
 #TRIGGER {You hear a slight groan as the warp cores vents open up to full.} {#gagline all; playsound {cosmic rage/ships/movement/quantimestart.wav} @vol}

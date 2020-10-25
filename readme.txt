@@ -1,6 +1,6 @@
 			**Introduction**
 
-Thank you for taking the time to download the VIP Cosmic Rage Experience! This document provides instructions for installing and running the soundpack, as well as references to useful commands built into the pack. It is highly recommended you read the other files in this folder as well to answer any questions you have. Snapp thanks you for doing your part to keep what's left of his sanity intact.
+Thank you for taking the time to download the VIP Cosmic Rage Experience! This document provides instructions for installing and running the soundpack, as well as references to useful commands built into the pack. It is highly recommended you read the other files in this folder as well to answer any questions you have.
 
 			**System Requirements**
 
@@ -10,14 +10,12 @@ Included in the main soundpack directory is a file called sounds.ini. This file 
 			**Installation**
 
 1. To install this soundpack, first go and obtain it. Several methods have been implemented for downloading the soundpack as well as all future updates.
-	A. VIP2.0 downloads
-		1. There is the standard .zip file. The link to obtain this is, https://www.dropbox.com/s/6s71ritxyidvkw3/Snapps%20VIP%20dropbox%20soundpack.zip?dl=1
-		2. A shared Dropbox folder has been created as well. If you'd like to be invited to the folder, just let Angelica Hamilton or Lara Stardust know in game, and you will be invited as soon as possible.
-	B. VIPMud 1.0 Downloads
-		1. A VIPMud 1.0 pack has been created to support those users staying on the older version of VIPMud. This pack is very limited in sounds and features do to limits put in place within the program.
-		2. The link to download this soundpack is 
-https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20Cosmic%20Rage.zip?dl=1
-2. You will need to go and make sure all the information is correct in the connection setup wizard within VIPMud. several questions have been asked about this, so answers will be provided.
+		1.1.1. There is the standard .zip file. The link to obtain this is, https://www.dropbox.com/sh/e4pzogzqb4q2uub/AACo6YI_wiviAvpBu7Ti3g5Ta?dl=0
+		1.1.2. A shared Dropbox folder has been created as well. If you'd like to be invited to the folder, just let a soundpack developer know in game, and you will be invited as soon as possible.
+1.1.3, there is an unofficial google drive folder available for downloading the soundpack. The availability is not guarantied by the  main developers of the soundpack. The link is > https://drive.google.com/drive/folders/1G3g-jpuYPtrSII_TjNTQrgeReoLu4XxE?usp=sharing
+	note, the developers of this pack advise of the usage of the Nathan Tech VIP mud soundpack installer, it lets you setup  and update your soundpacks without ddealing with the character dialog. 
+download it from, https://www.nathantech.net/nathantechsoftware.php
+2. Manual install. You will need to go and make sure all the information is correct in the connection setup wizard within VIPMud. several questions have been asked about this, so answers will be provided.
 	A. Under the Connect menu within VIPMud's menu structure, find the Character Setup/Connect option. Hit enter on that and you'll be dropped into the connection wizard. A few edit boxes and options will present themselves. The NVDA screen reader does not read these edit boxes, so the window text has been captured and is shown below. Fields that are required are marked with asterisks.
 		1. *Character Name*. This is normally the name you give your character within the MUD. Not filling this out will cause the pack to throw errors. Note: This cannot be "Unnamed" and cannot contain spaces.
 		2. *Character Reference*. A unique name that VIPMud uses to identify your character. It is usually the same as your character name, or if you use this character in other MUDs, a name closely related. Not filling this out will cause the pack to throw errors. Note: This cannot be "Unnamed" and cannot contain spaces.
@@ -32,20 +30,19 @@ https://www.dropbox.com/s/snndzzljnq558k8/Snapp%27s%20VIP1%20Soundpack%20for%20C
 		11. Simple Script Control checkbox. When checked, VIPMud will use the simple scripting file control method. See the "Using Script Files" section of the VIPMud manual for more details on this function.
 3. After you have obtained the soundpack and completed the necessary steps from within VIPMud, select all from within the downloaded folder, then locate your VIPMud directory. Assuming you haven't moved the directory, it will be in your documents directory. The directory name should look something like this: C:\users\insertUsername\Documents\VIPMud Paste the downloaded folders content, then either restart VIPMud, or use the #reload command from within the game.
 4. Upon first run of the pack, you must complete the following steps.
-	A. Copy settings.set that is located in the root directory of the soundpack, then paste this file in the cosmic rage/misc directory. Failing to copy this file will load the pack with very odd settings values, including audio volume being all the way at 100 percent. Users who already have settings how they'd like, feel free to ignore this file unless you lose all your settings data.
+	A. Copy settings.set that is located in the root directory of the soundpack, then paste this file in Cosmic Rage/misc. Failing to copy this file will load the pack with very odd settings values, including audio volume being all the way at 100 percent. Users who already have settings how they'd like, feel free to ignore this file unless you lose all your settings data.
 	B. Launch VIPMud. You will then need to set up your settings like buffers, volumes, toggles, ETC. Please see the help files for aliases and keys.
-	C. Create a blank txt file and name it CosmicRageBufferlist.txt. On first run of the pack, type fixbuffers to populate the file with the default values. Not having this bufferlist file in the vipmud root directory will cause the soundpack to get angry and throw errors at you.
+	C. Create a blank txt file and name it CosmicRageBufferlist.txt. Not having this bufferlist file in the vipmud root directory, will cause the soundpack to get angry and throw errors at you.
 	D. Finally, save your packs settings with control-s. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not our fault if you fail to do this. It's also a good idea to back up your buffer settings and general pack settings after you get them how you'd like.
-If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting James, Frederick, Angelica, or Lara.
-
+If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting the soundpack developers
+note, a last resort installing method.
+if the setupping way described above didnt helped you, you can copy the character.mud file, located in the main folder of the soundpack to c:\users username vipmud folder, you will have a prepared char that is compatible with the soundpack.  IMPORTANT Note this will override your existing added mud chars, backing this file is advised
 			**Updating Your Soundpack**
 
 To update the soundpack using the Dropbox shared folder, please do the following:
-1. Please hit alt-V or type SpVersion and take note of the latest change listed.
-2. After this, open the folder that the soundpack is downloading to. Check the changelog and make sure you are seeing the last change that the moo showed.
-3. Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to back up your characters .set file if you don't want to lose any added alias's or triggers.
+1. Please hit alt-V or type SpVersion, the pack will notify you of the last change of the pack, and how many changes your behind.
+2. Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to back up your characters .set file if you don't want to lose any added alias's or triggers.
 If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
-The Dropbox shared folder is updated as soon as changes to code or sounds are made, while the pack that has the downloadable link is updated each Sunday unless a major change is made.
 adding custom music for ship combat
 1, find some music
 2, go to the sounds/music/combat folder
@@ -58,7 +55,7 @@ like if you have 100 music in the combat folder, you should type themechange 100
 note, if you dont want to pack to break, just type numbers here
 6, enjoy
 		 customising private networks
-if your connected to more then 1 prvate network at a time, the channels may confuse
+if your connected to more than 1 private network at a time, the channels may confuse you.
 there for, we have a system that lets you spesify the networks your in and play diffrent sounds
 1, go to the vipmud char manager, and click the cosmic rage character, like john cosmic rage
 2, find edit
@@ -68,7 +65,7 @@ there for, we have a system that lets you spesify the networks your in and play 
 6, type pn1, to for and a channelname
 like
 pn1  animal kingdom
-the name should be exact with the game, 
+the name should be exact within the game, 
 or
 pn4 ghostbusters
 hope that helps
@@ -94,7 +91,7 @@ If a soundpack administrator is not around to answer your questions, likely some
 			**Compatibility**
 
 This soundpack supports the Nathan Tech VIPMud soundpack installer.
-Download from:  https://nathantech.net/files/VIPMud%20Soundpack%20Installer%20v1.0%20setup.exe
+Download from:  https://www.nathantech.net/nathantechsoftware.php
 
 			**Legal Stuff and Things**
 

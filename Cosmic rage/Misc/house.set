@@ -1,0 +1,41 @@
+#TRIGGER {You give * a shave.} {playsound {Cosmic Rage/general/house/shave.wav} @vol}
+#TRIGGER {You flip a switch on * and begin to dry your hair with it.} {playsound {Cosmic Rage/general/house/hairdry.wav} @vol}
+#TRIGGER {You take a dump in *} {playsound {Cosmic Rage/general/house/bump.wav} @vol}
+#TRIGGER {You whipe your butt with a piece of toilet paper and chuck it down the bog.} {playsound {Cosmic Rage/general/house/paper.wav} @vol}
+#TRIGGER {You flush *} {playsound {Cosmic Rage/general/house/flush.wav} @vol}
+#TRIGGER {You give your * a good scrub.} {playsound {Cosmic Rage/general/house/WASH.wav} @vol}
+#TRIGGER {You turn on the water.} {playsound {Cosmic Rage/general/house/sink.wav} @vol}
+#TRIGGER {* turns on the water.} {playsound {Cosmic Rage/general/house/sink.wav} @vol}
+#TRIGGER {You squeeze some toothpaste onto *} {playsound {Cosmic Rage/general/house/tooth1.wav} @vol}
+#TRIGGER {You carefully begin cleaning your front teeth with *} {playsound {Cosmic Rage/general/house/tooth2.wav} @vol}
+#TRIGGER {* squeezes some toothpaste onto *} {playsound {Cosmic Rage/general/house/tooth1.wav} @vol}
+#TRIGGER {You start to use * mop.} {playsound {Cosmic Rage/general/house/mop.wav} @vol}
+#TRIGGER {* starts to use * mop.} {playsound {Cosmic Rage/general/house/mop.wav} @vol}
+#TRIGGER {You check * charge after having pressed a small button. Satisfied, you prepare the vacume cleaner and switch it on.} {playsound {Cosmic Rage/general/house/vacuum.wav} @vol}
+#TRIGGER {* checks * charge after having pressed a small button. Satisfied, * prepares the vacume cleaner and switches it on.} {playsound {Cosmic Rage/general/house/vacuum.wav} @vol}
+#TRIGGER {You take * in both * and begin to sweep the room with it.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}
+#TRIGGER {* takes * in both * and begins to sweep the room with it.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}
+#TRIGGER {You put * in *} {playsound {Cosmic Rage/general/house/put.wav} @vol}
+#TRIGGER {You get * from *} {playsound {Cosmic Rage/general/house/get.wav} @vol}
+#TRIGGER {You begin to dry * towel.} {playsound {Cosmic Rage/general/house/towel.wav} @vol}
+#TRIGGER {You launch into the air, jumping into the pool with a huge splash!} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
+#TRIGGER {You push * into the pool!} {playsound {Cosmic Rage/general/house/poolpush.wav} @vol}
+#TRIGGER {the lift arrives and the doors open.} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol} {} AnyCase
+#TRIGGER {The doors of the lift * open.} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol} {} AnyCase
+#TRIGGER {the lift} {
+#if {@roomSoundPlaying = 1} {
+#pc @roomHandle stop};
+#If {@ShipSoundPlaying = 1} {
+#pc @Shiphandle stop};
+LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "lift"; #var currentroom2 "nothouse"} {ambon};
+#TRIGGER {You tap the * and the lift begins to move.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}};
+#TRIGGER {* taps the * and the lift begins to move.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}
+#trigger {The lift begins to * move.} {#gagline all; playsound {cosmic rage/general/house/LiftStart.wav} @vol; #alarm 2 {loopsound {cosmic rage/general/house/LiftMoving.wav} @vol; #var lifthandle %playhandle}} {} AnyCase
+#trigger {The lift hums as it continues to move.} {#gagline all} {} AnyCase
+#trigger {The lift slows down as it approaches the destination.} {#gagline all; playsound {cosmic rage/general/house/LiftStop.wav} @vol; #pc @lifthandle stop} {} AnyCase
+#TRIGGER {The lift comes to a stop and the doors hiss open.} {#gagline all; playsound {cosmic rage/general/house/LiftDoorOpen.wav} @vol} {} AnyCase
+#TRIGGER {The droid makes some adjustments, before carefully examining you in the mirror.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}};
+#TRIGGER {The droid trims your hair, styling it as you wish and trimming down the length.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}};
+#TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}
+#TRIGGER {You grab a paper cup and put it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
+#TRIGGER {* grabs a paper cup and puts it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}

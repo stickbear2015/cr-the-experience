@@ -1,0 +1,9 @@
+;games
+#trigger {[[]Cult],*} {playsound {Cosmic Rage/general/games/Cult.wav} @vol; #additem Cult %0}
+
+#trigger {[[]Poker],*} {playsound {Cosmic Rage/general/games/Poker.wav} @vol; #additem Poker %0}
+#TRIGGER {[[]Poker], * tosses down some chips and joins the game.} {playsound {cosmic rage/general/games/pokerchips.wav} @vol}
+#TRIGGER {[[]Poker], The dealer shuffles the cards.} {playsound {cosmic rage/general/games/pokercard.wav} @vol}
+#TRIGGER {[[]Poker], the dealer flips over card *} {playsound {cosmic rage/general/games/pokerplay.wav} @vol}
+#TRIGGER {[[]Poker], * bets *} {playsound {cosmic rage/general/games/pokerbet.wav} @vol}
+#TRIGGER {[[]Poker], * chips in. All in.} {playsound {cosmic rage/general/games/pokerchips.wav} @vol}

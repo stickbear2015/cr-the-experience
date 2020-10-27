@@ -1,0 +1,42 @@
+#var vpan 0;
+#TRIGGER {* cruises up behind the vehicle, clearly trying to overtake.} {#gagline voice; playsound {cosmic rage/general/highway/tovertake*7.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {* honks at you and you look over to see the driver making abusive gestures at you.} {#gagline voice; #var  vpan %random(-4000,4000); playsound {cosmic rage/general/highway/tovertake*7.wav} @vevol; #PC %PlayHandle Pan @vpan; #alarm 0.5 {playsound {cosmic rage/general/highway/honk*5.wav} @vevol; #PC %PlayHandle Pan @vpan}}
+#TRIGGER {You hear loud honking and look round to see the driver of * over take you, silently yelling abuse out of * window.} {#gagline voice; #var  vpan %random(-4000,4000); playsound {cosmic rage/general/highway/honk*5.wav} @vevol; #PC %PlayHandle Pan @vpan; #alarm 0.1 {playsound {cosmic rage/general/highway/tovertake*7.wav} @vevol; #PC %PlayHandle Pan @vpan}}
+#TRIGGER {* won't get out of your side mirror and keeps running beside you like he wants to overtake.} {#gagline voice; playsound {cosmic rage/general/highway/tovertake*7.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {* indicates then, as someone lets * through, pulls sharply into the opposite lane and change direction.} {#gagline voice; playsound {cosmic rage/general/highway/switch.wav} @vevol}
+#TRIGGER {Two vehicles race up either side, the drivers grinning as they zoom past.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000); #alarm 0.4 {playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}}
+#TRIGGER {* cruises along beside the vehicle.} {#gagline voice; playsound {cosmic rage/general/highway/tovertake*7.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {The vehicle leaves * in the dust.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {* overtakes, the driver giving you a smarmy grin from his window.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {A vehicle comes out of nowhere and clips you!} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000); #alarm 0.4 {playsound {cosmic rage/general/highway/clip*4.wav} @vevol;}}
+#TRIGGER {* sails off into the distance.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {* sails past.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {There is the flash of a speed camera.} {#gagline voice; playsound {cosmic rage/general/highway/speedcam.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {A loud horn blairs from somewhere!} {#gagline voice; playsound {cosmic rage/general/highway/blair.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {You indicate then, as someone lets you through, pull sharply into the opposite lane and change direction.} {#gagline voice; playsound {cosmic rage/general/highway/switch.wav} @vevol}
+#TRIGGER {The vehicle takes a sharp turn and manages to change direction with only minimal grumbling from the tires.} {#gagline voice; playsound {cosmic rage/general/highway/switch.wav} @vevol}
+#TRIGGER {The vehicle gets boxed in by a few lorries for a moment.} {#gagline voice; playsound {cosmic rage/general/highway/tovertake*7.wav} @vevol; #PC %PlayHandle Pan 2000; playsound {cosmic rage/general/highway/tovertake*7.wav} @vevol; #PC %PlayHandle Pan -2000}
+#TRIGGER {Something bounces off of the outside of the vehicle.} {#gagline voice; playsound {cosmic rage/general/highway/bounce.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {You furiously weave the vehicle from side to side, trying to ram * off of the road.} {#gagline voice; playsound {cosmic rage/general/highway/weave.wav} @vevol}
+#TRIGGER {The vehicle weaves crazily!} {#gagline voice; #alarm 1 {playsound {cosmic rage/general/highway/weave.wav} @vevol}}
+#TRIGGER {* furiously weaves the vehicle from side to side, trying to ram * off of the road.} {#gagline voice; playsound {cosmic rage/general/highway/weave.wav} @vevol}
+#TRIGGER {A bug splats against the windscreen.} {#gagline voice; playsound {cosmic rage/general/highway/splat.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {You sharply accelerate and pull onto the highway.} {#gagline voice; playsound {cosmic rage/general/highway/start.wav} @vevol; #alarm 3.4 {loopsound {cosmic rage/general/highway/loop.wav} @vevol; #var highwayHandle %playHandle; #var highway 1}}
+#trigger {The vehicle shrieks off of the highway, spins twice, then flips!} {#gagline voice; playsound {cosmic rage/vehicle/vehicleram.wav}; playsound {cosmic rage/general/highway/crash.wav} @vevol; #if {@highway = 1} {#pc @highwayHandle stop; #var highway 0}}
+#trigger {The vehicle shrieks to a stop, black smoke drifting past the windows.} {#gagline voice; playsound {cosmic rage/general/highway/shriekstop.wav} @vevol; #if {@highway = 1} {#pc @highwayHandle stop; #var highway 0}}
+#trigger {You pull sharply off of the highway and slow to a stop.} {#gagline voice; playsound {cosmic rage/general/highway/stop.wav} @vevol; #if {@highway = 1} {#pc @highwayHandle stop; #var highway 0}}
+#trigger {* pulls sharply off the highway and slows to a stop.} {#gagline voice; playsound {cosmic rage/general/highway/stop.wav} @vevol; #if {@highway = 1} {#pc @highwayHandle stop; #var highway 0}}
+#TRIGGER {There is a huge crash!} {#gagline voice; #alarm 0.2 {playsound {cosmic rage/general/highway/crash.wav} @vevol}; #PC %PlayHandle Pan %Random(-4000,4000);  playsound {cosmic rage/vehicle/vehicleram.wav} @vevol}
+#TRIGGER {You decelerate.}  {playsound {cosmic rage/general/highway/p*4.wav} @vevol; #gagline voice; #if {@acplay = 0} {playsound {cosmic rage/general/highway/dec*3.wav} @vevol}; #var acplay 1; #alarm 1 {#var acplay 0}}
+#TRIGGER {* decelerates.} {#gagline voice; playsound {cosmic rage/general/highway/p*4.wav} @vevol; #if {@acplay = 0} {playsound {cosmic rage/general/highway/dec*3.wav} @vevol}; #var acplay 1; #alarm 1 {#var acplay 0}}
+#trigger {The vehicle continues to cruise down the highway.} {#gagline all}
+#TRIGGER {You accelerate.} {#gagline voice; playsound {cosmic rage/general/highway/p*4.wav} @vevol; #if {@acplay = 0} {playsound {cosmic rage/general/highway/ac*3.wav} @vevol}; #var acplay 1; #alarm 1 {#var acplay 0}}
+#TRIGGER {Horns blair wildly!} {#gagline voice; playsound {cosmic rage/general/highway/blair.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {* accelerates.} {#gagline voice; playsound {cosmic rage/general/highway/p*4.wav} @vevol; #if {@acplay = 0} {playsound {cosmic rage/general/highway/ac*3.wav} @vevol}; #var acplay 1; #alarm 1 {#var acplay 0}}
+#TRIGGER {A shudder goes through the vehicle as it clips *} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000); #alarm 0.4 {playsound {cosmic rage/general/highway/clip*4.wav} @vevol;}}
+#TRIGGER {* sails past.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#TRIGGER {Some guy in * cuts you up and zooms ahead.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {Beautiful countryside whizzes past outside of the windows.} {#gagline voice}
+#TRIGGER {a lorry drops back.} {#gagline voice; playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
+#trigger {* accelerates sharply onto the highway.} {#gagline voice; playsound {cosmic rage/general/highway/start.wav} @vevol; #alarm 3.4 {loopsound {cosmic rage/general/highway/loop.wav} @vevol; #var highwayHandle %playHandle; #var highway 1}}
+#TRIGGER {You notice exit * loom up through the windows.} {playsound {cosmic rage/general/highway/alarm.wav} @vevol}

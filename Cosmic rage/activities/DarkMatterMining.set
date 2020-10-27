@@ -1,0 +1,21 @@
+#TRIGGER {You type mine into the commands console.} {playsound  {Cosmic Rage/activities/Dark Matter Mining/Keyboard1.wav} @vol; #gagline all}
+#TRIGGER {You hear a clang as mining drones return.} {playsound  {Cosmic Rage/activities/Dark Matter Mining/MiningDronesReturn.wav} @vol}
+#TRIGGER {You hear a scuffle as some drones leave the base.} {playsound  {Cosmic Rage/activities/Dark Matter Mining/DroneScuff.wav} @vol}
+#TRIGGER {The drones return with a slam.} {playsound  {Cosmic Rage/activities/Dark Matter Mining/DroneReturn.wav} @vol}
+#TRIGGER {You hear a loud trumpet and a scuffle as drones move out.} {playsound  {Cosmic Rage/activities/Dark Matter Mining/Trumpet.wav} @vol}
+#TRIGGER {An attack on Vacus resource base * has begun.} {playsound  {Cosmic Rage/activities/Dark Matter Mining/Attack.wav} @vol}
+#TRIGGER {Enemy battle over. The battle report is shown below:} {playsound  {Cosmic Rage/activities/Dark Matter Mining/Report.wav} @vol}
+#TRIGGER {You hear a cheer and a clunk as many drones return.} {playsound  {Cosmic Rage/activities/Dark Matter Mining/cheer.wav} @vol}
+#TRIGGER {Some drones enter, carrying sacks.} {playsound {cosmic rage/activities/dark matter mining/denter.wav} @vol}
+#TRIGGER {The drones make short work of the cargo, neetly, and safely, packing it up into their sacks.} {playsound {cosmic rage/activities/dark matter mining/dload.wav} @vol}
+#TRIGGER {The drones swiftly exit the vehicle.} {playsound {cosmic rage/activities/dark matter mining/dexit.wav} @vol}
+#trigger {You hear some drilling.} {#gagline voice;
+playsound {cosmic rage/activities/dark matter mining/drill.wav} @vol}
+#trigger {A bleep of protest is heard off in the distance.} {#gagline voice;
+playsound {cosmic rage/activities/dark matter mining/bleep.wav} @vol}
+#trigger {You hear the sound of metal grinding on metal.} {#gagline voice;
+playsound {cosmic rage/activities/dark matter mining/grind.wav} @vol}
+#trigger {Hammering echoes throughout the base.} {#gagline voice;
+playsound {cosmic rage/activities/dark matter mining/hammer.wav} @vol}
+#trigger {The base rocks from an explosion!} {#gagline voice;
+playsound {cosmic rage/activities/dark matter mining/explode.wav} @vol}

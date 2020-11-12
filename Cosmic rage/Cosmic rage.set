@@ -5,6 +5,7 @@
 ;These are the Needed set files for the pack to function.
 
 #load misc/ConfigurationManager.set
+#load misc/firework.set
 #load misc/keys.set
 #load misc/Soundpack.set
 

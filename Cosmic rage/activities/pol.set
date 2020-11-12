@@ -14,7 +14,7 @@
 #trigger {* depresses the left-hand pedal as the craft tilts a little.} {#gagline all}
 #trigger {* continues to pull back on the right-hand joystick.} {#gagline all}
 #trigger {* increases the power to the rotors even further.} {#gagline all}
-#trigger {* adjusts the tilt of the craft as it breaks through the clouds.} {#gagline alll}
+#trigger {* adjusts the tilt of the craft as it breaks through the clouds.} {#gagline all}
 #trigger {* pushes up on the right-hand joystick until the ascention rate comes to a stop.} {#gagline all}
 #trigger {As you feel the craft begin to tilt, you depress the left pedal, correcting it.} {#gagline all}
 #trigger {You keep the left-hand pedal down, while pulling back further on the right-hand joystick.} {#gagline all}
@@ -61,7 +61,7 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {You shove a lever forward, extending the collection scoop.} {
 #gagline all; playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol}
 #trigger {On screen, the scoopers come together to enclose *} {#gagline all; playsound {Cosmic Rage/activities/pol/salv.wav} @vol}
-#trigger {the sound of well-oiled mechanics can be heard as, on screen, the pollution scoopers retract.} {#gagline all}
+#trigger {The sound of well-oiled mechanics can be heard as, on screen, the pollution scoopers retract.} {#gagline all}
 #trigger {A slight whine fills the air as the scoopers continue to retract.} {#gagline all}
 #trigger {The pod rocks a little as just next to it, and visible on the screen, the scoopers enter the vehicle.} {#gagline all}
 #trigger {The vehicle rocks in place as several heavy-duty lasers are fired at an object!} {#gagline all; playsound {Cosmic Rage/activities/pol/laser.wav} @vol}
@@ -73,7 +73,7 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {There is a metal on metal sliding sound that is swiftly followed by a thunk.} {#gagline all}
 #trigger {On screen, you see the object split in half.} {#gagline all; playsound {Cosmic Rage/activities/pol/split.wav} @vol}
 #trigger {You carefully aim, and then prepare to fire, at the meteor!} {#gagline all; playsound {Cosmic Rage/activities/pol/aim.wav} @vol}
-#trigger {The laser slams into the meteor and sends it spinning!} {#gagline all; playsound {Cosmic Rage/activities/pol/poof.wav} @vol}
+#trigger {A laser streaks out from the vehicle and sends the meteor spinning!} {#gagline all; playsound {Cosmic Rage/activities/pol/poof.wav} @vol}
 #trigger {You hear a siren blair and a synthesised voice announces: This Vehicle is damaged.} {playsound {cosmic rage/ships/Ratika/alarm.wav} @vol}
 #trigger {The vehicle rocks as something blasts off from the planet below.} {#gagline all; playsound {Cosmic Rage/activities/pol/split.wav} @vol}
 #trigger {* takes hold of both joysticks.} {#gagline all; playsound {Cosmic Rage/activities/pol/takeoff.wav} @vol}
@@ -97,3 +97,4 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {* taps stop.} {#gagline all; #if {@launch = 1}  {playsound {Cosmic Rage/activities/pol/move4.wav} @vol; #alarm 0.4 {#PC @launchhandle Frequency 44000}}}
 #trigger {* carefully aims, and then prepares to fire, at the meteor!} {#gagline all; playsound {Cosmic Rage/activities/pol/aim.wav} @vol}
 #trigger {You fire!} {#gagline all}
+#trigger {A small blue flash surrounds the scoopers before a tiny forcefield activates, trapping *} {#gagline all; playsound {Cosmic Rage/activities/pol/aim.wav} @vol}

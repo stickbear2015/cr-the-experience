@@ -1,3 +1,13 @@
+1781 stormy, credits kayla, changed the i dont understand that text sound
+copy sounds cr general misc command.wav
+1780 stormy, credits blake, ound credits blake, changed the door lock and unlock sounds
+
+1779 stormy/lara, added sounds for the upcoming firework event. If your planning to atend to this event, do not forget to update your soundpacks!
+copy misc firework.set, cosmic rage.set and sounds cr general firework folder.
+1778 stormy credits dmitryy, fixed something about polution cleaners
+copy activities pol.set
+1777 stormy, credits dmitryy, fixed some polution cleaner related things
+copy activities pol.set
 1776 Credit to Blake Cromozov16158.
 Gagged the message when you fire at the meteor in pollution cleaning.
 copy cr/activities/pol.set

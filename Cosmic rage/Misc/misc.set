@@ -137,13 +137,13 @@ loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @roomvol; #Var RoomHandle %Pla
 playsound {cosmic rage/general/misc/hose.wav} @vol}
 #trigger {* door} {
 #if {%ifWord(unlock,%1," ")} {
-playsound {cosmic rage/general/misc/doorunlock.wav} @vol};
+playsound {cosmic rage/general/doors/doorunlock.wav} @vol};
 #if {%ifWord(lock,%1," ")} {
-playsound {cosmic rage/general/misc/doorlock.wav} @vol};
+playsound {cosmic rage/general/DOORS/doorlock.wav} @vol};
 #if {%ifWord(unlocks,%1," ")} {
-playsound {cosmic rage/general/misc/doorunlock.wav} @vol};
+playsound {cosmic rage/general/DOORS/doorunlock.wav} @vol};
 #if {%ifWord(locks,%1," ")} {
-playsound {cosmic rage/general/misc/doorlock.wav} @vol}}
+playsound {cosmic rage/general/DOORS/doorlock.wav} @vol}}
 #trigger {*One or more polls have been posted. Please type * to see what.} {playsound {cosmic rage/general/misc/vote.wav} @vol; #additem Notices %0}
 #trigger {There have been the following message board posts that you are required to read: *} {
 playsound {cosmic rage/general/comms/messageBoardNotify.wav} @vol; #additem MessageBoard %0}

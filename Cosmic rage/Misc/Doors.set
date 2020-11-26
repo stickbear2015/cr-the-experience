@@ -99,3 +99,5 @@ playsound {cosmic rage/general/doors/DoorOpen4.wav} @vol; #PC %Playhandle Pan %R
 #if {%ifword(shut,%2," ")} {
 playsound {cosmic rage/general/doors/DoorClose4.wav} @vol; #PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {You move towards the doors to the * which open with a soft whoosh.} {playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol; #PC %Playhandle Pan %Random(-4000,4000)}
+#trigger {You unlock A *} {playsound {Cosmic Rage/general/doors/DoorUnlock.wav} @vol}
+#trigger {You lock A *} {playsound {Cosmic Rage/general/doors/Doorlock.wav} @vol}

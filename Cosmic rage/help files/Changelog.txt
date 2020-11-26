@@ -1,3 +1,11 @@
+1785 STORMY, CREDÝTS SETH, THE DOOR LOCKS AND UNLOCKS WÝLL PLAY TEH CORRECT SOUNDS NOWt
+copy misc misc.set and misc doors.set
+1784 stormy, credits william, an armor thing is fixed
+copy msic wear.set
+1783 stormy,  the wearing armor sounds no longer going to conflict with other sounds
+copy misc wear.set
+1782 stormy, credits fransisco, door lock and unlock sounds now plays propparly
+copy misc doors.set
 1781 stormy, credits kayla, changed the i dont understand that text sound
 copy sounds cr general misc command.wav
 1780 stormy, credits blake, ound credits blake, changed the door lock and unlock sounds

@@ -171,3 +171,4 @@ playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #trigger {Your translator makes a small ding, indicating it can not bridge the gap to that destination.} {playsound {Cosmic Rage/general/comms/phasefail.wav} @vol}
 #TRIGGER {[[]Info], * just logged into TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogin.wav} @CommsVol};
 #TRIGGER {[[]Info], * just logged out of TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogout.wav} @CommsVol};
+#TRIGGER {[[]fires]*} {playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {} anycase

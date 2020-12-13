@@ -199,3 +199,6 @@ playsound {cosmic rage/vehicle/door open.wav} @vevol};
 
 #if {%ifword(shut,%1," ")} {
 playsound {cosmic rage/vehicle/door close.wav} @vevol}}
+#trigger {* swipes * ID card and taps *} {
+#gagline all;
+playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}

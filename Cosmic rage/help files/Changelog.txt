@@ -1,3 +1,48 @@
+1807 stormy, credits francisco, changed the weaponroom ambience
+copy sounds ships rooms weaponroom.wav
+sound credit, Sci-fi Laboratory Ambience http://freesound.org/people/qubodup/sounds/212025 by Iwan ‘qubodup’ Gabovitch http://freesound.org/people/qubodup under CC-BY 3.0 License http://creativecommons.org/licenses/by/3.0/legalcode 
+1806 stormy, converted torpidos to the new paning system
+copy ships shipcombat.set and sounds ships combat weapons folder
+1805 stormy, converted missiles to the new panning system
+copy ships shipcombat.set and sounds ships combat weapons folder
+1804 stormy, deleted uused triggers from combat
+copy ships shipcombat.set
+1803 stormy, credits viola, changed the activating and deactivating part of the defencive sounds a little, so its now easy to distinguish those 2 from each other
+copy ships shipcombat.set and sounds ships combat defon1 defoff1 and defoff2.wav
+1802 stormy, credits blake, movement is fixed for polution vehicles when the second person does the activity
+copy activities pol.set
+1801 stormy, credits blake, fixed a bug about vehicles
+copy vehicle vehicle.set
+1800 stormy, credits space combat overhaul, well, 1800 is a special number, pretty much, so have a special change. Remember the old space combat panning option, you can pretty much say bye bye to that after this change. Starting with the plasma missiles (because its the most used weapon) the panning with acurr smartly, meaning, if you shoot from port aft, the sound will play from left and the behind, or else if you shoot from starboard fore, the sound will play from the right, continue to have a cosmic day
+copy ships shipcombat.set and sounds cr ships combat weapons folder
+1799 stormy, credits hale and space combat overhaul, added 2 shiny sounds for lightning laser 
+copy ships shipcombat.set and sounds cr ships combat lightn1 and lightn2.wav
+1798 stormy, credits jacen, the security cams  and drones can be logged like any other channel now
+copy misc buffers.set and misc misc.set
+1797 stormy, got rid of unused buffers
+copy misc buffers.set
+1796 stormy, cleared few unused channels from loging
+copy misc buffers.set
+1795 stormy, credits hale, added a rather funny sound for the fires channel
+copy misc comms.set, buffers.set and sounds cr general comms fires.wav
+1794 stormy, credits francisco, fixed little sound problems with the defencive system sounds
+copy sounds cr ships combat defoff2 and 2.wav
+1793 stormy, credits Gretta, fixed a bug where the sound plays  2 times in a roe if you exit a train or similor
+copy misc trains.set
+1792 stormy, the first change of the space combat overhaul, the defencive system toggling sounds has been changed. If you want something to be updated about the space combat, feel free to suggest now
+copy sounds cr ships combat folder
+1791 stormy, credits brandon, added a sound for the blink social
+copy misc socials.set and sounds cr general socials blink.wav
+1790 stormy, credits kayla and haschwulf, added sounds for the blue mapper alert
+copy ships fc blue.wav and ships fc.set
+1789 stormy, credits lisa, the transfer complete has been changed
+copy sounds activities star studies transfercomplete.wav
+1788 stormy, credits seth, you now hear the wearing sound when you wear a full armor, my baaaaad
+copy misc wear.set
+1787 stormy, credits william, fixed something about factory air cleaning
+copy misc factory.set
+1786  stormy, credits Virax , scarfing food is fixed feel free to scarf scarf once again
+copy misc misc.set
 1785 STORMY, CREDÝTS SETH, THE DOOR LOCKS AND UNLOCKS WÝLL PLAY TEH CORRECT SOUNDS NOWt
 copy misc misc.set and misc doors.set
 1784 stormy, credits william, an armor thing is fixed

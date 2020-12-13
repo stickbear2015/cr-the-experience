@@ -1,4 +1,4 @@
-#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Library|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelpers|News|notices|ONews|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|Rewards|rooc|RP|say|SDL|ship|Socials|SOS|SoundpackAnnouncements|Soundpacks|Spacesuit|Sport|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
+#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|fires|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelpers|News|notices|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|rooc|RP|say|SDL|ship|Socials|SOS|Soundpacks|Spacesuit|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
 #var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices|newbiehelpers}
 #for @MasterBufferList {#var %i {}}
 #var BufferPointer 1
@@ -67,7 +67,6 @@ Read the GMC channels log file for %char:#edit  {Cosmic Rage/logs/%char GMC.log}
 Read the HTPL channels log file for %char:#edit  {Cosmic Rage/logs/%char HTPL.log}|
 Read the Intel channels log file for %char:#edit  {Cosmic Rage/logs/%char intel.log}|
 Read the jag channels log file for %char:#edit  {Cosmic Rage/logs/ %char jag.log}|
-Read the Library channels log file for %char:#edit  {Cosmic Rage/logs/%char Library.log}|
 Read the mentor channels log file for %char:#edit  {Cosmic Rage/logs/mentor.log}|
 Read the MI channels log file for %char:#edit  {Cosmic Rage/logs/%char MI.log}|
 Read the Missions channels log file for %char:#edit  {Cosmic Rage/logs/%char Missions.log}|
@@ -81,11 +80,11 @@ Read the organisation channels log file for %char:#edit  {Cosmic Rage/logs/%char
 Read the Private network channels log file for %char:#edit  {Cosmic Rage/logs/%char Private Network.log}|
 Read the Private in Character channels log file for %char:#edit  {Cosmic Rage/logs/%char Private.log}|
 Read the Private Out of  Character channels log file for %char:#edit  {Cosmic Rage/logs/%char PrivateOOC.log}|
-Read the Reward channels log file for %char:#edit  {Cosmic Rage/logs/%char Rewards.log}|
 Read the Room out of Character channels log file for %char:#edit  {Cosmic Rage/logs/%char rooc.log}|
 Read the RP channels log file for %char:#edit  {Cosmic Rage/logs/%char RP.log}|
 Read the SDF channels log file for %char:#edit  {Cosmic Rage/logs/%char sdf.log}|
 Read the SDL channels log file for %char:#edit  {Cosmic Rage/logs/%char SDL.log}|
+Read the security drone and camera log for %char:#edit  {Cosmic Rage/logs/%char securitycamdrone.log}|
 Read the Soundpack channels log file for %char:#edit  {Cosmic Rage/logs/%char Soundpacks.log}|
 Read the SubAnnouncements log file for %char:#edit  {Cosmic Rage/logs/SubAnnouncements.log}|
 Read the Squadren channels log file for %char:#edit  {Cosmic Rage/logs/%char Squadren.log}|

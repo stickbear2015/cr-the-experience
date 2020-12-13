@@ -7,4 +7,5 @@
 #if {%ifWord(Enemies retreating!,%5," ")} {playsound {Cosmic Rage/ships/FlightControl/FCCheer.wav} @CommsVol} {};
 #if {%ifWord(gold,%2," ")} {playsound {Cosmic Rage/ships/FlightControl/FCGold.wav} @CommsVol} {};
 #if {%ifWord(red,%2," ")} {playsound {Cosmic Rage/ships/FlightControl/FCRed.wav} @CommsVol} {};
+#if {%ifWord(blue,%2," ")} {playsound {Cosmic Rage/ships/FlightControl/blue.wav} @CommsVol} {};
 #if {%ifWord(green,%2," ")} {playsound {Cosmic Rage/ships/FlightControl/FCGreen.wav} @CommsVol}}

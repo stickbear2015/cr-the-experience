@@ -127,7 +127,7 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {A drone hammers at a component.} {#gagline all; playsound {cosmic rage/general/factory/build4.wav} @vol}
 #trigger {A panel pops open on the drone and a small saw comes out, promptly slicing up something into smaller bits.} {#gagline all; playsound {cosmic rage/general/factory/build3.wav} @vol}
 #trigger {There is a whoosh as water gushes through a series of tubes.} {#gagline all; playsound {cosmic rage/general/factory/water.wav} @vol}
-#trigger {A loud hiss escapes as * is pressurized. } {#gagline all; playsound {cosmic rage/activities/planetoid/air.wav} @vol}
+#trigger {A loud hiss escapes as * is pressurized.} {#gagline all; playsound {cosmic rage/activities/planetoid/air.wav} @vol}
 #trigger {* disappears in a column of blue-white particles.} {#gagline all; playsound {cosmic rage/general/factory/droneout.wav} @vol}
 #trigger {A hydraulic arm swivels over and drops off a tank of oxygen and a tank of hydrogen.} {#gagline all; playsound {cosmic rage/general/factory/dronein.wav} @vol}
 #trigger {A soft hissing can be heard coming from the air recyclers.} {#gagline all; playsound {cosmic rage/activities/planetoid/air.wav} @vol}

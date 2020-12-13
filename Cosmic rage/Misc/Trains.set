@@ -20,7 +20,6 @@ loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playh
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "train"; #var currentroom2 "notmisc"}} {ambon};
-#trigger {You disembark from the train.} {#gagline all; playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol};
 #trigger {The train approaching platform * is *.} {playsound {Cosmic Rage/general/trains/Announcement.wav} @vol}
 #trigger {You heave yourself abord * Pod.} {#gagline all; loopsound {cosmic rage/general/trains/TrainAmb.wav} @Roomvol; #var trainhandle %playhandle; #var train 1} {} AnyCase
 #trigger {You disembark from the *.} {#gagline all; playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol};

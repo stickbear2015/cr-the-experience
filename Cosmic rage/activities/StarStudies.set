@@ -1,7 +1,6 @@
 #trigger {*: "Firing probes..."} {playsound {cosmic rage/activities/star study/StarProbeLaunch.wav} @vol;#if {@panshipcombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)};#gagline all}
 #trigger {On screen, you see your probes do battle with the gravitational pull of the star.} {#gagline all;playsound {Cosmic Rage/activities/star study/GravBattle.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)}}
 #TRIGGER {The ship rocks heavily as a laser is fired.} {playsound {Cosmic Rage\activities\star study\lasers.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline all}
-#trigger {*: "Probe lost."} {#gagline all}
 #TRIGGER {*"Transferring data..."} {playsound {Cosmic rage/activities/star study/TransferStarData.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline all}
 #TRIGGER {The windows are filled with a bright light from *} {#gagline all;playsound {Cosmic Rage/ships/misc/SolarFlare.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)}}
 #TRIGGER {*"Transfer complete."} {playsound {Cosmic Rage/activities/star study/TransferComplete.wav} @vol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)};#gagline all}

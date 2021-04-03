@@ -10,12 +10,12 @@
 ; Docking and undocking.
 #trigger {You * narrow slope into *} {playsound {Cosmic Rage/ships/misc/BoardFromAccessTube.wav} @vol}
 #trigger {The station airlock hisses shut, the ship's own hatch quickly following suit.} {#gagline all}
-#trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
-#trigger {You disembark onto *} {#pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+#trigger {You * down a sloping narrow tube from your airlock, eventually arriving at:*} {#gagline voice; #pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
+#trigger {You disembark onto *} {#gagline voice; #pc 0 stop; playsound {Cosmic Rage/ships/misc/StationAirlock.wav} @vol}
 
 #TRIGGER {You see * * approaching a docking port of the tube.} {
-loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
-#TRIGGER {The engines kick up into a slightly higher thrum as the ship begins to slowly cruise into a docking position.} {#if {@LaunchText = "Enabled"} {#gagline all}; loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
+playsound {cosmic rage/ships/misc/dock.wav} @vol; loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1}
+#TRIGGER {The engines kick up into a slightly higher thrum as the ship begins to slowly cruise into a docking position.} {#if {@LaunchText = "Enabled"} {#gagline all}; loopsound {cosmic rage/ships/misc/DockingInProgress.wav} @vol; #var DockingStarthandle %playhandle; #var DockingStart 1; playsound {cosmic rage/ships/misc/dock.wav} @vol}
 #trigger {You take hold of the controls and turn the vessel so that it is running parallel to *} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {You direct the ship around * looking for your docking point.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The thrum of the engine returns to neutral and the ship begins to drift gently.} {#if {@LaunchText = "Enabled"} {#gagline all}}
@@ -90,7 +90,7 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #trigger {The ship's engines stabilise as it launches into space.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The ship is shot straight up into the air, sending your stomach rocketing into your throat.} {#if {@LaunchText = "Enabled"} {#gagline all}}
 #trigger {The ship is lifted up about a foot, before it sways slightly as a hydraulic arm moves it onto a landing pad.} {#gagline all}
-#TRIGGER {You angle the ship up slightly, moving it so that it is diagonal to the enemy vessel.} {playsound {cosmic rage/ships/misc/clamp1.wav} @vol; #gagline all}
+#TRIGGER {You pull back a lever, having targetted a ship.} {playsound {cosmic rage/ships/misc/clamp1.wav} @vol; #gagline all}
 #TRIGGER {The ship shudders, slowly drifting to the right.} {#gagline all}
 #TRIGGER {You hear a loud crash as the two ships slam together!} {playsound {cosmic rage/ships/misc/clamp2.wav} @vol; #gagline all};
 #TRIGGER {You yell: } {#gagline all}
@@ -141,3 +141,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {You gently place * on the floor... Then kick it *} {playsound {cosmic rage/ships/rep/bre2.wav} @vol; #gagline all}
 #TRIGGER {You tap cooldown on the subatomic console.} {playsound {cosmic rage/vehicle/button.wav} @vol}
 #TRIGGER {A flood of what sounds like water drains through the lower parts of the ship for several moments, before trickling away.} {playsound {cosmic rage/ships/misc/cool.wav} @vol; #gagline all}
+#TRIGGER {You depress a button next to the fuel lines on *} {#gagline all; playsound {cosmic rage/ships/misc/warpfuel.wav} @vol};

@@ -1,3 +1,5 @@
+#var bikelist { zoom | trundle | speed | ride }
+
 #trigger {* is disconnecting: *} {#additem ConnectionMessages %0}
 #TRIGGER {* returns to reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}; #additem ConnectionMessages %0}
 #TRIGGER {* enters from reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; #additem ConnectionMessages %0}
@@ -68,7 +70,6 @@ playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1
 #trigger {Type a line of input.} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #trigger {There are * unread changes since your last login.} {playsound {cosmic rage/general/misc/Change.wav} @vol}
-#trigger {There have been * announcements since you last logged in.} {playsound {cosmic rage/general/comms/announcement.wav} @vol}
 #TRIGGER {You raise your * to *.0!} {playsound {cosmic rage/general/Level/level.wav} @vol; #additem CashPointsSkillsAndLeveling %0}
 #trigger {You have been sent * notifications since your last login. *} {
 playsound {cosmic rage/general/misc/notify.wav} @vol; #additem Notices %0}
@@ -101,7 +102,9 @@ playsound {cosmic rage/general/misc/cargoDrone.wav} @vol}
 #sub {%2}; playsound {cosmic rage/general/misc/time.wav} @vol}
 #trigger {[[]Newbie tip!]*} {playsound {cosmic rage/general/misc/tip.wav} @vol; #additem Newbie %0}
 #TRIGGER {* flashes * indicating a new message was just received on */*/*} {playsound {cosmic rage/general/misc/mbn.wav} @vol; #additem MessageBoard %0}
-#trigger {*explodes in a brilliant *light!} {playsound {Cosmic Rage/general/misc/Firework *8.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* throws a * into the air.} {playsound {Cosmic Rage/general/firework/w*6.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+#trigger {* explodes in a brilliant *light!} {playsound {Cosmic Rage/general/firework/e*6.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
+
 #trigger {* party horn *} {	
 playsound {cosmic rage/general/misc/partyHorn.wav} @vol}
 #trigger {You spray a jet of silly string from a can of * silly string covering * with it!} {
@@ -216,7 +219,7 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {*washer finally whirls to a stop, the door pinging open happily.} {#if {@Washing = 1} {
 #pc @Washinghandle stop;
 #var Washing 0}}
-#trigger {A green light flicks on *dryer} {loopsound {Cosmic Rage/general/Washing/Dry1.wav} @vol; #gagline all; #var Dryinghandle %playhandle; #var Drying 1}
+#trigger {A green light flicks on * dryer.} {loopsound {Cosmic Rage/general/Washing/Dry1.wav} @vol; #gagline all; #var Dryinghandle %playhandle; #var Drying 1}
 #trigger {The green light flicks out and the dryer becomes silent as it finishes its work.} {playsound {Cosmic Rage/general/Washing/Dry2.wav} @vol; #gagline all; #if {@Drying = 1} {
 #pc @Dryinghandle stop;
 #var Drying 0}}
@@ -254,7 +257,7 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #TRIGGER {Warning! You have less than a minute of oxygen left in your spacesuit!} {playsound {cosmic rage/general/Misc/warning.wav} @vol}
 #TRIGGER {You pick up * and dial a number.} {#Gagline ALL;
 playsound {cosmic rage/general/misc/taxi_phone.wav} @vol} {}
-#TRIGGER {You hang up * with  a click.} {#Gagline ALL;
+#TRIGGER {You hang up * with a click.} {#Gagline ALL;
 playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
 #TRIGGER {you belt yourself in to your chair.} {playsound {cosmic rage/general/misc/seatbelt.wav} @vol} {}
 #trigger {Glancing at * you see the route is *.} {
@@ -274,3 +277,12 @@ playsound {cosmic rage/general/misc/CommPackGreen.wav} @vol};
 playsound {cosmic rage/general/misc/CashCheck.wav} @vol}
 #TRIGGER {Automatically selected *} {playsound {cosmic rage/general/misc/auto.wav} @vol} {}
 #trigger {You flip the screen of * out with a flick of your *} {#gagline all}
+#trigger {You buckle up your seat belt.} {playsound {Cosmic Rage/general/misc/seatbelt.wav.} @vol}
+#trigger {You unbuckle your belt.} {playsound {Cosmic Rage/general/misc/unbuckle.wav.} @vol}
+#trigger {* buckles up * seat belt.} {playsound {Cosmic Rage/general/misc/seatbelt.wav.} @vol}
+#trigger {* unbuckles * belt.} {playsound {Cosmic Rage/general/misc/unbuckle.wav.} @vol}
+#trigger {There * announcemen* since you last logged in.} {playsound {cosmic rage/general/comms/announcement.wav} @vol}
+#trigger {There * unread chang* since your last login.} {playsound {cosmic rage/general/misc/Change.wav} @vol}
+#trigger {* @bikelist * on a * bicycle.} {playsound {cosmic rage/general/misc/bikemove.wav} @vol}
+#trigger {* rin*  the bell on * bicycle.} {playsound {cosmic rage/general/misc/bell.wav} @vol}
+#TRIGGER {Your internal sensors register a new post in *} {playsound {Cosmic Rage/general/messageboards/larkan.wav} @CommsVol}

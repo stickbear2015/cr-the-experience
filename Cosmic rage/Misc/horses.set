@@ -17,5 +17,5 @@ playsound {cosmic rage/general/horses/sniff.wav} @vol}
 #TRIGGER {* begins to munch into the contents of the bag.} {playsound {cosmic rage/general/horses/eat.wav} @vol;
 #Gagline ALL} 
 #trigger {You turn on * and begin to hose down *} {playsound {cosmic rage/general/horses/clean.wav} @vol}
-#trigger {You hold out *} {playsound {cosmic rage/general/horses/treat.wav} @vol}
+#trigger {* eagerly takes the treat, and gobbles it up, giving a big horsey grin at the end of it!} {playsound {cosmic rage/general/horses/treat.wav} @vol}
 #trigger {* neighs loudly!} {playsound {cosmic rage/general/horses/whinny*2.wav} @vol}

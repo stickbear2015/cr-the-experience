@@ -1,3 +1,5 @@
+#var  x1;
+#var x2;
 #TRIGGER {You draw a * from *} {
 #if {%ifWord(standard laser pistol,%1," ")} {
 playsound {cosmic rage/general/combat/drawPistol.wav} @gvol};
@@ -145,3 +147,8 @@ playsound {cosmic rage/general/combat/vehicles/turout.wav} @gvol}
 #trigger {* struggles to try and do something, but can't.} {playsound {cosmic Rage/general/combat/stunned.wav} @gvol}
 #trigger {You heave at some of the rocks and debris.} {#gagline all;playsound {cosmic Rage/general/misc/unblock.wav} @gvol}
 #trigger {Blood splatters on *} {playsound {Cosmic Rage/general/combat/blood.wav} @gvol}
+#trigger {* lets out a small beep, informing you it just managed to charge another round of ammunition using the ambient light as an energy source.} {playsound {Cosmic Rage/general/combat/beep.wav} @gvol; #gagline voice}
+#trigger {You shoot * at *} {#if {%ifword(pistol,%1," ")} {playsound {cosmic rage/general/combat/weapons/pistol*2.wav} @CVol}; {#if {%ifword(rifle,%1," ")} {playsound {cosmic rage/general/combat/weapons/rifle*2.wav} @CVol}; {#if {%ifword(sniper,%1," ")} {playsound {cosmic rage/general/combat/weapons/sniper*2.wav} @CVol}}}}
+#trigger {Something seems to have gone wrong with *} {playsound {Cosmic Rage/general/combat/weapons/overheat.wav} @gvol; #gagline voice}
+#trigger {* is damaged and needs to be fixed!} {playsound {Cosmic Rage/general/combat/weapons/damaged.wav} @gvol; #gagline voice}
+#trigger {You are * of the room at *, *.} {#var x1 %2; playsound {Cosmic Rage/general/combat/enemy/exits/@x1.wav} @vol;  #var x2 %3; #alarm 0.1 {playsound {Cosmic Rage/general/combat/enemy/exits/@x2.wav} @vol}}

@@ -46,7 +46,7 @@ playsound {cosmic rage/activities/hand mining/ManKillYou.wav} @vol}
 #trigger {The laser causes a hand-mining find to erupt in flames!} {
 playsound {cosmic rage/activities/hand mining/erupt.wav} @vol}
 #trigger {The laser polishes up the gem, revealing it to be *!} {playsound {cosmic rage/activities/hand mining/reveal.wav} @vol}
-#trigger {You pick up a pair of minature tongs from * hand mining kit, *} {playsound {cosmic rage/activities/hand mining/acid.wav} @vol; #var acidhandle %playhandle}
+#trigger {You pick up a pair of miniature tongs from * open an acid container, and bathe * for a moment.} {playsound {cosmic rage/activities/hand mining/acid.wav} @vol; #var acidhandle %playhandle}
 #trigger {The outer shell burns away from *} {#gagline voice}
 #trigger {You quickly pull * out of the acid, *} {#if {@acidhandle > 0} {
 #pc @acidhandle stop};

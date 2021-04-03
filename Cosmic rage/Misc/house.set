@@ -17,9 +17,10 @@
 #TRIGGER {* takes * in both * and begins to sweep the room with it.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}
 #TRIGGER {You put * in *} {playsound {Cosmic Rage/general/house/put.wav} @vol}
 #TRIGGER {You get * from *} {playsound {Cosmic Rage/general/house/get.wav} @vol}
-#TRIGGER {You begin to dry * towel.} {playsound {Cosmic Rage/general/house/towel.wav} @vol}
+#TRIGGER {You begin to dry *} {playsound {Cosmic Rage/general/house/towel.wav} @vol}
 #TRIGGER {You launch into the air, jumping into the pool with a huge splash!} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
 #TRIGGER {You push * into the pool!} {playsound {Cosmic Rage/general/house/poolpush.wav} @vol}
+#TRIGGER {You climb up onto * and walk to the very end.} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
 #TRIGGER {the lift arrives and the doors open.} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol} {} AnyCase
 #TRIGGER {The doors of the lift * open.} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol} {} AnyCase
 #TRIGGER {the lift} {
@@ -39,3 +40,4 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}
 #TRIGGER {You grab a paper cup and put it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
 #TRIGGER {* grabs a paper cup and puts it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
+#TRIGGER {* climbs up onto * and walks to the very end.} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}

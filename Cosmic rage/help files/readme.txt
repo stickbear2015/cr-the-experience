@@ -12,7 +12,7 @@ Included in the main soundpack directory is a file called sounds.ini. This file 
 1. To install this soundpack, first go and obtain it. Several methods have been implemented for downloading the soundpack as well as all future updates.
 		1.1.1. There is the standard .zip file. The link to obtain this is, https://www.dropbox.com/sh/e4pzogzqb4q2uub/AACo6YI_wiviAvpBu7Ti3g5Ta?dl=0
 		1.1.2. A shared Dropbox folder has been created as well. If you'd like to be invited to the folder, just let a soundpack developer know in game, and you will be invited as soon as possible.
-1.1.3, there is an unofficial google drive folder available for downloading the soundpack. The availability is not guarantied by the  main developers of the soundpack. The link is > https://drive.google.com/drive/folders/1G3g-jpuYPtrSII_TjNTQrgeReoLu4XxE?usp=sharing
+1.1.3, google drive link, this folder is synced with the main dropbox folder, so it will be up to date all the time, as long as the dropbox folder is being updated. the link is, https://drive.google.com/drive/folders/13DGSRHHGPJAZRtvhpp-HcxpmdEdywE-k?usp=sharing
 	note, the developers of this pack advise of the usage of the Nathan Tech VIP mud soundpack installer, it lets you setup  and update your soundpacks without ddealing with the character dialog. 
 download it from, https://www.nathantech.net/nathantechsoftware.php
 2. Manual install. You will need to go and make sure all the information is correct in the connection setup wizard within VIPMud. several questions have been asked about this, so answers will be provided.
@@ -43,20 +43,21 @@ To update the soundpack using the Dropbox shared folder, please do the following
 1. Please hit alt-V or type SpVersion, the pack will notify you of the last change of the pack, and how many changes your behind.
 2. Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to back up your characters .set file if you don't want to lose any added alias's or triggers.
 If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
-adding custom music for ship combat
+		 adding custom music for ship combat
 1, find some music
 2, go to the sounds/music/combat folder
-3, rename the files like in the folder like
+3, rename the files like in the folder e.g.
 theme 1.wav theme2.wav bla bla bla up to theme132.wav
-nnote, there is no limit for this, as long as the music is at the wav format, and if you renamed your files like i did, you wont struggle
+nnote, there is no limit for this, as long as the music is at the wav format, and if you renamed your files like the examples, you wont struggle
 enter vipmud, note the pack should be loaded to this to work properly, that means you must hear the sounds fine as normal
 5, type themechange and a number, this will be the max number that the music will end
 like if you have 100 music in the combat folder, you should type themechange 100
 note, if you dont want to pack to break, just type numbers here
 6, enjoy
+
 		 customising private networks
 if your connected to more than 1 private network at a time, the channels may confuse you.
-there for, we have a system that lets you spesify the networks your in and play diffrent sounds
+therefor, we have a system that lets you spesify the networks yur in and play diffrent sounds
 1, go to the vipmud char manager, and click the cosmic rage character, like john cosmic rage
 2, find edit
 3, checked the save the variables apon logging off checkbox.
@@ -70,8 +71,32 @@ or
 pn4 ghostbusters
 hope that helps
 
+		 adding custom music to your factories
+1, find some music
+2, remember your factories or any other place's name exactly or this will not work
+note, only planets and factories at the time of writing this. I havent tested apartments dont report them if this method doesnt work on anything aside from planets and factories
+3, go to your documents folder or your v i p user folder 
+4, follow this path, sounds cosmic rage music planets
+5, paste your music (must be in .wav format)
+6, rename the music as your factorie's or the planet's name, remember, it should be the same as the factorie's or the planet's else this wont work
+7, within the game, type #edit misc/music.set
+
+You have 10 custom slots that allow you to add music. If you have filled one, you cant use that slot again if you dont override it
+Slots are renamed like this. changeone, change2, change3, change4, up to change10
+8, press ctrl h while on the notepad page of music.set
+9, type the slot's number into the first box, e.g. changeone, change2, change 6, change9, change10
+10, press tab and type your factories name here, It should be the same as your factories name
+11, press shift tab 3 times, it should say change all, or similor.
+12, press enter, press escape and ctrl s to save the file.
+13,  reload the pack
+14, if something still doesnt work, read the introductions once again.
+note, dont ask for any custom music to be crafted or given, its not will be provided
+note2, take a backup of this file before updating your soundpack, else it will be overriten and all of your changes will be lost for ever, no refunds!
+note3, if something breaks, copy the main file from the dropbox folder or from the zip file that you downloaded from
+note4, the music you add could only be heard by yourself, since this is your own copy. Other people are not going to hear the music that you put.
 			**Miscellaneous Notes**
 
+note, if one of more of your questions hasnt been answered in this file, check the faq.txt file. If you still cannot find the answer that your looking for, dont hezetate to ask it over the soundpack channel.
 In some cases, ambience fails to work for some players. This is due to the fact that they have brief mode enabled. To fix this, type brief, then disable hiding of descriptions.
 To access the configuration manager, please hit "F-2."
 If by chance you find that a sound has gotten stuck, or is not acting as expected, you may use the alias StopSound, or the key Control-F11 to stop all currently playing sounds.
@@ -97,19 +122,19 @@ Download from:  https://www.nathantech.net/nathantechsoftware.php
 
 The soundpack administrators are not lawyers, don't know any lawyers, and are entirely unwilling to pay for the services of any legal advice regarding this project. That being said, you should note that the soundpack administrators do not guarantee any level of functionality of this soundpack with your particular situation.  The soundpack administrators may not necessarily always be available to answer questions, help you install it, ETC.  If your computer suddenly decides that it can't handle it, catches fire, melts down or produces extreme amounts of smoke or radiation that result in your untimely demise, we had nothing to do with it.  This soundpack has been tested under windows 7 and 10, as well as released for private beta use amongst friends. We would not be releasing it as such if he believed that it would not be functional to a level of acceptableness. But do keep in mind that the pack is constantly being developed, so check back frequently for updates! In smart and legal terms, we or any other developer of this pack cannot be held liable for any damages caused by using this pack or anything relating to this pack.
 
-		*A note from Nate, the head admin of Cosmic Rage*
+		*A note from the staff of the game.*
 
 Hello!
 
 While it is not said often, please take a moment to think about this soundpack.
 Over 500, nearly 600 changes at the time of writing this file, stemming back over a year of soundpack development.
 The road is long, and definitely not smooth.
-Snapp working his way through like this though has been absolutely astounding.
+The wonderful Stormy working his way through like this though has been absolutely astounding.
 There may be things you dislike about the pack.
 There may be things you love about the pack.
-But when you use it, make sure and tip your hat to snapp in a "thank you", because he's worked dang hard for it.
+But when you use it, make sure and tip your hat to Stormy in a "thank you", because he's worked dang hard for it and continues to do so, working closely with the staff of the game to not only ensure he can provide an immersive sound experience, but also thtat the game can be improved on a game level for even further accessibility.
 Thanks
 
-Nate.
+Nate and the Cosmic Rage Staff.
 
 			Happy MUDding!

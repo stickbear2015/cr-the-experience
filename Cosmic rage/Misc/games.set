@@ -7,3 +7,35 @@
 #TRIGGER {[[]Poker], the dealer flips over card *} {playsound {cosmic rage/general/games/pokerplay.wav} @vol}
 #TRIGGER {[[]Poker], * bets *} {playsound {cosmic rage/general/games/pokerbet.wav} @vol}
 #TRIGGER {[[]Poker], * chips in. All in.} {playsound {cosmic rage/general/games/pokerchips.wav} @vol}
+#TRIGGER {* slid* * into the machine.} {playsound {cosmic rage/general/games/token.wav} @vol}
+#TRIGGER {* thu* down the lever at the side of the machine.} {playsound {cosmic rage/general/games/button.wav} @vol}
+#TRIGGER {The three windows on the machine begin to flash and spin, and an upbeat tune plays from the speakers.} {playsound {cosmic rage/general/games/button.wav} @vol}
+#TRIGGER {* window flashes green *} {playsound {cosmic rage/general/socials/bounce2.wav} @vol}
+#TRIGGER {A pixelated pilot pops up on the screen of the machine, stomping off out of view with a sulky expression as his little tokens all fall away into a black hole.} {playsound {cosmic rage/general/pp/loose2.wav} @vol}
+#TRIGGER {Plating.} {playsound {cosmic rage/general/games/plating.wav} @vol}
+#TRIGGER {Lift.} {playsound {cosmic rage/general/games/lift.wav} @vol}
+#TRIGGER {Live cable.} {playsound {cosmic rage/general/games/electric.wav} @vol}
+#TRIGGER {* gets flung back to position *} {playsound {cosmic rage/general/games/hopdown.wav} @vol}
+#TRIGGER {* advances forward at a fast pace!} {playsound {cosmic rage/general/games/run.wav} @vol}
+#TRIGGER {* advances up a row.} {playsound {cosmic rage/general/games/liftup.wav} @vol}
+#TRIGGER {* advances up the lift!} {playsound {cosmic rage/general/games/liftup.wav} @vol}
+#TRIGGER {Stun turret.} {playsound {cosmic rage/general/games/electric.wav} @vol}
+#TRIGGER {* falls down the breach!} {playsound {cosmic rage/general/games/hopdown.wav} @vol}
+#TRIGGER {Lift.} {playsound {cosmic rage/general/games/lift.wav} @vol}
+#TRIGGER {Breach.} {playsound {cosmic rage/general/games/breach.wav} @vol}
+#TRIGGER {Top of lift.} {playsound {cosmic rage/general/games/lift.wav} @vol}
+#TRIGGER {Bottom of lift.} {playsound {cosmic rage/general/games/lift.wav} @vol}
+#TRIGGER {Bottom of breach.} {playsound {cosmic rage/general/games/breach.wav} @vol}
+#TRIGGER {Rocket booster.} {playsound {cosmic rage/general/games/rocket.wav} @vol}
+#TRIGGER {Random.} {playsound {cosmic rage/general/games/random.wav} @vol}
+#TRIGGER {Teleport.} {playsound {cosmic rage/general/games/teleporter.wav} @vol}
+#TRIGGER {* chooses to go up one level!} {playsound {cosmic rage/general/games/hophop.wav} @vol}
+#TRIGGER {* teleports forward to position *} {playsound {cosmic rage/general/games/hophop.wav} @vol}
+#TRIGGER {Console.} {playsound {cosmic rage/general/games/console.wav} @vol}
+#TRIGGER {You deposit * into the slot and settle into one of the seats.} {playsound {cosmic rage/general/games/tokens.wav} @vol}
+#TRIGGER {* deposits * into the machine and settles into one of the seats.} {playsound {cosmic rage/general/games/tokens.wav} @vol}
+#TRIGGER {The duck cheerfully quacks!} {playsound {cosmic rage/general/games/duck.wav} @vol}
+#TRIGGER {The duck quacks in disgust!} {playsound {cosmic rage/general/games/duck2.wav} @vol}
+#TRIGGER {* stunned!} {playsound {cosmic rage/general/games/zap.wav} @vol}
+#TRIGGER {Duck.} {playsound {cosmic rage/general/games/duck3.wav} @vol}
+#TRIGGER {is bumped down a level.} {playsound {cosmic rage/general/games/hopdown.wav} @vol}

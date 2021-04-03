@@ -22,3 +22,4 @@
 #trigger {The door slides shut.} {#alarm 1 { playsound {Cosmic Rage/general/gmc/ambdoorclose.wav} @vol}}
 #trigger {You slide * into a storage compartment.} {playsound {Cosmic Rage/general/gmc/gurneyload.wav} @vol}
 #trigger {You pull * from a nearby storage compartment.} {playsound {Cosmic Rage/general/gmc/gurneyunload.wav} @vol}
+#trigger {*ou tap a button, activating the siren.} {#gagline all; loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}

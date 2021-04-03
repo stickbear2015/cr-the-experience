@@ -20,3 +20,8 @@
 #trigger {* giggles happily.} {playsound {Cosmic Rage/general/baby/babylaugh1.wav} @vol}
 #trigger {* blinks at * for several moments, then busts out laughing.} {playsound {Cosmic Rage/general/baby/peekaboo*3.wav} @vol}
 #trigger {*bursts into a flood of tears!} {playsound {Cosmic Rage/general/baby/sob.wav} @vol}
+#trigger {* beams happily.} {playsound {Cosmic Rage/general/baby/beams.wav} @vol}
+#trigger {* smiles, attempting to wrap * arms around * neck.} {playsound {Cosmic Rage/general/baby/hugs.wav} @vol}
+#trigger {* waves * arms in the air!} {playsound {Cosmic Rage/general/baby/waves.wav} @vol}
+#trigger {* goes roar, attempting to imitate a dragon.} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
+#trigger {* giggles a little.} {playsound {Cosmic Rage/general/baby/giggle.wav} @vol}

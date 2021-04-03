@@ -1,11 +1,233 @@
+1914 stormy, credits curt, fixed baby cuddling
+copy misc babies.set
+1913 stormy, credits faith, fixed babies
+copy misc bbies.set
+1912 stormy, credits Julius, fixed hand mining acid bath
+coy activities handmining.set
+1911 stormy, credits raju, sound credits raju, ok here is the thing, i was planning to not add any baby related stuff until race spasific emotes have been added, but well i couldnt resist after hearing the sounds he sent, especially the dragon roar! In summory, added more sounds for babies.
+copy misc baby.set and sounds cr general baby folder
+1910 stormy, credits alko, i've made the polution cleaner power down a little bit realistic
+copy activities pol.set
+1909 stormy, credits Chris, rifts sounds now uses the correct volume handle, you can now toggle them with shi engine volume keys
+copy ships jump.set
+1908 stormy, the warp now uses the correct volume handle
+copy ships ships2.set
+1907 stormy, fixed a host message
+copy misc hosts.set
+1906 stormy, credits Austin, fixed a misinformation in conffig manager
+copy misc conf manager.set
+1905 STORMY, CHANGED THE anouncement sounds for trains, accesstubes and what ever it plays for
+copy sounds misc ping.wav
+sound credit, https://freesound.org/people/Benboncan/sounds/93646/
+1904 stormy, credits George and Abdulla, fixed stopping of ambience and Spartaculous pods
+copy ships ships.set
+1903 stormy, credits Raju, ungagged the probe lost message for star studying
+copy activities starstudy.set
+1902 stormy, credits Ratus, fixd planetoid grabbing.
+copy activities planetoids.set
+1901 stormy, credits william, ship wrecking fixed
+copy ships ships2.set
+1900 stormy, credits elena and jason, abandoned game has now few more sounds.
+copy misc games.set and sounds cr general games folder
+
+1899 stormy, fixed few parody related sounds, they were anoying in a way so.
+copy sounsd cr general p folder
+1898 stormy, added more sounds for the abandoned ship game
+copy misc games.set and sounds cr general games folder
+
+1897 stormy, you now hear the token deposit sound when someone inserts tokens.
+copy misc games.set
+1896 stormy, you now hear the dice rolling when someone rolls it
+copy misc parody.set
+1895 stormy, credits Sakura  and shelby,, we now have the sounds for arcade abandoned ship game
+copy misc games.set and sounds cr general games folder
+1894 stormy, fixed towel sound
+copy misc house.set
+1893 stormy, credits zac, you now hear a sound when somsone request a holo conference
+copy misc comms.set and general comms holo.wav
+1892 stormy, fixed sooo many things regarding the parody
+copy misc  parody.set
+1891 stormy, credits Austin, changed the yello alert sound
+copy ships combat yellow.av
+1890 stormy, arcade slot machines now have sounds, But i dont advise gambling because you will most likely lose in the end, like me
+sound credits, https://freesound.org/people/touchassembly/sounds/145540/, https://freesound.org/people/Robinhood76/sounds/348503/
+copy misc games.set and sounds cr general pp.set
+1889 stormy, party party station pods now have sounds.
+cpoy misc mwtp.set ad sounds cr general pod folder
+1888 stormy, credits Typheol, fixed farm ambience, rude rude verry rude!
+copy activities farming.set
+1887 stormy, credits shelby, added a sound for the diving boards
+copy misc houses.set
+1886 stormy, changed those old rusty red and green alert sounds 
+copy sounds ships combat green and red.wav
+1885 stormy, credits blake, gagged 2 boarding messages for ships from accessTubes
+copy ships ships2.set
+1884 stormy, credits blake, added a sound for  factory building message
+copy misc factories.set
+1883 stormy, credits Hermione, you now hear the deceleration sound for the vehicles
+copy sounds vehicle deceleration1.wav
+1882 stormy, you now hear the ground combat grid coordinates  as you move
+copy combat combat.set, combat groundcombat.set and sounds cr general combat enemies exits folder
+1881 stormy, you now hear a sound when you try to shoot and if your weapon is damaged.
+copy combat combat.set and sounds cr general combat weapons damaged.wav
+1880 stormy, you now hear  a sound when your ground weapons overheats
+copy combat combat.set and sounds cr general combat weapons overheat.wav
+1879 stormy, the taxi phone sound now works
+copy misc misc.set
+1878 stormy, credits Haschwalth and other people that i forget, we now have sounds for ground combat weapons. Its currontly limited with pistols, snipers and rifles at the time being, but the functionalety will be improved for sure.
+copy combat/combat.set and sounds general combat weapons folder
+1877 stormy, you now hear the sound when one of your ground combat weapons got charged
+copy combat combat.set
+1876 stormy, credits Agradeleous. added a sound for one of the factory messages
+copy misc factories.set 
+1875 stormy, We now officially support google drive for an extra method for downloading the pack, please check the readme or the soundpack's download section for the new  link
+copy help files readme.txt and soundpack credits.txt
+1874 stormy, credits Saladin Numia, the bull charging sound no longer plays when you, like charge  your horses after this point
+copy misc mutariansi.set
+1873 stormy, credits Rafly, you now hear the sound when you give a treat to a horse
+copy misc horses.set
+1872 stormy, Sound credits Blake, changed some of the highway sounds to increase imersion and made vehicles in the highway more diverse.. Who doesnt like realism anyway.
+copy vehicle higyway.set and sounds cr general highway folder
+1871 stormy, credits blake, all the oldcar sounds now uses the same volume option, which is vehicle volume
+copy vehicle cars.set
+1870 stormy, credits raju, the moonbase building construction sound now plays propparly
+copy activities moonbase.set
+1869 stormy, credits Rafly, if the components cannot be repaired on a vehicle, you now hear a sound and the repair sound stops
+copy vehicle vehicle.set
+1868 stormy, credits blake, you now hear the driving loop as well, when you return your  vehicles to your ships.
+copy vehicle vehicle.set
+1867 stormy, i've made the old car driving a little bit more realistic, the driving loop doesnt start as sune as you accelerate now.
+copy vehicle cars.set
+1866 stormy, credits chris, fixed a sound with the oldcars and highways
+copy sounds general highway oldcar switch.wav
+1865 stormy, i've fixed the vehicle repairs, sorry about that 
+copy vehicle vehicle.set
+1864 stormy, i fixed the warp fuel tanks
+copy ships ships.set and ships2.set
+1864 stormy, credits blake, added sounds for  vehicle repairs
+copy vehicle vehicle.set and sounds cr vehicle repairloop.wav and repairstop.wav
+1863 stormy, i added sounds for few more message board categories
+copy misc comms.set
+1862 stormy, credits khal, i've added a sound for the bare social, yes its the same as the snarl social
+copy misc socials.set
+1861 stormy, credits mariam, i've added a diffrent sound when you harvest a ratika podship
+copy activities salivaging.set and sounds cr ships salvaging salrat.wav
+1860 stormy, you now hear a sound for message board graduation announcements, more to come as i find the other texts
+copy misc comms.set
+1859 stormy, credits blake, added an other sound for polution cleaning :d
+copy activities/pol.set
+1858 stormy, change 1855 now works like it should to be.
+copy cosmic rage.set, cosmic rage/vehicle folder and sounds cr general highway folder.
+1857 stormy, credits blake and william, added a sound for larkan message boards
+copy misc misc.set and sounds cr general messageboards larkan.wav
+1856 stormy, i' took down the change 1855 because it was causing so many errors, i'll fix and readd it when i can test it fully
+copy cosmic rage.set, cosmic rage/vehicle folder and sounds cr general highway folder.
+1855 stormy, credits blake, sound credits blake, normal vehicles and old cars now have diffrent highway sounds. Thank you my vehicle loving friend for the idea and the sounds :d.
+copy cosmic rage.set, cosmic rage/vehicle folder and sounds cr general highway folder.
+1854 stormy, docking fixed
+copy ships ships.set and ships2.set
+1853 stormy, i gagged the factory drone building texts because they were spammy
+copy misc factory.set
+1852 stormy, credits everyone that updated their packs in 2 hours, i fixed the error about ship combat,  soooooryyy!
+copy ships shipcombat.set
+1851 stormy, credits jay, added sounds for hail notification
+copy misc factory.set and sounds general factories hail.wav
+1850 stormy, credits jay, added 2 rather funny sounds for the factory drone creation
+copy misc factory.set and sounds cr general factories folder
+1849 stormy, credits Alicen, firing weapons now respects the gag ship combat option
+copy ships ships.set
+1848 stormy, credits Madalin  and zorgaph, you now hear the bell sound when someone uses that on a bicycle
+copy misc misc.set and sounds cr general misc bell.wav
+1847 stormy, cedits Madalin, bikes now have movement sounds, hopefully.
+copy misc misc.set and sounds cr general misc bikemove.wav
+1846 stormy, credits syuri, added a sound when warp tanks processes fuel
+copy ships misc.set and sounds ships misc warpfuel.wav
+1845 stormy, credits khal you now hear a sound when weapons charge
+copy combat combat.set
+1844 stormy, credits emma, i think i fixed doors
+copy misc doors.set
+1843 stormy, credits khal, fireworks sounds have been changed
+copy misc mis.set
+1842, stormy, credits william, i think i fixed the clock sounds
+copy misc clocks.set
+1841 stormy, credits khal, megasuit movement is fixed
+copy combat megasuit.set
+1840 stormy, credits Patrick, fixed taxi telephone sound
+copy misc misc.set
+1839 stormy, credits seth, fixed all the social related errors, i think
+copy misc socials.set
+1838 stormy, credits gilly, added sounds for the dong social
+copy misc socials.set and sounds cr general socials dong1 and dong2.wav
+1837 stormy, credits thaa, sound credits thaa, added a sound for nutkick social
+copy misc socials.set and sounds cr general socials nutkick.wav
+1836 stormy, credits shelby, fixed the gmc ambulance siren playing error  if your wearing like a ring or something
+copy misc orgstuff.set
+1835 stormy, credits Mariam, i fixed the vehicle move erroring thing
+copy vehicle vehicles.set
+1834, James, We get it, you keep getting about punched in the face. Added a gagline voice to the successful completion message from shoveling clay as the sounds handle that fine. Hurray for less spam!
+copy cosmic rage\activities\Moonbase.set
+1833 stormy, credits james, the salvo sound for standard missiles now works
+copy ships shipcombat.set
+1832 stormy, credits blake, sound credit blake, changed the vehicle door sounds
+copy sounds vehicle open.wav and cose.wav
+1831 stormy, credits blake, sound credits blake,
+ changed the vehicle Accelerating sounds
+copy sounds cr vehicle Accelerate.wav and  Accelerate1.wav
+1830 stormy, credits john smith, changed the ship docking sounds
+copy ships ships.set and sounds cr ships misc dock.wav dockinginprogress.wav and finishdocking.wav
+1829 stormy, credits Madalin, you now hear a sound when you gather wood
+copy misc trolley.set
+1828 stormy, credits nate, converted salvo torpitos to the new system.
+copy ships shipcombat.set and sounds cr ships combat weapons folder
+1827 stormy, credits nate, converted salvo plasma missiles and salvo missiles to the new panning system
+copy ships shipcombat.set and sounds cr ships combat weapons folder
+1826 stormy, converted one of the unused music to play for salura
+copy misc music.set and sounds cr music planets salura.wav
+1825 stormy, credits faith, added a note about the custom music thing letting you know that the  music you add will be only heard by yourself.
+copy help files readme.text
+1824 stormy, credits shiro, you can now add custom  music to your factories or such, refer to read me for more information
+copy misc music.set and help files readme.txt
+1823 stormy, credits seth and lara, added sounds for vehicle windows
+copy vehicle vehicle.set and sounds cr vehicle folder
+1822 stormy, tera now has a music, surprised noone suggested this before
+copy misc music.set and sounds cr music planetary music tera.wav
+1821 stormy, credits Butacska, horses and babies were fixed, dont ask me how, hahahaha
+copy misc horses.set
+1820 stormy, credits trevor, announcements and changes notifyer sounds fixed
+copy misc misc.set
+1819 stormy, credits trevor, vehicle pa sound fixed
+copy misc comms.set
+1818 stormy, credits roby, taxi sounds have been changed
+copy sounds ships misc shipassend.wav and shipRift.wav
+1817 stormy, credits william and blake, train doors fixed
+copy misc trains.set
+1816 stormy, credits blake, gagged an oldcar message
+copy vehicle cars.set
+1815 stormy, credits Alicen, changed the roundtime notify sound
+copy sounds general misc roundtime.wav
+1814 stormy, credits Hermione, the clasic car starting is now more, realistic
+copy vehicle cars.set
+1813 stormy, credits william, dryers fixed
+copy misc misc.set
+1812 stormy, credits william, fixed the polution scan displaying and the sound
+copy activities pol.set
+1811 stormy, credits bogdan, you now hear a sound when you unbuckle  your belts
+copy misc misc.set and sounds cr general misc unbuckle.wav
+sound credit,sound by omar alvarado, https://freesound.org/people/Omar%20Alvarado/sounds/251541/
+1810 stormy, credits bogdan, added a sound when you buckle up
+copy misc misc.set
+1809 stormy, credits Hermione, i've picked those old old cars, swung them around, and flung them into a smelly recycling machine and, the end result is better cars. I want to thank blake cromozov once again. Well because he is the one that designed most of those car sounds, me and cars, doesnt get along that well compared to that dude
+copy vehicle cars.set
+1808 stormy, credits Mary and Emma, removed panning from the doors for the time being because it was weird 
+copy misc doors.set
 1807 stormy, credits francisco, changed the weaponroom ambience
 copy sounds ships rooms weaponroom.wav
 sound credit, Sci-fi Laboratory Ambience http://freesound.org/people/qubodup/sounds/212025 by Iwan ‘qubodup’ Gabovitch http://freesound.org/people/qubodup under CC-BY 3.0 License http://creativecommons.org/licenses/by/3.0/legalcode 
-1806 stormy, converted torpidos to the new paning system
+1806 stormy, converted torpidos to the new panning system
 copy ships shipcombat.set and sounds ships combat weapons folder
 1805 stormy, converted missiles to the new panning system
 copy ships shipcombat.set and sounds ships combat weapons folder
-1804 stormy, deleted uused triggers from combat
+1804 stormy, deleted unused triggers from combat
 copy ships shipcombat.set
 1803 stormy, credits viola, changed the activating and deactivating part of the defencive sounds a little, so its now easy to distinguish those 2 from each other
 copy ships shipcombat.set and sounds ships combat defon1 defoff1 and defoff2.wav
@@ -35,7 +257,7 @@ copy sounds cr ships combat folder
 copy misc socials.set and sounds cr general socials blink.wav
 1790 stormy, credits kayla and haschwulf, added sounds for the blue mapper alert
 copy ships fc blue.wav and ships fc.set
-1789 stormy, credits lisa, the transfer complete has been changed
+1789 stormy, credits lisa, the transfer complete sound has been changed
 copy sounds activities star studies transfercomplete.wav
 1788 stormy, credits seth, you now hear the wearing sound when you wear a full armor, my baaaaad
 copy misc wear.set

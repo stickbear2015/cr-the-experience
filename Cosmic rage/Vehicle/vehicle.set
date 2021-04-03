@@ -15,9 +15,9 @@ playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #TRIGGER {The hum of the engine slowly begins to die down.} {#gagline all; #alarm 0.4 {playsound {cosmic rage/vehicle/EngineStop.wav} @vevol}}
 #TRIGGER {The hum of the engines increase as the vehicle moves.} {#gagline all;
 #if {@altVehicleEngines = "Disabled"} {
-playsound {cosmic rage/vehicle/cargo.wav} @veVol};
+playsound {cosmic rage/vehicle/Accelerate.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
-playsound {cosmic rage/vehicle/cargo1.wav} @veVol}}
+playsound {cosmic rage/vehicle/Accelerate1.wav} @veVol}}
 #TRIGGER {A grinding noise fills the vehicle as the cleaning equipment is extended.} {#gagline all; playsound {cosmic rage/vehicle/dump.wav} @vevol; #if {@panshipcombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
 #TRIGGER {On screen, you see the cleaning equipment begin sorting through trash.} {#gagline all}
 #TRIGGER {Time until repair completes: *.} {playsound {cosmic rage/ships/misc/Repair*7.wav}  @vevol}
@@ -164,8 +164,8 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol; #var chargeHandle %p
 #trigger {Outside, the siren continues to wail.} {#if {@siren = 0}  {loopsound {cosmic rage/vehicle/siren1.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}}
 #trigger {* emits a loud siren.} {playsound {cosmic rage/vehicle/siren2.wav} @vevol}
 #TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all; v_amb1}
-#trigger {The hum of the vehicles engines get higher in pitch as it begins to move.} {#gagline all; playsound {Cosmic Rage/general/cars/accelerate.wav} @Vevol}
-#trigger {You put the vehicle into park as it comes to a halt.} {#gagline all; playsound {Cosmic Rage/general/cars/decelerate.wav} @Vevol}
+#trigger {The hum of the vehicles engines get higher in pitch as it begins to move.} {#gagline all; playsound {Cosmic Rage/general/cars/accelerate.wav} @Vevol; #alarm 6 {Loopsound {Cosmic Rage/general/Cars/driving.wav} @evol; #var drivehandle %PlayHandle; #var drive 1}}
+#trigger {You put the vehicle into park as it comes to a halt.} {#gagline all; playsound {Cosmic Rage/general/cars/decelerate.wav} @Vevol; #if {@drive = 1} {#pc @drivehandle stop; #var drive 0}}
 #TRIGGER {You hear the engines give a slight vibration before the vehicle suddenly begins to move.} {#gagline all;
 #if {@altVehicleEngines = "Disabled"} {
 playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
@@ -202,3 +202,10 @@ playsound {cosmic rage/vehicle/door close.wav} @vevol}}
 #trigger {* swipes * ID card and taps *} {
 #gagline all;
 playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}
+#trigger {There is a slight whine as the windows wind fully open.} {playsound {cosmic rage/vehicle/windowdown.wav} @vevol}
+#trigger {There is a slight whine as the windows wind to half open.} {playsound {cosmic rage/vehicle/windowpart*2.wav} @vevol}
+#trigger {There is a slight whine as the windows wind shut.} {playsound {cosmic rage/vehicle/windowup.wav} @vevol}
+#trigger {There is a series of muffled clunks followed by a series of heavy thuds.} {#gagline all; loopsound {cosmic rage/vehicle/repairloop.wav} @vevol; #var rephandle %playHandle; #var repPlaying 1}
+#trig {The hum of drones hard at work continues to sound throughout the vehicle as repairs are done to The Hood.} {#gagline all}
+#trig {The sound of hammering from outside abruptly stops.} {#gagline all; #if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/repairstop.wav} @vevol}}
+#trig {The computer announces: "Component no longer usable."} {#if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/alarm.wav} @vevol}}

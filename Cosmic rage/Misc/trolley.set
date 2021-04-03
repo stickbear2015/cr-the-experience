@@ -90,3 +90,4 @@ playsound {cosmic rage/general/trolley/wood.wav} @vol}}
 #trigger {* loads * corpses onto a tray.} {
 #gagline voice;
 playsound {cosmic rage/general/trolley/corpse.wav} @vol}
+#trigger {You find A chunk of wood!} {playsound {cosmic rage/activities/hunt/branch.wav} @vol};

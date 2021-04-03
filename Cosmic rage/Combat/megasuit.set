@@ -4,6 +4,6 @@
 #trigger {You lower * to the megasuits side.} {#sub {lowered arms}; playsound {Cosmic Rage/general/combat/megasuit/raise.wav} @gvol}
 #trigger {The megasuit slams its fist into *} {#gagline all; playsound {Cosmic Rage/general/combat/megasuit/punch*3.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,2500)}}
 #trigger {The megasuit falls with a very massive crash to the ground!} {playsound {Cosmic Rage/general/combat/megasuit/fall.wav} @gvol}
-#trigger {The megasuit turns its * foot *} {#sub {%1 to %2}; playsound {Cosmic Rage/general/combat/megasuit/step*2.wav} @gvol; #if {%1 = "left"} {#PC %Playhandle Pan  %random(-1000,-500)} {#PC %Playhandle Pan %random(1000,500)}; @gvol}
+#trigger {The megasuit turns its * foot *} {#sub {%1 to %2}; playsound {Cosmic Rage/general/combat/megasuit/step*2.wav} @gvol; #if {%1 = "left"} {#PC %Playhandle Pan  %random(-1000,-500)} {#PC %Playhandle Pan %random(1000,500)}}
 #trigger {A soothing voice in your mind announces: "Target destroyed."} {#gagline all; playsound {Cosmic Rage/general/combat/megasuit/die.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,2500)}}
 #trigger {A lance of pain goes through you as the megasuit takes some damage.}  {#sub {suit damage}; playsound {Cosmic Rage/general/combat/megasuit/crash*2.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-2500,2500)}}

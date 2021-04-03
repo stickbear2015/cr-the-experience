@@ -1,6 +1,6 @@
 #trigger {A thrum comes from underfoot as power begins to be routed through the vehicle.} {#gagline all; playsound {Cosmic Rage/activities/pol/sta1.wav} @vol}
 #trigger {A steady thudding comes from the roof as the rotors reach a constant speed and the vehicle completes the startup.} {#gagline all; playsound {Cosmic Rage/activities/pol/sta2.wav} @vol}
-#trigger {The steady thudding from above begins to decrease in speed as the rotors are slowed down.} {#gagline all; playsound {Cosmic Rage/activities/pol/stop.wav} @vol}
+#trigger {The steady thudding from above begins to decrease in speed as the rotors are slowed down.} {#gagline all;  #alarm 1 {playsound {Cosmic Rage/activities/pol/stop.wav} @vol}}
 #trigger {A slow whirring comes from overhead as the rotors begin to slowly spin.} {#gagline all}
 #trigger {Status lights begin to flicker across the screen.} {#gagline all}
 #trigger {With a slow whir, the rotors are brought to a stop.} {#gagline all}
@@ -40,7 +40,6 @@
 #trigger {The rotors settle down once more.} {#gagline all; #if {@launch = 1} {playsound {Cosmic Rage/activities/pol/move4.wav} @vol;#alarm 0.4 {#PC @launchhandle Frequency 44000}}}
 #trigger {You depress a plunger several times, spraying the surrounding area with oxygen.} {#gagline all; playsound {Cosmic Rage/activities/pol/pump.wav} @vol}
 #trigger {A slightly blurry image of the * spreads out *} {playsound {Cosmic Rage/activities/pol/red.wav} @vol}
-#trigger {A red light shows that there is * to the * at a distance of * meters.} {#sub {%3  meters %2 %1 detected}}
 #trigger {You use the pedals to change the angle of the vehicle and tap the computer, telling it to fly * meters *} {
 playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 meters %2}}
 #trigger {A red light shows that there is * at the vehicles location.} {playsound {Cosmic Rage/activities/pol/here.wav} @vol; #sub {%1 detected at the same location with the vehicle}}
@@ -99,3 +98,5 @@ playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol; #sub { moving %1 met
 #trigger {* increases the power to the rotors, slowing the descent.} {#gagline all; #if {@launch = 1}  {playsound {Cosmic Rage/activities/pol/move1.wav} @vol; #alarm 2 {#PC @launchhandle Frequency 44000}}}
 #trigger {* uses the pedals to aim the craft, before * taps at the computer for a moment.} {
 playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol}
+#trigger {A red light shows that there is * and *} {#sub {%1, %2}; playsound {Cosmic Rage/activities/pol/red.wav} @vol}
+#trigger {The laser slams into the meteor and sends it spinning!} {#gagline all; playsound {Cosmic Rage/activities/pol/split.wav} @vol}

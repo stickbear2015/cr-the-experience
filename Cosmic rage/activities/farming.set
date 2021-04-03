@@ -86,3 +86,19 @@ loopsound {cosmic rage/activities/farming/house.wav} @roomvol;
 #trig {You use the loose soil to cover the seeds with * shovel.} {
 #gagline voice;
 playsound {cosmic rage/activities/hand mining/dirt.wav} @vol}
+#Trigger {Tarania;  *} {
+#var isvehicle 0;
+#if {@ambon = "Enabled"} {
+#if {@ShipSoundPlaying = 1} {
+#pc @shiphandle stop; #var ShipSoundPlaying 0};
+#if {@CombatMusicPlaying = 1} {
+#pc @CombatMusicPlayingHandle stop; #var CombatMusicPlaying 0};
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+#If {%IfWord(farm,%1," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "farm"} {
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/activities/farming/goats.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "farm"}}}}

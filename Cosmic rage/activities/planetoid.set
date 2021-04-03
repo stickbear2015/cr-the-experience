@@ -18,7 +18,7 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 playsound {cosmic rage/activities/planetoid/grind.wav} @vol} 
 #trigger {The sound of retracting tubes echoes throughout the vehicle.} {
 #gagline all;
-playsound {cosmic rage/ships/jump/deflect3.wav} @vol} 
+playsound {cosmic rage/activities/planetoid/pullfree.wav} @vol} 
 #trigger {You tap the planetoid icon on the harvesting console.} {
 #gagline all;
 playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol} 

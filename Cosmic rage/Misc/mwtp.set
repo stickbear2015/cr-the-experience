@@ -7,3 +7,12 @@
 #trigger {A strange sound, almost like growling, fills the room and there is the dull thud of something hitting the outside of the pod.} {#gagline all}
 #trigger {There is a bone-rattling crash as the pod suddenly comes to a stop and the doors swing open.} {#gagline all}
 #trigger {The pod continues to drop, the shielding suddenly being taken offline.} {#gagline all}
+#trigger {The pod's engine fires up and the doors slide shut.} {#gagline all; #alarm 5 {playsound {Cosmic Rage/general/pod/partlaunch.wav} @vol; #alarm 7 {loopsound {cosmic rage/general/pod/partloop.wav} @vevol; #var goingHandle %playHandle; #var going 1}}}
+#trigger {There is a slight hum as docking equipment extends and the pod judders into a clamp.} {#gagline all;  playsound {Cosmic Rage/general/pod/partland.wav} @vol; #if {@going = 1} {#pc @goingHandle stop; #var going 0}}
+#trig {There is a barely noticeable thunk as the docking gear retracts and the pod slowly drifts a little.} {#gagline voice}
+#trig {Screens around the walls light up and begin to display space.} {#gagline voice}
+#trig {The pod rotates a little as it angles to ascend.} {#gagline voice}
+#trig {The pod begins to slowly ascend, the motion barely noticeable as it creeps up the side of the station.} {#gagline voice}
+#trig {The pod crests the station and begins to travel along the transparent dome that tops it.} {#gagline voice}
+#trigger {The pod rotates slowly and begins to drift towards a docking point.} {#gagline all;  #alarm 2 {playsound {Cosmic Rage/general/pod/partland.wav} @vol; #if {@going = 1} {#pc @goingHandle stop; #var going 0}}}
+#trig {There is a slight hum as docking equipment extends and the pod judders into a clamp.} {#gagline voice}

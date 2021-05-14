@@ -1,3 +1,48 @@
+1936 stormy, credits perry, added sounds for vehicle cycling
+copy vehicle vehicle.set
+1935 stormy, credits john, gagged a message regarding black dwarf harvesting
+copy activities blackdwarf.set
+1934 stormy, credits Austin, fixed vehicle returning
+copy vehicle vehicle.set
+1933 stormy, credits rafly and Frederick Barnes131439. you now hear the sound when you type save to save your your clone
+copy misc misc.set
+1932 stormy, added a sound when a vehicle or a trolley explodes due to a fire
+copy combat ground combat.set
+1931 stormy, credits kostas, guess he'd been farting too much nowadays, changed the fart social sound. Happy gassing the area.
+copy sounds cr general socials fart.wav
+1930 stormy, credits katana, added a sound for baby dragon roaring.
+copy misc baby.set and sounds cr general misc babies dragonroar.wav
+1929 stormy, credits hale and william, fixed radika explosions. They now play the explosion sounds, with a bit diffrent way.
+copy ships shipcombat.set
+1928 stormy, credits, Kaira, fixed horses
+copy misc hroses.set
+1927 stormy, fixed traceback sound, omg.
+copy misc comms.set
+1926 stormy, credits Hermione, fixed something about highways and oldcars,  naughty hosts
+copy vehicles highway.set
+1925 stormy, i've fixed up hand mining for good
+copy ctivities handmining.set
+1924 stormy, credits eli, made it so you can c  factory building messages in the output window
+copy misc factories.set
+copy miscs
+1923 stormy, fixed looooooot of things about hand mining
+copy activities handmining.set
+1922 stormy, added a sound for dragon claw sharpenning
+copy misc dragon.set
+1921 stormy, fixed a sound regarding airlocks
+copy shipsships2.set
+1920 stormy, fixed ship transportation sounds
+copy ships ships2.set
+1919 stormy, credits emma, fixed pauagiwa transfering sounds
+copy ships ships2.set
+1918 stormy, credits emma, the polution engine now respect vehicle engine volume, how rude
+copy activities pol.set
+1917 stormy, credits Hermione, the driving loop now stops when the handbrake is used  on a clasic car
+copy vehicle cars.set
+1916 stormy, credits bogdan, fixed mounting horses
+copy misc hourses.set
+1915 stormy, credits alex, fixedd milking cows
+copy mis factories.set
 1914 stormy, credits curt, fixed baby cuddling
 copy misc babies.set
 1913 stormy, credits faith, fixed babies

@@ -25,3 +25,4 @@
 #trigger {* waves * arms in the air!} {playsound {Cosmic Rage/general/baby/waves.wav} @vol}
 #trigger {* goes roar, attempting to imitate a dragon.} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
 #trigger {* giggles a little.} {playsound {Cosmic Rage/general/baby/giggle.wav} @vol}
+#trigger {* goes roar!} {playsound {Cosmic Rage/general/baby/dragonroar.wav} @vol}

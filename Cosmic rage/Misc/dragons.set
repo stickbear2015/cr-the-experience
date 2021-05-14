@@ -29,3 +29,5 @@
 #var FlyingStart 0}};
 #if {@flyinghandle > 0} {
 #pc @Flyinghandle stop}; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}
+#TRIGGER {You begin to use * to sharpen your claws.} {#gagline all; playsound {cosmic rage/general/combat/dragons/sharpen.wav} @vol}
+#trigger {The strain of sharpening your claws is finally too much for a large diamond and it crumbles away to nothing.} {playsound {cosmic rage/activities/hand mining/findbreak.wav} @vol}

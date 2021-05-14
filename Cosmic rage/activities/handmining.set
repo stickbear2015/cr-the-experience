@@ -2,8 +2,8 @@
 ;scanning for hand-mining finds
 #trigger {You hold * out above the ground, allowing it to scan.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/scan.wav} @vol}
-#trigger {* indicates it has detected something nearby at * *, * underground.} {#var hmfind1 {%2 %3};#sub {%1 indicates it has detected something nearby at %2, %3.}}
-#trigger {You are in the * at * *.} {#var hmfind2 {%2 %3};
+#trigger {* indicates it has detected something nearby at *, *, * underground.} {#var hmfind1 {%2 %3};#sub {%1 indicates it has detected something nearby at %2, %3.}}
+#trigger {You are in the * at *, *.} {#var hmfind2 {%2 %3};
 #if {@hmfind2 = @hmfind1} {playsound {cosmic rage/activities/hand mining/CanDig.wav} @vol}}
 #trigger {You pick your way through the mining area, *} {#sub {You are %1}}
 ;digging for hand-mining finds
@@ -46,7 +46,7 @@ playsound {cosmic rage/activities/hand mining/ManKillYou.wav} @vol}
 #trigger {The laser causes a hand-mining find to erupt in flames!} {
 playsound {cosmic rage/activities/hand mining/erupt.wav} @vol}
 #trigger {The laser polishes up the gem, revealing it to be *!} {playsound {cosmic rage/activities/hand mining/reveal.wav} @vol}
-#trigger {You pick up a pair of miniature tongs from * open an acid container, and bathe * for a moment.} {playsound {cosmic rage/activities/hand mining/acid.wav} @vol; #var acidhandle %playhandle}
+#trigger {You pick up a pair of miniature tongs from *} {playsound {cosmic rage/activities/hand mining/acid.wav} @vol; #var acidhandle %playhandle}
 #trigger {The outer shell burns away from *} {#gagline voice}
 #trigger {You quickly pull * out of the acid, *} {#if {@acidhandle > 0} {
 #pc @acidhandle stop};
@@ -73,3 +73,4 @@ playsound {cosmic rage/activities/hand mining/findbreak.wav} @vol}
 playsound {cosmic rage/general/house/put.wav} @vol}
 #trigger {You retrieve a hand-mining find from a purple hand mining kit.} {#gagline voice;
 playsound {cosmic rage/general/house/get.wav} @vol}
+#trigger {Your * scrape at the dirt, but not much happens.} {playsound {cosmic rage/activities/hand mining/dirt.wav} @vol}

@@ -120,12 +120,12 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {A few drones wheel in carrying some items.} {#gagline all; playsound {cosmic rage/general/factory/dronein.wav} @vol}
 #trigger {Some drones drop off debris into a tank.} {#gagline all; playsound {cosmic rage/general/factory/dronein.wav} @vol}
 
-#trigger {A drone uses an internal welding torch to fuse two items together.} {#gagline all; playsound {cosmic rage/general/factory/build5.wav} @vol}
-#trigger {A panel suddenly opens on the drone, revealing a long arm tipped with a heavy hammer. In a series of quick movements, it hammers furiously at a component.} {#gagline all; playsound {cosmic rage/general/factory/build2.wav} @vol}
-#trigger {A small drawer slides out of the drone, revealing lots of screws.} {#gagline all; playsound {cosmic rage/general/factory/build1.wav} @vol}
-#trigger {A drone furiously smashes its hammer into a component.} {#gagline all; playsound {cosmic rage/general/factory/build4.wav} @vol}
-#trigger {A drone hammers at a component.} {#gagline all; playsound {cosmic rage/general/factory/build4.wav} @vol}
-#trigger {A panel pops open on the drone and a small saw comes out, promptly slicing up something into smaller bits.} {#gagline all; playsound {cosmic rage/general/factory/build3.wav} @vol}
+#trigger {A drone uses an internal welding torch to fuse two items together.} {#gagline voice; playsound {cosmic rage/general/factory/build5.wav} @vol}
+#trigger {A panel suddenly opens on the drone, revealing a long arm tipped with a heavy hammer. In a series of quick movements, it hammers furiously at a component.} {#gagline voice; playsound {cosmic rage/general/factory/build2.wav} @vol}
+#trigger {A small drawer slides out of the drone, revealing lots of screws.} {#gagline voice; playsound {cosmic rage/general/factory/build1.wav} @vol}
+#trigger {A drone furiously smashes its hammer into a component.} {#gagline voice; playsound {cosmic rage/general/factory/build4.wav} @vol}
+#trigger {A drone hammers at a component.} {#gagline voice; playsound {cosmic rage/general/factory/build4.wav} @vol}
+#trigger {A panel pops open on the drone and a small saw comes out, promptly slicing up something into smaller bits.} {#gagline voice; playsound {cosmic rage/general/factory/build3.wav} @vol}
 #trigger {There is a whoosh as water gushes through a series of tubes.} {#gagline all; playsound {cosmic rage/general/factory/water.wav} @vol}
 #trigger {A loud hiss escapes as * is pressurized.} {#gagline all; playsound {cosmic rage/activities/planetoid/air.wav} @vol}
 #trigger {* disappears in a column of blue-white particles.} {#gagline all; playsound {cosmic rage/general/factory/droneout.wav} @vol}
@@ -134,11 +134,10 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {The air scrubbers power up with a gentle rumble.} {#gagline all; playsound {cosmic rage/general/factory/factorypowerup.wav} @vol}
 #trigger {The air scrubbers slowly grind to a halt.} {#gagline all; playsound {cosmic rage/activities/planetoid/low hum.wav} @vol}
 #trigger {A loud hissing can be heard as carbon dioxide is scrubbed from the air and pumped into a holding tank.} {#gagline all; playsound {cosmic rage/activities/planetoid/air.wav} @vol}
-#trigger {One of the drones topples over.} {#gagline all; playsound {cosmic rage/general/factory/build6.wav} @vol}
-#trigger {The drones continue working} {#gagline all; playsound {cosmic rage/general/factory/build*5.wav} @vol}
+#trigger {One of the drones topples over.} {#gagline voice; playsound {cosmic rage/general/factory/build6.wav} @vol}
+#trigger {The drones continue working} {#gagline voice; playsound {cosmic rage/general/factory/build*5.wav} @vol}
 #trigger {You empty * pieces of debris into the refinery.} {playsound {cosmic rage/general/factory/can.wav} @vol}
-#trigger {You begin to milk your cows.} {#gagline all;
-playloop {cosmic rage/general/factory/milk.wav} @vol; #var milkhandle %playhandle}
+#trigger {You begin to milk your cows.} {#gagline all; loopsound {cosmic rage/general/factory/milk.wav} @vol; #var milkhandle %playhandle}
 #trigger {You finish milking the cows.} {#gagline all;
 #pc @milkhandle stop}
 #trigger {The sound of scrapes and bangs can be heard as drones move about.} {playsound {cosmic rage/general/factory/clang.wav} @vol}

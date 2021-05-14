@@ -9,7 +9,7 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #TRIGGER {* directs the vehicle.} {playsound {cosmic rage/vehicle/accelerate.wav} @Vevol};
 #TRIGGER {You hear a hum as the vehicle moves a little.} {#gagline all;
 #if {@altVehicleEngines = "Disabled"} {
-playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
+playsound {cosmic rage/vehicle/decelerate1.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #TRIGGER {The hum of the engine slowly begins to die down.} {#gagline all; #alarm 0.4 {playsound {cosmic rage/vehicle/EngineStop.wav} @vevol}}
@@ -114,7 +114,7 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #trigger {The engines die down as the vehicle rolls to a stop.} {
 #gagline all;
 #if {@altVehicleEngines = "Disabled"} {
-playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
+playsound {cosmic rage/vehicle/decelerate1.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {
@@ -173,7 +173,7 @@ playsound {cosmic rage/vehicle/accelerate.wav} @veVol};
 playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #TRIGGER {The vehicle grinds to a halt.} {#gagline all;
 #if {@altVehicleEngines = "Disabled"} {
-playsound {cosmic rage/vehicle/decelerate.wav} @veVol};
+playsound {cosmic rage/vehicle/decelerate1.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #TRIGGER {You carefully drive the vehicle out of the bay.} {#gagline all;
@@ -209,3 +209,8 @@ playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}
 #trig {The hum of drones hard at work continues to sound throughout the vehicle as repairs are done to The Hood.} {#gagline all}
 #trig {The sound of hammering from outside abruptly stops.} {#gagline all; #if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/repairstop.wav} @vevol}}
 #trig {The computer announces: "Component no longer usable."} {#if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/alarm.wav} @vevol}}
+#trigger {Shimmering green forcefields lower down over the controls and exits, protecting them as the vehicle's atmosphere begins to be changed.} {#gagline all; playsound {cosmic rage/activities/pol/red.wav} @vevol; #alarm 0,7 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}
+#trigger {There's a soft hiss as the oxygenated air of the vehicle is pumped away.} {#gagline all; playsound {cosmic rage/activities/pol/pump.wav} @vevol; #alarm 1,3 {playsound {cosmic rage/activities/planetoid/air.wav} @vevol}}
+#trig {There is a soft chime as the environmental systems finish their work.} {#gagline all; playsound {cosmic rage/ships/computer/alert.wav} #gagline all}
+#trigger {There is a hissing noise as oxygenated air begins to be pumped back into the room.} {#gagline all; playsound {cosmic rage/activities/pol/pump.wav} @vevol; #alarm 1,3 {playsound {cosmic rage/activities/planetoid/air.wav} @vevol}}
+#trigger {The shimmering green fields lift as the vehicle becomes fully pressurised.} {#gagline all; {#alarm 1 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}}

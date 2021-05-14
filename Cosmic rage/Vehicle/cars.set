@@ -34,8 +34,7 @@ loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehicleha
 #TRIGGER {The engine on * suddenly thrums to life.} {playsound {Cosmic Rage/general/cars/\start_out.wav} @vehiclevol} {}
 #TRIGGER {The engine of * splutters to a stop.} {playsound {Cosmic Rage/general/cars/shutdown_out.wav} @vehiclevol} {}
 #TRIGGER {A * roles to a stop.} {playsound {Cosmic Rage/general/cars/\stop_out*2.wav} @vehiclevol} {}
-#TRIGGER {You yank up the handbrake!} {#Gagline ALL;
-playsound {Cosmic Rage/general/cars/\handbrake_up.wav} @vehiclevol} {}
+#TRIGGER {You yank up the handbrake!} {#Gagline ALL; playsound {Cosmic Rage/general/cars/\handbrake_up.wav} @vehiclevol; #if {@drive = 1} {#pc @drivehandle stop; #var drive 0;}}
 #TRIGGER {You drop down the handbrake.} {#Gagline ALL;
 playsound {Cosmic Rage/general/cars/\Handbrake_down.wav} @vehiclevol} {}
 #TRIGGER {The engine of the car revs furiously!} {playsound {Cosmic Rage/general/cars/\rev*5.wav} @vehiclevol}

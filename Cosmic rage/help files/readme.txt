@@ -120,7 +120,17 @@ Download from:  https://www.nathantech.net/nathantechsoftware.php
 
 			**Legal Stuff and Things**
 
-The soundpack administrators are not lawyers, don't know any lawyers, and are entirely unwilling to pay for the services of any legal advice regarding this project. That being said, you should note that the soundpack administrators do not guarantee any level of functionality of this soundpack with your particular situation.  The soundpack administrators may not necessarily always be available to answer questions, help you install it, ETC.  If your computer suddenly decides that it can't handle it, catches fire, melts down or produces extreme amounts of smoke or radiation that result in your untimely demise, we had nothing to do with it.  This soundpack has been tested under windows 7 and 10, as well as released for private beta use amongst friends. We would not be releasing it as such if he believed that it would not be functional to a level of acceptableness. But do keep in mind that the pack is constantly being developed, so check back frequently for updates! In smart and legal terms, we or any other developer of this pack cannot be held liable for any damages caused by using this pack or anything relating to this pack.
+The soundpack administrators are not lawyers, don't know any lawyers, and are entirely unwilling to pay for the services of any legal advice regarding this project. That being said, you should note that the soundpack administrators do not guarantee any level of functionality of this soundpack with your particular situation.  The soundpack administrators may not necessarily always be available to answer questions, help you install it, ETC.  If your computer suddenly decides that it can't handle it, catches fire, melts down or produces extreme amounts of smoke or radiation that result in your untimely demise, we had nothing to do with it.  This soundpack has been tested under windows 7 and 10, as well as released for private beta use amongst friends. We would not be releasing it as such if he believed that it would not be functional to a level of acceptableness. But do keep in mind that the pack is constantly being developed, so check back frequently for updates! In smart and legal terms, we or any other developer of this pack cannot be held liable for any damages caused by using this pack or anything relating to this pack. By downloading and using this pack, you agree to not use the sounds, scripts and any content aside from playing the mud "Cosmic Rage." if you do not agree to those rules, please ceace using this soundpack.
+
+special request from Stormy.
+Hello everyone. We do not take any donations or such to maintain development, but i have  little request.
+this pack is growing evry day and its space requirement is raising with more changes.
+and my dropbox space is limited. its a matter of time before i run out of space and have to stop pushing updates to the dropbox.
+if you havent created your dropbox account, or you know someone that wants to create a dropbox account, please use the referral link above.
+This will give 500 megabites of extra storage both to me, and the person who creates an acount with this link and their name will be added to the credits section of the soundpack.
+in order to get the bonus how ever, you need to create the acount using this link, and sign in to your computer with the created acount.
+thank you.
+https://www.dropbox.com/referrals/AACo9i0sqL4Dm4QdPzJ90U3cKQytdkgxY4I?src=global9
 
 		*A note from the staff of the game.*
 

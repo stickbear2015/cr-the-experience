@@ -152,3 +152,5 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {* We are being hailed by *} {playsound {cosmic rage/general/factory/hail.wav} @vol}
 #trigger {A drone wheels in and scoops up * before wheeling out again.} {#gagline all; playsound {cosmic rage/general/factory/droneout.wav} @vol};
 #trigger {The drones continue working.} {#gagline all; playsound {cosmic rage/general/factory/build*6.wav} @vol}
+#trigger {* hums loudly before activating an internal teleportation device and vanishing in a blue flash.} {#gagline voice; playsound {cosmic rage/general/factory/resteleport.wav} @vol}
+#trigger {* empties some resources, small drones moving them to where they need to go before returning to the crate.} {#gagline voice; playsound {cosmic rage/general/factory/resunload.wav} @vol}

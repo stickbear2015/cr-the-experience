@@ -214,3 +214,4 @@ playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}
 #trig {There is a soft chime as the environmental systems finish their work.} {#gagline all; playsound {cosmic rage/ships/computer/alert.wav} #gagline all}
 #trigger {There is a hissing noise as oxygenated air begins to be pumped back into the room.} {#gagline all; playsound {cosmic rage/activities/pol/pump.wav} @vevol; #alarm 1,3 {playsound {cosmic rage/activities/planetoid/air.wav} @vevol}}
 #trigger {The shimmering green fields lift as the vehicle becomes fully pressurised.} {#gagline all; {#alarm 1 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}}
+#trig {Hammering continues to come from outside as vehicle repairs take place.} {#gagline all} 

@@ -1,3 +1,15 @@
+1942, credits Ryok Black scale, thanks to him, i still can able to push updates to the dropbox. He helped me to get a little more space for the time being. But its a matter of time before we run out of that space as well so, i have included my referral link in the readme section of the soundpack. Cleared out the credits file and, well that's all for now. If you want to recieve dropbox updates and have the ability to refer someone, please do so using the link in the read me. Thanks
+copy read me.set and soundpackcredits.set
+1941 stormy, credits jace, screw you google drive. fix an anoying bug where the google drive replaces ticks with underlines for some reason.
+copy cosmic rage.set and misc apilotsparody.set
+1940 stormy, credits john, fixed the plasma missile salvo on some ships
+copy ships shipcombat and shipcombat2.set
+1939 stormy, credits blake, gagged a vehicle repair message
+copy vehicle vehicle.set
+1938 stormy, credits bogdan, added a sound while you refill your alfozen68 tanks
+copy ships rat.set and sounds cr ships rat folder
+1937 stormy, credits Damian, added sounds for resource crates
+copy misc factory.set and sounds cr general factory
 1936 stormy, credits perry, added sounds for vehicle cycling
 copy vehicle vehicle.set
 1935 stormy, credits john, gagged a message regarding black dwarf harvesting

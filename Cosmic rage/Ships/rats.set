@@ -44,3 +44,4 @@ playsound {Cosmic Rage\ships\fire\siren.wav} @vol}
 #TRIGGER {On screen, you see * ratika podship rams into the side of * boring a hole in the side and forcing its way in.} {playsound {cosmic rage/ships/Ratika/pod.wav} @vol}
 #trigger {You snap open the lid of * and begin to repair holes.} {#gagline voice;
 playsound {cosmic rage/ships/ratika/repair/repair.wav} @vol}
+#TRIGGER {You unscrew a panel in the floor and begin to feed in alfozen68 from *} {playsound {cosmic rage/ships/Ratika/bottle.wav} @vol}

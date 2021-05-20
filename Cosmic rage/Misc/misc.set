@@ -286,3 +286,4 @@ playsound {cosmic rage/general/misc/CashCheck.wav} @vol}
 #trigger {* @bikelist * on a * bicycle.} {playsound {cosmic rage/general/misc/bikemove.wav} @vol}
 #trigger {* rin*  the bell on * bicycle.} {playsound {cosmic rage/general/misc/bell.wav} @vol}
 #TRIGGER {Your internal sensors register a new post in *} {playsound {Cosmic Rage/general/messageboards/larkan.wav} @CommsVol}
+#trigger {stop stacking!} {playsound {cosmic rage/general/misc/stack.wav} @vol}

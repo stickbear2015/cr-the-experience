@@ -1,3 +1,11 @@
+1946 stormy, added more sounds for star rescueing
+copy activities starres.set
+1945 STORMY, CREDÝTS THE HTPL TEAM AND THE HOSTS, ADDED SOUNDS FOR STAR RESCUEÝNG
+COPY ACTÝVÝTÝES STARRES.SET AND SOUNDS CR ACTÝVÝTÝES STARRES FOLDER
+1944 stormy, you now hear the sound if the game warns you about command stacking
+copy misc misc .set and sounds cr general msic stack.wav
+1943 stormy, credits billybob, fixed traceback sound and made it so the soundack displays the traceback i d on an other line for easy  copying
+copy misc misc.set
 1942, credits Ryok Black scale, thanks to him, i still can able to push updates to the dropbox. He helped me to get a little more space for the time being. But its a matter of time before we run out of that space as well so, i have included my referral link in the readme section of the soundpack. Cleared out the credits file and, well that's all for now. If you want to recieve dropbox updates and have the ability to refer someone, please do so using the link in the read me. Thanks
 copy read me.set and soundpackcredits.set
 1941 stormy, credits jace, screw you google drive. fix an anoying bug where the google drive replaces ticks with underlines for some reason.

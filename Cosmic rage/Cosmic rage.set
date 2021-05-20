@@ -18,6 +18,7 @@
 #load Activities/dust.set
 #load activities/handmining.set
 #load activities/farming.set
+#load Activities/STARRES.set
 #load activities/hunting.set
 #load Activities/mechanicalMining.set
 #load Activities/moon.set

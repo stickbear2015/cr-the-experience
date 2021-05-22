@@ -1,3 +1,7 @@
+1948 stormy, credits jay, boosted the volume of the cockpit ambience
+copy sounds ships rooms cockpit.wav
+1947 stormy, credits Jay, the cockpit sound now loops propparly
+copy sounds ships rooms cockpit.wav
 1946 stormy, added more sounds for star rescueing
 copy activities starres.set
 1945 STORMY, CREDÝTS THE HTPL TEAM AND THE HOSTS, ADDED SOUNDS FOR STAR RESCUEÝNG

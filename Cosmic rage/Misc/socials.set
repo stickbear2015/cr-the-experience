@@ -125,3 +125,5 @@
 #trigger {* whips out * giant dong. Whoa there!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/dong1.wav} @vol}}
 #trigger {* bar* teeth and * out a hiddious snarl.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/snarl.wav} @vol}}
 #trigger {* begi* to growl low in * throat. As the growl grows *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/snarl.wav} @vol}}
+#trigger {* pulls hard on * tail.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tailpull.wav} @vol}}
+#trigger {* pulls on * tail, seeming to wonder where it came from!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tailpull.wav} @vol}}

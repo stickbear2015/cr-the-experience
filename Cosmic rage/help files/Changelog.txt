@@ -1,10 +1,16 @@
+1951 stormy, credits lara and adrian, added a sound for the tailpull social
+copy misc socials set and sounds general socials tailpull.wav
+1950 stormy, credits john, gagged a black dwarf harvesting message.
+copy activities blackdwarfharvesting.set
+1949 stormy, gagged a message in planetary destruction and addedd a sound to a string.
+copy ships pd.set
 1948 stormy, credits jay, boosted the volume of the cockpit ambience
 copy sounds ships rooms cockpit.wav
 1947 stormy, credits Jay, the cockpit sound now loops propparly
 copy sounds ships rooms cockpit.wav
 1946 stormy, added more sounds for star rescueing
 copy activities starres.set
-1945 STORMY, CREDÝTS THE HTPL TEAM AND THE HOSTS, ADDED SOUNDS FOR STAR RESCUEÝNG
+1945 STORMY, CREDÝTS THE HTPL TEAM AND THE HOSTS, ADDED SOUNDS FOR STAR RESCUEING
 COPY ACTÝVÝTÝES STARRES.SET AND SOUNDS CR ACTÝVÝTÝES STARRES FOLDER
 1944 stormy, you now hear the sound if the game warns you about command stacking
 copy misc misc .set and sounds cr general msic stack.wav
@@ -51,7 +57,7 @@ copy misc factories.set
 copy miscs
 1923 stormy, fixed looooooot of things about hand mining
 copy activities handmining.set
-1922 stormy, added a sound for dragon claw sharpenning
+1922 stormy, added a sound for dragon claw sharpenning with stones
 copy misc dragon.set
 1921 stormy, fixed a sound regarding airlocks
 copy shipsships2.set

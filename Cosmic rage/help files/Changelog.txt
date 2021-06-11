@@ -1,3 +1,7 @@
+1953 stormy, sound credits  blake, changed the vehicle entering and exitting sounds
+copy sounds cr vehicle folder
+1952 stormy, credits david, sound credits blake, added a sound for the reverse gear for the clasic cars
+copy sounds general cars and cr vehicle cars.set
 1951 stormy, credits lara and adrian, added a sound for the tailpull social
 copy misc socials set and sounds general socials tailpull.wav
 1950 stormy, credits john, gagged a black dwarf harvesting message.

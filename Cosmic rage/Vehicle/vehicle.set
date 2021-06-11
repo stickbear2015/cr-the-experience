@@ -1,4 +1,4 @@
-#trigger {You step aboard *} {playsound {cosmic rage/ships/misc/BoardShip.wav} @vol}
+#trigger {You step aboard *}  {playsound {cosmic rage/vehicle/enter.wav} @vevol}
 #TRIGGER {The vehicle dips sharply, heading towards a landing.} {#gagline all; playsound {cosmic rage/vehicle/land.wav} @vevol};
 #TRIGGER {You direct the vehicle.} {
 #gagline all;

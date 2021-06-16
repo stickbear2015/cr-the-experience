@@ -39,3 +39,8 @@
 #TRIGGER {* stunned!} {playsound {cosmic rage/general/games/zap.wav} @vol}
 #TRIGGER {Duck.} {playsound {cosmic rage/general/games/duck3.wav} @vol}
 #TRIGGER {is bumped down a level.} {playsound {cosmic rage/general/games/hopdown.wav} @vol}
+#TRIGGER {* transfe* 400.0 gamling credits to the machine and pul* the lever, hoping for the best.} {playsound {cosmic rage/general/games/button.wav} @vol}
+#TRIGGER {The left wheel stops on *} {playsound {cosmic rage/general/socials/bounce2.wav} @vol; #PC %PlayHandle Pan -1000}
+#TRIGGER {The center wheel stops on *} {playsound {cosmic rage/general/socials/bounce2.wav} @vol}
+#TRIGGER {The right wheel stops on *} {playsound {cosmic rage/general/socials/bounce2.wav} @vol; #PC %PlayHandle Pan 1000}
+#TRIGGER {Sorry, but you lose. Better luck next time.} {playsound {cosmic rage/general/pp/loose2.wav} @vol}

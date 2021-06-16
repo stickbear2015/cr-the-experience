@@ -146,3 +146,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {a group of Pauagiwa march in, load up with * and then march away.} {playsound {cosmic rage/general/misc/march.wav} @vol};
 #TRIGGER {Sensing an approaching biological form, the airlocks on The *} {#gagline voice; playsound {cosmic rage/ships/misc/airprox.wav} @vol}
 #TRIGGER {The ship lifts slightly off of the ground as something attaches to it and it is moved. After a couple of seconds it lowers with a slight shake onto some kind of rack, which slowly settles it down into a garage.} {playsound {cosmic rage/ships/misc/garage.wav} @vol};
+#TRIGGER {The shriek of straining hull struts echoes throughout the vessel as it sharply turns using rocket burners.} {playsound {cosmic rage/ships/movement/rocket.wav} @evol};

@@ -1,3 +1,5 @@
+1958 stormy, credits Pavla, the siren sound should now stop when eather the vehicle is powered down or its battery is dead
+copy vehicle vehicle.set
 1957 stormy, credits Muhammad , fixed casino slots
 copy misc games.set
 1956 stormy, credits raju, you now hear the sound when somebody calls the lift

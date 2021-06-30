@@ -12,7 +12,7 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol};
 #if {@altVehicleEngines = "Enabled"} {
 playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
-#TRIGGER {The hum of the engine slowly begins to die down.} {#gagline all; #alarm 0.4 {playsound {cosmic rage/vehicle/EngineStop.wav} @vevol}}
+#TRIGGER {The hum of the engine slowly begins to die down.} {#gagline all; #alarm 0.4 {playsound {cosmic rage/vehicle/EngineStop.wav} @vevol}; #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}}
 #TRIGGER {The hum of the engines increase as the vehicle moves.} {#gagline all;
 #if {@altVehicleEngines = "Disabled"} {
 playsound {cosmic rage/vehicle/Accelerate.wav} @veVol};
@@ -52,7 +52,7 @@ loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehicleha
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb};
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb; #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}};
 #trigger {You tap a button and the doors slide * with a hiss.} {
 #gagline all;
 #if {%ifword(open,%1," ")} {
@@ -120,7 +120,7 @@ playsound {cosmic rage/vehicle/decelerate1.wav} @veVol}}
 #trigger {The hum of the engine comes to a grinding hault as the vehicle runs out of power.} {
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
-loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"}
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"; #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}}
 #trigger {*lets out a short chirp and its lights flash *} {
 #if {%ifWord(once.,%2," ")} {
 playsound {cosmic rage/vehicle/chirpOnce.wav} @vevol};

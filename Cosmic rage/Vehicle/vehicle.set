@@ -35,6 +35,7 @@ playsound {cosmic rage/vehicle/button.wav} @vevol}
 #if {@charging = 1} {
 #pc @chargeHandle stop;
 #var charging 0}}
+
 #trigger {A*hum*fills the vehicle as it begins to recharge.} {
 #gagline all;
 loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol;#var chargeHandle %playHandle; #var charging 1}
@@ -46,13 +47,14 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol;#var chargeHandle %pl
 loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb};
 #class ambon disable;
 #trigger {There is a noticeable lack of engine noise about the place.} {
-#if {@VehicleSoundPlaying = 1} {
+#if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}; #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 #if {@ShipSoundPlaying = 1} {
 #pc @shiphandle stop; #var ShipSoundPlaying 0};
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb; #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}};
+loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb};
+
 #trigger {You tap a button and the doors slide * with a hiss.} {
 #gagline all;
 #if {%ifword(open,%1," ")} {
@@ -147,6 +149,7 @@ playsound {cosmic rage/vehicle/vehicleRelocate.wav} @vevol}
 #trigger {You pull the trigger of the lasers.} {playsound {Cosmic Rage/ships/combat/Laser.wav} @vevol;#gagline all}
 #trigger {The vehicle rocks slightly as lasers are fired.} {#gagline all}
 #trigger {The vehicle rocks violently as something impacts it.} {#gagline voice; playsound {cosmic rage\vehicle\vehicleRam.wav} @vevol}
+#trigger {The vehicle rocks violently as something impacts *.} {#sub {Impact to %1}; playsound {cosmic rage\vehicle\vehicleRam.wav} @vevol}
 #trigger {The boat begins to vibrate under your feet as the vessel is recharged.} {#gagline all;
 loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol; #var chargeHandle %playHandle; #var charging 1}
 #trigger {Recharging complete.} {#gagline all}
@@ -206,7 +209,7 @@ playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}
 #trigger {There is a slight whine as the windows wind to half open.} {playsound {cosmic rage/vehicle/windowpart*2.wav} @vevol}
 #trigger {There is a slight whine as the windows wind shut.} {playsound {cosmic rage/vehicle/windowup.wav} @vevol}
 #trigger {There is a series of muffled clunks followed by a series of heavy thuds.} {#gagline all; loopsound {cosmic rage/vehicle/repairloop.wav} @vevol; #var rephandle %playHandle; #var repPlaying 1}
-#trig {The hum of drones hard at work continues to sound throughout the vehicle as repairs are done to The Hood.} {#gagline all}
+#trig {The hum of drones hard at work continues to sound throughout the vehicle as repairs are done to *.} {#gagline all}
 #trig {The sound of hammering from outside abruptly stops.} {#gagline all; #if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/repairstop.wav} @vevol}}
 #trig {The computer announces: "Component no longer usable."} {#if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/alarm.wav} @vevol}}
 #trigger {Shimmering green forcefields lower down over the controls and exits, protecting them as the vehicle's atmosphere begins to be changed.} {#gagline all; playsound {cosmic rage/activities/pol/red.wav} @vevol; #alarm 0,7 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}

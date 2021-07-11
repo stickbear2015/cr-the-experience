@@ -1,3 +1,17 @@
+1965, James, Updated and tweaked some triggers involving damage and repairs. You'll now hear sounds whenever any part of the vehicle is impacted, and the message will simply tell you impact on <part>. Also, a gag trigger has been properly adjusted to reflect the different components that can be repaired.
+copy cosmic rage\vehicle\vehicle.set
+1964, James, credits Vade, Made it so that when trying to pick up liquid with a trolley when there's none present, you're told as much instead of the sound playing.
+copy cosmic rage\misc\trolley.set
+1963 stormy, credits Hermione, i've fixed vehicle ambience for good this time, seems the last change regarding sirens  broken them good
+copy vehicle vehicle.set
+1962 stormy, credits Hermione, old cars once again, it was about other person reversing 
+copy vehicle cars.set
+1961 stormy, credits Hermione, fixed old cars again.  It was about other person playing with the handbrake while driving and causing a bug, how rude
+copy vehicle cars.set
+1960 stormy, credits Hermione, deleted a verry old rusty ambience
+copy misc main ambience.set
+1959 stormy, credits rafley, added a sound when we beat the game peek, ps. its  currontly 131 or something
+copy misc fireworks.set
 1958 stormy, credits Pavla, the siren sound should now stop when eather the vehicle is powered down or its battery is dead
 copy vehicle vehicle.set
 1957 stormy, credits Muhammad , fixed casino slots

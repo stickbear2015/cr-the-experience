@@ -42,7 +42,8 @@ playsound {cosmic rage/general/trolley/metal.wav} @vol}};
 playsound {cosmic rage/general/trolley/wood.wav} @vol}}}
 #trigger {Several small drones scoop up * of liquid and store them away.} {
 #gagline all;
-playsound {cosmic rage/general/trolley/water.wav} @vol}
+#if {%IfWord(0 barrels,%1," ")} {#say {There is no liquid here.}} {
+playsound {cosmic rage/general/trolley/water.wav} @vol}}
 #trigger {You order * trolley to dump out it's resources.} {
 #gagline all;
 playsound {cosmic rage/general/trolley/eq.wav} @vol}

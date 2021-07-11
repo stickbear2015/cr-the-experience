@@ -174,3 +174,4 @@ playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #TRIGGER {[[]fires]*} {playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {} anycase
 #trigger {[[]PA]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {You feel a vibration from * indicating that * is requesting a holographic conference.} {playsound {cosmic rage/general/comms/holo.wav} @CommsVol}
+#TRIGGER {[[]Birthday Bash]*} {playsound {Cosmic Rage/general/comms/birthday.wav} @CommsVol; #additem birthday %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char birthday.log};#write 1 %0;#close 1}} {} AnyCase

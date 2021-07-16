@@ -17,11 +17,11 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #trigger {Type a line of input. To abort the process you are in, type boot. For help, type help.} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You sit*} {playsound {cosmic rage/general/misc/sit.wav} @vol} {} AnyCase
-#TRIGGER {* sits down *} {playsound {cosmic rage/general/misc/sit.wav} @vol};
+#TRIGGER {* sits down *} {playsound {cosmic rage/general/misc/sit.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};
 #TRIGGER {You stand up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
 #TRIGGER {* stands up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
 #trigger {You lie down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
-#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
+#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)}
 #TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
@@ -176,7 +176,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You drink some *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
 #trigger {You eat some *} {playsound {Cosmic Rage/general/Food and drink/EatFood.wav} @vol}
 #trigger {You gulp down *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
-#trigger {You slam * into your face, * it in a few mighty chomps *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
+#trigger {You scarf down *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
 #trigger {Roundtime up. Feel free to move about!} {playsound {Cosmic Rage/general/misc/Roundtime.wav} @vol;#gagline voice}
 #trigger {You give a sudden leap and land in santa's slay!} {playsound {Cosmic Rage/general/misc/Christmas.wav} @vol; #gagline all}
 #trigger {A song begins to blair from hidden speakers.} {#gagline all}
@@ -287,3 +287,4 @@ playsound {cosmic rage/general/misc/CashCheck.wav} @vol}
 #trigger {* rin*  the bell on * bicycle.} {playsound {cosmic rage/general/misc/bell.wav} @vol}
 #TRIGGER {Your internal sensors register a new post in *} {playsound {Cosmic Rage/general/messageboards/larkan.wav} @CommsVol}
 #trigger {stop stacking!} {playsound {cosmic rage/general/misc/stack.wav} @vol}
+#trigger {You have been authorized to the *} {playsound {cosmic rage/general/misc/alert.wav} @vol}

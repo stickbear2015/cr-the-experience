@@ -136,6 +136,7 @@ playsound {Cosmic Rage/general/combat/target/target.wav} @gvol;
 #trigger {You rush into * knocking * to the ground.} {#gagline all; playsound {cosmic rage/general/combat/dragons/dragonrush.wav} @gvol}
 #trigger {A spray of bullets are fired from *} {#gagline all; playsound {cosmic rage/general/combat/vehicles/machineout.wav} @gvol}
 #trigger {A strange rattling echoes throughout the vehicle.} {#gagline all; playsound {cosmic rage/general/combat/vehicles/machinein.wav} @gvol}
+#trigger {A shrill whistle echoes throughout the vehicle as a shell is fired.} {#gagline voice; playsound {cosmic rage/general/combat/vehicles/shell.wav} @gvol}
 #trigger {the turrets on The * swivvle to point *} {#gagline all;
 playsound {cosmic rage/general/combat/vehicles/turout.wav} @gvol}
 #trigger {You hear a scraping noise.} {#gagline all; playsound {cosmic rage/general/combat/vehicles/turin.wav} @gvol}

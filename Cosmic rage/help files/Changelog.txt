@@ -1,3 +1,25 @@
+1976 stormy, credits Mary, you now hear a sound when someone authorises you to something such as a bio scanner, hopefully
+copy misc misc.set
+1975 stormy, credits shelby and raju, fixed house intercoms and shiny things
+copy misc houses.set
+1974 stormy, credits john, fixed crystal refiners
+copy sounds cr misc crystaldrop.wav
+1973 stormy, fixed green alert sound
+copy ships ships.set and ships/shipcombat.set
+1972 stormy, credits hale, auto/manual pilot sounds fixed
+copy ships ships.set
+1971 stormy, credits william, the lieing sound of someone else now pans as well
+copy misc misc.set
+1970 stormy, credits hermione, house intercom sound is fixed
+copy misc house.set
+1969 stormy, credits vade, ok this is a strange one but i kinda like it. When someone else sits, the sit sound will now pan around a little bit.
+copy misc misc.set
+1968 stormy, credits blane, sound credits blane, added a ringtone to one of the telephone messages
+copy misc telephone.set and sounds cr general telephone folder
+1967 stormy, credits jason, added a sound for MI vehicles
+copy combat combat.set and sounds cr general combat vehicle shell.wav
+1966 stormy, scarfing sound fixed, blame brandon
+copy misc misc.set
 1965, James, Updated and tweaked some triggers involving damage and repairs. You'll now hear sounds whenever any part of the vehicle is impacted, and the message will simply tell you impact on <part>. Also, a gag trigger has been properly adjusted to reflect the different components that can be repaired.
 copy cosmic rage\vehicle\vehicle.set
 1964, James, credits Vade, Made it so that when trying to pick up liquid with a trolley when there's none present, you're told as much instead of the sound playing.
@@ -507,7 +529,7 @@ copy misc misc.set
 copy vehicle vehicle.set and sounds cr vehicle boatstart.wav
 1718 stormy, credits katana, although you guys known me  with my demonic or gremlin sounds, this new sound will trigger your parrenting urges. Added a sound when a baby sobs for good.
 copy misc baby.set nd sounds cr general baby sob.wav
-1717 stormy, credits amar, added sound for stun crystal clipping
+1717 stormy, credits amara, added sound for stun crystal clipping
 copy misc wear.set and sounds cr wear clip.wav
 1716 stormy, added a sound for a vehicle thing
 copy vehicle vehicle.set and sounds cr vehicle button.wav

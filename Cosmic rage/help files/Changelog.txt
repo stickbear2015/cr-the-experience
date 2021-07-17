@@ -1,3 +1,5 @@
+1977, James, Made some fixes with variables and alarms effecting highway sounds and vehicle cycling.
+copy cosmic rage\vehicle\vehicle.set and cars.set
 1976 stormy, credits Mary, you now hear a sound when someone authorises you to something such as a bio scanner, hopefully
 copy misc misc.set
 1975 stormy, credits shelby and raju, fixed house intercoms and shiny things

@@ -166,7 +166,7 @@ loopsound {cosmic rage/vehicle/rechargeBattery.wav} @vevol; #var chargeHandle %p
 #trigger {You shut off the siren.} {playsound {cosmic rage/vehicle/sirenoff.wav} @vevol; #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}}
 #trigger {Outside, the siren continues to wail.} {#if {@siren = 0}  {loopsound {cosmic rage/vehicle/siren1.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}}
 #trigger {* emits a loud siren.} {playsound {cosmic rage/vehicle/siren2.wav} @vevol}
-#TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all; v_amb1}
+#TRIGGER {The engines rise to a constant vibration as the vehicle powers fully up.} {#gagline all; v_amb1;#var vehicletype "veh"}
 #trigger {The hum of the vehicles engines get higher in pitch as it begins to move.} {#gagline all; playsound {Cosmic Rage/general/cars/accelerate.wav} @Vevol; #alarm 6 {Loopsound {Cosmic Rage/general/Cars/driving.wav} @evol; #var drivehandle %PlayHandle; #var drive 1}}
 #trigger {You put the vehicle into park as it comes to a halt.} {#gagline all; playsound {Cosmic Rage/general/cars/decelerate.wav} @Vevol; #if {@drive = 1} {#pc @drivehandle stop; #var drive 0}}
 #TRIGGER {You hear the engines give a slight vibration before the vehicle suddenly begins to move.} {#gagline all;
@@ -212,9 +212,9 @@ playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}
 #trig {The hum of drones hard at work continues to sound throughout the vehicle as repairs are done to *.} {#gagline all}
 #trig {The sound of hammering from outside abruptly stops.} {#gagline all; #if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/repairstop.wav} @vevol}}
 #trig {The computer announces: "Component no longer usable."} {#if {@repPlaying = 1} {#pc @rephandle stop;  #var repPlaying 0; playsound {cosmic rage/vehicle/alarm.wav} @vevol}}
-#trigger {Shimmering green forcefields lower down over the controls and exits, protecting them as the vehicle's atmosphere begins to be changed.} {#gagline all; playsound {cosmic rage/activities/pol/red.wav} @vevol; #alarm 0,7 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}
-#trigger {There's a soft hiss as the oxygenated air of the vehicle is pumped away.} {#gagline all; playsound {cosmic rage/activities/pol/pump.wav} @vevol; #alarm 1,3 {playsound {cosmic rage/activities/planetoid/air.wav} @vevol}}
+#trigger {Shimmering green forcefields lower down over the controls and exits, protecting them as the vehicle's atmosphere begins to be changed.} {#gagline all; playsound {cosmic rage/activities/pol/red.wav} @vevol; #alarm 0.7 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}
+#trigger {There's a soft hiss as the oxygenated air of the vehicle is pumped away.} {#gagline all; playsound {cosmic rage/activities/pol/pump.wav} @vevol; #alarm 1.3 {playsound {cosmic rage/activities/planetoid/air.wav} @vevol}}
 #trig {There is a soft chime as the environmental systems finish their work.} {#gagline all; playsound {cosmic rage/ships/computer/alert.wav} #gagline all}
-#trigger {There is a hissing noise as oxygenated air begins to be pumped back into the room.} {#gagline all; playsound {cosmic rage/activities/pol/pump.wav} @vevol; #alarm 1,3 {playsound {cosmic rage/activities/planetoid/air.wav} @vevol}}
+#trigger {There is a hissing noise as oxygenated air begins to be pumped back into the room.} {#gagline all; playsound {cosmic rage/activities/pol/pump.wav} @vevol; #alarm 1.3 {playsound {cosmic rage/activities/planetoid/air.wav} @vevol}}
 #trigger {The shimmering green fields lift as the vehicle becomes fully pressurised.} {#gagline all; {#alarm 1 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}}
 #trig {Hammering continues to come from outside as vehicle repairs take place.} {#gagline all} 

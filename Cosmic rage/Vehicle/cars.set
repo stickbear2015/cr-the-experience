@@ -1,5 +1,5 @@
 #TRIGGER {You put the key in the ignition and twist.} {#gagline all; playsound {Cosmic Rage/general/cars/key1.wav} @vehiclevol}
-#TRIGGER {The engine thrums to life.} {#gagline all; #alarm 1 {playsound {Cosmic Rage/general/cars/start.wav} @vehiclevol;
+#TRIGGER {The engine thrums to life.} {#gagline all; #alarm 1 {playsound {Cosmic Rage/general/cars/start.wav} @vehiclevol;#var vehicletype "car";
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 #if {@ShipSoundPlaying = 1} {

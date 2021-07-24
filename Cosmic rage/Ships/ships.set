@@ -231,10 +231,14 @@ playsound {cosmic rage/ships/misc/shipAttach.wav} @vol}
 #trigger {The doors slide shut with a hiss.} {
 #gagline all;
 playsound {cosmic rage/vehicle/door close.wav} @vol}
+#trigger {The hatches slide shut with a hiss.} {
+#gagline all;
+playsound {cosmic rage/vehicle/door close.wav} @vol}
 #trigger {The doors slide open with a hiss and you hear a soft female voice announce: "*".} {
 #sub {%1};
 playsound {cosmic rage/vehicle/door open.wav} @vol; playsound {cosmic rage/general/comms/merchant.wav} @vol}
 #trigger {The doors hiss open.} {#gagline all; playsound {cosmic rage/vehicle/door open.wav} @vol}
+#trigger {The hatches hiss open.} {#gagline all; playsound {cosmic rage/vehicle/door open.wav} @vol}
 #trigger {You hear a ping and a soft, female voice announces: "*"} {#sub {%1}; playsound {cosmic rage/general/comms/merchant.wav} @vol}
 #trigger {The ship lands with a slight bump.} {
 #gagline all}

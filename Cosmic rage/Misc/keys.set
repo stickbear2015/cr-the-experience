@@ -116,3 +116,4 @@
 #close 3;
 #var chresult %left(@chversion,4);
 #say {Your changelog's last entry is change number @chresult.}}
+#key control-shift-q {qtg}

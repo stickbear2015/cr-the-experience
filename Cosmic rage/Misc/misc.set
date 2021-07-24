@@ -53,8 +53,13 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {*Command Aborted*} {#gagline all; playsound {cosmic rage/general/misc/abort.wav} @vol};
 #TRIGGER {Starting speedwalk.} {playsound {cosmic rage/general/misc/speedwalkon.wav} @vol}
 #TRIGGER {Speedwalk finished.} {playsound {cosmic rage/general/misc/speedwalkoff.wav} @vol} {} anycase
-#TRIGGER {A soft ping can be heard from overhead, followed by a gentle, disembodied voice.*} {playsound {cosmic rage/general/misc/ping.wav} @vol}; 
-#trigger {You hear a soft ping and *} {playsound {cosmic rage/general/misc/ping.wav} @vol};
+#TRIGGER {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. "*"} {#if {@QGag = 1} {#sub {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. %1}};
+playsound {cosmic rage/general/misc/ping.wav} @vol}; 
+#trigger {You hear a ping and a soft, soothing voice announces, "*"} {#sub %1;playsound {cosmic rage/general/misc/ping.wav} @vol}
+#trigger {You hear a soft ping and *: "*"} {#if {@QGag = 1} {#sub {You hear a soft ping and %1: %2}};
+playsound {cosmic rage/general/misc/ping.wav} @vol};
+#trigger {A soft, soothing voice announces: "*"} {#if {@QGag = 1} {#sub {A soft, soothing voice announces: %1}};
+playsound {cosmic rage/general/misc/ping.wav} @vol}
 #TRIGGER {You tap an icon and are surrounded by a beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}}
 #trigger {Your vision goes temporarily black as you are yanked from your ship!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol}
 #trigger {Your vision goes black as you are teleported somewhere else!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};

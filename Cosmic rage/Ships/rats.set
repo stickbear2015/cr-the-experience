@@ -6,7 +6,7 @@ playsound {cosmic rage/ships/fire/extinguisher.wav} @vol}
 #sub {%2 is on fire.};
 playsound {Cosmic Rage\ships\fire\siren.wav} @vol} 
 #TRIGGER {a jet of * spray shoots out of a nozzle nearby, dousing everything in a fine liquid.} {playsound {Cosmic Rage\ships\fire\spray.wav} @vol}
-#trigger {*"Attention. Attention. * ratika * inbound. I repeat, * on an inbound trajectory with this vessel."} {playsound {cosmic rage/ships/Ratika/alarm.wav} @vol}
+#trigger {*"Attention. Attention. * ratika * inbound. I repeat, * on an inbound trajectory with this vessel."} {#if {@qgag = 1} {#sub {Attention. Attention. %2 ratika %3 inbound. I repeat, %4 on an inbound trajectory with this vessel.}}; playsound {cosmic rage/ships/Ratika/alarm.wav} @vol}
 #trigger {* ratika guard drone * repairs some damage *} {playsound {Cosmic Rage/ships/Ratika/Repair/*6.wav} @vol}
 #trigger {*ratika guard drone *shoots a small laser *} {playsound {Cosmic Rage/ships/Ratika/Laser.wav} @vol}
 #trigger {* gives a squeal like a popped balloon letting out air before bursting into flames!} {playsound {Cosmic Rage/ships/Ratika/Pop.wav} @vol}

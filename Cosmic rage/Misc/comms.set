@@ -4,16 +4,31 @@
 #trigger {[[]SubAnnouncement]*} {playsound {Cosmic Rage/general/comms/SubAnnouncement.wav} @CommsVol; #additem SubAnnouncements %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SubAnnouncements.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Changes]:*} {playsound {Cosmic Rage/general/comms/change.wav} @CommsVol; #additem Changes %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Changes.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]OOC]*} {playsound {Cosmic Rage/general/comms/ooc.wav} @CommsVol; #additem OOC %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ooc.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]Chat]*} {playsound {Cosmic Rage/general/comms/Chat.wav} @CommsVol; #additem Chat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]General]*} {playsound {Cosmic Rage/general/comms/General.wav} @CommsVol; #additem General %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char General.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]GMC]*} {playsound {Cosmic Rage/general/comms/GMC.wav} @CommsVol; #additem GMC %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char GMC.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]Missions]*} {playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; #additem missions %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Missions.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Chat]*: "*"} {#if {@QGag = 1} {#sub {[Chat]%1: %2}};
+playsound {Cosmic Rage/general/comms/Chat.wav} @CommsVol; #additem Chat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Chat]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/Chat.wav} @CommsVol; #additem Chat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]General]*: "*"} {#if {@QGag = 1} {#sub {[General]%1: %2}};
+playsound {Cosmic Rage/general/comms/General.wav} @CommsVol; #additem General %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char General.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]General]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/General.wav} @CommsVol; #additem General %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char General.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]GMC]*: "*"} {#if {@QGag = 1} {#sub {[GMC]%1: %2}};
+playsound {Cosmic Rage/general/comms/GMC.wav} @CommsVol; #additem GMC %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char GMC.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]GMC]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/GMC.wav} @CommsVol; #additem GMC %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char GMC.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Missions]*: "*"} {#if {@QGag = 1} {#sub {[Missions]%1: %2}};
+playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; #additem missions %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Missions.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Missions]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; #additem missions %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Missions.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Newbie]*:*} {playsound {Cosmic Rage/general/comms/Newbie.wav} @CommsVol; #additem Newbie %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbie.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Newbie Helpers]*:*} {playsound {Cosmic Rage/general/comms/NH.wav} @CommsVol; #additem NewbieHelpers %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbieHelpers.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {Link with * successful.} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {OOC link with * successful.} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {[[]Room OOC]*} {playsound {cosmic rage/general/comms/rooc.wav} @CommsVol; #additem rooc %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char rooc.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]Intel] *} {playsound {cosmic rage/general/comms/intel.wav} @CommsVol; #additem intel %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char intel.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Intel]*: "*"} {#if {@QGag = 1} {#sub {[Intel]%1: %2}};
+playsound {cosmic rage/general/comms/intel.wav} @CommsVol; #additem intel %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char intel.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Intel] *} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {cosmic rage/general/comms/intel.wav} @CommsVol; #additem intel %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char intel.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Recruitments]:*} {playsound {cosmic rage/general/comms/recruiting.wav} @CommsVol; #additem recruitments %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Recruitments.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]MFAS]*} {playsound {Cosmic Rage/general/comms/mfas.wav} @CommsVol}
 #TRIGGER {You enable * on *.} {
@@ -21,7 +36,10 @@ playsound {cosmic rage/general/comms/activate.wav} @CommsVol} {} AnyCase
 #TRIGGER {You disable * on *.} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol} {} AnyCase
 #trigger {[[]Soundpacks]*} {playsound {cosmic rage/general/comms/sp.wav} @CommsVol; #additem Soundpacks %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Soundpacks.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]Military] *} {playsound {cosmic rage/general/comms/military.wav} @CommsVol; #additem Military %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char sdf.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Military]*: "*"} {#if {@QGag = 1} {#sub {[Military]%1: %2}};
+playsound {cosmic rage/general/comms/military.wav} @CommsVol; #additem Military %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char sdf.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Military] *} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {cosmic rage/general/comms/military.wav} @CommsVol; #additem Military %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char sdf.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {*flashes urgently, informing you that people are waiting for link requests.} {
 playsound {cosmic rage/general/comms/radioNotify.wav} @CommsVol}
 #trigger {You hear an urgent S O S from *} {
@@ -67,7 +85,9 @@ playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #trigger {Over your suits intercom, *} {
 playsound {cosmic rage/general/comms/spaceSuitTalk.wav} @CommsVol; #additem Spacesuit %0; #additem say %0} {}
-#trigger {[[]Movement] *} {
+#trigger {[[]Movement]*: "*"} {#if {@QGag = 1} {#sub {[Movement]%1: %2}};
+playsound {cosmic rage/general/comms/movement.wav} @CommsVol; #additem Movement %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Movement.log};#write 1 %0;#close 1}}
+#trigger {[[]Movement] *} {#if {%IfWord(~",%1,"")} {#abort 1};
 playsound {cosmic rage/general/comms/movement.wav} @CommsVol; #additem Movement %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Movement.log};#write 1 %0;#close 1}}
 #trigger {[[]G2A] *} {
 playsound {cosmic rage/general/comms/G2A.wav} @CommsVol; #additem GroundToAir %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char G2A.log};#write 1 %0;#close 1}} {} AnyCase
@@ -80,7 +100,7 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Mentor]*} {playsound {cosmic rage/general/comms/Mentor.wav} @CommsVol; #additem Mentor %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Mentor.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {* flashes * indicating you have a new mail titled *} {playsound {cosmic rage/general/comms/mail.wav} @CommsVol; #additem Notices %0}
 #trigger {[[]News]*:*} {playsound {cosmic rage/general/comms/onews.wav} @CommsVol; #additem ONews %0}
-#TRIGGER {[[]* to *], *} {#if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage/general/comms/PrivOOCCom.wav} @CommsVol; #additem OOCPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1}} {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol; #additem ICPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}}} {} AnyCase
+#TRIGGER {[[]* to *], "*"} {#if {@QGag = 1} {#sub {[%1 to %2], %3}}; #if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage/general/comms/PrivOOCCom.wav} @CommsVol; #additem OOCPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1}} {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol; #additem ICPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}}} {} AnyCase
 #trigger {[[]Trade]*} {playsound {cosmic rage/general/comms/trade.wav} @CommsVol; #additem Trade %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Trade.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You tap a button on * and the screen displays: * enabled.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}
 #trigger {You tap a button on * and the screen displays: *disabled.} {playsound {Cosmic Rage/general/comms/Deactivate.wav} @CommsVol}
@@ -104,11 +124,23 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {The * ground control square turns red on * and * "Emergency! Emergency! We see an incoming bomb! Emergency! Emergency!"} {#if {@ShortMapText = 1} {#sub {%1 "turns" %2, %5}} {};playsound {Cosmic Rage/general/comms/bomb.wav} @CommsVol; #additem FlightControl %0}
 #TRIGGER {[[]Unsec]*} {playsound {cosmic rage/general/comms/unsec.wav} @CommsVol; #additem Unsec %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Unsec.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {A small newspaper icon blinks repeatedly on *} {playsound {Cosmic Rage/general/comms/News.wav} @CommsVol; #additem InfoComputerNotifications %0}
-#trigger {[[]SDL]*} {playsound {Cosmic Rage/general/comms/SDL.wav} @CommsVol; #additem SDL %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SDL.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]SDL]*: "*"} {#if {@QGag = 1} {#sub {[SDL]%1: %2}};
+playsound {Cosmic Rage/general/comms/SDL.wav} @CommsVol; #additem SDL %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SDL.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]SDL]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/SDL.wav} @CommsVol; #additem SDL %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SDL.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Drone] *} {playsound {Cosmic Rage/general/comms/Drone.wav} @CommsVol;#additem drone %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Drone.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]MI]*} {playsound {Cosmic Rage/general/comms/MI.wav} @CommsVol; #additem MI %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char MI.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]JAG]*} {playsound {Cosmic Rage/general/comms/Jag.wav} @CommsVol; #additem Jag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char jag.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]PA *]*} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
+#trigger {[[]MI]*: "*"} {#if {@QGag = 1} {#sub {[MI]%1: %2}};
+playsound {Cosmic Rage/general/comms/MI.wav} @CommsVol; #additem MI %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char MI.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]MI]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/MI.wav} @CommsVol; #additem MI %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char MI.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]JAG]*: "*"} {#if {@QGag = 1} {#sub {[JAG]%1: %2}};
+playsound {Cosmic Rage/general/comms/Jag.wav} @CommsVol; #additem Jag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char jag.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]JAG]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/Jag.wav} @CommsVol; #additem Jag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char jag.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]PA *]: "*"} {#if {@QGag = 1} {#sub {[PA %1]: %2}};
+playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
+#TRIGGER {[[]PA *]*} {#if {%IfWord(~",%2,"")} {#abort 1};
+playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #TRIGGER {Sorry, something seems to have gone wrong. Don't worry though, we've been made aware of it. We would appreciate you giving us extra information on this error by entering a report. You can use the ID * when doing so to include your traceback. Please do not execute this command until further notice.} {#say {traceback ID is %1}; playsound {cosmic rage/general/misc/Traceback.wav} @Vol; #additem Tracebacks %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Tracebacks.log}; #write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Ship to Ship transmission on channel * from *]*} {playsound {Cosmic Rage/general/comms/Ship2ship.wav} @CommsVol; #additem Ship %0} {} AnyCase
 #Trigger {[[]Squadren]*} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; #additem Squad %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Squadren.log};#write 1 %0;#close 1}} {} AnyCase
@@ -122,7 +154,10 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {* flashes a notification*} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #trigger {*plays the short theme of the Galactic News, indicating new headlines.} {playsound {Cosmic Rage/general/comms/News.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #trigger {A small newspaper icon flashes up on * indicating a new article has just been posted in *} {playsound {Cosmic Rage/general/comms/News.wav} @CommsVol; #additem InfoComputerNotifications %0}
-#trigger {[[]Organisations]*} {playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; #additem Org %0; {#file 1 {cosmic rage/logs/%char Org.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Organisations]*: "*"} {#if {@QGag = 1} {#sub {[Organisations]%1: %2}};
+playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; #additem Org %0; {#file 1 {cosmic rage/logs/%char Org.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Organisations]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; #additem Org %0; {#file 1 {cosmic rage/logs/%char Org.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {*translator announces *} {#additem say %0}
 #trigger {* flashes, blueprint software patch *} {playsound {Cosmic Rage/general/comms/Blueprint.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #TRIGGER {[[]Auction]:*} {playsound {cosmic rage/general/auction/auction bell*3.wav} @CommsVol; #additem Auction %0} {} AnyCase
@@ -138,7 +173,10 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @CommsVol; #additem OOCPrivate %0} {} AnyCase
 #trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; #additem APilotsParody %0} {} AnyCase
-#trigger {[[]Origins] *} {playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; #additem Origins %0}
+#trigger {[[]Origins]*: "*"} {#if {@QGag = 1} {#sub {[Origins]%1: %2}};
+playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; #additem Origins %0}
+#trigger {[[]Origins] *} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; #additem Origins %0}
 #trigger {Information: closest beacon: *} {#additem SOS %0}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} @commsvol; #additem Htpc %0}
 #Alias {mf} {Musicfm %0} {}
@@ -171,7 +209,10 @@ playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #trigger {Your translator makes a small ding, indicating it can not bridge the gap to that destination.} {playsound {Cosmic Rage/general/comms/phasefail.wav} @vol}
 #TRIGGER {[[]Info], * just logged into TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogin.wav} @CommsVol};
 #TRIGGER {[[]Info], * just logged out of TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogout.wav} @CommsVol};
-#TRIGGER {[[]fires]*} {playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {} anycase
+#TRIGGER {[[]fires]*: "*"} {#if {@QGag = 1} {#sub {[Fires]%1: %2}};
+playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {} anycase
+#TRIGGER {[[]fires]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {} anycase
 #trigger {[[]PA]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {You feel a vibration from * indicating that * is requesting a holographic conference.} {playsound {cosmic rage/general/comms/holo.wav} @CommsVol}
 #TRIGGER {[[]Birthday Bash]*} {playsound {Cosmic Rage/general/comms/birthday.wav} @CommsVol; #additem birthday %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char birthday.log};#write 1 %0;#close 1}} {} AnyCase

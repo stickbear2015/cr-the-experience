@@ -155,6 +155,7 @@
 #read 6 UpdateToggle 43;
 #read 6 intromusic 44;
 #read 6 commtoggle 45;
+#read 6 QGag 46;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {

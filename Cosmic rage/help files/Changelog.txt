@@ -1,3 +1,17 @@
+1985, James, Added links to the quotation mark gagger.
+copy cosmic rage\misc\comms.set
+1984, James, Added some triggers relating to hatches on merchant ships, added the ping sound to a trigger, and added a few more triggers to the new quotation mark gagger.
+copy cosmic rage\misc\misc.set and ships\ships.set
+1983, James, The importance of saving stuff people. I had edited the CosmicRage.set file then didn't save it, and was wondering why the new setting wasn't working. It's fixed now, now that it's actually edited and saved properly.
+copy cosmic rage\CosmicRage.set
+1982, James, Here's a big one. Are you like me and get annoyed when you see quotation marks everywhere? Well, if you are, you'll love this. Introducing our new optional quotation mark gagger. Right now, it works on comm channels, but will be expanded. To enable or disable, simply use the key combination control-shift-q. As always, if you run into any issues or have any problems, please reach out and let us know.
+copy cosmic rage\CosmicRage.set, and from the misc folder, ConfigurationManager.set, comms.set, keys.set, and soundpack.set, though copying the entire folder may be easier.
+1981, James, Nate, I fixed the runtime error that found its way into the trains file.
+copy cosmic rage\misc\trains.set
+1980, James, Made the text for ratika destructions less spammy for those people who like watching things go boom in the night.
+copy cosmic rage\ships\rats.set
+1979, Lara, tracked down some soundpack code that was making players mistakenly think they could board trains before the doors opened.
+Copy cosmic Rage\Misc\trains.set
 1978, James, The bug with manual pilot sounds has been resolved.
 copy cosmic rage\ships\ships.set
 1977, James, Made some fixes with variables and alarms effecting highway sounds and vehicle cycling.

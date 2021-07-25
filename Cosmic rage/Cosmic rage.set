@@ -2,6 +2,10 @@
 #var soundson "Disabled"
 #var speech "Disabled"
 #var intromusic "enabled"
+#var priv1 clear
+#var priv2 clear
+#var priv3 clear
+#var priv4 clear
 ;These are the Needed set files for the pack to function.
 
 #load misc/ConfigurationManager.set
@@ -156,6 +160,10 @@
 #read 6 intromusic 44;
 #read 6 commtoggle 45;
 #read 6 QGag 46;
+#read 6 priv1 47;
+#read 6 priv2 48;
+#read 6 priv3 49;
+#read 6 priv4 50;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {

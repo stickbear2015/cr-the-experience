@@ -20,5 +20,10 @@
 #trigger {You aim one unit east and prepare to fire a missile.} {#gagline all; playsound {Cosmic Rage/general/combat/suit/miss.wav} @gvol}
 #trigger {Your computer flashes a red light, indicating the nearest enemy is at *, * units away and is * percent damaged.} {#sub {closest enemy is at %1, %2 units far, %3 percent damaged)}}
 #trigger {Laser fire slams into the energy shielding.} {#sub {suit damage}; playsound {Cosmic Rage/general/combat/suit/hit.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
-#trigger {* flight suit erupts in flames, the debris drifting quickly into empty space!} {playsound {Cosmic Rage/general/combat/suit/explode.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
+#trigger {At *, an enemy flightsuit erupts in flames, the debris drifting quickly into empty space!} {playsound {Cosmic Rage/general/combat/suit/explode.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {You direct the tools to perform a quick repair.} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/repair.wav} @GVol}
+#TRIGGER {You score * hit on an enemy flightsuit!} {playsound {cosmic rage/ships/combat/indirect*2.wav} @CVol};
+#TRIGGER {(*, *) * fire a thick beam of energy *}  {#gagline voice;  #var pardom %random(3000,9000); #math pardom {@pardom * 10}; playsound {cosmic rage/ships/pd/fire*3.wav} @CVol;  #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 1 {playsound {cosmic rage/ships/pd/hit*3.wav} @CVol;  #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
+#TRIGGER {(*, *) * fires up its boosters and begins to move *} {#gagline voice; playsound {cosmic rage/ships/pd/move*4.wav} @CVol}; 
+#TRIGGER {A missile explodes nearby!} {playsound {cosmic rage/ships/combat/component/1/*10.wav} @CVol};
+#TRIGGER {(*, *) * prepares to fire a missile *.} {playsound {cosmic rage/ships/combat/weapons/missilef.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)};};

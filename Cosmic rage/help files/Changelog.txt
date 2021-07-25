@@ -1,3 +1,12 @@
+1989 stormy, added more goodies for the flight suits
+copy combat suit.set
+
+1988 stormy, flights suits are now waaaaaaay too awesome now, just experience them yourself
+copy combat suit.set
+1987 stormy, fixed flight suits
+copy combat suit.set
+1986, James, credits Stormy, your sound settings for private networks will now save.
+copy cosmic rage\CosmicRage.set and misc\soundpack.set
 1985, James, Added links to the quotation mark gagger.
 copy cosmic rage\misc\comms.set
 1984, James, Added some triggers relating to hatches on merchant ships, added the ping sound to a trigger, and added a few more triggers to the new quotation mark gagger.

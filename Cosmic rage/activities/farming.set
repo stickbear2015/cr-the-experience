@@ -75,7 +75,7 @@ loopsound {cosmic rage/activities/farming/sheeppen.wav} @roomvol;
 loopsound {cosmic rage/activities/farming/house.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Inside"}}}};
 #trig {You step out of the exit and quickly make your way back to where you were.} {#gagline all; playsound {Cosmic Rage/activities/farming/close.wav} @vol}
-#trig {You step into a *} {#gagline all; playsound {Cosmic Rage/activities/farming/open.wav} @vol}
+#trig {You step into a *} {playsound {Cosmic Rage/activities/farming/open.wav} @vol}
 #trig {You flip several switches and begin to pump water from the reservoir into the tank.} {#gagline voice; playsound {Cosmic Rage/activities/farming/pump.wav} @vol}
 #trig {You step onto the *} {#gagline all; playsound {Cosmic Rage/activities/farming/open.wav} @vol}
 #trig {You flip several of the switches near the front of the tank, slowing down the pressure.} {#gagline voice}

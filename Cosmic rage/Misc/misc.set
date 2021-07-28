@@ -178,7 +178,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {A siren rings out through the area and you hear a voice announce: "All military officers, please proceed to your local boarding points. This is not a drill."} {playsound {Cosmic Rage/general/comms/evac.wav} @vol}
 #TRIGGER {* plays a cheery tune, informing you someone just put up an advertisement.} {playsound {Cosmic Rage/general/misc/advertisement.wav} @vol}
 #trigger {You have * credits} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol}
-#trigger {You drink some *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
+#trigger {You take a drink from a *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
 #trigger {You eat some *} {playsound {Cosmic Rage/general/Food and drink/EatFood.wav} @vol}
 #trigger {You gulp down *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
 #trigger {You scarf down *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}

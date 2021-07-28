@@ -1,3 +1,13 @@
+1994 stormy, credits Blaine, fixed telephones
+copy misc telephone.set
+1993 stormy, credits Laela, i think i fixed the issue of not gagging of one of the harvesting messages.
+copy activities planetoid.set
+1992 stormy, credits vade, fixed emoting sound
+copy misc msic2.set
+1991 stormy, credits vade and Muhammad, fixed drinking sound
+copy misc misc.set
+1990 stormy, credits elijah, ungagged a message
+copy ativities farming.set
 1989 stormy, added more goodies for the flight suits
 copy combat suit.set
 

@@ -21,7 +21,7 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You stand up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
 #TRIGGER {* stands up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
 #trigger {You lie down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
-#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)}
+#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol; }
 #TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}

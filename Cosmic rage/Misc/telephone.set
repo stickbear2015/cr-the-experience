@@ -5,4 +5,4 @@
 #TRIGGER {You hear a ring, ring from *} {playsound {cosmic rage/general/telephone/ring.wav} @vol};
 #TRIGGER {* lets out a quick beep beep, beep beep sound and * flashes on the screen.} {playsound {cosmic rage/general/telephone/message.wav} @vol};
 #trigger {You tap the end call icon on *} {#gagline all; playsound {cosmic rage/general/telephone/click.wav} @vol}
-#trigger {a * lets out a short guitar riff and * flashes on the screen.} {#gagline voice; playsound {cosmic rage/general/telephone/guitarriff.wav} @vol}
+#trigger {a * lets out a short guitar riff and * flashes on the screen.} {playsound {cosmic rage/general/telephone/guitarriff.wav} @vol}

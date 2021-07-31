@@ -19,7 +19,7 @@
 #TRIGGER {* yawns.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/yawn*2.wav} @vol}}
 #trigger {You poke *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/poke.wav} @vol}}
 #trigger {* pokes *} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/poke.wav} @vol}}
-#trigger {* lies down on *} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/lie.wav} @vol}}
+#trigger {* lies down on *} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/lie.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000) }}
 #trigger {You sneeze.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
 #trigger {You sneeze at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
 #trigger {* sneezes} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}

@@ -1,3 +1,12 @@
+1998 stormy, credits olivia walker, snow leppords no longer sound like, dieing, at least for olivia anyway.
+copy sounds cr general mutariansi snowlep.wav
+1997 stormy, credits william, fixed lieing pan
+copy misc misc.set and misc socials.set
+1996 stormy, credits Elijah Blackburn, fixed trash collection repair beginning sound
+copy sounds  vehicle beginrepair.wav
+sound credit, https://freesound.org/people/Ashowal/sounds/171222/
+1995 stormy, the space ambience has been changed to something more creapy and original, i want to apoligise to the person who first created this sound. It was in this pack for years, and probably without their permission.
+copy sounds ambiences space.wav
 1994 stormy, credits Blaine, fixed telephones
 copy misc telephone.set
 1993 stormy, credits Laela, i think i fixed the issue of not gagging of one of the harvesting messages.

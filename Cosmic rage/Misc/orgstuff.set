@@ -12,7 +12,7 @@
 #trigger {The screen lights up with scrolling text.} {#gagline all; playsound {Cosmic Rage/general/gmc/medscan.wav} @vol}
 #trigger {A spasm takes over your limbs as * and discharges a large amount of electricity into you.} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
 #trigger {* taps a button on * synaptic stimulator *} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
-#trigger {* We have suffered casualties and are requesting a medical evacuation ship for immediate extraction of all injured persons to the Galactic Medical Complex.} {#gagline all; playsound {Cosmic Rage/general/gmc/alarm.wav} @vol}
+#trigger {* squawks "This is an automated alert from * We have suffered casualties and are requesting a medical evacuation ship for immediate extraction of all injured persons to the Galactic Medical Complex.} {playsound {Cosmic Rage/general/gmc/alarm.wav} @vol}
 #trigger {The doors sllide open, allowing you to disembark.} {#gagline all; playsound {Cosmic Rage/general/gmc/ambdooropen.wav} @vol}
 #trigger {The doors slide shut behind you.} {#if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}; #alarm 1 { playsound {Cosmic Rage/general/gmc/ambdoorclose.wav} @vol}}
 #trigger {The door on The Ambulance * slides open.} {playsound {Cosmic Rage/general/gmc/ambdooropen.wav} @vol}

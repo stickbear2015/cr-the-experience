@@ -55,9 +55,9 @@ playsound {Cosmic Rage/general/doors/DoorClose4.wav} @vol}} {} AnyCase
 playsound {Cosmic Rage/general/doors/DoorOpen5.wav} @vol};
 #if {%ifword(revolve,%3," ")} {
 playsound {Cosmic Rage/general/doors/DoorOpen5.wav} @vol};
-#if {%ifword(lowers,%3," ")} {
+#if {%ifword(lifts,%3," ")} {
 playsound {Cosmic Rage/general/doors/DoorOpen2.wav} @vol};
-#if {%ifword(lower,%3," ")} {
+#if {%ifword(lift,%3," ")} {
 playsound {Cosmic Rage/general/doors/DoorOpen2.wav} @vol};
 #if {%ifword(swings,%3," ")} {
 playsound {Cosmic Rage/general/doors/DoorOpen1.wav} @vol};
@@ -71,7 +71,7 @@ playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol};
 playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol};
 #if {%ifword(hiss,%3," ")} {
 playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol};
-#if {NOT %ifword(%3,revolves," ") and NOT %ifword(%3,revolve," ") and NOT %ifword(%3,lowers," ") and NOT %ifword(%3,lower," ") and NOT %ifword(%3,swings," ") and NOT %ifword(%3,swing," ") and NOT %ifword(%3,slides," ") and NOT %ifword(%3,slide," ") and NOT %ifword(%3,hisses," ") and NOT %ifword(%3,hiss," ")} {
+#if {NOT %ifword(%3,revolves," ") and NOT %ifword(%3,revolve," ") and NOT %ifword(%3,lifts," ") and NOT %ifword(%3,lift," ") and NOT %ifword(%3,swings," ") and NOT %ifword(%3,swing," ") and NOT %ifword(%3,slides," ") and NOT %ifword(%3,slide," ") and NOT %ifword(%3,hisses," ") and NOT %ifword(%3,hiss," ")} {
 playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol}} {} AnyCase
 
 #trigger {You open * door} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}

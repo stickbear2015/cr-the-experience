@@ -44,15 +44,16 @@
 #TRIGGER {On screen, you see * fire torpedos at *} {#gagline all; playsound {cosmic rage/ships/combat/torp.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #PC %Playhandle Pan %Random(-4000,4000)}};
-#TRIGGER {you hear a slight hum and a vibration begins beneath your feet as the plasma cannon begins to power up.} {
+#TRIGGER {You hear a slight hum and a vibration begins beneath your feet as the plasma cannon begins to power up.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/plasmaCannonPowerup.wav} @CVol} {}
-#trigger {the humming grows as the plasma cannon prepares to fire.} {
+#trigger {The humming grows as the plasma cannon prepares to fire.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/plasmaCannonHum.wav} @CVol}
 #TRIGGER {You hear an earsplitting boom as the plasma cannon fires.} {#gagline all; playsound {cosmic rage/ships/combat/Plasma.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#trigger {A thundering boom echoes throughout the ship, shaking the structure for several moments as the heavy weaponry recoils.} {#gagline all}
 #TRIGGER {On screen, * explode!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
@@ -309,4 +310,4 @@ playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol; playsound {cosmic rage/shi
 #trigger {You hold down an override button while manipulating the holographic depictions of the standard torpidos at x/y *, z * and fire.} {#if {@gagShipCombat = "Enabled"} {#gagline all}; #if {%ifword(%1,@dirlist1," ")} {playsound {cosmic rage/ships/combat/weapons/salvomisa.wav} @CVol} {playsound {cosmic rage/ships/combat/weapons/salvomisf.wav} @CVol}; #if {@panShipCombat = "Enabled"} {#if {%ifword(%1,port|port aft|port fore,"|")} {#pc %playhandle pan %random(-4000,-1000)}; #if {%ifword(%1,starboard fore|starboard aft|starboard,"|")} {#pc %playhandle pan %random(1000,4000)}}}
 #trigger {You hold down an override button while manipulating the holographic depictions of the standard plasma missiles at x/y *, z * and fire.} {#if {@gagShipCombat = "Enabled"} {#gagline all}; #if {%ifword(%1,@dirlist1," ")} {playsound {cosmic rage/ships/combat/weapons/salvopma.wav} @CVol} {playsound {cosmic rage/ships/combat/weapons/salvopmf.wav} @CVol}; #if {@panShipCombat = "Enabled"} {#if {%ifword(%1,port|port aft|port fore,"|")} {#pc %playhandle pan %random(-4000,-1000)}; #if {%ifword(%1,starboard fore|starboard aft|starboard,"|")} {#pc %playhandle pan %random(1000,4000)}}}
 #trigger {You hold down an override button while manipulating the holographic depictions of the plasma missiles at x/y *, z * and fire.} {#if {@gagShipCombat = "Enabled"} {#gagline all}; #if {%ifword(%1,@dirlist1," ")} {playsound {cosmic rage/ships/combat/weapons/salvopma.wav} @CVol} {playsound {cosmic rage/ships/combat/weapons/salvopmf.wav} @CVol}; #if {@panShipCombat = "Enabled"} {#if {%ifword(%1,port|port aft|port fore,"|")} {#pc %playhandle pan %random(-4000,-1000)}; #if {%ifword(%1,starboard fore|starboard aft|starboard,"|")} {#pc %playhandle pan %random(1000,4000)}}}
-#TRIGGER {Small pieces of exploding wreckage tip tap against the windows as * explodes.} {#var pardom %random(5000,9000); #math pardom {@pardom * 10}; playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol; #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} { #pc %playhandle pan %random(-4000,4000)}; #if {@gagShipCombat = "Enabled"} { #gagline all}}
+#TRIGGER {Small pieces of exploding wreckage tip tap against the windows as * explodes.} {#sub {%1 explodes}; #var pardom %random(5000,9000); #math pardom {@pardom * 10}; playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol; #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} { #pc %playhandle pan %random(-4000,4000)}; #if {@gagShipCombat = "Enabled"} { #gagline all}}

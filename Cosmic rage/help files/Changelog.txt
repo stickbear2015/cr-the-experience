@@ -1,3 +1,9 @@
+2001, James, Added a trigger for vacus soldiers and fixed triggers for plasma cannons.
+copy cosmic rage\combat\groundCombat.set and ships\shipCombat.set
+2000, James, Fixed an issue with doors.
+copy cosmic rage\misc\doors.set
+1999, James, Updated the trigger for merchant ships docking.
+copy cosmic rage\ships\ships.set
 1998 stormy, credits olivia walker, snow leppords no longer sound like, dieing, at least for olivia anyway.
 copy sounds cr general mutariansi snowlep.wav
 1997 stormy, credits william, fixed lieing pan

@@ -1,3 +1,5 @@
+2002 stormy, credis all the baby owners, fixed baby bounce social
+copy misc baby.set
 2001, James, Added a trigger for vacus soldiers and fixed triggers for plasma cannons.
 copy cosmic rage\combat\groundCombat.set and ships\shipCombat.set
 2000, James, Fixed an issue with doors.

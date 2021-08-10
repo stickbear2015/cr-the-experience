@@ -87,6 +87,7 @@
 #Key {Alt-O} {north} {}
 #Key {Alt-M} {south} {}
 #Key {Alt-J} {west} {}
+#Key {Alt-K} {look} {}
 #Key {Alt-L} {east} {}
 #Key {Alt-P} {northeast} {}
 #Key {Alt-I} {northwest} {}

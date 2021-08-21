@@ -122,7 +122,10 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {You enable the * channel.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}
 #trigger {You disable the * channel.} {playsound {Cosmic Rage/general/comms/Deactivate.wav} @CommsVol}
 #trigger {The * ground control square turns red on * and * "Emergency! Emergency! We see an incoming bomb! Emergency! Emergency!"} {#if {@ShortMapText = 1} {#sub {%1 "turns" %2, %5}} {};playsound {Cosmic Rage/general/comms/bomb.wav} @CommsVol; #additem FlightControl %0}
-#TRIGGER {[[]Unsec]*} {playsound {cosmic rage/general/comms/unsec.wav} @CommsVol; #additem Unsec %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Unsec.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Unsec]*: "*"} {#if {@QGag = 1} {#sub {[Unsec]%1: %2}};
+playsound {cosmic rage/general/comms/unsec.wav} @CommsVol; #additem Unsec %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Unsec.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Unsec]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {cosmic rage/general/comms/unsec.wav} @CommsVol; #additem Unsec %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Unsec.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {A small newspaper icon blinks repeatedly on *} {playsound {Cosmic Rage/general/comms/News.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #trigger {[[]SDL]*: "*"} {#if {@QGag = 1} {#sub {[SDL]%1: %2}};
 playsound {Cosmic Rage/general/comms/SDL.wav} @CommsVol; #additem SDL %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SDL.log};#write 1 %0;#close 1}} {} AnyCase
@@ -209,9 +212,9 @@ playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #trigger {Your translator makes a small ding, indicating it can not bridge the gap to that destination.} {playsound {Cosmic Rage/general/comms/phasefail.wav} @vol}
 #TRIGGER {[[]Info], * just logged into TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogin.wav} @CommsVol};
 #TRIGGER {[[]Info], * just logged out of TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogout.wav} @CommsVol};
-#TRIGGER {[[]fires]*: "*"} {#if {@QGag = 1} {#sub {[Fires]%1: %2}};
+#TRIGGER {[[]Dispatch]*: "*"} {#if {@QGag = 1} {#sub {[Dispatch]%1: %2}};
 playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {} anycase
-#TRIGGER {[[]fires]*} {#if {%IfWord(~",%1,"")} {#abort 1};
+#TRIGGER {[[]Dispatch]*} {#if {%IfWord(~",%1,"")} {#abort 1};
 playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {} anycase
 #trigger {[[]PA]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {You feel a vibration from * indicating that * is requesting a holographic conference.} {playsound {cosmic rage/general/comms/holo.wav} @CommsVol}

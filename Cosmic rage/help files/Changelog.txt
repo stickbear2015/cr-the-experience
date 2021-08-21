@@ -1,3 +1,9 @@
+2005, As the fires channel was replaced by dispatch and I don't think the prior channel exists anymore, I updated the sound trigger acordingly. Not sure if a different sound will be made, but doing this for now.
+copy cosmic rage\misc\comms.set
+2004, James, Added Unsec to the channels where quotation marks are gagged.
+copy cosmic rage\misc\comms.set
+2003 stormy, credits Aloysius, oh rude stormy i forgot to log this, you can now press alt k for look
+copy misc keys.set
 2002 stormy, credis all the baby owners, fixed baby bounce social
 copy misc baby.set
 2001, James, Added a trigger for vacus soldiers and fixed triggers for plasma cannons.

@@ -1,3 +1,5 @@
+2006 stormy, credits elijah, You now hear a sound when you log in if there are any sub anouncements are present.
+copy misc comms.set and sounds cr general comms subthing.wav
 2005, As the fires channel was replaced by dispatch and I don't think the prior channel exists anymore, I updated the sound trigger acordingly. Not sure if a different sound will be made, but doing this for now.
 copy cosmic rage\misc\comms.set
 2004, James, Added Unsec to the channels where quotation marks are gagged.

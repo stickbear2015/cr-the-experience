@@ -1,0 +1,6 @@
+#TRIGGER {* hugs *, which squeaks in delight!} {playsound {cosmic rage/general/toys/squeak*2.wav} @vol};
+#TRIGGER {* bites a *, causing it to let out a loud squeak!} {playsound {cosmic rage/general/toys/squeak*2.wav} @vol};
+#TRIGGER {* lifts *, shakes it in the air a few times as though trying to kill it, before * violently bites it, causing the toy to squeak loudly!} {playsound {cosmic rage/general/toys/squeak*2.wav} @vol};
+#TRIGGER {* shakes * happily, making a rattling sound.} {playsound {cosmic rage/general/toys/rattle.wav} @vol};
+#TRIGGER {* bats * across the room, before bounding after it and pouncing on it with a happy babble!} {playsound {cosmic rage/general/toys/ball*2.wav} @vol};
+#TRIGGER {*spins the wheels on *} {playsound {cosmic rage/general/toys/toycar.wav} @vol};

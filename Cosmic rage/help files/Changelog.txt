@@ -1,3 +1,10 @@
+2012 stormy, credits everyone I guess? fixed the last change
+copy sounds ambiences rivver shopping and road.wav
+2011 stormy, credits Skyler, sound credits Skyler, changed few ambient sounds 
+copy sounds ambiences foulder
+
+2010 stormy, credits everyone, the mail app now have sounds. yay
+copy misc comms.set and sounds cr general comms foulder
 2009 stormy, credits vade, sound credits vade, code credits vade, we now have some toy sounds for pets and the babies. more to follow.
 copy misc babies.set and cosmic rage.set and sounds cr general toys foulder
 2008, James, Updated some door triggers for doors manually being closed.

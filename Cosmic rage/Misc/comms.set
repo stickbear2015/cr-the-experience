@@ -114,7 +114,7 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {* flashes with * new mail messages.} {playsound {Cosmic Rage/general/comms/mail.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #trigger {* respectfully denied your request for an OOC link.} {playsound {Cosmic Rage/general/comms/OOCDenied.wav} @CommsVol}
 #trigger {* would like to establish an out of character communications link with you. Please type oaccept to accept or deny it.} {playsound {Cosmic Rage/general/comms/OOCRequest.wav} 85}
-#trigger {Message sent!} {playsound {Cosmic Rage/general/comms/MailSent.wav} @CommsVol}
+#trigger {* lets out a cheerful chirp to let you know it has sent the mail.} {playsound {Cosmic Rage/general/comms/MailSent.wav} @CommsVol}
 #trigger {Mail sent.} {playsound {Cosmic Rage/general/comms/MailSent.wav} @CommsVol; #additem InfoComputerNotifications %0}
 #trigger {A small light blinks on nex to the intercom and you hear the voice of *} {playsound {Cosmic Rage/general/comms/Intercom.wav} @CommsVol; #additem PA %0}
 #trigger {OOC communications filtered.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @CommsVol}
@@ -220,3 +220,9 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {}
 #trigger {You feel a vibration from * indicating that * is requesting a holographic conference.} {playsound {cosmic rage/general/comms/holo.wav} @CommsVol}
 #TRIGGER {[[]Birthday Bash]*} {playsound {Cosmic Rage/general/comms/birthday.wav} @CommsVol; #additem birthday %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char birthday.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {Subannouncements regarding *} {playsound {Cosmic Rage/general/comms/subthing.wav} @CommsVol; #additem SubAnnouncements %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SubAnnouncements.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {The new mail window opens with a swoosh on the screen.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailopen.wav} @CommsVol}
+#trigger {A short tinkling melody comes from the speakers of * as the mail app opens on screen.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailopen.wav} @CommsVol}
+#trigger {With a soft swoosh the folder opens up on the screen of *} {#gagline voice; playsound {Cosmic Rage/general/comms/mailopen.wav} @CommsVol}
+#trigger {The folder closes with a soft swoosh, returning you to the main mail menu.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailclose.wav} @CommsVol}
+#trigger {The recipient manager closes with a soft swoosh.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailclose.wav} @CommsVol}
+#trigger {Soft chimes come from the speakers of a black informational Computer as the recipient manager opens.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailopen.wav} @CommsVol}

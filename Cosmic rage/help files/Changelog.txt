@@ -1,3 +1,9 @@
+2015 stormy, credits vade, code credits vade, we now have sounds for tapes and some other little stuff
+copy misc houses.set and sounds cr general house foulder
+2014 stormy, credits hermian, fixed earth cars
+copy vehicle cars.set
+2013 stormy, you need to update to the latest version if you want to report bugs and suggest normaly once again
+copy misc soundpack.set
 2012 stormy, credits everyone I guess? fixed the last change
 copy sounds ambiences rivver shopping and road.wav
 2011 stormy, credits Skyler, sound credits Skyler, changed few ambient sounds 

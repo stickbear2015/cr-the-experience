@@ -44,3 +44,9 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {* climbs up onto * and walks to the very end.} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
 #TRIGGER {A small light blinks on next to the intercom and you hear the voice of * say: "*"} {playsound {cosmic rage/ships/com/pa*2.wav} @vol};
 #TRIGGER {you tap the button next to the intercom and say into it: *} {playsound {cosmic rage/ships/com/pa*2.wav} @vol};
+#TRIGGER {* sprays * with *} {playsound {Cosmic Rage\ships\fire\spray.wav} @vol}
+#TRIGGER {You firmly grab * and wrap a reel of very sticky tape around and around * head until * mouth is tightly taped shut.} {playsound {cosmic rage/general/house/tape_roll*2.wav} @vol};
+#TRIGGER {* suddenly grabs you, wrapping a reel of very sticky tape around your head until your mouth is tightly taped shut.} {playsound {cosmic rage/general/house/tape_roll*2.wav} @vol};
+#TRIGGER {* firmly grabs * and wraps a reel of very sticky tape around * head until * mouth is tightly taped shut.} {playsound {cosmic rage/general/house/tape_roll*2.wav} @vol};
+#TRIGGER {You yank the tape *} {playsound {cosmic rage/general/house/tape_pull*2.wav} @vol};
+#TRIGGER {* yanks the tape *} {playsound {cosmic rage/general/house/tape_pull*2.wav} @vol};

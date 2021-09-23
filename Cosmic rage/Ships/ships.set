@@ -223,7 +223,7 @@ playsound {cosmic rage/ships/misc/exitRift.wav} @vol}
 #trigger {The thrum of the engines increases sharply as the ship begins to dock.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/taxiDock.wav} @vol}
-#trigger {You hear a solid klang as the docking equipment attaches itself to a tube.} {
+#trigger {You hear a solid clang as the docking equipment attaches itself to a tube.} {
 #gagline all;
 playsound {cosmic rage/ships/misc/shipAttach.wav} @vol}
 #trigger {You feel a slight bump as the ship lands.} {

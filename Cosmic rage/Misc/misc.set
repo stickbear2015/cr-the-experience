@@ -168,7 +168,8 @@ playsound {cosmic rage/activities/fishing/fishcatch.wav} @vol}
 #trigger {You hear a gunshot ring out across the out of character landscape. *} {
 playsound {cosmic rage/general/misc/reset.wav} @vol}
 #TRIGGER {* begins to enjoy *} {playsound {Cosmic Rage\general\Misc\peteat.wav} @vol ;#gagline all} {}
-#TRIGGER {* finishes * and lets out a small burp.} {playsound {Cosmic Rage\general\Misc\petburp.wav} @vol ;#gagline all}
+#TRIGGER {* finishes * and lets out a small burp.} {playsound {Cosmic Rage\general\Misc\petburp.wav} @vol; #gagline voice}
+#TRIGGER {* makes a small belching noise*} {playsound {Cosmic Rage\general\Misc\petburp.wav} @vol; #gagline voice}
 #TRIGGER {* moves over to * and takes a long drink from it.} {playsound {Cosmic Rage\general\Misc\petdrink.wav} @vol; #gagline all}
 #trigger {* wind chime *} {playsound {Cosmic Rage\general\Misc\chimes.wav} @vol} {}
 
@@ -180,7 +181,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You have * credits} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol}
 #trigger {You take a drink from a *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
 #trigger {You eat some *} {playsound {Cosmic Rage/general/Food and drink/EatFood.wav} @vol}
-#trigger {You gulp down *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
+#trigger {You begin to quickly gulp *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
 #trigger {You scarf down *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
 #trigger {Roundtime up. Feel free to move about!} {playsound {Cosmic Rage/general/misc/Roundtime.wav} @vol;#gagline voice}
 #trigger {You give a sudden leap and land in santa's slay!} {playsound {Cosmic Rage/general/misc/Christmas.wav} @vol; #gagline all}

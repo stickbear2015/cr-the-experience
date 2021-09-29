@@ -1,3 +1,7 @@
+2018 stomry, credits katana, added a sound for pet belching
+copy misc misc.set
+2017 stormy, credits khal, fixed gulping drinks
+copy misc misc.set
 2016 stormy, credits raju, fixed the river ambience
 copy ambiences river.wav
 2015 stormy, credits vade, code credits vade, we now have sounds for tapes and some other little stuff
@@ -10,7 +14,6 @@ copy misc soundpack.set
 copy sounds ambiences rivver shopping and road.wav
 2011 stormy, credits Skyler, sound credits Skyler, changed few ambient sounds 
 copy sounds ambiences foulder
-
 2010 stormy, credits everyone, the mail app now have sounds. yay
 copy misc comms.set and sounds cr general comms foulder
 2009 stormy, credits vade, sound credits vade, code credits vade, we now have some toy sounds for pets and the babies. more to follow.

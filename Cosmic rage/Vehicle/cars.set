@@ -50,7 +50,7 @@ playsound {Cosmic Rage/general/cars/rev*5.wav} @vehiclevol}
 #if {@drive = 1} {
 #pc @drivehandle stop; #var drive 0};
 playsound {Cosmic Rage/general/cars/rev*5.wav} @vehiclevol}
-#TRIGGER {* puts the key in the ignition and twists.} {#gagline all; playsound {Cosmic Rage/general/cars/key1.wav} @vehiclevol}
+#TRIGGER {* inserts the key in the ignition and twists.} {#gagline all; playsound {Cosmic Rage/general/cars/key1.wav} @vehiclevol}
 #TRIGGER {* twists the key and yank* it out.} {#gagline all; playsound {Cosmic Rage/general/cars/key2.wav} @vehiclevol}
 #TRIGGER {* brings the vehicle to a stop.} {playsound {Cosmic Rage/general/cars/decelerate.wav} @vehiclevol;
 #if {@drive = 1} {

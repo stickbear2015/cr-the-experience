@@ -8,7 +8,7 @@
 #trigger {A missile streaks from the pod!} {#gagline all; playsound {Cosmic Rage/ships/combat/Missile.wav} @vol}
 #trigger {Through the windows, you see air pod * explodes!} {playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @vol; #if {@panshipcombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}
 #trigger {Sorry, no targets are available.} {playsound {Cosmic Rage/ships/misc/error.wav} @vol}
-#trigger {As the ship descends through the lower atmosphere, a pair of fighter pods appear through the windows to escort it down.} {#gagline voice; playsound {Cosmic Rage/ships/misc/landing2.wav} @vol}
+#trigger {As the ship descends through the lower atmosphere, a pair of fighter pods appear through the windows to escort it down.} {#gagline voice; playsound {Cosmic Rage/ships/movement/landing4.wav} @vol}
 #trigger {The ships engines rumble, the vessel turning as the computer automaticly directs it somewhere slightly different.} {#gagline all}
 #trigger {A glint is noticeable from below, some kind of hovering platform appearing through the windows as the air pods streak away.} {#gagline all}
 #trigger {The hum of engines comes from outside as two fighter pods fly up next to the ship to escort it up.} {playsound {Cosmic Rage/ships/misc/Landing2.wav} @vol; #var Launchhandle %playhandle; #var Launch 1}

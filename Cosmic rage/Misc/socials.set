@@ -111,7 +111,7 @@
 #trigger {* sobs broken heartedly at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}
 #trigger {* publically murders *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/murder.wav} @vol}}
 #trigger {* blinks innocently *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/iblink.wav} @vol}}
-#trigger {* blinks his eyes *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/iblink.wav} @vol}}
+#trigger {* blinks ** eyes *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/iblink.wav} @vol}}
 ;#trigger  {* cries quietly *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ooccry.wav} @vol}}
 #trigger   {* violently lashes the whip of judgment across *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgewhip.wav} @vol}}
 #trigger {* sobs * broken heartedly} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}

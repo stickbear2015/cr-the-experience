@@ -1,3 +1,4 @@
+2022 Nate, Credits: Hale, fixed the kiss social sound. Copy cosmic rage/misc/socials.set.
 2021 stormy, credits tatsu, I  was hoping to bring a new feature for the number 2021, but haha it didnt happen. Fixed iblink social.
 2020 stormy, credits Sam, the broken doors are no longer broken. In other words, you now hear the door opening and closing sounds when you close those poor doors manualy.
 copy misc doors.set

@@ -1,3 +1,6 @@
+2024 Lara and Stormy: Released the soundpack updater specific to this pack. See the readme or the extra resources section of cosmicrage.earth for more information.
+2023 stormy, credits eli, james, brandon, william and few others that I cannot recall their names at the moment, the pingpong tables now have sounds. This is like an audiogame within a text-based game, so don't forget to check it out.
+copy cosmic rage.set sounds cr geeral pong folder and cr misc pingpong.set
 2022 Nate, Credits: Hale, fixed the kiss social sound. Copy cosmic rage/misc/socials.set.
 2021 stormy, credits tatsu, I  was hoping to bring a new feature for the number 2021, but haha it didnt happen. Fixed iblink social.
 2020 stormy, credits Sam, the broken doors are no longer broken. In other words, you now hear the door opening and closing sounds when you close those poor doors manualy.

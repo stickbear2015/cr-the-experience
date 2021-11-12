@@ -37,12 +37,14 @@ download it from, https://www.nathantech.net/nathantechsoftware.php
 If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting the soundpack developers
 note, a last resort installing method.
 if the setupping way described above didnt helped you, you can copy the character.mud file, located in the main folder of the soundpack to c:\users username vipmud folder, you will have a prepared char that is compatible with the soundpack.  IMPORTANT Note this will override your existing added mud chars, backing this file is advised
+
 			**Updating Your Soundpack**
 
-To update the soundpack using the Dropbox shared folder, please do the following:
+		To update the soundpack using the Dropbox shared folder, please do the following:
 1. Please hit alt-V or type SpVersion, the pack will notify you of the last change of the pack, and how many changes your behind.
 2. Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to back up your characters .set file if you don't want to lose any added alias's or triggers.
-If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
+		If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
+		The soundpack also has an updater which will update the soundpack for you. you can download this at https://cosmicrage.earth in the extra resources section.
 		 adding custom music for ship combat
 1, find some music
 2, go to the sounds/music/combat folder

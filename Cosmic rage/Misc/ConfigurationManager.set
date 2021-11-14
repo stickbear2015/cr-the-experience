@@ -64,7 +64,7 @@ Toggle your speech in the soundpack. Shortcut ctrl f1. This option is currently 
 Toggle mute sounds. Shortcut shift f1.  This option is currently @soundson:MuteSound|
 Save your soundpack settings:SaveSettings|
 Toggle communication text gag, this will gag the you speak in to your communicator text. This option is currently @commtoggle:commtoggle|
-Toggle the quotation mark gagger. It is currently @qtg:qtgagger|
+Toggle the quotation mark gagger. It is currently @qtg:qtg|
 Reload the soundpack:SpReload| View the list of available help files for the soundpack. Note. Files will be opened in your text editer of choice:SpHelp}}
 
 ;Volumes

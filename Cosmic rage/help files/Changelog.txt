@@ -1,3 +1,7 @@
+2026, James, temporarily fixed the soundpack updater by including a settings.set file, until such time as it is coded not to delete user settings. Also linked the interstation buggies on Star Command to an ambience, and fixed an issue with my quotation mark gagger.
+copy cosmic rage\misc\ConfigurationManager.set and Misc.set
+2025, James, Fixed the direction for panning for a ping pong ball passing your opponent. Their left is your right, afterall.
+copy cosmic rage\misc\pingpong.set
 2024 Lara and Stormy: Released the soundpack updater specific to this pack. See the readme or the extra resources section of cosmicrage.earth for more information.
 2023 stormy, credits eli, james, brandon, william and few others that I cannot recall their names at the moment, the pingpong tables now have sounds. This is like an audiogame within a text-based game, so don't forget to check it out.
 copy cosmic rage.set sounds cr geeral pong folder and cr misc pingpong.set

@@ -165,6 +165,7 @@
 #read 6 priv2 48;
 #read 6 priv3 49;
 #read 6 priv4 50;
+#read 6 hpdr 51;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {

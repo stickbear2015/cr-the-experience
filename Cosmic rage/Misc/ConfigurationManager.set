@@ -65,6 +65,7 @@ Toggle mute sounds. Shortcut shift f1.  This option is currently @soundson:MuteS
 Save your soundpack settings:SaveSettings|
 Toggle communication text gag, this will gag the you speak in to your communicator text. This option is currently @commtoggle:commtoggle|
 Toggle the quotation mark gagger. It is currently @qtg:qtg|
+Gag text for people using helper drone remotes. Currently @hpdr:hpdr|
 Reload the soundpack:SpReload| View the list of available help files for the soundpack. Note. Files will be opened in your text editer of choice:SpHelp}}
 
 ;Volumes
@@ -267,3 +268,4 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.}}}
 #alias TPR {#if {@TPR= "Enabled"} {#var TPR "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no  longer hear bio plasma regenoration sounds.}} {#var TPR "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now hear bio plasma regenoration sounds.}}}
 #alias commtoggle  {#if {@commtoggle= "Enabled"} {#var commtoggle "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see communication texts}} {#var commtoggle "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see communication texts}}}
 #alias qtg  {#if {@QGag = 1} {#var QGag 0; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Quotation marks are no longer being gagged.}} {#var QGag 1; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Quotation marks are now being gagged.}}}
+#alias hpdr {#if {@hpdr = "gagged"} {#var hpdr "ungagged"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Helper drone remote usage is no longer being gagged.}} {#var hpdr "gagged"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Helper drone remote usage is now being gagged.}}}

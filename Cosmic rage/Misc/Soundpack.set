@@ -87,6 +87,7 @@
 #write 6 @priv2 @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @priv3 @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @priv4 @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @hpdr @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #alias SaveSettings {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Your soundpack settings and buffer list  have successfully been saved!}; savebuffers; ActualSave}
 #key {Control-shift-R} {SpReload}

@@ -118,6 +118,12 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #TRIGGER {Loud explosions echo throughout the ship as a warhead slams into the defensive armour.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
+#trigger {The defensive armour creaks alarmingly as it is slammed by heavy fire.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
+#trigger {The hull creaks alarmingly as it is slammed by heavy fire.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
+#if {@panShipCombat = "Enabled"} {
+#pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {The defensive armour lets out loud bongs as it continually deflects damage.} {#gagline all; playsound {cosmic rage/ships/combat/YourDefs*3.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}

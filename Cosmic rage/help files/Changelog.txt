@@ -1,3 +1,7 @@
+2028, James, Fixed an issue with text not being recognized when hit by heavy fire.
+copy cosmic rage\ships\shipcombat.set
+2027, James, Added an optional gag for people in the room using helper drone remotes. There's no hotkey yet, but it's available at the bottom of the options list when you press f2.
+copy cosmic rage\misc\ConfigurationManager.set and misc.set, and the main CosmicRage.set file
 2026, James, temporarily fixed the soundpack updater by including a settings.set file, until such time as it is coded not to delete user settings. Also linked the interstation buggies on Star Command to an ambience, and fixed an issue with my quotation mark gagger.
 copy cosmic rage\misc\ConfigurationManager.set and Misc.set
 2025, James, Fixed the direction for panning for a ping pong ball passing your opponent. Their left is your right, afterall.

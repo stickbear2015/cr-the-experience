@@ -1,3 +1,11 @@
+2032, James, Made it so that the new transmits a social format works on comms, including private TR links.
+copy cosmic rage\misc\comms.set and socials.set
+2031, James, Fixed the laugh social so you can see when others laugh when you are gagging your own socials.
+copy cosmic rage\misc\socials.set
+2030, James, updated a trigger with the quote gagger.
+copy cosmic rage\misc\comms.set
+2029 stormy, credits katana, added a sound for factory monitor charge alerts
+copy misc comms.set and sounds cr general comms monitor.wav
 2028, James, Fixed an issue with text not being recognized when hit by heavy fire.
 copy cosmic rage\ships\shipcombat.set
 2027, James, Added an optional gag for people in the room using helper drone remotes. There's no hotkey yet, but it's available at the bottom of the options list when you press f2.

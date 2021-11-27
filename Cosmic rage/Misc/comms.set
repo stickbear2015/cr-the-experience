@@ -1,4 +1,4 @@
-#var Commlist {ask | speak | exclaim }
+#var Commlist {ask | speak | talk | exclaim }
 
 #TRIGGER {[[]announcement]*} {playsound {Cosmic Rage/general/comms/Announcement.wav} @CommsVol; #additem Announcements %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Announcements.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]SubAnnouncement]*} {playsound {Cosmic Rage/general/comms/SubAnnouncement.wav} @CommsVol; #additem SubAnnouncements %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SubAnnouncements.log};#write 1 %0;#close 1}} {} AnyCase
@@ -100,7 +100,9 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Mentor]*} {playsound {cosmic rage/general/comms/Mentor.wav} @CommsVol; #additem Mentor %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Mentor.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {* flashes * indicating you have a new mail titled *} {playsound {cosmic rage/general/comms/mail.wav} @CommsVol; #additem Notices %0}
 #trigger {[[]News]*:*} {playsound {cosmic rage/general/comms/onews.wav} @CommsVol; #additem ONews %0}
+#trigger {[[]* to * transmits *], } {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol}
 #TRIGGER {[[]* to *], "*"} {#if {@QGag = 1} {#sub {[%1 to %2], %3}}; #if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage/general/comms/PrivOOCCom.wav} @CommsVol; #additem OOCPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1}} {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol; #additem ICPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}}} {} AnyCase
+#TRIGGER {[[]* to *], "*"*"*"} {#if {@QGag = 1} {#sub {[%1 to %2], %3%4%5}}; #if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage/general/comms/PrivOOCCom.wav} @CommsVol; #additem OOCPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1}} {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol; #additem ICPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}}} {} AnyCase
 #trigger {[[]Trade]*} {playsound {cosmic rage/general/comms/trade.wav} @CommsVol; #additem Trade %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Trade.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You tap a button on * and the screen displays: * enabled.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}
 #trigger {You tap a button on * and the screen displays: *disabled.} {playsound {Cosmic Rage/general/comms/Deactivate.wav} @CommsVol}
@@ -226,3 +228,4 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {}
 #trigger {The folder closes with a soft swoosh, returning you to the main mail menu.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailclose.wav} @CommsVol}
 #trigger {The recipient manager closes with a soft swoosh.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailclose.wav} @CommsVol}
 #trigger {Soft chimes come from the speakers of a black informational Computer as the recipient manager opens.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailopen.wav} @CommsVol}
+#trigger {* lights up in red and a message upon the screen reads: *} { playsound {Cosmic Rage/general/comms/monitor.wav} @CommsVol}

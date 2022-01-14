@@ -1,3 +1,7 @@
+2034 stormy, credits vade, you can now use ctrl m for canceling mapper gps
+copy misc keys.set
+2033 stormy, credits tatsu, you can now press alt g to use the go exit.
+copy misc keys.set
 2032, James, Made it so that the new transmits a social format works on comms, including private TR links.
 copy cosmic rage\misc\comms.set and socials.set
 2031, James, Fixed the laugh social so you can see when others laugh when you are gagging your own socials.

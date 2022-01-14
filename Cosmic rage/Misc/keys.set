@@ -97,6 +97,8 @@
 #Key {Alt-d} {down} {}
 #Key {Alt-Z} {in} {}
 #Key {Alt-X} {out} {}
+#Key {Alt-G} {go} {}
+#Key {Control-m} {cancel mapper} {}
 #key {Shift-F1} {MuteSound}
 #key F2 {config}
 #key {Control-F1} {smute}

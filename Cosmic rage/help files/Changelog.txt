@@ -1,3 +1,7 @@
+2036 stormy, credits Justin,  the bioharvesting sounds will now step when you type stop
+copy activities bioharvesting.set
+2035 stormy, credits Justin, in bioplasma harvesting, the rod4 now pans correctly. Oops, I never noticed this before.
+copy activities bioharvesting.set
 2034 stormy, credits vade, you can now use ctrl m for canceling mapper gps
 copy misc keys.set
 2033 stormy, credits tatsu, you can now press alt g to use the go exit.

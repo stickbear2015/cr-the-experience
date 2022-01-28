@@ -1,4 +1,7 @@
-2036 stormy, credits Justin,  the bioharvesting sounds will now step when you type stop
+2038 stormy, credits JamesLiveVocals:  and Eli Perez, added a rather funny sound for the ragethrow ooc social. It is also the first true 3d social sound we have.
+2037 stormy, fixed soundpack suggest and bug feature
+copy misc soundpack.set
+2036 stormy, credits Justin,  the bioharvesting sounds will now stop when you type stop
 copy activities bioharvesting.set
 2035 stormy, credits Justin, in bioplasma harvesting, the rod4 now pans correctly. Oops, I never noticed this before.
 copy activities bioharvesting.set

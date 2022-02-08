@@ -290,8 +290,7 @@ playsound {cosmic rage/ships/misc/switch.wav} @vol}
 Loopsound {Cosmic Rage/ships/combat/RedAlert.wav} @CVol;
 #var RedAlertHandle %playhandle; #var RedAlertLoop 1}}
 #trigger {You give an order over pa to stand down and set the alert on the ship to green.} {
-playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol; playsound {cosmic rage/ships/combat/green.wav} @CVol;
-#if {@CombatMusicPlaying = 1} {
+playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol; #if {@CombatMusicPlaying = 1} {
 #pc @CombatmusicPlayingHandle stop;
 #var CombatMusicPlaying 0};
 #if {@RedAlertLoop = 1} {

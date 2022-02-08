@@ -46,6 +46,13 @@ loopsound {cosmic rage/ships/rooms/bridge*3.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/ControlRoom.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "control"; #var currentroom2 "notmisc"}};
+#If {%IfWord(deck,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "deck"} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop};
+loopsound {cosmic rage/ships/rooms/deck.wav} @Shipvol;
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "deck"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Command,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "command"} {
@@ -137,13 +144,13 @@ loopsound {cosmic rage/ships/rooms/WeaponRoom.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/Relaxation.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "relaxation"; #var currentroom2 "notmisc"}};
-#If {%IfWord(Holo,@RoomName," ")} {
+#If {%IfWord(Holodeck,@RoomName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "Holo"} {
+#if {@currentroom <> "Holodeck"} {
 #If {@ShipSoundPlaying = 1} {
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/Holodeck.wav} @Shipvol;
-#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "holo"; #var currentroom2 "notmisc"}};
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "holodeck"; #var currentroom2 "notmisc"}};
 #If {%IfWord(training,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "training"} {
@@ -207,13 +214,6 @@ loopsound {cosmic rage/ships/rooms/capsule.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/cockpit.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "cockpit"; #var currentroom2 "notmisc"}};
-#If {%IfWord(deck,@RoomName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "deck"} {
-#If {@ShipSoundPlaying = 1} {
-#pc @ShipHandle stop};
-loopsound {cosmic rage/ships/rooms/deck.wav} @Shipvol;
-#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "deck"; #var currentroom2 "notmisc"}};
 #If {%IfWord(quarters,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "quarters"} {

@@ -158,5 +158,5 @@
 #trigger {* begi* to growl low in * throat. As the growl grows *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/snarl.wav} @vol}}
 #trigger {* pulls hard on * tail.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tailpull.wav} @vol}}
 #trigger {* pulls on * tail, seeming to wonder where it came from!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tailpull.wav} @vol}}
-#trigger {* picks * up and hurls * out the nearest window like a rag doll!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ragethrow.wav} @vol}}
-#trigger {* picks up a heavy object and, in apparent rage, hurls it out the nearest window!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ragethrow.wav} @vol}}
+#trigger {* picks * up and hurls * out the nearest window like a rag doll!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/throw.wav} @vol}}
+#trigger {* picks up a heavy object and, in apparent rage, hurls it out the nearest window!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/throw.wav} @vol}}

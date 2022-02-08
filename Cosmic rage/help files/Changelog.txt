@@ -1,3 +1,8 @@
+2042 stormy, credits everyone, I have fixed the soundpack, to be more clear, green alert sound. It was bbreaking the whole thing. Sorry about that
+copy ships shipcombat.set
+2041 stormy, credits gummyverge, fixed the ship green alert sound. It should no longer play twice.
+2040 stormy, credits Kolenth  and steve, ragethrow sound is fixed. 
+2039 stormy, the soundpack updator is fixed for good. Though remember to close vipmud before  updating else it will not work.
 2038 stormy, credits JamesLiveVocals:  and Eli Perez, added a rather funny sound for the ragethrow ooc social. It is also the first true 3d social sound we have.
 2037 stormy, fixed soundpack suggest and bug feature
 copy misc soundpack.set

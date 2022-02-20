@@ -229,3 +229,4 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; #additem fires %0} {}
 #trigger {The recipient manager closes with a soft swoosh.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailclose.wav} @CommsVol}
 #trigger {Soft chimes come from the speakers of a black informational Computer as the recipient manager opens.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailopen.wav} @CommsVol}
 #trigger {* lights up in red and a message upon the screen reads: *} { playsound {Cosmic Rage/general/comms/monitor.wav} @CommsVol}
+#TRIGGER {[[]Music FM]*} {playsound {Cosmic Rage/general/comms/musicfm.wav} @CommsVol; #additem musicfm %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char musicfm.log};#write 1 %0;#close 1}} {} AnyCase

@@ -1,3 +1,17 @@
+2049 stormy, credits TwinVictim, the planet forest ambience is now randomised.
+copy misc mainambience.set
+2048 stormy credits vade, fixed the park ambience.
+copy misc mainambience.set
+2047 stormy, credits david, fixed a bug in clasic cars.
+copy vehicles cars.set
+2046 stormy, credits Erick the clone saving sound now works for larkans
+copy misc misc.set
+2045 stormy, credits cindy, added an ambience for the bowling alley. More sounds will be added in the future wen I wrap my head around how this thing actually work.
+copy misc mainambience.set and sounds cr ambiences bowling.wav
+2044 stormy, credits cindy, added an ambience for stables 
+copy misc mainambience.set 
+2043 stormy, credits Muhammad, Added a sound for the musicfm channel.
+Copy sounds general comms musicfm.wav and misc comms.set
 2042 stormy, credits everyone, I have fixed the soundpack, to be more clear, green alert sound. It was bbreaking the whole thing. Sorry about that
 copy ships shipcombat.set
 2041 stormy, credits gummyverge, fixed the ship green alert sound. It should no longer play twice.

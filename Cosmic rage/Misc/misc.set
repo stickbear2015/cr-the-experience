@@ -176,6 +176,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #TRIGGER {Water flows down the side of * and splashes soothingly into a bowl at the bottom.} {playsound {Cosmic Rage\general\Misc\fountain.wav} @vol}
 #trigger {the event, * is happening in *} {playsound {cosmic rage/general/misc/event.wav} @vol}
 #trigger {Your biological profile and synaptic structures have been uploaded to *} {playsound {Cosmic Rage/general/misc/DataSaved.wav} @vol; #gagline all}
+#trigger {Your technical specifications and internal data structures have been uploaded to *} {playsound {Cosmic Rage/general/misc/DataSaved.wav} @vol; #gagline all}
 #trigger {A siren rings out through the area and you hear a voice announce: "All military officers, please proceed to your local boarding points. This is not a drill."} {playsound {Cosmic Rage/general/comms/evac.wav} @vol}
 #TRIGGER {* plays a cheery tune, informing you someone just put up an advertisement.} {playsound {Cosmic Rage/general/misc/advertisement.wav} @vol}
 #trigger {You have * credits} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol}

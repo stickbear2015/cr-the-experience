@@ -18,12 +18,12 @@ playsound {cosmic rage/general/weather/pouringRain.wav} @vol}}
 #gagline all};
 #if {@weather = "Enabled"} {
 playsound {cosmic rage/general/weather/pouringRain.wav} @vol}}
-#trigger {Lightning flashes, and loud thunderclaps shake the building you're in} {
+#trigger {There is a crash of thunder.} {
 #if {@gagWeather = "Enabled"} {
 #gagline all};
 #if {@weather = "Enabled"} {
 playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}}
-#trigger {A rumble of thunder is heard off in the distance.} {
+#trigger {A lance of lightning streaks across the sky.} {
 #if {@gagWeather = "Enabled"} {
 #gagline all};
 #if {@weather = "Enabled"} {
@@ -43,7 +43,7 @@ playsound {cosmic rage/general/weather/harshWind.wav} @vol}}
 #gagline all};
 #if {@weather = "Enabled"} {
 playsound {cosmic rage/general/weather/harshWind.wav} @vol}}
-#trigger {The warning boom of a thunderclap can be felt and heard as it reverberates through the walls and floor.} {
+#trigger {There is a loud boom of thunder.} {
 #if {@gagWeather = "Enabled"} {
 #gagline all};
 #if {@weather = "Enabled"} {

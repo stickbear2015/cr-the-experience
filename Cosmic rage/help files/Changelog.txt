@@ -1,3 +1,11 @@
+2053 stormy, credits twinvictim, fixed the fire alert sound text.
+copy ships rats.set
+2052 stormy, started fixing the weather sounds. Please spbug the ones you see so I can add sounds for those.
+copy misc weather.set
+2051 stormy, credits Kalenna and twinVictim, fixed the say buffer. the spacesuit talk should no longer double
+copy misc comms.set
+2050 stormy, credits LadyElysium, boosted the volume of musicfm channel sound. Because people were thinking that there was no sound!
+copy sounds cr general comms musicfm.wav
 2049 stormy, credits TwinVictim, the planet forest ambience is now randomised.
 copy misc mainambience.set
 2048 stormy credits vade, fixed the park ambience.

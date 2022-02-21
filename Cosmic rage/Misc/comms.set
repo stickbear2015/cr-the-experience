@@ -84,7 +84,7 @@ playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(off,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #trigger {Over your suits intercom, *} {
-playsound {cosmic rage/general/comms/spaceSuitTalk.wav} @CommsVol; #additem Spacesuit %0; #additem say %0} {}
+playsound {cosmic rage/general/comms/spaceSuitTalk.wav} @CommsVol; #additem Spacesuit %0;} {}
 #trigger {[[]Movement]*: "*"} {#if {@QGag = 1} {#sub {[Movement]%1: %2}};
 playsound {cosmic rage/general/comms/movement.wav} @CommsVol; #additem Movement %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Movement.log};#write 1 %0;#close 1}}
 #trigger {[[]Movement] *} {#if {%IfWord(~",%1,"")} {#abort 1};

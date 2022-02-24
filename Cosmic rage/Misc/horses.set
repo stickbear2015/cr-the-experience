@@ -1,5 +1,5 @@
 #trigger {* lets out a soft whinny.} {playsound {cosmic rage/general/horses/whinny*2.wav} @vol}
-#trigger {You * * on *} {
+#trigger {You * * on * the *} {
 #if {%1 = "trot" or %1 = "sprint" or %1 = "plod" or %1 = "clop"} {playsound {cosmic rage/general/horses/trot*3.wav} @vol};
 #if {%1 = "charge"} {playsound {cosmic rage/general/horses/charge*2.wav} @vol};
 #if {%1 = "thunder"} {playsound {cosmic rage/general/horses/charge*2.wav} @vol};

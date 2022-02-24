@@ -184,6 +184,8 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You eat some *} {playsound {Cosmic Rage/general/Food and drink/EatFood.wav} @vol}
 #trigger {You begin to quickly gulp *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
 #trigger {You scarf down *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
+#trigger {You take a long pull from the water stocked in *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
+#trigger {You slide out a ration pack from * pop it open, and eat its contents.} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
 #trigger {Roundtime up. Feel free to move about!} {playsound {Cosmic Rage/general/misc/Roundtime.wav} @vol;#gagline voice}
 #trigger {You give a sudden leap and land in santa's slay!} {playsound {Cosmic Rage/general/misc/Christmas.wav} @vol; #gagline all}
 #trigger {A song begins to blair from hidden speakers.} {#gagline all}

@@ -1,3 +1,13 @@
+2058 stormy, added a sound wen you eat and drink from spacesuits
+copy misc misc.set
+2057 stormy, most of the larkan modules now have sounds. Listen them with speakers if you have, though headphones also work.
+copy misc misc.set and sounds cr general larkan folder and cosmic rage.set
+2056 stormy, lowered the volume of volcano fc sound.
+copy sounds ships fc volcano.wav
+2055 stormy, larkan lightning laser no longer triggers the horse charging sound. Verry funny
+copy misc horses.set
+2054 stormy, credits khal, added a sound for star cores
+copy activities starcoring.set and sounds cr activities starcore sensor.wav
 2053 stormy, credits twinvictim, fixed the fire alert sound text.
 copy ships rats.set
 2052 stormy, started fixing the weather sounds. Please spbug the ones you see so I can add sounds for those.

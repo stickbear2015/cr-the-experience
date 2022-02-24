@@ -77,3 +77,4 @@ playsound {cosmic rage/activities/star cores/core2.wav} @vol; #var CoreLoopHandl
 #if {@coreLoopHandle > 0} {
 #pc @CoreLoopHandle stop}; playsound {cosmic rage/activities/star cores/core3.wav} @vol}}
 #trigger {Some pressurised gas is released from the star core.} {#gagline voice}
+#trigger {There is a soft, barely noticeable whir as sensors extend from both sides of the ship.} {playsound {cosmic rage\activities/star cores/sensor.wav} @vol} 

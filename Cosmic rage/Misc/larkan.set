@@ -3,21 +3,21 @@
 #trig {The ceiling opens up, and several delicate tools descend around you, beginning to work on you with careful mechanical efficiency.} {#gagline voice}
 #trig {A panel over your biocore is opened up, exposing your organic self to the world as several disinfectant sprays are applied to the air.} {#gagline voice}
 #trigger {You * into a module installation alcove.} {playsound {cosmic rage/general/larkan/modinstall.wav} @vol; #var larkanhandle %playhandle; #var larkanloop 1; #alarm 55 {#var larkanloop 0}}
-#trig {The alcove hums as it powers up.} {#gagline voice; playsound {cosmic rage/general/larkan/EXTEND.wav}}
-#trig {Bolts are tightened, and moments later, it's as if nothing ever was done to you at all.} {#gagline voice; playsound {cosmic rage/general/larkan/RETRACT.wav}}
+#trig {The alcove hums as it powers up.} {#gagline voice; playsound {cosmic rage/general/larkan/EXTEND.wav} @vol}
+#trig {Bolts are tightened, and moments later, it's as if nothing ever was done to you at all.} {#gagline voice; playsound {cosmic rage/general/larkan/RETRACT.wav} @vol}
 #trig {The tools retract into the ceiling as your installation alcove begins to shut down.} {#gagline voice}
 #trigger {You * into an installation alcove.} {playsound {cosmic rage/general/larkan/install.wav} @vol}
 #trig {The tools seal the panel over your biofuel ports and retract into the ceiling, a notification flashing across your internal network to let you know the process is done.} {#gagline voice}
-#trig {The door opens and you thud out of the installation alcove.} {#gagline voice}
-#trig {Once removed, the tools close up the panels on your body and it's as if no operation was ever done at all.} {#gagline voice; playsound {cosmic rage/general/larkan/RETRACT.wav}}
+#trig {The door opens and you thud out of the installation alcove.} {#gagline voice @vol}
+#trig {Once removed, the tools close up the panels on your body and it's as if no operation was ever done at all.} {#gagline voice; playsound {cosmic rage/general/larkan/RETRACT.wav} @vol}
 #trig {The ceiling opens, releasing a series of delicate tools which set to work on you.} {#gagline voice}
 #trig {A panel is opened up on your body, exposing installed modules.} {#gagline voice}
 #trig {the tools open up a panel on your body and expose your biofuel release ports.} {#gagline voice}
 #trig {Several delicate tools descend from the ceiling of the installation alcove and set to work on you.} {#gagline voice}
-#trig {You begin to channel bioenergy down your armms and into the discs.} {#gagline voice; playsound {cosmic rage/general/larkan/energyball.wav}}
-#trig {You charge * with * units of biofuel and calculate the blast radius.} {#gagline voice; playsound {cosmic rage/general/larkan/ll.wav}}
-#trig {You begin to charge your hand with electrical energy, the transmitting drawing from your biofuel to do so.} {#gagline voice; playsound {cosmic rage/general/larkan/grasp.wav}}
-#trig {You charge * rocket boosters with * units of biofuel, and your entire body trembles as the boosters activate.} {#gagline voice; playsound {cosmic rage/general/larkan/launch.wav}}
-#trig {* drops out of the sky, flaring * rocket boosters once to slow * fall, feet * onto the ground.} {#gagline voice; playsound {cosmic rage/general/larkan/otherland.wav}}
-#trig {You flip in mid air, burning hard to slow your downward plummet.} {#gagline voice; playsound {cosmic rage/general/larkan/and.wav}}
-#trig {* eyes glow with sudden power, and * rocket boosters activates, launching * skyward on a pillar of white-hot fire.} {#gagline voice; playsound {cosmic rage/general/larkan/otherlaunch.wav}}
+#trig {You begin to channel bioenergy down your armms and into the discs.} {#gagline voice; playsound {cosmic rage/general/larkan/energyball.wav} @vol}
+#trig {You charge * with * units of biofuel and calculate the blast radius.} {#gagline voice; playsound {cosmic rage/general/larkan/ll.wav} @vol}
+#trig {You begin to charge your hand with electrical energy, the transmitting drawing from your biofuel to do so.} {#gagline voice; playsound {cosmic rage/general/larkan/grasp.wav} @vol}
+#trig {You charge * rocket boosters with * units of biofuel, and your entire body trembles as the boosters activate.} {#gagline voice; playsound {cosmic rage/general/larkan/launch.wav} @vol}
+#trig {* drops out of the sky, flaring * rocket boosters once to slow * fall, feet * onto the ground.} {#gagline voice; playsound {cosmic rage/general/larkan/otherland.wav} @vol}
+#trig {You flip in mid air, burning hard to slow your downward plummet.} {#gagline voice; playsound {cosmic rage/general/larkan/land.wav} @vol}
+#trig {* eyes glow with sudden power, and * rocket boosters activates, launching * skyward on a pillar of white-hot fire.} {#gagline voice; playsound {cosmic rage/general/larkan/otherlaunch.wav} @vol}

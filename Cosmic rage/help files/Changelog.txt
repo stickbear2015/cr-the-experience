@@ -1,3 +1,11 @@
+2062 stormy, credits twin_victim, fixed larkan sounds. They did not have the volume setting, oops. Now you can toggle their volume with the main volume setting
+copy misc larkan.set
+2061 stormy, reverted to the old volcano sound. I have shortened it like half and lowered the volume.
+copy sounds cr ships c volcano.wav
+2060 stormy, credits OlegTheSnowman, absolutely destroyed a sneaky combat music bug. 
+copy misc keys.set and ships shipcombat.set
+2059 stormy credits william, Kalenna, Alastor, fixed larkan landing.
+copy misc larkan.set
 2058 stormy, added a sound wen you eat and drink from spacesuits
 copy misc misc.set
 2057 stormy, most of the larkan modules now have sounds. Listen them with speakers if you have, though headphones also work.

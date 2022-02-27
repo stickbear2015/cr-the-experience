@@ -47,12 +47,12 @@
 #key Control-Alt-C {ToggleIdleSounds}
 #key control-alt-M {toggleSoundpackIntroMessage}
 #key control-alt-T {ToggleClocks}
-#key control-shift-n {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1;
+#key control-shift-n {#if {@redalerton = 1}  {#if {@cMusic = "Enabled"} {#var combatmusicPlaying 1;
 #pc @CombatmusicPlayingHandle stop;
 #say {The current combat track has been changed.};
 #playloop {cosmic rage/music/combat/Theme*2.wav} @MVol;
 #var combatMusicPlayingHandle %playHandle;
-#var combatmusicPlaying 1} {
+#var combatmusicPlaying 1}} {#say {Your red alert is not enabled, duh.}} {
 #if {@cMusic = "Disabled"} {
 #say {You must enable combat music for this feature to work correctly.}}}}
 #key {alt-Enter} {togglenumpad}

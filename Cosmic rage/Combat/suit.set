@@ -1,5 +1,5 @@
-#trigger {You step into The Military Flight Suit *} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
-#trigger {You step into The Military Flight Suit *} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
+#trigger {You step into * Flight Suit *} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
+#trigger {You step into * Flight Suit *} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
 #trigger {You slide out of the suit, allowing the jell to retract from around you.} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
 #trigger {You bend the knees of the suit and lunge forward, engaging the rockets at the bottom.} {#gagline all; playsound {Cosmic Rage/general/combat/suit/launch.wav} @GVol}
 #trigger {The airlock ahead of the suit slides open, and you adjust the angle of launch slightly to aim for the middle.} {#gagline all};

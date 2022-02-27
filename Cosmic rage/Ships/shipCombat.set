@@ -70,13 +70,13 @@ playsound {cosmic rage/ships/combat/plasmaCannonHum.wav} @CVol}
 #TRIGGER {On screen, you see * fire*missiles at *} {#gagline all; playsound {cosmic rage/ships/combat/enemyMissile.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #PC %Playhandle Pan %Random(-4000,4000)}};
-#trigger {You set the ship alert to red and call for all hands to stations.} {#gagline all;
+#trigger {You set the ship alert to red and call for all hands to stations.} {#gagline all; #var redalerton 1;
 playsound {cosmic rage/ships/combat/red.wav} @Cvol;
 #if {@CMusic = "Enabled"} {
 #var CombatMusicPlaying 1;
 loopsound {cosmic rage/music/combat/theme*@skice.wav} @MVol;
 #var CombatMusicPlayingHandle %playhandle}};
-#TRIGGER {The overhead strips turn green as you hear an order to stand down over the in ship pa.} {#gagline all;
+#TRIGGER {The overhead strips turn green as you hear an order to stand down over the in ship pa.} {#gagline all; #var redalerton 0;
 playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #if {@CombatmusicPlaying = 1} {
 #pc @CombatmusicPlayingHandle stop;

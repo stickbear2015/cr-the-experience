@@ -50,3 +50,4 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {* firmly grabs * and wraps a reel of very sticky tape around * head until * mouth is tightly taped shut.} {playsound {cosmic rage/general/house/tape_roll*2.wav} @vol};
 #TRIGGER {You yank the tape *} {playsound {cosmic rage/general/house/tape_pull*2.wav} @vol};
 #TRIGGER {* yanks the tape *} {playsound {cosmic rage/general/house/tape_pull*2.wav} @vol};
+#TRIGGER {A series of loud knocks come from the front door.} {playsound {cosmic rage/general/misc/knock.wav} @vol};

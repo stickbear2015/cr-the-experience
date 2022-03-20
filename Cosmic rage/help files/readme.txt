@@ -36,7 +36,7 @@ download it from, https://www.nathantech.net/nathantechsoftware.php
 	D. Finally, save your packs settings with control-s. Failing to follow the directions by not typing Control-S will throw endless errors if you try to load the pack once more. If this happens, just type SaveBuffers, and you'll be fine. It is not our fault if you fail to do this. It's also a good idea to back up your buffer settings and general pack settings after you get them how you'd like.
 If everything went according to plan, you should have a fully working pack! If something goes wrong, please go through and read the installation instructions outlined above and apply any changes necessary before contacting the soundpack developers
 note, a last resort installing method.
-if the setupping way described above didnt helped you, you can copy the character.mud file, located in the main folder of the soundpack to c:\users username vipmud folder, you will have a prepared char that is compatible with the soundpack.  IMPORTANT Note this will override your existing added mud chars, backing this file is advised
+if the install method described above didnt work for you, you can copy the character.mud file, located in the main folder of the soundpack to c:\users username vipmud folder, you will have a prepared char that is compatible with the soundpack.  IMPORTANT Note this will override your existing added mud chars, backing this file up is advised
 
 			**Updating Your Soundpack**
 
@@ -80,19 +80,19 @@ note, only planets and factories at the time of writing this. I havent tested ap
 3, go to your documents folder or your v i p user folder 
 4, follow this path, sounds cosmic rage music planets
 5, paste your music (must be in .wav format)
-6, rename the music as your factorie's or the planet's name, remember, it should be the same as the factorie's or the planet's else this wont work
+6, rename the music as your factorie's or the planet's name, remember, it should be the same as the factorie's or the planet's else this will not work
 7, within the game, type #edit misc/music.set
 
 You have 10 custom slots that allow you to add music. If you have filled one, you cant use that slot again if you dont override it
 Slots are renamed like this. changeone, change2, change3, change4, up to change10
 8, press ctrl h while on the notepad page of music.set
-9, type the slot's number into the first box, e.g. changeone, change2, change 6, change9, change10
+9, type the slot's number into the first box, e.g. changeone, change2, change6, change9, change10
 10, press tab and type your factories name here, It should be the same as your factories name
 11, press shift tab 3 times, it should say change all, or similor.
 12, press enter, press escape and ctrl s to save the file.
 13,  reload the pack
 14, if something still doesnt work, read the introductions once again.
-note, dont ask for any custom music to be crafted or given, its not will be provided
+note, dont ask for any custom music to be crafted or given, it  will not be provided
 note2, take a backup of this file before updating your soundpack, else it will be overriten and all of your changes will be lost for ever, no refunds!
 note3, if something breaks, copy the main file from the dropbox folder or from the zip file that you downloaded from
 note4, the music you add could only be heard by yourself, since this is your own copy. Other people are not going to hear the music that you put.

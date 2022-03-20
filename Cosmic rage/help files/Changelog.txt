@@ -1,3 +1,7 @@
+2064 stormy, credits OlegTheSnowman, the ship recharging sound now stops wen you exit from the ship.
+copy ships ships.set
+2063 stormy, credits rafly, added a sound for house door knocking.
+copy misc houses.set
 2062 stormy, credits twin_victim, fixed larkan sounds. They did not have the volume setting, oops. Now you can toggle their volume with the main volume setting
 copy misc larkan.set
 2061 stormy, reverted to the old volcano sound. I have shortened it like half and lowered the volume.

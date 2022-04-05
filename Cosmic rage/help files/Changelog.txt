@@ -1,3 +1,5 @@
+2065 stormy, credits rafly and shell, The olink sounds now actually play.
+copy misc comms.set
 2064 stormy, credits OlegTheSnowman, the ship recharging sound now stops wen you exit from the ship.
 copy ships ships.set
 2063 stormy, credits rafly, added a sound for house door knocking.

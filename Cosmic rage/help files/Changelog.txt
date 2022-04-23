@@ -1,3 +1,9 @@
+2069 stormy, credits oleg, readded the general communicate sound for the  mutariansi
+copy misc mutariansi.set
+2068 stormy, credits Mutia, fixed the dispatch buffer. It is no longer called the fires buffer, oops.
+copy misc comms.set
+2067 stormy, credits Elizabeth , fixed the squad channel sound and buffer
+copy misc comms.set
 2066 stormy, credits emma, fixed host shout sound
 copy misc host.set
 2065 stormy, credits rafly and shell, The olink sounds now actually play.

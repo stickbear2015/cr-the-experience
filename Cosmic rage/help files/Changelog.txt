@@ -1,3 +1,6 @@
+2072 stormy, credits Oleg, You now hear a sound wen someone sends the typing alert like how it works for the emoting command.
+2071 stormy, credits Annellin, lowered the sound of the newbie channel slightly. It doesnt sound too loud but hope this helps for those who find it loud. 
+2070 stormy, firecloak sound will now plays wen someone else uses itTt
 2069 stormy, credits oleg, readded the general communicate sound for the  mutariansi
 copy misc mutariansi.set
 2068 stormy, credits Mutia, fixed the dispatch buffer. It is no longer called the fires buffer, oops.

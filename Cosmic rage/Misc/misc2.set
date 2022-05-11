@@ -38,3 +38,4 @@
 #trigger {* begins to control * droid wirelessly using *} {#gagline all}
 #trigger {You finish using * and lock it with the button at the top.} {#gagline voice}
 #trigger {* finishes using * and locks it with the button at the top.} {#gagline voice}
+#TRIGGER {* is typing...} {playsound {Cosmic Rage/general/misc/emote.wav} @vol}

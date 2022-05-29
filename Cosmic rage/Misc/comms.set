@@ -148,7 +148,7 @@ playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #TRIGGER {Sorry, something seems to have gone wrong. Don't worry though, we've been made aware of it. We would appreciate you giving us extra information on this error by entering a report. You can use the ID * when doing so to include your traceback. Please do not execute this command until further notice.} {#say {traceback ID is %1}; playsound {cosmic rage/general/misc/Traceback.wav} @Vol; #additem Tracebacks %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Tracebacks.log}; #write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Ship to Ship transmission on channel * from *]*} {playsound {Cosmic Rage/general/comms/Ship2ship.wav} @CommsVol; #additem Ship %0} {} AnyCase
-#Trigger {[[]Sq uad]*} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; #additem Squad %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Squadren.log};#write 1 %0;#close 1}} {} AnyCase
+#Trigger {[[]Squad]*} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; #additem Squad %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Squadren.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Skills]:*} {playsound {Cosmic Rage/general/comms/SkillTimer.wav} @CommsVol} {} AnyCase
 #trigger {[[]External mike]*} {playsound {Cosmic Rage/ships/Com/Pa*2.wav} @CommsVol; #additem PA %0} {} AnyCase
 #trigger {[[]In Ship communication]*} {playsound {Cosmic Rage/ships/com/PA*2.wav} @CommsVol; #additem PA %0} {} AnyCase

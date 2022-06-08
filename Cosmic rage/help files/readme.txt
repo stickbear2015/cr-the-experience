@@ -15,6 +15,7 @@ Included in the main soundpack directory is a file called sounds.ini. This file 
 1.1.3, google drive link, this folder is synced with the main dropbox folder, so it will be up to date all the time, as long as the dropbox folder is being updated. the link is, https://drive.google.com/drive/folders/13DGSRHHGPJAZRtvhpp-HcxpmdEdywE-k?usp=sharing
 	note, the developers of this pack advise of the usage of the Nathan Tech VIP mud soundpack installer, it lets you setup  and update your soundpacks without ddealing with the character dialog. 
 download it from, https://www.nathantech.net/nathantechsoftware.php
+
 2. Manual install. You will need to go and make sure all the information is correct in the connection setup wizard within VIPMud. several questions have been asked about this, so answers will be provided.
 	A. Under the Connect menu within VIPMud's menu structure, find the Character Setup/Connect option. Hit enter on that and you'll be dropped into the connection wizard. A few edit boxes and options will present themselves. The NVDA screen reader does not read these edit boxes, so the window text has been captured and is shown below. Fields that are required are marked with asterisks.
 		1. *Character Name*. This is normally the name you give your character within the MUD. Not filling this out will cause the pack to throw errors. Note: This cannot be "Unnamed" and cannot contain spaces.
@@ -44,7 +45,7 @@ if the install method described above didnt work for you, you can copy the chara
 1. Please hit alt-V or type SpVersion, the pack will notify you of the last change of the pack, and how many changes your behind.
 2. Copy any files listed in the changelog, or you can just do a full copy of the folder. Please make sure to back up your characters .set file if you don't want to lose any added alias's or triggers.
 		If you have downloaded the zip version of the pack, first extract the folder, then copy the content of the soundpack directory into your VIPMud directory.
-		The soundpack also has an updater which will update the soundpack for you. you can download this at https://cosmicrage.earth in the extra resources section.
+		The soundpack also has an updater which will update the soundpack for you. you can download this by going to this link: https://nathantech.net/files/Cosmic%20Rage%20Soundpack%20Updater%20v1.1%20setup.exe. Please consult the application's documentation for usage instructions
 		 adding custom music for ship combat
 1, find some music
 2, go to the sounds/music/combat folder

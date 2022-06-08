@@ -3,8 +3,9 @@
 #TRIGGER {You slide a switch on the main console until the arrow rests under "Automatic Pilot Mode."} {#gagline voice; playsound {cosmic rage/ships/misc/auto.wav} @vol};
 #TRIGGER {* jump into the sector.} {playsound {cosmic rage/ships/misc/EnterSector.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)};
 #TRIGGER {* jump out of the sector.} {playsound {cosmic rage/ships/misc/ExitSector.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)};
-#TRIGGER {A small light blinks on next to the intercom and you hear the voice of * say: "*"} {playsound {cosmic rage/ships/com/pa*2.wav} @vol};
+#TRIGGER {A small light blinks on next to the intercom and you hear the voice of * say: "*"} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0}
 #TRIGGER {The sound of crunching can be heard over pa.} {playsound {cosmic rage/ships/com/pa*2.wav} @vol};
+#TRIGGER {The sound of * swearing profusely can be heard over the PA system.} {playsound {cosmic rage/ships/com/pa*2.wav} @vol};
 #TRIGGER {Defensive system status report:} {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
 #TRIGGER {Damage report: } {playsound {cosmic rage/ships/computer/display*4.wav} @vol};
 #TRIGGER {Status report for *} {playsound {cosmic rage/ships/computer/display*4.wav} @vol};

@@ -1,3 +1,8 @@
+2077 stormy, credits oleg, YOu now hear a sound wen your mission rank goes up
+2076 stormy, credits oleg, you now hear the squad sound wen someone creates a squad
+copy misc comms.set
+2075 stormy, credits rafly and sandy, The intercom is now being logged on the pa buffer
+2074 stormy, credits thaa, fixed a slight issue with the pa
 2073 stormy, credits, the oens that bugged me 24/7, squad buffer and sound is fixed. Like fixed for good.
 copy misc comms.set
 2072 stormy, credits Oleg, You now hear a sound wen someone sends the typing alert like how it works for the emoting command.

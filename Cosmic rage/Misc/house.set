@@ -8,6 +8,7 @@
 #TRIGGER {* turns on the water.} {playsound {Cosmic Rage/general/house/sink.wav} @vol}
 #TRIGGER {You squeeze some toothpaste onto *} {playsound {Cosmic Rage/general/house/tooth1.wav} @vol}
 #TRIGGER {You carefully begin cleaning your front teeth with *} {playsound {Cosmic Rage/general/house/tooth2.wav} @vol}
+#TRIGGER {You brush * across the front of your teeth.} {playsound {Cosmic Rage/general/house/tooth2.wav} @vol}
 #TRIGGER {* squeezes some toothpaste onto *} {playsound {Cosmic Rage/general/house/tooth1.wav} @vol}
 #TRIGGER {You start to use * mop.} {playsound {Cosmic Rage/general/house/mop.wav} @vol}
 #TRIGGER {* starts to use * mop.} {playsound {Cosmic Rage/general/house/mop.wav} @vol}
@@ -51,3 +52,7 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {You yank the tape *} {playsound {cosmic rage/general/house/tape_pull*2.wav} @vol};
 #TRIGGER {* yanks the tape *} {playsound {cosmic rage/general/house/tape_pull*2.wav} @vol};
 #TRIGGER {A series of loud knocks come from the front door.} {playsound {cosmic rage/general/misc/knock.wav} @vol};
+#TRIGGER {* sna* a selfie.} {playsound {cosmic rage/general/house/cam.wav} @vol};
+#TRIGGER {* sna* a picture of * using *} {playsound {cosmic rage/general/house/cam.wav} @vol};
+#TRIGGER {* sna* a photo of * on a *} {playsound {cosmic rage/general/house/cam.wav} @vol};
+#TRIGGER {You snap a selfie.} {playsound {cosmic rage/general/house/cam.wav} @vol};

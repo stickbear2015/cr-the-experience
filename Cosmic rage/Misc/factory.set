@@ -154,3 +154,12 @@ playsound {cosmic rage\general\factory\GasTank.wav} @vol}
 #trigger {The drones continue working.} {#gagline all; playsound {cosmic rage/general/factory/build*6.wav} @vol}
 #trigger {* hums loudly before activating an internal teleportation device and vanishing in a blue flash.} {#gagline voice; playsound {cosmic rage/general/factory/resteleport.wav} @vol}
 #trigger {* empties some resources, small drones moving them to where they need to go before returning to the crate.} {#gagline voice; playsound {cosmic rage/general/factory/resunload.wav} @vol}
+#trigger {You buckle yourself safely in, and you feel the ride start to move, slowly picking up speed as it heads down the track.} {
+playsound {cosmic rage/general/factory/roller coaster.wav} @vol;
+#var rchandle %playhandle}
+#trigger {* are strapped into a roller coaster car.} {playsound {cosmic rage/general/factory/roller coaster.wav} @vol;
+#var rchandle %playhandle}
+#trigger {You safely exit the car and back on to the plaza.} {
+#if {@rchandle < 0} {#abort 1} {
+#if {@rchandle > 0} {#pc @rchandle stop}}}
+

@@ -306,4 +306,5 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Inside"}};
 #trigger {* begins to tap the screen of a remote control for a helper drone.} {#if {@hpdr = "gagged"} {#gagline all}}
 #trigger {* finishes using a remote control for a helper drone.} {#if {@hpdr = "gagged"} {#gagline all}}
-#trigger {congratulations, you have reached spacing mission rank *!} {playsound {Cosmic Rage/general/misc/invade.wav.} @vol}
+#trigger {Congratulations, you have reached spacing mission rank *} {playsound {Cosmic Rage/general/misc/invade.wav.} @vol}
+#trig {Would you like a scar on your new clone?} {#pc 0 stop}

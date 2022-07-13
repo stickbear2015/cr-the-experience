@@ -1,3 +1,21 @@
+2087 stormy, credits Kaira, fixed teethbrush sound. Hopefully
+2086 stormy, credits Jessabelle, fixed death sound not playing issue. was Annoying i kno. Sorries
+2085  stormy, credits Sampaguita, I didnt test this because I dont know any muties and I'M lazy to find one but, the mutariansi say jingle should play for mutariansi humans only. Blame Sampaguita if it doesnt work.
+2084 stormy, credits everyone, fixed cameras
+2083 stormy, credits Elizabeth, fixed ship powered down ambience not playing bug.
+2082  stormy, credits Rafly , cameras now have sounds
+2081 Suggestion by Amara Navy blue designation.
+Added a sound for spraying air freshener.
+copy sounds/cr/general/misc/air freshener spray.wav
+copy cr/misc/misc2.set
+2080 suggested by Madalin Gradinaru.
+Hopefully squashed a bug with the repairing sound continuing to play after exiting a vehicle.
+copy cr/vehicles/vehicles.set
+2079 Suggestion by Allik.
+Added a sound when riding a roller coaster on factories. It will work with and without a baby with you.
+copy cr/general/factory/roller coaster.wav
+copy cr/misc/factory.set
+2078 stormy, credits hunter, fixed mission ranking up sound. Hopefully
 2077 stormy, credits oleg, YOu now hear a sound wen your mission rank goes up
 2076 stormy, credits oleg, you now hear the squad sound wen someone creates a squad
 copy misc comms.set

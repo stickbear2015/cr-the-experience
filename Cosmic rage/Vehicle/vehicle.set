@@ -188,7 +188,8 @@ playsound {cosmic rage/vehicle/accelerate1.wav} @veVol}}
 #trigger {a gleaming silver drone pushes * into the store.} {#gagline all}
 #TRIGGER {A red light flashes urgently on your vehicle's display, informing you of hostiles being detected.} {#gagline voice; playsound {cosmic rage/vehicle/land.wav} @vevol};
 #TRIGGER {Screetching sirens fill the air from * as revolving lights circle its main body.} {#gagline voice; playsound {cosmic rage/vehicle/caralarm.wav} @vevol};
-#TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vevol; #if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0}; #var siren 0; #if {@charging = 1} {#pc @chargeHandle stop}}
+#TRIGGER {You step out of the vehicle.} {playsound {cosmic rage/vehicle/Exit Vehicle.wav} @vevol; #if {@VehicleSoundPlaying = 1} {#pc @vehiclehandle stop; #var VehicleSoundPlaying 0}; #var siren 0; #if {@charging = 1} {#pc @chargeHandle stop};
+#if {@repPlaying = 1} {#pc @rephandle stop; #var repPlaying 0}}
 #TRIGGER {The deck hums with power as engine 1 is fired up.} {#gagline voice; playsound {cosmic rage/vehicle/boatstart.wav} @vevol};
 #trig {The deck hums with power as engine 2 is fired up.} {#gagline voice}
 

@@ -1,12 +1,12 @@
 #var bikelist { zoom | trundle | speed | ride }
 
-#trigger {* is disconnecting: *} {#additem ConnectionMessages %0}
-#TRIGGER {* returns to reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}; #additem ConnectionMessages %0}
-#TRIGGER {* enters from reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; #additem ConnectionMessages %0}
-#TRIGGER {It's a new player! * enters from reality.} {playsound {Cosmic Rage/general/misc/Cheer.wav} @vol; #additem ConnectionMessages %0}
-#trigger {*is now AFK*} {#additem AFKMessages %0}
-#trigger {*will be right back*} {#additem AFKMessages %0}
-#trigger {* has returned*} {#additem AFKMessages %0}
+#trigger {* is disconnecting: *} {BufferAdd connectionMessages %0}
+#TRIGGER {* returns to reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LogoutOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LogoutNew.wav} @vol}; BufferAdd connections %0}
+#TRIGGER {* enters from reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; BufferAdd connectionMessages %0}
+#TRIGGER {It's a new player! * enters from reality.} {playsound {Cosmic Rage/general/misc/Cheer.wav} @vol; BufferAdd connectionMessages %0}
+#trigger {*is now AFK*} {bufferadd AFKMessages %0}
+#trigger {*will be right back*} {bufferadd AFKMessages %0}
+#trigger {* has returned*} {bufferadd AFKMessages %0}
 #TRIGGER {You can't go that way.} {#gagline all; playsound {cosmic rage/general/misc/CantGo.wav} @vol};
 #TRIGGER {[[]Type a line of input *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
 #TRIGGER {[[]Enter * or *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
@@ -22,9 +22,9 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {* stands up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
 #trigger {You lie down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
 #trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol; }
-#TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol; #additem CashAndPoints %0}
-#TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
-#TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; #additem CashAndPoints %0}
+#TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol; bufferadd CashAndPoints %0}
+#TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; bufferadd CashAndPoints %0}
+#TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; bufferadd CashAndPoints %0}
 #TRIGGER {* follow* in.} {#if {@DroneSounds = 1} {playsound {cosmic rage/general/misc/DroidLeaves.wav} @vol}}
 #trigger {*delivery drone zooms *} {
 #if {%ifWord(into,%2," ")} {
@@ -45,7 +45,7 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {* bolts * so it can not be moved.} {playsound {cosmic rage/general/misc/bolt.wav} @vol};
 #TRIGGER {* unbolts * and picks it up.} {playsound {cosmic rage/general/misc/unbolt.wav} @vol};
 #TRIGGER {You hear a solid bong as the cleaning equipment returns with something.} {#gagline all; playsound {cosmic rage/general/misc/gottrash.wav} @vol};
-#TRIGGER {* [[]Notice]:*} {playsound {cosmic rage/general/misc/Notice.wav} @vol; #additem Notices %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1}} {} AnyCase 
+#TRIGGER {* [[]Notice]:*} {playsound {cosmic rage/general/misc/Notice.wav} @vol; bufferadd Notices %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1}} {} AnyCase 
 #TRIGGER {You hear a ring, ring from *} {#gagline all; playsound {cosmic rage/general/misc/ring.wav} @vol};
 #TRIGGER {* plays a * tune} {playsound {cosmic rage/general/comms/phoneRing.wav} @vol};
 #TRIGGER {You tap a few buttons on * accessing its menu.} {#gagline all; playsound {cosmic rage/general/misc/complogin.wav} @vol};
@@ -70,14 +70,14 @@ playsound {cosmic rage/general/misc/ping.wav} @vol}
 #TRIGGER {A bright beam of light appears suddenly. When it clears, * has appeared from nowhere!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #trigger {You are enveloped by a bright beam of light!} {
 playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}}
-#TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; #additem CashPointsSkillsAndLeveling %0}
+#TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; bufferadd CashPointsSkillsAndLeveling %0}
 #TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Disabled"} {#gagline all}}
 #trigger {Type a line of input.} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #trigger {There are * unread changes since your last login.} {playsound {cosmic rage/general/misc/Change.wav} @vol}
-#TRIGGER {You raise your * to *.0!} {playsound {cosmic rage/general/Level/level.wav} @vol; #additem CashPointsSkillsAndLeveling %0}
+#TRIGGER {You raise your * to *.0!} {playsound {cosmic rage/general/Level/level.wav} @vol; bufferadd CashPointsSkillsAndLeveling %0}
 #trigger {You have been sent * notifications since your last login. *} {
-playsound {cosmic rage/general/misc/notify.wav} @vol; #additem Notices %0}
+playsound {cosmic rage/general/misc/notify.wav} @vol; bufferadd Notices %0}
 #trigger {* starts following you.} {
 playsound {cosmic rage/general/misc/joins.wav} @vol}
 #trigger {* begins to follow you.} {
@@ -105,8 +105,8 @@ playsound {cosmic rage/general/misc/cargoDrone.wav} @vol}
 #gagline all}
 #TRIGGER {*The game time is now*} {
 #sub {%2}; playsound {cosmic rage/general/misc/time.wav} @vol}
-#trigger {[[]Newbie tip!]*} {playsound {cosmic rage/general/misc/tip.wav} @vol; #additem Newbie %0}
-#TRIGGER {* flashes * indicating a new message was just received on */*/*} {playsound {cosmic rage/general/misc/mbn.wav} @vol; #additem MessageBoard %0}
+#trigger {[[]Newbie tip!]*} {playsound {cosmic rage/general/misc/tip.wav} @vol; bufferadd Newbie %0}
+#TRIGGER {* flashes * indicating a new message was just received on */*/*} {playsound {cosmic rage/general/misc/mbn.wav} @vol; bufferadd MessageBoard %0}
 #trigger {* throws a * into the air.} {playsound {Cosmic Rage/general/firework/w*6.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
 #trigger {* explodes in a brilliant *light!} {playsound {Cosmic Rage/general/firework/e*6.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)} {} AnyCase
 
@@ -152,9 +152,9 @@ playsound {cosmic rage/general/DOORS/doorlock.wav} @vol};
 playsound {cosmic rage/general/DOORS/doorunlock.wav} @vol};
 #if {%ifWord(locks,%1," ")} {
 playsound {cosmic rage/general/DOORS/doorlock.wav} @vol}}
-#trigger {*One or more polls have been posted. Please type * to see what.} {playsound {cosmic rage/general/misc/vote.wav} @vol; #additem Notices %0}
+#trigger {*One or more polls have been posted. Please type * to see what.} {playsound {cosmic rage/general/misc/vote.wav} @vol; bufferadd Notices %0}
 #trigger {There have been the following message board posts that you are required to read: *} {
-playsound {cosmic rage/general/comms/messageBoardNotify.wav} @vol; #additem MessageBoard %0}
+playsound {cosmic rage/general/comms/messageBoardNotify.wav} @vol; bufferadd MessageBoard %0}
 
 #trigger {You feel * units of plasma return to your form.} {#if {@TPR = "Enabled"} {#gagline all;
 playsound {cosmic rage/general/misc/plasmaRecover.wav} @vol}}
@@ -182,8 +182,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You have * credits} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol}
 #trigger {You take a drink from a *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
 #trigger {You eat some *} {playsound {Cosmic Rage/general/Food and drink/EatFood.wav} @vol}
-#trigger {You begin to quickly gulp *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
-#trigger {You scarf down *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
+#trigger {You begin to quickly eat your way through *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
 #trigger {You take a long pull from the water stocked in *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
 #trigger {You slide out a ration pack from * pop it open, and eat its contents.} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
 #trigger {Roundtime up. Feel free to move about!} {playsound {Cosmic Rage/general/misc/Roundtime.wav} @vol;#gagline voice}
@@ -195,28 +194,28 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {* reports it attempted to do your command to the best of its ability.} {#gagline all; #var HD 0}
 #trigger {Via *, * located at * informs you:} { #gagline all; #var HD 1; playsound {Cosmic Rage/general/misc/droid.wav} @vol}
 #trigger {* Game saved.} {playsound {Cosmic Rage/general/misc/GameSave.wav} @vol}
-#trigger {[[]Resource Market]:*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase
+#trigger {[[]Resource Market]:*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; bufferadd InfoComputerNotifications %0} {} AnyCase
 #trigger {A new quote has been added to the quote database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
 #trigger {A quote was just removed from the database!} {playsound {Cosmic Rage/general/misc/Quote.wav} @vol}
-#trigger {* flashes bright blue, indicating someone just * order *} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
+#trigger {* flashes bright blue, indicating someone just * order *} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; bufferadd InfoComputerNotifications %0}
 #trigger {* lets out a horrible buzzing noise, before jerkily turning around and flying away.} {playsound {Cosmic Rage/general/misc/DroneBuzz.wav} @vol}
 #trigger {* would like to lead you. Is this ok?} {playsound {Cosmic Rage/general/misc/LeadRequest.wav} @vol}
 #trigger {You indicate to * that * should follow you.} {playsound {cosmic rage/general/misc/joins.wav} @vol}
 #trigger {"Continue * *" says * mapper quietly in * voice.} {
 #if {@shortMapText = "Enabled"} {
-#sub {%1};#additem mapper %0}}
+#sub {%1};bufferadd mapper %0}}
 #TRIGGER {"Head * *" says * mapper quietly in * voice.} {
 #if {@ShortMapText = "Enabled"} {
-#sub {%1}; #additem Mapper %0};
+#sub {%1}; bufferadd Mapper %0};
 playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {You tap a button on * mapper and the screen displays: *} {
 #if {@ShortMapText = "Enabled"} {
 #sub {%2}}}
 #trigger {You glance at a wall mounted display and see a route going *.} {
 #if {@ShortMapText = "Enabled"} {
-#sub {%1}; #additem mapper %0}}
+#sub {%1}; bufferadd mapper %0}}
 #trigger {* scoops up * munching it in a few mighty chomps.} {playsound {Cosmic Rage\general\Misc\peteat.wav} @vol}
-#trigger {* mapper quietly says in *: "You have arrived at your destination."} {#gagline voice;playsound {Cosmic Rage/general/misc/ArrivedDestination.wav} @vol; #additem Mapper %0}
+#trigger {* mapper quietly says in *: "You have arrived at your destination."} {#gagline voice;playsound {Cosmic Rage/general/misc/ArrivedDestination.wav} @vol; bufferadd Mapper %0}
 #trigger {You close *washer} {playsound {Cosmic Rage/general/Washing/Washing1.wav} @vol; #gagline all}
 #trigger {*light flicks on * washer and through the door at the front you see the clothing begin to revolve clockwise.} {loopsound {Cosmic Rage/general/Washing/Washing2.wav} @vol; #gagline all; #var Washhandle %playhandle; #var Wash 1}
 #trigger {*washer gurgles, then rotates the clothing anti clockwise.} {#gagline all}
@@ -238,15 +237,15 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {[[]camera]: *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
 #trigger {*security drone* * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security drone located at %4 informs you %5}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {*security camera* * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security camera located at %4 informs you %5}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; #additem InfoComputerNotifications %0}
+#trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; bufferadd InfoComputerNotifications %0}
 #trigger {The pod turns *} {#if {@SilentPod = "Enabled"} {#gagline all}}
-#trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol; #additem InfoComputerNotifications %0}
-#trigger {You whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
-#trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; #additem say %0}
+#trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol; bufferadd InfoComputerNotifications %0}
+#trigger {You whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; bufferadd say %0}
+#trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; bufferadd say %0}
 #trigger {You unlock the door to * and enter.} {#pc 0 stop}
 #trigger {The pod banks *} {#if {@SilentPod = "Enabled"} {#gagline all}}
 #trigger {*tap* shoulder.} {playsound {Cosmic Rage/general/misc/Tap.wav.} @vol}
-#trigger {[[]Marketing*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; #additem InfoComputerNotifications %0} {} AnyCase
+#trigger {[[]Marketing*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; bufferadd InfoComputerNotifications %0} {} AnyCase
 #trigger {A huddled group of ryuchi suddenly fills the landing pad with their raucous laughter.} {#gagline voice}
 #trigger {You open the lid and pull out a couple of specially made drones.} {#gagline voice}
 #trigger {The drones immediately get to work, pulling plates from the crate and some kind of insulation from inside themselves.} {#gagline voice}
@@ -261,8 +260,8 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {There is a rattle and then a thunk as * drops down into the tray of *} {#gagline all; playsound {Cosmic Rage/general/misc/Vending Machine.wav} 80}
 #trigger {You tap on the icon of * on * display before resting your *against the scanner.} {#gagline all}
 #trigger {* taps an icon on the screen of * vending machine before resting * on the scanner.} {#gagline all}
-#trigger {*} {#if {@HD = 1} {#Additem HelperDrone %0; #var HD 0}}
-#trigger {The flashing icons on * draw your attention *} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @CommsVol; #additem InfoComputerNotifications %0}
+#trigger {*} {#if {@HD = 1} {bufferadd HelperDrone %0; #var HD 0}}
+#trigger {The flashing icons on * draw your attention *} {playsound {Cosmic Rage/general/comms/InfoComputerNotification.wav} @CommsVol; bufferadd InfoComputerNotifications %0}
 #TRIGGER {Warning! You have less than a minute of oxygen left in your spacesuit!} {playsound {cosmic rage/general/Misc/warning.wav} @vol}
 #TRIGGER {You pick up * and dial a number.} {#Gagline ALL;
 playsound {cosmic rage/general/misc/taxi_phone.wav} @vol} {}
@@ -271,7 +270,7 @@ playsound {cosmic rage/general/misc/taxi_hangup.wav} @vol} {}
 #TRIGGER {you belt yourself in to your chair.} {playsound {cosmic rage/general/misc/seatbelt.wav} @vol} {}
 #trigger {Glancing at * you see the route is *.} {
 #if {@ShortMapText = "Enabled"} {
-#sub {%2}; #additem mapper %0}}
+#sub {%2}; bufferadd mapper %0}}
 #trigger {Enter a number, or a partial item name.} {#gagline all}
 #trigger {*C O N G R A T U L A T I O N S!*} {
 playsound {cosmic rage/general/misc/congratulations.wav} @vol}
@@ -308,3 +307,5 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #trigger {* finishes using a remote control for a helper drone.} {#if {@hpdr = "gagged"} {#gagline all}}
 #trigger {Congratulations, you have reached spacing mission rank *} {playsound {Cosmic Rage/general/misc/invade.wav.} @vol}
 #trig {Would you like a scar on your new clone?} {#pc 0 stop}
+#trigger {You begin to quickly gulp down *} {loopsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol; #var gulphandle %playhandle; #var gulploop 1}
+#trig {You finish * dispos* of the *} {#if {@gulploop = 1} { #pc @gulphandle stop; #var gulploop 0; playsound {Cosmic Rage/general/misc/trash.wav} @vol}}

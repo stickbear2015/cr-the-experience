@@ -1,12 +1,17 @@
 the following people have contributed to the development of this pack in various ways. If you see them around, feel free to give them a thumbs up!
-Thanks to Jitel Gold scale for the planetary music.
-Thanks to [Gladr Gold scale for his sound contributions.
-Thanks to host Faylen Claris for all the help with the buffers system.
-Thanks to Andre Louis for some of the music in this pack. You can check out his stuff by going to http://www.andrelouis.com
-thanks for thaa amber designation for   hosting once the old unofficial google drive folder. 
-special thanks from stormy. Thanks to  Ryok Black scale for refering someone to the dropbox using my referral link. if he didnt do that, i would need to stop using dropbox to push updates from my end do to space limitations.
-
 This pack started out as a forked project of the pack that Erra and Nate worked on. Erra, Nate, thank you.
 Thanks goes out to max wilson for his help with ambience, ship, and what ever code he contributed.
+Thanks to Jitel Gold scale for the planetary music.
+Thanks to [Gladr Gold scale for his sound contributions.
+Thanks to host Faylen Claris for all the help with the buffers system. (now legacy  buffer system)
+Thanks to Andre Louis for some of the music in this pack. You can check out his stuff by going to http://www.andrelouis.com
+thanks for thaa amber designation for   hosting once the old unofficial google drive folder. 
+special thanks from stormy. Thanks to  Ryok Black scale for refering someone to the dropbox using my referral link. if he didnt do that, i would've need to stop using dropbox to push updates from my end do to space limitations.
+Thanks to SaPeru for rewriting starship weapon script. It functions the same, but it is far more easy to manage and bugfix if required! His version of the script is almost 4k character smaller than myne was! 
+Huge Thanks to Saperu for rewriting the buffering system from scratch. It has far more better functionalety now and it is far more flexable than before. Also vipmud will no longer yell t you about overflow errors.
 
-New Admin team in place. Thank you, Snapp Blue Scale, for everything you have done to bring this soundpack to where it has come. Credit until change 762 work goes, and will always go, to you.
+
+
+
+
+Credit until change 762 work goes, and will always go, to Snapp blue scale.

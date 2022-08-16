@@ -1,50 +1,65 @@
-#trigger {A young blonde says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A holographic dog barks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A muscled man says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A huge dragon thunders: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A tall ryuchi rumbles: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A blueish cy-larken beeps: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A small cat meows: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {Some holographic letters form the words: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {Some holographic fruit arrange themselves to read: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {On screen, you read: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A tiny ryuchi mutters: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A tiny drake squeaks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A short human says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A muscle-packed security hologram yells: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A beautiful young woman murmurs: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A smiley woman says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A smiley man says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A holographic military officer barks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A tiny squirrel squeaks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A small duck quacks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A silver unicorn nays: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A large pegasus nays: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A large wolf wags his tail and says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A beautiful mermaid murmurs: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A proud lion roars: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A chicken clucks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A beautiful fairy sings: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {An eagle croaks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A dove coos: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A holographic dolphin announces: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A holographic kitten mews: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A puppy yaps: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A tiny mouse squeaks: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {Holographic stars rearrange themselves to read: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A dragon with outstretched wings rumbles: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {Holographic flowers burst into letters that read: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A holographic penguin announces: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A holographic seal announces: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A holographic turtle says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A little girl announces: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A little boy announces: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A flute playing minstrel toots: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A smiling female flight captain says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A smiling male flight captain says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A scowling male flight captain says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A scowling female flight captain says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A ryuchi warrior flexes his muscles as he says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A ryuchi warrior flexes her muscles as she says: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {A sneaky snake hisses: "*"} {playsound {cosmic rage/ships/computer/announce*4.wav} @vol};
-#trigger {The computer announces: "Proximity alert! One or more starships are within 3 units of this vessel!"} {playsound {cosmic rage/ships/computer/prox.wav} @vol};
+#Var starshipComputerAvetars {A young blonde says
+The computer announces
+A holographic dog barks
+A muscled man says
+A huge dragon thunders
+A tall ryuchi rumbles
+A blueish cy-larken beeps
+A small cat meows
+Some holographic letters form the words
+Some holographic fruit arrange themselves to read
+On screen, you read
+A tiny ryuchi mutters
+A tiny drake squeaks
+A short human says
+A muscle-packed security hologram yells
+A beautiful young woman murmurs
+A smiley woman says
+A smiley man says
+A holographic military officer barks
+A tiny squirrel squeaks
+A small duck quacks
+A silver unicorn nays
+A large pegasus nays
+A large wolf wags his tail and says
+A beautiful mermaid murmurs
+A proud lion roars
+A chicken clucks
+A beautiful fairy sings
+An eagle croaks
+A dove coos
+A holographic dolphin announces
+A holographic kitten mews
+A puppy yaps
+A tiny mouse squeaks
+Holographic stars rearrange themselves to read
+A dragon with outstretched wings rumbles
+Holographic flowers burst into letters that read
+A holographic penguin announces
+A holographic seal announces
+A holographic turtle says
+A little girl announces
+A little boy announces
+A flute playing minstrel toots
+A smiling female flight captain says
+A smiling male flight captain says
+A scowling male flight captain says
+A scowling female flight captain says
+A ryuchi warrior flexes his muscles as he says
+A ryuchi warrior flexes her muscles as she says
+A sneaky snake hisses
+};
+
+#Trigger {*: *} {
+#If {%IfWord(%1,@starshipComputerAvetars,%CRLF)} {
+playsound {cosmic rage/ships/computer/announce*4.wav} @vol;
+#If {@gagStarshipComputerName="Enabled"} {
+BufferAdd Computer %2;
+#Sub {%2}
+} {
+BufferAdd Computer {%1: %2};
+#Sub {%1: %2}
+}
+}
+};
+#trigger {The computer announces: "Proximity alert! One or more starships are within 3 units of this vessel!"} {playsound {cosmic rage/ships/computer/prox.wav} @vol}

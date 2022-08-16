@@ -33,7 +33,7 @@
 #var chresult %left(@chversion,4);
 @chresult ;
 }
-#alias SpReload {#pc 0 stop; #say {Reloading the soundpack. please wait.}; playsound {Cosmic Rage/general/misc/Reload.wav} @vol; #alarm 0.5 {#reload}; #alarm 1 {LoadBuffers; #say {Reloading is now complete!}; #if {@ambon = "enabled"} {look}}}
+#alias SpReload {#pc 0 stop; #say {Reloading the soundpack. please wait.}; playsound {Cosmic Rage/general/misc/Reload.wav} @vol; #alarm 0.5 {#reload; #say {Reloading is now complete!}; #if {@ambon = "enabled"} {look}}}
 
 ;Saving settings.
 #alias ActualSave {#File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
@@ -88,8 +88,13 @@
 #write 6 @priv3 @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @priv4 @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @hpdr @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @gocountnum @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @buffersound @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @gagStarshipComputerName @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @gbl @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @bufferfavkeys @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
-#alias SaveSettings {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Your soundpack settings and buffer list  have successfully been saved!}; savebuffers; ActualSave}
+#alias SaveSettings {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Your soundpack settings and buffer list  have successfully been saved!}; ActualSave; AutoSaveBuffers}
 #key {Control-shift-R} {SpReload}
 #trigger {*Has just posted an announcement!*} {playsound {Cosmic Rage/general/comms/spAnnouncement.wav} @CommsVol; #additem SoundpackAnnouncements %0}
 #alias {SpHelp} {#say {Loading the list of available help files. Please wait.}; playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol; #pick {p:Please select an option from the list below|
@@ -104,3 +109,4 @@ View the readme:{playsound {Cosmic Rage/general/help/Readme.wav} @vol; playsound
 View the Soundpack credits:{playsound {Cosmic Rage/general/help/SoundpackCredits.wav} @vol; playsound {Cosmic Rage/general/misc/LoadingFile.wav} @vol;#edit {cosmic rage/help files/Soundpack credits.txt}}}}
 #alias spp {>@soundpacks} {}
 #Alias {themechange} {playsound {Cosmic Rage/general/comms/themesuccess.wav}; #var skice %1}
+#alias {spchanges} {#If {%Defined(tmpmath)=0} {#Var tmpmath 1};#file 5 {cosmic rage/help files/changelog.txt} 600; #while {@tmpmath<21} {#read 5 tmpchanges; #AddItem spchanges @tmpchanges:actualsave; #math tmpmath {@tmpmath+1}};#Close 5; #pick {@spchanges:actualsave}; #UnVar tmpmath;  #UnVar spchanges}

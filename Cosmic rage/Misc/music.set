@@ -143,12 +143,12 @@ loopsound {cosmic rage/music/planets/Saturn, Jupiter, Uranus, Neptune.wav} @musi
 #pc @musichandle stop; #var MusicPlaying 0};
 loopsound {cosmic rage/music/planets/Saturn, Jupiter, Uranus, Neptune.wav} @musicvol;
 #var musicplaying 1; #var musichandle %playhandle; #var planet "Neptune"}};
-#If {%IfWord(Mining,@planetname," ")} {
-#if {@planet <> "Mining"} {
+#If {%IfWord(Eexei,@planetname," ")} {
+#if {@planet <> "Eexei"} {
 #if {@musicPlaying = 1} {
 #pc @musichandle stop; #var MusicPlaying 0};
 loopsound {cosmic rage/music/planets/SDF Mining Station Eexei Othairus.wav} @musicvol;
-#var musicplaying 1; #var musichandle %playhandle; #var planet "Mining"}};
+#var musicplaying 1; #var musichandle %playhandle; #var planet "Eexei"}};
 #If {%IfWord(temreth,@planetname," ")} {
 #if {@planet <> "temreth"} {
 #if {@musicPlaying = 1} {

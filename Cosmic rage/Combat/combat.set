@@ -156,3 +156,5 @@ playsound {cosmic rage/general/combat/vehicles/turout.wav} @gvol}
 #trigger {* is damaged and needs to be fixed!} {playsound {Cosmic Rage/general/combat/weapons/damaged.wav} @gvol; #gagline voice}
 #trigger {You are * of the room at *, *.} {#var x1 %2; playsound {Cosmic Rage/general/combat/enemy/exits/@x1.wav} @vol;  #var x2 %3; #alarm 0.1 {playsound {Cosmic Rage/general/combat/enemy/exits/@x2.wav} @vol}}
 #trigger {* suddenly bursts into flame!} {playsound {Cosmic Rage/general/combat/Explosion.wav} @gvol; #gagline voice}
+#trigger {You open up * and begin to load * with ammunition rounds.} {playsound {Cosmic Rage/general/combat/Reload.wav} @gvol; #gagline all}
+#trigger {* is out of ammunition.} {playsound {Cosmic Rage/general/combat/OutOfAmmo.wav} @gvol; #gagline all}

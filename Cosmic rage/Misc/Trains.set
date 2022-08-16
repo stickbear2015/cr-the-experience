@@ -35,5 +35,6 @@ loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playh
 #trigger {The train turns sharply.} {#gagline all}
 #trigger {The train rattles a little.} {#gagline all}
 #trigger {The train climbs sharply up a hill.} {#gagline all}
-#trigger {A soothing female voice announces: The train approaching platform * is *} {playsound {cosmic rage/general/misc/ping.wav} @vol}
 #trigger {One of the fans of the train kicks in.} {#gagline all}
+#trigger {A soothing female voice announces: "Please prepare for departure."} {playsound {cosmic rage/general/misc/ping.wav} @vol}
+#trigger {A soothing female voice announces: The train approaching platform * is *} {#var train %2; playsound {cosmic rage/general/misc/ping.wav} @vol; #alarm 1 {#SetSpeech VoiceOnly Sapi 2 100 33; #Say {@train} VoiceOnly|current}; #SetSpeech VoiceOnly screenreader}

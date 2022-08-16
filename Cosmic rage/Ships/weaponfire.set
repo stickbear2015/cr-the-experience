@@ -1,0 +1,49 @@
+#Var dirlist1 {starboard aft|port aft};
+#Var dirlist2 {starboard fore|port fore};
+#Var shipWeaponList {
+standard plasma missiles:pma:pmf
+military grade plasma missiles::pma:pmf
+torpidos:torpidoa:torpidof
+standard missiles:missilea:missilef
+military grade missiles:missilea:missilef
+};
+#Trigger {You manipulate the * of the * at *, * and fire.} {
+#If {@gagShipCombat = "Enabled"} {
+#GagLine All
+};
+#Var TMPDir %3;
+#Var wDataMatch {%Pos(%CRLF%2,@shipWeaponList)};
+#If {@wDataMatch>0} {
+#Var wDataMatch {%Copy(@shipWeaponList,%Eval(@wDataMatch)+2)};
+#Var wDataMatch {%Word(@wDataMatch,%CRLF,1)};
+#if {%ifword(@TMPDir,@dirlist1,"|")} {#Var dirsound {%Word(@wDataMatch,:,2)};#Alarm 0 {playsound {cosmic rage/ships/combat/weapons/@dirsound.wav} @CVol}} {#Var dirsound {%Word(@wDataMatch,:,3)};#Alarm 0 {playsound {cosmic rage/ships/combat/weapons/@dirsound.wav} @CVol}};
+#if {@panShipCombat = "Enabled"} {
+#if {%ifword(@TMPDir,port|port aft|port fore,"|")} {
+#Alarm 0 {#pc %playhandle pan %random(-4000,-1000)}
+} {
+#if {%ifword(@TMPDir,starboard fore|starboard aft|starboard,"|")} {
+#Alarm 0 {#pc %playhandle pan %random(1000,4000)}}
+}
+}
+};
+}
+#Trigger {You hold down an override button while manipulating the * of the * at x/y *, z * and fire.} {
+#If {@gagShipCombat = "Enabled"} {
+#GagLine All
+};
+#Var TMPDir %3;
+#Var wDataMatch {%Pos(%CRLF%2,@shipWeaponList)};
+#If {@wDataMatch>0} {
+#Var wDataMatch {%Copy(@shipWeaponList,%Eval(@wDataMatch)+2)};
+#Var wDataMatch {%Word(@wDataMatch,%CRLF,1)};
+#if {%ifword(@TMPDir,@dirlist1,"|")} {#Var dirsound {%Word(@wDataMatch,:,2)};#Alarm 0 {playsound {cosmic rage/ships/combat/weapons/@dirsound.wav} @CVol}} {#Var dirsound {%Word(@wDataMatch,:,3)};#Alarm 0 {playsound {cosmic rage/ships/combat/weapons/@dirsound.wav} @CVol}};
+#if {@panShipCombat = "Enabled"} {
+#if {%ifword(@TMPDir,port|port aft|port fore,"|")} {
+#Alarm 0 {#pc %playhandle pan %random(-4000,-1000)}
+} {
+#if {%ifword(@TMPDir,starboard fore|starboard aft|starboard,"|")} {
+#Alarm 0 {#pc %playhandle pan %random(1000,4000)}}
+}
+}
+};
+}

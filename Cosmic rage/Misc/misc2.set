@@ -40,3 +40,5 @@
 #trigger {* finishes using * and locks it with the button at the top.} {#gagline voice}
 #TRIGGER {* is typing...} {playsound {Cosmic Rage/general/misc/emote.wav} @vol}
 #trigger {You spray A bottle of * airfreshener about.} {playsound {cosmic rage/general/misc/air freshener spray.wav} @vol}
+#trigger {* timer lets out a shreak!} {playsound {cosmic rage/general/misc/timer.wav} @vol}
+#trigger {Your keen senses notice a hidden exit nearby.} {playsound {cosmic rage/general/misc/dragonfeel.wav} @vol}

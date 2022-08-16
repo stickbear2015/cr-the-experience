@@ -1,3 +1,53 @@
+2137 tracebug, credits saperu, you no longer get random huh, huh, I dont understand that. I guess that's not a command messages upon logging in.
+2136 stormy, Credits Andy, Code credits Saperu, The buffers will probably no longer break. You can now also toggle alt keys along side with the other keys for buffer favorites.
+2135 stormy, credits saperu, Potentialy fixed a buffer problem. 
+2134 stormy, credits saperu, Fixed a lot of buffer related issues. The master buffer will sort alphabeticly, the ne buffers will add to the custom bufferlist and a few more.
+2133 Tracebug, Credits OlegTheSnowman, the buffersound toggle no longer displays twice in the conf manager. Added the option of displaying the last 20 changes to the conf manager. The buffers will actually load and save now wen you log in.
+2132 tracebug, code credits Saperu, (a big one), credits olegTheSnowman, Sethgamer, Creature, TwinVictim and Andy, Custom buffers are fixed. You can no longer try to add buffers in master buffer list because it was confusing. Added the option to toggle of the buffer keys. The boundry text is no longer announced if the buffer sounds are enabled. The buffer sounds are no longer super loud and many more.
+2131 tracebug, the pack will now remember your buffer preferences. It will remember if your using the custom or the master buffer now wen logging in.
+2130 tracebug, code credits saperu, credits saperu, TwilightStar, TwinVictim, and creature, Added the ability to save your own buffers. Added a favorite buffer system. And lots of bug fixes.
+2129 tracebug, credits Kiasax, fixed a few volume issues with ground combat.
+2128 Tracebug, credits creature, saperu and jamesliveproductions, fixed computer avatars
+2127 Tracebug, credits olegTheSnowman, code credits saperu, the computer messages now has their own buffer. You can toggle  the computer announces text on an off with the shortcut alt shift g or through the conf manager.
+2126 Tracebug, credits OlegTheSnowman, the Eexei  music will now actually play.
+2125 tracebugg, credits for those who are using vending machines, the venting I mean vending machine drinks are fixed. You can now gulp drinks to your hearts content. PS. Vending machines still suck.
+2124 tracebug, credits JamesLiveVocalsProductions, fixed the foods carf sound.
+2123 tracebug, credits creature, code credits saperu, fixed ship weapon firing. It will now play the sounds no matter what weapon fittings you have installed. 
+2122 tracebug, credits creature, the red alert loop will not stop once you exit a ship or switch to yellow alert.
+2121 stormy, converted a lot of buffers. COnnections, notices, AFK cash and points, connections and many more.
+2120 stormy, credits vade, the sound for gulping will now loop.
+2119 stormy, credits Arrow, the undamaged components in the vehicles are now hidden. 
+2118 stormy, credits Elizabeth and oleg, buffers can be used again in prompts once again.
+2117 stormy, credits Saperu, You can now press alt ctrl v to display the last 20 changes logged in your change log in a menu. Saperu helped me to overcome the limitations of vipmud. Note, the Vip will play the ding soundwen you press the keys but it will be gone in 20 changes.
+2116 stormy, credits creature, fixed the say buffers.
+2115 stormy, credits, everyone except oleg, Fixed lots of buffer related things. Added the alt end, reversed page up and down keys, made it so it will no longer error if you havent set a buffer mover, and many more which I cannot recall with my sleepy brain. 
+2114 stormy, credits Saperu, Laira and oleg, Code credits Saperu,  Buffers have been rewritten from scratch. Saperu was the one who coded the framework so a huge thanks goes to him. Now, the buffers will no longer throw errors at you, meaning that you will no longer get overflow errors. It will add a new buffer wen ever it recieves a new message automaticly. You can now set the number of messages to move with pageup and pagedown keys with a custom number of your choosing. You can now enable or disable buffer sounds.  And few more things that I cannot remember at the moment. There is no way to remove a buffer from the list permanently at the moment but it maybe added in the future. I hope you enjoy. And once again, shout out to Saperu.
+2113 stormy, credits oleg, fixed the whistle sound. It only triggers for the default social and through comms now. The word whistle will no longer trigger the annoying sound.
+2112 stormy, credits khal, added a sound for a weather text.
+2111 stormy, credits OlegTheSnowman, Your speech will no longer get stuck while turning it on and off with ctrl f1.
+2110 stormy, credits rafly and shel, boosted the volume of the empty gun sound in ground combat.
+2109 stormy, credits ines, added a reminder sound for the law loving jag people out there.
+2108 stormy, credits SaPeru, code credits SaPeru, He did greatly clean up the starship weapon firing code. It is now much more easy to add new weapons. Thank you SaPeru!
+2107 stormy, credits Brondem, battlesuits are fixed.
+2106 stormy, credits Rafly and sandy, fixed train sapi speech bug. OOps
+2105 stormy, the sapi will now speak the station names in trains. you can stop the speach by pressing ctrl. If it gets too annoying, I'll take it out..
+2104 stormy, credits oleg, added a sound for trains.
+2103 stormy, credits Hermione, Made the classic cars more consistent.
+2102 stormy, credits oleg, added a sound wen you cannot phase do to restricted phasing.
+2101 stormy, credits hale, added a sound for wakeup ooc social. Note, since the sound can trigger jumpscares, it will always play at 30 per cent volume regardless of your social volume.
+2100 stormy, credits Rafly, added a few sounds for ryuchi translators.
+2099 stormy, credits Gretta, added the soundpack updator link to the soundpack information section.
+2098 stormy, credits Angelo, the dynamic explosions are a thing once again. Now wen ever a guided missile hits you, you will hear a different sound. It will be completely random. There are a possible of 42 variations.
+2097 stormy, credits JamesLiveVocalsProductions, credits a slght issue with weapon reloading.
+2096 stormy, credits oleg, code credits oleg, fixed an issue with battlsuit movement.
+2095 stormy, credits oleg, fixed an issue with the clanchat.
+2094 stormy, credits Brondem and eli,  added a sound for the story chat system.
+2093 stormy, credits Brondem, added sounds for battlesuit movement. YOu will both hear yours and someone elses battle suit movements.
+2092 stormy, credits, Brondem, fixed laser fire sound.
+2091 stormy, credits Brondem, added a sound for dragon hidden exit feel ability.
+2090 stormy, credits angelica, added a sound for the timers.
+2089 stormy, credits Blaine, added a sound for ammo box loading
+2088 stormy, credits cade and seth, fixed muty human jingle thing. As I said in my earlier change, blame Sampaguita. 
 2087 stormy, credits Kaira, fixed teethbrush sound. Hopefully
 2086 stormy, credits Jessabelle, fixed death sound not playing issue. was Annoying i kno. Sorries
 2085  stormy, credits Sampaguita, I didnt test this because I dont know any muties and I'M lazy to find one but, the mutariansi say jingle should play for mutariansi humans only. Blame Sampaguita if it doesnt work.

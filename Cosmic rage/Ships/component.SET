@@ -7,3 +7,4 @@
 #trigger {The air seems to go thin for a moment and red warning lights flicker as the life support system takes damage from *} {#gagline all};
 #trigger {There is a slight feeling of weightlessness as the safety systems are hit *} {#gagline all};
 #trigger {There is what sounds like a fuse or 5 popping all at the same time as the sensors are damage by *} {#gagline all};
+#trigger {There is a huge explosion against the hull!} {#gagline voice; playsound {cosmic rage/ships/combat/component/1/*10.wav} @cvol; #alarm 0.7 {#var randsound %random(2,8); playsound {cosmic rage/ships/combat/component/@randsound/*3.wav} @cvol}; #alarm 0.3 {#var randsound %random(2,8); playsound {cosmic rage/ships/combat/component/@randsound/*3.wav} @cvol}; #alarm 0.5 {playsound {cosmic rage/ships/combat/component/3/*3.wav} @cvol}};

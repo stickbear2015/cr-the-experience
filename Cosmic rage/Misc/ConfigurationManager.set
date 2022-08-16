@@ -58,14 +58,19 @@ Check the amount of lag between your connection and the game. Shortcut ctrl l. N
 Submit a soundpack bug report:SpBug|
 Submit a soundpack suggestion:SpSuggest|
 View the last posted soundpack change. Shortcut alt v. Note. This shows the last change that  has posted to the game. This may not always be the last change you see in your changelog.:SpVersion|
-Clear the current buffers items. Shortcut alt shift ctrl delete. Useful if you start seeing buffer errors. Note. This only clears items from that one buffer:ClearBuffer|
-Clear All Buffers. shortcut  shift alt ctrl delete. Clears all text from all of your active buffers:ClearAllBuffers|
+View the last 20 changes in your changes file:spchanges|
+Clear the current buffers items. Shortcut alt delete. Useful if you start seeing buffer errors. Note. This only clears items from that one buffer:clearCurrentBuffer|
+Clear All Buffers. Shortcut  shift alt delete. Clears all text from all of your active buffers:clearAllBuffers|
+Set the number of messages you move with the PageUp and PageDown keys. Shortcut Alt Shift Enter.:setBufVar|
+Toggle Buffer sounds. It is currently @buffersound:buffersound|
+Turn off buffer favorite keys. They are currently @bufferfavkeys:togglefav|
 Toggle your speech in the soundpack. Shortcut ctrl f1. This option is currently @speech. Note. When this option is enabled, your speech will be muted :smute|
 Toggle mute sounds. Shortcut shift f1.  This option is currently @soundson:MuteSound|
 Save your soundpack settings:SaveSettings|
 Toggle communication text gag, this will gag the you speak in to your communicator text. This option is currently @commtoggle:commtoggle|
 Toggle the quotation mark gagger. It is currently @qtg:qtg|
 Gag text for people using helper drone remotes. Currently @hpdr:hpdr|
+Toggle computer avatar gagging. Shortcut Alt+shift+G. It is currently @gagStarshipComputerName:gagcomputer|
 Reload the soundpack:SpReload| View the list of available help files for the soundpack. Note. Files will be opened in your text editer of choice:SpHelp}}
 
 ;Volumes
@@ -249,15 +254,14 @@ echo Lag.test} {}
 #alias {smute}  {
 #if {@Speech = "Disabled"} {
 #var Speech "Enabled";
-playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {speech off.}; #alarm 1 {#SetSpeech incoming off}} {
+playsound {Cosmic Rage/general/misc/Off.wav} @vol; #SetSpeech incoming off;  #say {speech off.} voiceonly;} {
 #var Speech "Disabled";
 #SetSpeech incoming on;
-playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.}}}
+playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias {playsound} {#if {@soundson = "Disabled"} {#play %1 %2}}
 #alias {loopsound} {#if {@soundson = "Disabled"} {#playloop %1 %2}}
 #alias ToggleIdleSounds {#if {@ConnectionCheck  = "Enabled"} {#var ConnectionCheck "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no longer hear the sounds letting you know that you are connected to the moo, but idle}} {#var ConnectionCheck  "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now hear the sounds letting you know that you are connected to the moo, but idle.}}}
 #alias {MuteSound} {#if {@soundson = "Disabled"} {#var soundson "Enabled"; #pc 0 stop; playsound {Cosmic Rage/general/misc/off.wav} @vol; #say {Sounds will no longer  play.}} {#var soundson "Disabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Sounds will now play.}}}
-#alias {SpReload} {#unalarm Saving; #say {Reloading the soundpack, please wait...}; playsound {Cosmic Rage/general/misc/Reload.wav} 90; #alarm .5 {#reload}; #var soundson 1; #alarm 1 {loadbuffers; #say {Reloading complete!}};#alarm 1.5 {look}}
 #alias toggleLaunchText {#if {@LaunchText = "Enabled"} {#var LaunchText "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see the text for ships launching, landing, docking and undocking.}} {#var LaunchText "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see the text for ships launching, landing, docking and undocking.}}}
 #alias toggleSocialSounds {#if {@SocialSounds = "Enabled"} {#var SocialSounds "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no  longer hear social sounds.}} {#var SocialSounds "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now  hear social sounds.}}}
 #alias toggleSocialText {#if {@SocialText = "Enabled"} {#var SocialText "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no longer see social text when you use socials.}} {#var SocialText "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now see social text when you use socials. When others use socials, that text is not effected.}}}
@@ -269,3 +273,4 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.}}}
 #alias commtoggle  {#if {@commtoggle= "Enabled"} {#var commtoggle "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see communication texts}} {#var commtoggle "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see communication texts}}}
 #alias qtg  {#if {@QGag = 1} {#var QGag 0; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Quotation marks are no longer being gagged.}} {#var QGag 1; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Quotation marks are now being gagged.}}}
 #alias hpdr {#if {@hpdr = "gagged"} {#var hpdr "ungagged"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Helper drone remote usage is no longer being gagged.}} {#var hpdr "gagged"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Helper drone remote usage is now being gagged.}}}
+#alias gagcomputer  {#if {@gagStarshipComputerName= "Enabled"} {#var gagStarshipComputerName "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see computer avatar texts}} {#var gagStarshipComputerName "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see computer avatar texts}}}

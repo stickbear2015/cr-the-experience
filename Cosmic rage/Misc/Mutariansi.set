@@ -29,4 +29,4 @@
 #TRIGGER {You easily morph into your natural form.} {#gagline all}
 #TRIGGER {You relax the hold on your inner animal, allowing the memory of * to flee away.} {playsound {Cosmic Rage/general/mutariansi/forget.wav} @vol};
 #TRIGGER {You charge at *} {playsound {Cosmic Rage/general/mutariansi/bearcharge.wav} @vol};
-#trig {In your mind, you hear a human * say in a *} {playsound {Cosmic Rage/general/comms/mutariansi.wav} @vol;}
+#trig {In your mind, you hear * in a *: *} {playsound {Cosmic Rage/general/comms/mutariansi.wav} @vol;}

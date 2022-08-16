@@ -1,97 +1,524 @@
-#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|birthday|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|ConnectionMessages|Cult|Distress|drone|fires|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelpers|News|notices|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|rooc|RP|say|SDL|ship|Socials|SOS|Soundpacks|Spacesuit|Squad|SubAnnouncements|Tracebacks|trade|Unsec}
-#var CurrentBufferList {chat|general|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices|newbiehelpers}
-#for @MasterBufferList {#var %i {}}
-#var BufferPointer 1
-#var BufferName {%word(@CurrentBufferList,"|",1)}
-#var ItemPointer 1
-#alias delbuffer  {playsound {Cosmic Rage/general/misc/BufferDelete.wav} 80; #var item {%pick(p:Which buffer do you want to delete?|@CurrentBufferList)};#var CurrentBufferList {%delitem(@CurrentBufferList,@item)};playsound {Cosmic Rage/general/misc/BufferRemoved.wav} 80; #var BufferPointer 1}
-#key {ALT-SHIFT-LEFT} {delbuffer}
-#alias addbuffer {playsound {Cosmic Rage/general/misc/BufferAdd.wav} 80; #var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)}; #if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {playsound {Cosmic Rage/general/misc/BufferActive.wav} 80} {#if {%ifword(@newitem,@MasterBufferList,"|") = 1} {#additem CurrentBufferList @newitem; playsound {Cosmic Rage/general/misc/BufferAdded.wav} 80}} {#var BufferPointer 1}}
-#key {ALT-SHIFT-RIGHT} {addbuffer}
+;A way to sort a list based on another with an item inserted
+;sort {i} {l} {c}, where i=new item, l=list, c=comparative list
 
+#Alias sort {
+#Var s1 {%Replace(%1,~~,)};
+#Var s2 {%Replace(%2,~~,)};
+#Var s3 {%Replace(%3,~~,)};
+#Var stmp1 {%Copy(@s3,1,%Pos(@s1,@s3)-1)};
+#Var stmp2 {%NumWords(@stmp1,|)};
+#If {@stmp2>0} {
+#Var SCounter1 {1};
+#Var SCounter2 {0};
+#While {@SCounter1<@Stmp2} {
+#If {%IfWord(%Word(@Stmp1,|,@SCounter1),@s2,|)} {
+#Var SCounter2 {@SCounter1}
+};
+#Math SCounter1 {@SCounter1+1}
+};
+#If {@Scounter2>0} {
+#Var Stmp4 {%Word(@Stmp1,|,@SCounter2)};
+#Var SortVar {%Replace(%Replace(@s2,@Stmp4,@Stmp4|@s1|),||,|)};
+#If {%Copy(@SortVar,%Length(@SortVar),%Length(@SortVar)-1)="|"} {#Var SortVar {%Copy(@SortVar,1,%Length(@SortVar)-1)}};
+#If {%Copy(@SortVar,1,1)="|"} {#Var SortVar {%Copy(@SortVar,2,%Length(@SortVar))}}
+} {
+#Var SortVar {%Replace(|@s1|@s2,||,|)};
+#If {%Copy(@SortVar,%Length(@SortVar),%Length(@SortVar)-1)="|"} {#Var SortVar {%Copy(@SortVar,1,%Length(@SortVar)-1)}};
+#If {%Copy(@SortVar,1,1)="|"} {#Var SortVar {%Copy(@SortVar,2,%Length(@SortVar))}}
+}
+}
+};
+#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|birthday|changes|Chargen|CashPointsSkillsAndLeveling|chat|Clanchat|ClanConflict|Computer|ConnectionMessages|Cult|All0Buffers|Distress|drone|fires|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelpers|News|notices|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|rooc|RP|say|SDL|Ship|Socials|SOS|Soundpacks|Spacesuit|Squad|SubAnnouncements|Tracebacks|trade|Unsec};
+#If {%Defined(CurrentBufferList)=0} {#var CurrentBufferList {chat|general|All0Buffers|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices|newbiehelpers}};
+#Var bufferFavourites {
+b1:1null
+b2:2null
+b3:3null
+b4:4null
+b5:5null
+b6:6null
+b7:7null
+b8:8null
+b9:9null
+b10:10null
+};
+#var gocount 1;
+#If {%Defined(HistoryBuffers)=0} {#Var HistoryBuffers {All0Buffers}};
+#If {%Defined(bufferfavkeys)=0} {#Var bufferfavkeys "Enable"};
+#If {%Defined(gbl)=0} {#Var gbl {"Disabled"}};
+#If {%Defined(buffersound)=0} {#Var buffersound {"Enabled"}};
+#If {%Defined(HistoryAll0BuffersMessages)=0} {#Var HistoryAll0BuffersMessages {All Buffers Loaded successfully}}
+#If {%Defined(CurrentHistoryBuffer)=0} {#var CurrentHistoryBuffer {All0Buffers}};
+#If {%Defined(CurrentHistoryBufferPosition)=0} {#Var CurrentHistoryBufferPosition 1};
+#If {%Defined(HistoryMasterBuffers)=0} {#Var HistoryMasterBuffers {All0Buffers}};
+#If {%Defined(gocount)=0} {#Var gocount 1};
+#If {%Defined(gocountnum)=0} {#Var gocountnum 1};
+#Alias BufferAdd {
+ #Var {History%{1}Tmp1} {%Replace(%2,|,@CR@CR)};
+#If {%Length(@{HistoryAll0BuffersMessages})>=30000} {
+#While {%Length(@{HistoryAll0BuffersMessages})>=30000} {
+#Var {HistoryAll0BuffersMessages} {%DelNItem(@{HistoryAll0BuffersMessages},1)}
+}
+};
+#If {%Length(@{History%{1}Tmp1})>0} {
+#If {%IfWord(%1,@HistoryBuffers,|)=0 AND %IfWord(%1,@CurrentBufferList,|)=1} {Sort {%1} {@HistoryBuffers} {@CurrentBufferList};#Var HistoryBuffers {@SortVar}
+};
+#If {%IfWord(%1,@HistoryMasterBuffers,|)=0 AND %IfWord(%1,@MasterBufferList,|)=1} {#Var HistoryMasterBuffers {%Sort(@HistoryMasterBuffers|%1,0)};#Var HistoryMasterBuffers {All0Buffers|%DelItem(@HistoryMasterBuffers,All0Buffers)}
+};
+#If {%Length(@{History%{1}Messages})>=30000} {
+#While {%Length(@{History%{1}Messages})>=30000} {
+#Var {History%{1}Messages} {%DelNItem(@{History%{1}Messages},1)}
+};
+#Var {History%{1}Messages} {@{History%{1}Messages}|@{History%{1}Tmp1}}
+} {
+   #If {%Length(@{History%{1}Messages})=0} {#Var {History%{1}Messages} {@{History%{1}Tmp1}};
+#AddItem {HistoryAll0BuffersMessages} {@{History%{1}Tmp1}}
+} {
+#AddItem {HistoryAll0BuffersMessages} {@{History%{1}Tmp1}};
+#AddItem {History%{1}Messages} {@{History%{1}Tmp1}}
+}
+  };
+  #If {@LogHistory=1} {
+   #Math NumberOfBufferedLogMessages {@NumberOfBufferedLogMessages+1};
+   #Exec {
+    #If {~%Defined(History%{1}LogBufferEntries)=0} {
+     #Var {History%{1}LogInitialization} 1;
+     #Var {History%{1}LogBuffer} {};
+     #Var {History%{1}LogBufferEntries} 0
+    }
+   };
+   #Math {History%{1}LogBufferEntries} {@{History%{1}LogBufferEntries}+1};
+   #Var {History%{1}LogBuffer} {@{History%{1}LogBuffer}%2%CRLF};
+   #If {@NumberOfBufferedLogMessages>@HistoryLoggingInterval} {
+    #Var NumberOfBufferedLogMessages 0;
+    #Alarm 0 {WriteToLogFile}
+   }
+  }
+ };
+ #Exec {#UnVar {History%{1}Tmp1}}
+} {}
+
+#Alias spc {#Exec {#Alarm 0 {SPHB copy {%0}}}}
+#Alias sps {#Exec {#Alarm 0 {SPHB switch {%0}}}}
+#Alias sph {#Exec {#Alarm 0 {SPHistory %0}}}
+#Alias SPHistory {
+ #Say {SPHistory aliases:
+  SPHB: History Backend.
+  spr: Read history buffer, same as SPHB read.
+  spc: Copy history buffer, same as SPHB copy.
+  sps: Switch history buffer, same as SPHB switch.}
+}
+#Alias SPHB {
+
+ #If {%Length(%1)=0} {
+  #Say {Valid arguments are back, forward, copy, read, and switch.};
+  #Abort All
+ };
+ #Var HistoryTmp1 {%Trim(%1)*};
+ #If {"read"=*@HistoryTmp1 or "copy"=*@HistoryTmp1} {
+  #If {%Length(%2)>0} {
+   #Var HistoryTmp2 {%Trim(%2)*};
+   #ForAll {@HistoryBuffers} {
+    #If {%i=*@HistoryTmp2} {
+     #Var HistoryTmp2 {%i}
+    }
+   };
+   #If {%Pos(*,@HistoryTmp2)=0} {
+       #If {%IsNumber(%3)=1} {
+     #If {@HistoryTmp2="All0Buffers"} {
+      #Var HistoryTmp3 {10}
+     } {
+      #Var HistoryTmp3 {%NumWords(@{History@{HistoryTmp2}Messages},|)}
+     };
+     #If {(%IsNumber(%4)=1 and %3<>%4) or (%4="+" and %3<@HistoryTmp3) or (%4="-" and %3>1)} {
+      #If {%IsNumber(%4)=1} {
+       #Var HistoryTmp4 {%4}
+      } {
+       #If {%4="-"} {
+        #Var HistoryTmp4 {1}
+       } {
+        #Var HistoryTmp4 {@HistoryTmp3}
+       }
+      };
+      #If {%Min(%3,@HistoryTmp4)<1 or %Max(%3,@HistoryTmp4)>@HistoryTmp3} {
+       #Say {Valid range for the %Replace(@HistoryTmp2,0, ) buffer is 1 to @HistoryTmp3} NoDisplay;
+       #Abort All
+      };
+      #Var HistoryTmp5 {};
+       #Math HistoryTmp6 {@HistoryTmp3+1-%Max(%3,@HistoryTmp4)};
+       #Math HistoryTmp7 {@HistoryTmp3+1-%Min(%3,@HistoryTmp4)};
+       #While {@HistoryTmp6<=@HistoryTmp7} {
+        #Var HistoryTmp5 {@HistoryTmp5%CRLF%Word(@{History@{HistoryTmp2}Messages},|,@HistoryTmp6)};
+        #Math HistoryTmp6 {@HistoryTmp6+1}
+       };
+       #Var HistoryTmp5 {%Replace(@HistoryTmp5,@CR@CR,|)}
+      #If {"read"=*@HistoryTmp1} {
+       #Say {Message %Min(%3,@HistoryTmp4) to %Max(%3,@HistoryTmp4) in the %Replace(@HistoryTmp2,0, ) buffer:@HistoryTmp5}
+      } {
+       #Clipboard {%Copy(@HistoryTmp5,3)};
+       #Say {Copied message %Min(%3,@HistoryTmp4) to %Max(%3,@HistoryTmp4) from the %Replace(@HistoryTmp2,0, ) buffer} NoDisplay
+      }
+     } {
+       #Exec {
+        #If {~%Defined(History@{HistoryTmp2}Messages)=1} {
+         #If {%3<1 or %3>%NumWords(@{History@{HistoryTmp2}Messages},|)} {
+          #Var HistoryTmp1 {read};
+          #Var HistoryTmp3 {That message does not exist. Valid range for the %Replace(@HistoryTmp2,0, ) buffer is currently 1 to %NumWords(@{History@{HistoryTmp2}Messages},|)}
+         } {
+          #Var HistoryTmp3 {~%Word(~@{History@{HistoryTmp2}Messages},|,%Eval(%NumWords(@{History@{HistoryTmp2}Messages},|)+1-%3))};
+          #Var HistoryTmp3 {~%Replace(~@HistoryTmp3,~@CR~@CR,|)}
+         }
+        } {
+         #Var HistoryTmp1 {read};
+         #Var HistoryTmp3 {No @HistoryTmp2 messages yet}
+        }
+       }
+      #If {"read"=*@HistoryTmp1} {
+       #Say {@HistoryTmp3} NoDisplay
+      } {
+       #Clipboard {@HistoryTmp3};
+       #Say {Copied message: @HistoryTmp3} NoDisplay
+      }
+     }
+      #Exec {
+       #If {~%Defined(History@{HistoryTmp2}Messages)=1} {
+        #Var HistoryTmp3 {~%Replace(~@{History@{HistoryTmp2}Messages},|,~%CRLF )};
+        #Var HistoryTmp3 {%CRLF ~%Replace(~@HistoryTmp3,~@CR~@CR,|)}
+       } {
+        #Say {The @HistoryTmp2 buffer is empty} NoDisplay;
+        #Abort All
+       }
+      }
+     #If {"read"=*@HistoryTmp1} {
+      #Say {All content of the %Replace(@HistoryTmp2,0, ) buffer:@HistoryTmp3}
+     } {
+      #Clipboard {%Copy(@HistoryTmp3,3)};
+      #Say {Copied the %Replace(@HistoryTmp2,0, ) buffer} NoDisplay
+     }
+    }
+   } {
+    #Say {That buffer does not exist} NoDisplay
+   }
+  } {
+   #If {"read"=*@HistoryTmp1} {
+    #Say {History buffers:%CRLF %Replace(%Replace(~@HistoryBuffers,0, ),|,~, )}
+   } {
+    #Var HistoryTmp3 {%Replace(%Replace(~@HistoryBuffers,0, ),|,~, )};
+    #Clipboard {@HistoryTmp3};
+    #Say {Copied list of history buffers} NoDisplay
+   }
+  };
+  #Abort All
+ };
+ #If {"switch"=*@HistoryTmp1} {
+  #If {%2="back" or %2="forward"} {
+   #Var HistoryTmp1 0;
+#If {@gbl="Enabled"} {#Var HistoryTmp2 {%NumWords(@HistoryMasterBuffers,|)};#Var HistoryTmp3 {HistoryMasterBuffers}} {#Var HistoryTmp2 {%NumWords(@HistoryBuffers,|)};#Var HistoryTmp3 {HistoryBuffers}};
+   #While {@HistoryTmp1<@HistoryTmp2} {
+    #Math HistoryTmp1 {@HistoryTmp1+1};
+    #If {@CurrentHistoryBuffer=%Word(@{@HistoryTmp3},|,@HistoryTmp1)} {
+     #If {%2="back"} {
+      #if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferSwitch.wav} @Vol;#PC %PlayHandle Pan -1200};
+      #If {@HistoryTmp1>1} {
+       #Math HistoryTmp1 {@HistoryTmp1-1};
+       #Var CurrentHistoryBuffer {%Word(@{@HistoryTmp3},|,@HistoryTmp1)}
+      } {
+       #Var CurrentHistoryBuffer {%Word(@{@HistoryTmp3},|,@HistoryTmp2)}
+      }
+     } {
+      #if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferSwitch.wav} @Vol;#PC %PlayHandle Pan 1200};
+      #If {@HistoryTmp1=%NumWords(@{@HistoryTmp3},|)} {
+       #Var CurrentHistoryBuffer {%Word(@{@HistoryTmp3},|,1)}
+      } {
+       #Math HistoryTmp1 {@HistoryTmp1+1};
+       #Var CurrentHistoryBuffer {%Word(@{@HistoryTmp3},|,@HistoryTmp1)}
+      }
+     };
+#Exec {    #Var HistoryTmp1 {@HistoryTmp2}}
+    }
+   }
+  } {
+   #Var HistoryTmp1 {%Trim(%2)*};
+   #ForAll {@{@HistoryTmp3}} {
+    #If {%i=*@HistoryTmp1} {
+     #Var HistoryTmp1 {%i}
+    }
+   };
+   #If {%Pos(*,@HistoryTmp1)=0} {
+    #Var CurrentHistoryBuffer {@HistoryTmp1}
+   } {
+    #Say {That buffer does not exist} NoDisplay;
+    #Abort All
+   }
+  };
+   #Say {%Replace(@CurrentHistoryBuffer,0, ), %NumWords(@{History@{CurrentHistoryBuffer}Messages},|) items.} VoiceOnly;
+  #Var CurrentHistoryBufferPosition 1;
+#Abort all
+};
+ #If {"back"=*@HistoryTmp1} {
+  #If {%2="all"} {
+    #Var CurrentHistoryBufferPosition {%Min(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|),%NumWords(@{History@{CurrentHistoryBuffer}Messages},|))};
+   #Var HistoryTmp1 0
+  } {
+   #Math CurrentHistoryBufferPosition {@CurrentHistoryBufferPosition+@gocount};
+    #If {@CurrentHistoryBufferPosition>%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)} {
+     #Var CurrentHistoryBufferPosition {%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)};
+     #Var HistoryTmp1 1;
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} @Vol} {#Say {Top of buffer} VoiceOnly}
+    } {
+     #Var HistoryTmp1 0
+    }
+  };
+  #Var HistoryTmp1 {}
+ };
+ #If {"forward"=*@HistoryTmp1} {
+  #Math CurrentHistoryBufferPosition {@CurrentHistoryBufferPosition-@gocount};
+  #If {@CurrentHistoryBufferPosition<1 or %2="all"} {
+   #If {@CurrentHistoryBufferPosition<1} {#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} @Vol} {#Say {Bottom of buffer} VoiceOnly}};
+   #Var CurrentHistoryBufferPosition 1
+  };
+  #Var HistoryTmp1 {}
+ };
+ #If {@HistoryTmp1<>""} {
+  #Say {I don't recognize that argument} NoDisplay;
+  #Abort All
+ };
+  #Var HistoryTmp1 {%Word(@{History@{CurrentHistoryBuffer}Messages},|,%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)+1-@CurrentHistoryBufferPosition)};
+  #Var HistoryTmp1 {%Replace(@HistoryTmp1,@CR@CR,|)};
+  #Say {@HistoryTmp1} NoDisplay;
+#UnVar HistoryTmp1;
+#UnVar HistoryTmp2;
+#UnVar HistoryTmp3
+} {}
+
+#Key ALT-RIGHT {SPHB switch forward};
+#Key ALT-LEFT {SPHB switch back};
+#Key ALT-UP {SPHB back};
+#Key ALT-DOWN {SPHB forward};
+#Key ALT-HOME {SPHB back all};
+#Key ALT-END {SPHB forward all};
+#Key ALT-PAGEDOWN {#var gocount @gocountnum; #if { %IsNumber(@gocountnum)=0} {#var gocount 20}; SPHB forward; #var gocount 1};
+#Key ALT-PAGEUP {#var gocount @gocountnum; #if { %IsNumber(@gocountnum)=0} {#var gocount 20}; SPHB back; #var gocount 1};
+#Key ALT-SHIFT-ENTER {setBufVar}
+#Alias clearAllBuffers {
+#For {@HistoryMasterBuffers} {#Exec {#Unvar history%{i}messages}};
+#UnVar HistoryBuffers;
+#UnVar HistoryMasterBuffers;
+#UnVar HistoryTMP1;
+#UnVar HistoryTMP2;
+#UnVar HistoryTMP3;
+#UnVar CurrentHistoryBuffer;
+#UnVar CurrentHistoryBufferPosition;
+#Unload {Cosmic rage/Misc/Buffers.set};
+#Alarm 0 {#Load {Cosmic rage/Misc/Buffers.set}};
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/General/Misc/BufferAction.wav} @Vol};
+#Say {Buffers reloaded successfully}
+};
+#Alias clearCurrentBuffer {
+#If {@CurrentHistoryBuffer="All0Buffers"} {
+playsound {Cosmic Rage/General/Misc/boop.wav} @vol; #Say {You cannot clear the all buffers buffer}
+} {
+#Say {Cleared the %Replace(@CurrentHistoryBuffer,0, ) buffer};
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/General/Misc/BufferAction.wav} @Vol};
+#If {%IfWord(@CurrentHistoryBuffer,@HistoryBuffers,|)} {#Var HistoryBuffers {%Delete(@HistoryBuffers,%Pos(@CurrentHistoryBuffer,@HistoryBuffers)-1,%Length(@CurrentHistoryBuffer)+1)}};
+#Var HistoryMasterBuffers {%Delete(@HistoryMasterBuffers,%Pos(@CurrentHistoryBuffer,@HistoryMasterBuffers)-1,%Length(@CurrentHistoryBuffer)+1)};
+#Exec {#Unvar {History@{CurrentHistoryBuffer}Messages}};
+#Var CurrentHistoryBuffer {All0Buffers}
+}
+};
+#Key ALT-DELETE {clearcurrentbuffer};
+#Key ALT-SHIFT-DELETE {clearallbuffers}
+#Alias setBufVar {#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/General/Misc/BufferAction.wav} @vol}; #Prompt gocountnum {Enter how much you'd like buffers to move by when using page up and down keys?}; #if { %IsNumber(@gocountnum)=0 or @gocountnum < 2} { #alarm 0.3 {#if {@buffersound = "Enabled"} {playsound {cosmic rage/general/misc/boop.wav} @vol}; #say {woops, something went wrong. Your buffer mover has been set to the default value of 20. You eather have entered something which is not a number, or a number less than 2. Please try again}}; #var gocountnum 20} {#alarm 0.2 {#if {@buffersound = "Enabled"} {playsound {cosmic rage/general/misc/alert.wav} @vol}; #say {Success! Your buffer mover has been set to @gocountnum}}; ActualSave}}; 
+#alias buffersound { #if {@buffersound = "Enabled"} {#var buffersound "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {buffer sounds disabled.}} {#var buffersound "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {buffer sounds enabled.}}};
+#alias ToggleFav { #if {@bufferfavkeys = "Enable"} {#var bufferfavkeys Disable; #class bufferkeys @bufferfavkeys; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {buffer favorite keys disabled}} {#var bufferfavkeys Enable; #class bufferkeys @bufferfavkeys; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {buffer favorite keys enabled.}}};
+#alias gbl { #if {@gbl = "Enabled"} {#var gbl "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol;#Var CurrentHistoryBuffer {%Word(@HistoryBuffers,|,1)}; #say {Now using custom buffer list}} {#var gbl "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol;#Var CurrentHistoryBuffer {%Word(@HistoryMasterBuffers,|,1)}; #say {Now using master buffer list}}};
+#Key Shift-Control-Enter {gbl};
+#Key Control-Enter {buffersound};
+#alias delbuffer  {
+#If {@gbl="Enabled"} {
+#Say {Error: you cannot delete buffers from the custom buffer list while using the master buffer list};
+#Abort all
+};
+playsound {Cosmic Rage/general/misc/BufferDelete.wav} @vol;
+#var item {%pick(p:Which buffer do you want to delete?|@CurrentBufferList)};
+#If {Not (@item="All0Buffers")} {
+#var CurrentBufferList {%delitem(@CurrentBufferList,@item)};
+#If {%Ifword(@item,@HistoryBuffers,|)=1} {#Var HistoryBuffers {%DelItem(@HistoryBuffers,@Item)};#If {@Gbl="Enabled"} {#Var CurrentHistoryBuffer {%Word(@HistoryMasterBuffers,|,1)}} {#Var CurrentHistoryBuffer {%Word(@HistoryBuffers,|,1)}}};
+playsound {Cosmic Rage/general/misc/BufferRemoved.wav} @vol
+} {
+playsound {Cosmic Rage/General/Misc/boop.wav} @vol; #Alarm 0.3 {#Say {You cannot delete the All Buffers Buffer}}
+};
+AutoSaveBuffers
+}
+#alias addbuffer {
+#If {@gbl="Enabled"} {
+#Say {Error: you cannot add buffers to the custom buffer list while using the master buffer list};
+#Abort all
+};
+playsound {Cosmic Rage/general/misc/BufferAdd.wav} @vol;
+#var newitem {%pick(p:Which buffer do you want to add?|@MasterBufferList)};
+#if {%ifword(@newitem,@CurrentBufferList,"|") = 1} {
+playsound {Cosmic Rage/general/misc/BufferActive.wav} @vol
+} {
+#if {%ifword(@newitem,@MasterBufferList,"|") = 1} {
+#additem CurrentBufferList @newitem;
+#If {%IfWord(@newitem,@HistoryBuffers,|)=0 AND %Length(@{History@{newitem}Messages})>0} {
+#Exec {Sort {@newitem} {@HistoryBuffers} {@MasterBufferList}};#Var HistoryBuffers {@SortVar}};
+playsound {Cosmic Rage/general/misc/BufferAdded.wav} @vol;
+}
+}
+AutoSaveBuffers
+};
+#key {ALT-SHIFT-RIGHT} {addbuffer};
+#key {ALT-SHIFT-LEFT} {delbuffer};
+#Alias bufFav {
+#Var Syntax {Try: bufFav <number> <action>
+Where number is a number between 1 and 10, and action is any one of set, clear, or switch. Clearall without a number clears all active slots.};
+#If {%length(%trim(%0))=0} {#Say {@Syntax};#Abort all};
+#If {%IsNumber(%trim(%1))=1 AND %1>0 AND %1<=10} {
+#Var bpt1 {%trim(%1)}
+} {
+#If {%trim(%1)="clearall"} {
+#Var bufferFavourites {
+b1:1null
+b2:2null
+b3:3null
+b4:4null
+b5:5null
+b6:6null
+b7:7null
+b8:8null
+b9:9null
+b10:10null
+};
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferAction.wav} @Vol};
+#Say {All buffer favourites cleared} VoiceOnly
+}
+} {
+#Say {Invalid number. @Syntax};
+#abort all
+};
+#Var bpt2 {%Pos(%{CRLF}b@bpt1,@bufferFavourites)};
+#If {@bpt2>0} {
+#Var bpt2 {%Copy(@bufferFavourites,%Eval(@bpt2)+2)};
+#Var bpt2 {%Word(@bpt2,%CRLF,1)};
+#Var bpt2 {%Word(@bpt2,:,2)}
+} {
+#Say {There was an error with the Buffer Favourites listing. Debug b@bpt1 @bpt2};
+#abort all
+};
+#If {%Trim(%2)="set"} {
+#If {%IfWord(@CurrentHistoryBuffer,@HistoryBuffers,|)} {
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/General/Misc/BufferAction.wav} @Vol;#Pc %playhandle pan %Eval(-1000+@bpt1*200)};
+#Var bufferFavourites {%Replace(@BufferFavourites,@bpt2,"@bpt1@CurrentHistoryBuffer")};
+#Say {%Replace(@CurrentHistoryBuffer,0, ) now in buffer favourite slot @bpt1} VoiceOnly
+} {
+#Say {Invalid buffer. Buffer must be in the current active buffers to set it.} VoiceOnly
+}
+};
+#If {%trim(%2)="switch"} {
+#If {@bpt2="@{bpt1}null"} {
+#Say {Slot @bpt1 is empty} VoiceOnly;
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} @Vol;#Pc %playhandle pan %Eval(-1000+@bpt1*200)}
+} {
+#If {%IfWord(%copy(@bpt2,%Length(@bpt1)+1,%Length(@bpt2)),@HistoryBuffers,|)} {#Var CurrentHistoryBuffer {%Copy(@bpt2,%Length(@bpt1)+1,%Length(@bpt2))};
+#Say {%replace(@CurrentHistoryBuffer,0, ) %NumWords(@{History@{CurrentHistoryBuffer}Messages},|) Items} VoiceOnly;
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferSwitch.wav} @Vol;#Pc %playhandle pan %Eval(-1000+@bpt1*200)}
+} {
+#Say {The %Replace(@bpt2,0, ) Buffer is not active} VoiceOnly
+}
+}
+};
+#If {%Trim(%2)="clear"} {
+#If {@bpt2="@{bpt1}null"} {
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} @Vol;#Pc %playhandle pan %Eval(-1000+@bpt1*200)};
+#Say {Buffer slot @bpt1 already empty} VoiceOnly
+} {
+#Var BufferFavourites {%Replace(@BufferFavourites,@bpt2,"@{bpt1}null")};
+#if {@buffersound = "Enabled"} {playsound {Cosmic Rage/general/misc/BufferAction.wav} @Vol;#Pc %playhandle pan %Eval(-1000+@bpt1*200)};
+#Say {Buffer favourite slot @bpt1ed} VoiceOnly
+}
+}
+};
+#Alias ControlKeys {#If {@bufferfavkeys="Enable"} {BufFav %1 switch} {#Say {%LastLine(%1)} VoiceOnly}};
+#Key CONTROL-1 {ControlKeys 1} bufferkeys
+#Key CONTROL-2 {ControlKeys 2} bufferkeys
+#Key CONTROL-3 {ControlKeys 3} bufferkeys
+#Key CONTROL-4 {ControlKeys 4} bufferkeys
+#Key CONTROL-5 {ControlKeys 5} bufferkeys
+#Key CONTROL-6 {ControlKeys 6} bufferkeys
+#Key CONTROL-7 {ControlKeys 7} bufferkeys
+#Key CONTROL-8 {ControlKeys 8} bufferkeys
+#Key CONTROL-9 {ControlKeys 9} bufferkeys
+#Key CONTROL-0 {ControlKeys 10} bufferkeys
+#Alias ShiftKeys {#If {@bufferfavkeys="Enable"} {BufFav %1 set}} bufferkeys
+#Key SHIFT-CONTROL-1 {shiftkeys 1} bufferkeys
+#Key SHIFT-CONTROL-2 {shiftkeys 2} bufferkeys
+#Key SHIFT-CONTROL-3 {shiftkeys 3} bufferkeys
+#Key SHIFT-CONTROL-4 {shiftkeys 4} bufferkeys
+#Key SHIFT-CONTROL-5 {shiftkeys 5} bufferkeys
+#Key SHIFT-CONTROL-6 {shiftkeys 6} bufferkeys
+#Key SHIFT-CONTROL-7 {shiftkeys 7} bufferkeys
+#Key SHIFT-CONTROL-8 {shiftkeys 8} bufferkeys
+#Key SHIFT-CONTROL-9 {shiftkeys 9} bufferkeys
+#Key SHIFT-CONTROL-0 {shiftkeys 10} bufferkeys
+#Alias altcontrolKeys {#If {@bufferfavkeys="Enable"} {BufFav %1 clear}}
+#Key CONTROL-ALT-1 {altcontrolKeys 1} bufferkeys
+#Key CONTROL-ALT-2 {altcontrolKeys 2} bufferkeys
+#Key CONTROL-ALT-3 {altcontrolKeys 3} bufferkeys
+#Key CONTROL-ALT-4 {altcontrolKeys 4} bufferkeys
+#Key CONTROL-ALT-5 {altcontrolKeys 5} bufferkeys
+#Key CONTROL-ALT-6 {altcontrolKeys 6} bufferkeys
+#Key CONTROL-ALT-7 {altcontrolKeys 7} bufferkeys
+#Key CONTROL-ALT-8 {altcontrolKeys 8} bufferkeys
+#Key CONTROL-ALT-9 {altcontrolKeys 9} bufferkeys
+#Key CONTROL-ALT-0 {altcontrolKeys 10} bufferkeys
+#Key ALT-Backspace {BufFav clearall} bufferkeys
+#Key alt-1 {BufferRead {@CurrentHistoryBuffer} {%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)}} bufferkeys
+#Key alt-2 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-1)}} bufferkeys
+#Key alt-3 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-2)}} bufferkeys
+#Key alt-4 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-3)}} bufferkeys
+#Key alt-5 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-4)}} bufferkeys
+#Key alt-6 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-5)}} bufferkeys
+#Key alt-7 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-6)}} bufferkeys
+#Key alt-8 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-7)}} bufferkeys
+#Key alt-9 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-8)}} bufferkeys
+#Key alt-0 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-9)}} bufferkeys
 ;aliases for saving and reading preferred buffers.
 
-#alias savebuffers {#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} 80}
-#alias AutoSaveBuffers {#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5}
-#alias loadbuffers {#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersLoaded.wav} 80}
-#alias SilentlyLoadBuffers {#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5}
-
-;Keys for loading, reading  and saving buffers
-#key {Control-alt-shift-S} {SaveBuffers}
+#alias savebuffers {
+#If {%IfWord("All0Buffers",@CurrentBufferList,|)=0} {
+#Var CurrentBufferList {All0Buffers|@CurrentBufferList};
+#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} @vol
+} {
+#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersSaved.wav} @vol
+}
+}
+#alias AutoSaveBuffers {#delfile CosmicRageBufferlist.txt; #file 5 CosmicRageBufferlist.txt; #write 5 @CurrentBufferList; #close 5};
+#alias loadbuffers {
+#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5; playsound {Cosmic Rage/general/misc/BuffersLoaded.wav} @vol;
+#If {%IfWord("All0Buffers",@CurrentBufferList,|)=0} {
+#Var CurrentBufferList {All0Buffers|@CurrentBufferList}
+}
+};
+#alias SilentlyLoadBuffers {#file 5 CosmicRageBufferlist.txt; #read 5 CurrentBufferList; #close 5;
+#If {%IfWord("All0Buffers",@CurrentBufferList,|)=0} {
+#Var CurrentBufferList {All0Buffers|@CurrentBufferList}
+}
+};
+#key {Control-alt-shift-S} {SaveBuffers};
 #key {Control-alt-shift-L} {LoadBuffers}
-
-#Key {Alt-Right} {#math BufferPointer {@BufferPointer + 1};#if {@BufferPointer > %NumWords(@CurrentBufferList,"|")} {#Var BufferPointer 1} {};#var BufferName {%word(@currentBufferList,"|",@BufferPointer)};playsound {Cosmic Rage/general/misc/BufferSwitch.wav} 80; #PC %PlayHandle Pan 1200; #say {@BufferName, %numwords(@{@BufferName},"|") items} voiceonly;#var ItemPointer 1}
-
-#Key {Alt-Left} {#math BufferPointer {@BufferPointer - 1};#if {@BufferPointer < 1} {#Var BufferPointer %NumWords(@CurrentBufferList,"|")} {};#var BufferName {%word(@currentBufferList,"|",@BufferPointer)};playsound {Cosmic Rage/general/misc/BufferSwitch.wav} 80; #PC %PlayHandle Pan -1200; #say {@BufferName, %numwords(@{@BufferName},"|") items} Voiceonly;#var ItemPointer 1}
-#alias CleanBuffer {#var @buffername {%replace(@{@BufferName},~", )}}
-#key {Alt-Up} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} voiceonly} {#if {@ItemPointer < 2} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of Buffer} voiceonly} {#math ItemPointer {@ItemPointer - 1}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
-#key {Shift-Alt-PageUp} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer < 20} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Not enough items have been stored in the buffer to move that far up} Voiceonly} {#math ItemPointer {@ItemPointer - 20}}; #say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
-
-#alias ClearBuffer {#var @buffername ""; playsound {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {The items contained in the @buffername buffer have been cleared successfully!}}
-#key {Alt-shift-delete} {ClearBuffer}
-
-#key {Alt-Down} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
-#key {Shift-Alt-PageDown} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|") - 20} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Not enough items have been stored in the buffer to move that far down.} Voiceonly} {#math ItemPointer {@ItemPointer + 20}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
-
-#key {Alt-Home} {CleanBuffer;playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {Top of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer}} {#var ItemPointer 1; #say {%word(@{@BufferName},"|",@ItemPointer)} voiceonly}}
-#key {Alt-Down} {CleanBuffer;#if {@{@Buffername} = ""} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {No items in buffer} VoiceOnly} {#if {@ItemPointer >= %NumWords(@{@BufferName},"|")} {playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of Buffer} Voiceonly} {#math ItemPointer {@ItemPointer + 1}};#say {%word(@{@BufferName},"|",@ItemPointer)} VoiceOnly}}
-
-#key {Alt-END} {CleanBuffer;playsound {Cosmic Rage/general/misc/BufferBoundary.wav} 80; #say {End of buffer.} Voiceonly; #if {@{@Buffername} = ""} {#say {No items in buffer} VoiceOnly} {#var ItemPointer %NumWords(@{@BufferName},"|");#say {%word(@{@BufferName},"|",@ItemPointer)} voiceonly}}
-
-#Key {Alt-1} {CleanBuffer;#if {@{@BufferName} = ""} {#say {No message.} Voiceonly} {#say %word(@{@BufferName},"|",%NumWords(@{@BufferName},"|")) Voiceonly}}
-#key {Alt-2} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 2} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 1)}) Voiceonly}}
-#key {Alt-3} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 3} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 2)}) Voiceonly}}
-#key {Alt-4} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 4} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 3)}) Voiceonly}}
-#key {Alt-5} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 5} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 4)}) Voiceonly}}
-#key {Alt-6} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 6} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 5)}) Voiceonly}}
-#key {Alt-7} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 7} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 6)}) Voiceonly}}
-#key {Alt-8} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 8} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 7)}) Voiceonly}}
-#key {Alt-9} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 9} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 8)}) Voiceonly}}
-#key {Alt-0} {CleanBuffer;#if {%NumWords(@{@BufferName},"|") < 10} {#say {No message.} Voiceonly} {#say {%word(@{@BufferName},"|",%eval(%NumWords(@{@BufferName},"|") - 9)}) Voiceonly}}
-
-;Logging
-
-#alias {LogFile} {#say {Please pick a channel from the menu below to read it's log file.}; #alarm 1 {playsound {Cosmic Rage/general/misc/ConfMan.wav} @90; #pick {p:Please select an option from the menu below|
-Read the administrator channels  log file for %char:#edit {Cosmic Rage/logs/%char admin.log}|
-Read the Administrators Chat log file for %char:#edit  {Cosmic Rage/logs/%char AdminChat.log}|
-Read the Announcements log file for %char:#edit  {Cosmic Rage/logs/%char Announcements.log}|
-Read the Brag channels log file for %char:#edit  {Cosmic Rage/logs/%char brag.log}|
-Read the birthday channels log file for %char:#edit  {Cosmic Rage/logs/%char birthday.log}|
-Read the changes log file for %char:#edit  {Cosmic Rage/logs/%char Changes.log}|
-Read the chargen channels  log file for %char:#edit  {Cosmic Rage/logs/%char chargen.log}|
-Read the Chat channels log file for %char:#edit  {Cosmic Rage/logs/%char chat.log}|
-Read the clanchat channels log file for %char:#edit  {Cosmic Rage/logs/%char ClanChat.log}|
-Read the drone channels log file for %char:#edit  {Cosmic Rage/logs/%char Drone.log}|
-Read the G2A channels log file for %char:#edit  {Cosmic Rage/logs/%char G2A.log}|
-Read the General channels log file for %char:#edit  {Cosmic Rage/logs/%char general.log}|
-Read the GMC channels log file for %char:#edit  {Cosmic Rage/logs/%char GMC.log}|
-Read the HTPL channels log file for %char:#edit  {Cosmic Rage/logs/%char HTPL.log}|
-Read the Intel channels log file for %char:#edit  {Cosmic Rage/logs/%char intel.log}|
-Read the jag channels log file for %char:#edit  {Cosmic Rage/logs/ %char jag.log}|
-Read the mentor channels log file for %char:#edit  {Cosmic Rage/logs/mentor.log}|
-Read the MI channels log file for %char:#edit  {Cosmic Rage/logs/%char MI.log}|
-Read the Missions channels log file for %char:#edit  {Cosmic Rage/logs/%char Missions.log}|
-Read the movement channels log file for %char:#edit  {Cosmic Rage/logs/%char Movement.log}|
-Read the MusicFM channels log file for %char:#edit  {Cosmic Rage/logs/%char MusicFm.log}|
-Read the Newbie channels log file for %char:#edit  {Cosmic Rage/logs/%char Newbie.log}|
-Read the Newbie Helpers channels log file for %char:#edit  {Cosmic Rage/logs/%char NewbieHelpers.log}|
-Read the Notices log file for %char:#edit  {Cosmic Rage/logs/%char Notices.log}|
-Read the Out of Character channels log file for %char:#edit  {Cosmic Rage/logs/%char OOC.log}|
-Read the organisation channels log file for %char:#edit  {Cosmic Rage/logs/%char org.log}|
-Read the Private network channels log file for %char:#edit  {Cosmic Rage/logs/%char Private Network.log}|
-Read the Private in Character channels log file for %char:#edit  {Cosmic Rage/logs/%char Private.log}|
-Read the Private Out of  Character channels log file for %char:#edit  {Cosmic Rage/logs/%char PrivateOOC.log}|
-Read the Room out of Character channels log file for %char:#edit  {Cosmic Rage/logs/%char rooc.log}|
-Read the RP channels log file for %char:#edit  {Cosmic Rage/logs/%char RP.log}|
-Read the SDF channels log file for %char:#edit  {Cosmic Rage/logs/%char sdf.log}|
-Read the SDL channels log file for %char:#edit  {Cosmic Rage/logs/%char SDL.log}|
-Read the security drone and camera log for %char:#edit  {Cosmic Rage/logs/%char securitycamdrone.log}|
-Read the Soundpack channels log file for %char:#edit  {Cosmic Rage/logs/%char Soundpacks.log}|
-Read the SubAnnouncements log file for %char:#edit  {Cosmic Rage/logs/SubAnnouncements.log}|
-Read the Squadren channels log file for %char:#edit  {Cosmic Rage/logs/%char Squadren.log}|
-Read the Traceback channels log file for %char:#edit  {Cosmic Rage/logs/%char Tracebacks.log}|
-Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.log}|
-Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}
-#alias {ClearAllBuffers} {#unload misc/Buffers.set; #load misc/buffers.set; SilentlyLoadBuffers; #play {Cosmic Rage/general/misc/BufferAction.wav} 80; #say {The items contained in your active buffers have been cleared successfully!} Voiceonly}
-#key Control-Alt-Shift-Delete {ClearAllBuffers}
-#alias FixBuffers {#load misc/buffers.set;SaveBuffers; #say {buffer errors should now be corrected.}}
+#Alias BufferRead {
+#Var brt {%Replace(%1,~~,)};
+#If {%IfWord(@brt,@HistoryMasterBuffers,|)=1} {
+#Var br1 {%NumWords(@{History@{Brt}Messages},|)};
+#If {%IsNumber(%2)=1 AND %2>=1 AND %2<=@br1} {
+#Say {%Word(@{History@{Brt}Messages},|,%2)} VoiceOnly
+} {
+#Say {No item} VoiceOnly
+}
+} {
+#Say {Invalid buffer}
+}
+}
+#Alias silentclear { #For {@HistoryMasterBuffers} {#Exec {#Unvar history%{i}messages}}; #UnVar HistoryBuffers; #UnVar HistoryMasterBuffers; #UnVar HistoryTMP1; #UnVar HistoryTMP2; #UnVar HistoryTMP3; #UnVar CurrentHistoryBuffer; #UnVar CurrentHistoryBufferPosition; #Unload {Cosmic rage/Misc/Buffers.set}; #Alarm 0 {#Load {Cosmic rage/Misc/Buffers.set}}};

@@ -57,7 +57,7 @@
 #trigger {You sigh at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
 #trigger {*sighs*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
 #trigger {You whistle *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
-#trigger {*whistles*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
+#trigger {* whistles irritatingl*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
 #trigger {You chortle*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chortle.wav} @vol}}
 #trigger {*chortles*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chortle.wav} @vol}}
 #trigger {You*chuckle.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chuckle.wav} @vol}}
@@ -160,3 +160,5 @@
 #trigger {* pulls on * tail, seeming to wonder where it came from!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tailpull.wav} @vol}}
 #trigger {* picks * up and hurls * out the nearest window like a rag doll!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/throw.wav} @vol}}
 #trigger {* picks up a heavy object and, in apparent rage, hurls it out the nearest window!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/throw.wav} @vol}}
+#trigger {* jumps on * and smacks * around the face with a wet sponge yelling, "Wake up wake up wake up!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/wakeup.wav} 40}}
+#trigger {* plays a bugle and yells, "Wake up, everyone! Wake up!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/misc/invade.wav} 50}}

@@ -1,3 +1,5 @@
+2139 tracebug, credits saperu and Fufflebear, The control numbers will now work for the buffers again. I forgot to fix it wen he told me the first time.
+2138 tracebug, credits Fufflebear, the gulping sound issue is fixed for good. Thanks to Fufflebear for providing a text.
 2137 tracebug, credits saperu, you no longer get random huh, huh, I dont understand that. I guess that's not a command messages upon logging in.
 2136 stormy, Credits Andy, Code credits Saperu, The buffers will probably no longer break. You can now also toggle alt keys along side with the other keys for buffer favorites.
 2135 stormy, credits saperu, Potentialy fixed a buffer problem. 

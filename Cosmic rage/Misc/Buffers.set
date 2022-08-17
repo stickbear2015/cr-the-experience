@@ -441,16 +441,16 @@ b10:10null
 }
 };
 #Alias ControlKeys {#If {@bufferfavkeys="Enable"} {BufFav %1 switch} {#Say {%LastLine(%1)} VoiceOnly}};
-#Key CONTROL-1 {ControlKeys 1} bufferkeys
-#Key CONTROL-2 {ControlKeys 2} bufferkeys
-#Key CONTROL-3 {ControlKeys 3} bufferkeys
-#Key CONTROL-4 {ControlKeys 4} bufferkeys
-#Key CONTROL-5 {ControlKeys 5} bufferkeys
-#Key CONTROL-6 {ControlKeys 6} bufferkeys
-#Key CONTROL-7 {ControlKeys 7} bufferkeys
-#Key CONTROL-8 {ControlKeys 8} bufferkeys
-#Key CONTROL-9 {ControlKeys 9} bufferkeys
-#Key CONTROL-0 {ControlKeys 10} bufferkeys
+#Key CONTROL-1 {ControlKeys 1} 
+#Key CONTROL-2 {ControlKeys 2} 
+#Key CONTROL-3 {ControlKeys 3} 
+#Key CONTROL-4 {ControlKeys 4} 
+#Key CONTROL-5 {ControlKeys 5} 
+#Key CONTROL-6 {ControlKeys 6} 
+#Key CONTROL-7 {ControlKeys 7} 
+#Key CONTROL-8 {ControlKeys 8} 
+#Key CONTROL-9 {ControlKeys 9} 
+#Key CONTROL-0 {ControlKeys 10} 
 #Alias ShiftKeys {#If {@bufferfavkeys="Enable"} {BufFav %1 set}} bufferkeys
 #Key SHIFT-CONTROL-1 {shiftkeys 1} bufferkeys
 #Key SHIFT-CONTROL-2 {shiftkeys 2} bufferkeys

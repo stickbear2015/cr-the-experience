@@ -309,3 +309,5 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #trig {Would you like a scar on your new clone?} {#pc 0 stop}
 #trigger {You begin to quickly gulp down *} {loopsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol; #var gulphandle %playhandle; #var gulploop 1}
 #trig {You finis* the *} {#if {@gulploop = 1} { #pc @gulphandle stop; #var gulploop 0; playsound {Cosmic Rage/general/misc/trash.wav} @vol}}
+#trig {You finish * in * and dispose of *.} {#if {@gulploop = 1} { #pc @gulphandle stop; #var gulploop 0; playsound {Cosmic Rage/general/misc/trash.wav} @vol}}
+#trigger {* materializes in your grasp.} {playsound {cosmic rage/general/factory/resteleport.wav} @vol}

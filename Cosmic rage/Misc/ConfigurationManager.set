@@ -71,6 +71,7 @@ Toggle communication text gag, this will gag the you speak in to your communicat
 Toggle the quotation mark gagger. It is currently @qtg:qtg|
 Gag text for people using helper drone remotes. Currently @hpdr:hpdr|
 Toggle computer avatar gagging. Shortcut Alt+shift+G. It is currently @gagStarshipComputerName:gagcomputer|
+Toggle cargo bay and undamaged vehicle component gag. It is currently @cargogag:cargogag|
 Reload the soundpack:SpReload| View the list of available help files for the soundpack. Note. Files will be opened in your text editer of choice:SpHelp}}
 
 ;Volumes
@@ -274,3 +275,4 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias qtg  {#if {@QGag = 1} {#var QGag 0; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Quotation marks are no longer being gagged.}} {#var QGag 1; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Quotation marks are now being gagged.}}}
 #alias hpdr {#if {@hpdr = "gagged"} {#var hpdr "ungagged"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Helper drone remote usage is no longer being gagged.}} {#var hpdr "gagged"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Helper drone remote usage is now being gagged.}}}
 #alias gagcomputer  {#if {@gagStarshipComputerName= "Enabled"} {#var gagStarshipComputerName "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see computer avatar texts}} {#var gagStarshipComputerName "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see computer avatar texts}}}
+#alias cargogagger  {#if {@cargogagger= "Enabled"} {#var cargogagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Empty cargo bays and undamaged vehicle components will no longer be gagged}} {#var cargogagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {empty cargo bays and undamaged vehicle components will be gagged}}}

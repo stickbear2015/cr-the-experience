@@ -1,3 +1,8 @@
+2144 tracebug, credits tink, added a sound for food deliveries.
+2143 tracebug, credits UmikoIzumi, added a sound for the military holding containers.
+2142 tracebug, the gulping sound bug should be fixed. If it doesn't work, I will be removing the loop itself.
+2141 tracebug, You can now toggle the option of gagging the empty cargo bays and undamaged vehicle components through the config manager or by typing cargogagger.
+2140 tracebug, credits Marco17, fixed a possible bug regarding quantum sound not playing while using amu.
 2139 tracebug, credits saperu and Fufflebear, The control numbers will now work for the buffers again. I forgot to fix it wen he told me the first time.
 2138 tracebug, credits Fufflebear, the gulping sound issue is fixed for good. Thanks to Fufflebear for providing a text.
 2137 tracebug, credits saperu, you no longer get random huh, huh, I dont understand that. I guess that's not a command messages upon logging in.

@@ -172,6 +172,7 @@
 #read 6 gagStarshipComputerName 54;
 #read 6 gbl 55;
 #read 6 bufferfavkeys 56;
+#read 6 cargogagger 57;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {

@@ -29,6 +29,7 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {the engines hum a little as the ship moves slightly to the right.} {#gagline all}
 #trigger {A small status readout next to the image of Moon * indicates that * should break it up into chunks.} {#sub {%2.};playsound {cosmic rage/ships/computer/announce*4.wav} @vol}
 #trigger {You ease the ship to the right, circling the moon to get into prime position.} {#gagline all}
+#trigger {The engines hum a little as the ship moves slightly to the right.} {#gagline all}
 #TRIGGER {* tap a button on the moon console, sending out a scan.} {playsound {Cosmic Rage/activities/blackdwarf/button.wav} @vol}
 #trigger {There is a clunk, and the sound of the machinery dies away.} {#gagline all}
 #trigger {The sound of machinery under strain echoes throughout the ship as collection nets are hauled in.} {#gagline all}

@@ -46,13 +46,6 @@ loopsound {cosmic rage/ships/rooms/bridge*3.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/ControlRoom.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "control"; #var currentroom2 "notmisc"}};
-#If {%IfWord(deck,@RoomName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "deck"} {
-#If {@ShipSoundPlaying = 1} {
-#pc @ShipHandle stop};
-loopsound {cosmic rage/ships/rooms/deck.wav} @Shipvol;
-#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "deck"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Command,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "command"} {
@@ -81,13 +74,6 @@ loopsound {cosmic rage/ships/rooms/CargoBay.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/CargoBay.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "storage"; #var currentroom2 "notmisc"}};
-#If {%IfWord(Corridor,@RoomName," ")} {
-#var currentroom2 "notmisc";
-#if {@currentroom <> "corridor"} {
-#If {@ShipSoundPlaying = 1} {
-#pc @ShipHandle stop};
-loopsound {cosmic rage/ships/rooms/Corridor.wav} @Shipvol;
-#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "corridor"; #var currentroom2 "notmisc"}};
 #If {%IfWord(arrival,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "arrival"} {
@@ -109,6 +95,20 @@ loopsound {cosmic rage/ships/rooms/DockingBay.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/DockingBay.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "docking"; #var currentroom2 "notmisc"}};
+#If {%IfWord(deck,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "deck"} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop};
+loopsound {cosmic rage/ships/rooms/deck.wav} @Shipvol;
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "deck"; #var currentroom2 "notmisc"}};
+#If {%IfWord(Corridor,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "corridor"} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop};
+loopsound {cosmic rage/ships/rooms/Corridor.wav} @Shipvol;
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "corridor"; #var currentroom2 "notmisc"}};
 #If {%IfWord(Medical,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "medical"} {

@@ -1,4 +1,4 @@
-#trigger {You twist a control and order the drone into a sharp inward dive.} {playsound {cosmic rage/activities/starres/aprbegin.wav} @evol; #alarm 3 {loopsound {cosmic rage/activities/starres/aprloop.wav} @evol; #var aprHandle %playHandle; #var apr 1}}
+#trigger {You twist a control and order the drone into a sharp inward dive.} {playsound {cosmic rage/activities/starres/aprbegin.wav} @evol; #alarm 2 {loopsound {cosmic rage/activities/starres/aprloop.wav} @evol; #var aprHandle %playHandle; #var apr 1}}
 #trigger {The view of the drone stabilises as it pulls out of the dive and stops.} {playsound {cosmic rage/activities/starres/aprstop.wav} @evol; #if {@apr = 1} {#pc @aprHandle stop; #var apr 0}}
 #trigger {You open up the clamps holding the drone securely to the pod.} {playsound {cosmic rage/activities/starres/aprbegin.wav} @evol; #alarm 3 {loopsound {cosmic rage/activities/starres/aprloop.wav} @evol; #var aprHandle %playHandle; #var apr 1}}
 

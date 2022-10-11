@@ -70,7 +70,7 @@ loopsound {cosmic rage/Ambiences/bowling.wav} @roomvol;
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/construction.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "construction"; #var currentroom2 "notmisc"}};
-#If {%IfWord(Jet,@RoomName," ")} {
+#If {%IfWord(Jet,@PlanetName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Jet"} {
 #if {@RoomSoundPlaying = 1} {

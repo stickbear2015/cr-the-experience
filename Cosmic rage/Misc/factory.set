@@ -97,7 +97,7 @@ playsound  {cosmic rage/general/factory/pourMilk*2.wav} @vol}
 #trigger {The sound of crashing, drilling and hammering can be heard as repair drones continue to repair the Factory} {
 #gagline all;
 playsound  {cosmic rage/general/factoryRepair.wav} @vol}
-#trigger {* announcement from * *} {playsound  {cosmic rage/general/factory/PA.wav} @CommsVol; #additem PA %0} {} AnyCase
+#trigger {* announcement from * *} {playsound  {cosmic rage/general/factory/PA.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {Charge readout:} {
 playsound  {cosmic rage/general/factory/computer*6.wav} @vol}
 #trigger {Damage report:} {

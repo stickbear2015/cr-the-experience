@@ -118,7 +118,10 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {You have received a new friendship request from *} {playsound {Cosmic Rage/general/comms/OOCRequest.wav} 85}
 #trigger {* lets out a cheerful chirp to let you know it has sent the mail.} {playsound {Cosmic Rage/general/comms/MailSent.wav} @CommsVol}
 #trigger {Mail sent.} {playsound {Cosmic Rage/general/comms/MailSent.wav} @CommsVol; BufferAdd InfoComputerNotifications %0}
-#trigger {A small light blinks on nex to the intercom and you hear the voice of *} {playsound {Cosmic Rage/general/comms/Intercom.wav} @CommsVol; BufferAdd PA %0}
+#trigger {* the intercom and you hear the voice of * *} {#sub {[Intercom] %2 %3};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
+#trigger {* ta* the button next to the intercom and spea* into * *} {#sub {[intercom] %1 : %5};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {OOC communications filtered.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @CommsVol}
 #trigger {OOC communications unfiltered.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}
 #trigger {You enable the * channel.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}

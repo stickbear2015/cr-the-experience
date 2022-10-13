@@ -1,3 +1,4 @@
+2148, Skyfall Blind Dreamer, Fixed intercoms in houses and factory PAs being added to the PA buffer.
 2147, Skyfall Blind Dreamer, fixed the cargogagger option in the configuration manager. It will now work as it should.
 2146, Skyfall Blind Dreamer, fixed the jet ambience.
 2145, Skyfall Blind Dreamer, Changed a couple things, including the room order for ship ambiences so that the docking bay sound doesn't play if in a docking bay corridor or deck room, and updated triggers for wormhole jumps so sounds will play. Also gagged a line of text in moon splitting relating to the ship moving to the right, and updated the volcano harvesting file as it was causing gagging with the number of moon chunks retrieved.

@@ -1,7 +1,7 @@
 ;A way to sort a list based on another with an item inserted
-;sort {i} {l} {c}, where i=new item, l=list, c=comparative list
+;sortlist {i} {l} {c}, where i=new item, l=list, c=comparative list
 
-#Alias sort {
+#Alias sortlist {
 #Var s1 {%Replace(%1,~~,)};
 #Var s2 {%Replace(%2,~~,)};
 #Var s3 {%Replace(%3,~~,)};
@@ -61,7 +61,7 @@ b10:10null
 }
 };
 #If {%Length(@{History%{1}Tmp1})>0} {
-#If {%IfWord(%1,@HistoryBuffers,|)=0 AND %IfWord(%1,@CurrentBufferList,|)=1} {Sort {%1} {@HistoryBuffers} {@CurrentBufferList};#Var HistoryBuffers {@SortVar}
+#If {%IfWord(%1,@HistoryBuffers,|)=0 AND %IfWord(%1,@CurrentBufferList,|)=1} {Sortlist {%1} {@HistoryBuffers} {@CurrentBufferList};#Var HistoryBuffers {@SortVar}
 };
 #If {%IfWord(%1,@HistoryMasterBuffers,|)=0 AND %IfWord(%1,@MasterBufferList,|)=1} {#Var HistoryMasterBuffers {%Sort(@HistoryMasterBuffers|%1,0)};#Var HistoryMasterBuffers {All0Buffers|%DelItem(@HistoryMasterBuffers,All0Buffers)}
 };
@@ -363,7 +363,7 @@ playsound {Cosmic Rage/general/misc/BufferActive.wav} @vol
 #if {%ifword(@newitem,@MasterBufferList,"|") = 1} {
 #additem CurrentBufferList @newitem;
 #If {%IfWord(@newitem,@HistoryBuffers,|)=0 AND %Length(@{History@{newitem}Messages})>0} {
-#Exec {Sort {@newitem} {@HistoryBuffers} {@MasterBufferList}};#Var HistoryBuffers {@SortVar}};
+#Exec {Sortlist {@newitem} {@HistoryBuffers} {@MasterBufferList}};#Var HistoryBuffers {@SortVar}};
 playsound {Cosmic Rage/general/misc/BufferAdded.wav} @vol;
 }
 }

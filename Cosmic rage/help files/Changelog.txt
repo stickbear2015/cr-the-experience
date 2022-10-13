@@ -1,3 +1,4 @@
+2149 tracebug, credits Musta, fixed an error preventing the digginga activity to be done.
 2148, Skyfall Blind Dreamer, Fixed intercoms in houses and factory PAs being added to the PA buffer.
 2147, Skyfall Blind Dreamer, fixed the cargogagger option in the configuration manager. It will now work as it should.
 2146, Skyfall Blind Dreamer, fixed the jet ambience.

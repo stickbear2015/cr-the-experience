@@ -416,13 +416,14 @@ loopsound {cosmic rage/ships/movement/quantimeengine.wav} @vol; #var quanhandle 
 #TRIGGER {You hear a slight grinding noise as the warp core slows down.} {playsound {cosmic rage/ships/movement/quantimeend.wav} @vol; #if {@WarpStart = 1} {#pc @WarpStarthandle stop; #var WarpStart 0}}
 #trigger {The ship slows dramatically as it exits quantum space.} {
 #if {@quan = 1} {
-#pc @quanhandle stop; #var quan 0}}
-#trigger {You slam the lever down.} {#gagline all}
+#pc @quanhandle stop; #var quan 0}};
 #trigger {The ship judders to a stop.} {
-#gagline voice;
+#gagline all;
 playsound {cosmic rage/ships/movement/quantimeend.wav} @vol;
 #if {@quan = 1} {
-#pc @quanhandle stop;#var quan 0};speed 0}
+#pc @quanhandle stop; #var quan 0};
+speed 0}
+#trigger {You slam the lever down.} {#gagline all};
 #trigger {The computer announces: "Amu aborted."} {
 #if {@quan = 1} {
 #pc @quanhandle stop;#var quan 0}}

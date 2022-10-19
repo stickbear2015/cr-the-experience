@@ -127,22 +127,20 @@ playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCas
 #sub {[Intercom] %2 %3};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
 #trigger {* ta* the button next to the intercom and spea* into it: *} {
-#var jewelry %left(%1,5);
-#if {%ifword(light,jewelry,"")} {#abort 1};
+#if {%ifword(as,%1,"")} {#abort 1};
 #if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
 #sub {[intercom] %1 %4};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {* ta* the button next to the intercom and spea* into it: : "*"} {
-#var jewelry %left(%1,5);
-#if {%ifword(light,jewelry,"")} {#abort 1};
+#if {%ifword(as,%1,"")} {#abort 1};
 #if {@QGag = 1} {
 #sub {[intercom] %1 : %4};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
-#trigger {light * as  * ta* the button next to the intercom and spea* into it: *} {
+#trigger {* as  * ta* the button next to the intercom and spea* into it: *} {
 #if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
 #sub {[intercom] %2 %5};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {light * as  * ta* the button next to the intercom and spea* into it: : "*"} {
+#trigger {* as  * ta* the button next to the intercom and spea* into it: : "*"} {
 #if {@QGag = 1} {
 #sub {[intercom] %2 : %5};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase

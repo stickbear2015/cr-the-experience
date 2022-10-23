@@ -1,4 +1,5 @@
 ; quotation gagger
+#trigger {*"*} {#if {@QGag = 1} {#sub {%1%2}}}
 #trigger {*"*"} {#if {@QGag = 1} {#sub {%1%2}}}
 #trigger {*"*"*} {#if {@QGag = 1} {#sub {%1%2%3}}}
 #trigger {*"*"*"*"} {#if {@QGag = 1} {#sub {%1%2%3%4}}}
@@ -53,7 +54,7 @@ Toggle the sounds from clocks that can be bought in stores in the game.   When t
 Toggle the Small tick sounds letting you know that you are connected to the moo but idle. shortcut ctrl alt c. This option is currently @ConnectionCheck:ToggleIdleSounds|
 Toggle what the Numpad enters. If this option is disabled, you may use your numpad to enter numbers directly without them effecting your characters movement, vehicle movement or ship movement. This option is currently @numpadon :ToggleNumpad|
 Toggle Channel Logging. This option is currently @ChannelLogging. If this option is enabled, you may use shift-F2 to pull up the list of channels that have been logged.:Logging|
-Toggle I don't understand that messages. Shortcut  ctrl alt c. This option is currently @GameError :ErrorToggle|
+Toggle I don't understand that messages. Shortcut  alt b. This option is currently @GameError :ErrorToggle|
 Toggle launching and docking text. Shortcut alt shift l. This option is currently @LaunchText :toggleLaunchText|
 Toggle social sounds. Shortcut alt shift s. This option is currently @SocialSounds :toggleSocialSounds|
 Toggle social text. Shortcut alt shift t. This option is currently @SocialText. When this option is enabled, you will not see text when you use socials:toggleSocialText|

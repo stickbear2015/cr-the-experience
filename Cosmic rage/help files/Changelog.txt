@@ -1,3 +1,4 @@
+2153, Skyfall Blind Dreamer, fixed a reported issue with a shortcut key that was displayed wtice in the configuration manager.
 2152, Skyfall Blind Dreamer, Fixed house intercoms, for real this time.
 2151, Skyfall Blind Dreamer, majorly cleaned up house intercoms, including adding the quotation gagger to the format, and making exceptions to filter out wearable items that change the trigger text.
 2150, Skyfall Blind Dreamer, updated the quotation mark gagger.

@@ -122,3 +122,4 @@
 #say {Your changelog's last entry is change number @chresult.}}
 #key control-shift-q {qtg}
 #key Alt-shift-G {gagcomputer}
+#key alt-b {ErrorToggle}

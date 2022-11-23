@@ -1,4 +1,8 @@
-2153, Skyfall Blind Dreamer, fixed a reported issue with a shortcut key that was displayed wtice in the configuration manager.
+2157 tracebug, credits debs, added a sound for doorbells.
+2156 tracebug, credits Camaro97 and Host Eli perez, added a bitchslap social sound. THX to Camaro97 for being my guinnypig
+2155 tracebug, credits Reasona, added two movement keys. Alt CTRL Up and Down or upstairs and downstairs exits
+2154 tracebug, credits UmikoIzumi, added a sound for an explosion text.
+2153, Skyfall Blind Dreamer, fixed a reported issue with a shortcut key that was displayed twice in the configuration manager.
 2152, Skyfall Blind Dreamer, Fixed house intercoms, for real this time.
 2151, Skyfall Blind Dreamer, majorly cleaned up house intercoms, including adding the quotation gagger to the format, and making exceptions to filter out wearable items that change the trigger text.
 2150, Skyfall Blind Dreamer, updated the quotation mark gagger.

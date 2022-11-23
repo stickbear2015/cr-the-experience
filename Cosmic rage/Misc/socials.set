@@ -162,3 +162,4 @@
 #trigger {* picks up a heavy object and, in apparent rage, hurls it out the nearest window!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/throw.wav} @vol}}
 #trigger {* jumps on * and smacks * around the face with a wet sponge yelling, "Wake up wake up wake up!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/wakeup.wav} 40}}
 #trigger {* plays a bugle and yells, "Wake up, everyone! Wake up!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/misc/invade.wav} 50}}
+#trigger {* bitchslaps * *round the face.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bitchslap.wav} 50}}

@@ -56,3 +56,4 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {* sna* a picture of * using *} {playsound {cosmic rage/general/house/cam.wav} @vol};
 #TRIGGER {* sna* a photo of * on a *} {playsound {cosmic rage/general/house/cam.wav} @vol};
 #TRIGGER {You snap a selfie.} {playsound {cosmic rage/general/house/cam.wav} @vol};
+#TRIGGER {A loud chime echoes through the apartment coming from the doorbell as someone arrives outside.} {playsound {cosmic rage/general/house/doorbell.wav} @vol};

@@ -95,7 +95,9 @@
 #Key {Alt-,} {southeast} {}
 #Key {Alt-U} {up} {}
 #Key {Alt-d} {down} {}
-#Key {Alt-Z} {in} {}
+#Key {Alt-U} {in} {}
+#Key {Alt-Control-U} {ups} {}
+#Key {Alt-Control-D} {ds} {}
 #Key {Alt-X} {out} {}
 #Key {Alt-G} {go} {}
 #Key {Control-m} {cancel mapper} {}

@@ -1,3 +1,4 @@
+2159 tracebug, credits olegTheSnowman, added a sound for the squad join requests. 
 2158 tracebug, credits tora, hopefully fixed the train speech bug. 
 2157 tracebug, credits debs, added a sound for doorbells.
 2156 tracebug, credits Camaro97 and Host Eli perez, added a bitchslap social sound. THX to Camaro97 for being my guinnypig

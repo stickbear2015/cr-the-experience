@@ -259,3 +259,4 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd fires %0} {
 #TRIGGER {[[]Music FM]*} {playsound {Cosmic Rage/general/comms/musicfm.wav} @CommsVol; BufferAdd musicfm %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char musicfm.log};#write 1 %0;#close 1}}
 #TRIGGER {[[]* Story Chat]: *, "*"} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 
 #TRIGGER {* chirps quietly and a message on screen reads* } {playsound {Cosmic Rage/general/comms/game.wav} @CommsVol}
+#Trigger {* wishes to join your squadren.} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; BufferAdd Squad %0}

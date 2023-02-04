@@ -44,3 +44,6 @@ playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol}
 #trigger {You try to telepathicly communicate with an annoying fly, trying to convince * to buzz off.} {#gagline voice;playsound {cosmic rage/activities/trash collection/flymut.wav} @vol}
 #trigger {an annoying fly flies out of the vent.} {#gagline all; #alarm 1 {playsound {cosmic rage/activities/trash collection/flygo.wav} @vol}}
 #trigger {An annoying fly *} {#gagline all; playsound {cosmic rage/activities/Trash collection/fly*3.wav} @vol; #var buzfHandle %playHandle; #var buzf 1; #alarm 2 {#var buzfly 0}} 
+#trigger {You heave on a large lever by the side of the driver's seat.} {#gagline all; playsound {cosmic rage/ships/misc/controlStick*3.wav} @vol}
+#trigger {There is a click, then a loud grinding groan echoes throughout the vehicle.} {#gagline voice; playsound {cosmic rage/activities/trash collection/bayopen.wav} @vol}
+#trigger {There is a loud grinding groan followed by a slam.} {#gagline voice; playsound {cosmic rage/activities/trash collection/bayclose.wav} @vol}

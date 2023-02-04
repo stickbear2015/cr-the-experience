@@ -1,3 +1,9 @@
+2165 tracebugü credits Mary2004, fixed the factory PA buffer. 
+2164 tracebug, credits UmikoIzumi, added sounds for trash collection doors.
+2163 tracebug, credits Frosty, added sounds for umbrellas. Mind you they really sound cool. Personally.
+2162 tracebug, credits Spacepup, the texts containing the word "woof" will no longer be gagged.
+2161 tracebug, credits Mary2004, fixed the hand mining activity. So sorry I started on something and forget to finish it so it caused all kinds of errors.
+2160 tracebug, I got tired of this so the drink gulp will no longer, well, loop.
 2159 tracebug, credits olegTheSnowman, added a sound for the squad join requests. 
 2158 tracebug, credits tora, hopefully fixed the train speech bug. 
 2157 tracebug, credits debs, added a sound for doorbells.

@@ -57,3 +57,7 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {* sna* a photo of * on a *} {playsound {cosmic rage/general/house/cam.wav} @vol};
 #TRIGGER {You snap a selfie.} {playsound {cosmic rage/general/house/cam.wav} @vol};
 #TRIGGER {A loud chime echoes through the apartment coming from the doorbell as someone arrives outside.} {playsound {cosmic rage/general/house/doorbell.wav} @vol};
+#TRIGGER {You untwist the center part of * and suddenly the top part springs up and out! You hold it above yourself protectively.} {#gagline all; playsound {cosmic rage/general/house/umbrella1.wav} @vol};
+#TRIGGER {You twist the center of * and the top section retracts into itself.} {#gagline all; playsound {cosmic rage/general/house/umbrella2.wav} @vol};
+#TRIGGER {* twists the central part of * and suddenly the top springs up and out! * proceeds to hold it above *} {#gagline voice; playsound {cosmic rage/general/house/umbrella1.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)};
+#TRIGGER {* twists the center part of * and the top half retracts into itself.} {#gagline voice; playsound {cosmic rage/general/house/umbrella2.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)};

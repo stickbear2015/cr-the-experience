@@ -161,6 +161,7 @@ playsound {cosmic rage/activities/planetoid/unwind.wav} @vol}
 #trigger {A high-pitched whine overlays the thrum.} {#gagline all; playsound {Cosmic Rage/activities/planetoid/beep.wav} @vol}
 #trigger {There is a grinding noise as a door far down in the ship is opened and a crate pushed out.} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/push.wav} @vol}
 #trigger {On screen, you see the drone descend a level.} {#gagline voice}
-#trigger {The computer announces: "* minerals harvested into *"} {
-#if {@gagHarvest = "Enabled"} {
-#gagline voice}} 
+#trigger {The computer announces: "* minerals harvested into *"} {#if {@gagHarvest = "Enabled"} { #gagline voice}} 
+#trigger {The vehicle lurches slightly, but continues.} {#if {@gagHarvest = "Enabled"} { #gagline voice}} 
+#trigger {The vehicles lights dim as energy is put into the tubes.} {#if {@gagHarvest = "Enabled"} { #gagline voice}} 
+#trigger {On screen, you see the core tubing begin to take samples.} {#if {@gagHarvest = "Enabled"} { #gagline voice}} 

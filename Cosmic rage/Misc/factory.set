@@ -163,3 +163,4 @@ playsound {cosmic rage/general/factory/roller coaster.wav} @vol;
 #if {@rchandle < 0} {#abort 1} {
 #if {@rchandle > 0} {#pc @rchandle stop}}}
 
+#trigger {You grab a * and fill it with *} { #gagline all; playsound  {cosmic rage/general/factory/pourMilk*2.wav} @vol}

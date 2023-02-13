@@ -1,3 +1,6 @@
+2168 tracebug, credits LadyJMariposa, added a sound for pouring drinks
+2167 tracebug, credits Navi, added a few more texts to the harvest gagging stuff. 
+2166 tracebug, credits Shon, Fixed vehicle ambiences. 
 2165 tracebugü credits Mary2004, fixed the factory PA buffer. 
 2164 tracebug, credits UmikoIzumi, added sounds for trash collection doors.
 2163 tracebug, credits Frosty, added sounds for umbrellas. Mind you they really sound cool. Personally.

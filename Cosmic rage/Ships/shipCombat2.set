@@ -6,7 +6,7 @@
 #trigger {You manipulate the * of the molecular disruptor at * and fire.} {playsound {cosmic rage/ships/combat/disruptor.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
-#trigger {There is a deep boom as the * beam cannons fire.} {playsound {cosmic rage/ships/combat/beam.wav} @CVol;
+#trigger {There is a deep boom as the * beam cannons fire.} {#gagline all; playsound {cosmic rage/ships/combat/beam.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
 #TRIGGER {Insufficient amount of ammunition to fire.} {#gagline all; playsound {cosmic rage/ships\computer\aammo.wav} @Cvol}

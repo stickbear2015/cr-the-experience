@@ -1,3 +1,17 @@
+2181 tracebug, credits marry2004, fixed a few rifting related issues
+2180 tracebug, credits OlegTheSnowman, fixed mission rank sound
+2179 tracebug, credits Blobsta, the pack now respects your planetoid harvesting and general volume settings
+2178 tracebug, credits navi, the huge list of cargo bays will gag in cargo all command. 
+2177 tracebug, credits navi and OlegTheSnowman, all connect disconnect messages are now propperly buffered
+
+2176 tracebug, credits OlegTheSnowman, gagged the beam cannon firing.
+2175 tracebug, credits BlueSpacedragon, the sc alias and a few more ones can now be used while the sp is active. They are global vipmud aliases, which I disabled most of them in here because they do not serve any purpose than annoying everyone
+2174 tracebug, credits Fufflebear, the shift f2 key should work once again for displaying log files. Oops
+2173 tracebug, credits navi, you will no longer have to toggle the buffer keys wen ever you log in to start using them again. Very rude.
+2172 tracebug, credits Navi, The pack will behave wen you have harvest even a unit of gas
+2171 tracebug, credits OlegTheSnowman, added a sound for volcano harvesting when you are in your last moments before getting burned into a crisp
+2170 tracebug, credits OlegTheSnowman, added a sound for one of the thunder messages. 
+2169 tracebug, credits OlegTheSnowman, code credits olegthesnowman, the new auction now has sounds
 2168 tracebug, credits LadyJMariposa, added a sound for pouring drinks
 2167 tracebug, credits Navi, added a few more texts to the harvest gagging stuff. 
 2166 tracebug, credits Shon, Fixed vehicle ambiences. 

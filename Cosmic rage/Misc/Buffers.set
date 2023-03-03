@@ -522,3 +522,44 @@ b10:10null
 }
 }
 #Alias silentclear { #For {@HistoryMasterBuffers} {#Exec {#Unvar history%{i}messages}}; #UnVar HistoryBuffers; #UnVar HistoryMasterBuffers; #UnVar HistoryTMP1; #UnVar HistoryTMP2; #UnVar HistoryTMP3; #UnVar CurrentHistoryBuffer; #UnVar CurrentHistoryBufferPosition; #Unload {Cosmic rage/Misc/Buffers.set}; #Alarm 0 {#Load {Cosmic rage/Misc/Buffers.set}}};
+#alias {LogFile} {#say {Please pick a channel from the menu below to read it's log file.}; #alarm 1 {playsound {Cosmic Rage/general/misc/ConfMan.wav} @90; #pick {p:Please select an option from the menu below|
+Read the administrator channels  log file for %char:#edit {Cosmic Rage/logs/%char admin.log}|
+Read the Administrators Chat log file for %char:#edit  {Cosmic Rage/logs/%char AdminChat.log}|
+Read the Announcements log file for %char:#edit  {Cosmic Rage/logs/%char Announcements.log}|
+Read the Brag channels log file for %char:#edit  {Cosmic Rage/logs/%char brag.log}|
+Read the birthday channels log file for %char:#edit  {Cosmic Rage/logs/%char birthday.log}|
+Read the changes log file for %char:#edit  {Cosmic Rage/logs/%char Changes.log}|
+Read the chargen channels  log file for %char:#edit  {Cosmic Rage/logs/%char chargen.log}|
+Read the Chat channels log file for %char:#edit  {Cosmic Rage/logs/%char chat.log}|
+Read the clanchat channels log file for %char:#edit  {Cosmic Rage/logs/%char ClanChat.log}|
+Read the drone channels log file for %char:#edit  {Cosmic Rage/logs/%char Drone.log}|
+Read the G2A channels log file for %char:#edit  {Cosmic Rage/logs/%char G2A.log}|
+Read the General channels log file for %char:#edit  {Cosmic Rage/logs/%char general.log}|
+Read the GMC channels log file for %char:#edit  {Cosmic Rage/logs/%char GMC.log}|
+Read the HTPL channels log file for %char:#edit  {Cosmic Rage/logs/%char HTPL.log}|
+Read the Intel channels log file for %char:#edit  {Cosmic Rage/logs/%char intel.log}|
+Read the jag channels log file for %char:#edit  {Cosmic Rage/logs/ %char jag.log}|
+Read the mentor channels log file for %char:#edit  {Cosmic Rage/logs/mentor.log}|
+Read the MI channels log file for %char:#edit  {Cosmic Rage/logs/%char MI.log}|
+Read the Missions channels log file for %char:#edit  {Cosmic Rage/logs/%char Missions.log}|
+Read the movement channels log file for %char:#edit  {Cosmic Rage/logs/%char Movement.log}|
+Read the MusicFM channels log file for %char:#edit  {Cosmic Rage/logs/%char MusicFm.log}|
+Read the Newbie channels log file for %char:#edit  {Cosmic Rage/logs/%char Newbie.log}|
+Read the Newbie Helpers channels log file for %char:#edit  {Cosmic Rage/logs/%char NewbieHelpers.log}|
+Read the Notices log file for %char:#edit  {Cosmic Rage/logs/%char Notices.log}|
+Read the Out of Character channels log file for %char:#edit  {Cosmic Rage/logs/%char OOC.log}|
+Read the organisation channels log file for %char:#edit  {Cosmic Rage/logs/%char org.log}|
+Read the Private network channels log file for %char:#edit  {Cosmic Rage/logs/%char Private Network.log}|
+Read the Private in Character channels log file for %char:#edit  {Cosmic Rage/logs/%char Private.log}|
+Read the Private Out of  Character channels log file for %char:#edit  {Cosmic Rage/logs/%char PrivateOOC.log}|
+Read the Room out of Character channels log file for %char:#edit  {Cosmic Rage/logs/%char rooc.log}|
+Read the RP channels log file for %char:#edit  {Cosmic Rage/logs/%char RP.log}|
+Read the SDF channels log file for %char:#edit  {Cosmic Rage/logs/%char sdf.log}|
+Read the SDL channels log file for %char:#edit  {Cosmic Rage/logs/%char SDL.log}|
+Read the security drone and camera log for %char:#edit  {Cosmic Rage/logs/%char securitycamdrone.log}|
+Read the Soundpack channels log file for %char:#edit  {Cosmic Rage/logs/%char Soundpacks.log}|
+Read the SubAnnouncements log file for %char:#edit  {Cosmic Rage/logs/SubAnnouncements.log}|
+Read the Squadren channels log file for %char:#edit  {Cosmic Rage/logs/%char Squadren.log}|
+Read the Traceback channels log file for %char:#edit  {Cosmic Rage/logs/%char Tracebacks.log}|
+Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.log}|
+Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}

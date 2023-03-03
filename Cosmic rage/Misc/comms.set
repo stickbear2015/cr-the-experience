@@ -191,9 +191,10 @@ playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; BufferAdd Org %0; {#fil
 #trigger {*translator announces *} {BufferAdd say %0}
 #trigger {* flashes, blueprint software patch *} {playsound {Cosmic Rage/general/comms/Blueprint.wav} @CommsVol; BufferAdd InfoComputerNotifications %0}
 #TRIGGER {[[]Auction]:*} {playsound {cosmic rage/general/auction/auction bell*3.wav} @CommsVol; BufferAdd Auction %0} {} AnyCase
-#TRIGGER {[[]Auction]: * just opened an auction for * The starting price is * credits.} {playsound {cosmic rage/general/auction/start auction.wav} @CommsVol} {} AnyCase
-#TRIGGER {[[]Auction]: Auction master careheart: * sold! Ending price * credits.*} {playsound {cosmic rage/general/auction/item sold.wav} @CommsVol} {} AnyCase
-#TRIGGER {[[]Auction]: Auction Master Careheart announcing a bid: *} {playsound {cosmic rage/general/auction/bid.wav} @CommsVol} {} AnyCase
+#TRIGGER {[[]Auction]: lot number * was just opened by *. Starting bid is * credits. This lot will be accepting bids for * minutes.} {playsound {cosmic rage/general/auction/start auction.wav} @CommsVol} {} AnyCase
+#TRIGGER {[[]Auction]: Sold! Lot number * has been closed. The goods go to * for * credits.}  {playsound {cosmic rage/general/auction/item sold.wav} @CommsVol} {} AnyCase
+#TRIGGER {[[]Auction]: * now has the winning bid on lot *.} {playsound {cosmic rage/general/auction/bid.wav} @CommsVol} {} AnyCase
+#TRIGGER {[[]Auction]: Lot number * has been taken down by the seller.} {playsound {cosmic rage/general/auction/item sold.wav} @CommsVol} {} AnyCase
 #trigger {[[]Distress]:*} {playsound {Cosmic Rage/general/comms/distress.wav} @CommsVol; BufferAdd Distress %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Distress.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {Newbie is now on.} {playsound {Cosmic Rage/general/comms/activate.wav} @CommsVol}
 #trigger {Newbie is now off.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @CommsVol}

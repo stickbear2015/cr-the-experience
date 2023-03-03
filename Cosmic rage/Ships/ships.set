@@ -77,9 +77,6 @@ playsound {cosmic rage/ships/misc/landingPad.wav} @vol};
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {You tap a series of buttons, deactivating the ships power.} {
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
-#trigger {Light * as  you enter some data into the planetary rifting console.} {
-#gagline all;
-playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {A voice crackles over the speaker on the main console: *} {
 playsound {cosmic rage/ships/com/pa*2.wav} @vol}
 #trigger {You say * to enter jump space." into a small mike on the central console.} {

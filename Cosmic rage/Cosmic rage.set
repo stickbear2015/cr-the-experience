@@ -192,3 +192,5 @@ ActualSave; #say {Settings saved!}; #pc 0 stop; #play {cosmic rage/general/misc/
 #Alias {pn2} {playsound {Cosmic Rage/general/comms/pn3.wav} @commsvol;  #PC %Playhandle Frequency 50000; #var priv2 %0}
 #Alias {pn3} {playsound {Cosmic Rage/general/comms/pn3.wav} @commsvol;  #PC %Playhandle Frequency 60000; #var priv3 %0}
 #Alias {pn4} {playsound {Cosmic Rage/general/comms/pn3.wav} @commsvol;  #PC %Playhandle Frequency 70000; #var priv4 %0}
+#gunalias sc; #gunalias capture; #gunalias  music
+#If {%Defined(bufferfavkeys)=1} {#class bufferkeys @bufferfavkeys};	

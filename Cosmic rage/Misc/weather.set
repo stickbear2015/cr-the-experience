@@ -229,3 +229,4 @@ playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}} {} AnyCase
 #trigger {The wind makes you shiver slightly as it blows its icy fingers against you.}{#if {@gagWeather = "Enabled"} {
 #gagline all}} {} AnyCase
 #trigger {There is a huge roar of thunder.} { #if {@gagWeather = "Enabled"} { #gagline all}; #if {@weather = "Enabled"} { playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}}
+#trigger {There is a deafening rumble of thunder.} { #if {@gagWeather = "Enabled"} { #gagline all}; #if {@weather = "Enabled"} { playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}}

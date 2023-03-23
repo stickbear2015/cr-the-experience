@@ -1,3 +1,6 @@
+2184 tracebug, credits navi, gagged a message in volcano harvester repair sequence.
+2183 tracebug, credits OlegTheSnowman, added a sound for an other thunder message.
+2182 tracebug, credits robotman, The train door sound will no longer play before the train actually shows up, hah hah hah hah hah!
 2181 tracebug, credits marry2004, fixed a few rifting related issues
 2180 tracebug, credits OlegTheSnowman, fixed mission rank sound
 2179 tracebug, credits Blobsta, the pack now respects your planetoid harvesting and general volume settings

@@ -49,3 +49,4 @@ playsound {cosmic rage/activities/MechanicalMining/slam.wav} @vol}
 #trigger {A drone wheels in and scoops up a fossilized squirrel before wheeling out again.} {
 #gagline voice; playsound  {cosmic rage/general/misc/DroidLeaves.wav} @vol}
 #trigger {An urgent red icon flashes on screen, a message beside it reading: The mountain is erupting!} {playsound {Cosmic Rage/activities/PlanetChunks/generaterWarning.wav} @vol; }
+#trig {Repairs complete.} {#gagline all}

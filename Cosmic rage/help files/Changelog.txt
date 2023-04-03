@@ -1,3 +1,4 @@
+2185 tracebug, credits sethgamer, I believe I fixed the buffer error dialog at the startup. Let me know if it is still happening
 2184 tracebug, credits navi, gagged a message in volcano harvester repair sequence.
 2183 tracebug, credits OlegTheSnowman, added a sound for an other thunder message.
 2182 tracebug, credits robotman, The train door sound will no longer play before the train actually shows up, hah hah hah hah hah!

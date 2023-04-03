@@ -563,3 +563,5 @@ Read the Squadren channels log file for %char:#edit  {Cosmic Rage/logs/%char Squ
 Read the Traceback channels log file for %char:#edit  {Cosmic Rage/logs/%char Tracebacks.log}|
 Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.log}|
 Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}
+
+#alarm 1 { #If {%Defined(bufferfavkeys)=1} {#class bufferkeys @bufferfavkeys}};

@@ -1,7 +1,7 @@
 #TRIGGER {On screen * launches from the * defense array.} {#gagline all; playsound {cosmic rage/ships/pd/enemycome*2.wav} @CVol; #pc %playhandle pan %random(-4000,4000)}
 #TRIGGER {You rotate the pod to face * direction as shown on screen.} {#gagline all; playsound {cosmic rage/ships/pd/deploy.wav} @CVol}; 
 #trigger {You press the big red launch button.} {#gagline all}
-#trigger {The pods light brighten a little as the drone approaches Vacus Outpost4169704.} {#gagline all}
+#trigger {The pods light brighten a little as the drone approaches *.} {#gagline voice}
 #TRIGGER {You nudge your drone *} {playsound {cosmic rage/ships/pd/move*4.wav} @CVol}; 
 #TRIGGER {Your engines are cooling, please wait.} {#gagline all; playsound {cosmic rage/ships/pd/cooling.wav} @CVol; #say {engines cooling} voiceonly}
 #TRIGGER {Your drone reports the closest enemy is * units away.} {playsound {cosmic rage/ships/pd/check.wav} @CVol; {#sub {%1 units}}}
@@ -22,3 +22,4 @@
 #TRIGGER {You order the drone to drill *wards.} {#gagline all; playsound {Cosmic Rage/activities/pol/move2.wav} @cvol};
 #TRIGGER {On screen, you see your drone come to a stop.} {#gagline all; playsound {Cosmic Rage/activities/pol/move1.wav} @cvol};
 #trig {On screen, your drone performs swift repairs on itself, causing the tools on its underside to heat up.} {#gagline all}
+#TRIGGER {You angle the pod down, the drone mirroring you, and tap fire.}  {#gagline voice; playsound {cosmic rage/ships/pd/fire*3.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0.5 {playsound {cosmic rage/ships/pd/hit*3.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}

@@ -1,3 +1,14 @@
+2197 tracebug, credits Kalahami, both ooc  comm turn on and turn off have now sounds
+2196 tracebug, credits everyone, fixed house intercomms.
+2195 tracebug, credits debs, passcode requests now have a sound.
+2194 tracebug, credits shon, code credits shon, added an outside knock sound to the doors.
+2193 tracebug, credits UmikoIzumi, added a sound for smoke cannisters
+2192 tracebug, credits UmikoIzumi, made the upgrade drone code more officiant and added a sound for the tera engineers upgrading.
+2191 tracebug, credits UmikoIzumi, added a sound for the slime grenades.
+2190 tracebug, credits olegTheSnowman, corrected a newbie helper channel error so it should play the sound wen someone socials as well.
+2189 tracebug, credits frosty, corrected a douplicate key issue. Alt u no longer trys to go both in and up directions. 
+2188 tracebug, credits spacebar, added and gagged a launch text
+2187 tracebug, the soundpack will no longer take 15 seconds to report your pack version. Yes I know it was very annoying and I have no idea who initialy did that! s 
 2186 tracebug, credits olegTheSnowman, added a sound for the planetary destruction drones.
 2185 tracebug, credits sethgamer, I believe I fixed the buffer error dialog at the startup. Let me know if it is still happening
 2184 tracebug, credits navi, gagged a message in volcano harvester repair sequence.

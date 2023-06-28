@@ -21,7 +21,7 @@ playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; BufferAdd missions
 #TRIGGER {[[]Missions]*} {#if {%IfWord(~",%1,"")} {#abort 1};
 playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; BufferAdd missions %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Missions.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Newbie]*:*} {playsound {Cosmic Rage/general/comms/Newbie.wav} @CommsVol; BufferAdd Newbie %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbie.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]Newbie Helpers]*:*} {playsound {Cosmic Rage/general/comms/NH.wav} @CommsVol; BufferAdd NewbieHelpers %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbieHelpers.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Newbie Helpers]*} {playsound {Cosmic Rage/general/comms/NH.wav} @CommsVol; BufferAdd NewbieHelpers %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbieHelpers.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {Link with * successful.} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {You are now friends with * Say hello by typing OTR * hello!} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {[[]Room OOC]*} {playsound {cosmic rage/general/comms/rooc.wav} @CommsVol; BufferAdd rooc %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char rooc.log};#write 1 %0;#close 1}} {} AnyCase
@@ -124,7 +124,7 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {* the intercom and you hear the voice of * "*"} {
 #if {@QGag = 1} {
-#sub {[Intercom] %2 %3};
+#sub {[Intercom] %2 %4};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
 #trigger {* ta* the button next to the intercom and spea* into it: *} {
 #if {%ifword(as,%1,"")} {#abort 1};
@@ -144,7 +144,7 @@ playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCas
 #if {@QGag = 1} {
 #sub {[intercom] %2 : %5};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
-#trigger {OOC communications unfiltered.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}
+#trigger {OOC communications *.} {#if {%ifWord(filtered,%1," ")} {playsound {Cosmic Rage/general/comms/DeActivate.wav} @CommsVol}; #if {%ifWord(unfiltered,%1," ")} {playsound {Cosmic Rage/general/comms/activate.wav} @CommsVol}}
 #trigger {You enable the * channel.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}
 #trigger {You disable the * channel.} {playsound {Cosmic Rage/general/comms/Deactivate.wav} @CommsVol}
 #trigger {The * ground control square turns red on * and * "Emergency! Emergency! We see an incoming bomb! Emergency! Emergency!"} {#if {@ShortMapText = 1} {#sub {%1 "turns" %2, %5}} {};playsound {Cosmic Rage/general/comms/bomb.wav} @CommsVol; BufferAdd FlightControl %0}

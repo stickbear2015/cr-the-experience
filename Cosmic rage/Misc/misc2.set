@@ -42,3 +42,8 @@
 #trigger {You spray A bottle of * airfreshener about.} {playsound {cosmic rage/general/misc/air freshener spray.wav} @vol}
 #trigger {* timer lets out a shreak!} {playsound {cosmic rage/general/misc/timer.wav} @vol}
 #trigger {Your keen senses notice a hidden exit nearby.} {playsound {cosmic rage/general/misc/dragonfeel.wav} @vol}
+
+#trigger {You put * to the tip of a * and give it a flick.} {playsound {cosmic rage/general/Misc/smokelight.wav} @vol}
+#trigger {* puts * to the tip of * and gives it a flick.} {playsound {cosmic rage/general/misc/smokelight.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};
+#trigger {You take a drag off of *.} {playsound {cosmic rage/general/Misc/smoke.wav} @vol}
+#trigger {* takes a drag off of a *.} {playsound {cosmic rage/general/misc/smoke.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};

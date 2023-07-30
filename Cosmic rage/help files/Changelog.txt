@@ -1,3 +1,4 @@
+2202 tracebug, huge credits to OlegTheSnowman and Sethgamer, Nobody told me that the intercomms were broken because of watches! So I fixed them for good. I dont use a watch so I never noticed this.
 2201 tracebug, credits Shon, sound and code by Shon, added sounds for smoking. Don't smoke in RL though. Pretty bad for your well being.
 2200 tracebug, credits OlegTheSnowman, story announcements now have a sound.
 2199 tracebug, credits tunmi, rapid acceleration deceleration in classic cars should no longer cause weird loops. How rude. 

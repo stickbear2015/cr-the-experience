@@ -118,32 +118,6 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {You have received a new friendship request from *} {playsound {Cosmic Rage/general/comms/OOCRequest.wav} 85}
 #trigger {* lets out a cheerful chirp to let you know it has sent the mail.} {playsound {Cosmic Rage/general/comms/MailSent.wav} @CommsVol}
 #trigger {Mail sent.} {playsound {Cosmic Rage/general/comms/MailSent.wav} @CommsVol; BufferAdd InfoComputerNotifications %0}
-#trigger {* the intercom and you hear the voice of * *} {
-#if {%ifword(["],%3,"") and @QGag = 1} {#abort 1};
-#sub {[Intercom] %2 %3};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {* the intercom and you hear the voice of * "*"} {
-#if {@QGag = 1} {
-#sub {[Intercom] %2 %3};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
-#trigger {* ta* the button next to the intercom and spea* into it: *} {
-#if {%ifword(as,%1,"")} {#abort 1};
-#if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
-#sub {[intercom] %1 %4};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {* ta* the button next to the intercom and spea* into it: : "*"} {
-#if {%ifword(as,%1,"")} {#abort 1};
-#if {@QGag = 1} {
-#sub {[intercom] %1 : %4};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
-#trigger {* as  * ta* the button next to the intercom and spea* into it: *} {
-#if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
-#sub {[intercom] %2 %5};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {* as  * ta* the button next to the intercom and spea* into it: : "*"} {
-#if {@QGag = 1} {
-#sub {[intercom] %2 : %5};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
 #trigger {OOC communications *.} {#if {%ifWord(filtered,%1," ")} {playsound {Cosmic Rage/general/comms/DeActivate.wav} @CommsVol}; #if {%ifWord(unfiltered,%1," ")} {playsound {Cosmic Rage/general/comms/activate.wav} @CommsVol}}
 #trigger {You enable the * channel.} {playsound {Cosmic Rage/general/comms/Activate.wav} @CommsVol}
 #trigger {You disable the * channel.} {playsound {Cosmic Rage/general/comms/Deactivate.wav} @CommsVol}
@@ -262,3 +236,29 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd fires %0} {
 #TRIGGER {* chirps quietly and a message on screen reads* } {playsound {Cosmic Rage/general/comms/game.wav} @CommsVol}
 #Trigger {* wishes to join your squadren.} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; BufferAdd Squad %0}
 #TRIGGER {[[]Stories], (*): Announcement from the story Weavers! *} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 
+#trigger {* the intercom and you hear the voice of * *} {
+#if {%ifword(["],%3,"") and @QGag = 1} {#abort 1};
+#sub {[Intercom] %2 %3};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
+#trigger {* the intercom and you hear the voice of * "*"} {
+#if {@QGag = 1} {
+#sub {[Intercom] %2 %3};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
+#trigger {* ta* the button next to the intercom and spea* into it: *} {
+#if {%ifword(as,%1,"")} {#abort 1};
+#if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
+#sub {[intercom] %1 %4};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
+#trigger {* ta* the button next to the intercom and spea* into it: : "*"} {
+#if {%ifword(as,%1,"")} {#abort 1};
+#if {@QGag = 1} {
+#sub {[intercom] %1 : %4};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
+#trigger {* as  * ta* the button next to the intercom and spea* into it: *} {
+#if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
+#sub {[intercom] %2 %5};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
+#trigger {* as  * ta* the button next to the intercom and spea* into it: : "*"} {
+#if {@QGag = 1} {
+#sub {[intercom] %2 : %5};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase

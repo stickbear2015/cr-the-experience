@@ -75,8 +75,8 @@
 #trigger {You snap your fingers.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/snap*3.wav} @vol}}
 #trigger {You snap your fingers at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/snap*3.wav} @vol}}
 #trigger {You kiss the back of your own *.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
-#trigger {You kiss * tenderly on the lips.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
-#trigger {* kisses * tenderly on the lips.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
+#trigger {You kiss * tenderly.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
+#trigger {* kisses * tenderly.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/kiss*2.wav} @vol}}
 #TRIGGER {You punch *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound  {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}}
 #TRIGGER {You swing back your arm, and plant your fist firmly in *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound  {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}}
 #trigger {* swings back * arm, and plants * fist firmly in *} {#if {@SocialSounds = "Enabled"} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.0 {playsound  {cosmic rage/General/Socials/punch*10.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}}

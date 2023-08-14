@@ -178,10 +178,8 @@ playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; BufferAdd Org %0; {#fil
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @CommsVol; BufferAdd OOCPrivate %0} {} AnyCase
 #trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; BufferAdd APilotsParody %0} {} AnyCase
-#trigger {[[]Origins]*: "*"} {#if {@QGag = 1} {#sub {[Origins]%1: %2}};
-playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0}
-#trigger {[[]Origins] *} {#if {%IfWord(~",%1,"")} {#abort 1};
-playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0}
+#trigger {[[]Origins]*: "*"} {#if {@QGag = 1} {#sub {[Origins]%1: %2}}; playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origins.log};#write 1 %0;#close 1}}
+#trigger {[[]Origins] *} {#if {%IfWord(~",%1,"")} {#abort 1}; playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origin.log};#write 1 %0;#close 1}}
 #trigger {Information: closest beacon: *} {BufferAdd SOS %0}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} @commsvol; BufferAdd Htpc %0}
 #Alias {mf} {Musicfm %0} {}
@@ -190,7 +188,6 @@ playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(disabled.,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
-#trigger {* plays An old earth classic. while in white light the words *:*} {#if {%ifword(public/graduations,%2," ")} {playsound {cosmic rage/general/messageboards/graduate.wav} @Vol}; #if {%ifword(boards/ooc/host thank you's,%3," ")} {playsound {cosmic rage/general/messageboards/hostthankyou.wav} @Vol}; #if {%ifword(boards/ooc/jokes,%3," ")} {playsound {cosmic rage/general/messageboards/notice.wav} @Vol}; #if {%ifword(boards/ooc/gripe discussion,%3," ")} {playsound {cosmic rage/general/messageboards/gripe.wav} @Vol}; #if {%ifword(public/renames,%2," ")} {playsound {cosmic rage/general/messageboards/namechange.wav} @Vol}; #if {%ifword(public/pilot announcements,%2," ")} {playsound {cosmic rage/general/messageboards/pilotnotice.wav} @Vol}; #if {%ifword(boards/ooc/chatroom,%3," ")} {playsound {cosmic rage/general/messageboards/oocchat.wav} @Vol}}
 #trigger {[[]PN *], *} {playsound {cosmic rage/general/comms/pn1.wav} @CommsVol;#if {%ifword(%1,@priv1," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 40000}; #if {%ifword(%1,@priv2," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 55000}; #if {%ifword(%1,@priv3," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 62000}; #if {%ifword(%1,@priv4," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 75000}; BufferAdd PN %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {* would like to link to you.} {playsound {Cosmic Rage/general/comms/link.wav} @CommsVol} {} AnyCase
 #TRIGGER {You hear an urgent beeping from * informing you someone requires picking up.} {playsound {Cosmic Rage/general/comms/pickup.wav} @CommsVol} {} AnyCase
@@ -198,7 +195,7 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #trigger {You rumble *} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol;BufferAdd say %0}
 #trigger {* rumbles *} {
 #if {%ifword(engine,%1," ") or %ifword(ship,%1," ") or %ifword(pod,%1," ")} {
-#abort 1} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol};BufferAdd say %0}\
+#abort 1} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol};BufferAdd say %0}
 #trigger {emergency! *} {playsound {Cosmic Rage/general/gmc/alarm.wav} @vol}
 #trigger {You * the external microphone.} {
 #if {%ifword(activate,%1," ")} {
@@ -262,3 +259,6 @@ playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCas
 #if {@QGag = 1} {
 #sub {[intercom] %2 : %5};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
+#TRIGGER {* informs you that you currently have * unread * in your history to review.} {playsound {Cosmic Rage/general/comms/radio.wav} @CommsVol;}
+#trigger {* plays * while in white light the words * scroll across the screen under the banner of *} {
+playsound {cosmic rage/general/messageboards/mbn.wav} @CommsVol; #if {%ifword(general,%4,"")} {playsound {cosmic rage/general/messageboards/general.wav} @CommsVol};  #if {%ifword(rename,%4,"")} {playsound {cosmic rage/general/messageboards/namechange.wav} @CommsVol};  #if {%ifword(Graduation,%4,"")} {playsound {cosmic rage/general/messageboards/graduate.wav} @CommsVol};  #if {%ifword(chat room,%4,"")} {playsound {cosmic rage/general/messageboards/chat.wav} @CommsVol};  #if {%ifword(%4,ownership|moon,"|")} {playsound {cosmic rage/general/messageboards/ownership.wav} @CommsVol};  #if {%ifword(%4,retire|deaths,"|")} {playsound {cosmic rage/general/messageboards/dead.wav} @CommsVol};  #if {%ifword(%4,General Discussion|Elections|New Registrations|Rank Advancements|important,"|")} {playsound {cosmic rage/general/messageboards/origin.wav} @CommsVol};  #if {%ifword(%4,Marriages|Announcements|,"|")} {playsound {cosmic rage/general/messageboards/notice.wav} @CommsVol}; };

@@ -313,3 +313,5 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #trigger {* grenade filled with *hits * straight in the face!} {playsound {Cosmic Rage/general/misc/slime.wav.} @vol}
 #TRIGGER {You knock upon the door of *} {playsound {cosmic rage/general/misc/knock.wav} @vol};
 #trigger {This door requires a passcode to open.} {playsound {Cosmic Rage/ships/computer/PasscodeRequired.wav} @vol; #gagline all}
+#TRIGGER {* swis* tail.} {playsound {cosmic rage/general/misc/swish.wav} @vol};
+#trigger {You hear the high-pitched shriek of the safety sirens and an echoing voice booming, "Alert. alert. all citizens to shelters. All citizens to shelters. * this is not a drill."} {playsound {Cosmic Rage/general/comms/evac.wav} @vol}

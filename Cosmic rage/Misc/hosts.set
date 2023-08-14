@@ -20,4 +20,4 @@
 #trigger {Host Dante Steel begins to fade away in a colorful swirl of hazy pixels.} {playsound {Cosmic Rage/hosts/dante2.wav} @vol} {} AnyCase
 #trigger {A dark raven swoops out of the sky and lands, resolving into the shape of *} {playsound {Cosmic Rage/hosts/elijahin.wav} @vol} {} AnyCase
 #trigger {Host Elijah Perez leaps into the sky, and dark raven's wings burst from His back, carrying him out of site.} {playsound {Cosmic Rage/hosts/elijahout.wav} @vol} {} AnyCase
-#trigger {* shouts: "*"} {playsound {Cosmic Rage/hosts/shout.wav} @vol} 
+#trigger {* shouts: "*"} {playsound {Cosmic Rage/hosts/shout.wav} @vol; BufferAdd SubAnnouncements %0;} 

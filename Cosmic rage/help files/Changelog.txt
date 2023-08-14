@@ -1,3 +1,12 @@
+2211 tracebug, credits OlegTheSnowman, fixed a rather sneaky bug with classic cars.
+2210 tracebug, credits OlegTheSnowman, fixed an issue with mapper flight control.
+2209 tracebug, credits LadyJMariposa, I may or may not have fixed the kiss sounds. I just through the new text I got on sp suggest.
+2208 tracebug, credits mary2004, fixed most baby related problems like drink eat sounds and addes a very cute sound for baby sneezes. The sneeze one might break like you hearing sneeze sounds in weird times if it happens let me know.
+2207 tracebug, credits Frosty, dragon ryu tail swishing now has a sound. Swish swish swish.
+2206 tracebug, credits Kalahami, host shouts are now logged to subANnouncements buffer 
+2205 tracebug, credits OlegTheSnowman, radio notification after AFK now has a sound.
+2204 tracebug, credits everyone who suggested and LaraStardust, message boards have now sounds. I probably missed a category or two, but at least  the IC boards should work once more.
+2203 tracebug, credits Spaciath, the origin channel should log propperly now
 2202 tracebug, huge credits to OlegTheSnowman and Sethgamer, Nobody told me that the intercomms were broken because of watches! So I fixed them for good. I dont use a watch so I never noticed this.
 2201 tracebug, credits Shon, sound and code by Shon, added sounds for smoking. Don't smoke in RL though. Pretty bad for your well being.
 2200 tracebug, credits OlegTheSnowman, story announcements now have a sound.

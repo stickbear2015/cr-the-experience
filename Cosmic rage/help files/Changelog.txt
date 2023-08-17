@@ -1,3 +1,4 @@
+2212 tracebug, credits TheIceCreamMan, Koalarat and mary2004, baby drink eating sounds are fixed. Blame mary2004 because she gave the wrong texts.
 2211 tracebug, credits OlegTheSnowman, fixed a rather sneaky bug with classic cars.
 2210 tracebug, credits OlegTheSnowman, fixed an issue with mapper flight control.
 2209 tracebug, credits LadyJMariposa, I may or may not have fixed the kiss sounds. I just through the new text I got on sp suggest.

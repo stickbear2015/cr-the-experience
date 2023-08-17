@@ -1,5 +1,6 @@
 #TRIGGER {* opens * mouth and gets ready to *} {#if {%ifWord(drink,%3," ")} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; #gagline all; #var BabyDrinkhandle %playhandle; #var BabyDrink "Enabled"}; #if {%ifWord(eat,%3," ")} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; #gagline all; #var BabyEathandle %playhandle; #var BabyEat "Enabled"}}
 #TRIGGER {* lets out a baby burp after * finishes *} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {%ifWord(drink,%3," ")} {#if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}}; #if {%ifWord(eat,%3," ")} {#if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}}
+#TRIGGER {* smiles happily all filled up with *} {#gagline voice; #if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}; #if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}
 #TRIGGER {* whines softly.} {playsound  {Cosmic Rage/general/baby/babywhine.wav} @vol; #gagline voice} {}
 #TRIGGER {* cuddles * full up*} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; #gagline voice;#if {@babyeat = "Enabled"} {#pc @babyEatHandle stop; #var babyeat "Disabled"}} {}
 #trigger {* really seems to be enjoying *} {playsound  {Cosmic Rage/general/Baby/babyhappy.wav} @vol; #gagline voice} {}

@@ -103,3 +103,4 @@ playsound {cosmic rage/general/doors/DoorClose4.wav} @vol}}
 #trigger {You move towards the doors to the * which open with a soft whoosh.} {playsound {Cosmic Rage/general/doors/DoorOpen4.wav} @vol}
 #trigger {You unlock A *} {playsound {Cosmic Rage/general/doors/DoorUnlock.wav} @vol}
 #trigger {You lock A *} {playsound {Cosmic Rage/general/doors/Doorlock.wav} @vol}
+#trigger {you approach * door to the * but a small pulsing light to one side indicates it is locked.} {playsound {Cosmic Rage/general/doors/bang.wav} @vol}

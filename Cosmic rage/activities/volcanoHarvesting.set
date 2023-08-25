@@ -50,3 +50,7 @@ playsound {cosmic rage/activities/MechanicalMining/slam.wav} @vol}
 #gagline voice; playsound  {cosmic rage/general/misc/DroidLeaves.wav} @vol}
 #trigger {An urgent red icon flashes on screen, a message beside it reading: The mountain is erupting!} {playsound {Cosmic Rage/activities/PlanetChunks/generaterWarning.wav} @vol; }
 #trig {Repairs complete.} {#gagline all}
+#trigger {You notice the volcano is particularly unstable here.} { #gagline voice; playsound {cosmic rage/activities/volcanoHarvesting/unstable.wav} @vol}
+#trigger {You guide the harvesting equipment into a particularly delicate part of the wall of the volcano tube.} { #gagline voice; playsound {cosmic rage/activities/volcanoHarvesting/direct*2.wav} @vol}
+#trigger {You feel an odd shifting under the volcano harvesting equipment.} { #gagline voice; playsound {cosmic rage/activities/volcanoHarvesting/move.wav} @vol}
+#trigger {You feel the harvesting equipment slipping slightly in its grip on the wall.} { #gagline voice; playsound {cosmic rage/activities/volcanoHarvesting/move.wav} @vol}

@@ -39,7 +39,7 @@ playsound {cosmic rage/activities/planetoid/grind.wav} @vol}
 playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol} 
 #trigger {You hear some kind of whining grinding noise.} {
 #gagline all;
-playsound {cosmic rage/vehicle/enginestop.wav} @vol} 
+playsound {cosmic rage/activities/planetoid/stop.wav} @vol} 
 #trigger {The harvesting equipment retracts with a slam.} {
 #gagline all;
 playsound {cosmic rage/activities/mechanicalMining/slam.wav} @vol} 

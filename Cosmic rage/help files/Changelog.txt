@@ -1,3 +1,7 @@
+2216 tracebug, credits UmikoIzumi, completely redone volcano harvesting from scratch, including sounds.
+2215 tracebug, credits Koalarat, fixed baby drinking eating.
+2214 tracebug, credits Tunmi, changed the gas retreavel stop sound. I've been meaning to do but the suggestion just speeded up the process
+2213 tracebug, credits ComplexJustice, now wen you bonk your head into a locked door, it makes a sound.
 2212 tracebug, credits TheIceCreamMan, Koalarat and mary2004, baby drink eating sounds are fixed. Blame mary2004 because she gave the wrong texts.
 2211 tracebug, credits OlegTheSnowman, fixed a rather sneaky bug with classic cars.
 2210 tracebug, credits OlegTheSnowman, fixed an issue with mapper flight control.

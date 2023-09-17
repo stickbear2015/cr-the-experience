@@ -1,3 +1,6 @@
+2221 tracebug, code credits G1IcecreamStar, credits G1IcecreamStar, both mappers and computer apps now work with the soundpack.
+2220 tracebug, fixed most intercom related bugs. I didnt list credits because there were a lot of bugs and suggestions about it.
+2219 tracebug, fixed computer notification sound.
 2218 tracebug, credits BrokenPanda, fixed smoke grenades
 2217 tracebug, fixed volcano harvesting related sounds.
 2216 tracebug, credits UmikoIzumi, completely redone volcano harvesting from scratch, including sounds.

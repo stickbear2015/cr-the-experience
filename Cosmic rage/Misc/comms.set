@@ -174,7 +174,7 @@ playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; BufferAdd Org %0; {#fil
 #trigger {Newbie is now off.} {playsound {Cosmic Rage/general/comms/deactivate.wav} @CommsVol}
 #trigger {An ooc link from * has been automatically accepted.} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} @CommsVol} {} AnyCase
 #trigger {A very crackley voice can barely be heard over the main console saying "*calling requesting starship,  due to bad weather, you are unable to * at the current time*"} {playsound {Cosmic Rage/ships/misc/BadWeather.wav} @CommsVol; BufferAdd FlightControl %0}
-#trigger {[[]OOC PA]*} {playsound {cosmic rage/ships/com/oocpa.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
+#trigger {[[]OOC PA*]*} {playsound {cosmic rage/ships/com/oocpa.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @CommsVol; BufferAdd OOCPrivate %0} {} AnyCase
 #trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; BufferAdd APilotsParody %0} {} AnyCase
@@ -233,32 +233,14 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd fires %0} {
 #TRIGGER {* chirps quietly and a message on screen reads* } {playsound {Cosmic Rage/general/comms/game.wav} @CommsVol}
 #Trigger {* wishes to join your squadren.} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; BufferAdd Squad %0}
 #TRIGGER {[[]Stories], (*): Announcement from the story Weavers! *} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 
-#trigger {* the intercom and you hear the voice of * *} {
-#if {%ifword(["],%3,"") and @QGag = 1} {#abort 1};
-#sub {[Intercom] %2 %3};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {* the intercom and you hear the voice of * "*"} {
+#trigger {You tap a button next to * and proceed to say * "*"} {
 #if {@QGag = 1} {
-#sub {[Intercom] %2 %3};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
-#trigger {* ta* the button next to the intercom and spea* into it: *} {
-#if {%ifword(as,%1,"")} {#abort 1};
-#if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
-#sub {[intercom] %1 %4};
+#sub {[intercom] "you : %3}};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {* ta* the button next to the intercom and spea* into it: : "*"} {
-#if {%ifword(as,%1,"")} {#abort 1};
+#trigger {* taps a button next to * and proceeds to say *: "*"} {
 #if {@QGag = 1} {
-#sub {[intercom] %1 : %4};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
-#trigger {* as  * ta* the button next to the intercom and spea* into it: *} {
-#if {%ifword(["],%4,"") and @QGag = 1} {#abort 1};
-#sub {[intercom] %2 %5};
+#sub {[intercom] %1 #3: %4}};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {* as  * ta* the button next to the intercom and spea* into it: : "*"} {
-#if {@QGag = 1} {
-#sub {[intercom] %2 : %5};
-playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0}} {} AnyCase
 #TRIGGER {* informs you that you currently have * unread * in your history to review.} {playsound {Cosmic Rage/general/comms/radio.wav} @CommsVol;}
 #trigger {* plays * while in white light the words * scroll across the screen under the banner of *} {
 playsound {cosmic rage/general/messageboards/mbn.wav} @CommsVol; #if {%ifword(general,%4,"")} {playsound {cosmic rage/general/messageboards/general.wav} @CommsVol};  #if {%ifword(rename,%4,"")} {playsound {cosmic rage/general/messageboards/namechange.wav} @CommsVol};  #if {%ifword(Graduation,%4,"")} {playsound {cosmic rage/general/messageboards/graduate.wav} @CommsVol};  #if {%ifword(chat room,%4,"")} {playsound {cosmic rage/general/messageboards/chat.wav} @CommsVol};  #if {%ifword(%4,ownership|moon,"|")} {playsound {cosmic rage/general/messageboards/ownership.wav} @CommsVol};  #if {%ifword(%4,retire|deaths,"|")} {playsound {cosmic rage/general/messageboards/dead.wav} @CommsVol};  #if {%ifword(%4,General Discussion|Elections|New Registrations|Rank Advancements|important,"|")} {playsound {cosmic rage/general/messageboards/origin.wav} @CommsVol};  #if {%ifword(%4,Marriages|Announcements|,"|")} {playsound {cosmic rage/general/messageboards/notice.wav} @CommsVol}; };

@@ -111,7 +111,7 @@ playsound  {cosmic rage/ships/computer/keyboard*7.wav} @vol}
 #trigger {A drone wheels in and drops off some debris.} {#gagline all}
 #trigger {You hear a voice over the tannoy: All pilots please clear * we have an inbound starship.} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @vol}
 #trigger {You hear a voice over the tanoy: Attention: * undocking from *} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @vol}
-#trigger {* announcement, * just teleported *} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @CommsVol}
+#trigger {* announcement, * just *} {playsound {Cosmic Rage/general/factory/Tannoy.wav} @CommsVol}
 #trigger {You hear an urgent hammering noise followed by an explosion.} {
 playsound {cosmic rage\general\factory\explode.wav} @vol}
 #trigger {Some drones wheel in, set down a massive tank of * then wheel out again.} {

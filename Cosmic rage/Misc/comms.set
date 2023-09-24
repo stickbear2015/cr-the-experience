@@ -51,7 +51,7 @@ playsound {cosmic rage/general/comms/sos.wav} @CommsVol; BufferAdd SOS %0}
 #if {%ifWord(growl,%1," ")} {
 playsound {cosmic rage/general/comms/growl*3.wav} @Vol; BufferAdd Say %0};
 #if {%ifWord(drone,%1," ")} {
-playsound {cosmic rage/general/comms/drone*2.wav} @Vol; BufferAdd Say %0};
+playsound {cosmic rage/general/comms/drone*2.wav} @Vol};
 #if {%ifword(chitter,%1," ")} {
 playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @Vol; BufferAdd Say %0};
 #if {%ifWord(chitters,%1," ")} {
@@ -60,6 +60,7 @@ playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @Vol; BufferAdd Say %0
 playsound {cosmic rage/general/comms/growl*3.wav} @Vol; BufferAdd Say %0};
 #if {%ifWord(drones,%1," ")} {
 playsound {cosmic rage/general/comms/drone*2.wav} @Vol; BufferAdd Say %0}}
+#trig {* Translator announces in a *, "*"} {BufferAdd Say %0}
 #trigger {[[]Rewards]*} {playsound {cosmic rage/general/comms/rewards.wav} @CommsVol; BufferAdd Rewards %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Rewards.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You tap a few buttons on * translator} {#gagline voice; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
 #trigger {You tap some buttons on * translator, recording your galactic location.} { #gagline voice; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
@@ -84,7 +85,7 @@ playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(off,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #trigger {Over your suits intercom, *} {
-playsound {cosmic rage/general/comms/spaceSuitTalk.wav} @CommsVol; BufferAdd Spacesuit %0;} {}
+playsound {cosmic rage/general/comms/spaceSuitTalk.wav} @CommsVol} {}
 #trigger {[[]Movement]*: "*"} {#if {@QGag = 1} {#sub {[Movement]%1: %2}};
 playsound {cosmic rage/general/comms/movement.wav} @CommsVol; BufferAdd Movement %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Movement.log};#write 1 %0;#close 1}}
 #trigger {[[]Movement] *} {#if {%IfWord(~",%1,"")} {#abort 1};
@@ -190,6 +191,7 @@ playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #trigger {[[]PN *], *} {playsound {cosmic rage/general/comms/pn1.wav} @CommsVol;#if {%ifword(%1,@priv1," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 40000}; #if {%ifword(%1,@priv2," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 55000}; #if {%ifword(%1,@priv3," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 62000}; #if {%ifword(%1,@priv4," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 75000}; BufferAdd PN %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {* would like to link to you.} {playsound {Cosmic Rage/general/comms/link.wav} @CommsVol} {} AnyCase
+#trigger {[[]OOC Intercom * ]*} {playsound {cosmic rage/general/comms/oocinter.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #TRIGGER {You hear an urgent beeping from * informing you someone requires picking up.} {playsound {Cosmic Rage/general/comms/pickup.wav} @CommsVol} {} AnyCase
 #TRIGGER {This is meteor monitoring at * A meteor storm just opened up *} {playsound {Cosmic Rage/general/comms/meteor.wav} @commsvol} {} AnyCase
 #trigger {You rumble *} {playsound {cosmic rage/general/comms/rumble*3.wav} @vol;BufferAdd say %0}
@@ -204,7 +206,7 @@ playsound {cosmic rage/general/comms/activate.wav} @vol};
 playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #trigger {Over * you hear * say *} {
 #if {%IfWord(sector,%1," ")} {
-#abort 1} {playsound {cosmic rage/general/comms/battlesuit.wav} @CommsVol}; BufferAdd Spacesuit %0; BufferAdd say %0} {}
+#abort 1} {playsound {cosmic rage/general/comms/battlesuit.wav} @CommsVol}; BufferAdd say %0} {}
 #trigger {A synthetic tone issues forth from * "Reminder! There are open cases on the docket at the hall of *} {playsound {Cosmic Rage/general/comms/reminder.wav} @vol}
 #trigger {* MFAS device * vibrates urgently, indicating there are outstanding prison appeals.} {playsound {Cosmic Rage/general/comms/reminder.wav} @vol}
 #trigger {You direct your thoughts towards *} {#if {@commtoggle = "Enabled"} {#gagline all}}
@@ -239,7 +241,7 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd fires %0} {
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {* taps a button next to * and proceeds to say *: "*"} {
 #if {@QGag = 1} {
-#sub {[intercom] %1 #3: %4}};
+#sub {[intercom] %1 %3: %4}};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #TRIGGER {* informs you that you currently have * unread * in your history to review.} {playsound {Cosmic Rage/general/comms/radio.wav} @CommsVol;}
 #trigger {* plays * while in white light the words * scroll across the screen under the banner of *} {

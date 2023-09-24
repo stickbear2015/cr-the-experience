@@ -1,3 +1,8 @@
+2226 tracebug, credits mery2004, probably fixes cylarkan messages are not appearing in buffers.
+2225 tracebug, credits Icestar, fixed a bug regarding intercoms.
+2224 tracebug, credits Mary2004, spacesuits buffer is no more because the say buffer already has those messages.
+2223 tracebug, credits debs. Ryuchi factory announcement thing now has a sound just like teleports.
+2222 tracebug, credits UmikoIshakawa, sound credits UmikoIshakawa,  ooc intercom is now a thing. 
 2221 tracebug, code credits G1IcecreamStar, credits G1IcecreamStar, both mappers and computer apps now work with the soundpack.
 2220 tracebug, fixed most intercom related bugs. I didnt list credits because there were a lot of bugs and suggestions about it.
 2219 tracebug, fixed computer notification sound.

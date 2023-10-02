@@ -41,7 +41,7 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}
 #TRIGGER {You grab a paper cup and put it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
 #TRIGGER {* taps a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}
-#TRIGGER {* grabs a paper cup and puts it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
+#TRIGGER {* grabs a * cup and puts it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
 #TRIGGER {* climbs up onto * and walks to the very end.} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
 #TRIGGER {A small light blinks on next to the intercom and you hear the voice of * say: "*"} {playsound {cosmic rage/ships/com/pa*2.wav} @vol};
 #TRIGGER {you tap the button next to the intercom and say into it: *} {playsound {cosmic rage/ships/com/pa*2.wav} @vol};

@@ -1,3 +1,5 @@
+2228 tracebug, credits LaraStardust, Fixed several salvaging errors.
+2227 tracebug, fixed fridges
 2226 tracebug, credits mery2004, probably fixes cylarkan messages are not appearing in buffers.
 2225 tracebug, credits Icestar, fixed a bug regarding intercoms.
 2224 tracebug, credits Mary2004, spacesuits buffer is no more because the say buffer already has those messages.

@@ -83,7 +83,7 @@ playsound {Cosmic Rage/general/cars/rev*5.wav} @vehiclevol}
 #TRIGGER {A * skids around * throwing up clouds of smoke.} {playsound {Cosmic Rage/general/cars/skid*3.wav} @vehiclevol} 
 #TRIGGER {A * accelerates in.} {playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
 #TRIGGER {A * drifts *} {playsound {cosmic rage/general/highway/car*6.wav} @vevol; #PC %PlayHandle Pan %Random(-4000,4000)}
-#TRIGGER {A * slams into the wall.} {playsound {Cosmic Rage/general/cars/skid*3.wav} @vehiclevol; #alarm 1 {{playsound {cosmic rage/general/highway/clip*4.wav} @vevol}}} 
+#TRIGGER {A * slams into the wall.} {playsound {Cosmic Rage/general/cars/skid*3.wav} @vehiclevol; #alarm 1 {playsound {cosmic rage/general/highway/clip*4.wav} @vevol}} 
 #trig {The vehicle rolls to a stop.} {#gagline voice}
 #TRIGGER {You put the car into reverse and begin to back up.} {#gagline all; playsound {Cosmic Rage/general/cars/reverse.wav} @vehiclevol}
 #TRIGGER {* yanks up the handbrake!} {#Gagline voice; playsound {Cosmic Rage/general/cars/\handbrake_up.wav} @vehiclevol; #if {@drive = 1} {#pc @drivehandle stop; #var drive 0;}}

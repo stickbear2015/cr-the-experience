@@ -88,7 +88,7 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #TRIGGER {A siren blares through the ship, * has a lock on this starship.} {
 #if {@gagShipCombat = "Enabled"} {
 #gagline all};
-#sub {%1 has a lock on this starship.}; {playsound {cosmic rage/ships/combat/haslock*4.wav} @CVol}};
+#sub {%1 has a lock on this starship.}; playsound {cosmic rage/ships/combat/haslock*4.wav} @CVol};
 #TRIGGER {The floor underfoot vibrates as * missiles are fired.} {#gagline all}
 #TRIGGER {target moved.} {#gagline all; playsound {cosmic rage/ships/combat/LostTrack.wav} @CVol};
 #TRIGGER {You hear a siren begin to blair and a synthesised voice announces: Alert. Self-destruction in * Please evacuate immediately.} {playsound {cosmic rage/ships/combat/SelfDestructStart.wav} @CVol};

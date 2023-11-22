@@ -1,3 +1,7 @@
+2232 tracebug, credits Vol4life, moved the save option in the config menu down
+2231 tracebug, credits ivangamer, weapon draw and holstering now have sounds. I didnt do the Melee  sheathable weapons yet.
+2230 tracebug, credits a lot of people, there is now an option in the config manager that allows you to gag incoming text while speedwalking. You can also use the alias speedgag to quickly turn it on and off
+2229 tracebug, credits windsong, meow, meow. meow meow meow meow meow! meow? meow. Yep. Added a couple more meow sounds for the well, you guessed it correct, the meow social
 2228 tracebug, credits LaraStardust, Fixed several salvaging errors.
 2227 tracebug, fixed fridges
 2226 tracebug, credits mery2004, probably fixes cylarkan messages are not appearing in buffers.

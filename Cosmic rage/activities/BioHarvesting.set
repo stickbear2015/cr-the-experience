@@ -17,7 +17,7 @@
 #TRIGGER {*"Rod 2 has attracted bioplasma."} {#if {@gagHarvest = "Enabled"} {#gagline voice}; playsound {cosmic rage/activities/nebula/rodharv.wav} @Vol};
 #TRIGGER {*"Rod 3 has attracted bioplasma."} {#if {@gagHarvest = "Enabled"} {#gagline voice}; playsound {cosmic rage/activities/nebula/rodharv.wav} @Vol; #PC %Playhandle Pan %Random(1500,1400)};
 #TRIGGER {*"Rod 4 has attracted bioplasma."} {#if {@gagHarvest = "Enabled"} {#gagline voice}; playsound {cosmic rage/activities/nebula/rodharv2.wav} @Vol; #PC %Playhandle Pan %Random(1500,1400)};
-#TRIGGER {A siren echoes throughout the ship: "Warning! Rod temperature change. * now at *"} {playsound {cosmic rage/activities/nebula/warning.wav} @vol; {#sub {%1 is at %2}}}
+#TRIGGER {A siren echoes throughout the ship: "Warning! Rod temperature change. * now at *"} {playsound {cosmic rage/activities/nebula/warning.wav} @vol; #sub {%1 is at %2}}
 #TRIGGER {You slam your right hand onto the stop button.} {#gagline all; #if {@rodloop = 1}; #pc @rodloophandle stop; #var rodloop 0; playsound {cosmic rage/activities/nebula/deactivate.wav} @Vol};
 #TRIGGER {On screen, a green light appears above *} {#gagline all; playsound {cosmic rage/activities\nebula\beep.wav} @vol}
 #TRIGGER {There is a subtle click of a rod being locked in place.} {#gagline all; playsound {cosmic rage/activities\nebula\click.wav} @vol}

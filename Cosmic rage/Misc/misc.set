@@ -20,7 +20,7 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You stand up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
 #TRIGGER {* stands up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
 #trigger {You lie down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
-#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol; }
+#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
 #TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol; bufferadd CashAndPoints %0}
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; bufferadd CashAndPoints %0}
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; bufferadd CashAndPoints %0}
@@ -50,8 +50,8 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {You tap a few buttons on * accessing its menu.} {#gagline all; playsound {cosmic rage/general/misc/complogin.wav} @vol};
 #TRIGGER {You tap the shutdown icon.} {#gagline all; playsound {cosmic rage/general/misc/complogout.wav} @vol};
 #TRIGGER {*Command Aborted*} {#gagline all; playsound {cosmic rage/general/misc/abort.wav} @vol};
-#TRIGGER {Starting speedwalk.} {playsound {cosmic rage/general/misc/speedwalkon.wav} @vol}
-#TRIGGER {Speedwalk finished.} {playsound {cosmic rage/general/misc/speedwalkoff.wav} @vol} {} anycase
+#TRIGGER {Starting speedwalk.} {playsound {cosmic rage/general/misc/speedwalkon.wav} @vol; #if {@speedgagger = "Enabled"} {#gagon all}}
+#TRIGGER {Speedwalk finished.} {playsound {cosmic rage/general/misc/speedwalkoff.wav} @vol; #ungagon} {} anycase
 #TRIGGER {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. "*"} {#if {@QGag = 1} {#sub {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. %1}};
 playsound {cosmic rage/general/misc/ping.wav} @vol}; 
 #trigger {You hear a ping and a soft, soothing voice announces, "*"} {#sub %1;playsound {cosmic rage/general/misc/ping.wav} @vol}

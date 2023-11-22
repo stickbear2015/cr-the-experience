@@ -3,15 +3,15 @@
 playsound  {cosmic rage/general/factory/laser.wav} @vol}
 #trigger {The * computer announces: "*"} {#sub {%2};
 #if {%ifword(factory,%1," ")} {
-playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
 #if {%ifword(large factory,%1," ")} {
-playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
 #if {%ifword(Starbase,%1," ")} {
-playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
 #if {%ifword(mini space station,%1," ")} {
-playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
 #if {%ifword(space station,%1," ")} {
-playsound  {cosmic rage/general/factory\computer*6.wav} 30} {} AnyCase;
+playsound  {cosmic rage/general/factory\computer*6.wav} 30};
 #if {%ifword(artificial,%1," ")} {
 playsound  {cosmic rage/general/factory\computer*6.wav} 30}} {} AnyCase
 #trigger {* wheel in and drop off *} {

@@ -55,4 +55,4 @@ loopsound {cosmic rage/Ambiences/build.wav} @Vehiclevol; #var vehiclehandle %pla
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/VehicleMisc.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
-#var currentroom "vmisc"}}} {vehicleamb}
+#var currentroom "vmisc"}}}

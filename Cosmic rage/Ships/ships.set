@@ -136,9 +136,9 @@ playsound {cosmic rage/ships/movement/gravjump.wav} @vol}
 #trigger {A * entry hatch*swings *} {
 #gagline all;
 #if {%ifWord(open.,%3," ")} {
-playsound {cosmic rage/ships/misc/iopen.wav} @vol} {} Anycase;
+playsound {cosmic rage/ships/misc/iopen.wav} @vol};
 #if {%ifWord(closed.,%3," ")} {
-playsound {cosmic rage/ships/misc/iclose.wav} @vol} {} Anycase;
+playsound {cosmic rage/ships/misc/iclose.wav} @vol};
 #if {%ifword(shut.,%3," ")} {
 playsound {cosmic rage/ships/misc/iclose.wav} @vol}} {} Anycase
 #trigger {You hear a slight rumble as the airlock automatically cycles itself.} {

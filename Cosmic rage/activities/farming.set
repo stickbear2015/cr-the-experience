@@ -32,7 +32,7 @@
 #pc @CombatMusicPlayingHandle stop; #var CombatMusicPlaying 0};
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
-#If {%IfWord(inside a sgoat pen,%2," ")} {
+#If {%IfWord(inside a goat pen,%2," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "inside"} {
 #if {@RoomSoundPlaying = 1} {

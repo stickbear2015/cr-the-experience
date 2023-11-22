@@ -94,6 +94,7 @@
 #write 6 @gbl @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @bufferfavkeys @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @cargogagger @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @speedgagger @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #alias SaveSettings {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Your soundpack settings and buffer list  have successfully been saved!}; ActualSave; AutoSaveBuffers}
 #key {Control-shift-R} {SpReload}

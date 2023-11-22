@@ -75,13 +75,15 @@ Toggle Buffer sounds. It is currently @buffersound:buffersound|
 Turn off buffer favorite keys. They are currently @bufferfavkeys:togglefav|
 Toggle your speech in the soundpack. Shortcut ctrl f1. This option is currently @speech. Note. When this option is enabled, your speech will be muted :smute|
 Toggle mute sounds. Shortcut shift f1.  This option is currently @soundson:MuteSound|
-Save your soundpack settings:SaveSettings|
 Toggle communication text gag, this will gag the you speak in to your communicator text. This option is currently @commtoggle:commtoggle|
 Toggle the quotation mark gagger. It is currently @qtg:qtg|
 Gag text for people using helper drone remotes. Currently @hpdr:hpdr|
 Toggle computer avatar gagging. Shortcut Alt+shift+G. It is currently @gagStarshipComputerName:gagcomputer|
 Toggle cargo bay and undamaged vehicle component gag. It is currently @cargogagger:cargogagger|
-Reload the soundpack:SpReload| View the list of available help files for the soundpack. Note. Files will be opened in your text editer of choice:SpHelp}}
+Toggle  gagging of messages while speedwalking. It is currently @speedgagger:speedgag|
+Save your soundpack settings:SaveSettings|
+Reload the soundpack:SpReload|
+View the list of available help files for the soundpack. Note. Files will be opened in your text editer of choice:SpHelp}}
 
 ;Volumes
 #alias  genvoldown {
@@ -285,3 +287,4 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias hpdr {#if {@hpdr = "gagged"} {#var hpdr "ungagged"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Helper drone remote usage is no longer being gagged.}} {#var hpdr "gagged"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Helper drone remote usage is now being gagged.}}}
 #alias gagcomputer  {#if {@gagStarshipComputerName= "Enabled"} {#var gagStarshipComputerName "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see computer avatar texts}} {#var gagStarshipComputerName "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see computer avatar texts}}}
 #alias cargogagger {#if {@cargogagger= "Enabled"} {#var cargogagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Empty cargo bays and undamaged vehicle components will no longer be gagged}} {#var cargogagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {empty cargo bays and undamaged vehicle components will be gagged}}}
+#alias speedgag {#if {@speedgagger= "Enabled"} {#var speedgagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {messages no longer be gagged while speedwalking}} {#var speedgagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {messages will be gagged while speedwalking}}}

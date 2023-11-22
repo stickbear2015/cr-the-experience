@@ -5,7 +5,7 @@ playsound {cosmic rage/activities/hand mining/scan.wav} @vol}
 #trigger {* indicates it has detected something nearby at *, *, * underground.} {#var hmfind1 {%2 %3};#sub {%1 indicates it has detected something nearby at %2, %3.}}
 #trigger {You are in the * at *, *.} {#var hmfind2 {%2 %3};
 #if {@hmfind2 = @hmfind1} {playsound {cosmic rage/activities/hand mining/CanDig.wav} @vol}}
-#trigger {You pick your way through the mining area, *} {#sub {You are %1}}
+#trigger {You pick your way through the mining area, *} {#sub {You are %1}};
 ;digging for hand-mining finds
 #trigger {You put the edge of * shovel into the dirt and begin to dig.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/dig*2.wav} @vol}
@@ -25,7 +25,7 @@ playsound {cosmic rage/activities/hand mining/dirt.wav} @vol}
 #trigger {You refill the hole with dirt.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/ShovelClean.wav} @vol}
 #trigger {You use your forepaws to shovel the dirt back into the hole, filling it in.} {#gagline voice;
-playsound {cosmic rage/activities/hand mining/ShovelClean.wav} @vol}
+playsound {cosmic rage/activities/hand mining/ShovelClean.wav} @vol};
 
 ;The scruffy man
 #trigger {A scruffy-looking man suddenly shoves into the area. *} {#gagline voice;
@@ -39,7 +39,7 @@ playsound {cosmic rage/activities/hand mining/ManDie.wav} @vol}
 #trigger {You let out a ferocious snarl, and step threateningly towards A scruffy-looking man.} {#gagline voice;
 playsound {cosmic rage/activities/hand mining/manscare.wav} @vol}
 #trigger {You miss, and A scruffy-looking man smashes you in the face with his own shovel.} {#gagline voice;
-playsound {cosmic rage/activities/hand mining/ManKillYou.wav} @vol}
+playsound {cosmic rage/activities/hand mining/ManKillYou.wav} @vol};
 
 ;using the hand-mining kit
 #trigger {You flip a small switch on * hand mining kit and use the laser tool to attempt to polish a hand-mining find.} {playsound {cosmic rage/activities/hand mining/laser.wav} @vol}

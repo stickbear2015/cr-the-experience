@@ -94,9 +94,9 @@
 #trigger {You slap yourself full in the face.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/slap*5.wav} @vol}}
 #trigger {You pull back your arm and slap *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/slap*5.wav} @vol}}
 #trigger {*slaps*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/slap*5.wav} @vol}}
-#trigger {You meow.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow.wav} @vol}}
-#trigger {You meow at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow.wav} @vol}}
-#trigger {*meows*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow.wav} @vol}}
+#trigger {You meow.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow*3.wav} @vol}}
+#trigger {You meow at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow*3.wav} @vol}}
+#trigger {*meows*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow*3.wav} @vol}}
 #trigger {you roll on the floor laughing as you do.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
 #trigger {you roll on the floor laughing at*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
 #trigger {* rolls on the floor laughing*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
@@ -105,7 +105,7 @@
 #trigger {* yells: *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}}
 #trigger {*woof*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}}
 #trigger {* barks madly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bark.wav} @vol}}
-#trigger {* lets out a soft meow.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow.wav} @vol}}
+#trigger {* lets out a soft meow.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow*3.wav} @vol}}
 #trigger {* picks * up by the tail, swings * around * head a few times, then flings * into a trashcan!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/trash.wav} @vol}}
 #trigger {*Garry Blue Scale grins and knocks back a bottle of beer.} {#gagline all; playsound {Cosmic Rage/general/socials/GarryBeer.wav} 70}
 #trigger {Pilot Garry Blue Scale belches.} {#gagline all}

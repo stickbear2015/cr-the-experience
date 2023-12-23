@@ -170,7 +170,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #TRIGGER {* finishes * and lets out a small burp.} {playsound {Cosmic Rage\general\Misc\petburp.wav} @vol; #gagline voice}
 #TRIGGER {* makes a small belching noise*} {playsound {Cosmic Rage\general\Misc\petburp.wav} @vol; #gagline voice}
 #TRIGGER {* moves over to * and takes a long drink from it.} {playsound {Cosmic Rage\general\Misc\petdrink.wav} @vol; #gagline all}
-#trigger {* wind chime *} {playsound {Cosmic Rage\general\Misc\chimes.wav} @vol} {}
+#trigger {* windchime *} {playsound {Cosmic Rage\general\Misc\chimes.wav} @vol} {}
 
 #TRIGGER {Water flows down the side of * and splashes soothingly into a bowl at the bottom.} {playsound {Cosmic Rage\general\Misc\fountain.wav} @vol}
 #trigger {the event, * is happening in *} {playsound {cosmic rage/general/misc/event.wav} @vol}

@@ -1,3 +1,5 @@
+2234 tracebug, fixed a minor error with star rescueing.
+2233 tracebug, credits DiamondQueen and G1IcecreamStar, slightly updated the windchime trigger.
 2232 tracebug, credits Vol4life, moved the save option in the config menu down
 2231 tracebug, credits ivangamer, weapon draw and holstering now have sounds. I didnt do the Melee  sheathable weapons yet.
 2230 tracebug, credits a lot of people, there is now an option in the config manager that allows you to gag incoming text while speedwalking. You can also use the alias speedgag to quickly turn it on and off

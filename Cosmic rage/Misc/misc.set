@@ -52,6 +52,7 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {*Command Aborted*} {#gagline all; playsound {cosmic rage/general/misc/abort.wav} @vol};
 #TRIGGER {Starting speedwalk.} {playsound {cosmic rage/general/misc/speedwalkon.wav} @vol; #if {@speedgagger = "Enabled"} {#gagon all}}
 #TRIGGER {Speedwalk finished.} {playsound {cosmic rage/general/misc/speedwalkoff.wav} @vol; #ungagon} {} anycase
+#trig {Can not proceed on automatic.} {#ungagon}
 #TRIGGER {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. "*"} {#if {@QGag = 1} {#sub {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. %1}};
 playsound {cosmic rage/general/misc/ping.wav} @vol}; 
 #trigger {You hear a ping and a soft, soothing voice announces, "*"} {#sub %1;playsound {cosmic rage/general/misc/ping.wav} @vol}
@@ -115,8 +116,7 @@ playsound {cosmic rage/general/misc/partyHorn.wav} @vol}
 playsound {cosmic rage/general/misc/sillystring.wav} @vol}
 #trigger {* sprays a jet of silly string from a can of * silly string at you, covering you with it!} {
 playsound {cosmic rage/general/misc/sillystring.wav} @vol}
-#trigger {* partypopper lets out a loud crack and sprays confetti everywhere!} {
-playsound {cosmic rage/general/misc/partypopper.wav} @vol}
+#trigger {* party popper lets out a loud crack and sprays confetti everywhere!} {playsound {cosmic rage/general/misc/partypopper.wav} @vol}
 #trigger {The pod begins to accelerate.} {#gagline all; playsound {cosmic rage/general/pod/doorc.wav} @vol; #alarm 2 {playsound {cosmic rage/general/pod/start.wav} @vol}};
 #trigger {The pod reaches a steady moving pace and begins to travel along its journey.} {
 #gagline all;
@@ -302,8 +302,8 @@ playsound {cosmic rage/general/misc/CashCheck.wav} @vol}
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Inside"}};
-#trigger {* begins to tap the screen of a remote control for a helper drone.} {#if {@hpdr = "gagged"} {#gagline all}}
-#trigger {* finishes using a remote control for a helper drone.} {#if {@hpdr = "gagged"} {#gagline all}}
+#trigger {* begins to tap the screen of a remote control for a helper dron*} {#if {@hpdr = "gagged"} {#gagline all}}
+#trigger {* finishes using a remote control for a helper dron*} {#if {@hpdr = "gagged"} {#gagline all}}
 #trigger {You have obtained mission rank *!} {playsound {Cosmic Rage/general/misc/invade.wav.} @vol}
 #trig {Would you like a scar on your new clone?} {#pc 0 stop}
 #trigger {You begin to quickly gulp down *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol; #var gulphandle %playhandle; #var gulploop 1}

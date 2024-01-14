@@ -1,3 +1,12 @@
+2343 tracebug, credits OlegTheSnowman, fixed speedwalk gagger in situations where it cannot continue.
+2342 tracebug, fixed a few entertainment sounds.
+2341 tracebug, credits Aloys, fixed shopping center ambience. Turns out it was not playing correctly.
+2340 tracebug, credits Koalarat, fixed a baby related feeding sound error. It should now behave good now if the baby hands you empty containers
+2339 tracebug, credits Debs and Mary2004, fixed helper remote drone gagging.
+2238 tracebug, corrected a baby social
+2237 tracebug, credits OlegTheSnowman, your buffers will now clear themselves when you switch chars.
+2236 tracebug, credits UmikoIshakawa, added a sound for disk destruction for star rescueing. 
+2235 tracebug, credits and sound credits host eli, host giving cup of tea now has a sound. ýt is a great sound
 2234 tracebug, fixed a minor error with star rescueing.
 2233 tracebug, credits DiamondQueen and G1IcecreamStar, slightly updated the windchime trigger.
 2232 tracebug, credits Vol4life, moved the save option in the config menu down

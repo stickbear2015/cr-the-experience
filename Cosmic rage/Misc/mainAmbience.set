@@ -297,11 +297,11 @@ loopsound {cosmic rage/Ambiences/Road.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "road"}};
 #If {%IfWord(Shopping,@RoomName," ")} {
 #var currentroom2 "notmisc";
-#if {@currentroom <> "plaza"} {
+#if {@currentroom <> "shopping"} {
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/Ambiences/Plaza.wav} @roomvol;
-#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "plaza"}};
+loopsound {cosmic rage/Ambiences/shopping.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "shopping"}};
 #If {%IfWord(Hallway,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "Hallway"} {

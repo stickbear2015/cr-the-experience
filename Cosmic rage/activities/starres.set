@@ -35,3 +35,4 @@
 #trig {As the drone zooms in on the window the image of people waving pops up. They seem happy enough, say for the oncoming burning death.} {playsound {Cosmic Rage/activities/starres/croud.wav} @evol}
 #trigger {You gently curve the drone, making it follow the direction of the pod's piping.} {#gagline voice; playsound {Cosmic Rage/activities/starres/gearup.wav} @evol}
 #trig {You abort the dive and send the drone spinning towards the edge of the star.} {#gagline all; playsound {Cosmic Rage/activities/starres/code.wav} @vol}
+#trigger {As it attempts to rotate, a shiny control disc suddenly catches on the many dents it now sports. There is a loud groaning noise before a shiny control disc shattered!} {#gagline voice; playsound {Cosmic Rage/activities/starres/disk.wav} @evol}

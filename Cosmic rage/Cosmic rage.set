@@ -112,7 +112,10 @@
 
 ;Triggers for connecting to the moo.
 #TRIGGER {New synaptic signal verified. Prepare yourself... For Cosmic Rage!} {#pc 0 stop; loadbuffers}
-#trigger {Welcome to: cosmic rage!} {version; #say {Welcome to the VIP Cosmic Rage experience!}; #if {@intromusic = "enabled"} {loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle %playhandle}; silentclear} {} AnyCase
+#trigger {Welcome to: cosmic rage!} {
+version; #say {Welcome to the VIP Cosmic Rage experience!}; #if {@intromusic = "enabled"} {
+#if {@IntroPlaying = 1} {#pc @introhandle stop;#var IntroPlaying 0};
+loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle %playhandle; #var IntroPlaying 1}; silentclear} {} AnyCase
 
 ;Settings.
 #File 6 {cosmic rage/misc/settings.set} 1;
@@ -180,7 +183,7 @@
 #class ambon disable; #class shipamb disable; #class vehicleamb disable};
 
 ;misc.
-#TRIGGER {Synaptic signal verified. Sleep mode disengaged. Welcome back to cosmic rage!} {loadbuffers; #if {@intromusic = "enabled"} {#pc @introhandle stop}; #if {@UpdateToggle = "Enabled"} {#alarm 1 {spversion; #var cvcheck 1}}} {} AnyCase
+#TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to Cosmic Rage!} {loadbuffers; #if {@IntroPlaying = 1} {#pc @introhandle stop; #var IntroPlaying 0}; #if {@UpdateToggle = "Enabled"} {#alarm 1 {spversion; #var cvcheck 1}}} {} AnyCase
 #alias {onDisconnect} {
 #gvar disconnected 1;
 ActualSave; #say {Settings saved!}; #pc 0 stop; #play {cosmic rage/general/misc/quit.wav} @vol}

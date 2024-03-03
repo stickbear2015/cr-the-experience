@@ -120,8 +120,6 @@ playsound {cosmic rage/vehicle/lever.wav} @vol}
 #TRIGGER {*"I will begin repairs to the gas harvesting equipment. time until completion, * seconds."}  {playsound {cosmic rage/activities\planetoid\propellersRepair.wav} @vol}
 #trigger {Through the windows, you see as the gravity of * causes it to collapse inwards, no longer held together by any gas.} {
 #gagline all}
-#trigger {Through the windows, you see * rapidly expel all of the remaining *} {
-#alarm 1 {playsound {cosmic rage\ships\combat\OtherDestroyed1.wav} @CVol}};
 
 ;planetoid harvesting drone
 #trigger {You begin to manipulate the tiny planetoid harvesting drone.} {#gagline voice; playsound {Cosmic Rage/activities/planetoid/ManipulateDrone.wav} @vol}

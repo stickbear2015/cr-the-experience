@@ -1,8 +1,10 @@
-2343 tracebug, credits OlegTheSnowman, fixed speedwalk gagger in situations where it cannot continue.
-2342 tracebug, fixed a few entertainment sounds.
-2341 tracebug, credits Aloys, fixed shopping center ambience. Turns out it was not playing correctly.
-2340 tracebug, credits Koalarat, fixed a baby related feeding sound error. It should now behave good now if the baby hands you empty containers
-2339 tracebug, credits Debs and Mary2004, fixed helper remote drone gagging.
+2245, SkyfallBlindDreamer, added some triggers to the misc.set file to cover some info computer actions. Let me know what you think.
+2244, SkyfallBlindDreamer, fixed a bug related to loop sounds not properly stopping when bioplasma harvesting and when logging in to the game.
+2243 tracebug, credits OlegTheSnowman, fixed speedwalk gagger in situations where it cannot continue.
+2242 tracebug, fixed a few entertainment sounds.
+2241 tracebug, credits Aloys, fixed shopping center ambience. Turns out it was not playing correctly.
+2240 tracebug, credits Koalarat, fixed a baby related feeding sound error. It should now behave good now if the baby hands you empty containers
+2239 tracebug, credits Debs and Mary2004, fixed helper remote drone gagging.
 2238 tracebug, corrected a baby social
 2237 tracebug, credits OlegTheSnowman, your buffers will now clear themselves when you switch chars.
 2236 tracebug, credits UmikoIshakawa, added a sound for disk destruction for star rescueing. 

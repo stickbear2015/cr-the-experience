@@ -7,7 +7,7 @@
 #trig {The pod shakes slightly as it turns a corner.} {#gagline all}
 #trig {the pod begins to slow down, the motor smoothing out into a hum.} {#gagline all}
 #trig {The pod judders onto a stand, rotating on the spot as it clicks into place.} {#gagline all}
-#trig {The engine of the pod deactivates and the doors hiss open.} {#gagline all; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav}}}
+#trig {The engine of the pod deactivates and the doors hiss open.} {#gagline all; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav} @vol}}
 #trig {The pod rotates on the spot, before slowly sliding off the stand.} {#gagline all}
 #trig {The pod ascends slightly, then begins to move forward at a steady pace.} {#gagline all}
 #trig {The pod's motor increases in pitch, producing extra lift.} {#gagline all}
@@ -16,7 +16,7 @@
 #trig {The pod continues across the land, the occasional dull thump indicating a snow pile has just been knocked over.} {#gagline all}
 #trig {The pod begins to slow, and you hear a slight scrape from under the floor.} {#gagline all}
 #trig {The pod bumps onto a rack, the engine rotating it to lock into place.} {#gagline all}
-#trig {The hatch slides open as the pods engine powers down.} {#gagline all; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav}}}
+#trig {The hatch slides open as the pods engine powers down.} {#gagline all; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav} @vol}}
 #trig {You step up and enter one of the pods.} {#gagline all; playsound {Cosmic Rage/activities/farming/enter.wav} @vol}
 #trig {You step into the transport building, and quickly enter a pod.} {#gagline all; playsound {Cosmic Rage/activities/farming/enter.wav} @vol}
 

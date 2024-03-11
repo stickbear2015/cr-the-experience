@@ -214,7 +214,7 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #if {@ShortMapText = "Enabled"} {
 #sub {%1}; bufferadd mapper %0}}
 #trigger {* scoops up * munching it in a few mighty chomps.} {playsound {Cosmic Rage\general\Misc\peteat.wav} @vol}
-#trigger {* mapper quietly says in *: "You have arrived at your destination."} {#gagline voice;playsound {Cosmic Rage/general/misc/ArrivedDestination.wav} @vol; bufferadd Mapper %0}
+#trigger {* quietly says in *: "You have arrived at your destination."} {#gagline voice;playsound {Cosmic Rage/general/misc/ArrivedDestination.wav} @vol; bufferadd Mapper %0}
 #trigger {You close *washer} {playsound {Cosmic Rage/general/Washing/Washing1.wav} @vol; #gagline all}
 #trigger {*light flicks on * washer and through the door at the front you see the clothing begin to revolve clockwise.} {loopsound {Cosmic Rage/general/Washing/Washing2.wav} @vol; #gagline all; #var Washhandle %playhandle; #var Wash 1}
 #trigger {*washer gurgles, then rotates the clothing anti clockwise.} {#gagline all}
@@ -316,5 +316,8 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #TRIGGER {* swis* tail.} {playsound {cosmic rage/general/misc/swish.wav} @vol};
 #trigger {You hear the high-pitched shriek of the safety sirens and an echoing voice booming, "Alert. alert. all citizens to shelters. All citizens to shelters. * this is not a drill."} {playsound {Cosmic Rage/general/comms/evac.wav} @vol}
 #trigger {Text scrolls across the screen of * which reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
+#trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms(icnotice.wav} @vol}
 #trigger {Words appear on a *'s display: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
 #trigger {a * chirps quietly and a message on screen reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/comp.wav} @vol}
+#trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
+#trigger {Words appear on * display: "There are * unread notifications."} {  {cosmic rage/general/comms(icnotice.wav} @vol}

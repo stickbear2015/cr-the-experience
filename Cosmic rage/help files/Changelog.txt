@@ -1,3 +1,9 @@
+2251, SkyfallBlindDreamer, Credits BluePanda, fixed a simple typo that caused the new IC notifications sound not to play.
+2250 tracebug, credits FrauleinSnow code credits FrauleinSnow, fixed a mapper and infocomp issue
+2249 tracebug, IC notifications now have sounds.
+2248, SkyfallBlindDreamer, tweaked a trigger for info computer notifications, so you now get sounds when you get IC notifications.
+2247, SkyfallBlindDreamer, I made some changes to the timing of train sounds. They no longer stack right on top of each other, and now sound more realistic. Remember, mind the gap, and please stand clear of the doors.
+2246, SkyfallBlindDreamer, credits UmikoIshakawa, Hopefully fixed message board sounds. Report if there are any issues.
 2245, SkyfallBlindDreamer, added some triggers to the misc.set file to cover some info computer actions. Let me know what you think.
 2244, SkyfallBlindDreamer, fixed a bug related to loop sounds not properly stopping when bioplasma harvesting and when logging in to the game.
 2243 tracebug, credits OlegTheSnowman, fixed speedwalk gagger in situations where it cannot continue.

@@ -183,6 +183,7 @@ loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle
 #class ambon disable; #class shipamb disable; #class vehicleamb disable};
 
 ;misc.
+#Alias login {#gagon all; 1; %charInfo(name); %charInfo(password); #wait (0.1); #ungagon}
 #TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to Cosmic Rage!} {loadbuffers; #if {@IntroPlaying = 1} {#pc @introhandle stop; #var IntroPlaying 0}; #if {@UpdateToggle = "Enabled"} {#alarm 1 {spversion; #var cvcheck 1}}} {} AnyCase
 #alias {onDisconnect} {
 #gvar disconnected 1;

@@ -237,7 +237,7 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd fires %0} {
 #TRIGGER {[[]Stories], (*): Announcement from the story Weavers! *} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 
 #trigger {You tap a button next to * and proceed to say * "*"} {
 #if {@QGag = 1} {
-#sub {[intercom] "you : %3}};
+#sub {[intercom] you : %3}};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {* taps a button next to * and proceeds to say *: "*"} {
 #if {@QGag = 1} {
@@ -246,3 +246,7 @@ playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCas
 #TRIGGER {* informs you that you currently have * unread * in your history to review.} {playsound {Cosmic Rage/general/comms/radio.wav} @CommsVol;}
 #trigger {* plays * while in * the words * scroll across the screen under the banner of *} {
 playsound {cosmic rage/general/messageboards/mbn.wav} @CommsVol; #if {%ifword(general,%5,"")} {playsound {cosmic rage/general/messageboards/general.wav} @CommsVol};  #if {%ifword(rename,%5,"")} {playsound {cosmic rage/general/messageboards/namechange.wav} @CommsVol};  #if {%ifword(Graduation,%5,"")} {playsound {cosmic rage/general/messageboards/graduate.wav} @CommsVol};  #if {%ifword(chat room,%5,"")} {playsound {cosmic rage/general/messageboards/chat.wav} @CommsVol};  #if {%ifword(%5,ownership|moon,"|")} {playsound {cosmic rage/general/messageboards/ownership.wav} @CommsVol};  #if {%ifword(%5,retire|deaths,"|")} {playsound {cosmic rage/general/messageboards/dead.wav} @CommsVol};  #if {%ifword(%5,General Discussion|Elections|New Registrations|Rank Advancements|important,"|")} {playsound {cosmic rage/general/messageboards/origin.wav} @CommsVol};  #if {%ifword(%5,Marriages|Announcements|,"|")} {playsound {cosmic rage/general/messageboards/notice.wav} @CommsVol}; };
+#trigger {Over * short wave radio's speaker, * "*"} {
+#if {@QGag = 1} {#sub {[Short Wave]: %2 %3}} {#sub {[Short Wave]: %2 "%3"}};
+playsound {Cosmic Rage/general/comms/ShortWave.wav} @CommsVol}
+#trigger {You tune * short wave radio's dial to *} {#sub {Short wave radio tuned to %2}; playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}

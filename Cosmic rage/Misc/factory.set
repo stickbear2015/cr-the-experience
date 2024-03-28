@@ -40,6 +40,9 @@ playsound  {cosmic rage/activities/planetoid/grind.wav} @vol}
 #trigger {The grinding sound of solar panels fills the *} {
 #gagline all;
 playsound  {cosmic rage/activities/planetoid/grind.wav} @vol}
+#trigger {You hear a sliding grinding noise and then a clunk.} {
+#gagline all;
+playsound  {cosmic rage/activities/planetoid/grind.wav} @vol}
 #trigger {You hear a loud boom and the * exit suddenly explodes.} {#gagline all;
 playsound {cosmic rage/general/factory/explode.wav} @vol}
 #trigger {You hear a faint rumbling sound.} {#gagline all;

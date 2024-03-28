@@ -9,7 +9,7 @@ thanks for thaa amber designation for   hosting once the old unofficial google d
 special thanks from stormy. Thanks to  Ryok Black scale for refering someone to the dropbox using my referral link. if he didnt do that, i would've need to stop using dropbox to push updates from my end do to space limitations.
 Thanks to SaPeru for rewriting starship weapon script. It functions the same, but it is far more easy to manage and bugfix if required! His version of the script is almost 4k character smaller than myne was! 
 Huge Thanks to Saperu for rewriting the buffering system from scratch. It has far more better functionalety now and it is far more flexable than before. Also vipmud will no longer yell t you about overflow errors.
-Thanks to SkyfallBlindDreamer for various bug fixes and updates over the years, including the update checker system.
+Thanks to SkyfallBlindDreamer for various bug fixes and updates over the years, including the update checker system and the quotation mark gagger.
 
 
 

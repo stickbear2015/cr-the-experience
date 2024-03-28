@@ -150,7 +150,8 @@
 #trigger  {* squeezes the shit out of *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/shitsqueeze.wav} @vol}}
 #trigger {* leans back and lets out a loud burp.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp1.wav} @vol}}
 #trigger {* bar* * teeth and snar*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/snarl.wav} @vol}}
-#trigger {* blin* at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/blink.wav} @vol}}
+#trigger {* blinks at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/blink.wav} @vol}}
+#trigger {You blink at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/blink.wav} @vol}}
 #trigger {* kic* * in the nuts. *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/nutkick.wav} @vol}}
 #trigger {* smac* * around the face with * giant dong.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/dong2.wav} @vol}}
 #trigger {* whips out * giant dong. Whoa there!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/dong1.wav} @vol}}

@@ -1,3 +1,5 @@
+2256, SkyfallBlindDreamer, a big thanks to Fufflebear, a whole lot of garbage files have been cleaned from the pack.
+2255, SkyfallBlindDreamer, Fixed a trigger involving IC notices so it no longer throws an error on login.
 2254 tracebug, credits UmikoIshakawa, the soundpack now support auto login. To do this, you first need to set the char name to  your account name and enter your password in the password section. Then either you can check the autologin checkbox or type "login" in the main menu.
 2253, SkyfallBlindDreamer, Fixed the trigger for starting fusing with resource trolleys.
 2252, SkyfallBlindDreamer, credits OlegTheSnowman, We now have a couple sounds for short wave radios. Let me know what you think.

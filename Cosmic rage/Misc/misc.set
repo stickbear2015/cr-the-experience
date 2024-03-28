@@ -316,7 +316,7 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #TRIGGER {* swis* tail.} {playsound {cosmic rage/general/misc/swish.wav} @vol};
 #trigger {You hear the high-pitched shriek of the safety sirens and an echoing voice booming, "Alert. alert. all citizens to shelters. All citizens to shelters. * this is not a drill."} {playsound {Cosmic Rage/general/comms/evac.wav} @vol}
 #trigger {Text scrolls across the screen of * which reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
-#trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms(icnotice.wav} @vol}
+#trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
 #trigger {Words appear on a *'s display: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
 #trigger {a * chirps quietly and a message on screen reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/comp.wav} @vol}
 #trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}

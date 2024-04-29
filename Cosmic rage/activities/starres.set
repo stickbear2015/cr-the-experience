@@ -16,8 +16,8 @@
 #trigger {On the screen of the drone small bolts of electricity seem to flicker, perhaps you are closer to the correct angle.} {#gagline voice; playsound {Cosmic Rage/activities/starres/coretrue.wav} @evol}
 #trigger {The power core successfully clunks into the cradle!} {playsound {Cosmic Rage/activities/starres/coredone.wav} @evol}
 #trigger {You replace the panel and pour some coolant over it using the drone's controls.} {#gagline voice; playsound {Cosmic Rage/activities/starres/coredone.wav} @evol}
-#trig {There is nothing here.} {playsound {cosmic rage/ships/computer/alert.wav} #gagline all}
-#trig {There is a heat shielding panel here.} {playsound {cosmic rage/ships/computer/salert.wav} #gagline all}
+#trig {There is nothing here.} {playsound {cosmic rage/ships/computer/alert.wav} @evol; #gagline all}
+#trig {There is a heat shielding panel here.} {playsound {cosmic rage/ships/computer/salert.wav} @evol; #gagline all}
 #trig {As the drone pulls away from the pod it successfully fires up the thrusters and disappears into space!} {playsound {Cosmic Rage/activities/starres/finish.wav} @evol}
 #trigger {The pods power grid completely dies and the drone indicates it is now beyond help. It detaches automatically in order to avoid distruction.} {playsound {cosmic rage/activities/starres/aprbegin.wav} @evol; #alarm 3 {loopsound {cosmic rage/activities/starres/aprloop.wav} @evol; #var aprHandle %playHandle; #var apr 1}}
 #trig {* of a Vacus appears on the viewscreen.} {playsound {Cosmic Rage/activities/starres/vacus.wav} @evol}

@@ -58,7 +58,7 @@ playsound {cosmic rage/general/combat/ray.wav} @gvol}
 #trigger {You hear an explosion from the *} {playsound {Cosmic Rage/general/combat/GrenadeExplodeNextRoom.wav} @gvol; #if {@panshipcombat = "Enabled"} {#PC %PlayHandle Pan %Random(-4000,4000)}} {} AnyCase
 #trigger {You connect up the wires and the generator stabalises.} {playsound {Cosmic Rage/general/combat/AtmosphericGenerator.wav} @gvol}
 #trigger {*grenade explodes!} {playsound {Cosmic Rage/general/combat/GrenadeExplode.wav} @gvol}
-#trigger {* mapper makes a warning trill, and a red arrow indicates *} {playsound {Cosmic Rage/general/combat/enemy detected.wav} @gvol; #additem Mapper %0;
+#trigger {* makes a warning trill, and a red arrow indicates *} {playsound {Cosmic Rage/general/combat/enemy detected.wav} @gvol; #additem Mapper %0;
 #sub {%2}}
 #trigger {You throw off the stun!} {playsound {Cosmic Rage/general/combat/ThrowOffStun.wav} @gvol}
 #trigger {A shimmering forcefield intersepts all of the force behind the hit*} {#gagline all; playsound {Cosmic Rage/general/combat/stun crystal.wav} @gvol}

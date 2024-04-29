@@ -474,16 +474,16 @@ b10:10null
 #Key CONTROL-ALT-9 {altcontrolKeys 9} bufferkeys
 #Key CONTROL-ALT-0 {altcontrolKeys 10} bufferkeys
 #Key ALT-Backspace {BufFav clearall} bufferkeys
-#Key alt-1 {BufferRead {@CurrentHistoryBuffer} {%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)}} bufferkeys
-#Key alt-2 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-1)}} bufferkeys
-#Key alt-3 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-2)}} bufferkeys
-#Key alt-4 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-3)}} bufferkeys
-#Key alt-5 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-4)}} bufferkeys
-#Key alt-6 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-5)}} bufferkeys
-#Key alt-7 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-6)}} bufferkeys
-#Key alt-8 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-7)}} bufferkeys
-#Key alt-9 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-8)}} bufferkeys
-#Key alt-0 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-9)}} bufferkeys
+#Key alt-1 {BufferRead {@CurrentHistoryBuffer} {%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)}} 
+#Key alt-2 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-1)}} 
+#Key alt-3 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-2)}} 
+#Key alt-4 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-3)}} 
+#Key alt-5 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-4)}} 
+#Key alt-6 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-5)}} 
+#Key alt-7 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-6)}} 
+#Key alt-8 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-7)}} 
+#Key alt-9 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-8)}}
+#Key alt-0 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-9)}} 
 ;aliases for saving and reading preferred buffers.
 
 #alias savebuffers {

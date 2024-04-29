@@ -1,3 +1,17 @@
+2270 UmikoIshakawa, credits ABabyAssault, Fixed a strange thing that happened when you entered the apartment by unlocking the door, and beautified the apartment so that it sounds more realistic in terms of doors.
+
+2269 UmikoIshakawa, credits Koalarat and debs, Added sounds when the baby successfully drinks using the sippy cup and when their emoting (if activated).
+2268 UmikoIshakawa, Added sounds when the baby unimpressed..
+2267 UmikoIshakawa, Fixed IC Notifications.
+2266 UmikoIshakawa, credits everyone, Fixed weird things happening with Buffer, I hope. If there's anything that makes it even weirder, feel free to poke my nose.
+2265 UmikoIshakawa, credits Snappadiddle, restored original purring sound for Snappadiddle's cat.
+2264 UmikoIshakawa, credits PlasticKitten, Added sounds when vehicle charge is low.
+2263 UmikoIshakawa, credits UmikoIshakawa, fixed Room combat alerts for tablets.
+2262 UmikoIshakawa, credits OlegTheSnowman, added sound for Garry's private message.
+2261 UmikoIshakawa, credits OlegTheSnowman, added sound when the oxygen in your suit is low.
+2260: Lara: Swapped so that the planetoid equipment getting stuck text is gagged on voice, not all, and removed the "planetoid stuck" message from the sp because the game doesn't actually say that, thus the sp shouldn't either!
+2259 UmikoIshakawa, credits NightSky, fixed Wind chime sounds that is not audible. it's just because of symple space, really.
+2258 UmikoIshakawa, Added few adorable sounds for babies. I hope baby makers like this one. Let me know if something bad happened.
 2257, SkyfallBlindDreamer, credits Fufflebear, blink and you'll miss it. Is the room blinking at me? The blink social sound is no longer triggered by room descriptions, plus an updated trigger for factory solar panels being retracted manually.
 2256, SkyfallBlindDreamer, a big thanks to Fufflebear, a whole lot of garbage files have been cleaned from the pack.
 2255, SkyfallBlindDreamer, Fixed a trigger involving IC notices so it no longer throws an error on login.

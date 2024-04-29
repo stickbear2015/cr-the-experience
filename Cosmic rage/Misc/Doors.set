@@ -104,3 +104,11 @@ playsound {cosmic rage/general/doors/DoorClose4.wav} @vol}}
 #trigger {You unlock A *} {playsound {Cosmic Rage/general/doors/DoorUnlock.wav} @vol}
 #trigger {You lock A *} {playsound {Cosmic Rage/general/doors/Doorlock.wav} @vol}
 #trigger {you approach * door to the * but a small pulsing light to one side indicates it is locked.} {playsound {Cosmic Rage/general/doors/bang.wav} @vol}
+
+; code for apartement.
+#trigger {You unlock the door to * and enter.} {playsound {Cosmic Rage/general/doors/DoorUnlock.wav} @vol}
+#trigger {You leave via the door.} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}
+#trigger {* leaves via the door.} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}
+#trigger {* arrives from outside.} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}
+#trigger {The door swings shut with a click.} {#gagline voice; #alarm 1 {playsound {Cosmic Rage/general/doors/DoorClose3.wav} @vol}}
+#trigger {The door to * swings shut with a soft click.} {#gagline voice; #alarm 1 {playsound {Cosmic Rage/general/doors/DoorClose3.wav} @vol}}

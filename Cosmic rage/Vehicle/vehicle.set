@@ -220,3 +220,4 @@ playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}
 #trigger {The shimmering green fields lift as the vehicle becomes fully pressurised.} {#gagline all; {#alarm 1 {playsound {cosmic rage/activities/pol/poof.wav} @vevol}}}
 #trig {Hammering continues to come from outside as vehicle repairs take place.} {#gagline all} 
 #trig {*? 0.00%} {#if {@cargogagger = "Enabled"} {#gagline all}}
+#trigger {Vehicle charge low.} {#gagline voice; playsound {cosmic rage/vehicle/vehicleOutOfCharge.wav} @vevol}

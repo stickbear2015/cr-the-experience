@@ -1,5 +1,6 @@
+2272 UmikoIshakawa, credits debs, Changed the Ordering food sound so it's no longer confusing.
+2271 UmikoIshakawa, credits debs, Fixed the apartement unlocking door.
 2270 UmikoIshakawa, credits ABabyAssault, Fixed a strange thing that happened when you entered the apartment by unlocking the door, and beautified the apartment so that it sounds more realistic in terms of doors.
-
 2269 UmikoIshakawa, credits Koalarat and debs, Added sounds when the baby successfully drinks using the sippy cup and when their emoting (if activated).
 2268 UmikoIshakawa, Added sounds when the baby unimpressed..
 2267 UmikoIshakawa, Fixed IC Notifications.

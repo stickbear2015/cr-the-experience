@@ -317,7 +317,7 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #trigger {Text scrolls across the screen of * which reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
 #trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
 #trigger {Words appear on a *'s display: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
-#trigger {a * chirps quietly and a message on screen reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/comp.wav} @vol}
+#trigger {* chirps quietly and a message on screen reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/mail.wav} @vol}
 #trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
 #trigger {Words appear on * display: "There are * unread notifications."} {#sub {There are %2 unread notifications.}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
 #trigger {Text scrolls across the screen of * which reads: "There are * unread notifications."} {#sub {There are %2 unread notifications.}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}

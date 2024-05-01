@@ -1,3 +1,9 @@
+2278 UmikoIshakawa, credits debs, make the sound of say a little bit louder, and fixed the translator that was previously placed at main volume, they are now placed at comms volume as well. ps: all the say sounds was previously only 40% than how it should be, dunno who did that.
+2277 UmikoIshakawa, credits BluePanda, Fixed path typo when closing mail.
+2276 UmikoIshakawa, credits Charis, Fixed socials triggering in room desc. but that doesn't make sounds when you tickle your baby though their laugh is still there. poke me if there's still an others.
+2275 UmikoIshakawa, credits OlegTheSnowman and KingZombie420, Added sound for Guided missile also added the sound for closing app with a chime. two at once, yay!
+2274 tracebug, credits everyone, fixed buffers breaking while switching. UmikoIshakawa tracked the bug so thank him for finding the cause of the problem
+2273 UmikoIshakawa, credits debs, Added sounds for delivery waiting.
 2272 UmikoIshakawa, credits debs, Changed the Ordering food sound so it's no longer confusing.
 2271 UmikoIshakawa, credits debs, Fixed the apartement unlocking door.
 2270 UmikoIshakawa, credits ABabyAssault, Fixed a strange thing that happened when you entered the apartment by unlocking the door, and beautified the apartment so that it sounds more realistic in terms of doors.

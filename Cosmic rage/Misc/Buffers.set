@@ -565,4 +565,4 @@ Read the Trade channels log file for %char:#edit  {Cosmic Rage/logs/%char trade.
 Read the Unsec channels log file for %char:#edit  {Cosmic Rage/logs/%char unsec.log}}}}
 
 #alarm 1 { #If {%Defined(bufferfavkeys)=1} {#class bufferkeys @bufferfavkeys}};
-#trig {Stand bye, switching players.} {clearAllBuffers};
+#trig {Stand bye, switching players.} {#alarm 0,3 {clearAllBuffers}};

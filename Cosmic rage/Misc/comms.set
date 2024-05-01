@@ -49,17 +49,17 @@ playsound {cosmic rage/general/comms/sos.wav} @CommsVol; BufferAdd SOS %0}
 #if {%ifWord(You,%1," ")} {
 #gagline all};
 #if {%ifWord(growl,%1," ")} {
-playsound {cosmic rage/general/comms/growl*3.wav} @Vol; BufferAdd Say %0};
+playsound {cosmic rage/general/comms/growl*3.wav} @CommsVol; BufferAdd Say %0};
 #if {%ifWord(drone,%1," ")} {
-playsound {cosmic rage/general/comms/drone*2.wav} @Vol};
+playsound {cosmic rage/general/comms/drone*2.wav} @CommsVol};
 #if {%ifword(chitter,%1," ")} {
-playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @Vol; BufferAdd Say %0};
+playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @CommsVol; BufferAdd Say %0};
 #if {%ifWord(chitters,%1," ")} {
-playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @Vol; BufferAdd Say %0};
+playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @CommsVol; BufferAdd Say %0};
 #if {%ifWord(growls,%1," ")} {
-playsound {cosmic rage/general/comms/growl*3.wav} @Vol; BufferAdd Say %0};
+playsound {cosmic rage/general/comms/growl*3.wav} @CommsVol; BufferAdd Say %0};
 #if {%ifWord(drones,%1," ")} {
-playsound {cosmic rage/general/comms/drone*2.wav} @Vol; BufferAdd Say %0}}
+playsound {cosmic rage/general/comms/drone*2.wav} @CommsVol; BufferAdd Say %0}}
 #trig {* Translator announces in a *, "*"} {BufferAdd Say %0}
 #trigger {[[]Rewards]*} {playsound {cosmic rage/general/comms/rewards.wav} @CommsVol; BufferAdd Rewards %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Rewards.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You tap a few buttons on * translator} {#gagline voice; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}

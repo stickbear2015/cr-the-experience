@@ -1,3 +1,4 @@
+2279 UmikoIshakawa, credits OlegTheSnowman, Added sounds for larkan low biofuel.
 2278 UmikoIshakawa, credits debs, make the sound of say a little bit louder, and fixed the translator that was previously placed at main volume, they are now placed at comms volume as well. ps: all the say sounds was previously only 40% than how it should be, dunno who did that.
 2277 UmikoIshakawa, credits BluePanda, Fixed path typo when closing mail.
 2276 UmikoIshakawa, credits Charis, Fixed socials triggering in room desc. but that doesn't make sounds when you tickle your baby though their laugh is still there. poke me if there's still an others.

@@ -21,3 +21,4 @@
 #trig {* drops out of the sky, flaring * rocket boosters once to slow * fall, feet * onto the ground.} {#gagline voice; playsound {cosmic rage/general/larkan/otherland.wav} @vol}
 #trig {You flip in mid air, burning hard to slow your downward plummet.} {#gagline voice; playsound {cosmic rage/general/larkan/land.wav} @vol}
 #trig {* eyes glow with sudden power, and * rocket boosters activates, launching * skyward on a pillar of white-hot fire.} {#gagline voice; playsound {cosmic rage/general/larkan/otherlaunch.wav} @vol}
+#trigger {An internal sensor alerts you to the fact that your Biocore's fuel has dropped below twenty percent.} {playsound {cosmic rage/general/misc/warning.wav} @vol}

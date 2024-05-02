@@ -47,3 +47,5 @@
 #trigger {* puts * to the tip of * and gives it a flick.} {playsound {cosmic rage/general/misc/smokelight.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};
 #trigger {You take a drag off of *.} {playsound {cosmic rage/general/Misc/smoke.wav} @vol}
 #trigger {* takes a drag off of a *.} {playsound {cosmic rage/general/misc/smoke.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};
+#trigger {* tak* a deep breath and blo* into * balloon * causing it to expand!} {playsound {cosmic rage/general/misc/balloonblow.wav} @vol}
+#trigger {* balloon * lets out a slight squeal before popping with a loud bang!} {playsound {cosmic rage/general/misc/balloonpop.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}

@@ -60,7 +60,7 @@ Alt-X. Out.
 alt-shift-r. Toggle Red alert sounds.
 Alt-Shift-U, toggle soundpack update notifications on login.
 Control-F11. Stop all playing sounds. Useful if a sound gets stuck.
-f11. Toggle room Ambience.
+f11 or shift f11. Toggle room Ambience.
 control-shift-p. Toggle planetary music.
 alt shift d. Toggle drone sounds.
 control-shift-c. Toggle ship combat music.

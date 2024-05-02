@@ -1,3 +1,10 @@
+2286 UmikoIshakawa, I fixed loading buffers due to changes regarding character switching.
+2285 UmikoIshakawa, Credits DiamondKitten, Changed the highly disruptive social noise to 30%. bye bye the annoying social triggerer.
+2284 UmikoIshakawa, Changed the basic function of control A to alt A so people can select all text in the entry window. also added shift f11 as an ambient toggle, in case your f11 is used for NVDa remote.
+2283 UmikoIshakawa, credits Silverqueen, fixed laugh2 socials doesn't work in pn.
+2282 UmikoIshakawa, credits Johnson, sound and code by Johnson, Added sounds for balloon, spesificly blow and pop.
+2281 UmikoIshakawa, credits debs, Fixed the mutariansi saying not playing a sound.
+2280 UmikoIshakawa, credits Johnson, sound and code by Johnson, Added sounds for roof open and retract.
 2279 UmikoIshakawa, credits OlegTheSnowman, Added sounds for larkan low biofuel.
 2278 UmikoIshakawa, credits debs, make the sound of say a little bit louder, and fixed the translator that was previously placed at main volume, they are now placed at comms volume as well. ps: all the say sounds was previously only 40% than how it should be, dunno who did that.
 2277 UmikoIshakawa, credits BluePanda, Fixed path typo when closing mail.

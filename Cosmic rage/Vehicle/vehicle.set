@@ -221,3 +221,8 @@ playsound {cosmic rage/vehicle/vehicleSwipeID.wav} @vevol}
 #trig {Hammering continues to come from outside as vehicle repairs take place.} {#gagline all} 
 #trig {*? 0.00%} {#if {@cargogagger = "Enabled"} {#gagline all}}
 #trigger {Vehicle charge low.} {#gagline voice; playsound {cosmic rage/vehicle/vehicleOutOfCharge.wav} @vevol}
+#trigger {You switch * a toggle switch on the wall.} {
+#gagline all;
+playsound {cosmic rage/vehicle/button.wav} @vevol}
+#trigger {After a few moments, the roof reappears and clicks into place.} {playsound {cosmic rage/vehicle/closetop.wav} @vevol}
+#trigger {The roof of the room retracts!} {playsound {cosmic rage/vehicle/opentop.wav} @vevol}

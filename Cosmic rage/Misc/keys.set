@@ -1,5 +1,7 @@
 #var defroom 0
 ;Keys for adjusting volumes.
+#GUnkey control-A
+#Key alt-A {#Syskey ASSIGN_ALIAS}
 #key {f9} {genvoldown}
 #key {f10} {genvolup}
 #key {Control-F12} {CommsVolUp}
@@ -29,6 +31,7 @@
 #key {Control-shift-M} {showermusictoggle}
 #key {Control-shift-I} {intromusictoggle}
 #key f11 {ambtoggle}
+#key shift-f11 {ambtoggle}
 #Key {control-l} {lag}
 #key alt-shift-d {DroneToggle}
 #key control-shift-p {togglemusic}

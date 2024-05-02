@@ -110,31 +110,31 @@
 #trigger {*Garry Blue Scale grins and knocks back a bottle of beer.} {#gagline all; playsound {Cosmic Rage/general/socials/GarryBeer.wav} 70}
 #trigger {Pilot Garry Blue Scale belches.} {#gagline all}
 #trigger {*snatches up the chainsaw of judgement, gives it a quick rev, then decapitates * with it!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgesaw.wav} @vol}}
-#TRIGGER {* looks to be laughing so hard that * can't breathe.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh2.wav} @vol}}
+#TRIGGER {* looks to be laughing so hard that * can't breath*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh2.wav} @vol}}
 #TRIGGER {* laughing uncontrollably.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/laugh2.wav} @vol}}
 #trigger {*grabs up the chainsaw of judgement and revs it maniacally.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgesaw2.wav} @vol}}
 #trigger {* places a death cow in a tee, takes a few steps back, then a few more and decides to put on a steel-toed boot. Runnning like a freight train * punts the death cow high into the air! moooo mOooOO MOoOOOoO MOOOOOO MooOoOO mOoooOO mooo * gets squished by the obviously uncatchable death cow! *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/punt.wav} @vol}}
-#trigger {* in a box, slams the lid, throws it into the sea, sets fire to it, then laughs crazily.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/box.wav} @vol}}
+#trigger {* in a box, slams the lid, throws it into the sea, sets fire to it, then laughs crazily.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/box.wav} 30}}
 #trigger {* lifts up the executioner's sword.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/execute2.wav} @vol}}
-#trigger {* With a swing of the sword, * cleanly decapitates * much to the general good cheer of everyone else.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/execute.wav} @vol}}
-#trigger {* headdesks furiously!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} @vol}}
-#trigger {* slams * face into the desk!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} @vol}}
+#trigger {* With a swing of the sword, * cleanly decapitates * much to the general good cheer of everyone else.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/execute.wav} 30}}
+#trigger {* headdesks furiously!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} 30}}
+#trigger {* slams * face into the desk!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} 30}}
 #trigger {You grab * by the hair, and slam their face into a desk!} {#if {@socialText = "Disabled"} {#gagline all};#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}
 #trigger {* grabbes * by the hair, and slams their face into a desk!} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk2.wav} @vol}}
-#trigger {You bang your head into a nearby desk.} {#if {@socialText = "Disabled"} {#gagline all};#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} @vol}}
-#trigger {* bangs * head into a nearby desk.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} @vol}}
+#trigger {You bang your head into a nearby desk.} {#if {@socialText = "Disabled"} {#gagline all};#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} 30}}
+#trigger {* bangs * head into a nearby desk.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} 30}}
 #trigger {* tickle* * mercilessly*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tickle*2.wav} @vol}}
 #trigger {* tickles * without mercy.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tickle*2.wav} @vol}}
 #trigger {* springs toward * in a tight bearhug.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bearhug.wav} @vol}}
-#trigger {* yells, "I'm a dog and I like socks!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/socks.wav} @vol}}
+#trigger {* yells, "I'm a dog and I like socks!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/socks.wav} 30}}
 #trigger {* flies around * head, buzzing annoyingly into * ear.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/buzz.wav} @vol}}
 #trigger {* buzzes annoyingly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/buzz.wav} @vol}}
 #trigger {* walks up to * and without warning, gives * a vicious uppercut, *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/uppercut.wav} @vol}}
 #trigger {* explains to everyone, in a very convincing way, that * is a complete and utter failure.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/fail.wav} @vol}}
 #trigger {* explains that, really * is just a wapping big failure.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/fail.wav} @vol}}
-#trigger {* burps so loudly, * is flung off of the moo.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp2.wav} @vol}}
-#trigger {* kicks * over the IC OOC barrier of life.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} @vol}}
-#trigger {* smashes the IC to OOC barrier like a boss.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} @vol}}
+#trigger {* burps so loudly, * is flung off of the moo.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp2.wav} 30}}
+#trigger {* kicks * over the IC OOC barrier of life.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} 30}}
+#trigger {* smashes the IC to OOC barrier like a boss.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} 30}}
 #trigger {* cracks the *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/whip.wav} @vol}}
 #trigger {* squeaks, and runs away in fear from *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/squeak.wav} @vol}}
 #trigger {* shoves * into a taco and eats *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/eat.wav} @vol}}
@@ -146,9 +146,9 @@
 ;#trigger  {* cries quietly *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ooccry.wav} @vol}}
 #trigger   {* violently lashes the whip of judgment across *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/judgewhip.wav} @vol}}
 #trigger {* sobs * broken heartedly} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}
-#trigger  {*lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} @vol}}
+#trigger  {*lightly bashes * head into the nearest wall.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headbash.wav} 30}}
 #trigger  {* squeezes the shit out of *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/shitsqueeze.wav} @vol}}
-#trigger {* leans back and lets out a loud burp.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp1.wav} @vol}}
+#trigger {* leans back and lets out a loud burp.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/oocburp1.wav} 30}}
 #trigger {* bar* * teeth and snar*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/snarl.wav} @vol}}
 #trigger {* blinks at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/blink.wav} @vol}}
 #trigger {You blink at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/blink.wav} @vol}}

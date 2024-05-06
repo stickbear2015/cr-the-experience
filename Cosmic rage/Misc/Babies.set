@@ -21,7 +21,7 @@
 #trigger {* goes roar, attempting to imitate a dragon.} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
 #trigger {* giggles a little.} {playsound {Cosmic Rage/general/baby/giggle.wav} @vol}
 #trigger {* goes roar!} {playsound {Cosmic Rage/general/baby/dragonroar.wav} @vol}
-#trigger {* sneeze*} {playsound {Cosmic Rage/general/baby/sneeze*2.wav} @vol}
+#trigger {*lets out a tiny sneeze} {playsound {Cosmic Rage/general/baby/sneeze*2.wav} @vol}
 #trigger {lets out a waterfall of laughter, wriggling crazily to try and escape.} {playsound {Cosmic Rage/general/baby/babylaugh1.wav} @vol}
 #TRIGGER {* hands you the empty container and you discard it.} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {%ifWord(drink,%3," ")} {#if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}}; #if {%ifWord(eat,%3," ")} {#if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}}
 #trigger {* glances up at * and coos.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}

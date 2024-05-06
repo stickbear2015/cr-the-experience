@@ -1,3 +1,14 @@
+2296 tracebug, I fixed a bunch of issues with buffers, including the packf ailing to load your saved buffers. You should be able to use the custom list now
+2296 Umiko, credits everyone, after a bit of tweaking the buffers, hopefully this time I'll really fix it. as always, report for something weird.
+2295 tracebug, I may or may not have fixed the buffers breaking when you first log in. Let me know how it goes.
+2294 UmikoIshakawa, credits and code credits Draq and Umiko, Fixed the ryuchi chittering sounds. it's no longer triggers others chitter except the real one.
+2293 tracebug, credits Ivangamer and JamesLiveVocalsProductions, fixed weapon holster sound not playing
+2292 tracebug, credits aloys, fixed so the pack will no longer send an invalid command in the log in screen.
+2291 tracebug, credits Mary2004, ryuchi chittering without translator is now included in the say buffer and it will play the sound correctly
+2290 tracebug, credits debs, added a sound when you transport a vehicle to a house/apartment  garage
+2289 tracebug, the cargo gagger option is now disabled by default as it was causing a lot of confusion
+2288 UmikoIshakawa, credits Bluepanda, Fixed biofuel sound.
+2287 UmikoIshakawa, credits OlegTheSnowman and whoever tell me about it, first, fixed several social that doesn't playing on pn. second, Fixed player sneeze, it will never trigger baby sneezing sound anymore. Special thanks to the host who implement my suggestions about the sneeze.
 2286 UmikoIshakawa, I fixed loading buffers due to changes regarding character switching.
 2285 UmikoIshakawa, Credits DiamondKitten, Changed the highly disruptive social noise to 30%. bye bye the annoying social triggerer.
 2284 UmikoIshakawa, Changed the basic function of control A to alt A so people can select all text in the entry window. also added shift f11 as an ambient toggle, in case your f11 is used for NVDa remote.

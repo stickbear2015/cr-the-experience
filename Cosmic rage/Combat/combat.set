@@ -151,4 +151,4 @@ playsound {cosmic rage/general/combat/vehicles/turout.wav} @gvol}
 #trigger {* is out of ammunition.} {playsound {Cosmic Rage/general/combat/OutOfAmmo.wav} @gvol; #gagline all}
 #trigger {* smoke cannister explodes!} {playsound {Cosmic Rage/general/combat/smokegrenade.wav} @gvol; #gagline all}
 #TRIGGER {You draw * from * on a *.} { #if {%ifWord(holster,%2," ")} { playsound {cosmic rage/general/combat/draw.wav} @gvol}};
-#TRIGGER {You slide * in * on a *.} { #if {%ifWord(holster,%2," ")} { playsound {cosmic rage/general/combat/holster.wav} @gvol}};
+#TRIGGER {You slide * into * on a *.} { #if {%ifWord(holster,%2," ")} { playsound {cosmic rage/general/combat/holster.wav} @gvol}};

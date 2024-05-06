@@ -1,0 +1,23 @@
+#trigger {* lights up in red and a message upon the screen reads: *} { playsound {Cosmic Rage/general/comms/monitor.wav} @CommsVol}
+#TRIGGER {[[]Music FM]*} {playsound {Cosmic Rage/general/comms/musicfm.wav} @CommsVol; BufferAdd musicfm %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char musicfm.log};#write 1 %0;#close 1}}
+#TRIGGER {[[]* Story Chat]: *, "*"} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 
+#TRIGGER {* chirps quietly and a message on screen reads* } {playsound {Cosmic Rage/general/comms/game.wav} @CommsVol}
+#Trigger {* wishes to join your squadren.} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; BufferAdd Squad %0}
+#TRIGGER {[[]Stories], (*): Announcement from the story Weavers! *} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 
+#trigger {You tap a button next to * and proceed to say * "*"} {
+#if {@QGag = 1} {
+#sub {[intercom] you : %3}};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
+#trigger {* taps a button next to * and proceeds to say *: "*"} {
+#if {@QGag = 1} {
+#sub {[intercom] %1 %3: %4}};
+playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
+#TRIGGER {* informs you that you currently have * unread * in your history to review.} {playsound {Cosmic Rage/general/comms/radio.wav} @CommsVol;}
+#trigger {* plays * while in * the words * scroll across the screen under the banner of *} {
+playsound {cosmic rage/general/messageboards/mbn.wav} @CommsVol; #if {%ifword(general,%5,"")} {playsound {cosmic rage/general/messageboards/general.wav} @CommsVol};  #if {%ifword(rename,%5,"")} {playsound {cosmic rage/general/messageboards/namechange.wav} @CommsVol};  #if {%ifword(Graduation,%5,"")} {playsound {cosmic rage/general/messageboards/graduate.wav} @CommsVol};  #if {%ifword(chat room,%5,"")} {playsound {cosmic rage/general/messageboards/chat.wav} @CommsVol};  #if {%ifword(%5,ownership|moon,"|")} {playsound {cosmic rage/general/messageboards/ownership.wav} @CommsVol};  #if {%ifword(%5,retire|deaths,"|")} {playsound {cosmic rage/general/messageboards/dead.wav} @CommsVol};  #if {%ifword(%5,General Discussion|Elections|New Registrations|Rank Advancements|important,"|")} {playsound {cosmic rage/general/messageboards/origin.wav} @CommsVol};  #if {%ifword(%5,Marriages|Announcements|,"|")} {playsound {cosmic rage/general/messageboards/notice.wav} @CommsVol}; };
+#trigger {Over * short wave radio's speaker, * "*"} {
+#if {@QGag = 1} {#sub {[Short Wave]: %2 %3}} {#sub {[Short Wave]: %2 "%3"}};
+playsound {Cosmic Rage/general/comms/ShortWave.wav} @CommsVol}
+#trigger {You tune * short wave radio's dial to *} {#sub {Short wave radio tuned to %2}; playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trig {You chitter: *} {playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @CommsVol; BufferAdd Say %0};
+#trig {* chitters: *} {playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @CommsVol; BufferAdd Say %0};

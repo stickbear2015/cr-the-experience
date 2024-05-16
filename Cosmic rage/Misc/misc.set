@@ -60,16 +60,17 @@ playsound {cosmic rage/general/misc/ping.wav} @vol};
 playsound {cosmic rage/general/misc/ping.wav} @vol};
 #trigger {A soft, soothing voice announces: "*"} {#if {@QGag = 1} {#sub {A soft, soothing voice announces: %1}};
 playsound {cosmic rage/general/misc/ping.wav} @vol}
-#TRIGGER {You tap an icon and are surrounded by a beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}}
-#trigger {Your vision goes temporarily black as you are yanked from your ship!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol}
-#trigger {Your vision goes black as you are teleported somewhere else!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}};
+#TRIGGER {You tap an icon and are surrounded by a beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
+#trigger {Your vision goes temporarily black as you are yanked from your ship!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #var currentroom 0}
+#trigger {Your vision goes black as you are teleported somewhere else!} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
 #TRIGGER {*selects an icon on the teleportation console and is surrounded by a beam of light. When the light fades * is no longer there!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #TRIGGER {* vanishes in a bright beam of light.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #trigger {* vanishes in a beam of light!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #TRIGGER {*arrives in an electrical beam of light!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #TRIGGER {A bright beam of light appears suddenly. When it clears, * has appeared from nowhere!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #trigger {You are enveloped by a bright beam of light!} {
-playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}}
+playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
+#trigger {You are surrounded by a beam of light. When it clears, you are somewhere else.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
 #TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; bufferadd CashPointsSkillsAndLeveling %0}
 #TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Disabled"} {#gagline all}}
 #trigger {Type a line of input.} {

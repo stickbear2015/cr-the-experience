@@ -1,3 +1,5 @@
+2298, SkyfallBlindDreamer, Fixed an issue with teleporting to and from misc rooms and sounds not playing properly.
+2297 Umiko, Hopefully Fixed the error when you're in the login screen.
 2296 tracebug, I fixed a bunch of issues with buffers, including the packf ailing to load your saved buffers. You should be able to use the custom list now
 2296 Umiko, credits everyone, after a bit of tweaking the buffers, hopefully this time I'll really fix it. as always, report for something weird.
 2295 tracebug, I may or may not have fixed the buffers breaking when you first log in. Let me know how it goes.

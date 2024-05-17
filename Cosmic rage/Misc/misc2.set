@@ -49,3 +49,5 @@
 #trigger {* takes a drag off of a *.} {playsound {cosmic rage/general/misc/smoke.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};
 #trigger {* tak* a deep breath and blo* into * balloon * causing it to expand!} {playsound {cosmic rage/general/misc/balloonblow.wav} @vol}
 #trigger {* balloon * lets out a slight squeal before popping with a loud bang!} {playsound {cosmic rage/general/misc/balloonpop.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
+#TRIGGER {With a great rushing of wings, * lifts off into the sky to hunt.} {playsound {cosmic rage/general/misc/flutter.wav} @vol; #PC %Playhandle Pan %Random(-100,100)};
+#TRIGGER {There is a flapping of wings then * sweeps from the sky, a catch clamped firmly in * beak.} {playsound {cosmic rage/general/misc/flutter.wav} @vol; #PC %Playhandle Pan %Random(-100,100)};

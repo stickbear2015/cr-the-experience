@@ -1,0 +1,16 @@
+#alias devl {#if {%0 = ""} {#say {you didn't put any path of file to load.}} {#load {%0}; {#say {%0 loaded.}}}}
+#alias devu {#if {%0 = ""} {#say {you didn't put any path of file to unload.}} {#unload {%0}; {#say {%0 unloaded.}}}}
+#alias devo {#if {%0 = ""} {#say {you didn't  put any path of file to open.}} {#edit {%0}; {#say {%0 opened in your prefered editor.}}}}
+#alias devc {#if {%0 = ""} {#say {you didn't  put any path of file for your editor. the example of the file should be like "notepad.exe".}} {#configure Editor {%0}; {#say {%0 set as your default editor.}}}}
+#alias devr {#if {%0 = ""} {#say {you didn't  put any path of file to reload.}} {#unload {%0}; #load %0; {#say {%0 successfully reloaded..}}}}
+#alias spa {>@spadmin}
+#alias dev {#say {This straightforward script is designed to assist any developers in effortlessly manipulating the soundpack. Just a heads-up, this script doesn't impact gameplay whatsoever, so feel free to use it without any concerns.};
+#say {If you prefer not to use this script, simply type devmod where you can enable/disable it as needed.};
+#say {Commands available:};
+#say {dev: Shows this help message.};
+#say {DevR <path>: Reload the file from the specified path.};
+#say {DevC: reconfigures the default editor.};
+#say {DevO <path>: Open the selected file into chosen default editor.};
+#say {DevU <path>: Unload the specified file.};
+#say {DevL <path>: load the specified file.};
+#say {spa: Open the Soundpack admin panel.}}

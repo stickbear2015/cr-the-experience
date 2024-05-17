@@ -70,7 +70,7 @@ playsound {cosmic rage/general/misc/ping.wav} @vol}
 #TRIGGER {A bright beam of light appears suddenly. When it clears, * has appeared from nowhere!} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol};
 #trigger {You are enveloped by a bright beam of light!} {
 playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
-#trigger {You are surrounded by a beam of light. When it clears, you are somewhere else.} {playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
+#trigger {You are surrounded by a beam of light. When it clears, you are somewhere else.} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
 #TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; bufferadd CashPointsSkillsAndLeveling %0}
 #TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Disabled"} {#gagline all}}
 #trigger {Type a line of input.} {

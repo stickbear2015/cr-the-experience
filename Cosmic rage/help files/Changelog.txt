@@ -1,7 +1,10 @@
+2302 Umiko, sound and code credit by Frosty, A few things at once, added sound when baby roaring, added sound when birds hunting, added the shush social sound. Thanks for DiamondKitten for being my  Guinea pig at the time.
+2301 Umiko, I don't know all of these, but for the time being, settings are hopefully fixed, still looking the better way to fix it though.
+2300 Umiko, credit KingZombie420, Due 2300 is the only one like the tigger, I Add a script to make anyone who enjoys customizing files for the soundpack, Especially the developers more easier. By default, this script is disabled, but if you type "devmod" to enable it, typing "dev" will display the help for the script. last but not least, the lift in the Harmonia teleportation zone now has sound, just like the others.
+2299, SkyfallBlindDreamer, Gagged the message for when you are beamed up by someone on a ship.
 2298, SkyfallBlindDreamer, Fixed an issue with teleporting to and from misc rooms and sounds not playing properly.
 2297 Umiko, Hopefully Fixed the error when you're in the login screen.
 2296 tracebug, I fixed a bunch of issues with buffers, including the packf ailing to load your saved buffers. You should be able to use the custom list now
-2296 Umiko, credits everyone, after a bit of tweaking the buffers, hopefully this time I'll really fix it. as always, report for something weird.
 2295 tracebug, I may or may not have fixed the buffers breaking when you first log in. Let me know how it goes.
 2294 UmikoIshakawa, credits and code credits Draq and Umiko, Fixed the ryuchi chittering sounds. it's no longer triggers others chitter except the real one.
 2293 tracebug, credits Ivangamer and JamesLiveVocalsProductions, fixed weapon holster sound not playing

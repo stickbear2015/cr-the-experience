@@ -46,3 +46,4 @@
 #trigger {* squeals with delight.} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}
 #trigger {*seems unimpressed.} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
 #trigger {* successfully drinks from * sippy cup!} {playsound {Cosmic Rage/general/baby/babyburps.wav} @vol}
+#trigger {* roars cutely!} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}

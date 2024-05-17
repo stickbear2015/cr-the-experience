@@ -179,10 +179,12 @@ loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle
 #read 6 bufferfavkeys 56;
 #read 6 cargogagger 57;
 #read 6 speedgagger 58;
+#read 6 devmode 59;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {
 #class ambon disable; #class shipamb disable; #class vehicleamb disable};
+#if {@devmode = "Enabled"} {#load misc/dev.set} {}
 
 ;misc.
 #Alias login {#gagon all; 1; %charInfo(name); %charInfo(password); #wait (0.1); #ungagon}

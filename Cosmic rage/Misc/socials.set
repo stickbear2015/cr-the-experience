@@ -52,6 +52,7 @@
 #trigger {* lies down on *} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/lie.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000) }}
 #trigger {You sneeze.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
 #trigger {You sneeze at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
+#trigger {* sneezes *} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
 #trigger {* sneezes} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sneeze*5.wav} @vol}}
 #trigger {You sigh.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
 #trigger {You sigh at *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
@@ -124,7 +125,7 @@
 #trigger {* bangs * head into a nearby desk.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/headdesk1.wav} 30}}
 #trigger {* tickle* * mercilessly*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tickle*2.wav} @vol}}
 #trigger {* tickles * without mercy.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tickle*2.wav} @vol}}
-#trigger {* springs toward * in a tight bearhug.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bearhug.wav} @vol}}
+#trigger {* springs toward * in a tight bear*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bearhug.wav} @vol}}
 #trigger {* yells, "I'm a dog and I like socks!"} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/socks.wav} 30}}
 #trigger {* flies around * head, buzzing annoyingly into * ear.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/buzz.wav} @vol}}
 #trigger {* buzzes annoyingly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/buzz.wav} @vol}}

@@ -1,3 +1,8 @@
+2307 Nemesis, Added sound for treasure! happy finding treasure, everyone!
+2306 Nemesis, Changed the timer for the autosave settings config to 3 minutes instead of every 30 minutes.
+2305 Nemesis, credit Snappadiddle, Added sound when you cannot proceed with autowalk.
+2304, SkyfallBlindDreamer, Tweaked the triggers for lifts a bit to account for some odd situations, such as people having the word and in a room name.
+2303 Nemesis, credit Fray, Fixed few socials sound  not playing.
 2302 Umiko, sound and code credit by Frosty, A few things at once, added sound when baby roaring, added sound when birds hunting, added the shush social sound. Thanks for DiamondKitten for being my  Guinea pig at the time.
 2301 Umiko, I don't know all of these, but for the time being, settings are hopefully fixed, still looking the better way to fix it though.
 2300 Umiko, credit KingZombie420, Due 2300 is the only one like the tigger, I Add a script to make anyone who enjoys customizing files for the soundpack, Especially the developers more easier. By default, this script is disabled, but if you type "devmod" to enable it, typing "dev" will display the help for the script. last but not least, the lift in the Harmonia teleportation zone now has sound, just like the others.

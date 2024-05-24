@@ -31,6 +31,7 @@ playsound {cosmic rage/general/comms/intel.wav} @CommsVol; BufferAdd intel %0; #
 playsound {cosmic rage/general/comms/intel.wav} @CommsVol; BufferAdd intel %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char intel.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Recruitments]:*} {playsound {cosmic rage/general/comms/recruiting.wav} @CommsVol; BufferAdd recruitments %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Recruitments.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]MFAS]*} {playsound {Cosmic Rage/general/comms/mfas.wav} @CommsVol}
+#TRIGGER {[[]Treasure!]*} {playsound {Cosmic Rage/general/comms/treasure.wav} @CommsVol}
 #TRIGGER {You enable * on *.} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol} {} AnyCase
 #TRIGGER {You disable * on *.} {

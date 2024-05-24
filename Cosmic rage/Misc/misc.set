@@ -52,7 +52,7 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {*Command Aborted*} {#gagline all; playsound {cosmic rage/general/misc/abort.wav} @vol};
 #TRIGGER {Starting speedwalk.} {playsound {cosmic rage/general/misc/speedwalkon.wav} @vol; #if {@speedgagger = "Enabled"} {#gagon all}}
 #TRIGGER {Speedwalk finished.} {playsound {cosmic rage/general/misc/speedwalkoff.wav} @vol; #ungagon} {} anycase
-#trig {Can not proceed on automatic.} {#ungagon}
+#trig {Can not proceed on automatic.} {playsound {cosmic rage/general/misc/speedwalkoff.wav} @vol; #ungagon} {} anycase
 #TRIGGER {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. "*"} {#if {@QGag = 1} {#sub {A soft ping can be heard from overhead, followed by a gentle, disembodied voice. %1}};
 playsound {cosmic rage/general/misc/ping.wav} @vol}; 
 #trigger {You hear a ping and a soft, soothing voice announces, "*"} {#sub %1;playsound {cosmic rage/general/misc/ping.wav} @vol}

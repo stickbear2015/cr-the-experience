@@ -26,9 +26,10 @@ a small shuttle}
 #TRIGGER {You push * into the pool!} {playsound {Cosmic Rage/general/house/poolpush.wav} @vol}
 #TRIGGER {You climb up onto * and walk to the very end.} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
 #TRIGGER {* arrives and the doors open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
+#trigger {The doors of * slide open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
 #TRIGGER {The doors of * open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
-#TRIGGER {You tap the * and * begins to move.} {#If {%IfWord(%2,@LiftList,%CRLF)} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}};
-#TRIGGER {* taps the * and * begins to move.} {#If {%IfWord(%3,@LiftList,%CRLF)} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}}
+#TRIGGER {You tap * button and * begins to move.} {#If {%IfWord(%2,@LiftList,%CRLF)} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}} {} AnyCase
+#TRIGGER {* taps * button and * begins to move.} {#If {%IfWord(%3,@LiftList,%CRLF)} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}} {} AnyCase
 #TRIGGER {the lift} {
 #if {@roomSoundPlaying = 1} {
 #pc @roomHandle stop};

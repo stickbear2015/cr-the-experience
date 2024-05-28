@@ -42,7 +42,7 @@
 #key control-h {gagharvest}
 #key control-p {pancombat}
 #key control-f5 {toggleLogOn}
-#key control-alt-s {salvageTextToggle}
+#key control-alt-a {salvageTextToggle}
 #key control-w {weatherToggle}
 #key control-shift-w {gagweather}
 #key Control-f11 {#pc 0 stop; #play {Cosmic Rage/general/misc/SoundsStopped.wav} @vol; #say {All currently playing sounds have been stopped.}}

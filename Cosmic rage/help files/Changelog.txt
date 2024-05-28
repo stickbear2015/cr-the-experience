@@ -1,3 +1,4 @@
+2308 Nemesis, credit Aloys,  Changed the shortcut key for debris's sound toggle to alt shift a, because alt shift s is for  socials.
 2307 Nemesis, Added sound for treasure! happy finding treasure, everyone!
 2306 Nemesis, Changed the timer for the autosave settings config to 3 minutes instead of every 30 minutes.
 2305 Nemesis, credit Snappadiddle, Added sound when you cannot proceed with autowalk.

@@ -284,10 +284,6 @@ playsound {cosmic rage/general/misc/CommPackGreen.wav} @vol};
 playsound {cosmic rage/general/misc/CashCheck.wav} @vol}
 #TRIGGER {Automatically selected *} {playsound {cosmic rage/general/misc/auto.wav} @vol} {}
 #trigger {You flip the screen of * out with a flick of your *} {#gagline all}
-#trigger {You buckle up your seat belt.} {playsound {Cosmic Rage/general/misc/seatbelt.wav.} @vol}
-#trigger {You unbuckle your belt.} {playsound {Cosmic Rage/general/misc/unbuckle.wav.} @vol}
-#trigger {* buckles up * seat belt.} {playsound {Cosmic Rage/general/misc/seatbelt.wav.} @vol}
-#trigger {* unbuckles * belt.} {playsound {Cosmic Rage/general/misc/unbuckle.wav.} @vol}
 #trigger {There * announcemen* since you last logged in.} {playsound {cosmic rage/general/comms/announcement.wav} @vol}
 #trigger {There * unread chang* since your last login.} {playsound {cosmic rage/general/misc/Change.wav} @vol}
 #trigger {* @bikelist * on a * bicycle.} {playsound {cosmic rage/general/misc/bikemove.wav} @vol}

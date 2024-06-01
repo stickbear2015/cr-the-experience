@@ -227,3 +227,5 @@ playsound {cosmic rage/vehicle/button.wav} @vevol}
 #trigger {After a few moments, the roof reappears and clicks into place.} {playsound {cosmic rage/vehicle/closetop.wav} @vevol}
 #trigger {The roof of the room retracts!} {playsound {cosmic rage/vehicle/opentop.wav} @vevol}
 #TRIGGER {Several drones wheel in, carefully pick up * and carry it away.} {#gagline all; playsound {cosmic rage/ships/misc/garage.wav} @vevol};
+#trigger {* buckl* up * seat*elt.} {playsound {Cosmic Rage/general/misc/seatbelt.wav.} @vol}
+#trigger {* unbuckl* seat*elt.} {playsound {Cosmic Rage/general/misc/unbuckle.wav.} @vol}

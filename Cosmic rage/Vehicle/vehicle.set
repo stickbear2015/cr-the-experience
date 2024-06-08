@@ -229,3 +229,8 @@ playsound {cosmic rage/vehicle/button.wav} @vevol}
 #TRIGGER {Several drones wheel in, carefully pick up * and carry it away.} {#gagline all; playsound {cosmic rage/ships/misc/garage.wav} @vevol};
 #trigger {* buckl* up * seat*elt.} {playsound {Cosmic Rage/general/misc/seatbelt.wav.} @vol}
 #trigger {* unbuckl* seat*elt.} {playsound {Cosmic Rage/general/misc/unbuckle.wav.} @vol}
+#trigger {The computer announces: "Alert! Unbuckled passengers detected. Ensure everyone's safety by fastening seatbelts securely."} {playsound {cosmic rage/vehicle/seatbeltWarn.wav} @vol}
+#trigger {The computer announces: "Attention! Unbuckled passengers onboard."} {playsound {cosmic rage/vehicle/seatbeltWarn.wav} @vol}
+#trigger {The computer announces: "Warning! Unbuckled passengers detected."} {playsound {cosmic rage/vehicle/seatbeltWarn.wav} @vol}
+#trigger {The computer announces: "Attention! Unbuckled individuals detected onboard."} {playsound {cosmic rage/vehicle/seatbeltWarn.wav} @vol}
+#trigger {One of the doors is open.} {playsound {cosmic rage/vehicle/warn.wav} @vevol}

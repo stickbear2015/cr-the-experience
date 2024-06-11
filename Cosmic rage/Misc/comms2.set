@@ -22,3 +22,8 @@ playsound {Cosmic Rage/general/comms/ShortWave.wav} @CommsVol}
 #trig {You chitter: *} {playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @CommsVol; BufferAdd Say %0};
 #trig {* chitters: *} {playsound {cosmic rage/general/comms/ryuchiChitter*5.wav} @CommsVol; BufferAdd Say %0};
 #trigger {[[]boards]*} {playsound {Cosmic Rage/general/comms/oocBoard.wav} @CommsVol}
+#trigger {You turn * tracker} {
+#if {%ifWord(on,%1," ")} {
+playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
+#if {%ifWord(off,%1," ")} {
+playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}

@@ -23,3 +23,14 @@
 #trigger {You slide * into a storage compartment.} {playsound {Cosmic Rage/general/gmc/gurneyload.wav} @vol}
 #trigger {You pull * from a nearby storage compartment.} {playsound {Cosmic Rage/general/gmc/gurneyunload.wav} @vol}
 #trigger {*ou tap a button, activating the siren.} {#gagline all; loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}
+
+; Military stuff
+ #trigger {You take a picture of * with *} {#gagline all; playsound {Cosmic Rage/general/Military/shutterClick.wav} @vol}
+#trigger {identity matched: *} {playsound {Cosmic Rage/general/Military/display.wav} @vol}
+#trigger {Heled by * snaps a picture of *} {#gagline voice; playsound {Cosmic Rage/general/Military/shutterClick.wav} @vol}
+#trigger {* grabs you, spins you around and snaps a pair of * cuffs on your rists.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol}
+#trigger {* uses a * handcuff key to unlock the cuffs around your wrist.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol}
+#trigger {You smartly grab * spin * around and snap a pair of * cuffs on * rists.} {#sub {You cuff %1 on %4 wrists}; playsound {cosmic rage/general/military/handcuffon.wav} @vol}
+#trigger {You use * handcuff key to unlock the handcuffs around * wrists.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol}
+#trigger {* spins * around and snaps a pair of * cuffs on * rists.} {#sub {%1 cuffs %2 on %4 wrists.}; playsound {cosmic rage/general/military/handcuffon.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
+#trigger {* uses a * handcuff key to unlock the cuffs around * wrists.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}

@@ -1,3 +1,40 @@
+2352 Nemesis, Gagged the on screen thing when you shoot down the shield of the outpost.
+2351 Nemesis, Credit PrinsesaAhli&Shania, Fixed the apartements error.
+2350 Nemesis, Credit Frosty, Added menu sounds for the communicator more than just radio.
+2349 Nemesis, Credit Frosty, Added recycling sounds for default trashcan.
+2348 Nemesis, Credit Snapp, Added sounds for Skypod on sola.
+2347 tracebug, the squeaky farm building door sound will no longer trigger in weird instances for instance when you are wearing clothing.
+2346 tracebug, added a sound when the larkan charging stops
+2345 tracebug, credits Caio32, entering and exiting to apartments now have door sounds. Pluss it will no longer stop ambiences once you enter.
+2344 TRACEBUG, CREDÝTS  Nemesis, Fixed google drive link.
+2343 Nemesis, Added Teleport sound if a taxi beamed you.
+2342 Nemesis, credit OlegTheSnowman, Fixed few error in config manager. PS: he also fixing my grammar so give him a thanks.
+2341 Nemesis, Code & sound credit Johnson, Added sounds for skateboard.
+2340 Nemesis, I've completely revamped the entire config manager and now it will look more organized. It will load the same window when you turn something on or off, unlike before, where it would close immediately after you activated something and you had to reopen it to activate something else. Hope you'll like this one.
+2339 Nemesis, Credit Shania, I've added more sounds for the babies. No spoilers so find out for yourself.
+2338 Nemesis, Credit Frosty, You may now whistling on ooc too.
+2337 Nemesis, Have you ever been frustrated by a soundpack flooding you with lines of volume information when you tried to increase the volume from 0 to 100? Well, those days are over. Now, all that unnecessary output will no longer clutter your output window.
+2336 Nemesis, Credit everyone in the soundpack, Added door sound for phases and hisses, not sure it will work but I'll try with this one.
+2335 Nemesis, Credit FrauleinSnow, Fixed knocking sound not being heard when you knock on a door.
+2334 Nemesis, Added both green and red sounds for default Bioscanner.
+2333 Nemesis, Credit AstrumAventor, Added sounds for the avengers.
+2332 Nemesis, Credit FrauleinSnow, Added clearThroat sound as a female and male perspective. Please don't report if the voice you hear when you type CT is random because there is no indication of male or female in the text.
+2331 Nemesis, Credit AstrumAventor, I changed the sound of Sliding doors because they sounded like cheap plastic doors. I hope this one is better, but if you don't like it, let me know.
+2330 Nemesis, Credit OlegTheSnowman, Fixed few errors with intercoms including houses and ships. Special thanks to Clafilia for helping to be a guinea pig.
+2329 Nemesis, Credit TwincleDiamond, Fixed SoundPack bug regarding ship showcase.
+2328 Nemesis, I tweaked the information provided by the Moo when you assign a mission and get the Message information for where to mj so people be able to read it. ps: if anyone use this, there should be less of people asking jumpship location.
+2327 Nemesis, Code credit Johnson, Added sounds when you check the IC history.
+2326 Nemesis, I tried designing the sound for your autosave that appears every time you log in to the game. Hope you like it and maybe, this is a bit cringe.
+2325 Nemesis, Code and sounds credited to Johnson, Added a few sounds for the military folks out there, including taking picture and handcuffing.
+2324 Nemesis, Credit Frosty, the Mutariansi's sniff has now 3rd person sounds.
+2323 Nemesis, Credit Clafilia, Fixed the fridge water didn't play sound for yourself. ps: I hate paper or plastic cups.
+2322 Nemesis, I added the railgun reload sounds and I hope this one is good.
+2321 Nemesis, credits CosmicKoala, I Tweaked how the security drones and cameras are displayed on the output window, hopefully this will be better.
+2320 tracebug, credits DannyBoy, the command deck ambience will now play in ships it will no lonber be overriden with the deck ambience.
+2319 Nemesis, credit Rainbowstar, Fixed muti's forming sound.
+2318 Nemesis, I forgot to mention this, but now if your ship are too large to land on your destinations, it now has a sound.
+2317 Nemesis, credit NightSky, Fixed the error of crystal refiner.
+2316 Nemesis, credit WarmStar, Fixed the error when you launch from sola's landing pad.
 2315 Nemesis, You turn me on like a light switch. yeah, light switch now has a sound, just like the song.
 2314 Nemesis, code credit shon, Make so turning on and off tracker has a sound.
 2313 Nemesis, After a long time, OOCBoard is now has a sound.

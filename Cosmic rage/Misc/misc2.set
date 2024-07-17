@@ -10,8 +10,6 @@
 #TRIGGER {* plays a cheery tune, informing you someone just *} {playsound {cosmic rage/general/misc/comp.wav} @vol}
 #TRIGGER {You enter * and then tap * on * LCD screen.} {playsound {cosmic rage/general/misc/connection1.wav} @vol; #alarm 0.1 {playsound {cosmic rage/general/misc/connection2.wav} @vol}}
 #TRIGGER  {* hums a little.} {#gagline all; playsound {cosmic rage/general/misc/food.wav} @vol}
-#TRIGGER  {You step onto the recharging station.} {#gagline all; playsound {cosmic rage/general/misc/larkancharge.wav} @vol; #alarm 4.7 {loopsound {cosmic rage/general/misc/lark.wav} @vol; #var larkanHandle %playHandle; #var larkan 1}}
-#trigger {You step down from the recharging station, fully charged and ready to take on practically anything.} {#gagline all; #if {@larkan = 1} {#pc @larkanHandle stop; #var larkan 0}}
 #trigger {* begin to control your droid wirelessly using *} {#gagline all}
 #TRIGGER  {You pause by a decontamination unit.} {#gagline all; playsound {cosmic rage/general/misc/decontamination.wav} @vol}
 #TRIGGER  {A small piece of glittering soul escapes from * to be devoured by A rotting skull!} {#gagline all; playsound {cosmic rage/general/misc/soulsuck.wav} @vol}
@@ -20,7 +18,7 @@
 #TRIGGER {* You hear the roar of an approving crowd. *} {playsound {Cosmic Rage/general/misc/pvpon.wav} @vol}
 #TRIGGER {You toss *} {#if {%IfWord(trash,%1,"")} {playsound {Cosmic Rage/general/misc/trash.wav} @vol}}
 #TRIGGER {You land with a painful thump on the other side of the room.} {playsound {Cosmic Rage/general/misc/thump.wav} @vol}
-#TRIGGER {you enter some digits into a crystal refiner, before tapping go.} {playsound {Cosmic Rage/general/misc/crystalrefiner.wav} @vol}
+#TRIGGER {you enter some digits into a crystal refiner, before tapping go.} {playsound {Cosmic Rage/general/misc/MiniKeyboard.wav} @vol}
 #TRIGGER {a crystal refiner falls silent.} {playsound {Cosmic Rage/general/misc/crystalDROP.wav} @vol}
 #TRIGGER {This save came courtesy of *} {playsound {Cosmic Rage/general/misc/save.wav} @vol}
 #TRIGGER {* is emoting, *old *} {playsound {Cosmic Rage/general/misc/emote.wav} @vol}
@@ -53,3 +51,42 @@
 #TRIGGER {There is a flapping of wings then * sweeps from the sky, a catch clamped firmly in * beak.} {playsound {cosmic rage/general/misc/flutter.wav} @vol; #PC %Playhandle Pan %Random(-100,100)};
 #trigger {You have been invited to join the story tapestry, * Type 'STORY JOIN' to participate.} {playsound {cosmic rage/general/misc/storyInvite.wav} @commsvol}
 #trigger {You flip * on the wall turning *} {playsound {cosmic rage/general/misc/lightSwitch.wav} @vol; #PC %Playhandle Pan %Random(-100,100)}
+#trigger {*security * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security %2]: %3 inform you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {*security drone * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security drone]: %3 inform you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {Your automatic saving donator item has just saved your character. This will happen silently until you log off and back on again now.} {#gagline all; playsound {cosmic rage/general/misc/autosave.wav} @vol}
+#trigger {* and a projection scrolls before your eyes.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}.
+#trigger {*and the * channel history is displayed before your eyes.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}.
+#trigger {*and the * history is played back through its speaker.} {playsound {cosmic rage/general/telephone/talk.wav} @vol}.
+#trigger {*and the communication history appears on screen.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}
+#trigger {The scanner beeps twice, and a green line beside it flashes once.} {#gagline all; playsound {cosmic rage/general/misc/scannerGreen.wav} @vol}
+#trigger {The scanner buzzes, and a red light beside it blinks rapidly.} {#gagline all; playsound {cosmic rage/general/misc/scannerRed.wav} @vol}
+
+; skateboard script
+#trigger {You begin moving.} {
+playsound {cosmic rage/general/misc/skatestart.wav} @vevol;
+#gagline all;
+loopsound {Cosmic Rage/general/misc/skateloop.wav} @vevol;#var SkateHandle %playHandle; #var Skating 1}
+
+#trigger {You stop a * skateboard * dead.} {
+playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
+#gagline all;
+#if {@Skating = 1} {
+#pc @SkateHandle stop;
+#var Skating 0}}
+
+#trigger {You come to a stop.} {
+playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
+#gagline all;
+#if {@Skating = 1} {
+#pc @SkateHandle stop;
+#var Skating 0}}
+
+#trigger {You * straight into a wall and fall off *skateboard*} {
+playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
+#gagline all;
+#if {@Skating = 1} {
+#pc @SkateHandle stop;
+#var Skating 0}}
+; ends of script.
+#trigger {A beam of light pearces the clouds and you are suddenly swept up by a teleporter.} {#gagline display; playsound {cosmic rage/general/misc/teleport3.wav} @vol}
+#trigger {* makes a short, sharp crashing smashing noise as it recycles its content*} {playsound {cosmic rage/general/misc/TrashCan*2.wav} @vol}

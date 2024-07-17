@@ -23,3 +23,4 @@
 #TRIGGER {On screen, you see your drone come to a stop.} {#gagline all; playsound {Cosmic Rage/activities/pol/move1.wav} @cvol};
 #trig {On screen, your drone performs swift repairs on itself, causing the tools on its underside to heat up.} {#gagline all}
 #TRIGGER {You angle the pod down, the drone mirroring you, and tap fire.}  {#gagline voice; playsound {cosmic rage/ships/pd/fire*3.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 0.5 {playsound {cosmic rage/ships/pd/hit*3.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
+#trigger {On screen A red laser shoots out of Planetary destruction drone and impacts the shields of the planet.} {#gagline all; playsound {cosmic rage/ships/combat/OtherPhaser1.wav}  @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}

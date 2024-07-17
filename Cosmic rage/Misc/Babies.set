@@ -47,3 +47,7 @@
 #trigger {*seems unimpressed.} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
 #trigger {* successfully drinks from * sippy cup!} {playsound {Cosmic Rage/general/baby/babyburps.wav} @vol}
 #trigger {* roars cutely!} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
+#trigger {While the story is being told * listens contentedly. When the story gets to the final pig * shrieks with hysterical laughter!} {playsound {Cosmic Rage/general/baby/hystericalLaughter.wav} @vol}
+#trigger {* shrieks with laughter and attempts to wiggle away!} {playsound {Cosmic Rage/general/baby/hystericalLaughter2.wav} @vol}
+#trigger {* shrieks with laughter, occasionally attempting to immitate the sounds.} {playsound {Cosmic Rage/general/baby/hystericalLaughter2.wav} @vol}
+#trigger {* attempts to copy * with varying success.} {playsound {Cosmic Rage/general/baby/babyClap.wav} @vol}

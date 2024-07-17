@@ -1,4 +1,4 @@
-#trigger {You * into an installation booth.} {playsound {cosmic rage/general/larkan/install.wav} @vol; #var larkanhandle %playhandle; #var larkanloop 1; #alarm 55 {#var larkanloop 0}}
+  #trigger {You * into an installation booth.} {playsound {cosmic rage/general/larkan/install.wav} @vol; #var larkanhandle %playhandle; #var larkanloop 1; #alarm 55 {#var larkanloop 0}}
 #trigger {You * out of the installation booth and place your hand on the scanner to complete the payment.} {#if {@larkanloop = 1} {playsound {cosmic rage/general/larkan/complete.wav} @vol}; #if {@larkanloop = 1} { #pc @larkanhandle stop; #var larkanloop 0}}
 #trig {The ceiling opens up, and several delicate tools descend around you, beginning to work on you with careful mechanical efficiency.} {#gagline voice}
 #trig {A panel over your biocore is opened up, exposing your organic self to the world as several disinfectant sprays are applied to the air.} {#gagline voice}
@@ -22,3 +22,5 @@
 #trig {You flip in mid air, burning hard to slow your downward plummet.} {#gagline voice; playsound {cosmic rage/general/larkan/land.wav} @vol}
 #trig {* eyes glow with sudden power, and * rocket boosters activates, launching * skyward on a pillar of white-hot fire.} {#gagline voice; playsound {cosmic rage/general/larkan/otherlaunch.wav} @vol}
 #trigger {An internal sensor alerts you to the fact that your Biocore's fuel*} {playsound {cosmic rage/general/misc/warning.wav} @vol}
+#TRIGGER  {You step onto the recharging station.} {#gagline all; playsound {cosmic rage/general/misc/larkancharge.wav} @vol; #alarm 4.7 {loopsound {cosmic rage/general/misc/lark.wav} @vol; #var larkanHandle %playHandle; #var larkan 1}}
+#trigger {You step down from the recharging station, fully charged and ready to take on practically anything.} {#gagline all; #if {@larkan = 1} {#pc @larkanHandle stop; #var larkan 0}; playsound {cosmic rage/general/misc/larkdown.wav} @vol}

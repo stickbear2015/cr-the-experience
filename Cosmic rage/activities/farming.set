@@ -1,3 +1,5 @@
+ #var buildings {an alpaca barn|a chicken barn|a sheep pen|a goat pen|a horse stable|a cow barn|a house}
+
 #TRIGGER {The * of the pod thrums to life.} {#gagline all; #alarm 2.5 {playsound {Cosmic Rage/activities/farming/pod.wav} @vol}};
 #trigger {The pod rotates on the spot, before slowly pulling forward.} {#gagline all}
 #trig {There is a slight scraping noise, before the motor of the pod adopts a higher pitch.} {#gagline all}
@@ -102,3 +104,4 @@ playsound {cosmic rage/activities/hand mining/dirt.wav} @vol}
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/activities/farming/goats.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "farm"}}}}
+#trig {You step into *} {#if {%ifword(%1,@buildings,"|")}  {playsound {Cosmic Rage/activities/farming/open.wav} @vol}}

@@ -16,3 +16,21 @@
 #trig {The pod crests the station and begins to travel along the transparent dome that tops it.} {#gagline voice}
 #trigger {The pod rotates slowly and begins to drift towards a docking point.} {#gagline all;  #alarm 2 {playsound {Cosmic Rage/general/pod/partland.wav} @vol; #if {@going = 1} {#pc @goingHandle stop; #var going 0}}}
 #trig {There is a slight hum as docking equipment extends and the pod judders into a clamp.} {#gagline voice}
+
+; script for skypod
+#var currentPanning {0}
+#var right {500}
+#var left {-500}
+
+#trigger {The pod rises into the air slowly, before turning and beginning to set course for its destination.} {#gagline all; playsound {cosmic rage/general/pod/partlaunch.wav} 60; #alarm 2 {loopsound {Cosmic Rage/general/pod/partloop.wav} @vol; #var skypodhandle %playHandle; #var skypod 1}}
+#trigger {The pod is blown off to the right by a near missile strike.} {#gagline all; 
+playsound {cosmic rage/general/mwtp/right.wav} @vol;
+#math currentPanning {@right + @currentPanning}; #if {@skypod = 1}  {#alarm 0.1 {#pc @skypodhandle pan @currentPanning}}}
+#trigger {The pod is blown off to the left by a near missile strike.} {#gagline all; 
+playsound {cosmic rage/general/mwtp/left.wav} @vol;
+#math currentPanning {@left + @currentPanning};  #if {@skypod = 1}  {#alarm 0.1 {#pc @skypodhandle pan @currentPanning}}}
+#trigger {The pod continues smoothly on its journey.} {#gagline all}
+#trigger {There is a slight hum as the pod makes a successful landing.} {#gagline all; playsound {Cosmic Rage/general/pod/partland.wav} @vol; #if {@skypod = 1} {#pc @skypodHandle stop; #var currentPanning 0}}
+#trigger {* pul* the pod to the right.} {#math currentPanning {@right + @currentPanning}; #if {@skypod = 1} {playsound {cosmic rage/ships/misc/controlStick*3.wav} @vevol; #alarm 0.4 {#pc @skypodhandle pan @currentPanning}}}
+#trigger {* pul* the pod to the left.} {#math currentPanning {@left + @currentPanning}; #if {@skypod = 1} {playsound {cosmic rage/ships/misc/controlStick*3.wav} @vevol; #alarm 0.4 {#pc @skypodhandle pan @currentPanning}}}
+; end of script

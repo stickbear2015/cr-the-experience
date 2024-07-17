@@ -4,13 +4,13 @@
 #TRIGGER {* chirps quietly and a message on screen reads* } {playsound {Cosmic Rage/general/comms/game.wav} @CommsVol}
 #Trigger {* wishes to join your squadren.} {playsound {Cosmic Rage/general/comms/SQD.wav} @CommsVol; BufferAdd Squad %0}
 #TRIGGER {[[]Stories], (*): Announcement from the story Weavers! *} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 
-#trigger {You tap a button next to * and proceed to say * "*"} {
+#trigger {* ta* a button next to * and procee* to say * "*"} {
 #if {@QGag = 1} {
-#sub {[intercom] you : %3}};
+#sub {[PA] %1: %6}};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
-#trigger {* taps a button next to * and proceeds to say *: "*"} {
+#trigger {* ta* a button next to * and procee* to  transmits *} {
 #if {@QGag = 1} {
-#sub {[intercom] %1 %3: %4}};
+#sub {[PA] %1 transmits %5}};
 playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #TRIGGER {* informs you that you currently have * unread * in your history to review.} {playsound {Cosmic Rage/general/comms/radio.wav} @CommsVol;}
 #trigger {* plays * while in * the words * scroll across the screen under the banner of *} {
@@ -27,3 +27,8 @@ playsound {Cosmic Rage/general/comms/ShortWave.wav} @CommsVol}
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(off,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
+#trigger {[[]boards]*} {playsound {Cosmic Rage/general/comms/oocBoard.wav} @CommsVol}
+#trigger {You tap the menu icon on * earpiece} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {You tap the menu icon on * wrist communicator} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {You tap the menu icon on * communicator ring} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {You tap the menu icon on * pendant communicator} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}

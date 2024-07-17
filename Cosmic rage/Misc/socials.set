@@ -59,6 +59,7 @@
 #trigger {*sighs*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/sigh*5.wav} @vol}}
 #trigger {You whistle *} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
 #trigger {* whistles irritatingl*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
+#trigger {* whistles loudl*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/whistle*6.wav} @vol}}
 #trigger {You chortle*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chortle.wav} @vol}}
 #trigger {*chortles*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chortle.wav} @vol}}
 #trigger {You*chuckle.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/chuckle.wav} @vol}}
@@ -165,3 +166,6 @@
 #trigger {* bitchslaps * *round the face.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bitchslap.wav} 50}}
 #trigger {you shush *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/shush*2.wav} @vol}}
 #trigger {* shushes *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/shush*2.wav} @vol}}
+#trigger {you clear your throat.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Throat*2.wav} @vol}}
+#trigger {* clears *er throa*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Throat2.wav} @vol}}
+#trigger {*clears *is throa*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Throat1.wav} @vol}}

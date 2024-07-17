@@ -148,3 +148,5 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {The ship lifts slightly off of the ground as something attaches to it and it is moved. After a couple of seconds it lowers with a slight shake onto some kind of rack, which slowly settles it down into a garage.} {playsound {cosmic rage/ships/misc/garage.wav} @vol};
 #TRIGGER {The shriek of straining hull struts echoes throughout the vessel as it sharply turns using rocket burners.} {playsound {cosmic rage/ships/movement/rocket.wav} @evol};
 #TRIGGER {On screen, you see the ship's hull glow red hot as it passes through the planet's atmosphere.} {playsound {cosmic rage/ships/movement/rocket.wav} 10};
+#trigger {* to Starship *, you are too large to land at your chosen landing pad. Please send down smaller crafts.} {playsound {cosmic rage/ships/pd/alarm2.wav} @evol};
+#trigger {Exiting the showcase.} {#pc @ShipHandle stop; l}

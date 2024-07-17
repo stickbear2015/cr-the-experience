@@ -234,14 +234,11 @@ playsound {cosmic rage/general/misc/mapper.wav} @vol}
 #trigger {* dryer shakes violently as it dries its contents.} {#gagline all}
 #trigger {* dryer lets out a grumble and begins to slow down.} {#gagline all}
 #trigger {[[]camera]: *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
-#trigger {*security drone* * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security drone located at %4 informs you %5}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {*security camera* * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {The security camera located at %4 informs you %5}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {* indicating someone just closed an order.} {playsound {Cosmic Rage/general/misc/Order.wav} @vol; bufferadd InfoComputerNotifications %0}
 #trigger {The pod turns *} {#if {@SilentPod = "Enabled"} {#gagline all}}
 #trigger {[[]Stocks]: The stock market just refreshed!} {playsound {Cosmic Rage/general/misc/StocksRefreshed.wav} @vol; bufferadd InfoComputerNotifications %0}
 #trigger {You whisper*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; bufferadd say %0}
 #trigger {* whispers to you*} {playsound {Cosmic Rage/general/misc/whisper.wav} @vol; bufferadd say %0}
-#trigger {You unlock the door to * and enter.} {#pc 0 stop}
 #trigger {The pod banks *} {#if {@SilentPod = "Enabled"} {#gagline all}}
 #trigger {*tap* shoulder.} {playsound {Cosmic Rage/general/misc/Tap.wav.} @vol}
 #trigger {[[]Marketing*} {playsound {Cosmic Rage/general/misc/Market.wav} @vol; bufferadd InfoComputerNotifications %0} {} AnyCase

@@ -1,10 +1,13 @@
-#alias devl {#if {%0 = ""} {#say {you didn't put any path of file to load.}} {#load {%0}; {#say {%0 loaded.}}}}
-#alias devu {#if {%0 = ""} {#say {you didn't put any path of file to unload.}} {#unload {%0}; {#say {%0 unloaded.}}}}
-#alias devo {#if {%0 = ""} {#say {you didn't  put any path of file to open.}} {#edit {%0}; {#say {%0 opened in your prefered editor.}}}}
-#alias devc {#if {%0 = ""} {#say {you didn't  put any path of file for your editor. the example of the file should be like "notepad.exe".}} {#configure Editor {%0}; {#say {%0 set as your default editor.}}}}
-#alias devr {#if {%0 = ""} {#say {you didn't  put any path of file to reload.}} {#unload {%0}; #load %0; {#say {%0 successfully reloaded..}}}}
+#alias devl {#if {%1 = ""} {#say {you didn't put any path of file to load.}} {#load {%1.set}; {#say {%1 loaded.}}}}
+#alias devu {#if {%1 = ""} {#say {you didn't put any path of file to unload.}} {#unload {%1.set}; {#say {%1 unloaded.}}}}
+#alias devo {#if {%1 = ""} {#say {you didn't  put any path of file to open.}} {#edit {%1.set}; {#say {%1 opened in your prefered editor.}}}}
+#alias devc {#if {%1 = ""} {#say {you didn't  put any path of file for your editor. the example of the file should be like "notepad.exe".}} {#configure Editor {%1}; {#say {%1 set as your default editor.}}}}
+#alias devr {#if {%1 = ""} {#say {you didn't  put any path of file to reload.}} {#unload {%1.set}; #load %1.set; {#say {%1 successfully reloaded..}}}}
 #alias spa {>@spadmin}
-#alias dev {#say {This straightforward script is designed to assist any developers in effortlessly manipulating the soundpack. Just a heads-up, this script doesn't impact gameplay whatsoever, so feel free to use it without any concerns.};
+#alias dev {
+#say {Welcome to the script help for the developer.};
+#say {----------------};
+#say {This straightforward script is designed to assist any developers in effortlessly manipulating the soundpack. Just a heads-up, this script doesn't impact gameplay whatsoever, so feel free to use it without any concerns.};
 #say {If you prefer not to use this script, simply type devmod where you can enable/disable it as needed.};
 #say {Commands available:};
 #say {dev: Shows this help message.};
@@ -13,4 +16,8 @@
 #say {DevO <path>: Open the selected file into chosen default editor.};
 #say {DevU <path>: Unload the specified file.};
 #say {DevL <path>: load the specified file.};
-#say {spa: Open the Soundpack admin panel.}}
+#say {spa: Open the Soundpack admin panel.};
+#say {Note: To load, open, unload, or reload the file, you don't need to specify the file extension because the script already recognizes that the file you want to load or reload is in .set format.};
+#say {So, what you need to type is the path of files you want to access, for example, devr misc/misc will reload the misc.set file in the misc folder.};
+#say {----------------};
+#say {    End of Help file.    }}

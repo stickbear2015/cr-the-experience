@@ -150,3 +150,5 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #TRIGGER {On screen, you see the ship's hull glow red hot as it passes through the planet's atmosphere.} {playsound {cosmic rage/ships/movement/rocket.wav} 10};
 #trigger {* to Starship *, you are too large to land at your chosen landing pad. Please send down smaller crafts.} {playsound {cosmic rage/ships/pd/alarm2.wav} @evol};
 #trigger {Exiting the showcase.} {#pc @ShipHandle stop; l}
+#trigger {* pul* down a heavy lever with a thud.} {#if {@quan = 1} {
+#pc @quanhandle stop; #var quan 0}}

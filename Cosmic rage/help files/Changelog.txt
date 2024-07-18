@@ -1,3 +1,8 @@
+2357 Nemesis, Credit TwinkleDiamond, Added sounds for Biology and decontamination area.
+2356 Nemesis, Naturalize repair complete voice.
+2355 Nemesis, credit sigsegv, Fixed quantum engine do not stop when you type stop.
+2354 Nemesis, code Credit OlegtheSnowan, Fixed autologin.
+2353 Nemesis, credit Evangamer&Vladimirx, Slightly lowered the moon launching sound..
 2352 Nemesis, Gagged the on screen thing when you shoot down the shield of the outpost.
 2351 Nemesis, Credit PrinsesaAhli&Shania, Fixed the apartements error.
 2350 Nemesis, Credit Frosty, Added menu sounds for the communicator more than just radio.

@@ -1,3 +1,8 @@
+2362 Nemesis, Credits GoldenAngel&Shania, Added more sounds for baby. This includes and is not limited to, diaper changing sounds, coughing, etc.
+2361 Nemesis, Added military override sound plus changed the origins sound. I hope an input on this origins.
+2360 Nemesis, Credit Johnson, Added sounds for stun baton.
+2359 Nemesis, Credit OlegTheSnowman and everyone who tuned on the sp, Fixed accidental dot sign in autologin.
+2358 Nemesis, Credit Faelanoria, Fixed Baby sneeze.
 2357 Nemesis, Credit TwinkleDiamond, Added sounds for Biology and decontamination area.
 2356 Nemesis, Naturalize repair complete voice.
 2355 Nemesis, credit sigsegv, Fixed quantum engine do not stop when you type stop.

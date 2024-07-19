@@ -34,3 +34,8 @@
 #trigger {You use * handcuff key to unlock the handcuffs around * wrists.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol}
 #trigger {* spins * around and snaps a pair of * cuffs on * rists.} {#sub {%1 cuffs %2 on %4 wrists.}; playsound {cosmic rage/general/military/handcuffon.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
 #trigger {* uses a * handcuff key to unlock the cuffs around * wrists.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
+#trigger {* flicks a * stun baton forward and a small bolt of electricity flies from the tip, striking you!} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound {cosmic rage/general/military/stunin.wav} @Vol}}
+#trigger {* flicks a * stun baton forward and a small bolt of electricity flies from the tip, striking *.} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound {cosmic rage/general/military/stunout.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
+#trigger {You flick a * stun baton forward and a small bolt of electricity leaps from the tip and strikes *.} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #Alarm 0.2 {playsound {cosmic rage/general/military/stunin.wav} @Vol}}
+#trigger {Military override accepted.} {#gagline all; playsound {cosmic rage/general/military/override.wav} @vol}
+#trigger {The baton is still recharging.} {#gagline all; playsound {cosmic rage/general/military/stuncharge.wav} @vol}

@@ -21,7 +21,7 @@
 #trigger {* goes roar, attempting to imitate a dragon.} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
 #trigger {* giggles a little.} {playsound {Cosmic Rage/general/baby/giggle.wav} @vol}
 #trigger {* goes roar!} {playsound {Cosmic Rage/general/baby/dragonroar.wav} @vol}
-#trigger {*lets out a tiny sneeze} {playsound {Cosmic Rage/general/baby/sneeze*2.wav} @vol}
+#trigger {*lets out a tiny sneez*} {playsound {Cosmic Rage/general/baby/sneeze*2.wav} @vol}
 #trigger {lets out a waterfall of laughter, wriggling crazily to try and escape.} {playsound {Cosmic Rage/general/baby/babylaugh1.wav} @vol}
 #TRIGGER {* hands you the empty container and you discard it.} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {%ifWord(drink,%3," ")} {#if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}}; #if {%ifWord(eat,%3," ")} {#if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}}
 #trigger {* glances up at * and coos.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
@@ -47,7 +47,16 @@
 #trigger {*seems unimpressed.} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
 #trigger {* successfully drinks from * sippy cup!} {playsound {Cosmic Rage/general/baby/babyburps.wav} @vol}
 #trigger {* roars cutely!} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
-#trigger {While the story is being told * listens contentedly. When the story gets to the final pig * shrieks with hysterical laughter!} {playsound {Cosmic Rage/general/baby/hystericalLaughter.wav} @vol}
+#trigger {*the story is being told * listens contentedly. When the story gets to the final pig * shrieks with hysterical laughter!} {playsound {Cosmic Rage/general/baby/hystericalLaughter.wav} @vol}
 #trigger {* shrieks with laughter and attempts to wiggle away!} {playsound {Cosmic Rage/general/baby/hystericalLaughter2.wav} @vol}
 #trigger {* shrieks with laughter, occasionally attempting to immitate the sounds.} {playsound {Cosmic Rage/general/baby/hystericalLaughter2.wav} @vol}
 #trigger {* attempts to copy * with varying success.} {playsound {Cosmic Rage/general/baby/babyClap.wav} @vol}
+#trigger {You gently remove * wet diaper.} {playsound {Cosmic Rage/general/baby/Changing.wav} @vol}
+#trigger {*wiggles about happily because * has an empty diaper.} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; #gagline voice}
+#trigger {*giggles and smiles really enjoying the fun!} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
+#trigger {*coos and kicks * legs out.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {*yawns cutely.} {playsound {Cosmic Rage/general/baby/byawn*2.wav} @vol}
+#trigger {*yawns hugely and relaxes.} {playsound {Cosmic Rage/general/baby/byawn*2.wav} @vol}
+#trigger {*giggles as the butterfly kisses tickle * cheeks.} {playsound {Cosmic Rage/general/baby/giggle.wav} @vol}
+#trigger {*grunts playfully kicking * legs out.} {playsound {Cosmic Rage/general/baby/grunts.wav} @vol}
+#trigger {*lets out a baby cough.} {playsound {Cosmic Rage/general/baby/cough.wav} @vol}

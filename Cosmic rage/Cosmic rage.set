@@ -187,7 +187,7 @@ loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle
 #if {@devmode = "Enabled"} {#load misc/dev.set} {}
 
 ;misc.
-#Alias login {#gagon all; 1; %charInfo(name); #wait (0.1); #ungagon; %charInfo(password)}.
+#Alias login {#gagon all; 1; %charInfo(name); #wait (0.1); #ungagon; %charInfo(password)}
 #TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to Cosmic Rage!} {#if {@IntroPlaying = 1} {#pc @introhandle stop; #var IntroPlaying 0}; #if {@UpdateToggle = "Enabled"} {#alarm 1 {spversion; #var cvcheck 1}}} {} AnyCase
 #alias {onDisconnect} {
 #gvar disconnected 1;

@@ -220,9 +220,9 @@ playsound {cosmic rage/general/comms/deactivate.wav} @vol}}
 #TRIGGER {[[]Info], * just logged into TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogin.wav} @CommsVol};
 #TRIGGER {[[]Info], * just logged out of TeamTalk.} {playsound {Cosmic Rage/general/comms/ttlogout.wav} @CommsVol};
 #TRIGGER {[[]Dispatch]*: "*"} {#if {@QGag = 1} {#sub {[Dispatch]%1: %2}};
-playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd dispatch %0} {} anycase
+playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd Dispatch %0} {} anycase
 #TRIGGER {[[]Dispatch]*} {#if {%IfWord(~",%1,"")} {#abort 1};
-playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd fires %0} {} anycase
+playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd Dispatch %0} {} anycase
 #trigger {[[]PA]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {You feel a vibration from * indicating that * is requesting a holographic conference.} {playsound {cosmic rage/general/comms/holo.wav} @CommsVol}
 #TRIGGER {[[]Birthday Bash]*} {playsound {Cosmic Rage/general/comms/birthday.wav} @CommsVol; BufferAdd birthday %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char birthday.log};#write 1 %0;#close 1}} {} AnyCase

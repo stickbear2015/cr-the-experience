@@ -1,3 +1,20 @@
+2378 Nemesis, sound credits to TwincleDiamond, Added sounds for star distance warning..
+2377 Nemesis, Code credits to Jhonson, A nearby fresher now has a sound.
+2376 Nemesis, Skateboarding is now more realistic, because the sound will get faster and higher if you move faster, and lower if you slow it down.
+2375 Nemesis, Credits to OlegTheSnowman, the music should playing now when you have intro music enable..
+2374 Nemesis, You cannot trigger the on fire sound everywhere anymore.
+2373 Nemesis, credits to FrauleinSnow, sp changes viewer settings now in config/misc.
+2372 Nemesis, credits to Eyadahmed2008, Added the ability to set how much the soundpack changes you wanted to see when you press alt-control-v or spchanges with alt-f2 or setchange. I also cleared some buffer keys and put them where they should be, as well as fixing the encrypted settings and now it's not encripted anymore.
+2371 Nemesis, credits to IceStar, Fixed torpedos.
+2370 Nemesis, credits to OlegTheSnowman, Fixed Notices.
+2369 Nemesis, code credits to Johnson, When you trying to move and you are being cuffed now has a sound.
+2368 Nemesis, Credits OrionWood, The sound of the horn now audible again from the inside pov.
+2367 Nemesis, if your  channel logs are enabled, your notices will now be save just like the other channel.
+2366 Nemesis, In addition to sitting, standing and lyeing sounds will now also be panned for the third person.
+2365 Nemesis, credits TwinkleDiamond, Fixed dispatch buffer. I  combine them in 1 so there should be less confusion for all of you.
+2364 Nemesis, credits debs, Fixed reloading sound.
+2364 Nemesis, credits debs, Fixed reloading sound.
+2363 Nemesis, Due to several  requests that comes into my otr, I have added my personal script to count the number of shots you did both direct and indirect, as well as calculate the number of ships destroyed in a mission and determine the percentage of your shots. Please note that this script is not always accurate; the final results are as reported by the game. To view this information, simply press Alt-F1.
 2362 Nemesis, Credits GoldenAngel&Shania, Added more sounds for baby. This includes and is not limited to, diaper changing sounds, coughing, etc.
 2361 Nemesis, Added military override sound plus changed the origins sound. I hope an input on this origins.
 2360 Nemesis, Credit Johnson, Added sounds for stun baton.

@@ -106,6 +106,7 @@ Back:#alarm 0.1 {config}}}
 #alias miscpicker {playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol;
 #pick {p:please select a setting from the following list|
 Numpad movement (@numpadon), shortcut alt+enter.:ToggleNumpad; #alarm 0.1 {miscpicker}|
+SoundPack changes viewer (@spchange), shortcut alt+q:setchange; #alarm 0.1 {miscpicker}|
 Channel Logging (@ChannelLogging), shortcut alt control l. If this option is enabled, you may use shift-F2 to pull up the list of channels that have been logged.:Logging; #alarm 0.1 {miscpicker}|
 Check Lag. Ctrl + L. Note, This value may not always be accurate.:lag|
 Back:#alarm 0.1 {config}}}

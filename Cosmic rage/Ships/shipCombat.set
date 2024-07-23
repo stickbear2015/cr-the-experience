@@ -1,6 +1,12 @@
 #load ships/weaponfire.set
 #var dirlist1 { starboard aft | port aft }
 #var dirlist2 { starboard fore | port fore }
+; var for shot counting
+#var hits 0
+#var destroyed 0
+#var Indirect 0
+#var shotcount 0
+
 
 #trigger {You see bomb explode at landing pad on Spy Satellite*} {
 #gagline all}
@@ -38,8 +44,7 @@
 #trigger {You slide a switch across and hold it.} {#gagline all};
 #trigger {You release the switch.} {#gagline all};
 #TRIGGER {You hear a sliding noise, before a loud thunk as * are loaded into the ships main banks.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
-#TRIGGER {The floor underfoot vibrates as * torpedos are fired.} {#gagline all}
-#TRIGGER {The floor underfoot vibrates as a payload of * torpedos are fired.} {#gagline all; playsound {cosmic rage/ships/combat/torp.wav} @CVol;
+#TRIGGER {The floor underfoot vibrates as * torpedos are fired.} {#gagline all; playsound {cosmic rage/ships/combat/torp.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}};
 #TRIGGER {On screen, you see * fire torpedos at *} {#gagline all; playsound {cosmic rage/ships/combat/torp.wav} @CVol;
@@ -146,13 +151,14 @@ playsound {cosmic rage/ships/combat/green.wav} @CVol;
 #TRIGGER {A hum fills the ship as the shields are powered up.} {#gagline all; playsound {cosmic rage/ships/combat/shieldson.wav} @CVol};
 #TRIGGER {The hum begins to decrease as the shields begin to power off.} {#gagline all; playsound {cosmic rage/ships/combat/shieldsoff.wav} @CVol};
 #TRIGGER {Through the windows: * explodes!} {
-playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
-#if {@panShipCombat = "Enabled"} {
-#pc %playhandle pan %random(-4000,4000)};
-#if {@gagShipCombat = "Enabled"} {
-#gagline all} {
-#if {@gagShipCombat = "Disabled"} {
-#sub {%1 explodes!}}}}
+    #math destroyed {@destroyed + 1};
+    playsound {cosmic rage/ships/combat/OtherDestroyed*7.wav} @CVol;
+    #if {@panShipCombat = "Enabled"} {
+        #pc %playhandle pan %random(-4000,4000)};
+    #if {@gagShipCombat = "Enabled"} {
+        #gagline all} {
+            #if {@gagShipCombat = "Disabled"} {
+                #sub {%1 explodes!}}}}
 #trigger {You hear a metal ring then a click.} {
 #gagline all;
 playsound {cosmic rage/ships/combat/bladeson.wav} @CVol}
@@ -313,3 +319,18 @@ playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol; #if {@CombatMusicPlaying =
 #trigger {The computer announces: "Warning. A surge of unknown energy detected from avenger."} {#gagline all; playsound {cosmic rage/ships/combat/energyDetected.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-5000,5000)}}
+
+;script for shot counting
+#trigger {The computer announces: "Indirect hit on *"} {#math Indirect {@Indirect + 1}}
+#trigger {The computer announces: "Direct hit on *"} {#math hits {@hits + 1}}
+#trigger {The computer announces: "End of mission report: *"} {#say {your last shot count to the enemy is: @counting. you've achieve @persen% hits from @destroyed enemies. this is good.}}
+#trigger {On screen, a pulsing light indicates there is only 10 seconds of rift time left.} {#var hits 0; #var destroyed 0; #var indirect 0; #var shotcount 0}
+#key alt-f1 {
+    #if {@destroyed > 0} {
+#math counting {@hits+@Indirect};
+        #math persen {@counting*100/@destroyed};
+        #say {your last shot count to the enemy is: @hits direct hits, @Indirect Indirect hits, for the total of  @counting shots. you've achieve @persen% hits from @destroyed destroyed enemies. Incredible!.}} {
+        #say {You are not firing at anything yet.}
+    }
+}
+; end of script

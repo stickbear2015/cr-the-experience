@@ -28,7 +28,7 @@
 #trigger {* smiles, letting out little coos as * settles down.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
 #trigger {* lets out a waterfall of laughter, wriggling crazily to try and escape.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
 #trigger {* squeals happily.} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}
-#trigger {* laughs and tries to pull * feet away.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
+#trigger {* laughs and tries to pull * away.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
 #trigger {* coos contentedly and settles in.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
 #trigger {* sighs and coos relaxing * body.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
 #trigger {* coos and rests * head on * cheek.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}

@@ -127,3 +127,67 @@
 #key control-shift-q {qtg}
 #key Alt-shift-G {gagcomputer}
 #key alt-b {ErrorToggle}
+
+;buffers manipulation keys
+#Key Shift-Control-Enter {gbl};
+#Key Control-Enter {buffersound};
+#Key ALT-RIGHT {SPHB switch forward};
+#Key ALT-LEFT {SPHB switch back};
+#Key ALT-UP {SPHB back};
+#Key ALT-DOWN {SPHB forward};
+#Key ALT-HOME {SPHB back all};
+#Key ALT-END {SPHB forward all};
+#Key ALT-PAGEDOWN {#var gocount @gocountnum; #if { %IsNumber(@gocountnum)=0} {#var gocount 20}; SPHB forward; #var gocount 1};
+#Key ALT-PAGEUP {#var gocount @gocountnum; #if { %IsNumber(@gocountnum)=0} {#var gocount 20}; SPHB back; #var gocount 1};
+#Key ALT-SHIFT-ENTER {setBufVar}
+#Key ALT-DELETE {clearcurrentbuffer};
+#Key ALT-SHIFT-DELETE {clearallbuffers}
+#key {ALT-SHIFT-RIGHT} {addbuffer};
+#key {ALT-SHIFT-LEFT} {delbuffer};
+#Key CONTROL-1 {ControlKeys 1} 
+#Key CONTROL-2 {ControlKeys 2} 
+#Key CONTROL-3 {ControlKeys 3} 
+#Key CONTROL-4 {ControlKeys 4} 
+#Key CONTROL-5 {ControlKeys 5} 
+#Key CONTROL-6 {ControlKeys 6} 
+#Key CONTROL-7 {ControlKeys 7} 
+#Key CONTROL-8 {ControlKeys 8} 
+#Key CONTROL-9 {ControlKeys 9} 
+#Key CONTROL-0 {ControlKeys 10} 
+
+#Key SHIFT-CONTROL-1 {shiftkeys 1} bufferkeys
+#Key SHIFT-CONTROL-2 {shiftkeys 2} bufferkeys
+#Key SHIFT-CONTROL-3 {shiftkeys 3} bufferkeys
+#Key SHIFT-CONTROL-4 {shiftkeys 4} bufferkeys
+#Key SHIFT-CONTROL-5 {shiftkeys 5} bufferkeys
+#Key SHIFT-CONTROL-6 {shiftkeys 6} bufferkeys
+#Key SHIFT-CONTROL-7 {shiftkeys 7} bufferkeys
+#Key SHIFT-CONTROL-8 {shiftkeys 8} bufferkeys
+#Key SHIFT-CONTROL-9 {shiftkeys 9} bufferkeys
+#Key SHIFT-CONTROL-0 {shiftkeys 10} bufferkeys
+#Key CONTROL-ALT-1 {altcontrolKeys 1} bufferkeys
+#Key CONTROL-ALT-2 {altcontrolKeys 2} bufferkeys
+#Key CONTROL-ALT-3 {altcontrolKeys 3} bufferkeys
+#Key CONTROL-ALT-4 {altcontrolKeys 4} bufferkeys
+#Key CONTROL-ALT-5 {altcontrolKeys 5} bufferkeys
+#Key CONTROL-ALT-6 {altcontrolKeys 6} bufferkeys
+#Key CONTROL-ALT-7 {altcontrolKeys 7} bufferkeys
+#Key CONTROL-ALT-8 {altcontrolKeys 8} bufferkeys
+#Key CONTROL-ALT-9 {altcontrolKeys 9} bufferkeys
+#Key CONTROL-ALT-0 {altcontrolKeys 10} bufferkeys
+
+#Key ALT-Backspace {BufFav clearall} bufferkeys
+#Key alt-1 {BufferRead {@CurrentHistoryBuffer} {%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)}} 
+#Key alt-2 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-1)}} 
+#Key alt-3 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-2)}} 
+#Key alt-4 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-3)}} 
+#Key alt-5 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-4)}} 
+#Key alt-6 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-5)}} 
+#Key alt-7 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-6)}} 
+#Key alt-8 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-7)}} 
+#Key alt-9 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-8)}}
+#Key alt-0 {BufferRead {@CurrentHistoryBuffer} {%Eval(%NumWords(@{History@{CurrentHistoryBuffer}Messages},|)-9)}} 
+
+#key {Control-alt-shift-S} {SaveBuffers};
+#key {Control-alt-shift-L} {LoadBuffers}
+#key alt-q {setchange}

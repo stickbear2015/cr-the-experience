@@ -94,7 +94,7 @@ playsound {cosmic rage/vehicle/lever.wav} @vevol}
 #gagline all}
 #trigger {The engines suddenly slow the vehicle to a crawl and you feel the landing gear make contact with solid ground.} {
 #gagline all};
-#trigger {You hear a loud blair on the horn!} {
+#trigger {You hear a loud blare from the vehicle's horn.} {#gagline all; 
 playsound {cosmic rage/vehicle/horn.wav} @vevol}
 #trigger {You shut the door on *} {
 #gagline all;

@@ -39,3 +39,5 @@
 #trigger {You flick a * stun baton forward and a small bolt of electricity leaps from the tip and strikes *.} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #Alarm 0.2 {playsound {cosmic rage/general/military/stunin.wav} @Vol}}
 #trigger {Military override accepted.} {#gagline all; playsound {cosmic rage/general/military/override.wav} @vol}
 #trigger {The baton is still recharging.} {#gagline all; playsound {cosmic rage/general/military/stuncharge.wav} @vol}
+#trigger {* attemp* to move, but the cuffs restrain *} {#gagline all; playsound {cosmic Rage/general/combat/stunned.wav} @gvol}
+#trigger {*hums quietly for a moment before it displays some information on the screen:} {#gagline voice; playsound {cosmic rage/ships/computer/display*4.wav} @vol}

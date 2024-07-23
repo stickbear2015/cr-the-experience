@@ -117,7 +117,7 @@
 #trigger {Welcome to: cosmic rage!} {
 version; SilentlyLoadBuffers; #say {Welcome to the VIP Cosmic Rage experience!}; #if {@intromusic = "enabled"} {
 #if {@IntroPlaying = 1} {#pc @introhandle stop;#var IntroPlaying 0};
-loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle %playhandle; #var IntroPlaying 1}}  {} AnyCase
+#playloop {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle %playhandle; #var IntroPlaying 1}}  {} AnyCase
 
 ;Settings.
 #File 6 {cosmic rage/misc/settings.set} 1;
@@ -180,6 +180,7 @@ loopsound {cosmic rage/music/IntroMusic/DefaultIntro.wav} @vol; #var introhandle
 #read 6 cargogagger 57;
 #read 6 speedgagger 58;
 #read 6 devmode 59;
+#read 6 spchange 60;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {

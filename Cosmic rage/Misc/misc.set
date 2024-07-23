@@ -16,11 +16,11 @@ playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #trigger {Type a line of input. To abort the process you are in, type boot. For help, type help.} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
 #TRIGGER {You sit*} {playsound {cosmic rage/general/misc/sit.wav} @vol} {} AnyCase
-#TRIGGER {* sits down *} {playsound {cosmic rage/general/misc/sit.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};
+#TRIGGER {* sits down*} {playsound {cosmic rage/general/misc/sit.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)};
 #TRIGGER {You stand up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
-#TRIGGER {* stands up from *} {playsound {cosmic rage/general/misc/stand.wav} @vol};
+#TRIGGER {* stands up*} {playsound {cosmic rage/general/misc/stand.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)}
 #trigger {You lie down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
-#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol}
+#trigger {* lies down on *} {playsound {cosmic rage/general/socials/lie.wav} @vol; #PC %Playhandle Pan %Random(-1000,1000)}
 #TRIGGER {You receive * points.} {playsound {cosmic rage/general/misc/GetPoints.wav} @vol; bufferadd CashAndPoints %0}
 #TRIGGER {You receive * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; bufferadd CashAndPoints %0}
 #TRIGGER {You spent * credits.} {playsound {cosmic rage/general/misc/Credits*4.wav} @vol; bufferadd CashAndPoints %0}
@@ -44,7 +44,6 @@ playsound {cosmic rage/general/misc/dronesay.wav} @vol}
 #TRIGGER {* bolts * so it can not be moved.} {playsound {cosmic rage/general/misc/bolt.wav} @vol};
 #TRIGGER {* unbolts * and picks it up.} {playsound {cosmic rage/general/misc/unbolt.wav} @vol};
 #TRIGGER {You hear a solid bong as the cleaning equipment returns with something.} {#gagline all; playsound {cosmic rage/general/misc/gottrash.wav} @vol};
-#TRIGGER {* [[]Notice]:*} {playsound {cosmic rage/general/misc/Notice.wav} @vol; bufferadd Notices %0; #if {@ChannelLogging = 1} {#file 1 {cosmic rage/logs/%char Notices.log};#write 1 %0;#close 1}} {} AnyCase 
 #TRIGGER {You hear a ring, ring from *} {#gagline all; playsound {cosmic rage/general/misc/ring.wav} @vol};
 #TRIGGER {* plays a * tune} {playsound {cosmic rage/general/comms/phoneRing.wav} @vol};
 #TRIGGER {You tap a few buttons on * accessing its menu.} {#gagline all; playsound {cosmic rage/general/misc/complogin.wav} @vol};

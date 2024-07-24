@@ -97,3 +97,4 @@ playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
 #trigger {A beam of light pearces the clouds and you are suddenly swept up by a teleporter.} {#gagline display; playsound {cosmic rage/general/misc/teleport3.wav} @vol}
 #trigger {* makes a short, sharp crashing smashing noise as it recycles its content*} {playsound {cosmic rage/general/misc/TrashCan*2.wav} @vol}
 #trigger {A nearby airfreshener lets out a soft hiss.} {#gagline display; playsound {cosmic rage/general/misc/air freshener spray.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
+#trigger {* ligh* * candl* with *lighte*} {playsound {Cosmic Rage/general/combat/enemy/lighter.wav} @gvol}.

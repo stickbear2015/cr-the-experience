@@ -36,4 +36,4 @@
 #trigger {You gently curve the drone, making it follow the direction of the pod's piping.} {#gagline voice; playsound {Cosmic Rage/activities/starres/gearup.wav} @evol}
 #trig {You abort the dive and send the drone spinning towards the edge of the star.} {#gagline all; playsound {Cosmic Rage/activities/starres/code.wav} @vol}
 #trigger {As it attempts to rotate, a shiny control disc suddenly catches on the many dents it now sports. There is a loud groaning noise before a shiny control disc shattered!} {#gagline voice; playsound {Cosmic Rage/activities/starres/disk.wav} @evol}
-#trigger {The computer announces: "Warning, * detected in * units."} {#gagline voice; playsound {Cosmic Rage/activities/starres/warning.wav} @vol}
+#trigger {The computer announces: "Warning, * detected in * units."} {playsound {Cosmic Rage/activities/starres/warning.wav} @vol}

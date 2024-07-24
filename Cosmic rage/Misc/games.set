@@ -44,3 +44,7 @@
 #TRIGGER {The center wheel stops on *} {playsound {cosmic rage/general/socials/bounce2.wav} @vol}
 #TRIGGER {The right wheel stops on *} {playsound {cosmic rage/general/socials/bounce2.wav} @vol; #PC %PlayHandle Pan 1000}
 #TRIGGER {Sorry, but you lose. Better luck next time.} {playsound {cosmic rage/general/pp/loose2.wav} @vol}
+#trigger {* orde*, * at * to *} {playsound {cosmic rage/general/games/chessPlay.wav} @Vol; #PC %PlayHandle frequency 44100; BufferAdd Chess %0}
+#trigger {You shift your focu* to*} {playsound {cosmic rage/general/games/plating.wav} @vol}
+#trigger {*elected for moving.} {#gagline voice; playsound {cosmic rage/general/games/chessPlay.wav} @Vol; #PC %PlayHandle frequency 60000}
+#trigger {It's your turn.} {playsound {cosmic rage/general/games/poker.wav} @vol}

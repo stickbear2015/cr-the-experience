@@ -20,7 +20,7 @@ playsound {Cosmic Rage/general/comms/GMC.wav} @CommsVol; BufferAdd GMC %0; #if {
 playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; BufferAdd missions %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Missions.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Missions]*} {#if {%IfWord(~",%1,"")} {#abort 1};
 playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; BufferAdd missions %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Missions.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]Newbie]*:*} {playsound {Cosmic Rage/general/comms/Newbie.wav} @CommsVol; BufferAdd Newbie %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbie.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Newbie]*} {playsound {Cosmic Rage/general/comms/Newbie.wav} @CommsVol; BufferAdd Newbie %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbie.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Newbie Helpers]*} {playsound {Cosmic Rage/general/comms/NH.wav} @CommsVol; BufferAdd NewbieHelpers %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char newbieHelpers.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {Link with * successful.} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {You are now friends with * Say hello by typing OTR * hello!} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase

@@ -1,3 +1,6 @@
+2381 Nemesis, Credits to Clafilia&Johnson, Added sound and buffer for chess so other output doesn't interfere with your game. checkmate!
+2380 Nemesis, the newbie will sound regardless you're emoting or not.
+2379 Nemesis, code credits to Johnson, Added sounds for lighting up a candle.
 2378 Nemesis, sound credits to TwincleDiamond, Added sounds for star distance warning..
 2377 Nemesis, Code credits to Jhonson, A nearby fresher now has a sound.
 2376 Nemesis, Skateboarding is now more realistic, because the sound will get faster and higher if you move faster, and lower if you slow it down.

@@ -50,14 +50,14 @@ A ryuchi warrior flexes her muscles as she says
 A sneaky snake hisses
 };
 
-#Trigger {*: *} {
+#Trigger {*: "*"} {
 #If {%IfWord(%1,@starshipComputerAvetars,%CRLF)} {
 playsound {cosmic rage/ships/computer/announce*4.wav} @vol;
 #If {@gagStarshipComputerName="Enabled"} {
 BufferAdd Computer %2;
 #Sub {%2}
 } {
-BufferAdd Computer {%1: %2};
+BufferAdd Computer {%1: "%2"};
 #Sub {%1: %2}
 }
 }

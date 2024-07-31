@@ -73,3 +73,13 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {* twists the center part of * and the top half retracts into itself.} {#gagline voice; playsound {cosmic rage/general/house/umbrella2.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)};
 #trigger {You leave via the door.} {playsound {Cosmic Rage/general/doors/Doorclose3.wav} @vol}
 #trigger {You unlock the door to * and enter.} {playsound {Cosmic Rage/general/doors/Doorlock.wav} @vol; #alarm 0.1 {playsound {Cosmic Rage/general/doors/Dooropen3.wav} @vol}}
+#trigger {You press the button of the doorbell.} {#gagline all; playsound {cosmic rage/general/house/doorbell2.wav} @vol}
+#trigger {A quick ping, pong. is heard as someone rings the bell.} {#gagline all; playsound {cosmic rage/general/house/doorbell2.wav} @vol}
+#trigger {You open *wardrobe*} {playsound {cosmic rage/general/house/wardrobe1.wav} @vol}
+#trigger {You close *wardrobe*} {playsound {cosmic rage/general/house/wardrobe2.wav} @vol}
+#trigger {You hang * in *wardrobe*} {playsound {cosmic rage/general/house/hangingClothe.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}
+#trigger {You unhang * from *wardrobe*} {playsound {cosmic rage/general/house/hangingClothe.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}
+#trigger {You open *closet*} {playsound {cosmic rage/general/house/wardrobe1.wav} @vol}
+#trigger {You close *closet*} {playsound {cosmic rage/general/house/wardrobe2.wav} @vol}
+#trigger {You hang * in *closet*} {playsound {cosmic rage/general/house/hangingClothe.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}
+#trigger {You unhang * from *closet*} {playsound {cosmic rage/general/house/hangingClothe.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}

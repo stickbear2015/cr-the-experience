@@ -35,7 +35,7 @@
 #TRIGGER {The ship jolts a little as phasers are fired.} {#gagline all; playsound {cosmic rage/ships/combat/phaser.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}}
-#TRIGGER {* automatic reloading drone hums to itself as it starts a reload.} {#gagline all; playsound {cosmic rage/ships/combat/droneReloading*2.wav} @CVol};
+#TRIGGER {*hums to itself as it starts a reload.} {#gagline all; playsound {cosmic rage/ships/combat/droneReloading*2.wav} @CVol};
 #TRIGGER {A gentle sliding sound can be heard as ammunition is moved in the ship's hold.} {playsound {cosmic rage/ships/combat/reload.wav} @CVol};
 #trigger {A green light flashes beside the railgun.} {#gagline all}
 #trigger {You hear a series of clicks as the * are locked into place} {#gagline voice}

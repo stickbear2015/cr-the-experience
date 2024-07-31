@@ -308,11 +308,10 @@ loopsound {cosmic rage/Ambiences/OldCar.wav} @roomvol;
 #TRIGGER {* swis* tail.} {playsound {cosmic rage/general/misc/swish.wav} @vol};
 #trigger {You hear the high-pitched shriek of the safety sirens and an echoing voice booming, "Alert. alert. all citizens to shelters. All citizens to shelters. * this is not a drill."} {playsound {Cosmic Rage/general/comms/evac.wav} @vol}
 #trigger {Text scrolls across the screen of * which reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
-#trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
+#trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol;  BufferAdd Notices %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Notice.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {Words appear on a *'s display: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/tap.wav} @vol}
 #trigger {* chirps quietly and a message on screen reads: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/mail.wav} @vol}
 #trigger {* vibrates to get your attention, a message on screen reading: "*"} {#sub {%2}; playsound {cosmic rage/general/misc/Alert.wav} @vol}
-#trigger {Text scrolls across the screen of * which reads: New notification: *} {#sub {New notification: %2}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
-#trigger {Words appear on * display: "There are * unread notifications."} {#sub {There are %2 unread notifications.}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
-#trigger {Text scrolls across the screen of * which reads: "There are * unread notifications."} {#sub {There are %2 unread notifications.}; playsound {cosmic rage/general/comms/icnotice.wav} @vol}
+#trigger {Words appear on * display: "There are * unread notifications."} {#sub {There are %2 unread notifications.}; playsound {cosmic rage/general/comms/icnotice.wav} @vol; BufferAdd Notices %0}
+#trigger {Text scrolls across the screen of * which reads: "There are * unread notifications."} {#sub {There are %2 unread notifications.}; playsound {cosmic rage/general/comms/icnotice.wav} @vol; BufferAdd Notices %0}
 #trigger {The * app on * closes with a soft chime.} {playsound {cosmic rage/general/comms/mailclose.wav} @CommsVol; #gagline all}

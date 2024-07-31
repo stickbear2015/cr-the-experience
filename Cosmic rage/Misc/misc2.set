@@ -98,3 +98,11 @@ playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
 #trigger {* makes a short, sharp crashing smashing noise as it recycles its content*} {playsound {cosmic rage/general/misc/TrashCan*2.wav} @vol}
 #trigger {A nearby airfreshener lets out a soft hiss.} {#gagline display; playsound {cosmic rage/general/misc/air freshener spray.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
 #trigger {* ligh* * candl* with *lighte*} {playsound {Cosmic Rage/general/combat/enemy/lighter.wav} @gvol}.
+#trigger {Attention! we have a new leader in * Congratulations, *} {playsound {cosmic rage/general/misc/newLeader.wav} @vol}
+#trigger {* squeeze* the lever on an extension of hose from The Firetruck*.} {#gagline voice; playsound {cosmic rage/general/misc/hose.wav} @vol}
+#trigger {An extension of hose from The Firetruck * sprays a large amount of fire suppressing chemicals at *} {#gagline voice; playsound {cosmic rage/general/misc/hose.wav} @vol}
+#trigger {You turn to the front cover of the book.} {playsound {cosmic rage/general/misc/bookclose.wav} @vol}
+#trigger {You turn to page *} {playsound {cosmic rage/general/misc/bookturn*3.wav} @vol}
+#trigger {A force field hums to life in front of you.} {#gagline all; playsound {cosmic rage/general/misc/forcefield2.wav} @vol}
+#trigger {A forcefield flickers at the edge of your vision before vanishing.} {#gagline all; playsound {cosmic rage/general/misc/forcefield1.wav} @vol}
+#trigger {You tap in * into the passcode lock.} {#gagline all; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}

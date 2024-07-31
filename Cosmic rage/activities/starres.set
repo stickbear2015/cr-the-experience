@@ -37,3 +37,6 @@
 #trig {You abort the dive and send the drone spinning towards the edge of the star.} {#gagline all; playsound {Cosmic Rage/activities/starres/code.wav} @vol}
 #trigger {As it attempts to rotate, a shiny control disc suddenly catches on the many dents it now sports. There is a loud groaning noise before a shiny control disc shattered!} {#gagline voice; playsound {Cosmic Rage/activities/starres/disk.wav} @evol}
 #trigger {The computer announces: "Warning, * detected in * units."} {playsound {Cosmic Rage/activities/starres/warning.wav} @vol}
+#trigger {*pull* back * foot and attempts to deliver a firm kick to a shiny control disc.} {#gagline all; playsound {cosmic rage/general/combat/kick*3.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}
+#trigger {*misse* a shiny control disc and instead makes a dent in the wall.} {#gagline all}
+#trigger {* plant*  foot perfectly into a shiny control disc, leaving a giant dent.} {#gagline all}

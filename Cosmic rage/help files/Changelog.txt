@@ -1,3 +1,20 @@
+2398 Nemesis, Credits to OlegTheSnowman, The description won't trigger chest and the chess buffer anyore.
+2397 Nemesis, Credits to NightSky, Timeleft sound on the planet chunks is now a little bit increase, and for ease of use, it's on the notice buffer too.
+2396 Nemesis, ICNotice is now in your notices buffer too.
+2395 Nemesis, in addition to BioScanner, now forcefield sound is available.
+2394 Nemesis, code and sound Credits to Johnson, fray, and Nemesis, Added few sounds to your lovely give baby wheels vehicle. Enjoy!
+2393 Nemesis, Credits to Clafilia, Fixed few things about wardrobes and Added sounds for closet too.
+2392 Nemesis, Added few sounds for wardrobe.
+2391 Nemesis, Added sound for fuel tank.
+2390 Nemesis, Added few sounds for star rescue.
+2389 Nemesis, I changed the phasing door sounds, you should like this one.
+2388 Nemesis, Fixed reloading drone on a ship.
+2387 Nemesis, Credits to Johnson, Added sound for house's doorbell. at least that's what he said so.
+2386 Nemesis, Added sound for when you try to entering  the passcode but it's wrong.
+2385 Nemesis, sound and code Credits to Johnson, Added few sounds to book. go open your book and read something.
+2384 Nemesis, Credits to Debs, Added sound while keeping readers from reading when someone sprays fire.
+2383 Nemesis, Credits to OlegTheSnowman, Added sound for new leader on the top player list.
+2382 Nemesis, Credits to Johnson, Added sounds for doortap and door hammer.
 2381 Nemesis, Credits to Clafilia&Johnson, Added sound and buffer for chess so other output doesn't interfere with your game. checkmate!
 2380 Nemesis, the newbie will sound regardless you're emoting or not.
 2379 Nemesis, code credits to Johnson, Added sounds for lighting up a candle.

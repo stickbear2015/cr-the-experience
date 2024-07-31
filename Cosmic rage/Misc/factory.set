@@ -167,3 +167,4 @@ playsound {cosmic rage/general/factory/roller coaster.wav} @vol;
 #if {@rchandle > 0} {#pc @rchandle stop}}}
 
 #trigger {You grab a * and fill it with *} { #gagline all; playsound  {cosmic rage/general/factory/pourMilk*2.wav} @vol}
+#trigger {* shakes a little then lets out several loud clunks as it shifts the position of * crystals, creating more space.} {#gagline all; playsound {cosmic rage/general/factory/fueltank.wav} @vol}

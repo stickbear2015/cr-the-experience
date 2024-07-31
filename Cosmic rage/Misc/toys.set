@@ -4,3 +4,33 @@
 #TRIGGER {* shakes * happily, making a rattling sound.} {playsound {cosmic rage/general/toys/rattle.wav} @vol};
 #TRIGGER {* bats * across the room, before bounding after it and pouncing on it with a happy babble!} {playsound {cosmic rage/general/toys/ball*2.wav} @vol};
 #TRIGGER {*spins the wheels on *} {playsound {cosmic rage/general/toys/toycar.wav} @vol};
+
+; gbw stuff
+#trigger {The lights on the front of * begin to cast a bright glow.} {#gagline all; 
+#if {%ifword(jeep,%1," ")} {
+playsound {cosmic rage/general/toys/gbwstart.wav} @vol};
+#if {%ifword(racecar,%1," ")} {
+playsound {cosmic rage/general/toys/gbwstart.wav} @vol};
+#if {%ifword(helicopter,%1," ")} {
+playsound {cosmic rage/general/toys/helistart.wav} @vol}}
+
+
+#trigger {The engine noise coming from * turns off.} {#gagline all; 
+#if {%ifword(jeep,%1," ")} {
+playsound {cosmic rage/general/toys/gbwstop.wav} @vol};
+#if {%ifword(racecar,%1," ")} {
+playsound {cosmic rage/general/toys/gbwstop.wav} @vol};
+#if {%ifword(helicopter,%1," ")} {
+playsound {cosmic rage/general/toys/helistop.wav} @vol}}
+
+#trigger {* drives in to the area, makes a few  doughnuts, and promptly shuts off its engines!} {#gagline all; 
+#if {%ifword(jeep,%1," ")} {
+playsound {cosmic rage/general/toys/gbwstop.wav} @vol};
+#if {%ifword(racecar,%1," ")} {
+playsound {cosmic rage/general/toys/gbwstop.wav} @vol};
+#if {%ifword(helicopter,%1," ")} {
+playsound {cosmic rage/general/toys/helistop.wav} @vol}}
+#trigger {* comes to a sudden stop at a closed door to the *. * honks on the horn!} {Playsound {Cosmic Rage/general/cars/horn.wav} @vol; #PC %Playhandle Pan %Random(-5000,5000)}
+#trigger {* slide* the door shut on *} {#gagline voice; playsound {cosmic rage/general/toys/gbwclose.wav} @vol}
+#trigger {* slide* the door open on *} {#gagline voice; playsound {cosmic rage/general/toys/gbwopen.wav} @vol}
+#trigger {A shield activates around *} {#gagline voice; playsound {cosmic rage/general/toys/shield.wav} @vol}

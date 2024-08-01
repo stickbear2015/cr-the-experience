@@ -24,7 +24,7 @@ Loopsound {Cosmic Rage/general/cars/idle.wav} @vehiclevol; #var vehiclehandle %P
 #if {@drive = 1} {
 #pc @drivehandle stop; #var drive 0};
 loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"}
-#TRIGGER {You gently accelerate and pull away.} {#gagline voice; playsound {Cosmic Rage/general/cars/accelerate.wav} @vehiclevol; #alarm 6 {#if {@drive = 0} {LoopSound {Cosmic Rage/general/cars/driving.wav} @vehiclevol; #var drivehandle %PlayHandle; #var drive 1}}}
+#TRIGGER {You gently accelerate and pull away.} {#gagline voice; playsound {Cosmic Rage/general/cars/accelerate.wav} @vehiclevol; {#alarm 6 {LoopSound {Cosmic Rage/general/cars/driving.wav} @vehiclevol; #var drivehandle %PlayHandle; #var drive 1}}}
 #TRIGGER {You bring the vehicle to a stop.} {#gagline all; playsound {Cosmic Rage/general/cars/decelerate.wav} @vehiclevol;
 #if {@drive = 1} {
 #PC @drivehandle stop; #var drive 0}}

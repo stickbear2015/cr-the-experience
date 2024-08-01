@@ -1,3 +1,4 @@
+2399 Nemesis, Credits to Sweetminks, Fixed a bug with clasic cars. vroom vroom!
 2398 Nemesis, Credits to OlegTheSnowman, The description won't trigger chest and the chess buffer anyore.
 2397 Nemesis, Credits to NightSky, Timeleft sound on the planet chunks is now a little bit increase, and for ease of use, it's on the notice buffer too.
 2396 Nemesis, ICNotice is now in your notices buffer too.

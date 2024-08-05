@@ -22,6 +22,41 @@ loopsound {cosmic rage/Ambiences/av.wav} @Vehiclevol; #var vehiclehandle %playha
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/trash.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
 #var currentroom "trash"}};
+#If {%IfWord(Haliya,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Haliya"} {
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/aircraft.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
+#var currentroom "Aircraft"}};
+#If {%IfWord(Grinode,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Grinode"} {
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/aircraft.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
+#var currentroom "Aircraft"}};
+#If {%IfWord(Swifter,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Swifter"} {
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/aircraft.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
+#var currentroom "Aircraft"}};
+#If {%IfWord(Fighter Craft,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Fighter Craft"} {
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/aircraft.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
+#var currentroom "Aircraft"}};
+#If {%IfWord(Airbus,@PlanetName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "Airbus"} {
+#if {@VehicleSoundPlaying = 1} {
+#pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/aircraft.wav} @vehiclevol; #var vehiclehandle %playhandle; #var VehicleSoundPlaying 1;
+#var currentroom "Aircraft"}};
 #If {%IfWord(grabber,@PlanetName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "grabber"} {

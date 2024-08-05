@@ -46,6 +46,7 @@
 #load vehicle/vehicleAmbience.set
 
 ;Combat set files
+#load vehicle/aircraft.set
 #load Combat/airpod.set
 #load combat/ArmorMaking.set
 #load combat/battlesuits.set

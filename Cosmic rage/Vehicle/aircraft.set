@@ -1,0 +1,41 @@
+; landing/launching
+#trigger {You engage the aircraft's automatic launch procedures.} {#gagline all; playsound {cosmic rage/Activities/Trash Collection/keyboard*7.wav} @vevol;}
+#trigger {The aircraft begins to shake a little as powerful engines on either side begin to rev up.} {#gagline all; playsound {Cosmic Rage/general/combat/aircraft/takeoff.wav} @vevol}
+#trigger {The aircraft begins to rise slowly and majestically into the air, engines on either side vibrating through the floor.} {#gagline all; playsound {Cosmic Rage/general/combat/aircraft/enginestart.wav} @VehiclEol}
+#trigger {The lift of the main engines eases off and the hovering protocol engages.} {#if {@VehicleSoundPlaying = 1} {
+loopsound {Cosmic Rage/general/combat/aircraft/idle.wav} @VehiclEvol; #var aircrafthandle %playHandle; #var aircraft 1}}
+#trigger {The aircraft hovers down the last few meters to the ground where it comes to rest with a soft bump.} {#gagline all; playsound {Cosmic Rage/general/combat/aircraft/boomin.wav} @vevol}
+#trigger {You engage the aircraft's automatic landing sequence.} {#gagline all; playsound {cosmic rage/Activities/Trash Collection/keyboard*7.wav} @vevol;}
+#trigger {There is a subtle change to the engines as the hovering protocol is taken offline and the landing engines rev up to begin a controlled descent.} {#gagline all; playsound {Cosmic Rage/general/combat/aircraft/landing.wav} @vevol}
+#trigger {The engines thrum powerfully as they lower the aircraft slowly down towards the ground.} {
+#if {@aircraft = 1} {#pc @aircrafthandle stop; playsound {cosmic rage/general/combat/aircraft/enginestop.wav} @VehiclEol}}
+#trigger {The engines of the aircraft lower in pitch as it begins to slow down.} {#gagline all; playsound {Cosmic Rage/activities/pol/move1.wav} @vevol}
+#trigger {The engines kick up into a higher pitch as the speed of the aircraft increases.} {#gagline all; playsound {Cosmic Rage/activities/pol/move3.wav} @vevol}
+#trigger {You input for autopilot to begin to fly towards *} {#gagline all; playsound {cosmic rage/Activities/Trash Collection/keyboard*7.wav} @vevol; {playsound {Cosmic Rage/general/combat/aircraft/autopilot.wav} @vevol; playsound {cosmic rage/general/combat/aircraft/autoPilotInput.wav} @vevol}}
+
+;controling
+#trigger {You *joystick*} {playsound {cosmic rage/ships/misc/controlStick*3.wav} @vevol}
+#trigger {You *flight stick*} {playsound {cosmic rage/ships/misc/controlStick*3.wav} @vevol}
+#trigger {The aircraft banks to the *} {playsound {Cosmic Rage/general/combat/aircraft/turn.wav} @vevol}
+#trigger {The aircraft straightens *} {playsound {Cosmic Rage/general/combat/aircraft/turn.wav} @vevol}
+#trigger {The aircraft's engines thrum powerfully as it knives up through the sky.} {playsound {Cosmic Rage/general/combat/aircraft/turn.wav} @vevol}
+#trigger {The aircraft begins *} {playsound {Cosmic Rage/general/combat/aircraft/turn.wav} @vevol}
+
+;mmisc
+#trigger {You depress the trigger of the machine gun and open fire with a storm of plasma charged bullets.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/laserin.wav} @CVol}
+#trigger {You verify the lock on * and then fire a missile directly at it.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/missile.wav} @vevol; #PC %Playhandle pan  %random(-4000,4000)}
+#trigger {Alarms blair and the lights flash red as a missile slams home against the aircraft.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/missilehit.wav} @vevol}
+#trigger {there are no targets in range.} {#gagline all; playsound {cosmic rage/ships/combat/LostTrack.wav} @CVol}
+#trigger {Alarms sound as the aircraft is peppered by plasma charged bullets.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/laserout.wav} @vevol}
+#trigger {Alert. Incoming missile detected from *} {playsound {cosmic rage/general/combat/aircraft/MissileWarn.wav} @vevol}
+#trigger {You clear the tracking from the radar.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/TClear.wav} @vol}
+#trigger {Attack mode engaged.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/attack.wav} @vol}
+#trigger {There is a slight shudder as the computer takes over control of the directional flying.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/directional.wav} @vol}
+#trigger {The sound of * engines high above kicks up into a higher pitch as its speed increases.} {#gagline all; playsound {Cosmic Rage/general/combat/aircraft/turn.wav} @vevol; #PC %Playhandle frequency 65000}
+#trigger {The engines of * grow rapidly louder as it dives towards the room.} {playsound {Cosmic Rage/general/combat/aircraft/turn.wav} @vevol; #PC %Playhandle frequency 20000}
+#trigger {There is a dull clunk followed by a rapidly fading shriek as a missile is fired.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/rocketgroundin.wav} @vevol}
+#trigger {An air to ground missile screams into the room and impacts the ground with a massive explosion!} {#gagline all; playsound {cosmic rage/general/combat/aircraft/rocketgroundout.wav} @vol}
+#trigger {The computer announces: "Reached the edge of allowed air space."} {#gagline all; playsound {cosmic rage/general/combat/aircraft/reachEdge.wav} @vevol}
+#trigger {You flick the autopilot off and prepare to take manual control.} {#gagline all; playsound {cosmic rage/general/combat/aircraft/autoPilotDis.wav} @vol; #if {@autopilot = 1} {#pc @autopilothandle stop}}
+#trigger {The aircraft turns subtley as it corrects its course.} {#gagline all; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol; playsound {cosmic rage/general/combat/aircraft/autoPilotStart.wav} @vol; #alarm 3 {loopsound {Cosmic Rage/general/combat/aircraft/autoPilotLoop.wav} @vol; #var autopilothandle %playHandle; #var autopilot 1}}
+#trigger {The aircraft tilts down slightly as it spirals gently towards the ground.} {#gagline all; playsound {Cosmic Rage/general/combat/aircraft/autoPilotStop.wav} @vol; #if {@autopilot = 1} {#pc @autopilothandle stop}}

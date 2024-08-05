@@ -1,3 +1,6 @@
+2401 Nemesis, Changed the sound for trashtruck. now your lovely truck is more modern and comfy inside..
+
+2400 Nemesis, Credits to Johnson, Clafilia, FräuleinSnow and others, added a collection of sounds for your beloved aircrafts. Thank you for your support and contributions to the people that I included in the credits.
 2399 Nemesis, Credits to Sweetminks, Fixed a bug with clasic cars. vroom vroom!
 2398 Nemesis, Credits to OlegTheSnowman, The description won't trigger chest and the chess buffer anyore.
 2397 Nemesis, Credits to NightSky, Timeleft sound on the planet chunks is now a little bit increase, and for ease of use, it's on the notice buffer too.

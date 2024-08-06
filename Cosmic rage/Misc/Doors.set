@@ -127,5 +127,5 @@ playsound {cosmic rage/general/doors/DoorClose4.wav} @vol}}
 #trigger {You walk nose first into *} {#gagline voice; playsound {cosmic rage/general/doors/bang.wav} @vol}
 #trigger {Someone thumps into the door to the *} {#gagline voice; playsound {cosmic rage/general/doors/bang.wav} @vol; #PC %PlayHandle Pan %Random(-5000,5000)}
 #trigger {*tap* on *door*} {playsound {cosmic rage/general/doors/doortap.wav} @vol}
-#trigger {*hammer* on *door*} {playsound {cosmic rage/general/doors/doorhammer.wav} @vol}
+#trigger {* hammer* on * door *} {playsound {cosmic rage/general/doors/doorhammer.wav} @vol}
 #trigger {The light at the bottom of the keypad flashes red and a synthesized voice announces: "Permission Denied."} {#gagline all; playsound {cosmic rage/general/doors/noAccess.wav} @vol}

@@ -4,7 +4,7 @@
 #trigger {[[]SubAnnouncement]*} {playsound {Cosmic Rage/general/comms/SubAnnouncement.wav} @CommsVol; BufferAdd SubAnnouncements %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char SubAnnouncements.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Changes]:*} {playsound {Cosmic Rage/general/comms/change.wav} @CommsVol; BufferAdd Changes %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Changes.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]OOC]*} {playsound {Cosmic Rage/general/comms/ooc.wav} @CommsVol; BufferAdd OOC %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ooc.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]Chat]*: "*"} {#if {@QGag = 1} {#sub {[Chat]%1: %2}};
+#TRIGGER {[[]Chat]*: "*"} {#if {@QGag = 1} {#sub {[Chat] %1: %2}};
 playsound {Cosmic Rage/general/comms/Chat.wav} @CommsVol; BufferAdd Chat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Chat]*} {#if {%IfWord(~",%1,"")} {#abort 1};
 playsound {Cosmic Rage/general/comms/Chat.wav} @CommsVol; BufferAdd Chat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chat.log};#write 1 %0;#close 1}} {} AnyCase
@@ -36,7 +36,6 @@ playsound {cosmic rage/general/comms/intel.wav} @CommsVol; BufferAdd intel %0; #
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol} {} AnyCase
 #TRIGGER {You disable * on *.} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol} {} AnyCase
-#trigger {[[]Soundpacks]*} {playsound {cosmic rage/general/comms/sp.wav} @CommsVol; BufferAdd Soundpacks %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Soundpacks.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Military]*: "*"} {#if {@QGag = 1} {#sub {[Military]%1: %2}};
 playsound {cosmic rage/general/comms/military.wav} @CommsVol; BufferAdd Military %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char sdf.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Military] *} {#if {%IfWord(~",%1,"")} {#abort 1};
@@ -79,7 +78,8 @@ playsound {cosmic rage/general/comms/phase.wav} @Vol}
 #TRIGGER {[[]Socials] *} {playsound {cosmic rage/general/comms/socials.wav} @CommsVol; BufferAdd Socials %0; #file 1 {cosmic rage/logs/%char Socials.log}; #write 1 %0;#close 1} {} AnyCase
 #TRIGGER {[[]Arena]*} {playsound {cosmic rage/general/comms/arena.wav} @CommsVol; BufferAdd Arena %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Arena.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Brag]*} {playsound {cosmic rage/general/comms/brag.wav} @CommsVol; BufferAdd brag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Brag.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {[[]clan*]*} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; BufferAdd Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Clanchat], *: "*"} {#if {@QGag = 1} {#sub {[Clanchat] %1: %2}}; playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; BufferAdd Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Clanchat]*} {#if {%IfWord(~",%1,"")} {#abort 1}; playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; BufferAdd Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You turn * translator} {
 #if {%ifWord(on,%1," ")} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
@@ -182,8 +182,6 @@ playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; BufferAdd Org %0; {#fil
 #trigger {From afar, *} {playsound {Cosmic Rage/general/socials/SocialFromAfar.wav} @CommsVol; BufferAdd OOCPrivate %0} {} AnyCase
 #trigger {[[]Public announcement system]*:*} {playsound {cosmic rage/ships/com/Pa*2.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {[[]Game] *} {playsound {Cosmic Rage/general/comms/Game.wav} @CommsVol; BufferAdd APilotsParody %0} {} AnyCase
-#trigger {[[]Origins]*: "*"} {#if {@QGag = 1} {#sub {[Origins]%1: %2}}; playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origins.log};#write 1 %0;#close 1}}
-#trigger {[[]Origins] *} {#if {%IfWord(~",%1,"")} {#abort 1}; playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origin.log};#write 1 %0;#close 1}}
 #trigger {Information: closest beacon: *} {BufferAdd SOS %0}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} @commsvol; BufferAdd Htpc %0}
 #Alias {mf} {Musicfm %0} {}
@@ -192,7 +190,8 @@ playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; BufferAdd Org %0; {#fil
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(disabled.,%1," ")} {
 playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
-#trigger {[[]PN *], *} {playsound {cosmic rage/general/comms/pn1.wav} @CommsVol;#if {%ifword(%1,@priv1," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 40000}; #if {%ifword(%1,@priv2," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 55000}; #if {%ifword(%1,@priv3," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 62000}; #if {%ifword(%1,@priv4," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 75000}; BufferAdd PN %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]PN *], *: "*"} {#if {@QGag = 1} {#sub {[PN %1], %2: %3}}; playsound {cosmic rage/general/comms/pn1.wav} @CommsVol; #if {%ifword(%1,@priv1," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 40000}; #if {%ifword(%1,@priv2," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 55000}; #if {%ifword(%1,@priv3," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 62000}; #if {%ifword(%1,@priv4," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 75000}; BufferAdd PN %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]PN *], *} {#if {%IfWord(~",%2,"")} {#abort 1}; playsound {cosmic rage/general/comms/pn1.wav} @CommsVol; #if {%ifword(%1,@priv1," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 40000}; #if {%ifword(%1,@priv2," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 55000}; #if {%ifword(%1,@priv3," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 62000}; #if {%ifword(%1,@priv4," ")} {playsound {cosmic rage/general/comms/pn2.wav} @CommsVol; #PC %Playhandle Frequency 75000}; BufferAdd PN %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private Network.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {* would like to link to you.} {playsound {Cosmic Rage/general/comms/link.wav} @CommsVol} {} AnyCase
 #trigger {[[]OOC Intercom * ]*} {playsound {cosmic rage/general/comms/oocinter.wav} @CommsVol; BufferAdd PA %0} {} AnyCase
 #trigger {[[]Intercom *]*} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; BufferAdd PA %0} {} anycase
@@ -233,3 +232,4 @@ playsound {Cosmic Rage/general/comms/fires.wav} @CommsVol; BufferAdd Dispatch %0
 #trigger {The folder closes with a soft swoosh, returning you to the main mail menu.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailclose.wav} @CommsVol}
 #trigger {The recipient manager closes with a soft swoosh.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailclose.wav} @CommsVol}
 #trigger {Soft chimes come from the speakers of a black informational Computer as the recipient manager opens.} {#gagline voice; playsound {Cosmic Rage/general/comms/mailopen.wav} @CommsVol}
+#trigger {[[]Origins]*: "Automated announcement: *"} {#if {@QGag = 1} {#sub {[Origins]%1: %2}}; playsound {Cosmic Rage/general/comms/OriginsAuto.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origins.log};#write 1 %0;#close 1}}

@@ -1,6 +1,25 @@
+2421 Nemesis, Added sounds for one way teleportation. Also, I disabled the old origin sound for rank up at the moment because a lot of complaints came in, hopefully it will be there again in the next update, bye!
+2420 Nemesis, the old origin sounds is now for someone ranking up too. I hope it works as it should be.
+2419 Nemesis, Added ambience sound for blacksmith or forge room.
+2418 Nemesis, Credits to Faelanoria, Added sounds for another diaper.
+2417 Nemesis, Credits to Nightsky, Tunnel is not sounds like showering anymore.
+2416 Nemesis, Credits to Nightsky, Ground combat win now will play the relevant sound.
+2415 Nemesis, Credits to Debs, Machine gun now have their own sound.
+2414 Nemesis, as this change posted, the sound for messages and changes on the SP is now different.
+2413 Nemesis, Code Credits to Johnson, As I promised, now if it's night, there will be the sound of crickets tickling your ears. give a big thanks to Johnson because he made the logic extraordinarily simple compared to me editting 400 more lines just for encountering failure.
+2412 Nemesis, Credits to everyone, Fixed Clanchat, I don't know that there are different between president and members, really.
+2411 Nemesis, Fixed quotation gagger doesn't work on pn.
+2410 Nemesis, In addition to gun, Industrial plant's swingable weapon now has a sound too.
+2409 Nemesis, Credits to everyone, shootable weapon from industrial plan that is not pistol rifle or sniper, now also has a sound.
+2408 Nemesis, Added few sounds to weapon like rocket, assault rifle, and stungun. Thanks to ivangamer who give me the text for rocket due to my disability.
+2407 Nemesis, credits to Walter, Fixed few things on the files. it's include clanchat, whistle and  I forgot what else.
+2406 Nemesis, Sound credits to Clafilia, Added sound for charm bracelet.. She recorded hers so give her a thumbs up.
+2405 Nemesis, Credits to AstrumAventor, Added  few sounds for Broad Sword.
+
+2404 tracebug, readded the old origins sound for automated announcement. Not fully tested though
+2403 This entry is just to say that I removed a blank line, and a duplicate 2364 entry. Frederick Barnes131439
 2402 Nemesis, Credits to Debs&ABabyAsault, description will now ignore hammer sound. no one hammering under your desc anyway.
 2401 Nemesis, Changed the sound for trashtruck. now your lovely truck is more modern and comfy inside..
-
 2400 Nemesis, Credits to Johnson, Clafilia, FräuleinSnow and others, added a collection of sounds for your beloved aircrafts. Thank you for your support and contributions to the people that I included in the credits.
 2399 Nemesis, Credits to Sweetminks, Fixed a bug with clasic cars. vroom vroom!
 2398 Nemesis, Credits to OlegTheSnowman, The description won't trigger chest and the chess buffer anyore.
@@ -37,7 +56,6 @@
 2367 Nemesis, if your  channel logs are enabled, your notices will now be save just like the other channel.
 2366 Nemesis, In addition to sitting, standing and lyeing sounds will now also be panned for the third person.
 2365 Nemesis, credits TwinkleDiamond, Fixed dispatch buffer. I  combine them in 1 so there should be less confusion for all of you.
-2364 Nemesis, credits debs, Fixed reloading sound.
 2364 Nemesis, credits debs, Fixed reloading sound.
 2363 Nemesis, Due to several  requests that comes into my otr, I have added my personal script to count the number of shots you did both direct and indirect, as well as calculate the number of ships destroyed in a mission and determine the percentage of your shots. Please note that this script is not always accurate; the final results are as reported by the game. To view this information, simply press Alt-F1.
 2362 Nemesis, Credits GoldenAngel&Shania, Added more sounds for baby. This includes and is not limited to, diaper changing sounds, coughing, etc.

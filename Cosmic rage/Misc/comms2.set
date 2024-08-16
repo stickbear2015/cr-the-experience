@@ -33,3 +33,11 @@ playsound {cosmic rage/general/comms/deactivate.wav} @CommsVol}}
 #trigger {You tap the menu icon on * wrist communicator} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
 #trigger {You tap the menu icon on * communicator ring} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
 #trigger {You tap the menu icon on * pendant communicator} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {[[]Soundpacks] *: "*"} {#if {@QGag = 1} {#sub {[Soundpacks] %1: %2}}; playsound {cosmic rage/general/comms/sp2.wav} @CommsVol; BufferAdd Soundpacks %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Soundpacks.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Soundpacks] *} {#if {%IfWord(~",%1,"")} {#abort 1};
+playsound {cosmic rage/general/comms/sp2.wav} @CommsVol; BufferAdd Soundpacks %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Soundpacks.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Soundpacks], A change was just posted *} {playsound {cosmic rage/general/comms/sp.wav} @CommsVol; BufferAdd Soundpacks %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Soundpacks.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Origins]*: "*"} {#if {@QGag = 1} {#sub {[Origins]%1: %2}}; playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origins.log};#write 1 %0;#close 1}}
+; #trigger {[[]Origins] *} {#if {%IfWord(Message from the Embassy:,%1," ")} {#abort 1}}
+#trigger {[[]Origins] *} {#if {%IfWord(~",%1,"")} {#abort 1};  playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origin.log};#write 1 %0;#close 1}}
+; #trigger {[[]Origins] (*) Message from the Embassy: *} {playsound {Cosmic Rage/general/comms/OriginsAuto.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origins.log};#write 1 %0;#close 1}}

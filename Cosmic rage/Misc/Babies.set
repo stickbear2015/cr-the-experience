@@ -52,6 +52,7 @@
 #trigger {* shrieks with laughter, occasionally attempting to immitate the sounds.} {playsound {Cosmic Rage/general/baby/hystericalLaughter2.wav} @vol}
 #trigger {* attempts to copy * with varying success.} {playsound {Cosmic Rage/general/baby/babyClap.wav} @vol}
 #trigger {You gently remove * wet diaper.} {playsound {Cosmic Rage/general/baby/Changing.wav} @vol}
+#trigger {You peel the old diaper off of *} {playsound {Cosmic Rage/general/baby/Changing.wav} @vol}
 #trigger {*wiggles about happily because * has an empty diaper.} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; #gagline voice}
 #trigger {*giggles and smiles really enjoying the fun!} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
 #trigger {*coos and kicks * legs out.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}

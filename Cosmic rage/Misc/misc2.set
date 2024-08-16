@@ -106,3 +106,5 @@ playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
 #trigger {A force field hums to life in front of you.} {#gagline all; playsound {cosmic rage/general/misc/forcefield2.wav} @vol}
 #trigger {A forcefield flickers at the edge of your vision before vanishing.} {#gagline all; playsound {cosmic rage/general/misc/forcefield1.wav} @vol}
 #trigger {You tap in * into the passcode lock.} {#gagline all; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
+#trigger {you power * Activating teleportation beams aboard * via remote data transfer.} {#gagline display; playsound {Cosmic Rage/general/misc/MiniKeyboard.wav} @vol}
+#trigger {You are enveloped by a bright blue light!} {#gagline display; playsound {cosmic rage/general/misc/teleport3.wav} @vol}

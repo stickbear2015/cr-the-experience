@@ -142,7 +142,12 @@ playsound {cosmic rage/general/combat/vehicles/turout.wav} @gvol}
 #trigger {You heave at some of the rocks and debris.} {#gagline all;playsound {cosmic Rage/general/misc/unblock.wav} @gvol}
 #trigger {Blood splatters on *} {playsound {Cosmic Rage/general/combat/blood.wav} @gvol}
 #trigger {* lets out a small beep, informing you it just managed to charge another round of ammunition using the ambient light as an energy source.} {playsound {Cosmic Rage/general/combat/beep.wav} @gvol; #gagline voice}
-#trigger {You shoot * at *} {#if {%ifword(pistol,%1," ")} {playsound {cosmic rage/general/combat/weapons/pistol*2.wav} @CVol}; #if {%ifword(rifle,%1," ")} {playsound {cosmic rage/general/combat/weapons/rifle*2.wav} @CVol}; #if {%ifword(sniper,%1," ")} {playsound {cosmic rage/general/combat/weapons/sniper*2.wav} @CVol}}
+#trigger {You shoot * at *} {#if {%ifword(pistol,%1," ")} {playsound {cosmic rage/general/combat/weapons/pistol*2.wav} @CVol};
+#if {%ifword(rifle,%1," ")} {playsound {cosmic rage/general/combat/weapons/rifle*2.wav} @CVol};
+#if {%ifword(machine gun,%1," ")} {playsound {cosmic rage/general/combat/weapons/mgun*2.wav} @CVol};
+#if {%ifword(sniper,%1," ")} {playsound {cosmic rage/general/combat/weapons/sniper*2.wav} @CVol};
+#if {NOT %ifword(pistol,%1," ") and NOT %ifword(machine gun,%1," ") and NOT %ifword(rifle,%1" ") and NOT %ifword(sniper,%1," ")} {playsound {cosmic rage/general/combat/weapons/generalgun.wav} @CVol}}
+#trigger {You swing * at *} {playsound {cosmic rage/general/combat/weapons/generalswing.wav} @CVol}
 #trigger {Something seems to have gone wrong with *} {playsound {Cosmic Rage/general/combat/weapons/overheat.wav} @gvol; #gagline voice}
 #trigger {* is damaged and needs to be fixed!} {playsound {Cosmic Rage/general/combat/weapons/damaged.wav} @gvol; #gagline voice}
 #trigger {You are * of the room at *, *.} {#var x1 %2; playsound {Cosmic Rage/general/combat/enemy/exits/@x1.wav} @vol;  #var x2 %3; #alarm 0.1 {playsound {Cosmic Rage/general/combat/enemy/exits/@x2.wav} @vol}}
@@ -152,3 +157,8 @@ playsound {cosmic rage/general/combat/vehicles/turout.wav} @gvol}
 #trigger {* smoke cannister explodes!} {playsound {Cosmic Rage/general/combat/smokegrenade.wav} @gvol; #gagline all}
 #TRIGGER {You draw * from * on a *.} { #if {%ifWord(holster,%2," ")} { playsound {cosmic rage/general/combat/draw.wav} @gvol}};
 #TRIGGER {You slide * into * on a *.} { #if {%ifWord(holster,%2," ")} { playsound {cosmic rage/general/combat/holster.wav} @gvol}};
+#trigger {* shoot* a * ray of energy at * from a *} {playsound {cosmic rage/general/military/stungun.wav} @CVol}
+#trigger {You take aim at * and squeeze the trigger. The gun goes off with an explosive boom and slams in to your shoulder.} {playsound {cosmic rage/general/combat/weapons/rifle3.wav} @CVol}
+#trigger {You lift a * to your shoulder and take careful aim at *} {#gagline all; playsound {cosmic rage/general/combat/weapons/RocketAim.wav} @CVol}
+#trigger {A rocket flies from the barrel of *, heading straight for *} {#gagline all; playsound {cosmic rage/general/combat/weapons/Rocketfly.wav} @CVol; #PC %Playhandle Pan %Random(-5000,5000)}
+#trigger {* impacts with a massive explosion at *} {playsound {cosmic rage/general/combat/weapons/RocketBoom*2.wav} @CVol; #PC %Playhandle Pan %Random(-5000,5000)}

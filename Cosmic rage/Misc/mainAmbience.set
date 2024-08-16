@@ -57,6 +57,20 @@ loopsound {cosmic rage/Ambiences/Theater.wav} @roomvol;
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/Ambiences/Waterfall.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "waterfall"; #var currentroom2 "notmisc"}};
+#If {%IfWord(blacksmiths,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "blacksmiths"} {
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/forge.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "blacksmiths"; #var currentroom2 "notmisc"}};
+#If {%IfWord(forge,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "forge"} {
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/forge.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "forge"; #var currentroom2 "notmisc"}};
 #If {%IfWord(decontamination,@RoomName," ")} {
 #var currentroom2 "notmisc";
 #if {@currentroom <> "decontamination"} {

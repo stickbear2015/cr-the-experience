@@ -230,3 +230,8 @@ playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}} {} AnyCase
 #gagline all}} {} AnyCase
 #trigger {There is a huge roar of thunder.} { #if {@gagWeather = "Enabled"} { #gagline all}; #if {@weather = "Enabled"} { playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}}
 #trigger {There is a deafening rumble of thunder.} { #if {@gagWeather = "Enabled"} { #gagline all}; #if {@weather = "Enabled"} { playsound {cosmic rage/general/weather/thunderBoom.wav} @vol}}
+#trigger {The noise level *} {
+#if {@Night = 1} {
+#pc @NightHandle stop;
+#var Night 0}}
+#trigger {A great inky blackness stretches above you, indicating it is night. *} {loopsound {cosmic rage/general/weather/night.wav} @roomvol; #var NightHandle %playHandle; #var Night 1}

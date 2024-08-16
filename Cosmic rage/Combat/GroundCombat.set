@@ -153,9 +153,12 @@ playsound {cosmic rage/general/combat/enemy/exits/se.wav} @gvol; #alarm 0.2 {pla
 #trigger {*wasteland monster punches you.} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monsterpunch.wav} @gvol}
 #trigger {* lunges from out of a pile of trash!} {#gagline voice;playsound {Cosmic Rage/general/combat/enemy/monsterapp.wav} @gvol}
 #trigger {The head of * sails away, cleanly knocked off.} {#gagline all}
-#trigger {Looks like that was the last one.} {playsound {cosmic rage/general/combat/beep.wav} @gvol}
+#trigger {Looks like that was the last one.} {playsound {cosmic rage/general/comms/win.wav} @gvol}
 #TRIGGER {* performs emergency repairs on *} {playsound {cosmic rage/general/combat/enemy/droid/repair.wav} @gvol}
 #trigger {* uses something in its hand to heal *.} {#gagline all}
 #trigger {*pull* back * foot and attempts to deliver a firm kick to a shiny control disc.} {#gagline all; playsound {cosmic rage/general/combat/kick*3.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}
 #trigger {*misse* a shiny control disc and instead makes a dent in the wall.} {#gagline all}
 #trigger {* plant*  foot perfectly into a shiny control disc, leaving a giant dent.} {#gagline all}
+#trigger {* slide* two hidden switches on the handle of * broad sword * and the blades come alight with energy.} {#gagline display; playsound {cosmic rage/general/combat/BSword1.wav} @gvol}
+#trigger {* return* the switches to the off position and the energy of * broad sword * blades vanishes.} {#gagline display; playsound {cosmic rage/general/combat/BSword2.wav} @gvol}
+#trigger {* expertly fence* two deadly strokes of * broad sword * into * the blades discharging extra white energy as * do* so.} {#gagline display; {#gagline display; playsound {cosmic rage/general/combat/BSword3.wav} @gvol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}

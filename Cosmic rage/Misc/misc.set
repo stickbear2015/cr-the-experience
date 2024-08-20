@@ -154,9 +154,6 @@ playsound {cosmic rage/general/DOORS/doorlock.wav} @vol}}
 #trigger {*One or more polls have been posted. Please type * to see what.} {playsound {cosmic rage/general/misc/vote.wav} @vol; bufferadd Notices %0}
 #trigger {There have been the following message board posts that you are required to read: *} {
 playsound {cosmic rage/general/comms/messageBoardNotify.wav} @vol; bufferadd MessageBoard %0}
-
-#trigger {You feel * units of plasma return to your form.} {#if {@TPR = "Enabled"} {#gagline all;
-playsound {cosmic rage/general/misc/plasmaRecover.wav} @vol}}
 #trigger {You cast your line.} {
 #gagline all;
 playsound {cosmic rage/activities/fishing/fishcast.wav} @vol}
@@ -181,7 +178,7 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {You take a drink from a *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
 #trigger {You eat some *} {playsound {Cosmic Rage/general/Food and drink/EatFood.wav} @vol}
 #trigger {You begin to quickly eat your way through *} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
-#trigger {You take a long pull from the water stocked in *} {playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
+#trigger {You take a long pull from the water stocked in *} {#gagline all; playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
 #trigger {You slide out a ration pack from * pop it open, and eat its contents.} {playsound {Cosmic Rage/general/Food and drink/Scarf.wav} @vol}
 #trigger {Roundtime up. Feel free to move about!} {playsound {Cosmic Rage/general/misc/Roundtime.wav} @vol;#gagline voice}
 #trigger {You give a sudden leap and land in santa's slay!} {playsound {Cosmic Rage/general/misc/Christmas.wav} @vol; #gagline all}

@@ -60,7 +60,6 @@ Small tick sounds for idle (@ConnectionCheck), shortcut ctrl alt c.:ToggleIdleSo
 clock sounds from the store  (@SilentClock), shortcut alt control t.:ToggleClocks; #alarm 0.1 {soundpicker}|
 social sounds (@SocialSounds), Shortcut alt shift s.:toggleSocialSounds; #alarm 0.1 {soundpicker}|
 Reboot sounds (@RebootSounds), shortcut alt control r.:toggleReboot; |
-bioplasma regenoration (@TPR), no shortcut.:TPR; #alarm 0.1 {soundpicker}|
 shower music (@showermusic), shortcut ctrl shift m.:showermusictoggle; #alarm 0.1 {soundpicker}|
 speech (@speech), Shortcut ctrl f1.:smute; #alarm 0.1 {soundpicker}|
 mute sp (@soundson), Shortcut shift f1.:MuteSound; #alarm 0.1 {soundpicker}|
@@ -78,6 +77,7 @@ Back:#alarm 0.1 {config}}}
 #pick {p:please select one of the options below|
 Short mapper and short flight control text (@ShortMapText), Shortcut alt s.:ShortMapText; #alarm 0.1 {gagpicker}|
 ship combat message gagger (@gagShipCombat), Shortcut ctrl g.:gagscombat; #alarm 0.1 {gagpicker}|
+Miscellaneous mutariansi gagger (@tpr), no shortcut.:tpr; #alarm 0.1 {gagpicker}|
 Intraplanetary pod movement gagger (@SilentPod).:TogglePods; #alarm 0.1 {gagpicker}|
 trash/orbit messages gagger  (@gagHarvest), Shortcut ctrl h.:gagharvest; #alarm 0.1 {gagpicker}|
 debris salvage gagger (@gagSal), shortcut shift  alt s.:salvageTextToggle; #alarm 0.1 {gagpicker}|
@@ -307,7 +307,7 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias toggleSoundpackIntroMessage {#if {@SpIntroMessage = "Enabled"} {#var SpIntroMessage "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no  longer see the intro message letting you know what needs to be done if you're a first time pack user} VoiceOnly} {#var SpIntroMessage "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now see the intro message letting you know what needs to be done if you're a first time pack user.} VoiceOnly}}
 #alias StopSound {#pc 0 stop; #pc %MP3Loop stop; playsound {Cosmic Rage/general/misc/SoundsStopped.wav} @vol; #say {All currently playing sounds have been stopped.} VoiceOnly}
 #TRIGGER {lag.test} {#unalarm LagTest; #gagline all; #say {It's estimated that You have %eval(@LagAmount * @vol) Milliseconds lag.}} {} AnyCase
-#alias TPR {#if {@TPR= "Enabled"} {#var TPR "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no  longer hear bio plasma regenoration sounds.} VoiceOnly} {#var TPR "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now hear bio plasma regenoration sounds.} VoiceOnly}}
+#alias TPR {#if {@TPR= "Enabled"} {#var TPR "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no  longer hear  some of the muti's sounds.} VoiceOnly} {#var TPR "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now hear some of the muti's sounds.} VoiceOnly}}
 #alias commtoggle  {#if {@commtoggle= "Enabled"} {#var commtoggle "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see communication texts} VoiceOnly} {#var commtoggle "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see communication texts} VoiceOnly}}
 #alias qtg  {#if {@QGag = 1} {#var QGag 0; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Quotation marks are no longer being gagged.} VoiceOnly} {#var QGag 1; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Quotation marks are now being gagged.} VoiceOnly}}
 #alias hpdr {#if {@hpdr = "gagged"} {#var hpdr "ungagged"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Helper drone remote usage is no longer being gagged.} VoiceOnly} {#var hpdr "gagged"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Helper drone remote usage is now being gagged.} VoiceOnly}}

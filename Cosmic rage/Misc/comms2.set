@@ -1,4 +1,5 @@
 #TRIGGER {* [[]Notice]:*} {playsound {Cosmic Rage/general/misc/Notice.wav} @CommsVol; BufferAdd Notices %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Notice.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {Reports: * commented on by the hosts. Please check it out.} {playsound {Cosmic Rage/general/misc/reminder.wav} @CommsVol; BufferAdd Notices %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Notice.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {* lights up in red and a message upon the screen reads: *} { playsound {Cosmic Rage/general/comms/monitor.wav} @CommsVol}
 #TRIGGER {[[]Music FM]*} {playsound {Cosmic Rage/general/comms/musicfm.wav} @CommsVol; BufferAdd musicfm %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char musicfm.log};#write 1 %0;#close 1}}
 #TRIGGER {[[]* Chat]: *: "*"} {playsound {Cosmic Rage/general/comms/story.wav} @CommsVol; BufferAdd stories %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char stories.log};#write 1 %0;#close 1}} 

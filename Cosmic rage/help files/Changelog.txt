@@ -1,3 +1,12 @@
+2430 Nemesis, Added sounds for Reports reminder.
+2429 Nemesis, Added sounds for Fridge opening/closing doors. ps: Don't put yourself in the fridge because it won't fit.
+2428 Nemesis, Credits to Fray, Added sounds for refilling vending achine.
+2427 Nemesis, FIxed the double if you look to other room and the nightsound are playing.
+2426 Nemesis, Added sound for you if you drink from the founten.
+2425 Nemesis, Fixed night sounds doubling  when you look at the sky, also made it mute if by default your ambient is disabled.
+2424 Nemesis, brings a mutariansi gagger where, if you turn it off, the sound reforms and all the text will be displayed without the sound. It's in the config/gameGagger option or by typing tpr. Thanks to Skyfall for the code snippet.
+2423 tracebug, changed vehicle enter(exit sounds.
+2422 tracebug, I've slightly altered the new repair sound so the p no longer pops like a bomb in your ears.
 2421 Nemesis, Added sounds for one way teleportation. Also, I disabled the old origin sound for rank up at the moment because a lot of complaints came in, hopefully it will be there again in the next update, bye!
 2420 Nemesis, the old origin sounds is now for someone ranking up too. I hope it works as it should be.
 2419 Nemesis, Added ambience sound for blacksmith or forge room.

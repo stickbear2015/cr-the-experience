@@ -108,3 +108,8 @@ playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
 #trigger {You tap in * into the passcode lock.} {#gagline all; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
 #trigger {you power * Activating teleportation beams aboard * via remote data transfer.} {#gagline display; playsound {Cosmic Rage/general/misc/MiniKeyboard.wav} @vol}
 #trigger {You are enveloped by a bright blue light!} {#gagline display; playsound {cosmic rage/general/misc/teleport3.wav} @vol}
+#trigger {You lean over and drink from *} {#gagline all; playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
+#trigger {You rip the tape from a refill pack for vending machines.} {#gagline all; playsound {Cosmic Rage/general/misc/vending1.wav} @vol}
+#trigger {You begin removing ration packs from * and slotting them into *} {#gagline voice; playsound {Cosmic Rage/general/misc/vending2.wav} @vol}
+#trigger {* swin* open the door on * fridge.} {playsound {Cosmic Rage/general/misc/fridgeOpen.wav} @vol}
+#trigger {* swin* shut the door on * fridge which seals with a satisfying click.} {playsound {Cosmic Rage/general/misc/fridgeClose.wav} @vol}

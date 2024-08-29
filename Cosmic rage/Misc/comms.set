@@ -80,6 +80,7 @@ playsound {cosmic rage/general/comms/phase.wav} @Vol}
 #TRIGGER {[[]Brag]*} {playsound {cosmic rage/general/comms/brag.wav} @CommsVol; BufferAdd brag %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Brag.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {[[]Clanchat], *: "*"} {#if {@QGag = 1} {#sub {[Clanchat] %1: %2}}; playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; BufferAdd Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Clanchat]*} {#if {%IfWord(~",%1,"")} {#abort 1}; playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; BufferAdd Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {[[]Clans]: *} {playsound {cosmic rage/general/comms/ClanChat.wav} @CommsVol; BufferAdd Clanchat %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char ClanChat.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {You turn * translator} {
 #if {%ifWord(on,%1," ")} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};

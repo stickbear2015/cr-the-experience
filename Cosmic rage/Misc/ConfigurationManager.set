@@ -61,7 +61,7 @@ clock sounds from the store  (@SilentClock), shortcut alt control t.:ToggleClock
 social sounds (@SocialSounds), Shortcut alt shift s.:toggleSocialSounds; #alarm 0.1 {soundpicker}|
 Reboot sounds (@RebootSounds), shortcut alt control r.:toggleReboot; |
 shower music (@showermusic), shortcut ctrl shift m.:showermusictoggle; #alarm 0.1 {soundpicker}|
-speech (@speech), Shortcut ctrl f1.:smute; #alarm 0.1 {soundpicker}|
+mute tts (@speech), Shortcut ctrl f1.:smute; #alarm 0.1 {soundpicker}|
 mute sp (@soundson), Shortcut shift f1.:MuteSound; #alarm 0.1 {soundpicker}|
 intro music on startup (@intromusic), shortcut shift ctrl i.:intromusictoggle; #alarm 0.1 {soundpicker}|
 Report an issue:SpBug|

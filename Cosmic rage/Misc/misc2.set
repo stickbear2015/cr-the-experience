@@ -113,3 +113,5 @@ playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
 #trigger {You begin removing ration packs from * and slotting them into *} {#gagline voice; playsound {Cosmic Rage/general/misc/vending2.wav} @vol}
 #trigger {* swin* open the door on * fridge.} {playsound {Cosmic Rage/general/misc/fridgeOpen.wav} @vol}
 #trigger {* swin* shut the door on * fridge which seals with a satisfying click.} {playsound {Cosmic Rage/general/misc/fridgeClose.wav} @vol}
+#trigger {You spend a few moments typing in your order into *} {#gagline all; playsound {cosmic rage/general/misc/keypad.wav} @vol}
+#trigger {* through the water.} {playsound {cosmic rage/general/house/swim*5.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}

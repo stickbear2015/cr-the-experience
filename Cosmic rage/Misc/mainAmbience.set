@@ -342,7 +342,7 @@ loopsound {cosmic rage/Ambiences/Hallway.wav} @roomvol;
 #if {@currentroom <> "River"} {
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/Ambiences/River.wav} @roomvol;
+loopsound {cosmic rage/Ambiences/River*2.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "River"}};
 #If {%IfWord(Lobby,@RoomName," ")} {
 #var currentroom2 "notmisc";

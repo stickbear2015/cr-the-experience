@@ -1,3 +1,9 @@
+2436 Nemesis, code&sound credits to Johnson and AstrumAventor, added sounds when  you are swimming.
+2435 Nemesis, Credits to BabySeal2000, Fixed the confusion about speech in config settings.
+2434 Nemesis, Fixed clan notification sound.
+2433 Nemesis, Credits to BabySeal2000, Added typing sound for ordering food.
+2432 Nemesis, Credits to AstrumAventor,Added few sounds for lion in sahariana.
+2431 Nemesis, Credits to fray, Added another ambient sound for river, so it will play randomly now.
 2430 Nemesis, Added sounds for Reports reminder.
 2429 Nemesis, Added sounds for Fridge opening/closing doors. ps: Don't put yourself in the fridge because it won't fit.
 2428 Nemesis, Credits to Fray, Added sounds for refilling vending achine.

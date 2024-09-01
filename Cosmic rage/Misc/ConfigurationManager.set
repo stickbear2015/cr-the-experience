@@ -16,7 +16,7 @@ GameGagger. Filter out non-essential elements based on your preferences.:gagpick
 Miscellaneous Settings. Contains various settings for the soundpack.:miscpicker|
 Sound Manager. Customize settings for your convenience.:soundpicker|
 Volume Manager. Adjust volume settings for the soundpack.:volumepicker|
-Exit:#say {exitting...}}}
+Exit:actualsave; #say {exitting...}}}
 
 #alias volumepicker {playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol; #pick {p:Volume manager dialog|
 general volume up (@vol), shortcut f10.:genvolup; #alarm 0.1 {volumepicker}|
@@ -46,6 +46,7 @@ Back:#alarm 0.1 {config}}}
 #alias soundpicker {playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol;
 #pick {p:please pick a setting from the following list|
 ambience (@ambon), Shortcut f11.:ambtoggle; #alarm 0.1 {soundpicker}|
+Toggle   battlesuit movement sound (@battlesuitMovement), no shortcut.:battlesuitmove; #alarm 0.1 {soundpicker}|
 drone following sounds (@DroneSounds), Shortcut alt shift d.:dronetoggle; #alarm 0.1 {soundpicker}|
 constant red alert (@RedAlert), Shortcut alt shift r.:RedAlertToggle; #alarm 0.1 {soundpicker}|
 soundpack update notifications on login (@UpdateToggle), Shortcut alt shift u.:ToggleUpdate; #alarm 0.1 {soundpicker}|
@@ -71,12 +72,16 @@ Recent changes.:spchanges|
 Reload the soundpack:SpReload|
 View help files for the soundpack.:SpHelp|
 Save settings:SaveSettings; #alarm 0.1 {soundpicker}|
+Back up your current settings.: backupsetting; #alarm 0.1 {soundpicker}|
+Restore from your most recent backup of settings.: restoresetting; #alarm 0.1 {soundpicker}|
 Back:#alarm 0.1 {config}}}
 
 #alias gagpicker {playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol;
 #pick {p:please select one of the options below|
 Short mapper and short flight control text (@ShortMapText), Shortcut alt s.:ShortMapText; #alarm 0.1 {gagpicker}|
 ship combat message gagger (@gagShipCombat), Shortcut ctrl g.:gagscombat; #alarm 0.1 {gagpicker}|
+Toggle Speech while AFK  (@speechAFKGagger), no shortcut.:speechafk; #alarm 0.1 {gagpicker}|
+Toggle Messages while someone's AFK  (@toggleAFKGagger), no shortcut.:toggleafk; #alarm 0.1 {gagpicker}|
 Miscellaneous mutariansi gagger (@tpr), no shortcut.:tpr; #alarm 0.1 {gagpicker}|
 Intraplanetary pod movement gagger (@SilentPod).:TogglePods; #alarm 0.1 {gagpicker}|
 trash/orbit messages gagger  (@gagHarvest), Shortcut ctrl h.:gagharvest; #alarm 0.1 {gagpicker}|
@@ -106,6 +111,7 @@ Back:#alarm 0.1 {config}}}
 #alias miscpicker {playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol;
 #pick {p:please select a setting from the following list|
 Numpad movement (@numpadon), shortcut alt+enter.:ToggleNumpad; #alarm 0.1 {miscpicker}|
+Toggle auto back up setting (@autobackupsetting), no shortcut.:silentlybackup; #alarm 0.1 {miscpicker}|
 SoundPack changes viewer (@spchange), shortcut alt+q:setchange; #alarm 0.1 {miscpicker}|
 Channel Logging (@ChannelLogging), shortcut alt control l. If this option is enabled, you may use shift-F2 to pull up the list of channels that have been logged.:Logging; #alarm 0.1 {miscpicker}|
 Check Lag. Ctrl + L. Note, This value may not always be accurate.:lag|
@@ -315,3 +321,7 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias cargogagger {#if {@cargogagger= "Enabled"} {#var cargogagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Empty cargo bays and undamaged vehicle components will no longer be gagged} VoiceOnly} {#var cargogagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {empty cargo bays and undamaged vehicle components will be gagged} VoiceOnly}}
 #alias speedgag {#if {@speedgagger= "Enabled"} {#var speedgagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {messages no longer be gagged while speedwalking} VoiceOnly} {#var speedgagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {messages will be gagged while speedwalking} VoiceOnly}}
 #alias devmod {#if {@devmode = "Enabled"} {#var devmode "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #Unload misc/dev.set; #say {Developer Mode deactivated.} VoiceOnly} {#var devmode "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #load  misc/dev.set; #say {Developer mode activated. Type "dev" to see the help before using this script.} VoiceOnly}}
+#alias toggleafk {#if {@toggleAFKGagger= "Enabled"} {#var toggleAFKGagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {AFK/brb messages no longer be gagged.} VoiceOnly} {#var toggleAFKGagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {AFK/BRB messages will be gagged.} VoiceOnly}}
+#alias speechafk {#if {@speechAFKGagger= "Enabled"} {#var speechAFKGagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Speech will remain as previously set during AFK/BRB.} VoiceOnly} {#var speechAFKGagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Speech output will be muted when AFK/BRB.} VoiceOnly}}
+#alias battlesuitmove {#if {@battlesuitMovement = "Enabled"} {#var battlesuitMovement "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Battlesuit movement sound will not be played.} VoiceOnly} {#var battlesuitMovement "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Battlesuit movement sound will be played.} VoiceOnly}}
+#alias silentlybackup {#if {@autobackupsetting = "Enabled"} {#var autobackupsetting "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #unalarm silentbackup; #say {Settings will no longer automaticly backed up.} VoiceOnly} {#var autobackupsetting "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #alarm silentbackup -900 {silentbackupsetting}; #say {Settings will now backed up automaticly every 15 minutes.} VoiceOnly}}

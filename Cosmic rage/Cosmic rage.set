@@ -8,6 +8,7 @@
 #var priv4 clear
 ;These are the Needed set files for the pack to function.
 
+#load misc/backupHandler.set
 #load misc/buffers.set
 #load misc/ConfigurationManager.set
 #load misc/firework.set
@@ -23,6 +24,7 @@
 #load Activities/dust.set
 #load activities/handmining.set
 #load activities/farming.set
+#load activities/fishing.set
 #load Activities/STARRES.set
 #load activities/hunting.set
 #load Activities/mechanicalMining.set
@@ -182,6 +184,10 @@ version; SilentlyLoadBuffers; #say {Welcome to the VIP Cosmic Rage experience!};
 #read 6 speedgagger 58;
 #read 6 devmode 59;
 #read 6 spchange 60;
+#read 6 toggleAFKGagger 61;
+#read 6 speechAFKGagger 62;
+#read 6 battlesuitMovement 63;
+#read 6 autobackupsetting 64;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {

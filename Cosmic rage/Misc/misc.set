@@ -3,9 +3,9 @@
 #trig {* is disconnecting: -} {BufferAdd connectionMessages %0}
 #TRIGGER {* enters from reality.} {#if {@LogOn = "Enabled"} {playsound {Cosmic Rage/general/misc/LoginOld.wav} @vol} {playsound {Cosmic Rage/general/misc/LoginNew.wav} @vol}; BufferAdd connectionMessages %0}
 #TRIGGER {It's a new player! * enters from reality.} {playsound {Cosmic Rage/general/misc/Cheer.wav} @vol; BufferAdd connectionMessages %0}
-#trigger {*is now AFK*} {bufferadd AFKMessages %0}
-#trigger {*will be right back*} {bufferadd AFKMessages %0}
-#trigger {* has returned*} {bufferadd AFKMessages %0}
+#trigger {*is now AFK*} {#if {@toggleAFKGagger = "Enabled"} {#gagline all; playsound {cosmic rage/general/misc/afk1.wav} @vol}; {bufferadd AFKMessages %0}}
+#trigger {*will be right back*} {#if {@toggleAFKGagger = "Enabled"} {#gagline all; playsound {cosmic rage/general/misc/afk1.wav} @vol}; {bufferadd AFKMessages %0}}
+#trigger {* has returned*} {#if {@toggleAFKGagger = "Enabled"} {#gagline all; playsound {cosmic rage/general/misc/afk2.wav} @vol}; {bufferadd AFKMessages %0}}
 #TRIGGER {You can't go that way.} {#gagline all; playsound {cosmic rage/general/misc/CantGo.wav} @vol};
 #TRIGGER {[[]Type a line of input *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
 #TRIGGER {[[]Enter * or *]} {playsound {cosmic rage/general/misc/prompt*2.wav} @vol};
@@ -154,13 +154,6 @@ playsound {cosmic rage/general/DOORS/doorlock.wav} @vol}}
 #trigger {*One or more polls have been posted. Please type * to see what.} {playsound {cosmic rage/general/misc/vote.wav} @vol; bufferadd Notices %0}
 #trigger {There have been the following message board posts that you are required to read: *} {
 playsound {cosmic rage/general/comms/messageBoardNotify.wav} @vol; bufferadd MessageBoard %0}
-#trigger {You cast your line.} {
-#gagline all;
-playsound {cosmic rage/activities/fishing/fishcast.wav} @vol}
-#trigger {You feel a tug on the line!} {playsound {cosmic rage/activities/fishing/fishbite.wav} @vol}
-#trigger {You frantically reel in your line...} {playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
-#trigger {You have caught *} {
-playsound {cosmic rage/activities/fishing/fishcatch.wav} @vol}
 #trigger {You hear a gunshot ring out across the out of character landscape. *} {
 playsound {cosmic rage/general/misc/reset.wav} @vol}
 #TRIGGER {* begins to enjoy *} {playsound {Cosmic Rage\general\Misc\peteat.wav} @vol ;#gagline all} {}

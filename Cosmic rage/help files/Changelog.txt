@@ -1,3 +1,10 @@
+2443 Nemesis, Credits to NightSky, Added many new sounds for fishing activities.
+2442 Nemesis, Added autobackup toggle for your settings, as well as toggle sounds for battlesuit movement.
+2441 Nemesis, Credits to FrauleinSnow, Fixed the AFK speech setting and made it toggleable through the configuration window, as well as added a toggle to either display if someone AFK or only play a sound without showing their message. PS: You can still view it through the AFKMessages buffer if you turn this one on.
+2440 Nemesis, Based on the  discussions, when you type afk or brb, you will no longer hear any speech from Cosmic Rage output. However, speech will resume once you return.
+2439 Nemesis, Fixed some sounds not working. ps: I accidentally deleted the line of triggers related to that, forgive me.
+2438 Nemesis, Due to numerous complaints about settings reverting to factory defaults after sp updates, I've introduced a backup handler to make your life easier. This tool will back up your settings after you click it through the Config/Sound Manager settings or by typing backupsetting. To restore, you can either click restore in the same configuration window or type restoresetting.
+2437 Nemesis, Added sewing machine sounds for all the skilled tailors throughout the Cosmic Rage universe.
 2436 Nemesis, code&sound credits to Johnson and AstrumAventor, added sounds when  you are swimming.
 2435 Nemesis, Credits to BabySeal2000, Fixed the confusion about speech in config settings.
 2434 Nemesis, Fixed clan notification sound.

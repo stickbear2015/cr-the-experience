@@ -26,6 +26,6 @@
 #trigger {* retracts back into the * of *} {playsound {Cosmic Rage/general/combat/battlesuit/retract.wav} @vol}
 #trigger {You plug * into the * systems.} {#gagline voice; playsound {cosmic rage/general/combat/battlesuit/charge2.wav} @gvol; #alarm 0.2 {loopsound {cosmic rage/general/combat/battlesuit/charge1.wav} @gvol;#var bchargeHandle %playHandle; #var bcharge 1}}
 #trigger {a charging light flashes green, and you unplug *} {#gagline voice; #alarm 0.3 {#if {@bcharge = 1} {#if {@Chargehandle > 0} {#pc @bchargeHandle stop; #var bcharge 0}}; playsound {cosmic rage/general/combat/battlesuit/charge2.wav} @gvol}}
-#trigger {* tur* * and clun* *} {playsound {Cosmic Rage/general/combat/battlesuit/move*2.wav} @vol}
-#trigger {* cros* and clun* *} {playsound {Cosmic Rage/general/combat/battlesuit/move*2.wav} @vol}
+#trigger {* tur* * and clun* *} {#if {@battlesuitMovement = "enabled"} {playsound {Cosmic Rage/general/combat/battlesuit/move*2.wav} @vol}}
+#trigger {* cros* and clun* *} {#if {@battlesuitMovement = "enabled"} {playsound {Cosmic Rage/general/combat/battlesuit/move*2.wav} @vol}}
 #trigger {A staticky voice issues forth from *: "Warning! Oxygen level is dangerously low."} {playsound {Cosmic Rage/general/combat/battlesuit/lowOxygen.wav} @vol}

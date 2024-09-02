@@ -42,3 +42,4 @@ playsound {cosmic rage/general/comms/sp2.wav} @CommsVol; BufferAdd Soundpacks %0
 ; #trigger {[[]Origins] *} {#if {%IfWord(Message from the Embassy:,%1," ")} {#abort 1}}
 #trigger {[[]Origins] *} {#if {%IfWord(~",%1,"")} {#abort 1};  playsound {Cosmic Rage/general/comms/Origins.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origin.log};#write 1 %0;#close 1}}
 ; #trigger {[[]Origins] (*) Message from the Embassy: *} {playsound {Cosmic Rage/general/comms/OriginsAuto.wav} @CommsVol; BufferAdd Origins %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Origins.log};#write 1 %0;#close 1}}
+#trigger {A voice comes over the * PA speakers announcing *: "*"} {playsound {cosmic rage/general/factory/pa2.wav} @CommsVol; BufferAdd pa %0}

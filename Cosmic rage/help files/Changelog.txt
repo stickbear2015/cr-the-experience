@@ -1,3 +1,4 @@
+2446 Nemesis: Fixed AFK Speech setting.
 2445, SkyfallBlindDreamer, Fixed triggers for departing and arriving from factories via teleport to align with the new text readouts.
 2444 Nemesis: Added sounds for public factory announcements.
 2443 Nemesis, Credits to NightSky, Added many new sounds for fishing activities.

@@ -1,3 +1,5 @@
+2449 Nemesis, Added experimental features to the soundpack settings. The scripts in this file are experimental, and if you like them, you can suggest adding them to the main release. This way, people who don’t want to enable the experimental features but still want to enjoy the sounds can enjoy so as well.
+2448 Nemesis, Aded room ambience for ammunition chamber. the sound is in there from long time ago.
 2447 Nemesis, Credits to NightSky, Fixed bracelet charm jingling text. it meant to gag voice to make it less spam instead of gag all.
 2446 Nemesis, Fixed AFK Speech setting.
 2445, SkyfallBlindDreamer, Fixed triggers for departing and arriving from factories via teleport to align with the new text readouts.

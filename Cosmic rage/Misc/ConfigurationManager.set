@@ -79,9 +79,9 @@ Back:#alarm 0.1 {config}}}
 #alias gagpicker {playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol;
 #pick {p:please select one of the options below|
 Short mapper and short flight control text (@ShortMapText), Shortcut alt s.:ShortMapText; #alarm 0.1 {gagpicker}|
-ship combat message gagger (@gagShipCombat), Shortcut ctrl g.:gagscombat; #alarm 0.1 {gagpicker}|
 Toggle Speech while AFK  (@speechAFKGagger), no shortcut.:speechafk; #alarm 0.1 {gagpicker}|
 Toggle Messages while someone's AFK  (@toggleAFKGagger), no shortcut.:toggleafk; #alarm 0.1 {gagpicker}|
+ship combat message gagger (@gagShipCombat), Shortcut ctrl g.:gagscombat; #alarm 0.1 {gagpicker}|
 Miscellaneous mutariansi gagger (@tpr), no shortcut.:tpr; #alarm 0.1 {gagpicker}|
 Intraplanetary pod movement gagger (@SilentPod).:TogglePods; #alarm 0.1 {gagpicker}|
 trash/orbit messages gagger  (@gagHarvest), Shortcut ctrl h.:gagharvest; #alarm 0.1 {gagpicker}|
@@ -115,6 +115,7 @@ Toggle auto back up setting (@autobackupsetting), no shortcut.:silentlybackup; #
 SoundPack changes viewer (@spchange), shortcut alt+q:setchange; #alarm 0.1 {miscpicker}|
 Channel Logging (@ChannelLogging), shortcut alt control l. If this option is enabled, you may use shift-F2 to pull up the list of channels that have been logged.:Logging; #alarm 0.1 {miscpicker}|
 Check Lag. Ctrl + L. Note, This value may not always be accurate.:lag|
+Toggle experimental sounds (@extrascript), no shortcut.:soundextras; #alarm 0.1 {miscpicker}|
 Back:#alarm 0.1 {config}}}
 
 ;Volumes
@@ -325,3 +326,4 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias speechafk {#if {@speechAFKGagger= "Enabled"} {#var speechAFKGagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Speech will remain as previously set during AFK/BRB.} VoiceOnly} {#var speechAFKGagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Speech output will be muted when AFK/BRB.} VoiceOnly}}
 #alias battlesuitmove {#if {@battlesuitMovement = "Enabled"} {#var battlesuitMovement "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Battlesuit movement sound will not be played.} VoiceOnly} {#var battlesuitMovement "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Battlesuit movement sound will be played.} VoiceOnly}}
 #alias silentlybackup {#if {@autobackupsetting = "Enabled"} {#var autobackupsetting "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #unalarm silentbackup; #say {Settings will no longer automaticly backed up.} VoiceOnly} {#var autobackupsetting "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #alarm silentbackup -900 {silentbackupsetting}; #say {Settings will now backed up automaticly every 15 minutes.} VoiceOnly}}
+#alias soundextras {#if {@extrascript = "Enabled"} {#var extrascript "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Extra script disabled.}} {#var extrascript "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Extra script enabled.}}}

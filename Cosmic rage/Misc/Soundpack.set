@@ -99,6 +99,9 @@
 #write 6 @spchange @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @toggleAFKGagger @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @speechAFKGagger @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @battlesuitMovement @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @autobackupsetting @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @extrascript @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}
 #alias SaveSettings {playsound {Cosmic Rage/general/misc/SpSave.wav} @vol; #say {Your soundpack settings and buffer list  have successfully been saved!}; ActualSave; AutoSaveBuffers}
 #key {Control-shift-R} {SpReload}

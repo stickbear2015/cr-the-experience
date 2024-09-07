@@ -7,7 +7,6 @@
 #var priv3 clear
 #var priv4 clear
 ;These are the Needed set files for the pack to function.
-
 #load misc/backupHandler.set
 #load misc/buffers.set
 #load misc/ConfigurationManager.set
@@ -188,12 +187,13 @@ version; SilentlyLoadBuffers; #say {Welcome to the VIP Cosmic Rage experience!};
 #read 6 speechAFKGagger 62;
 #read 6 battlesuitMovement 63;
 #read 6 autobackupsetting 64;
+#read 6 extrascript 65;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {
 #class ambon disable; #class shipamb disable; #class vehicleamb disable};
 #if {@devmode = "Enabled"} {#load misc/dev.set} {}
-
+#if {@extrascript = "Enabled"} {#load misc/extras.set} {}
 ;misc.
 #Alias login {#gagon all; 1; %charInfo(name); #wait (0.1); #ungagon; %charInfo(password)}
 #TRIGGER {synaptic signal verified. Sleep mode disengaged. Welcome back to Cosmic Rage!} {#if {@IntroPlaying = 1} {#pc @introhandle stop; #var IntroPlaying 0}; #if {@UpdateToggle = "Enabled"} {#alarm 1 {spversion; #var cvcheck 1}}} {} AnyCase

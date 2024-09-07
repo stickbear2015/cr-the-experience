@@ -403,6 +403,13 @@ loopsound {cosmic rage/ships/rooms/MedicalCenter.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "pod"; #var currentroom2 "notmisc"}};
+#If {%IfWord(ammunition,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "ammunition"} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop};
+loopsound {cosmic rage/ships/rooms/AmmoChamber.wav} @Shipvol;
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "ammunition"; #var currentroom2 "notmisc"}};
 #If {@CurrentRoom2 = "misc"} {
 #if {@currentroom <> "misc"} {
 #var currentroom2 "notmisc";

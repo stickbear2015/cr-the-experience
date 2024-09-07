@@ -1,6 +1,7 @@
-2446 Nemesis: Fixed AFK Speech setting.
+2447 Nemesis, Credits to NightSky, Fixed bracelet charm jingling text. it meant to gag voice to make it less spam instead of gag all.
+2446 Nemesis, Fixed AFK Speech setting.
 2445, SkyfallBlindDreamer, Fixed triggers for departing and arriving from factories via teleport to align with the new text readouts.
-2444 Nemesis: Added sounds for public factory announcements.
+2444 Nemesis, Added sounds for public factory announcements.
 2443 Nemesis, Credits to NightSky, Added many new sounds for fishing activities.
 2442 Nemesis, Added autobackup toggle for your settings, as well as toggle sounds for battlesuit movement.
 2441 Nemesis, Credits to FrauleinSnow, Fixed the AFK speech setting and made it toggleable through the configuration window, as well as added a toggle to either display if someone AFK or only play a sound without showing their message. PS: You can still view it through the AFKMessages buffer if you turn this one on.

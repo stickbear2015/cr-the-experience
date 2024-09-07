@@ -118,7 +118,7 @@ playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
 #trigger {You form the basic pattern of *} {#gagline all; playsound {Cosmic Rage/general/misc/sewing.wav} @vol}
 #trigger {threads and seams spool out from *} {#gagline all}
 #trigger {* falls to the tray at the bottom of *} {#gagline all}
-#trigger {* jangles a little on * worn on * wrist.} {#gagline all; playsound {cosmic rage/general/misc/BraceletChime.wav} @vol}
+#trigger {* jangles a little on * worn on * wrist.} {#gagline voice; playsound {cosmic rage/general/misc/BraceletChime.wav} @vol}
 
 ; afk setting for you.
 #trigger {You are now afk*} {#if {@speechAFKGagger = "Enabled"} {#var Speech "Enabled"; #SetSpeech incoming off}  }

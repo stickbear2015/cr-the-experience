@@ -5,3 +5,4 @@
 #trigger {The hum of the engines increase as the ship begins to move.} {#gagline display; playsound {cosmic rage/ships/movement/acceleration.wav} @vol}
 #trigger {The engines change the level of their hum for several moments as the direction is altered.} {#gagline display; playsound {cosmic rage/ships/combat/component/4/*5.wav} @vol}
 #trigger {The ship slows to a stop as the engines are powered down.} {#gagline display; playsound {cosmic rage/ships/movement/deceleration.wav} @vol}
+#trigger {There is the strained whine of power enhancers as the obfiscation field works to deflect incoming damage.} {#gagline all; playsound {cosmic rage/ships/combat/component/5/*4.wav} @vol}

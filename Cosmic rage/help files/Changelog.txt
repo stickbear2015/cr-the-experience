@@ -1,3 +1,5 @@
+2451 Nemesis, Fixed yelling and make it appear in the say buffer like real now. not in the fake code.
+2450 Nemesis, I've added a script that automatically installs the soundpack for you, making it easy for beginners to get started. It even allows you to create your own game session so you can jump right into playing without any hassle. Just run CRInstaller.bat as an administrator, enter your desired MUD session name, and the script will handle everything for you. Enjoy!
 2449 Nemesis, Added experimental features to the soundpack settings. The scripts in this file are experimental, and if you like them, you can suggest adding them to the main release. This way, people who don’t want to enable the experimental features but still want to enjoy the sounds can enjoy so as well.
 2448 Nemesis, Aded room ambience for ammunition chamber. the sound is in there from long time ago.
 2447 Nemesis, Credits to NightSky, Fixed bracelet charm jingling text. it meant to gag voice to make it less spam instead of gag all.

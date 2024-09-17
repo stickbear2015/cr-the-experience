@@ -103,8 +103,10 @@
 #trigger {you roll on the floor laughing at*} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
 #trigger {* rolls on the floor laughing*} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/rofl*3.wav} @vol}}
 #trigger {[[]*shouts*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/hosts/shout.wav} @vol; #additem say %0}} {} AnyCase
-#trigger {You yell: *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}}
-#trigger {* yells: *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; #additem say %0}}
+#trigger {You yell: *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; BufferAdd Say %0}}
+#trigger {You yell in *: *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; BufferAdd Say %0}}
+#trigger {* yells: *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; BufferAdd Say %0}}
+#trigger {* yells In *: *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Yell.wav} @vol; BufferAdd Say %0}}
 #trigger {*woof*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/puppy.wav} @vol}}
 #trigger {* barks madly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/bark.wav} @vol}}
 #trigger {* lets out a soft meow.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/meow*3.wav} @vol}}

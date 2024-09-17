@@ -240,7 +240,7 @@ playsound {cosmic rage/ships/combat/pm.wav} @CVol;
 #pc %playhandle pan %random(-4000,4000)}}
 #trigger {Target's * penetrated.} {
 #gagline all;
-#if {%ifword(shields,%1," ")} {
+#if {%ifword(shield,%1," ")} {
 playsound {cosmic rage/ships/combat/otherShieldsDown.wav} @CVol;
 #if {@panShipCombat = "Enabled"} {
 #pc %playhandle pan %random(-4000,4000)}};

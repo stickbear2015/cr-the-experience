@@ -78,3 +78,20 @@ playsound {cosmic rage/activities/star cores/core2.wav} @vol; #var CoreLoopHandl
 #pc @CoreLoopHandle stop}; playsound {cosmic rage/activities/star cores/core3.wav} @vol}}
 #trigger {Some pressurised gas is released from the star core.} {#gagline voice}
 #trigger {There is a soft, barely noticeable whir as sensors extend from both sides of the ship.} {playsound {cosmic rage\activities/star cores/sensor.wav} @vol} 
+#trigger {The holographic projection flickers briefly, replaced with a message asking: "* are you awake? Waiting for input."} {#sub {%1 are you awake? Waiting for input.}; playsound {cosmic rage/activities/Trash collection/display*3.wav} @vol}
+#trigger {The holographic image becomes crystal clear!} {#gagline display; playsound {cosmic rage/activities/trash collection/Investigate.wav} @vol}
+#trigger {The * side of the holographic projection *} {playsound {cosmic rage/activities/star cores/input1.wav} @vol;
+#if {%ifWord(is very blurry and unclear.,%2," ")} {
+playsound  {cosmic rage/activities/star cores/unclear.wav} @vol} {};
+#if {%ifWord(seems blurry,%2," ")} {
+playsound  {cosmic rage/activities/star cores/almostPerfect.wav} @vol} {};
+#if {%ifWord(%1,left," ")} {
+playsound  {cosmic rage/activities/star cores/input2.wav} @vol; #PC %Playhandle Pan -1500} {};
+#if {%ifWord(%1,right," ")} {
+playsound  {cosmic rage/activities/star cores/input2.wav} @vol; #PC %Playhandle Pan 1500}}
+#trigger {The deck begins to vibrate subtly as the ship reroutes power into the sensor array.} {#gagline display; playsound {cosmic rage/activities/star cores/vibrate.wav} @vol}
+#trigger {There is a subtle hum as small sensors begin to extend from their protective housings on the side of the ship.} {#gagline display; #alarm 0.4 {playsound {cosmic rage/ships/combat/component/4/*5.wav} @vol; playsound {cosmic rage/activities/star cores/scanner.wav} @vol}}
+#trigger {There is a sharp grind of metal against metal as a sensor is shifted to attain a better angle.} {#gagline display; playsound {cosmic rage/ships/combat/component/4/*5.wav} @vol}
+#trigger {You hear the star gear shift slightly against the hull.} {#gagline display; playsound {cosmic rage/ships/combat/component/5/*4.wav} @vol}
+#trigger {There is a subtle sliding sound followed by a muted thunk as sensors retract into protective casings.} {#gagline display; playsound {cosmic rage/activities/star cores/return.wav} @vol}
+#trigger {Some pressurised gas is released from the star core.} {#gagline all; playsound {cosmic rage/activities/planetoid/gas.wav} @vol}

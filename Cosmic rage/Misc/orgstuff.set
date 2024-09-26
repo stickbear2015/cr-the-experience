@@ -41,3 +41,5 @@
 #trigger {The baton is still recharging.} {#gagline all; playsound {cosmic rage/general/military/stuncharge.wav} @vol}
 #trigger {* attemp* to move, but the cuffs restrain *} {#gagline all; playsound {cosmic Rage/general/combat/stunned.wav} @gvol}
 #trigger {*hums quietly for a moment before it displays some information on the screen:} {#gagline voice; playsound {cosmic rage/ships/computer/display*4.wav} @vol}
+#trigger {You tap in the code and grab * from *} {playsound {cosmic rage/general/military/weaponSafe1.wav} @vol}
+#trigger {You type in your authorisation code and drop * into *} {playsound {cosmic rage/general/military/weaponSafe2.wav} @vol}

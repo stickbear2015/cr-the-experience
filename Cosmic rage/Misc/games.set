@@ -48,3 +48,11 @@
 #trigger {You shift your focu* to*} {playsound {cosmic rage/general/games/plating.wav} @vol}
 #trigger {*elected for moving.} {#gagline voice; playsound {cosmic rage/general/games/chessPlay.wav} @Vol; #PC %PlayHandle frequency 60000}
 #trigger {It's your turn.} {playsound {cosmic rage/general/games/poker.wav} @vol}
+;farkle game
+#trigger {* roll* dice.} {playsound {cosmic rage/general/games/dice.wav} @vol}
+#trigger {* banks on a total of *.} {playsound {cosmic rage/general/games/bank.wav} @vol}
+#trigger {* places a bet of * chips.} {playsound {cosmic rage/general/games/pokerchips.wav} @vol}
+#trigger {* has hot dice!} {playsound {cosmic rage/general/games/chessPlay.wav} @vol; #PC %Playhandle frequency 32000}
+#trigger {You bank for a total of *.} {playsound {cosmic rage/general/games/bank.wav} @vol}
+#trigger  {* scores * points with *.} {playsound {cosmic rage/general/games/chessPlay.wav} @vol}
+#trigger {You slide *chips forward, placing your bet.} {playsound {cosmic rage/general/games/pokerchips.wav} @vol}

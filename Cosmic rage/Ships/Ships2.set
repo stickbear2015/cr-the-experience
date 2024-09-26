@@ -152,3 +152,4 @@ playsound {cosmic rage/ships/misc/OtherLaunch*3.wav} @vol}
 #trigger {Exiting the showcase.} {#pc @ShipHandle stop; l}
 #trigger {* pul* down a heavy lever with a thud.} {#if {@quan = 1} {
 #pc @quanhandle stop; #var quan 0}}
+#trigger {A low hum fills the ship as the shields begin recharging.} {#gagline display; playsound {cosmic rage/ships/misc/shieldRecharge.wav} @Vol}

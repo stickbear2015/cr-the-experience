@@ -1,3 +1,4 @@
+2459 Nemesis, code credits to Johnson, Make the doorsound played if you open and close the door manually. but I can't make it work for other POV in the same room. sorry for my mistake before.
 2458 Nemesis, Added sounds for shield recharging.
 2457 Nemesis, Added alt z for checking exits because Numpad has ctrl Num0. We must be fair to TKL users.
 2456 Nemesis, Added more  sounds to Star coring activities.

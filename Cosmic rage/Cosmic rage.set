@@ -193,6 +193,7 @@ version; SilentlyLoadBuffers; #say {Welcome to the VIP Cosmic Rage experience!};
 #if {@ambon = "Disabled"} {
 #class ambon disable; #class shipamb disable; #class vehicleamb disable};
 #if {@devmode = "Enabled"} {#load misc/dev.set} {}
+#if {@numpadon = "Enabled"} {#load misc/keysHandler.set} {}
 #if {@extrascript = "Enabled"} {#load misc/extras.set} {}
 ;misc.
 #Alias login {#gagon all; 1; %charInfo(name); #wait (0.1); #ungagon; %charInfo(password)}

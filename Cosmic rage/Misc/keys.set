@@ -59,50 +59,6 @@
 #if {@cMusic = "Disabled"} {
 #say {You must enable combat music for this feature to work correctly.}}}}
 #key {alt-Enter} {togglenumpad}
-#Key {Numpad1} {1} {Numpad}
-#Key {Control-Numpad1} {sw}
-#Key {Numpad2} {2} {Numpad}
-#Key {Control-Numpad2} {s}
-#Key {Numpad3} {3} {Numpad}
-#Key {Control-Numpad3} {se}
-#Key {Numpad4} {4} {Numpad}
-#Key {Control-Numpad4} {w}
-#Key {Numpad5} {5} {Numpad}
-#Key {Control-Numpad5} {look}
-#Key {Numpad6} {6} {Numpad}
-#Key {Control-Numpad6} {e}
-#Key {Numpad7} {7} {Numpad}
-#Key {Control-Numpad7} {nw}
-#Key {Numpad8} {8} {Numpad}
-#Key {Control-Numpad8} {n}
-#Key {Numpad9} {9} {Numpad}
-#Key {Control-Numpad9} {ne}
-#key {control-numpaddash} {down} {Numpad}
-#key {control-numpadplus} {up}
-#Key {Numpad0} {coords} {Numpad}
-#Key {Control-Numpad0} {exits}
-#Key {Numpad/} {auto} {Numpad}
-#key {Control-Numpad/} {in}
-#Key {Numpad*} {man} {Numpad}
-#Key {Control-Numpad*} {out}
-#key Numpaddash {-} {numpad}
-#Key {Numpadplus} {+} {Numpad}
-#Key {Alt-O} {north} {}
-#Key {Alt-M} {south} {}
-#Key {Alt-J} {west} {}
-#Key {Alt-K} {look} {}
-#Key {Alt-Z} {exits} {}
-#Key {Alt-L} {east} {}
-#Key {Alt-P} {northeast} {}
-#Key {Alt-I} {northwest} {}
-#Key {Alt-N} {southwest} {}
-#Key {Alt-,} {southeast} {}
-#Key {Alt-U} {up} {}
-#Key {Alt-d} {down} {}
-#Key {Alt-Control-U} {ups} {}
-#Key {Alt-Control-D} {ds} {}
-#Key {Alt-X} {out} {}
-#Key {Alt-G} {go} {}
 #Key {Control-m} {cancel mapper} {}
 #key {Shift-F1} {MuteSound}
 #key F2 {config}

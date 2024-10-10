@@ -1,4 +1,4 @@
-#trigger {You snap a picture of * using *} {playsound {cosmic rage/general/telephone/cam.wav} @vol}
+#trigger {You snap a picture of * with *} {playsound {cosmic rage/general/telephone/cam.wav} @vol}
 #trigger {From * you hear the voice of *} {playsound {cosmic rage/general/telephone/talk.wav} @vol}
 #trigger {From * you hear short buzzes, indicating the target was unreachable. You quickly hang up.} {#gagline all; playsound {cosmic rage/general/telephone/error.wav} @vol}
 #trigger {You hear a click from *} {#gagline all; playsound {cosmic rage/general/telephone/click.wav} @vol}

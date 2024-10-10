@@ -1,6 +1,6 @@
 #trigger {The floor under your feet gives a slight shudder and you hear an ominous vibration echo throughout the area.} {#gagline all}
-#TRIGGER {You slide a switch on the main console until the arrow rests under "Manual Pilot Mode."} {#gagline all; playsound {cosmic rage/ships/misc/manual.wav} @vol};
-#TRIGGER {You slide a switch on the main console until the arrow rests under "Automatic Pilot Mode."} {#gagline voice; playsound {cosmic rage/ships/misc/auto.wav} @vol};
+#TRIGGER {You slide a switch on the main console until the arrow rests under "Manual Pilot Mode."} {#gagline all; playsound {cosmic rage/ships/misc/manual.wav} @vol; #var shipmove 1};
+#TRIGGER {You slide a switch on the main console until the arrow rests under "Automatic Pilot Mode."} {#gagline voice; playsound {cosmic rage/ships/misc/auto.wav} @vol; #var shipmove 0};
 #TRIGGER {* jump into the sector.} {playsound {cosmic rage/ships/misc/EnterSector.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)};
 #TRIGGER {* jump out of the sector.} {playsound {cosmic rage/ships/misc/ExitSector.wav} @vol; #PC %PlayHandle Pan %Random(-4000,4000)};
 #TRIGGER {A small light blinks on next to the intercom and you hear the voice of * say: "*"} {playsound {cosmic rage/ships/com/pa*2.wav} @CommsVol; #additem PA %0}

@@ -1,0 +1,53 @@
+#Key {Numpad1} {#if {@shipmove = 1} {1} {sw}}
+#Key {Numpad2} {#if {@shipmove = 1} {2} {s}}
+#Key {Numpad3} {#if {@shipmove = 1} {3} {se}}
+#Key {Numpad4} {#if {@shipmove = 1} {4} {w}}
+#Key {Numpad5} {#if {@shipmove = 1} {fuel} {look}}
+#Key {Numpad6} {#if {@shipmove = 1} {6} {e}}
+#Key {Numpad7} {#if {@shipmove = 1} {7} {nw}}
+#Key {Numpad8} {#if {@shipmove = 1} {8} {n}}
+#Key {Numpad9} {#if {@shipmove = 1} {9} {ne}}
+#key {numpaddash} {#if {@shipmove = 1} {+} {up}}
+#key {numpadplus} {#if {@shipmove = 1} {-} {down}}
+#Key {Numpad0} {#if {@shipmove = 1} {c} {exits}}
+#Key {Numpad/} {#if {@shipmove = 1} {auto} {i}}
+#Key {Numpad*} {#if {@shipmove = 1} {man} {in}}
+#key {Control-NUMPAD*} {out}
+#key {Control-NUMPAD1} {southwestup}
+#key {Control-NUMPAD2} {southup}
+#key {Control-NUMPAD3} {southeastup}
+#key {Control-NUMPAD4} {westup}
+#key {Control-NUMPAD6} {eastup}
+#key {Control-NUMPAD7} {northwestup}
+#key {Control-NUMPAD8} {northup}
+#key {Control-NUMPAD9} {northeastup}
+#key {Control-Alt-NUMPAD1} {southwestdown}
+#key {Control-Alt-NUMPAD2} {southdown}
+#key {Control-Alt-NUMPAD3} {southeastdown}
+#key {Control-Alt-NUMPAD4} {westdown}
+#Key {Control-Alt-NUMPAD5} {go} {}
+#key {Control-Alt-NUMPAD6} {eastdown}
+#key {Control-Alt-NUMPAD7} {northwestdown}
+#key {Control-Alt-NUMPAD8} {northdown}
+#key {Control-Alt-NUMPAD9} {northeastdown}
+#Key {Control-NUMPADDASH} {upstairs} {}
+#Key {Control-NUMPADPLUS} {downstairs} {}
+#Key {Control-Alt-NUMPADDASH} {climbup} {}
+#Key {Control-Alt-NUMPADPLUS} {climbdown} {}
+#Key {Alt-O} {#if {@shipmove = 1} {8} {north}}
+#Key {Alt-M} {#if {@shipmove = 1} {2} {south}}
+#Key {Alt-J} {#if {@shipmove = 1} {4} {west}}
+#Key {Alt-K} {#if {@shipmove = 1} {c} {exits}}
+#Key {Alt-Z} {#if {@shipmove = 1} {auto} {in}}
+#Key {Alt-X} {#if {@shipmove = 1} {man} {out}}
+#Key {Alt-L} {#if {@shipmove = 1} {6} {east}}
+#Key {Alt-P} {#if {@shipmove = 1} {9} {northeast}}
+#Key {Alt-I} {#if {@shipmove = 1} {7} {northwest}}
+#Key {Alt-N} {#if {@shipmove = 1} {1} {southwest}}
+#Key {Alt-,} {#if {@shipmove = 1} {3} {southeast}}
+#Key {Alt-U} {#if {@shipmove = 1} {+} {up}}
+#Key {Alt-d} {#if {@shipmove = 1} {-} {down}}
+#Key {Alt-Control-U} {ups} {}
+#Key {Alt-Control-D} {ds} {}
+#Key {Alt-G} {go} {}
+#key {NumPad.} {#if {@shipmove = 1} {#var shipmove 0; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You can now use the NumPad keys to Control your character's movement.}} {#var shipmove 1; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You can now use your NumPad to Control your ship or vehicle around.}}}

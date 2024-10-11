@@ -279,7 +279,7 @@ loopsound {cosmic rage/Ambiences/Storage.wav} @roomvol;
 #if {@currentroom <> "teleportation"} {
 #if {@RoomSoundPlaying = 1} {
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
-loopsound {cosmic rage/Ambiences/Storage.wav} @roomvol;
+loopsound {cosmic rage/Ambiences/teleport.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "teleportation"; #var currentroom2 "notmisc"}};
 #If {%IfWord(drone,@RoomName," ")} {
 #var currentroom2 "notmisc";

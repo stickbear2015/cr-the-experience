@@ -410,6 +410,13 @@ loopsound {cosmic rage/Ambiences/escape Pod.wav} @Shipvol;
 #pc @ShipHandle stop};
 loopsound {cosmic rage/ships/rooms/AmmoChamber.wav} @Shipvol;
 #Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "ammunition"; #var currentroom2 "notmisc"}};
+#If {%IfWord(teleportation,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "teleportation"} {
+#If {@ShipSoundPlaying = 1} {
+#pc @ShipHandle stop};
+loopsound {cosmic rage/Ambiences/teleport.wav} @Shipvol;
+#Var shiphandle %Playhandle; #var ShipSoundPlaying 1; #var currentroom "teleportation"; #var currentroom2 "notmisc"}};
 #If {@CurrentRoom2 = "misc"} {
 #if {@currentroom <> "misc"} {
 #var currentroom2 "notmisc";

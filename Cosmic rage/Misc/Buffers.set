@@ -28,7 +28,7 @@
 }
 }
 };
-#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|birthday|changes|Chargen|CashPointsSkillsAndLeveling|chat|Chess|Clanchat|ClanConflict|computer|ConnectionMessages|Cult|All0Buffers|Dispatch|Distress|drone|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Mapper|Mentor|MessageBoard|MI|Military|Missions|Movement|MusicFM|newbie|newbiehelpers|News|notices|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|rooc|RP|say|SDL|Ship|Socials|SOS|Soundpacks|Squad|SubAnnouncements|Tracebacks|trade|Unsec};
+#var MasterBufferList {admin|AdminChat|AFKMessages|announcements|APilotsParody|Arena|Auction|Brag|birthday|changes|Chargen|CashPointsSkillsAndLeveling|chat|Chess|Clanchat|ClanConflict|computer|ConnectionMessages|Cult|All0Buffers|Dispatch|Distress|drone|FlightControl|general|GMC|GroundToAir|HelperDrone|Htpc|HTPL|ICPrivate|InfoComputerNotifications|intel|Jag|Mapper|Mentor|MessageBoard|MI|Military|MiniGames|Missions|Movement|MusicFM|newbie|newbiehelpers|News|notices|OOC|OOCPrivate|Org|Origins|pa|Poker|PN|recruitments|rooc|RP|say|SDL|Ship|Socials|SOS|Soundpacks|Squad|SubAnnouncements|Tracebacks|trade|Unsec};
 #If {%Defined(CurrentBufferList)=0} {#var CurrentBufferList {chat|general|All0Buffers|ICPrivate|intel|ship|pa|FlightControl|say|rooc|OOCPrivate|announcements|changes|notices|newbiehelpers}};
 #Var bufferFavourites {
 b1:1null

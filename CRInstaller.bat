@@ -87,12 +87,11 @@ echo All files have been processed.
 echo MUD session setup complete.
 echo.
 echo To complete the setup, follow these steps:
-echo 1. Open VIP Mud and locate the session named {mudName}.
-echo 2. Press Control + E to access session settings.
+echo 1. Open VIP Mud and locate the session named %mudName%.
+echo 2. Press Control + E to access the session settings.
 echo 3. Configure the ports to 7777. host to cosmicrage.earth. and set the Cosmic Rage directory to "Cosmic Rage" as indicated in the readme file.
 echo.
 
-:: Prompt to open readme file
 set /p openReadme=Do you want to open the readme file now? (Y/N): 
 if /I "%openReadme%"=="Y" (
     start "" "%target%\readme.txt"

@@ -25,6 +25,7 @@ playsound {Cosmic Rage/general/comms/Missions.wav} @CommsVol; BufferAdd missions
 #TRIGGER {Link with * successful.} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {You are now friends with * Say hello by typing OTR * hello!} {playsound {Cosmic Rage/general/comms/linkConfirmed.wav} 85} {} AnyCase
 #TRIGGER {[[]Room OOC]*} {playsound {cosmic rage/general/comms/rooc.wav} @CommsVol; BufferAdd rooc %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char rooc.log};#write 1 %0;#close 1}} {} AnyCase
+#TRIGGER {[[]Minigame Network]*} {playsound {cosmic rage/general/comms/minigame.wav} @CommsVol; BufferAdd MiniGames %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char MiniGames.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Intel]*: "*"} {#if {@QGag = 1} {#sub {[Intel]%1: %2}};
 playsound {cosmic rage/general/comms/intel.wav} @CommsVol; BufferAdd intel %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char intel.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Intel] *} {#if {%IfWord(~",%1,"")} {#abort 1};

@@ -70,7 +70,7 @@ playsound {cosmic rage/general/misc/ping.wav} @vol}
 #trigger {You are enveloped by a bright beam of light!} {
 playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
 #trigger {You are surrounded by a beam of light. When it clears, you are somewhere else.} {#gagline all; playsound {cosmic rage/general/misc/teleport*2.wav} @vol; #if {@musicplaying = 1} {#pc @musichandle stop}; #var currentroom 0}
-#TRIGGER {You raise your rank to *} {playsound {cosmic rage/general/Level/Level.wav} @vol; bufferadd CashPointsSkillsAndLeveling %0}
+#TRIGGER {You have achieved the rank of *} {playsound {cosmic rage/general/Level/Level.wav} @vol; bufferadd CashPointsSkillsAndLeveling %0}
 #TRIGGER {I don't understand that.} {playsound {cosmic rage/general/misc/CommandWrong.wav} @vol; #if {@GameError = "Disabled"} {#gagline all}}
 #trigger {Type a line of input.} {
 playsound {cosmic rage/general/misc/prompt*2.wav} @vol}
@@ -178,7 +178,6 @@ playsound {cosmic rage/general/misc/reset.wav} @vol}
 #trigger {A song begins to blair from hidden speakers.} {#gagline all}
 #trigger {"We wish you a merry Christmas."} {#gagline all}
 #trigger {"And a happy new year!"} {#gagline all}
-#trigger {*You can raise your rank!} {playsound {Cosmic Rage/general/Level/Raise.wav} @vol}
 #trigger {* reports it attempted to do your command to the best of its ability.} {#gagline all; #var HD 0}
 #trigger {Via *, * located at * informs you:} { #gagline all; #var HD 1; playsound {Cosmic Rage/general/misc/droid.wav} @vol}
 #trigger {* Game saved.} {playsound {Cosmic Rage/general/misc/GameSave.wav} @vol}

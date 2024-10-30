@@ -29,7 +29,7 @@
 #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/cough*5.wav} @vol}}}
 
 #TRIGGER {You belch.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/belch.wav} @vol}}
-#TRIGGER {* belches.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/belch.wav} @vol}}
+#TRIGGER {* belchs.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/belch.wav} @vol}}
 #TRIGGER {You burp.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/burp.wav} @vol}}
 #TRIGGER {* burps.} {#if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/burp.wav} @vol}}
 #TRIGGER {You cackle.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {cosmic rage/general/socials/cackle.wav} @vol}}

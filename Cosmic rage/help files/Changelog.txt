@@ -1,3 +1,6 @@
+2469 Nemesis, Added a really cool sound when the host heals someone using their ability. ps: Please don't misuse it, a note to the hosts.
+2468 Nemesis, Credits to OlegThesnowman, FIxed the typo on the scripts making pn1 things not work as it should be
+2467 Nemesis, Changed the ambient sound of normal vehicle into something newer and fancier.
 2466 Nemesis, Fixed the rank up sound not playing due to new ranking system.
 2465 Nemesis, Fixed yell for real now, I hope so.
 2464 Nemesis, Due to pressure from everyone in the Minigames, I've added sounds and a buffer for the MiniGames channel.

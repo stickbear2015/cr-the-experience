@@ -270,7 +270,7 @@ playsound {cosmic rage\general\socials\collapse3.wav} @CVol}
 #trigger {A bright flash fills the windows and the ship shoots into a stargate.} {playsound {Cosmic Rage/ships/movement/stargate.wav} @CVol; #gagline all}
 #trigger {alternating dark and light flashes fill the room as the ship continues to travel through the stargate.} {playsound {Cosmic Rage/ships/misc/StargateFlash.wav} @CVol; #pc %playhandle pan %random(-4000,4000); #gagline all}
 #trigger {Another bright flash fills the room as the ship exits the stargate!} {playsound {Cosmic Rage/ships/misc/stargateNotification.wav} @CVol; #gagline all}
-#trigger {*"Warning, warning, enemies detected in the sector. enemies detected in the sector."} {playsound {Cosmic Rage/ships/misc/Buzzer.wav} @CVol}
+#trigger {*"Warning, warning, enemies detected in the sector. enemies detected in the sector."} {playsound {Cosmic Rage/ships/misc/Buzzer.wav} @CVol; #var hits 0; #var destroyed 0; #var indirect 0; #var shotcount 0}
 #trigger {*"Firing molecular disrupter at *} {#gagline all}
 #trigger {On screen you see a bomb travelling towards *} {playsound {Cosmic Rage/ships/combat/Bomb.wav} @CVol; #gagline all}
 #trigger {You see bomb explode *} {playsound {Cosmic Rage/ships/combat/BombExplode.wav} @CVol}
@@ -323,8 +323,6 @@ playsound {Cosmic Rage/ships/Com/PA*2.wav} @CommsVol; #if {@CombatMusicPlaying =
 ;script for shot counting
 #trigger {The computer announces: "Indirect hit on *"} {#math Indirect {@Indirect + 1}}
 #trigger {The computer announces: "Direct hit on *"} {#math hits {@hits + 1}}
-#trigger {The computer announces: "End of mission report: *"} {#say {your last shot count to the enemy is: @counting. you've achieve @persen% hits from @destroyed enemies. this is good.}}
-#trigger {On screen, a pulsing light indicates there is only 10 seconds of rift time left.} {#var hits 0; #var destroyed 0; #var indirect 0; #var shotcount 0}
 #key alt-f1 {
     #if {@destroyed > 0} {
 #math counting {@hits+@Indirect};

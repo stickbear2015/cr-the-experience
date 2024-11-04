@@ -1,3 +1,6 @@
+2472 Nemesis, reveal all the trains messages that were previously gagged. Let us begin to appreciate the host who crafted these messages with efforts  and stop gagging them again.
+2471 Nemesis, Fixed an issue where Avengers were not appearing on the output screen, which caused confusion about what happened.
+2470 Nemesis, Fix things regarding to clan and adjust so control p does not saying about ship combat because it's much more than just combat stuff anyway. last but not least, added new hotkey (alt-shift-m) to mute/unmute ooc channel if you feel the ooc channel is way to spammy and you don't want to turn them off, muteOoc is the other way to do that. Thansk to those who report this.
 2469 Nemesis, Added a really cool sound when the host heals someone using their ability. ps: Please don't misuse it, a note to the hosts.
 2468 Nemesis, Credits to OlegThesnowman, FIxed the typo on the scripts making pn1 things not work as it should be
 2467 Nemesis, Changed the ambient sound of normal vehicle into something newer and fancier.

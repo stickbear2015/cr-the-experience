@@ -148,3 +148,4 @@
 #key {Control-alt-shift-S} {SaveBuffers};
 #key {Control-alt-shift-L} {LoadBuffers}
 #key alt-q {setchange}
+#key alt-shift-m {muteOoc}

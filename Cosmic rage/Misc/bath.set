@@ -16,15 +16,15 @@ playsound {cosmic rage/general/house/ShowerCurtainOpen.wav} @vol};
 #if {%ifWord(close,%1," ")} {
 playsound {cosmic rage/general/house/ShowerCurtainClose.wav} @vol}} {} AnyCase
 
-#trigger {You turn on the taps.} {#gagline all; #var bathloop 1; playsound {cosmic rage/general/house/bath1.wav} @vol; #var bathHandle %playHandle; #var bath 1; #alarm 10 {#if {@bathloop = 1} {loopsound {cosmic rage/general/house/bath4.wav} @vol; #var bath1Handle %playHandle; #var bath1 1}}}
-#trigger {You shut off the taps.} {#gagline all; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
-#trigger {You pull out the plug.} {#gagline all; #var bathgurgle 1; playsound {cosmic rage/general/house/bath3.wav} @vol; #var bath3Handle %playHandle; #var bath3 1; #alarm 8 {#if {@bathgurgle = 1} {loopsound {cosmic rage/general/house/bath6.wav} @vol; #var bath6Handle %playHandle; #var bath6 1}}}
-#trigger {The plug gives a gurgle as the bath empties.} { #gagline all; #var bathgurgle 0; playsound {cosmic rage/general/house/bath5.wav} @vol; #if {@bath3 = 1} {#pc @bath3Handle stop; #var bath3 0} #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
-#trigger {Some of the water drains away.} {#gagline all}
-#trigger {The water level rises a little.} {#gagline all}
-#trigger {* shuts off the taps.} {#gagline all; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
-#trigger {The taps shut off.} {#gagline all; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
+#trigger {You turn on the taps.} {gagAll; #var bathloop 1; playsound {cosmic rage/general/house/bath1.wav} @vol; #var bathHandle %playHandle; #var bath 1; #alarm 10 {#if {@bathloop = 1} {loopsound {cosmic rage/general/house/bath4.wav} @vol; #var bath1Handle %playHandle; #var bath1 1}}}
+#trigger {You shut off the taps.} {gagAll; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
+#trigger {You pull out the plug.} {gagAll; #var bathgurgle 1; playsound {cosmic rage/general/house/bath3.wav} @vol; #var bath3Handle %playHandle; #var bath3 1; #alarm 8 {#if {@bathgurgle = 1} {loopsound {cosmic rage/general/house/bath6.wav} @vol; #var bath6Handle %playHandle; #var bath6 1}}}
+#trigger {The plug gives a gurgle as the bath empties.} { gagAll; #var bathgurgle 0; playsound {cosmic rage/general/house/bath5.wav} @vol; #if {@bath3 = 1} {#pc @bath3Handle stop; #var bath3 0} #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
+#trigger {Some of the water drains away.} {gagAll}
+#trigger {The water level rises a little.} {gagAll}
+#trigger {* shuts off the taps.} {gagAll; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
+#trigger {The taps shut off.} {gagAll; #var bathloop 0; playsound {cosmic rage/general/house/bath2.wav} @vol; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}}
 #trigger {You climb out of *} {#var bathloop 0; #if {@bath1 = 1} {#pc @bath1Handle stop; #var bath1 0}; #if {@bath = 1} {#pc @bathHandle stop; #var bath 0}; #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
 #trigger {The taps are on.} {#if {@bathloop = 0} {loopsound {cosmic rage/general/house/bath4.wav} @vol; #var bath1Handle %playHandle; #var bath1 1}}
-#trigger {You replace the plug.} { #gagline all; #var bathgurgle 0; playsound {cosmic rage/general/house/bath5.wav} @vol; #if {@bath3 = 1} {#pc @bath3Handle stop; #var bath3 0} #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
-#trigger {* replaces the plug.} { #gagline all; #var bathgurgle 0; playsound {cosmic rage/general/house/bath5.wav} @vol; #if {@bath3 = 1} {#pc @bath3Handle stop; #var bath3 0} #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
+#trigger {You replace the plug.} { gagAll; #var bathgurgle 0; playsound {cosmic rage/general/house/bath5.wav} @vol; #if {@bath3 = 1} {#pc @bath3Handle stop; #var bath3 0} #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}
+#trigger {* replaces the plug.} { gagAll; #var bathgurgle 0; playsound {cosmic rage/general/house/bath5.wav} @vol; #if {@bath3 = 1} {#pc @bath3Handle stop; #var bath3 0} #if {@bath2 = 1} {#pc @bath2Handle stop; #var bath2 0}; #if {@bath6 = 1} {#pc @bath6Handle stop; #var bath6 0}}

@@ -1,15 +1,15 @@
-#trigger {You cast your line.} {#gagline all; playsound {cosmic rage/activities/fishing/fishcast.wav} @vol}
+#trigger {You cast your line.} {gagAll; playsound {cosmic rage/activities/fishing/fishcast.wav} @vol}
 #trigger {You frantically reel in your line...} {playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
 #trigger {You have caught *} {playsound {cosmic rage/activities/fishing/fishcatch.wav} @vol}
 #trigger {You frantically reel in your line...} {playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
-#trigger {Your line trails through the water.} {#gagline all; playsound {cosmic rage/activities/fishing/fishLine*3.wav} @vol}
-#trigger {You feel that you might have just missed a catch.} {#gagline voice; playsound {cosmic rage/activities/fishing/missCatch.wav} @vol}
-#trigger {You feel a tug on the line.} {#gagline voice; playsound {cosmic rage/activities/fishing/fishbite.wav} @vol}
-#trigger {You keep winding in the reel.} {#gagline voice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
-#trigger {You begin reeling in your line...} {#gagline voice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
-#trigger {The fish suddenly leaps from the water, giving you a chance to reel it in a bit quicker!} {#gagline voice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
-#trigger {You reel in your line...} {#gagline voice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
-#trigger {You pull sharply up on * attempting to set the hook properly.} {#gagline voice; playsound {cosmic rage/activities/fishing/hookIn.wav} @vol}
-#trigger {You feel the fish give a jerk, and the line suddenly goes slack.} {#gagline voice; playsound {cosmic rage/activities/fishing/hook.wav} @vol}
-#trigger {You reel in your rod.} {#gagline voice; playsound {cosmic rage/activities/fishing/fishReelIn.wav} @vol}
-#trigger {You begin to load * from *} {#gagline all; playsound {cosmic rage/activities/fishing/loading.wav} @vol}
+#trigger {Your line trails through the water.} {gagAll; playsound {cosmic rage/activities/fishing/fishLine*3.wav} @vol}
+#trigger {You feel that you might have just missed a catch.} {gagVoice; playsound {cosmic rage/activities/fishing/missCatch.wav} @vol}
+#trigger {You feel a tug on the line.} {gagVoice; playsound {cosmic rage/activities/fishing/fishbite.wav} @vol}
+#trigger {You keep winding in the reel.} {gagVoice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
+#trigger {You begin reeling in your line...} {gagVoice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
+#trigger {The fish suddenly leaps from the water, giving you a chance to reel it in a bit quicker!} {gagVoice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
+#trigger {You reel in your line...} {gagVoice; playsound {cosmic rage/activities/fishing/fishreel.wav} @vol}
+#trigger {You pull sharply up on * attempting to set the hook properly.} {gagVoice; playsound {cosmic rage/activities/fishing/hookIn.wav} @vol}
+#trigger {You feel the fish give a jerk, and the line suddenly goes slack.} {gagVoice; playsound {cosmic rage/activities/fishing/hook.wav} @vol}
+#trigger {You reel in your rod.} {gagVoice; playsound {cosmic rage/activities/fishing/fishReelIn.wav} @vol}
+#trigger {You begin to load * from *} {gagAll; playsound {cosmic rage/activities/fishing/loading.wav} @vol}

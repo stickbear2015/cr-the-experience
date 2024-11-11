@@ -63,4 +63,4 @@ BufferAdd Computer {%1: "%2"};
 }
 };
 #trigger {The computer announces: "Proximity alert! One or more starships are within 3 units of this vessel!"} {playsound {cosmic rage/ships/computer/prox.wav} @vol}
-#trig {Bays: *} {#gagline all}
+#trig {Bays: *} {gagAll}

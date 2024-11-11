@@ -1,8 +1,8 @@
 ;sharpening
-#TRIGGER {You pick one with *} {#gagline all; playsound {cosmic rage/general/combat/dragons/sharpen.wav} @vol}
-#TRIGGER {You run your claws along the edge of the rock, slowly sharpening them.} {#gagline all}
-#TRIGGER {You change your angle, and sharpen the tips of the claws.} {#gagline all}
-#trigger {You finish sharpening your claws, and shove the rock into the water with a splash.} {#gagline all; playsound {Cosmic Rage/general/combat/armor/water.wav} @vol}
+#TRIGGER {You pick one with *} {gagAll; playsound {cosmic rage/general/combat/dragons/sharpen.wav} @vol}
+#TRIGGER {You run your claws along the edge of the rock, slowly sharpening them.} {gagAll}
+#TRIGGER {You change your angle, and sharpen the tips of the claws.} {gagAll}
+#trigger {You finish sharpening your claws, and shove the rock into the water with a splash.} {gagAll; playsound {Cosmic Rage/general/combat/armor/water.wav} @vol}
 
 ;flying
 #trigger {You unfurl your * and launch into the sky.} {loopsound {Cosmic Rage/general/misc/DragonStartingToFly.wav} @vol; #var FlyingStarthandle %playhandle; #var FlyingStart 1}
@@ -29,5 +29,5 @@
 #var FlyingStart 0}};
 #if {@flyinghandle > 0} {
 #pc @Flyinghandle stop}; playsound {Cosmic Rage/general/misc/DragonLanding.wav} @vol}
-#TRIGGER {You begin to use * to sharpen your claws.} {#gagline all; playsound {cosmic rage/general/combat/dragons/sharpen.wav} @vol}
+#TRIGGER {You begin to use * to sharpen your claws.} {gagAll; playsound {cosmic rage/general/combat/dragons/sharpen.wav} @vol}
 #trigger {The strain of sharpening your claws is finally too much for a large diamond and it crumbles away to nothing.} {playsound {cosmic rage/activities/hand mining/findbreak.wav} @vol}

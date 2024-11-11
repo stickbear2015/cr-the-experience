@@ -4,20 +4,20 @@ playsound {cosmic rage/general/grilling/light.wav} @vol}
 playsound {cosmic rage/general/grilling/light.wav} @vol}
 #trigger {You open * at the bottom of * and take out *.} {playsound {cosmic rage/general/grilling/open.wav} @vol}
 #trigger {You set * atop the grill.} {playsound {cosmic rage/general/grilling/set.wav} @vol}
-#trigger {The smell of slowly grilling food wafts out from *.} {#gagline voice;
+#trigger {The smell of slowly grilling food wafts out from *.} {gagVoice;
 loopsound {cosmic rage/general/grilling/cook.wav} @vol;
 #var cookhandle %playhandle; #var cook 1}
-#trigger {Your stomach growls in anticipation of your food.} {#gagline all}
-#trigger {Slight sizzling is heard from * as it continues to cook *.} {#gagline voice}
-#trigger {You turn * over, ensuring it gets completely cooked.} {#gagline voice}
-#trigger {The smells wafting from * are absolutely delicious!} {#gagline voice}
+#trigger {Your stomach growls in anticipation of your food.} {gagAll}
+#trigger {Slight sizzling is heard from * as it continues to cook *.} {gagVoice}
+#trigger {You turn * over, ensuring it gets completely cooked.} {gagVoice}
+#trigger {The smells wafting from * are absolutely delicious!} {gagVoice}
 #trigger {You pluck * from *.} {#if {@cook = 1} {#pc @cookhandle stop; #var cook 0}; playsound {cosmic rage/general/grilling/done.wav} @vol}
 #trigger {* plucks * from *.} {#if {@cook = 1} {#pc @cookhandle stop; #var cook 0}; playsound {cosmic rage/general/grilling/done.wav} @vol}
 #trigger {You press a button on the front of * causing the coals to be extinguished.} {
 playsound {cosmic rage/general/grilling/ext.wav} @vol}
-#trigger {* empties * bag of coal into *.} {#gagline voice;
+#trigger {* empties * bag of coal into *.} {gagVoice;
 playsound {cosmic rage/general/grilling/coal.wav} @vol}
-#trigger {* refill* * from a refill pack for grills.} {#gagline voice;
+#trigger {* refill* * from a refill pack for grills.} {gagVoice;
 playsound {cosmic rage/general/grilling/coal.wav} @vol}
 #trigger {* opens * at the bottom of * and takes out *.} {playsound {cosmic rage/general/grilling/open.wav} @vol}
 

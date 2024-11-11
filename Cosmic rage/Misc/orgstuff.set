@@ -1,33 +1,33 @@
-#trigger {You raise * and wave it over *} {#gagline all}
-#trigger {An error appears on-screen: "Permission denied"} {#gagline all; playsound {Cosmic Rage/general/gmc/mederror.wav} @vol}
-#trigger {Some data begins to scroll across the screen on *} {#gagline all; playsound {Cosmic Rage/general/gmc/medscan.wav} @vol}
-#trigger {You leand down, pressing * against * and press the injector.} {#gagline all; playsound {Cosmic Rage/general/gmc/inject.wav} @vol}
-#trigger {A soft HISS escapes from *} {#gagline all}
-#trigger {You inject * with *} {#gagline all}
-#trigger {You slide down a lever, filling the needle with *} {#gagline all}
-#trigger {You continue removing the * from *} {#gagline all}
-#trigger {A * light shines forth from * dermatology laser.} {#gagline all}
-#trigger {You tap a button on * causing a small needle to pop out.} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
-#trigger {You aim * and begin removing the *} {#gagline all; playsound {Cosmic Rage/general/gmc/laser.wav} @vol}
-#trigger {The screen lights up with scrolling text.} {#gagline all; playsound {Cosmic Rage/general/gmc/medscan.wav} @vol}
-#trigger {A spasm takes over your limbs as * and discharges a large amount of electricity into you.} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
-#trigger {* taps a button on * synaptic stimulator *} {#gagline all; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
+#trigger {You raise * and wave it over *} {gagAll}
+#trigger {An error appears on-screen: "Permission denied"} {gagAll; playsound {Cosmic Rage/general/gmc/mederror.wav} @vol}
+#trigger {Some data begins to scroll across the screen on *} {gagAll; playsound {Cosmic Rage/general/gmc/medscan.wav} @vol}
+#trigger {You leand down, pressing * against * and press the injector.} {gagAll; playsound {Cosmic Rage/general/gmc/inject.wav} @vol}
+#trigger {A soft HISS escapes from *} {gagAll}
+#trigger {You inject * with *} {gagAll}
+#trigger {You slide down a lever, filling the needle with *} {gagAll}
+#trigger {You continue removing the * from *} {gagAll}
+#trigger {A * light shines forth from * dermatology laser.} {gagAll}
+#trigger {You tap a button on * causing a small needle to pop out.} {gagAll; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
+#trigger {You aim * and begin removing the *} {gagAll; playsound {Cosmic Rage/general/gmc/laser.wav} @vol}
+#trigger {The screen lights up with scrolling text.} {gagAll; playsound {Cosmic Rage/general/gmc/medscan.wav} @vol}
+#trigger {A spasm takes over your limbs as * and discharges a large amount of electricity into you.} {gagAll; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
+#trigger {* taps a button on * synaptic stimulator *} {gagAll; playsound {Cosmic Rage/general/gmc/synaptic.wav} @vol}
 #trigger {* squawks "This is an automated alert from * We have suffered casualties and are requesting a medical evacuation ship for immediate extraction of all injured persons to the Galactic Medical Complex.} {playsound {Cosmic Rage/general/gmc/alarm.wav} @vol}
-#trigger {The doors sllide open, allowing you to disembark.} {#gagline all; playsound {Cosmic Rage/general/gmc/ambdooropen.wav} @vol}
+#trigger {The doors sllide open, allowing you to disembark.} {gagAll; playsound {Cosmic Rage/general/gmc/ambdooropen.wav} @vol}
 #trigger {The doors slide shut behind you.} {#if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}; #alarm 1 { playsound {Cosmic Rage/general/gmc/ambdoorclose.wav} @vol}}
 #trigger {The door on The Ambulance * slides open.} {playsound {Cosmic Rage/general/gmc/ambdooropen.wav} @vol}
-#trigger {You tap a button, activating the siren.} {#gagline all; loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}
-#trigger {The siren continues to wail.} {#gagline all;  #if {@siren = 0}  {loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}}
+#trigger {You tap a button, activating the siren.} {gagAll; loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}
+#trigger {The siren continues to wail.} {gagAll;  #if {@siren = 0}  {loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}}
 #trigger {A ululating siren wails from The Ambulance * and is accompanied by flashing blue lights.} {playsound {Cosmic Rage/general/gmc/sirenout.wav} @vol}
 #trigger {The door slides shut.} {#alarm 1 { playsound {Cosmic Rage/general/gmc/ambdoorclose.wav} @vol}}
 #trigger {You slide * into a storage compartment.} {playsound {Cosmic Rage/general/gmc/gurneyload.wav} @vol}
 #trigger {You pull * from a nearby storage compartment.} {playsound {Cosmic Rage/general/gmc/gurneyunload.wav} @vol}
-#trigger {*ou tap a button, activating the siren.} {#gagline all; loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}
+#trigger {*ou tap a button, activating the siren.} {gagAll; loopsound {cosmic rage/general/gmc/sirenin.wav} @vevol; #var sirenHandle %playHandle; #var siren 1}
 
 ; Military stuff
- #trigger {You take a picture of * with *} {#gagline all; playsound {Cosmic Rage/general/Military/shutterClick.wav} @vol}
+ #trigger {You take a picture of * with *} {gagAll; playsound {Cosmic Rage/general/Military/shutterClick.wav} @vol}
 #trigger {identity matched: *} {playsound {Cosmic Rage/general/Military/display.wav} @vol}
-#trigger {Heled by * snaps a picture of *} {#gagline voice; playsound {Cosmic Rage/general/Military/shutterClick.wav} @vol}
+#trigger {Heled by * snaps a picture of *} {gagVoice; playsound {Cosmic Rage/general/Military/shutterClick.wav} @vol}
 #trigger {* grabs you, spins you around and snaps a pair of * cuffs on your rists.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol}
 #trigger {* uses a * handcuff key to unlock the cuffs around your wrist.} {playsound {cosmic rage/general/military/handcuffon.wav} @vol}
 #trigger {You smartly grab * spin * around and snap a pair of * cuffs on * rists.} {#sub {You cuff %1 on %4 wrists}; playsound {cosmic rage/general/military/handcuffon.wav} @vol}
@@ -37,9 +37,9 @@
 #trigger {* flicks a * stun baton forward and a small bolt of electricity flies from the tip, striking you!} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound {cosmic rage/general/military/stunin.wav} @Vol}}
 #trigger {* flicks a * stun baton forward and a small bolt of electricity flies from the tip, striking *.} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound {cosmic rage/general/military/stunout.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {You flick a * stun baton forward and a small bolt of electricity leaps from the tip and strikes *.} {playsound  {cosmic rage/General/Combat/HandSwing*8.wav} @Vol; #Alarm 0.2 {playsound {cosmic rage/general/military/stunin.wav} @Vol}}
-#trigger {Military override accepted.} {#gagline all; playsound {cosmic rage/general/military/override.wav} @vol}
-#trigger {The baton is still recharging.} {#gagline all; playsound {cosmic rage/general/military/stuncharge.wav} @vol}
-#trigger {* attemp* to move, but the cuffs restrain *} {#gagline all; playsound {cosmic Rage/general/combat/stunned.wav} @gvol}
-#trigger {*hums quietly for a moment before it displays some information on the screen:} {#gagline voice; playsound {cosmic rage/ships/computer/display*4.wav} @vol}
+#trigger {Military override accepted.} {gagAll; playsound {cosmic rage/general/military/override.wav} @vol}
+#trigger {The baton is still recharging.} {gagAll; playsound {cosmic rage/general/military/stuncharge.wav} @vol}
+#trigger {* attemp* to move, but the cuffs restrain *} {gagAll; playsound {cosmic Rage/general/combat/stunned.wav} @gvol}
+#trigger {*hums quietly for a moment before it displays some information on the screen:} {gagVoice; playsound {cosmic rage/ships/computer/display*4.wav} @vol}
 #trigger {You tap in the code and grab * from *} {playsound {cosmic rage/general/military/weaponSafe1.wav} @vol}
 #trigger {You type in your authorisation code and drop * into *} {playsound {cosmic rage/general/military/weaponSafe2.wav} @vol}

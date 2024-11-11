@@ -9,10 +9,10 @@
 #TRIGGER {The yellow light turns green and a tray slides out, holding *} {playsound {cosmic rage/general/misc/food.wav} @vol}
 #TRIGGER {* plays a cheery tune, informing you someone just *} {playsound {cosmic rage/general/misc/comp.wav} @vol}
 #TRIGGER {You enter * and then tap * on * LCD screen.} {playsound {cosmic rage/general/misc/connection1.wav} @vol; #alarm 0.1 {playsound {cosmic rage/general/misc/connection2.wav} @vol}}
-#TRIGGER  {* hums a little.} {#gagline all; playsound {cosmic rage/general/misc/food.wav} @vol}
-#trigger {* begin to control your droid wirelessly using *} {#gagline all}
-#TRIGGER  {You pause by a decontamination unit.} {#gagline all; playsound {cosmic rage/general/misc/decontamination.wav} @vol}
-#TRIGGER  {A small piece of glittering soul escapes from * to be devoured by A rotting skull!} {#gagline all; playsound {cosmic rage/general/misc/soulsuck.wav} @vol}
+#TRIGGER  {* hums a little.} {gagAll; playsound {cosmic rage/general/misc/food.wav} @vol}
+#trigger {* begin to control your droid wirelessly using *} {gagAll}
+#TRIGGER  {You pause by a decontamination unit.} {gagAll; playsound {cosmic rage/general/misc/decontamination.wav} @vol}
+#TRIGGER  {A small piece of glittering soul escapes from * to be devoured by A rotting skull!} {gagAll; playsound {cosmic rage/general/misc/soulsuck.wav} @vol}
 #TRIGGER  {*** System announcement: *} { playsound {cosmic rage/general/misc/boop.wav} @vol}
 #TRIGGER {* You hear a crowd booing and hissing. *} {playsound {Cosmic Rage/general/misc/pvpoff.wav} @vol}
 #TRIGGER {* You hear the roar of an approving crowd. *} {playsound {Cosmic Rage/general/misc/pvpon.wav} @vol}
@@ -28,14 +28,14 @@
 #TRIGGER {On Seat Of The Judge, * calmly picks up the gavel and taps it against the desk.} {playsound {Cosmic Rage/general/misc/gavel.wav} @vol}
 #TRIGGER {A nearby speaker projects the voice of *} {playsound {Cosmic Rage/general/misc/mic.wav} @vol}
 #TRIGGER {* Trash Can makes a short, sharp crashing smashing noise as it recycles its contents.} {playsound {Cosmic Rage/general/misc/recycle.wav} @vol}
-#TRIGGER {You look around for a plant to pick...} {#gagline voice; playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
-#TRIGGER {* looks around for a plant to pick...} {#gagline voice; playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
-#TRIGGER {You find a *!} {#gagline voice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
-#TRIGGER {* finds a *!} {#gagline voice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
-#TRIGGER {You taste * though it seems to have little effect.} {#gagline voice; playsound {Cosmic Rage/general/misc/cureeat.wav} @vol}
-#trigger {* begins to control * droid wirelessly using *} {#gagline all}
-#trigger {You finish using * and lock it with the button at the top.} {#gagline voice}
-#trigger {* finishes using * and locks it with the button at the top.} {#gagline voice}
+#TRIGGER {You look around for a plant to pick...} {gagVoice; playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
+#TRIGGER {* looks around for a plant to pick...} {gagVoice; playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
+#TRIGGER {You find a *!} {gagVoice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
+#TRIGGER {* finds a *!} {gagVoice; playsound {Cosmic Rage/general/misc/curefind.wav} @vol}
+#TRIGGER {You taste * though it seems to have little effect.} {gagVoice; playsound {Cosmic Rage/general/misc/cureeat.wav} @vol}
+#trigger {* begins to control * droid wirelessly using *} {gagAll}
+#trigger {You finish using * and lock it with the button at the top.} {gagVoice}
+#trigger {* finishes using * and locks it with the button at the top.} {gagVoice}
 #TRIGGER {* is typing...} {playsound {Cosmic Rage/general/misc/emote.wav} @vol}
 #trigger {You spray A bottle of * airfreshener about.} {playsound {cosmic rage/general/misc/air freshener spray.wav} @vol}
 #trigger {* timer lets out a shreak!} {playsound {cosmic rage/general/misc/timer.wav} @vol}
@@ -53,42 +53,42 @@
 #trigger {You flip * on the wall turning *} {playsound {cosmic rage/general/misc/lightSwitch.wav} @vol; #PC %Playhandle Pan %Random(-100,100)}
 #trigger {*security * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security %2]: %3 inform you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
 #trigger {*security drone * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security drone]: %3 inform you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {Your automatic saving donator item has just saved your character. This will happen silently until you log off and back on again now.} {#gagline all; playsound {cosmic rage/general/misc/autosave.wav} @vol}
+#trigger {Your automatic saving donator item has just saved your character. This will happen silently until you log off and back on again now.} {gagAll; playsound {cosmic rage/general/misc/autosave.wav} @vol}
 #trigger {* and a projection scrolls before your eyes.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}.
 #trigger {*and the * channel history is displayed before your eyes.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}.
 #trigger {*and the * history is played back through its speaker.} {playsound {cosmic rage/general/telephone/talk.wav} @vol}.
 #trigger {*and the communication history appears on screen.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}
-#trigger {The scanner beeps twice, and a green line beside it flashes once.} {#gagline all; playsound {cosmic rage/general/misc/scannerGreen.wav} @vol}
-#trigger {The scanner buzzes, and a red light beside it blinks rapidly.} {#gagline all; playsound {cosmic rage/general/misc/scannerRed.wav} @vol}
+#trigger {The scanner beeps twice, and a green line beside it flashes once.} {gagAll; playsound {cosmic rage/general/misc/scannerGreen.wav} @vol}
+#trigger {The scanner buzzes, and a red light beside it blinks rapidly.} {gagAll; playsound {cosmic rage/general/misc/scannerRed.wav} @vol}
 
 ; skateboard script
 #trigger {You begin moving.} {
 playsound {cosmic rage/general/misc/skatestart.wav} @vevol;
-#gagline all;
+gagAll;
 loopsound {Cosmic Rage/general/misc/skateloop.wav} @vevol;#var SkateHandle %playHandle; #var Skating 1}
 
-#trigger {You push hard on the ground, zooming ahead.} {#gagline all; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 53000}}}
-#trigger {You skate for all you are worth.} {#gagline all; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 58000}}}
-#trigger {You relax a little, slowing your crazy pace.} {#gagline all; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 53000}}}
-#trigger {You slow down.} {#gagline all; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 44100}}}
+#trigger {You push hard on the ground, zooming ahead.} {gagAll; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 53000}}}
+#trigger {You skate for all you are worth.} {gagAll; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 58000}}}
+#trigger {You relax a little, slowing your crazy pace.} {gagAll; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 53000}}}
+#trigger {You slow down.} {gagAll; #if {@Skating = 1} {#alarm 0.1 {#pc @SkateHandle frequency 44100}}}
 
 #trigger {You stop a * skateboard * dead.} {
 playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
-#gagline all;
+gagAll;
 #if {@Skating = 1} {
 #pc @SkateHandle stop;
 #var Skating 0}}
 
 #trigger {You come to a stop.} {
 playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
-#gagline all;
+gagAll;
 #if {@Skating = 1} {
 #pc @SkateHandle stop;
 #var Skating 0}}
 
 #trigger {You * straight into a wall and fall off *skateboard*} {
 playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
-#gagline all;
+gagAll;
 #if {@Skating = 1} {
 #pc @SkateHandle stop;
 #var Skating 0}}
@@ -99,28 +99,32 @@ playsound {cosmic rage/general/misc/skatestop.wav} @vevol;
 #trigger {A nearby airfreshener lets out a soft hiss.} {#gagline display; playsound {cosmic rage/general/misc/air freshener spray.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
 #trigger {* ligh* * candl* with *lighte*} {playsound {Cosmic Rage/general/combat/enemy/lighter.wav} @gvol}.
 #trigger {Attention! we have a new leader in * Congratulations, *} {playsound {cosmic rage/general/misc/newLeader.wav} @vol}
-#trigger {* squeeze* the lever on an extension of hose from The Firetruck*.} {#gagline voice; playsound {cosmic rage/general/misc/hose.wav} @vol}
-#trigger {An extension of hose from The Firetruck * sprays a large amount of fire suppressing chemicals at *} {#gagline voice; playsound {cosmic rage/general/misc/hose.wav} @vol}
+#trigger {* squeeze* the lever on an extension of hose from The Firetruck*.} {gagVoice; playsound {cosmic rage/general/misc/hose.wav} @vol}
+#trigger {An extension of hose from The Firetruck * sprays a large amount of fire suppressing chemicals at *} {gagVoice; playsound {cosmic rage/general/misc/hose.wav} @vol}
 #trigger {You turn to the front cover of the book.} {playsound {cosmic rage/general/misc/bookclose.wav} @vol}
 #trigger {You turn to page *} {playsound {cosmic rage/general/misc/bookturn*3.wav} @vol}
-#trigger {A force field hums to life in front of you.} {#gagline all; playsound {cosmic rage/general/misc/forcefield2.wav} @vol}
-#trigger {A forcefield flickers at the edge of your vision before vanishing.} {#gagline all; playsound {cosmic rage/general/misc/forcefield1.wav} @vol}
-#trigger {You tap in * into the passcode lock.} {#gagline all; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
+#trigger {A force field hums to life in front of you.} {gagAll; playsound {cosmic rage/general/misc/forcefield2.wav} @vol}
+#trigger {A forcefield flickers at the edge of your vision before vanishing.} {gagAll; playsound {cosmic rage/general/misc/forcefield1.wav} @vol}
+#trigger {You tap in * into the passcode lock.} {gagAll; playsound {cosmic rage/ships/computer/miniKeyboard.wav} @Vol}
 #trigger {you power * Activating teleportation beams aboard * via remote data transfer.} {#gagline display; playsound {Cosmic Rage/general/misc/MiniKeyboard.wav} @vol}
 #trigger {You are enveloped by a bright blue light!} {#gagline display; playsound {cosmic rage/general/misc/teleport3.wav} @vol}
-#trigger {You lean over and drink from *} {#gagline all; playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
-#trigger {You rip the tape from a refill pack for vending machines.} {#gagline all; playsound {Cosmic Rage/general/misc/vending1.wav} @vol}
-#trigger {You begin removing ration packs from * and slotting them into *} {#gagline voice; playsound {Cosmic Rage/general/misc/vending2.wav} @vol}
+#trigger {You lean over and drink from *} {gagAll; playsound {Cosmic Rage/general/food and drink/GulpLiquid.wav} @vol}
+#trigger {You rip the tape from a refill pack for vending machines.} {gagAll; playsound {Cosmic Rage/general/misc/vending1.wav} @vol}
+#trigger {You begin removing ration packs from * and slotting them into *} {gagVoice; playsound {Cosmic Rage/general/misc/vending2.wav} @vol}
 #trigger {* swin* open the door on * fridge.} {playsound {Cosmic Rage/general/misc/fridgeOpen.wav} @vol}
 #trigger {* swin* shut the door on * fridge which seals with a satisfying click.} {playsound {Cosmic Rage/general/misc/fridgeClose.wav} @vol}
-#trigger {You spend a few moments typing in your order into *} {#gagline all; playsound {cosmic rage/general/misc/keypad.wav} @vol}
+#trigger {You spend a few moments typing in your order into *} {gagAll; playsound {cosmic rage/general/misc/keypad.wav} @vol}
 #trigger {* through the water.} {playsound {cosmic rage/general/house/swim*5.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
-#trigger {You form the basic pattern of *} {#gagline all; playsound {Cosmic Rage/general/misc/sewing.wav} @vol}
-#trigger {threads and seams spool out from *} {#gagline all}
-#trigger {* falls to the tray at the bottom of *} {#gagline all}
-#trigger {* jangles a little on * worn on * wrist.} {#gagline voice; playsound {cosmic rage/general/misc/BraceletChime.wav} @vol}
+#trigger {You form the basic pattern of *} {gagAll; playsound {Cosmic Rage/general/misc/sewing.wav} @vol}
+#trigger {threads and seams spool out from *} {gagAll}
+#trigger {* falls to the tray at the bottom of *} {gagAll}
+#trigger {* jangles a little on * worn on * wrist.} {gagVoice; playsound {cosmic rage/general/misc/BraceletChime.wav} @vol}
 
 ; afk setting for you.
 #trigger {You are now afk*} {#if {@speechAFKGagger = "Enabled"} {#var Speech "Enabled"; #SetSpeech incoming off}  }
 #trigger {You are now brb*} {#if {@speechAFKGagger = "Enabled"} {#var Speech "Enabled"; #SetSpeech incoming off}}
 #trigger {You are no longer AFK.} {#if {@speechAFKGagger = "Enabled"} {#var Speech "Disabled"; #SetSpeech incoming on}}
+#trigger {You * commands * console.} {#gagline display; playsound {Cosmic Rage/general/misc/MiniKeyboard.wav} @vol}
+#trigger {On *'s screen:  Booting up quantum processing unit.} {playsound {cosmic rage/general/comms/InfoComputerWelcome.wav} @commsvol}
+#trigger {* screen brightens as animated icons populate its surface.} {playsound {cosmic rage/general/comms/InfoComputerStartup.wav} @CommsVole}
+#trigger {The screen on * goes blank.} {playsound {cosmic rage/general/comms/InfoComputerShutdown.wav} @commsVol}

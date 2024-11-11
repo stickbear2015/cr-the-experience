@@ -9,7 +9,7 @@ military grade missiles:missilea:missilef
 };
 #Trigger {You manipulate the * of the * at *, * and fire.} {
 #If {@gagShipCombat = "Enabled"} {
-#GagLine All
+gagAll
 };
 #Var TMPDir %3;
 #Var wDataMatch {%Pos(%CRLF%2,@shipWeaponList)};
@@ -29,7 +29,7 @@ military grade missiles:missilea:missilef
 }
 #Trigger {You hold down an override button while manipulating the * of the * at x/y *, z * and fire.} {
 #If {@gagShipCombat = "Enabled"} {
-#GagLine All
+gagAll
 };
 #Var TMPDir %3;
 #Var wDataMatch {%Pos(%CRLF%2,@shipWeaponList)};

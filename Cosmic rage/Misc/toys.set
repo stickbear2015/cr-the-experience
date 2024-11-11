@@ -6,7 +6,7 @@
 #TRIGGER {*spins the wheels on *} {playsound {cosmic rage/general/toys/toycar.wav} @vol};
 
 ; gbw stuff
-#trigger {The lights on the front of * begin to cast a bright glow.} {#gagline all; 
+#trigger {The lights on the front of * begin to cast a bright glow.} {gagAll; 
 #if {%ifword(jeep,%1," ")} {
 playsound {cosmic rage/general/toys/gbwstart.wav} @vol};
 #if {%ifword(racecar,%1," ")} {
@@ -15,7 +15,7 @@ playsound {cosmic rage/general/toys/gbwstart.wav} @vol};
 playsound {cosmic rage/general/toys/helistart.wav} @vol}}
 
 
-#trigger {The engine noise coming from * turns off.} {#gagline all; 
+#trigger {The engine noise coming from * turns off.} {gagAll; 
 #if {%ifword(jeep,%1," ")} {
 playsound {cosmic rage/general/toys/gbwstop.wav} @vol};
 #if {%ifword(racecar,%1," ")} {
@@ -23,7 +23,7 @@ playsound {cosmic rage/general/toys/gbwstop.wav} @vol};
 #if {%ifword(helicopter,%1," ")} {
 playsound {cosmic rage/general/toys/helistop.wav} @vol}}
 
-#trigger {* drives in to the area, makes a few  doughnuts, and promptly shuts off its engines!} {#gagline all; 
+#trigger {* drives in to the area, makes a few  doughnuts, and promptly shuts off its engines!} {gagAll; 
 #if {%ifword(jeep,%1," ")} {
 playsound {cosmic rage/general/toys/gbwstop.wav} @vol};
 #if {%ifword(racecar,%1," ")} {

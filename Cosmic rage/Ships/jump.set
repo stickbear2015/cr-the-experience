@@ -1,18 +1,18 @@
 #trigger {Light * as  you enter some data into the planetary rifting console.} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/ships/computer/keyboard*6.wav} @vol}
 #trigger {You enter some data into the planetary rifting console.} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/ships/computer/keyboard*7.wav} @vol}
-#TRIGGER {On screen, you see Small satellites begin revolving anti-gravwell to *} {#gagline all};
-#TRIGGER {The ship jumps forward, surging into a rift.} {#gagline all; playsound {cosmic rage/ships/jump/jump.wav} @evol; #var jumploop %playhandle; #var JumpSoundPlaying 1};
-#TRIGGER {You hear a whine as the ship adjusts its deflector dish.} {#gagline all;};
-#TRIGGER {On screen, you see a small rift appear above * which slowly begins to expand.} {#gagline all;};
-#TRIGGER {The ship rocks violently!} {#gagline all;};
-#TRIGGER {On screen, you see The rift form and stabilise.} {#gagline all;}
-#TRIGGER {Impenetrable darkness crowds in on the windows.} {#gagline all};
-#TRIGGER {The ship shudders a little.} {#gagline all; loopsound {cosmic rage/ships/jump/loop.wav} @evol; #var jumploop %playhandle; #var JumpSoundPlaying 1};
-#TRIGGER {The ships speed increases drastically as it approaches another rift.} {#gagline all; #if {@JumpSoundPlaying = 1} {
+#TRIGGER {On screen, you see Small satellites begin revolving anti-gravwell to *} {gagAll};
+#TRIGGER {The ship jumps forward, surging into a rift.} {gagAll; playsound {cosmic rage/ships/jump/jump.wav} @evol; #var jumploop %playhandle; #var JumpSoundPlaying 1};
+#TRIGGER {You hear a whine as the ship adjusts its deflector dish.} {gagAll;};
+#TRIGGER {On screen, you see a small rift appear above * which slowly begins to expand.} {gagAll;};
+#TRIGGER {The ship rocks violently!} {gagAll;};
+#TRIGGER {On screen, you see The rift form and stabilise.} {gagAll;}
+#TRIGGER {Impenetrable darkness crowds in on the windows.} {gagAll};
+#TRIGGER {The ship shudders a little.} {gagAll; loopsound {cosmic rage/ships/jump/loop.wav} @evol; #var jumploop %playhandle; #var JumpSoundPlaying 1};
+#TRIGGER {The ships speed increases drastically as it approaches another rift.} {gagAll; #if {@JumpSoundPlaying = 1} {
 #pc @jumploop stop; #var JumpSoundPlaying 0}; playsound {cosmic rage/ships/jump/jumpend.wav} @evol};
 #TRIGGER {* to * we will begin to generate your rift.} {playsound {cosmic rage/ships/Com/somethingToShip.wav} @vol};
 #TRIGGER {You say, * to * requesting planetary rift to *" into a small microphone on the central console.} {playsound {cosmic rage/ships/com/sector.wav} @vol};

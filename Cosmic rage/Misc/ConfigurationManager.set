@@ -115,7 +115,7 @@ Toggle auto back up setting (@autobackupsetting), no shortcut.:silentlybackup; #
 SoundPack changes viewer (@spchange), shortcut alt+q:setchange; #alarm 0.1 {miscpicker}|
 Channel Logging (@ChannelLogging), shortcut alt control l. If this option is enabled, you may use shift-F2 to pull up the list of channels that have been logged.:Logging; #alarm 0.1 {miscpicker}|
 Check Lag. Ctrl + L. Note, This value may not always be accurate.:lag|
-Toggle experimental sounds (@extrascript), no shortcut.:soundextras; #alarm 0.1 {miscpicker}|
+Toggle extra sounds [experimental]  (@extrascript), no shortcut.:soundextras; #alarm 0.1 {miscpicker}|
 Back:#alarm 0.1 {config}}}
 
 ;Volumes
@@ -270,7 +270,7 @@ playsound {Cosmic Rage/general/misc/VolumeUp.wav} @vEvol; #say {vehicle engine V
 #alias gagscombat {
 #if {@gagShipCombat = "Enabled"} {#var gagShipCombat "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {gagging of Ship combat  messages disabled.} VoiceOnly} {#var gagShipCombat "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Gagging of Ship combat messages enabled.} VoiceOnly}};
 #alias Pancombat {
-#if {@panShipCombat = "Enabled"} {#var panShipCombat "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Panning sounds disabled.} VoiceOnly} {#var panShipCombat "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Panning sounds enabled.} VoiceOnly}};
+#if {@panShipCombat = "Enabled"} {#var panShipCombat "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Panning  sounds disabled.} VoiceOnly} {#var panShipCombat "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Panning sounds enabled.} VoiceOnly}};
 #alias gagharvest {
 #if {@gagHarvest = "Enabled"} {#var gagHarvest "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {gagging of harvest, trash collection and orbit cleaning messages disabled.} VoiceOnly} {#var gagHarvest "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {gagging of harvest, trash collection and orbit cleaning messages enabled.} VoiceOnly}};
 #alias salvageTextToggle {
@@ -305,8 +305,12 @@ playsound {Cosmic Rage/general/misc/Off.wav} @vol; #SetSpeech incoming off;  #sa
 playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias {playsound} {#if {@soundson = "Disabled"} {#play %1 %2}}
 #alias {loopsound} {#if {@soundson = "Disabled"} {#playloop %1 %2}}
+#alias gagAll {#if {@cosmicgagger = "enabled"} {#gagline all}}
+#alias gagVoice {#if {@cosmicgagger = "enabled"} {#gagline voice}}
+#alias gagDisplay {#if {@cosmicgagger = "enabled"} {#gagline display}}
 #alias ToggleIdleSounds {#if {@ConnectionCheck  = "Enabled"} {#var ConnectionCheck "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no longer hear the sounds letting you know that you are connected to the moo, but idle} VoiceOnly} {#var ConnectionCheck  "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now hear the sounds letting you know that you are connected to the moo, but idle.} VoiceOnly}}
 #alias {MuteSound} {#if {@soundson = "Disabled"} {#var soundson "Enabled"; #pc 0 stop; playsound {Cosmic Rage/general/misc/off.wav} @vol; #say {Sounds will no longer  play.}} {#var soundson "Disabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Sounds will now play.}}}
+#alias {ungagger} {#if {@cosmicgagger = "Disabled"} {#var cosmicgagger "Enabled"; playsound {Cosmic Rage/general/misc/on.wav} @vol; #say {text will be gag like normal.} voiceOnly} {#var cosmicgagger "Disabled"; playsound {Cosmic Rage/general/misc/off.wav} @vol; #say {all the text will now be displayed.} voiceOnly}}
 #alias toggleLaunchText {#if {@LaunchText = "Enabled"} {#var LaunchText "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will now see the text for ships launching, landing, docking and undocking.} VoiceOnly} {#var LaunchText "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will no longer see the text for ships launching, landing, docking and undocking.} VoiceOnly}}
 #alias toggleSocialSounds {#if {@SocialSounds = "Enabled"} {#var SocialSounds "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no  longer hear social sounds.}} {#var SocialSounds "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now  hear social sounds.} VoiceOnly}}
 #alias toggleSocialText {#if {@SocialText = "Enabled"} {#var SocialText "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {You will no longer see social text when you use socials.} VoiceOnly} {#var SocialText "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {You will now see social text when you use socials. When others use socials, that text is not effected.} VoiceOnly}}
@@ -326,5 +330,5 @@ playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {speech on.} VoiceOnly}}
 #alias speechafk {#if {@speechAFKGagger= "Enabled"} {#var speechAFKGagger "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Speech will remain as previously set during AFK/BRB.} VoiceOnly} {#var speechAFKGagger "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Speech output will be muted when AFK/BRB.} VoiceOnly}}
 #alias battlesuitmove {#if {@battlesuitMovement = "Enabled"} {#var battlesuitMovement "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Battlesuit movement sound will not be played.} VoiceOnly} {#var battlesuitMovement "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Battlesuit movement sound will be played.} VoiceOnly}}
 #alias silentlybackup {#if {@autobackupsetting = "Enabled"} {#var autobackupsetting "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #unalarm silentbackup; #say {Settings will no longer automaticly backed up.} VoiceOnly} {#var autobackupsetting "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #alarm silentbackup -900 {silentbackupsetting}; #say {Settings will now backed up automaticly every 15 minutes.} VoiceOnly}}
-#alias soundextras {#if {@extrascript = "Enabled"} {#var extrascript "Disabled"; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Extra script disabled.}} {#var extrascript "Enabled"; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Extra script enabled.}}}
+#alias soundextras {#if {@extrascript = "Enabled"} {#var extrascript "Disabled"; #unload misc/extras.set; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {Extra script disabled.}} {#var extrascript "Enabled"; #load misc/extras.set; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {Extra script enabled.}}}
 #alias muteOoc {#if {@oocChan = 1} {#var oocChan 0; playsound {Cosmic Rage/general/misc/Off.wav} @vol; #say {OOC is now unmuted.}} {#var OocChan 1; playsound {Cosmic Rage/general/misc/On.wav} @vol; #say {OOC is now muted.}}}

@@ -65,6 +65,7 @@
 #read 6 battlesuitMovement 63;
 #read 6 autobackupsetting 64;
 #read 6 extrascript 65;
+#read 6 cosmicgagger 66;
 #close 6; 
 #alarm 1 {#File 6 {cosmic rage/misc/settingsBackup.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -132,6 +133,7 @@
 #write 6 @battlesuitMovement @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @autobackupsetting @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @extrascript @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @cosmicgagger @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6; 
 playsound {cosmic rage/general/misc/backupSetting.wav} @vol}}
 
@@ -204,6 +206,7 @@ playsound {cosmic rage/general/misc/backupSetting.wav} @vol}}
 #read 6 battlesuitMovement 63;
 #read 6 autobackupsetting 64;
 #read 6 extrascript 65;
+#read 6 cosmicgagger 66;
 #close 6; 
 #alarm 1 {#File 6 {cosmic rage/misc/settings.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -271,6 +274,7 @@ playsound {cosmic rage/general/misc/backupSetting.wav} @vol}}
 #write 6 @battlesuitMovement @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @autobackupsetting @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @extrascript @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @cosmicgagger @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6; 
 #reload; 
 playsound {cosmic rage/general/misc/restoreSetting.wav} @vol}}
@@ -345,6 +349,7 @@ playsound {cosmic rage/general/misc/restoreSetting.wav} @vol}}
 #read 6 battlesuitMovement 63;
 #read 6 autobackupsetting 64;
 #read 6 extrascript 65;
+#read 6 cosmicgagger 66;
 #close 6; 
 #alarm 1 {#File 6 {cosmic rage/misc/settingsBackup.set} 1;#Var SettingsFileCounter 1;
 #Write 6 @vol @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
@@ -412,4 +417,5 @@ playsound {cosmic rage/general/misc/restoreSetting.wav} @vol}}
 #write 6 @battlesuitMovement @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @autobackupsetting @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #write 6 @extrascript @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
+#write 6 @cosmicgagger @SettingsFileCounter;#Math SettingsFileCounter {@SettingsFileCounter +1};
 #close 6}}

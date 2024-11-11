@@ -1,32 +1,32 @@
 #trigger {You type in your security code into * trolley} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/general/trolley/button.wav} @vol}
 #trigger {A low thrum begins to come from * and steam begins to vent out of the side.} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/general/trolley/fuses.wav} @vol;
 #wait 2; {
 loopsound {cosmic rage/general/trolley/fusel.wav} @vol;
 #var FuseHandle %playhandle;
 #var fuse 1}}
 #trigger {The racket that is given off by * trolley cuts out as it finishes fusing.} {
-#gagline all;
+gagAll;
 #if {@fuse = 1} {
 #pc @FuseHandle stop;
 #var fuse 0};
 playsound {cosmic rage/general/trolley/fusest.wav} @vol}
 #trigger {You tap a button, ordering for the fusion to stop.} {
-#gagline all;
+gagAll;
 #if {@fuse = 1} {
 #pc @FuseHandle stop;
 #var fuse 0};
 playsound {cosmic rage/general/trolley/fusest.wav} @vol}
-#TRIGGER {* spits * metal panels onto the ground.} {#gagline all}
-#trigger {* trolley spits out a dozen drones, which promptly shovel * into it, before returning to the trolley with an almighty crash.} {#gagline all; playsound {cosmic rage/general/trolley/metalgather.wav} @vol}
+#TRIGGER {* spits * metal panels onto the ground.} {gagAll}
+#trigger {* trolley spits out a dozen drones, which promptly shovel * into it, before returning to the trolley with an almighty crash.} {gagAll; playsound {cosmic rage/general/trolley/metalgather.wav} @vol}
 #trigger {You kick * trolley, starting up a bricking process.} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/general/trolley/brick.wav} @vol}
 #trigger {You push a button on * trolley, starting up a * gathering process.} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/general/trolley/button.wav} @vol;
 #if {%ifword(brick,%2," ")} {
 #alarm 2 {
@@ -41,14 +41,14 @@ playsound {cosmic rage/general/trolley/metal.wav} @vol}};
 #alarm 2 {
 playsound {cosmic rage/general/trolley/wood.wav} @vol}}}
 #trigger {Several small drones scoop up * of liquid and store them away.} {
-#gagline all;
+gagAll;
 #if {%IfWord(0 barrels,%1," ")} {#say {There is no liquid here.}} {
 playsound {cosmic rage/general/trolley/water.wav} @vol}}
 #trigger {You order * trolley to dump out it's resources.} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/general/trolley/eq.wav} @vol}
 #trigger {* trolley gathers up * and dumps them onto the ground.} {
-#gagline all;
+gagAll;
 #if {%ifword(brick,%2," ")} {
 playsound {cosmic rage/general/trolley/brick.wav} @vol};
 #if {%ifword(bricks,%2," ")} {
@@ -64,7 +64,7 @@ playsound {cosmic rage/general/trolley/metal.wav} @vol};
 #if {%ifword(wood,%2," ")} {
 playsound {cosmic rage/general/trolley/wood.wav} @vol}}
 #trigger {* trolley finishes dumping it's resources and enters stand by mode.} {
-#gagline all;
+gagAll;
 playsound {cosmic rage/general/trolley/done.wav} @vol}
 #trigger {*trolley dumps * onto the ground.} {
 #if {%ifword(brick,%2," ")} {
@@ -82,13 +82,19 @@ playsound {cosmic rage/general/trolley/metal.wav} @vol};
 #if {%ifword(wood,%2," ")} {
 playsound {cosmic rage/general/trolley/wood.wav} @vol}}
 #trigger {You tap dump on * trolley's screen.} {
-#gagline all}
+gagAll}
 #trigger {* fusing items and so can not move.} {
-#gagline all;
+gagAll;
 #if {@fuse = 1} {
 #pc @FuseHandle stop;
 #var fuse 0}};
 #trigger {* loads * corpses onto a tray.} {
-#gagline voice;
+gagVoice;
 playsound {cosmic rage/general/trolley/corpse.wav} @vol}
 #trigger {You find A chunk of wood!} {playsound {cosmic rage/activities/hunt/branch.wav} @vol};
+#trigger {*extends a small tube and bores it down into the trunk of a rubber tree.} {gagAll; playsound {cosmic rage/general/trolley/eq.wav} @vol}
+#trigger {A wet, sucking squelching sound can be heard as * extracts another gallon of latex from the rubber tree.} {gagAll; playsound {cosmic rage/general/trolley/latex.wav} @vol}
+#trigger {* retracts it's tube from the rubber tree, it's task completed.} {gagAll; playsound {cosmic rage/general/trolley/done.wav} @vol}
+#trigger {* lines itself up with a nearby chute and begins dumping latex into a holding tank.} {gagAll; playsound {cosmic rage/general/trolley/eq.wav} @vol}
+#trigger {A wet squelching sound can be heard as latex is drained from *'s tank.} {gagAll; playsound {cosmic rage/general/trolley/latex.wav} @vol}
+#trigger {* finishes dumping latex into the holding tank.} {gagAll; playsound {cosmic rage/general/trolley/done.wav} @vol}

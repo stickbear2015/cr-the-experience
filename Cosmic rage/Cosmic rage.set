@@ -188,6 +188,7 @@ version; SilentlyLoadBuffers; #say {Welcome to the VIP Cosmic Rage experience!};
 #read 6 battlesuitMovement 63;
 #read 6 autobackupsetting 64;
 #read 6 extrascript 65;
+#read 6 cosmicgagger 66;
 #close 6
 #if {@intromusic <> "enabled"} {#if {@intromusic <> "disabled"} {#var intromusic "enabled"}}
 #if {@ambon = "Disabled"} {

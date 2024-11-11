@@ -147,13 +147,13 @@ playsound {Cosmic Rage/general/doors/phaseOpen.wav} @vol}}
 #trigger {You flick across the bolt on the door.} {playsound {Cosmic Rage/general/doors/DoorLock.wav} @vol}
 #trigger {A heavy grinding noise comes from the ceiling as * descends with a slam.} {playsound {Cosmic Rage/general/doors/DoorWeightedClose.wav} 90}
 #trigger {With a heavy grinding noise, * rises into the ceiling.} {playsound {Cosmic Rage/general/doors/DoorWeightedOpen.wav} 90}
-#trigger {You send the signal for the cargo bay doors to open.} {#gagline all}
-#trigger {From nearby, the sound of a pair of doors sliding open can be heard.} {#gagline all;
+#trigger {You send the signal for the cargo bay doors to open.} {gagAll}
+#trigger {From nearby, the sound of a pair of doors sliding open can be heard.} {gagAll;
 playsound {cosmic rage/general/doors/transferopen.wav} @vol}
-#trigger {The computer announces: "Closing cargo bay doors*"} {#gagline all}
-#trigger {From nearby, the sound of a pair of doors sliding shut can be heard.} {#gagline all;
+#trigger {The computer announces: "Closing cargo bay doors*"} {gagAll}
+#trigger {From nearby, the sound of a pair of doors sliding shut can be heard.} {gagAll;
 playsound {cosmic rage/general/doors/transferclose.wav} @vol}
-#trigger {A deep rumbling can be heard from far down in the ship as the doors of the cargo bays are slid *.} {#gagline all;
+#trigger {A deep rumbling can be heard from far down in the ship as the doors of the cargo bays are slid *.} {gagAll;
 #if {%ifword(open,%1," ")} {
 playsound {cosmic rage/general/doors/DoorOpen4.wav} @vol};
 #if {%ifword(shut,%1," ")} {
@@ -176,10 +176,10 @@ playsound {cosmic rage/general/doors/DoorClose4.wav} @vol}}
 #trigger {You leave via the door.} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}
 #trigger {* leaves via the door.} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}
 #trigger {* arrives from outside.} {playsound {Cosmic Rage/general/doors/DoorOpen3.wav} @vol}
-#trigger {The door swings shut with a click.} {#gagline voice; #alarm 1 {playsound {Cosmic Rage/general/doors/DoorClose3.wav} @vol}}
-#trigger {The door to * swings shut with a soft click.} {#gagline voice; #alarm 1 {playsound {Cosmic Rage/general/doors/DoorClose3.wav} @vol}}
-#trigger {You walk nose first into *} {#gagline voice; playsound {cosmic rage/general/doors/bang.wav} @vol}
-#trigger {Someone thumps into the door to the *} {#gagline voice; playsound {cosmic rage/general/doors/bang.wav} @vol; #PC %PlayHandle Pan %Random(-5000,5000)}
+#trigger {The door swings shut with a click.} {gagVoice; #alarm 1 {playsound {Cosmic Rage/general/doors/DoorClose3.wav} @vol}}
+#trigger {The door to * swings shut with a soft click.} {gagVoice; #alarm 1 {playsound {Cosmic Rage/general/doors/DoorClose3.wav} @vol}}
+#trigger {You walk nose first into *} {gagVoice; playsound {cosmic rage/general/doors/bang.wav} @vol}
+#trigger {Someone thumps into the door to the *} {gagVoice; playsound {cosmic rage/general/doors/bang.wav} @vol; #PC %PlayHandle Pan %Random(-5000,5000)}
 #trigger {*tap* on *door*} {playsound {cosmic rage/general/doors/doortap.wav} @vol}
 #trigger {* hammer* on * door *} {playsound {cosmic rage/general/doors/doorhammer.wav} @vol}
-#trigger {The light at the bottom of the keypad flashes red and a synthesized voice announces: "Permission Denied."} {#gagline all; playsound {cosmic rage/general/doors/noAccess.wav} @vol}
+#trigger {The light at the bottom of the keypad flashes red and a synthesized voice announces: "Permission Denied."} {gagAll; playsound {cosmic rage/general/doors/noAccess.wav} @vol}

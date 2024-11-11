@@ -25,9 +25,9 @@ a small shuttle}
 #TRIGGER {You launch into the air, jumping into the pool with a huge splash!} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
 #TRIGGER {You push * into the pool!} {playsound {Cosmic Rage/general/house/poolpush.wav} @vol}
 #TRIGGER {You climb up onto * and walk to the very end.} {playsound {Cosmic Rage/general/house/pooljump.wav} @vol}
-#TRIGGER {* arrives and the doors open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
-#trigger {The doors of * slide open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
-#TRIGGER {The doors of * open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
+#TRIGGER {* arrives and the doors open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {gagAll; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
+#trigger {The doors of * slide open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {gagAll; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
+#TRIGGER {The doors of * open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {gagAll; playsound {cosmic rage/general/house/liftdooropen.wav} @vol}} {} AnyCase
 #TRIGGER {You tap * button and * begins to move.} {#If {%IfWord(%2,@LiftList,%CRLF)} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}} {} AnyCase
 #TRIGGER {* taps * button and * begins to move.} {#If {%IfWord(%3,@LiftList,%CRLF)} {playsound {cosmic rage/general/house/LiftButton.wav} @vol; #alarm 1 {playsound {cosmic rage/general/house/LiftDoorClose.wav} @vol}}} {} AnyCase
 #TRIGGER {the lift} {
@@ -42,12 +42,12 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #If {@ShipSoundPlaying = 1} {
 #pc @Shiphandle stop};
 LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "lift"; #var currentroom2 "nothouse"} {ambon};
-#trigger {* begins to * move.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/LiftStart.wav} @vol; #alarm 2 {loopsound {cosmic rage/general/house/LiftMoving.wav} @vol; #var lifthandle %playhandle}}} {} AnyCase
-#trigger {* hums as it continues to move.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all}} {} AnyCase
-#trigger {* slows down as it approaches the destination.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/LiftStop.wav} @vol; #pc @lifthandle stop}} {} AnyCase
-#TRIGGER {* comes to a stop and the doors hiss open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {#gagline all; playsound {cosmic rage/general/house/LiftDoorOpen.wav} @vol}} {} AnyCase
-#TRIGGER {The droid makes some adjustments, before carefully examining you in the mirror.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}};
-#TRIGGER {The droid trims your hair, styling it as you wish and trimming down the length.} {#gagline all; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}};
+#trigger {* begins to * move.} {#If {%IfWord(%1,@LiftList,%CRLF)} {gagAll; playsound {cosmic rage/general/house/LiftStart.wav} @vol; #alarm 2 {loopsound {cosmic rage/general/house/LiftMoving.wav} @vol; #var lifthandle %playhandle}}} {} AnyCase
+#trigger {* hums as it continues to move.} {#If {%IfWord(%1,@LiftList,%CRLF)} {gagAll}} {} AnyCase
+#trigger {* slows down as it approaches the destination.} {#If {%IfWord(%1,@LiftList,%CRLF)} {gagAll; playsound {cosmic rage/general/house/LiftStop.wav} @vol; #pc @lifthandle stop}} {} AnyCase
+#TRIGGER {* comes to a stop and the doors hiss open.} {#If {%IfWord(%1,@LiftList,%CRLF)} {gagAll; playsound {cosmic rage/general/house/LiftDoorOpen.wav} @vol}} {} AnyCase
+#TRIGGER {The droid makes some adjustments, before carefully examining you in the mirror.} {gagAll; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}};
+#TRIGGER {The droid trims your hair, styling it as you wish and trimming down the length.} {gagAll; {playsound {cosmic rage/general/house/haircut*6.wav} @vol; #PC %Playhandle Pan %Random(-3500,3500)}};
 #TRIGGER {You tap a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}
 #TRIGGER {You grab * cup and put it under the hose of *} {playsound {cosmic rage/general/house/watercool.wav} @vol} {}
 #TRIGGER {* taps a button, calling for the lift.} {playsound {cosmic rage/general/house/LiftButton.wav} @vol} {}
@@ -67,14 +67,14 @@ LOOPSOUND {cosmic rage/general/house/liftamb.wav} @vol; #Var RoomHandle %Playhan
 #TRIGGER {* sna* a photo of * on a *} {playsound {cosmic rage/general/house/cam.wav} @vol};
 #TRIGGER {You snap a selfie.} {playsound {cosmic rage/general/house/cam.wav} @vol};
 #TRIGGER {A loud chime echoes through the apartment coming from the doorbell as someone arrives outside.} {playsound {cosmic rage/general/house/doorbell.wav} @vol};
-#TRIGGER {You untwist the center part of * and suddenly the top part springs up and out! You hold it above yourself protectively.} {#gagline all; playsound {cosmic rage/general/house/umbrella1.wav} @vol};
-#TRIGGER {You twist the center of * and the top section retracts into itself.} {#gagline all; playsound {cosmic rage/general/house/umbrella2.wav} @vol};
-#TRIGGER {* twists the central part of * and suddenly the top springs up and out! * proceeds to hold it above *} {#gagline voice; playsound {cosmic rage/general/house/umbrella1.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)};
-#TRIGGER {* twists the center part of * and the top half retracts into itself.} {#gagline voice; playsound {cosmic rage/general/house/umbrella2.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)};
+#TRIGGER {You untwist the center part of * and suddenly the top part springs up and out! You hold it above yourself protectively.} {gagAll; playsound {cosmic rage/general/house/umbrella1.wav} @vol};
+#TRIGGER {You twist the center of * and the top section retracts into itself.} {gagAll; playsound {cosmic rage/general/house/umbrella2.wav} @vol};
+#TRIGGER {* twists the central part of * and suddenly the top springs up and out! * proceeds to hold it above *} {gagVoice; playsound {cosmic rage/general/house/umbrella1.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)};
+#TRIGGER {* twists the center part of * and the top half retracts into itself.} {gagVoice; playsound {cosmic rage/general/house/umbrella2.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)};
 #trigger {You leave via the door.} {playsound {Cosmic Rage/general/doors/Doorclose3.wav} @vol}
 #trigger {You unlock the door to * and enter.} {playsound {Cosmic Rage/general/doors/Doorlock.wav} @vol; #alarm 0.1 {playsound {Cosmic Rage/general/doors/Dooropen3.wav} @vol}}
-#trigger {You press the button of the doorbell.} {#gagline all; playsound {cosmic rage/general/house/doorbell2.wav} @vol}
-#trigger {A quick ping, pong. is heard as someone rings the bell.} {#gagline all; playsound {cosmic rage/general/house/doorbell2.wav} @vol}
+#trigger {You press the button of the doorbell.} {gagAll; playsound {cosmic rage/general/house/doorbell2.wav} @vol}
+#trigger {A quick ping, pong. is heard as someone rings the bell.} {gagAll; playsound {cosmic rage/general/house/doorbell2.wav} @vol}
 #trigger {You open *wardrobe*} {playsound {cosmic rage/general/house/wardrobe1.wav} @vol}
 #trigger {You close *wardrobe*} {playsound {cosmic rage/general/house/wardrobe2.wav} @vol}
 #trigger {You hang * in *wardrobe*} {playsound {cosmic rage/general/house/hangingClothe.wav} @vol; #PC %Playhandle Pan %Random(-2500,2500)}

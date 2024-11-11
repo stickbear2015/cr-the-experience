@@ -102,8 +102,8 @@ playsound {cosmic rage/general/comms/G2A.wav} @CommsVol; BufferAdd GroundToAir %
 playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {[[]Chargen]*} {playsound {cosmic rage/general/comms/Chargen.wav} @CommsVol; BufferAdd Chargen %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Chargen.log};#write 1 %0;#close 1}}
 #trigger {[[]Mentor]*} {playsound {cosmic rage/general/comms/Mentor.wav} @CommsVol; BufferAdd Mentor %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Mentor.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {* flashes * indicating you have a new mail titled *} {playsound {cosmic rage/general/comms/mail.wav} @CommsVol; BufferAdd Notices %0}
-#trigger {[[]News]*:*} {playsound {cosmic rage/general/comms/onews.wav} @CommsVol; BufferAdd ONews %0}
+#trigger {* flashes * indicating you have a new mail titled *} {playsound {cosmic rage/general/comms/mail.wav} @CommsVol; BufferAdd Notifications %0}
+#trigger {[[]News]*:*} {playsound {cosmic rage/general/comms/onews.wav} @CommsVol; BufferAdd Notifications %0}
 #trigger {[[]* to * transmits *], } {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol}
 #TRIGGER {[[]* to *], "*"} {#if {@QGag = 1} {#sub {[%1 to %2], %3}}; #if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage/general/comms/PrivOOCCom.wav} @CommsVol; BufferAdd OOCPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1}} {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol; BufferAdd ICPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}}} {} AnyCase
 #TRIGGER {[[]* to *], "*"*"*"} {#if {@QGag = 1} {#sub {[%1 to %2], %3%4%5}}; #if {%ifword(OOCly,%2, )} {playsound {Cosmic Rage/general/comms/PrivOOCCom.wav} @CommsVol; BufferAdd OOCPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char PrivateOOC.log};#write 1 %0;#close 1}} {playsound {Cosmic Rage/general/comms/PrivCom.wav} @CommsVol; BufferAdd ICPrivate %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Private.log};#write 1 %0;#close 1}}} {} AnyCase
@@ -187,7 +187,7 @@ playsound {Cosmic Rage/general/comms/org.wav} @CommsVol; BufferAdd Org %0; {#fil
 #trigger {Information: closest beacon: *} {BufferAdd SOS %0}
 #trigger {[[]Htpc]*} {playsound {Cosmic Rage/general/comms/Htpc.wav} @commsvol; BufferAdd Htpc %0}
 #Alias {mf} {Musicfm %0} {}
-#trigger {* lets out a short fanfare informing you that a new petition has been made publicly available.} {playsound {Cosmic Rage/general/comms/Petition.wav} 80; BufferAdd InfoComputerNotifications %0; BufferAdd Notices %0} {} AnyCase
+#trigger {* lets out a short fanfare informing you that a new petition has been made publicly available.} {playsound {Cosmic Rage/general/comms/Petition.wav} 80; BufferAdd InfoComputerNotifications %0; BufferAdd NOtifications %0} {} AnyCase
 #trigger {origins *} {#if {%ifWord(enabled.,%1," ")} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol};
 #if {%ifWord(disabled.,%1," ")} {

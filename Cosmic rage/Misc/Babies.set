@@ -1,15 +1,15 @@
-#TRIGGER {* opens * mouth and gets ready to *} {#if {%ifWord(drink,%3," ")} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; #gagline all; #var BabyDrinkhandle %playhandle; #var BabyDrink "Enabled"}; #if {%ifWord(eat,%3," ")} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; #gagline all; #var BabyEathandle %playhandle; #var BabyEat "Enabled"}}
-#TRIGGER {* lets out a baby burp after * finishes *} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {%ifWord(drink,%3," ")} {#if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}}; #if {%ifWord(eat,%3," ")} {#if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}}
-#TRIGGER {* pushes * away from *} {#gagline voice; #if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}; #if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}
-#TRIGGER {* whines softly.} {playsound  {Cosmic Rage/general/baby/babywhine.wav} @vol; #gagline voice} {}
-#TRIGGER {* cuddles * full up*} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; #gagline voice;#if {@babyeat = "Enabled"} {#pc @babyEatHandle stop; #var babyeat "Disabled"}} {}
-#trigger {* really seems to be enjoying *} {playsound  {Cosmic Rage/general/Baby/babyhappy.wav} @vol; #gagline voice} {}
-#trigger {* gently opens * mouth and begins to gently feed * to *} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; #gagline all; #var BabyEathandle %playhandle; #var BabyEat "Enabled"} {}
-#trigger {*gently opens *mouth and begins to help *drink *} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; #gagline all; #var BabyDrinkhandle %playhandle; #var BabyDrink "Enabled"} {}
+#TRIGGER {* opens * mouth and gets ready to *} {#if {%ifWord(drink,%3," ")} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; gagAll; #var BabyDrinkhandle %playhandle; #var BabyDrink "Enabled"}; #if {%ifWord(eat,%3," ")} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; gagAll; #var BabyEathandle %playhandle; #var BabyEat "Enabled"}}
+#TRIGGER {* lets out a baby burp after * finishes *} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; gagVoice; #if {%ifWord(drink,%3," ")} {#if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}}; #if {%ifWord(eat,%3," ")} {#if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}}
+#TRIGGER {* pushes * away from *} {gagVoice; #if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}; #if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}
+#TRIGGER {* whines softly.} {playsound  {Cosmic Rage/general/baby/babywhine.wav} @vol; gagVoice} {}
+#TRIGGER {* cuddles * full up*} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; gagVoice;#if {@babyeat = "Enabled"} {#pc @babyEatHandle stop; #var babyeat "Disabled"}} {}
+#trigger {* really seems to be enjoying *} {playsound  {Cosmic Rage/general/Baby/babyhappy.wav} @vol; gagVoice} {}
+#trigger {* gently opens * mouth and begins to gently feed * to *} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; gagAll; #var BabyEathandle %playhandle; #var BabyEat "Enabled"} {}
+#trigger {*gently opens *mouth and begins to help *drink *} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; gagAll; #var BabyDrinkhandle %playhandle; #var BabyDrink "Enabled"} {}
 #trigger {* spits up all over *self!} {#if {@BabyEat = "Enabled"} {
 #pc @BabyEathandle stop;
 #var BabyEat "Disabled"}}
-#trigger {You gently lift * to your shoulder and burp *} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyEat = "Enabled"} {
+#trigger {You gently lift * to your shoulder and burp *} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; gagVoice; #if {@BabyEat = "Enabled"} {
 #pc @BabyEathandle stop;
 #var BabyEat "Disabled"}} 
 #trigger {* giggles happily.} {playsound {Cosmic Rage/general/baby/babylaugh1.wav} @vol}
@@ -23,7 +23,7 @@
 #trigger {* goes roar!} {playsound {Cosmic Rage/general/baby/dragonroar.wav} @vol}
 #trigger {*lets out a tiny sneez*} {playsound {Cosmic Rage/general/baby/sneeze*2.wav} @vol}
 #trigger {lets out a waterfall of laughter, wriggling crazily to try and escape.} {playsound {Cosmic Rage/general/baby/babylaugh1.wav} @vol}
-#TRIGGER {* hands you the empty container and you discard it.} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {%ifWord(drink,%3," ")} {#if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}}; #if {%ifWord(eat,%3," ")} {#if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}}
+#TRIGGER {* hands you the empty container and you discard it.} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; gagVoice; #if {%ifWord(drink,%3," ")} {#if {@BabyDrink = "Enabled"} { #pc @BabyDrinkhandle stop; #var BabyDrink "Disabled"}}; #if {%ifWord(eat,%3," ")} {#if {@BabyEat = "Enabled"} { #pc @BabyEathandle stop; #var BabyEat "Disabled"}}}
 #trigger {* glances up at * and coos.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
 #trigger {* smiles, letting out little coos as * settles down.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
 #trigger {* lets out a waterfall of laughter, wriggling crazily to try and escape.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
@@ -53,7 +53,7 @@
 #trigger {* attempts to copy * with varying success.} {playsound {Cosmic Rage/general/baby/babyClap.wav} @vol}
 #trigger {You gently remove * wet diaper.} {playsound {Cosmic Rage/general/baby/Changing.wav} @vol}
 #trigger {You peel the old diaper off of *} {playsound {Cosmic Rage/general/baby/Changing.wav} @vol}
-#trigger {*wiggles about happily because * has an empty diaper.} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; #gagline voice}
+#trigger {*wiggles about happily because * has an empty diaper.} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; gagVoice}
 #trigger {*giggles and smiles really enjoying the fun!} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
 #trigger {*coos and kicks * legs out.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
 #trigger {*yawns cutely.} {playsound {Cosmic Rage/general/baby/byawn*2.wav} @vol}

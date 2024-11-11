@@ -1,30 +1,30 @@
  #var buildings {an alpaca barn|a chicken barn|a sheep pen|a goat pen|a horse stable|a cow barn|a house}
 
-#TRIGGER {The * of the pod thrums to life.} {#gagline all; #alarm 2.5 {playsound {Cosmic Rage/activities/farming/pod.wav} @vol}};
-#trigger {The pod rotates on the spot, before slowly pulling forward.} {#gagline all}
-#trig {There is a slight scraping noise, before the motor of the pod adopts a higher pitch.} {#gagline all}
-#trig {The pod begins to pick up speed, a steady thud, thud, thud indicating hover fans under it.} {#gagline all}
-#trig {The pod turns as it circles around a market, before it continues traveling.} {#gagline all}
-#trig {The pod ascends slightly before lowering back to the altitude it was at before.} {#gagline all}
-#trig {The pod shakes slightly as it turns a corner.} {#gagline all}
-#trig {the pod begins to slow down, the motor smoothing out into a hum.} {#gagline all}
-#trig {The pod judders onto a stand, rotating on the spot as it clicks into place.} {#gagline all}
-#trig {The engine of the pod deactivates and the doors hiss open.} {#gagline all; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav} @vol}}
-#trig {The pod rotates on the spot, before slowly sliding off the stand.} {#gagline all}
-#trig {The pod ascends slightly, then begins to move forward at a steady pace.} {#gagline all}
-#trig {The pod's motor increases in pitch, producing extra lift.} {#gagline all}
-#trig {The pod slowly takes a corner, the engines giving a slight whine.} {#gagline all}
-#trig {The pod speeds up, the steady thud, thud, thud of the rotors sending vibrations through the cabbin.} {#gagline all}
-#trig {The pod continues across the land, the occasional dull thump indicating a snow pile has just been knocked over.} {#gagline all}
-#trig {The pod begins to slow, and you hear a slight scrape from under the floor.} {#gagline all}
-#trig {The pod bumps onto a rack, the engine rotating it to lock into place.} {#gagline all}
-#trig {The hatch slides open as the pods engine powers down.} {#gagline all; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav} @vol}}
-#trig {You step up and enter one of the pods.} {#gagline all; playsound {Cosmic Rage/activities/farming/enter.wav} @vol}
-#trig {You step into the transport building, and quickly enter a pod.} {#gagline all; playsound {Cosmic Rage/activities/farming/enter.wav} @vol}
+#TRIGGER {The * of the pod thrums to life.} {gagAll; #alarm 2.5 {playsound {Cosmic Rage/activities/farming/pod.wav} @vol}};
+#trigger {The pod rotates on the spot, before slowly pulling forward.} {gagAll}
+#trig {There is a slight scraping noise, before the motor of the pod adopts a higher pitch.} {gagAll}
+#trig {The pod begins to pick up speed, a steady thud, thud, thud indicating hover fans under it.} {gagAll}
+#trig {The pod turns as it circles around a market, before it continues traveling.} {gagAll}
+#trig {The pod ascends slightly before lowering back to the altitude it was at before.} {gagAll}
+#trig {The pod shakes slightly as it turns a corner.} {gagAll}
+#trig {the pod begins to slow down, the motor smoothing out into a hum.} {gagAll}
+#trig {The pod judders onto a stand, rotating on the spot as it clicks into place.} {gagAll}
+#trig {The engine of the pod deactivates and the doors hiss open.} {gagAll; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav} @vol}}
+#trig {The pod rotates on the spot, before slowly sliding off the stand.} {gagAll}
+#trig {The pod ascends slightly, then begins to move forward at a steady pace.} {gagAll}
+#trig {The pod's motor increases in pitch, producing extra lift.} {gagAll}
+#trig {The pod slowly takes a corner, the engines giving a slight whine.} {gagAll}
+#trig {The pod speeds up, the steady thud, thud, thud of the rotors sending vibrations through the cabbin.} {gagAll}
+#trig {The pod continues across the land, the occasional dull thump indicating a snow pile has just been knocked over.} {gagAll}
+#trig {The pod begins to slow, and you hear a slight scrape from under the floor.} {gagAll}
+#trig {The pod bumps onto a rack, the engine rotating it to lock into place.} {gagAll}
+#trig {The hatch slides open as the pods engine powers down.} {gagAll; #alarm 3 {playsound {Cosmic Rage/activities/farming/exit.wav} @vol}}
+#trig {You step up and enter one of the pods.} {gagAll; playsound {Cosmic Rage/activities/farming/enter.wav} @vol}
+#trig {You step into the transport building, and quickly enter a pod.} {gagAll; playsound {Cosmic Rage/activities/farming/enter.wav} @vol}
 
-#trig {You step out of the pod.} {#gagline all}
-#trig {You set about nailing wood together to make 4 walls.} {#gagline all; loopsound {Cosmic Rage/activities/farming/build1.wav} @vol; #var buildHandle %playHandle;}
-#trig {You lay down your hammer, the work complete.} {#gagline all; playsound {Cosmic Rage/activities/farming/hammer.wav} @vol; #pc @buildhandle stop;}
+#trig {You step out of the pod.} {gagAll}
+#trig {You set about nailing wood together to make 4 walls.} {gagAll; loopsound {Cosmic Rage/activities/farming/build1.wav} @vol; #var buildHandle %playHandle;}
+#trig {You lay down your hammer, the work complete.} {gagAll; playsound {Cosmic Rage/activities/farming/hammer.wav} @vol; #pc @buildhandle stop;}
 #Trigger {The Farm Of *, *} {
 #var isvehicle 0;
 #if {@ambon = "Enabled"} {
@@ -76,17 +76,17 @@ loopsound {cosmic rage/activities/farming/sheeppen.wav} @roomvol;
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/activities/farming/house.wav} @roomvol;
 #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "Inside"}}}};
-#trig {You step out of the exit and quickly make your way back to where you were.} {#gagline all; playsound {Cosmic Rage/activities/farming/close.wav} @vol}
+#trig {You step out of the exit and quickly make your way back to where you were.} {gagAll; playsound {Cosmic Rage/activities/farming/close.wav} @vol}
 #trig {You step into a *} {playsound {Cosmic Rage/activities/farming/open.wav} @vol}
-#trig {You flip several switches and begin to pump water from the reservoir into the tank.} {#gagline voice; playsound {Cosmic Rage/activities/farming/pump.wav} @vol}
-#trig {You step onto the *} {#gagline all; playsound {Cosmic Rage/activities/farming/open.wav} @vol}
-#trig {You flip several of the switches near the front of the tank, slowing down the pressure.} {#gagline voice}
+#trig {You flip several switches and begin to pump water from the reservoir into the tank.} {gagVoice; playsound {Cosmic Rage/activities/farming/pump.wav} @vol}
+#trig {You step onto the *} {gagAll; playsound {Cosmic Rage/activities/farming/open.wav} @vol}
+#trig {You flip several of the switches near the front of the tank, slowing down the pressure.} {gagVoice}
 #trig {a * is selling * cows.} {playsound {Cosmic Rage/activities/farming/cow.wav} @vol}
 #trig {a * is selling * horses.} {playsound {Cosmic Rage/activities/farming/horse.wav} @vol}
 #trig {a * is selling * goats.} {playsound {Cosmic Rage/activities/farming/goat.wav} @vol}
 #trig {a * is selling * sheeps.} {playsound {Cosmic Rage/activities/farming/sheep.wav} @vol}
 #trig {You use the loose soil to cover the seeds with * shovel.} {
-#gagline voice;
+gagVoice;
 playsound {cosmic rage/activities/hand mining/dirt.wav} @vol}
 #Trigger {Tarania;  *} {
 #var isvehicle 0;

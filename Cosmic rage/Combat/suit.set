@@ -1,29 +1,29 @@
-#trigger {You step into * Flight Suit *} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
-#trigger {You step into * Flight Suit *} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
-#trigger {You slide out of the suit, allowing the jell to retract from around you.} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
-#trigger {You bend the knees of the suit and lunge forward, engaging the rockets at the bottom.} {#gagline all; playsound {Cosmic Rage/general/combat/suit/launch.wav} @GVol}
-#trigger {The airlock ahead of the suit slides open, and you adjust the angle of launch slightly to aim for the middle.} {#gagline all};
-#trigger {The suit slides easily through the airlock, and slips into space.} {#gagline all};
-#trigger {You shift a lever, lowering the rocket boost at the base, and turning on the gravity attraction field.} {#gagline all};
-#trigger {The suit touches down on the hull of the station with a stumbling shudder.} {#gagline all};
-#trigger {You deactivate the gravity field of the suit and then yank the controls sharply, giving a boost of the rockets to shoot you towards the hatches.} {#gagline all; playsound {Cosmic Rage/general/combat/suit/land.wav} @GVol}
-#trigger {You straighten up and, with several flicks of switches, deactivate the energy shielding and weapons.} {#gagline all};
-#trigger {You flip the suit, and land in a crouch.} {#gagline all};
-#trigger {You fly, head first, towards the airlock hatch, and it is only a moment before it slides open, allowing you entry.} {#gagline all};
-#trigger {You shift the suit slightly to the left, sliding it through the gap with a soft hiss.} {#gagline all};
-#trigger {You flick a dial to maximum, engaging the energy shielding.} {#gagline all};
+#trigger {You step into * Flight Suit *} {gagVoice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
+#trigger {You step into * Flight Suit *} {gagVoice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
+#trigger {You slide out of the suit, allowing the jell to retract from around you.} {gagVoice; playsound {Cosmic Rage/general/combat/suit/enter.wav} @GVol}
+#trigger {You bend the knees of the suit and lunge forward, engaging the rockets at the bottom.} {gagAll; playsound {Cosmic Rage/general/combat/suit/launch.wav} @GVol}
+#trigger {The airlock ahead of the suit slides open, and you adjust the angle of launch slightly to aim for the middle.} {gagAll};
+#trigger {The suit slides easily through the airlock, and slips into space.} {gagAll};
+#trigger {You shift a lever, lowering the rocket boost at the base, and turning on the gravity attraction field.} {gagAll};
+#trigger {The suit touches down on the hull of the station with a stumbling shudder.} {gagAll};
+#trigger {You deactivate the gravity field of the suit and then yank the controls sharply, giving a boost of the rockets to shoot you towards the hatches.} {gagAll; playsound {Cosmic Rage/general/combat/suit/land.wav} @GVol}
+#trigger {You straighten up and, with several flicks of switches, deactivate the energy shielding and weapons.} {gagAll};
+#trigger {You flip the suit, and land in a crouch.} {gagAll};
+#trigger {You fly, head first, towards the airlock hatch, and it is only a moment before it slides open, allowing you entry.} {gagAll};
+#trigger {You shift the suit slightly to the left, sliding it through the gap with a soft hiss.} {gagAll};
+#trigger {You flick a dial to maximum, engaging the energy shielding.} {gagAll};
 #trigger {A powerful thrum continues to vibrate the jell around you as the suit moves to *, *} {playsound {Cosmic Rage/general/combat/suit/move.wav} @GVol; #sub {%1, %2}}
-#trigger {You fire up the boosters and begin to move.} {#gagline all; playsound {Cosmic Rage/general/combat/suit/move1.wav} @gvol; #alarm 1 {loopsound {Cosmic Rage/general/combat/suit/move2.wav} @gvol; #var suitHandle %playHandle; #var suit 1}};
-#trigger {You tap the stop button, bringing the forward motion to a stop.} {#gagline all; playsound {Cosmic Rage/general/combat/suit/move3.wav} @gvol; #if {@suit = 1} {#pc @suitHandle stop; #var suit 0}}
-#trigger {You squeeze the trigger, and fire a thick beam of energy *} {#gagline all; playsound {Cosmic Rage/general/combat/suit/laser1.wav} @gvol}
-#trigger {The laser beam flies off into space.} {#gagline all; playsound {cosmic rage/ships\computer\mis.wav} @Gvol; playsound {Cosmic Rage/general/combat/suit/laser2.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
-#trigger {You aim one unit east and prepare to fire a missile.} {#gagline all; playsound {Cosmic Rage/general/combat/suit/miss.wav} @gvol}
+#trigger {You fire up the boosters and begin to move.} {gagAll; playsound {Cosmic Rage/general/combat/suit/move1.wav} @gvol; #alarm 1 {loopsound {Cosmic Rage/general/combat/suit/move2.wav} @gvol; #var suitHandle %playHandle; #var suit 1}};
+#trigger {You tap the stop button, bringing the forward motion to a stop.} {gagAll; playsound {Cosmic Rage/general/combat/suit/move3.wav} @gvol; #if {@suit = 1} {#pc @suitHandle stop; #var suit 0}}
+#trigger {You squeeze the trigger, and fire a thick beam of energy *} {gagAll; playsound {Cosmic Rage/general/combat/suit/laser1.wav} @gvol}
+#trigger {The laser beam flies off into space.} {gagAll; playsound {cosmic rage/ships\computer\mis.wav} @Gvol; playsound {Cosmic Rage/general/combat/suit/laser2.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
+#trigger {You aim one unit east and prepare to fire a missile.} {gagAll; playsound {Cosmic Rage/general/combat/suit/miss.wav} @gvol}
 #trigger {Your computer flashes a red light, indicating the nearest enemy is at *, * units away and is * percent damaged.} {#sub {closest enemy is at %1, %2 units far, %3 percent damaged}}
 #trigger {Laser fire slams into the energy shielding.} {#sub {suit damage}; playsound {Cosmic Rage/general/combat/suit/hit.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
 #trigger {At *, an enemy flightsuit erupts in flames, the debris drifting quickly into empty space!} {playsound {Cosmic Rage/general/combat/suit/explode.wav} @gvol; #if {@PanShipCombat = "Enabled"} {#PC %Playhandle Pan %Random(-4000,4000)}}
-#trigger {You direct the tools to perform a quick repair.} {#gagline voice; playsound {Cosmic Rage/general/combat/suit/repair.wav} @GVol}
+#trigger {You direct the tools to perform a quick repair.} {gagVoice; playsound {Cosmic Rage/general/combat/suit/repair.wav} @GVol}
 #TRIGGER {You score * hit on an enemy flightsuit!} {playsound {cosmic rage/ships/combat/indirect*2.wav} @CVol};
-#TRIGGER {(*, *) * fire a thick beam of energy *}  {#gagline voice;  #var pardom %random(3000,9000); #math pardom {@pardom * 10}; playsound {cosmic rage/ships/pd/fire*3.wav} @CVol;  #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 1 {playsound {cosmic rage/ships/pd/hit*3.wav} @CVol;  #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
-#TRIGGER {(*, *) * fires up its boosters and begins to move *} {#gagline voice; playsound {cosmic rage/ships/pd/move*4.wav} @CVol}; 
+#TRIGGER {(*, *) * fire a thick beam of energy *}  {gagVoice;  #var pardom %random(3000,9000); #math pardom {@pardom * 10}; playsound {cosmic rage/ships/pd/fire*3.wav} @CVol;  #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}; #alarm 1 {playsound {cosmic rage/ships/pd/hit*3.wav} @CVol;  #PC %Playhandle Frequency @pardom; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)}}}
+#TRIGGER {(*, *) * fires up its boosters and begins to move *} {gagVoice; playsound {cosmic rage/ships/pd/move*4.wav} @CVol}; 
 #TRIGGER {A missile explodes nearby!} {playsound {cosmic rage/ships/combat/component/1/*10.wav} @CVol};
 #TRIGGER {(*, *) * prepares to fire a missile *.} {playsound {cosmic rage/ships/combat/weapons/missilef.wav} @CVol; #if {@panShipCombat = "Enabled"} {#pc %playhandle pan %random(-4000,4000)};};

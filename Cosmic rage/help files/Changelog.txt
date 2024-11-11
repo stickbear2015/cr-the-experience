@@ -1,3 +1,18 @@
+2487 Nemesis, Added sounds for trolley when they are extracting latex. finally!
+2486 Nemesis, Added sounds for dragon when they are saying thins without translator. don't know why this wasn't there before.
+2485 Nemesis, Fixed the event that when we load/unload an extra script, the script is not actually loaded or unloaded.
+2484 Nemesis, Credits to host Augustus and others, Fixed chittering on  communicator.
+2483 Nemesis, Credits to Shon, added sounds for phone startup too, this one is real cute.
+2482 Nemesis, Credits to Shon, Added sound for computer start up.
+2481, SkyfallBlindDreamer, Made my new train counter more efficient with an alias, removed a duplicate trigger from trains.set
+2480, SkyfallBlindDreamer, Reverted my previous change with gagDisplay, updated soundpack.set to include the cosmicgagger variable when saving settings, updated trains.set to match the display of text with appropriate sounds, tweaked gagging for some train messages, and created a counter to allow train messages to play but at a reduced rate to limit spam.
+2479, SkyfallBlindDreamer, changed gagline display to gagline all in the gagDisplay alias in the configuration manager. Gags that weren't working with the new cosmic gagger option should now work.
+2478 Nemesis, credits to a ghostly Debs, Changed the buffer for all IC computer notifications to use notifications instead of notices or InforComputerNotifications to make things clearer.
+2477 Nemesis, credits to everyone, Due to numerous complaints about the SAPI in the train announcements, I’ve reluctantly decided to remove the SAPI part so there will no changing voice from your screen reader to Speech API anymore.
+2476 Nemesis, all other files have been updated with changes related to the gag/ungag lines.
+2475 Nemesis, Exclude $CosmicRage No sleeping on us because it is just for keepalive message.
+2474 Nemesis, give a round of applause to FrauleinSnow for providing me with these ideas. Now, you can press Control+Shift+F1 to disable all gag lines from the scripts. Although I haven’t applied it to every part yet, the main elements are working, excluding ships, combats, and activities. The focus is currently on general features like babies and the wall, and I can confirm that everything in the 'misc' folder is included in these changes. Feel free to explore and discover the hidden text that is actually cute to display!
+2473 TRACEBUG, Replaced couple ship ambiences with their higher quality versions.
 2472 Nemesis, reveal all the trains messages that were previously gagged. Let us begin to appreciate the host who crafted these messages with efforts  and stop gagging them again.
 2471 Nemesis, Fixed an issue where Avengers were not appearing on the output screen, which caused confusion about what happened.
 2470 Nemesis, Fix things regarding to clan and adjust so control p does not saying about ship combat because it's much more than just combat stuff anyway. last but not least, added new hotkey (alt-shift-m) to mute/unmute ooc channel if you feel the ooc channel is way to spammy and you don't want to turn them off, muteOoc is the other way to do that. Thansk to those who report this.

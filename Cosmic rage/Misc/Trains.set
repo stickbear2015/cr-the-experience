@@ -1,15 +1,20 @@
 #trigger {You hear the rumble of an engine, then, with a hiss of breaks, * chuffs into the station.} {#sub {%1 arrived}}
-#trigger {There is a slight hum of electricity, before, with a whoosh, the train pulls out of the station.} {#gagline display; #alarm 2 {playsound {Cosmic Rage/general/trains/start.wav} @vol}; #alarm 13 {loopsound {Cosmic Rage/general/trains/loop.wav} @vol; #var trainHandle %playHandle; #var train 1}}
+#trigger {There is a slight hum of electricity, before, with a whoosh, the train pulls out of the station.} {#gagline all; #alarm 2 {playsound {Cosmic Rage/general/trains/start.wav} @vol;
+#if {@cosmicgagger = "enabled"} {#say {There is a slight hum of electricity, before, with a whoosh, the train pulls out of the station.} voiceonly};
+#if {@cosmicgagger = "disabled"} {#say {There is a slight hum of electricity, before, with a whoosh, the train pulls out of the station.}}};
+#alarm 13 {loopsound {Cosmic Rage/general/trains/loop.wav} @vol; #var trainHandle %playHandle; #var train 1}}
 #trigger {The next station is *} {playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
-#trigger {The doors whoosh open.} {#gagline display; #alarm 3 {playsound {Cosmic Rage/general/trains/doorsopen.wav} @vol}}
-#trigger {One of the fans of the trains kicks in.} {#gagline display}
+#trigger {The doors whoosh open.} {#gagline all; #alarm 3 {playsound {Cosmic Rage/general/trains/doorsopen.wav} @vol;
+;#if {@cosmicgagger = "enabled"} {#say {The doors whoosh open.} voiceonly};
+#if {@cosmicgagger = "disabled"} {#say {The doors whoosh open.}}}}
 #trigger {The doors on * slide shut with a hiss.} {playsound {Cosmic Rage/general/trains/doorsclosed2.wav} @vol}
-#trigger {With a whoosh, * pulls out.} {#gagline display; #alarm 2 {playsound {Cosmic Rage/general/trains/leave2.wav} @vol}}
-#trigger {The doors on * open with a whoosh.} {#gagline display; #alarm 10 {playsound {Cosmic Rage/general/trains/doorsopen2.wav} @vol}}
-#trigger {The train slows before, with a chuf of brakes, it stops completely.} {#gagline display}
-#trigger {The train bumps over the tracks.} {#gagline display}
-#trigger {The wheels of the train squeal.} {#gagline display}
-#trigger {You hear a squeaking from somewhere.} {#gagline display}
+#trigger {With a whoosh, * pulls out.} {#gagline all; #var TSay %1; #alarm 2 {playsound {Cosmic Rage/general/trains/leave2.wav} @vol;
+#if {@cosmicgagger = "enabled"} {#say {With a whoosh, @TSay pulls out.} voiceonly};
+#if {@cosmicgagger = "disabled"} {#say {With a whoosh, @TSay pulls out.}}}}
+#trigger {The doors on * open with a whoosh.} {#gagline all; #var TSay %1; #alarm 10 {playsound {Cosmic Rage/general/trains/doorsopen2.wav} @vol;
+#if {@cosmicgagger = "enabled"} {#say {The doors on @TSay open with a whoosh.} voiceonly};
+#if {@cosmicgagger = "disabled"} {#say {The doors on @TSay open with a whoosh.}}}}
+#trigger {The train slows before, with a chuf of brakes, it stops completely.} {gagDisplay}
 #trigger {A * (currently at *)} {
 #if {@CurrentRoom <> "train"} {
 #if {@RoomSoundPlaying = 1} {
@@ -21,20 +26,24 @@ loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playh
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 loopsound {cosmic rage/general/trains/TrainAmb.wav} @vol; #Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "train"; #var currentroom2 "notmisc"}} {ambon};
 #trigger {The train approaching platform * is *.} {playsound {Cosmic Rage/general/trains/Announcement.wav} @vol}
-#trigger {You heave yourself abord * Pod.} {#gagline display; loopsound {cosmic rage/general/trains/TrainAmb.wav} @Roomvol; #var trainhandle %playhandle; #var train 1} {} AnyCase
-#trigger {You disembark from the *.} {#gagline display; playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol};
+#trigger {You heave yourself abord * Pod.} {gagDisplay; loopsound {cosmic rage/general/trains/TrainAmb.wav} @Roomvol; #var trainhandle %playhandle; #var train 1} {} AnyCase
+#trigger {You disembark from the *.} {gagDisplay; playsound {cosmic rage/general/trains/Doorsopen2.wav} @vol};
 
-#trigger {A soothing female voice announces: This is *} {#var tra %1; #gagline display; #alarm 5 {#say {welcome to @tra}}}
-#trigger {A soothing female voice announces: Please mind the doors.} {#gagline display; #alarm 1 {#say {Please mind the doors.}}; playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
+#trigger {A soothing female voice announces: This is *} {#var tra %1; #gagline all; #alarm 5 {#say {A soothing female voice announces: This is @tra}}}
+#trigger {A soothing female voice announces: Please mind the doors.} {#gagline all; #alarm 1 {#say {A soothing female voice announces: Please mind the doors.}}; playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
 #trigger {A soothing female voice announces: We are now approaching *} {playsound {Cosmic Rage/general/trains/announcement.wav} @vol; playsound {Cosmic Rage/general/trains/stop.wav} @vol; #if {@train = 1} {#pc @trainHandle stop; #var train 0}}
 #trigger {A soothing female voice announces: The next station is *, *} {playsound {Cosmic Rage/general/trains/announcement.wav} @vol}
 
-#trigger {An insistent beeping comes from the doors, before with a soft hiss, they close and lock with a click.} {#gagline display; playsound {Cosmic Rage/general/trains/doorsclosed.wav} @vol}
-#trigger {The engine of the carriage hums soothingly.} {#gagline display}
-#trigger {The train turns sharply.} {#gagline display}
-#trigger {The train turns sharply.} {#gagline display}
-#trigger {The train rattles a little.} {#gagline display}
-#trigger {The train climbs sharply up a hill.} {#gagline display}
-#trigger {One of the fans of the train kicks in.} {#gagline display}
+#alias TMath {#if {@TCount < 2} {gagAll; #math TCount {@TCount + 1}} {gagDisplay; #var TCount 0}}
+#trigger {An insistent beeping comes from the doors, before with a soft hiss, they close and lock with a click.} {gagAll; playsound {Cosmic Rage/general/trains/doorsclosed.wav} @vol; #var TCount 0}
+#trigger {One of the fans of the trains kicks in.} {TMath}
+#trigger {The train bumps over the tracks.} {TMath}
+#trigger {The wheels of the train squeal.} {TMath}
+#trigger {You hear a squeaking from somewhere.} {TMath}
+#trigger {The engine of the carriage hums soothingly.} {TMath}
+#trigger {The train turns sharply.} {TMath}
+#trigger {The train rattles a little.} {TMath}
+#trigger {The train climbs sharply up a hill.} {TMath}
+#trigger {One of the fans of the train kicks in.} {TMath}
 #trigger {A soothing female voice announces: "Please prepare for departure."} {playsound {cosmic rage/general/misc/ping.wav} @vol}
-#trigger {A soothing female voice announces: The train approaching platform * is *} {playsound {Cosmic Rage/general/trains/arrive.wav} @vol; #var train %2; playsound {cosmic rage/general/misc/ping.wav} @vol; #alarm 1 {#SetSpeech VoiceOnly Sapi 0 100 33; #Say {@train} VoiceOnly|current}; #alarm 1 {#SetSpeech VoiceOnly screenreader}}
+#trigger {A soothing female voice announces: The train approaching platform * is *} {playsound {Cosmic Rage/general/trains/arrive.wav} @vol; playsound {cosmic rage/general/misc/ping.wav} @vol}

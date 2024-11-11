@@ -149,3 +149,4 @@
 #key {Control-alt-shift-L} {LoadBuffers}
 #key alt-q {setchange}
 #key alt-shift-m {muteOoc}
+#key control-shift-f1 {ungagger}

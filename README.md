@@ -1,0 +1,1 @@
+This is the cosmic rage soundpack for vipmud.

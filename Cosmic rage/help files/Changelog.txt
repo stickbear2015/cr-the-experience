@@ -1,3 +1,7 @@
+2491 Nemesis, Credits to Bluepanda, FIxed larkan teleportation sounds not working for first person view. blaim debs because she didn't give me the complete text.
+2490 Nemesis, Credits to Debs, The Cy-Larkan teleportation now has super cool sounds.
+2489 Nemesis, Credits to Debs, human deliberate has now appeared under your say buffer.
+2488 Nemesis, Credits to FrauleinSnow&EvilChocolateLord, Added sounds for dragon when they talking through rumble.
 2487 Nemesis, Added sounds for trolley when they are extracting latex. finally!
 2486 Nemesis, Added sounds for dragon when they are saying thins without translator. don't know why this wasn't there before.
 2485 Nemesis, Fixed the event that when we load/unload an extra script, the script is not actually loaded or unloaded.

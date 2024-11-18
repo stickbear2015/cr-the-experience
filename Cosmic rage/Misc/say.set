@@ -1,5 +1,7 @@
 #trigger {You say* "*"} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
 #trigger {"*" you say*} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
+#trigger {You deliberate* "*"} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
+#trigger {"*" You deliberate*} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
 #trigger {You ponder* "*"} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
 #trigger {"*" you ponder*} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
 #trigger {You muse* "*"} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
@@ -30,3 +32,5 @@
 #trigger {"*" * asks*} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
 #trigger {* murmurs* "*"} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
 #trigger {"*" * murmurs*} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
+#trigger {* deliberates* "*"} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}
+#trigger {"*" * deliberates*} {playsound {cosmic rage/general/misc/say.wav} @CommsVol; BufferAdd Say %0}

@@ -24,3 +24,7 @@
 #trigger {An internal sensor alerts you to the fact that your Biocore's fuel*} {playsound {cosmic rage/general/misc/warning.wav} @vol}
 #TRIGGER  {You step onto the recharging station.} {gagAll; playsound {cosmic rage/general/misc/larkancharge.wav} @vol; #alarm 4.7 {loopsound {cosmic rage/general/misc/lark.wav} @vol; #var larkanHandle %playHandle; #var larkan 1}}
 #trigger {You step down from the recharging station, fully charged and ready to take on practically anything.} {gagAll; #if {@larkan = 1} {#pc @larkanHandle stop; #var larkan 0}; playsound {cosmic rage/general/misc/larkdown.wav} @vol}
+#trigger {* becomes transparent for a brief moment, revealing the inner workings of * body before disappearing in a beam of * light.} {gagAll; playsound {cosmic rage/general/larkan/teleport.wav} @vol}
+#trigger {A rotating ball of * light appears out of nowhere, expanding as it spins until * stands before you.} {gagAll; playsound {cosmic rage/general/larkan/teleport2.wav} @vol}
+#trigger {You charge * with * units of biofuel, and your atoms scramble as you're beamed through space*} {gagAll; playsound {cosmic rage/general/larkan/teleport.wav} @vol}
+#trigger {You feel your body come together around * and suddenly, you're there*} {gagAll; playsound {cosmic rage/general/larkan/teleport2.wav} @vol}

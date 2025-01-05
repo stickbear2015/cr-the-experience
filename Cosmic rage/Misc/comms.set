@@ -31,7 +31,7 @@ playsound {cosmic rage/general/comms/intel.wav} @CommsVol; BufferAdd intel %0; #
 #TRIGGER {[[]Intel] *} {#if {%IfWord(~",%1,"")} {#abort 1};
 playsound {cosmic rage/general/comms/intel.wav} @CommsVol; BufferAdd intel %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char intel.log};#write 1 %0;#close 1}} {} AnyCase
 #TRIGGER {[[]Recruitments]:*} {playsound {cosmic rage/general/comms/recruiting.wav} @CommsVol; BufferAdd recruitments %0; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char Recruitments.log};#write 1 %0;#close 1}} {} AnyCase
-#TRIGGER {[[]MFAS]*} {playsound {Cosmic Rage/general/comms/mfas.wav} @CommsVol}
+#TRIGGER {[[]MFAS]*} {playsound {Cosmic Rage/general/comms/mfas.wav} @CommsVol; BufferAdd Misc %0}
 #TRIGGER {[[]Treasure!]*} {playsound {Cosmic Rage/general/comms/treasure.wav} @CommsVol}
 #TRIGGER {You enable * on *.} {
 playsound {cosmic rage/general/comms/activate.wav} @CommsVol} {} AnyCase
@@ -118,7 +118,7 @@ playsound {cosmic rage/general/comms/help.wav} @CommsVol}
 #trigger {You tap the menu icon on * Radio} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
 #trigger {You hear a quick beep beep, beep beep sound from *} {playsound {Cosmic Rage/general/comms/TextMessage.wav} @CommsVol}
 #trigger {You here a quick beep beep, beep beep sound from * informing you of a new picture message.} {playsound {Cosmic Rage/general/comms/PictureMessage.wav} @CommsVol}
-#trigger {In your mind, you hear *} {BufferAdd say %0} {}
+#trigger {In your mind, *} {BufferAdd say %0} {}
 #trigger {* flashes with * new mail messages.} {playsound {Cosmic Rage/general/comms/mail.wav} @CommsVol; BufferAdd InfoComputerNotifications %0}
 #trigger {Your friendship request to * was turned down.} {playsound {Cosmic Rage/general/comms/OOCDenied.wav} @CommsVol}
 #trigger {You have received a new friendship request from *} {playsound {Cosmic Rage/general/comms/OOCRequest.wav} 85}

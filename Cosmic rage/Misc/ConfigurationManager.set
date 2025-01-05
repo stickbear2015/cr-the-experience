@@ -78,7 +78,9 @@ Back:#alarm 0.1 {config}}}
 
 #alias gagpicker {playsound {Cosmic Rage/general/misc/ConfMan.wav} @vol;
 #pick {p:please select one of the options below|
-Short mapper and short flight control text (@ShortMapText), Shortcut alt s.:ShortMapText; #alarm 0.1 {gagpicker}|
+Main Gagger (@cosmicgagger), Shortcut CTRL+shift+f1:ungagger; #alarm 0.1 {gagpicker}|
+OOC gagger (@oocChan), Shortcut alt+shift+M:MuteOOC; #alarm 0.1 {gagpicker}|
+shorter flight control text (@ShortMapText), Shortcut alt s.:ShortMapText; #alarm 0.1 {gagpicker}|
 Toggle Speech while AFK  (@speechAFKGagger), no shortcut.:speechafk; #alarm 0.1 {gagpicker}|
 Toggle Messages while someone's AFK  (@toggleAFKGagger), no shortcut.:toggleafk; #alarm 0.1 {gagpicker}|
 ship combat message gagger (@gagShipCombat), Shortcut ctrl g.:gagscombat; #alarm 0.1 {gagpicker}|

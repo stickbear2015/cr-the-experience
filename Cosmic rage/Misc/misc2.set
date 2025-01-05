@@ -7,7 +7,7 @@
 #TRIGGER {You hear the roar of an approving crowd. * just entered hardcore mode!} {playsound {cosmic rage/general/misc/hardcore.wav} @vol} {}
 #TRIGGER {You hear clapping. * just reverted to * mode!} {playsound {cosmic rage/general/misc/normal.wav} @vol}
 #TRIGGER {The yellow light turns green and a tray slides out, holding *} {playsound {cosmic rage/general/misc/food.wav} @vol}
-#TRIGGER {* plays a cheery tune, informing you someone just *} {playsound {cosmic rage/general/misc/comp.wav} @vol}
+#TRIGGER {* plays a cheery tune, informing you someone just *} {playsound {cosmic rage/general/misc/comp.wav} @vol; BufferAdd Notifications %0}
 #TRIGGER {You enter * and then tap * on * LCD screen.} {playsound {cosmic rage/general/misc/connection1.wav} @vol; #alarm 0.1 {playsound {cosmic rage/general/misc/connection2.wav} @vol}}
 #TRIGGER  {* hums a little.} {gagAll; playsound {cosmic rage/general/misc/food.wav} @vol}
 #trigger {* begin to control your droid wirelessly using *} {gagAll}
@@ -49,11 +49,11 @@
 #trigger {* balloon * lets out a slight squeal before popping with a loud bang!} {playsound {cosmic rage/general/misc/balloonpop.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
 #TRIGGER {With a great rushing of wings, * lifts off into the sky to hunt.} {playsound {cosmic rage/general/misc/flutter.wav} @vol; #PC %Playhandle Pan %Random(-100,100)};
 #TRIGGER {There is a flapping of wings then * sweeps from the sky, a catch clamped firmly in * beak.} {playsound {cosmic rage/general/misc/flutter.wav} @vol; #PC %Playhandle Pan %Random(-100,100)};
-#trigger {You have been invited to join the story tapestry, * Type 'STORY JOIN' to participate.} {playsound {cosmic rage/general/misc/storyInvite.wav} @commsvol}
+#trigger {You have been invited to join the story tapestry, * Type 'STORY JOIN' to participate.} {playsound {cosmic rage/general/misc/storyInvite.wav} @commsvol; BufferAdd Misc %0}
 #trigger {You flip * on the wall turning *} {playsound {cosmic rage/general/misc/lightSwitch.wav} @vol; #PC %Playhandle Pan %Random(-100,100)}
-#trigger {*security * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security %2]: %3 inform you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {*security drone * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security drone]: %3 inform you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
-#trigger {Your automatic saving donator item has just saved your character. This will happen silently until you log off and back on again now.} {gagAll; playsound {cosmic rage/general/misc/autosave.wav} @vol}
+#trigger {*security * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security %2]: %3 informs you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {*security drone * at * informs you *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol; #sub {[Security drone]: %3 informs you  %4}; #if {@ChannelLogging = "Enabled"} {#file 1 {cosmic rage/logs/%char securitycamdrone.log};#write 1 %0;#close 1}} {} AnyCase
+#trigger {Your automatic saving * item has just saved your character. This will happen silently until you log off and back on again now.} {gagAll; playsound {cosmic rage/general/misc/autosave.wav} @vol}
 #trigger {* and a projection scrolls before your eyes.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}.
 #trigger {*and the * channel history is displayed before your eyes.} {playsound {cosmic rage/ships/computer/display*4.wav} @vol}.
 #trigger {*and the * history is played back through its speaker.} {playsound {cosmic rage/general/telephone/talk.wav} @vol}.
@@ -98,7 +98,7 @@ gagAll;
 #trigger {* makes a short, sharp crashing smashing noise as it recycles its content*} {playsound {cosmic rage/general/misc/TrashCan*2.wav} @vol}
 #trigger {A nearby airfreshener lets out a soft hiss.} {#gagline display; playsound {cosmic rage/general/misc/air freshener spray.wav} @vol; #PC %Playhandle Pan %Random(-1500,1500)}
 #trigger {* ligh* * candl* with *lighte*} {playsound {Cosmic Rage/general/combat/enemy/lighter.wav} @gvol}.
-#trigger {Attention! we have a new leader in * Congratulations, *} {playsound {cosmic rage/general/misc/newLeader.wav} @vol}
+#trigger {Attention! we have a new leader in * Congratulations, *} {playsound {cosmic rage/general/misc/newLeader.wav} @vol; BufferAdd Misc %0}
 #trigger {* squeeze* the lever on an extension of hose from The Firetruck*.} {gagVoice; playsound {cosmic rage/general/misc/hose.wav} @vol}
 #trigger {An extension of hose from The Firetruck * sprays a large amount of fire suppressing chemicals at *} {gagVoice; playsound {cosmic rage/general/misc/hose.wav} @vol}
 #trigger {You turn to the front cover of the book.} {playsound {cosmic rage/general/misc/bookclose.wav} @vol}

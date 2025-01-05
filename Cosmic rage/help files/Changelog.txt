@@ -1,3 +1,11 @@
+2499 Nemesis, fireworks now has new good good sounds.
+2498 Nemesis, Credits to NightSky, Mutariansi's chatter in communicator will no longer trigger squeak sound even if they are squeaking by default.
+2497 Nemesis, OOC and main gagger is now in the config/gameGagger.
+2496 Nemesis, Fixed many issues, including changing the CashPointsSkillsAndLeveling buffername to balance to make it short, and adding a misc buffer for general items that aren't related to specific categories.
+2495 Nemesis, Credits to  FrauleinSnow, Added sounds for squeaks. happy squeaking!
+2494 Nemesis, Credits to  everyone, Updated the default settings for CR which were outdated, and ensured all text are gagged by default.
+2493 tracebug, changed a door sound and added a new one. You will discover yourself.
+2492 Nemesis, Credits to Loverofjazz1901 and FrauleinSnow, added a sound for mutariansi when they hear someone's thoughts. ps: don't read my mind, please...
 2491 Nemesis, Credits to Bluepanda, FIxed larkan teleportation sounds not working for first person view. blaim debs because she didn't give me the complete text.
 2490 Nemesis, Credits to Debs, The Cy-Larkan teleportation now has super cool sounds.
 2489 Nemesis, Credits to Debs, human deliberate has now appeared under your say buffer.

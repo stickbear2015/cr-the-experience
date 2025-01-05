@@ -140,7 +140,7 @@
 #trigger {* kicks * over the IC OOC barrier of life.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} 30}}
 #trigger {* smashes the IC to OOC barrier like a boss.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/ic.wav} 30}}
 #trigger {* cracks the *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/whip.wav} @vol}}
-#trigger {* squeaks, and runs away in fear from *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/squeak.wav} 50}}
+#trigger {* squeaks, and runs away in fear from *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/squeak1.wav} 50}}
 #trigger {* shoves * into a taco and eats *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/eat.wav} @vol}}
 #trigger {* pulls out a boxing glove, and smacks *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/glove.wav} @vol}}
 #trigger {* sobs broken heartedly at *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/sob.wav} @vol}}
@@ -172,3 +172,4 @@
 #trigger {you clear your throat.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Throat*2.wav} @vol}}
 #trigger {* clears *er throa*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Throat2.wav} @vol}}
 #trigger {*clears *is throa*} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/Throat1.wav} @vol}}
+#trigger {*squeaks*} {#if {@SocialSounds = "Enabled"} {#if {%IfWord(~, and runs,%2,"")} {#abort}; {#if {%IfWord(~:,%2,"")} {#abort}; playsound {Cosmic Rage/general/socials/squeak2.wav} @vol}}}

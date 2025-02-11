@@ -1,3 +1,9 @@
+2505 Nemesis, credits to Blindwolf, Added sounds for Wheelchair.
+2504 Nemesis, credits to PlasticKitten, Added sounds when hosts start controlling you or someone in the same room as you.
+2503 Nemesis, credits to ABabyAssault, Fix the wooshy firework, hopefully.
+2502 Nemesis, re-added the song when you log in and receive a birthday notification.
+2501 Nemesis, credits to Broddry, Added sounds when your hand slips from the console while orbit-cleaning.
+2500, SkyfallBlindDreamer, Fixed the trigger text for extending bioplasma harvesting rods.
 2499 Nemesis, fireworks now has new good good sounds.
 2498 Nemesis, Credits to NightSky, Mutariansi's chatter in communicator will no longer trigger squeak sound even if they are squeaking by default.
 2497 Nemesis, OOC and main gagger is now in the config/gameGagger.

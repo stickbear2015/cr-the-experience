@@ -43,3 +43,7 @@
 #trigger {*hums quietly for a moment before it displays some information on the screen:} {gagVoice; playsound {cosmic rage/ships/computer/display*4.wav} @vol}
 #trigger {You tap in the code and grab * from *} {playsound {cosmic rage/general/military/weaponSafe1.wav} @vol}
 #trigger {You type in your authorisation code and drop * into *} {playsound {cosmic rage/general/military/weaponSafe2.wav} @vol}
+#trigger {*push* a strong * wheelchair*} {playsound {cosmic rage/general/misc/wheelChair.wav} @vol}
+#trigger {*wheels a strong silver  wheelchair*} {playsound {cosmic rage/general/misc/wheelChair.wav} @vol}
+#trigger {You are pushed * with a strong * wheelchair} {playsound {cosmic rage/general/misc/wheelChair.wav} @vol}
+#trigger {You wheel a strong * wheelchair*} {playsound {cosmic rage/general/misc/wheelChair.wav} @vol}

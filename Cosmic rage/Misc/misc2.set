@@ -128,3 +128,4 @@ gagAll;
 #trigger {On *'s screen:  Booting up quantum processing unit.} {playsound {cosmic rage/general/comms/InfoComputerWelcome.wav} @commsvol}
 #trigger {* screen brightens as animated icons populate its surface.} {playsound {cosmic rage/general/comms/InfoComputerStartup.wav} @CommsVole}
 #trigger {The screen on * goes blank.} {playsound {cosmic rage/general/comms/InfoComputerShutdown.wav} @commsVol}
+#trigger {Happy birthday to you! happy birthday to you! happy birthday to * Happy birthday to you!} {playsound {cosmic rage/general/misc/HappyBirthday.wav} @vol}

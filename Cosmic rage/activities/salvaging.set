@@ -17,3 +17,4 @@ gagAll}
 #trigger {You hear a ping as the debris laser fires.} {playsound {Cosmic Rage/ships/salvaging/DebrisLaser.wav} @vol; gagAll; #PC %PlayHandle Pan %Random(-4000,4000)}
 #trigger {You target the debris cloud laser and hit fire.} {gagAll}
 #TRIGGER {*"A ratika podship salvaged."} {gagAll; playsound {cosmic rage/ships/salvaging/salrat.wav} @vol}
+#trigger {Your * slips momentarily on the controls.} {playsound {cosmic rage/ships/computer/Alert.wav} @vol}

@@ -11,5 +11,5 @@
 #trigger {A fat man runs quickly over and cleans up the old fireworks and replaces them with new ones.} {playsound {Cosmic Rage/general/house/broom.wav} @vol}
 #trigger {A bright blue star floats into the center of your vision and then erupts into a huge explosion.} {playsound {Cosmic Rage/general/firework/big.wav} @vol; #PC %PlayHandle Pan %Random(-500,500)}
 #trigger {* explodes, filling the sky with thousands of little *} {playsound {Cosmic Rage/general/firework/big.wav} @vol; #PC %PlayHandle Pan %Random(-500,500)}
-#trigger {*bottle rocket shoots upwards with a great whooshing sound.} {playsound {Cosmic Rage/general/firework/woosh1.wav} @vol; #PC %PlayHandle Pan %Random(-500,500)}
+#trigger {*bottle rocket shoots upwards with a great whooshing sound.} {playsound {Cosmic Rage/general/firework/woosh*1.wav} @vol; #PC %PlayHandle Pan %Random(-500,500)}
 #trigger {In the sky above: *bottle rocket whooshes up from *, trailing sparks.} {playsound {Cosmic Rage/general/firework/w*6.wav} @vol; #PC %PlayHandle Pan %Random(-500,500)}

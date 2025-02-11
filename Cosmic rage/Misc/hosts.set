@@ -23,3 +23,7 @@
 #trigger {* shouts: "*"} {playsound {Cosmic Rage/hosts/shout.wav} @vol; BufferAdd SubAnnouncements %0;} 
 #trigger {A cup of tea mysteriously arrives in your hand.} {playsound {Cosmic Rage/hosts/mater.wav} @vol} {} AnyCase
 #trigger {You have been fully healed by *} {playsound {Cosmic Rage/hosts/heal.wav} @vol} {} AnyCase
+#trigger {You are now being controlled by *} {playsound {cosmic rage/hosts/control1.wav} @vol}
+#trigger {*has let you go.} {playsound {cosmic rage/hosts/control2.wav} @vol}
+#trigger {*blinks and doesn't seem quite*} {playsound {cosmic rage/hosts/control3.wav} @vol}
+#trigger {*blinks and returns to normal.} {playsound {cosmic rage/hosts/control4.wav} @vol}

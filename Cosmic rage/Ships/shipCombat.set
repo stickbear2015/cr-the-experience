@@ -15,7 +15,7 @@ gagAll}
 #pc %playhandle pan %random(-4000,4000)}}
 #trigger {* hum begins to resonate throughout the ship.} {gagAll; playsound {Cosmic Rage/ships/combat/ObfStart.wav} @CVol} {} AnyCase
 #TRIGGER {The hum crescendos until, with a thump, the obfuscation field generator activates.} {gagAll; playsound {cosmic rage/ships/combat/ObfOn.wav} @CVol} 
-#trigger {There is the strained whine of power enhancers as the obfiscation field works to deflect incoming damage.} {gagAll}
+#trigger {There is the strained whine of power enhancers as the obfiscation field works to deflect incoming damage.} {gagAll; playsound {cosmic rage/ships/combat/obfdef*4.wav} @CVol}
 #trigger {*"Deactivating obfuscation field."} {gagAll; playsound {Cosmic Rage/ships/combat/ObfFade.wav} @CVol}
 #TRIGGER {Silence fills the ship as the obfuscation field generator goes offline.} {gagAll; playsound {cosmic rage/ships/combat/ObfOff.wav} @CVol};
 #TRIGGER {You here a voom as the EMP is fired.} {gagAll; playsound {cosmic rage/ships/combat/emp.wav} @CVol;

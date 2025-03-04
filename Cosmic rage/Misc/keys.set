@@ -150,3 +150,5 @@
 #key alt-q {setchange}
 #key alt-shift-m {muteOoc}
 #key control-shift-f1 {ungagger}
+#key {control-shift-s} {backupConfig}
+#key {alt-\} {rawinput}

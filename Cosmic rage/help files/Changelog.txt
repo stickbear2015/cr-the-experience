@@ -1,3 +1,12 @@
+2514 tracebug, added sounds when the obfiscation field deflects damage. Previously this text was gagged so you had no idea if it was working or not.
+2513 Nemesis, Credits to everyone, squeak sound decreased.
+2512 Nemesis, Made a few changes at once, rewrote the backup handler and fixed the long-standing issue where it wasn’t working, added shortcut keys for the backup manager (Ctrl + Shift + S), and introduced a new keybinding for raw input (Alt + Backslash). Big thanks to host Augustus for the ideas. P.S. I reduced the code from 24K to under 2K chars, cutting the lines from 450 to just 53.
+2511 Nemesis, Credits to TwilightDiamond, Added sounds for ringtone and for all the text incoming message.
+2510 Nemesis, updated several things, including rewriting the way settings are read and written to make it easier while dramatically reducing the number of lines of code, and improving some aspects of the sp.
+2509 Nemesis, Credits to Host Augustus, Fixed rawinput does not save in settings because of tracebug's typo.
+2508 tracebug, Credits Host Augustus, added a new option called raw input mode. This will make VipMud ignore the special symbols that it uses such as percent, colon and similar. When enabled, you will no longer to toggle passthru mode for cafe menus or adding pronouns. This will also probably help when pasting multy-lined texts.
+2507 Nemesis,  Rewrite the wall.set code to simplify it, reducing code while allowing more messages to be input easily.
+2506 tracebug, made a little cleanup in the soundpack, you will probably not notice anything much though.
 2505 Nemesis, credits to Blindwolf, Added sounds for Wheelchair.
 2504 Nemesis, credits to PlasticKitten, Added sounds when hosts start controlling you or someone in the same room as you.
 2503 Nemesis, credits to ABabyAssault, Fix the wooshy firework, hopefully.

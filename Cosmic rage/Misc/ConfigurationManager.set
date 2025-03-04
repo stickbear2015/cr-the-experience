@@ -118,6 +118,7 @@ SoundPack changes viewer (@spchange), shortcut alt+q:setchange; #alarm 0.1 {misc
 Channel Logging (@ChannelLogging), shortcut alt control l. If this option is enabled, you may use shift-F2 to pull up the list of channels that have been logged.:Logging; #alarm 0.1 {miscpicker}|
 Check Lag. Ctrl + L. Note, This value may not always be accurate.:lag|
 Toggle extra sounds [experimental]  (@extrascript), no shortcut.:soundextras; #alarm 0.1 {miscpicker}|
+Toggle raw input mode, currently @rawpass. No shortcut defined. Allows you to use the VipMud special characters such as percent, colen, number sign without running into errors.:rawinput; ; #alarm 0.1 {miscpicker}|
 Back:#alarm 0.1 {config}}}
 
 ;Volumes

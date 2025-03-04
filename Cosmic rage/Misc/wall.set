@@ -1,25 +1,14 @@
-#trigger {You slam * wall.} {gagAll;
-playsound {Cosmic Rage/general/misc/Wall.wav} @vol}
-#trigger {You walk straight into a wall. Good job.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {Hey, who put that wall there?} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {Wow, walls actually hurt.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {You try to walk through a wall... And fail Miserably.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {Interesting, apparently this game doesn't have the ability for players to walk straight through walls.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {Can't trust them exits, they keep moving.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {Nope. Still can't walk through walls.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {Oops... thought that was an exit.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {That used to be an exit. I swear it did!} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {Ow! That wall hurt!} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-#trigger {You slam head first into * good job.} {gagAll;
-playsound {cosmic rage/general/misc/wall.wav} @vol}
-
+#var wallList {You slam * wall.
+That used to be an exit. I swear it did!
+You walk straight into a wall. Good job.
+Hey, who put that wall there?
+Wow, walls actually hurt.
+You slam spectacularly into the wall.
+You try to walk through a wall... And fail Miserably.
+Interesting, apparently this game doesn't have the ability for players to walk straight through walls.
+Can't trust them exits, they keep moving.
+Nope. Still can't walk through walls.
+Oops... thought that was an exit.
+Ow! That wall hurt!
+You slam head first into * good job.}
+#trigger {*} {#If {%IfWord(%1,@wallList,%CRLF)} {gagAll; playsound {cosmic rage/general/misc/wall.wav} @vol}}

@@ -1,3 +1,6 @@
+2517 Nemesis, Following the latest ambient volume change, the soundpack will now automatically detect your current location. Pressing F6/F7 will adjust the volume for the room, ship, or vehicle, depending on where you are and whether your ambience is active.
+2516 Nemesis, Tweaked the ambience volume setting! Now you can press F5 to seamlessly switch between Room, Vehicle, and Ship, while F6 and F7 let you fine-tune the volume. Hope this makes changing ambience easier!
+2515 Nemesis, fixed error on firing at aft with warhead.
 2514 tracebug, added sounds when the obfiscation field deflects damage. Previously this text was gagged so you had no idea if it was working or not.
 2513 Nemesis, Credits to everyone, squeak sound decreased.
 2512 Nemesis, Made a few changes at once, rewrote the backup handler and fixed the long-standing issue where it wasn’t working, added shortcut keys for the backup manager (Ctrl + Shift + S), and introduced a new keybinding for raw input (Alt + Backslash). Big thanks to host Augustus for the ideas. P.S. I reduced the code from 24K to under 2K chars, cutting the lines from 450 to just 53.

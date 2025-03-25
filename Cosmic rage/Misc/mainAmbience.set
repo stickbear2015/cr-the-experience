@@ -1,5 +1,5 @@
 #Trigger {[[] &{PlanetName}; &{RoomName}*} {
-#var isvehicle 0;
+#var VolumeSettingMode Room; #var VolumeVariable RoomVol; #var handler roomHandle; #var nowPlaying roomsoundplaying; #var isvehicle 0;
 #if {@ambon = "Enabled"} {
 #if {@ShipSoundPlaying = 1} {
 #pc @shiphandle stop; #var ShipSoundPlaying 0};

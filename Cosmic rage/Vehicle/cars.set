@@ -8,7 +8,7 @@
 #pc @roomhandle stop; #var RoomSoundPlaying 0};
 Loopsound {Cosmic Rage/general/cars/idle.wav} @vehiclevol; #var vehiclehandle %PlayHandle; #var VehicleSoundPlaying 1; #var currentroom "classic"}}
 #trigger {The rumble of a highly modified, but still rather noisy, classic car engine indicates that the systems have power.} {
-#var vehicletype "car";
+#var VolumeSettingMode Vehicle; #var VolumeVariable VehicleVol; #var handler vehicleHandle; #var nowPlaying vehiclesoundplaying; #var vehicletype "car";
 #if {@CurrentRoom <> "classic"} {
 #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};

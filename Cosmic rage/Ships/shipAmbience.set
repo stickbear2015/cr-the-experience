@@ -2,7 +2,7 @@
 #var currentroom 0;
 #var ShipSoundPlaying 0;
 #Trigger {[[] &{ShipName}, &{SecondName}*} {
-#var RoomName @SecondName}
+#var VolumeSettingMode Ship; #var VolumeVariable ShipVol; #var handler shipHandle; #var nowPlaying shipsoundplaying;#var RoomName @SecondName}
 #TRIGGER {The overhead lighting * colour,*} {ShipRoom1}
 #Trigger {Forward momentum can be felt as gentle hums emanate from under the ship's flooring.} {ShipRoom1}
 #trigger {Forward momentum can be felt as powerful thrums come from under the ship's flooring.} {ShipRoom1}

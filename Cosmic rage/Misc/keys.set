@@ -12,12 +12,10 @@
 #key {alt-f3} {combatup}
 #key {control-f2} {combatvolumedown}
 #key {control-f3} {combatvolumeup}
-#key {f7} {vehiclEvoldown}
-#key {f8} {vehiclEvolup}
-#key {f5} {shipvoldown}
-#key {f6} {shipvolup}
-#key {shift-f3} {roomvoldown}
-#key {shift-f4} {roomvolup}
+#key {f5} {ChangeVolumeMode}
+#key {f6} {volumechange -@volumeStep}
+#key {f7} {volumechange @volumestep}
+
 #key {control-f9} {shipEvoldown}
 #key {control-f10} {shipEvolup}
 #key {alt-f9} {vehicleengvoldown}

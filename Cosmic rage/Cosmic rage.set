@@ -9,8 +9,8 @@
 #var settings {vol|shipVol|vehicleVol|roomVol|DroneSounds|MusicSounds|musicvol|combatmusicplaying|mVol|CMusic|altVehicleEngines|altShipengines|gagShipCombat|gagHarvest|panShipCombat|CVol|ambon|RedAlert|Evol|veVol|gagSal|weather|gagweather|LogOn|ShortMapText|SilentIntro|SilentClock|ConnectionCheck|numpadon|CommsVol|ChannelLogging|GameError|SilentConflict|LaunchText|SocialSounds|RebootSounds|SpIntroMessage|SocialText|TPR|SilentPod|showermusic|gvol|UpdateToggle|intromusic|commtoggle|QGag|priv1|priv2|priv3|priv4|hpdr|gocountnum|buffersound|gagStarshipComputerName|gbl|bufferfavkeys|cargogagger|speedgagger|devmode|spchange|toggleAFKGagger|speechAFKGagger|battlesuitMovement|autobackupsetting|extrascript|cosmicgagger|rawpass}
 #var activitiesConfig {asteroidHarvesting|BioHarvesting|blackdwarf|comets|DarkMatterMining|dust|farming|fishing|handmining|hunting|mechanicalMining|moon|Moonbase|PlanetChunks|planetoid|pol|salvaging|StarCoring|starres|StarStudies|trash|volcanoHarvesting|VolcanoMining}
 #var combatConfig {airpod|ArmorMaking|battlesuits|combat|GroundCombat|megasuit|suit}
-#var miscConfig {APilotsParody|Babies|backupHandler|bath|buffers|Clocks|ConfigurationManager|Doors|Dragons|factory|Farming|firework|games|grilling|horses|hosts|house|Jets|larkan|keys|mainAmbience|misc|misc2|music|Mutariansi|mwtp|orgstuff|pingpong|say|socials|Soundpack|telephone|toys|Trains|trolley|wall|wear|weather|comms|comms2}
-#var shipConfig {component|computers|DeepSpaceRepair|FlightControl|jump|pd|rats|shipAmbience|shipCombat|shipCombat2|ShipPower|ships|Ships2|Waypoints|weaponfire}
+#var miscConfig {alias|APilotsParody|Babies|backupHandler|bath|buffers|Clocks|ConfigurationManager|Doors|Dragons|factory|Farming|firework|games|grilling|horses|hosts|house|Jets|larkan|keys|mainAmbience|misc|misc2|music|Mutariansi|mwtp|orgstuff|pingpong|say|socials|Soundpack|telephone|toys|Trains|trolley|wall|wear|weather|comms|comms2}
+#var shipConfig {component|computers|DeepSpaceRepair|FlightControl|jump|pd|rats|shipAmbience|shipCombat2|ShipPower|ships|Ships2|Waypoints|weaponfire|shipCombat}
 #var vehicleConfig {aircraft|cars|highway|vehicleHandler|vehicleAmbience}
 
 ; triggring the variable

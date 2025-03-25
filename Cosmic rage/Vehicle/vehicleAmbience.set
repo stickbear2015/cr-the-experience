@@ -1,6 +1,6 @@
 #class ambon disable;
-#trigger {A steady, loud thudding from above indicates the rotors are running and the collector is powered up.} {v_amb1; #var vehicletype "veh"};
-#TRIGGER {The floor hums slightly with the vibration of the engines.} {v_amb1; #var vehicletype "veh"};
+#trigger {A steady, loud thudding from above indicates the rotors are running and the collector is powered up.} {v_amb1; #var vehicletype "veh"; #var VolumeSettingMode Vehicle; #var VolumeVariable VehicleVol; #var handler vehicleHandle; #var nowPlaying vehiclesoundplaying};
+#TRIGGER {The floor hums slightly with the vibration of the engines.} {v_amb1; #var vehicletype "veh"; #var VolumeSettingMode Vehicle; #var VolumeVariable VehicleVol; #var handler vehicleHandle; #var nowPlaying vehiclesoundplaying};
 #alias v_amb1 {#if {@ambon = "enabled"} {v_amb2}}
 #alias v_amb2 {
 #if {@ShipSoundPlaying = 1} {

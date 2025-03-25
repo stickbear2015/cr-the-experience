@@ -46,7 +46,7 @@ gagAll;
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 loopsound {cosmic rage/ambiences/VehicleNoPower.wav} @Vehiclevol; #var vehiclehandle %playHandle; #var VehicleSoundPlaying 1; #var currentroom "off"; #var currentroom2 "notmisc"} {vehicleamb};
 #class ambon disable;
-#trigger {There is a noticeable lack of engine noise about the place.} {
+#trigger {There is a noticeable lack of engine noise about the place.} {#var VolumeSettingMode Vehicle; #var VolumeVariable VehicleVol; #var handler vehicleHandle; #var nowPlaying vehiclesoundplaying;
 #if {@siren = 1} {#pc @sirenHandle stop; #var siren 0}; #if {@VehicleSoundPlaying = 1} {
 #pc @vehiclehandle stop; #var VehicleSoundPlaying 0};
 #if {@ShipSoundPlaying = 1} {
